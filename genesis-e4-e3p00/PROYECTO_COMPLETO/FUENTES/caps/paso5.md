@@ -62,7 +62,7 @@ El contexto nacional sí consta en el corpus. Hay 209 estaciones reportadas, 154
 
 **Enunciado del problema sustantivo.**
 
-> En los sitios de remoción de Caldas, Cundinamarca y Valle del Cauca (SUPUESTO), los comités de gestión del riesgo no conocen el error de sus mediciones de PM2,5 y PM10. El valor actual del error es VACIO y se mide en el tramo 1. El estándar de referencia es NRMSE de 30 % o menos y R² de 0,70 o más (U.S. Environmental Protection Agency [EPA], 2021). La situación persiste mientras no exista una referencia colocalizada en los sitios. Sin intervención, el escenario inferido es la continuidad de decisiones con datos de calidad desconocida. Esta inferencia no es una proyección con datos.
+> Los comités de gestión del riesgo de Caldas, Cundinamarca y Valle del Cauca (SUPUESTO) ignoran el error de sus mediciones. Se trata de PM2,5 y PM10 en sitios de remoción. El valor actual del error es VACIO y se mide en el tramo 1. El estándar de referencia es NRMSE de 30 % o menos y R² de 0,70 o más (U.S. Environmental Protection Agency [EPA], 2021). La situación persiste mientras no exista una referencia colocalizada en los sitios. Sin intervención, el escenario inferido es la continuidad de decisiones con datos de calidad desconocida. Esta inferencia no es una proyección con datos.
 
 El PDD, el Anexo 4 y los CONPES citados por E3 no se aportaron. Por esa razón, el enunciado no puede citar un eje, un artículo ni un código de demanda como lo prevé la plantilla del metaprompt. El campo queda como [DATO_USUARIO: eje y artículo del PDD, código de demanda territorial].
 

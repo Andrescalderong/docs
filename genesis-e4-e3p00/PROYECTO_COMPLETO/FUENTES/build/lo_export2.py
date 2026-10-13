@@ -4,7 +4,7 @@ import subprocess, time, sys, os, json, uno
 from com.sun.star.beans import PropertyValue
 src, outpdf, outjson = map(os.path.abspath, sys.argv[1:4])
 port = 2004
-prof = '/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/build/lo_profile'
+prof = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lo_profile')
 p = subprocess.Popen(['soffice', '--headless', '--norestore', '--nologo', f'-env:UserInstallation=file://{prof}',
                       f'--accept=socket,host=localhost,port={port};urp;'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 ctx = None

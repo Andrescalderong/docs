@@ -24,7 +24,7 @@ def pesos_tabla(blk, landscape_cols=12):
     rows = [cells(x) for x in blk]
     n = len(rows[0]); data = [r for k, r in enumerate(rows) if k != 1]
     avail = 24.9 if n >= landscape_cols else 17.0
-    cc = 0.16 if n <= 6 else (0.145 if n <= 9 else (0.13 if n <= 14 else 0.115))
+    cc = 0.235 if n <= 6 else (0.215 if n <= 9 else (0.19 if n <= 14 else 0.16))
     need = []; des = []
     for c in range(n):
         col = [r[c] if c < len(r) else "" for r in data]
@@ -34,8 +34,8 @@ def pesos_tabla(blk, landscape_cols=12):
             for tk in re.split(r"[\s/]+", x):
                 L_ = 64 if re.fullmatch(r"[0-9a-f]{64}", tk) else min(len(tk), 22)
                 up = sum(ch.isupper() for ch in tk) / max(1, len(tk))
-                tok = max(tok, L_ * (1 + 0.14 * up))
-        need.append(tok * cc + 0.25)
+                tok = max(tok, L_ * (1 + 0.5 * up))
+        need.append(tok * cc + 0.35)
         des.append(0.5 * min(ml, 60) + 0.5 * min(mean, 70) + 3)
     base = sum(need)
     if base >= avail: wcm = [x / base * avail for x in need]

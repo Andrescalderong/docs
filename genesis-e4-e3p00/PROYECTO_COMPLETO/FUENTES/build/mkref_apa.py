@@ -31,7 +31,7 @@ def para(st,before=0,after=0,line=None,keep=False,align=None,indent=None,left=No
 font(S['Normal'],size=12); para(S['Normal'],0,0,'double')
 font(S['Body Text'],size=12); para(S['Body Text'],0,0,'double',indent=1.27,align=WD_ALIGN_PARAGRAPH.LEFT)
 font(S['First Paragraph'],size=12); para(S['First Paragraph'],0,0,'double',indent=1.27,align=WD_ALIGN_PARAGRAPH.LEFT)
-font(S['Compact'],size=11); para(S['Compact'],0,2,1.0)
+font(S['Compact'],size=11); para(S['Compact'],0,2,1.0,indent=0)
 # encabezados APA 7
 H={'Heading 1':(True,False,WD_ALIGN_PARAGRAPH.CENTER),'Heading 2':(True,False,WD_ALIGN_PARAGRAPH.LEFT),
    'Heading 3':(True,True,WD_ALIGN_PARAGRAPH.LEFT),'Heading 4':(True,False,WD_ALIGN_PARAGRAPH.LEFT),'Heading 5':(True,True,WD_ALIGN_PARAGRAPH.LEFT)}
@@ -64,7 +64,8 @@ for nm,(b,i,sz,before,after,keep,al) in {
   'FiguraNota':(False,False,9.5,2,12,False,WD_ALIGN_PARAGRAPH.LEFT)}.items():
     st=nuevo(nm); font(st,size=sz,bold=b,italic=i); para(st,before,after,1.0,keep=keep,align=al,indent=0)
 for nm,sz in (('Tabla9',9),('Tabla8',8),('Tabla7',7),('Tabla65',6.3)):
-    st=nuevo(nm,'Compact'); font(st,size=sz); para(st,0,0,1.0)
+    st=nuevo(nm,'Compact'); font(st,size=sz); para(st,0,0,1.0,indent=0)
+st=nuevo('Referencia','Normal'); font(st,size=11); para(st,0,6,1.0,indent=-1.27,left=1.27,align=WD_ALIGN_PARAGRAPH.LEFT)
 st=nuevo('Codigo','Normal'); font(st,'Courier New',6.5); para(st,0,0,1.0)
 if 'Source Code' not in S:
     st=nuevo('Source Code','Normal')

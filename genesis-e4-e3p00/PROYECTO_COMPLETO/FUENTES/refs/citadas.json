@@ -1,0 +1,626 @@
+[
+ {
+  "key": "Abernathy2019",
+  "n": 5
+ },
+ {
+  "key": "Acosta2026",
+  "n": 5
+ },
+ {
+  "key": "Adelantado2017",
+  "n": 14
+ },
+ {
+  "key": "Ali2022",
+  "n": 13
+ },
+ {
+  "key": "APA2020",
+  "n": 2
+ },
+ {
+  "key": "Argyris1999",
+  "n": 11
+ },
+ {
+  "key": "Argyris1978",
+  "n": 15
+ },
+ {
+  "key": "Aria2017",
+  "n": 3
+ },
+ {
+  "key": "Arnstein1969",
+  "n": 18
+ },
+ {
+  "key": "AyalaParra2026",
+  "n": 9
+ },
+ {
+  "key": "Bacchi2009",
+  "n": 7
+ },
+ {
+  "key": "Bang2026",
+  "n": 67
+ },
+ {
+  "key": "Barkjohn2021",
+  "n": 40
+ },
+ {
+  "key": "Becerra2021",
+  "n": 1
+ },
+ {
+  "key": "Befani2014",
+  "n": 5
+ },
+ {
+  "key": "Blythe2020",
+  "n": 1
+ },
+ {
+  "key": "Boardman2018",
+  "n": 8
+ },
+ {
+  "key": "Botezat2025",
+  "n": 3
+ },
+ {
+  "key": "Bradford1934",
+  "n": 3
+ },
+ {
+  "key": "Braybrooke1963",
+  "n": 3
+ },
+ {
+  "key": "Callon1999",
+  "n": 16
+ },
+ {
+  "key": "Callon1991",
+  "n": 2
+ },
+ {
+  "key": "Castell2017",
+  "n": 7
+ },
+ {
+  "key": "Chang2023",
+  "n": 5
+ },
+ {
+  "key": "Chesbrough2003",
+  "n": 8
+ },
+ {
+  "key": "Christensen2016",
+  "n": 9
+ },
+ {
+  "key": "Christensen2016b",
+  "n": 2
+ },
+ {
+  "key": "Cobo2011",
+  "n": 2
+ },
+ {
+  "key": "Collingridge1980",
+  "n": 23
+ },
+ {
+  "key": "Decision486",
+  "n": 6
+ },
+ {
+  "key": "Ley1286",
+  "n": 4
+ },
+ {
+  "key": "Ley1523",
+  "n": 16
+ },
+ {
+  "key": "Ley1581",
+  "n": 11
+ },
+ {
+  "key": "Ley2056",
+  "n": 10
+ },
+ {
+  "key": "Ley2294",
+  "n": 4
+ },
+ {
+  "key": "Cooper2008",
+  "n": 20
+ },
+ {
+  "key": "Crilley2018",
+  "n": 8
+ },
+ {
+  "key": "David2021",
+  "n": 5
+ },
+ {
+  "key": "Davis1989",
+  "n": 18
+ },
+ {
+  "key": "DeMoura2025",
+  "n": 3
+ },
+ {
+  "key": "Deming1986",
+  "n": 7
+ },
+ {
+  "key": "Conpes3943",
+  "n": 7
+ },
+ {
+  "key": "Conpes4069",
+  "n": 6
+ },
+ {
+  "key": "Dunn2018",
+  "n": 6
+ },
+ {
+  "key": "Eckenrode2025",
+  "n": 4
+ },
+ {
+  "key": "Elmore1979",
+  "n": 7
+ },
+ {
+  "key": "Espinoza2026",
+  "n": 14
+ },
+ {
+  "key": "Essamlali2024",
+  "n": 2
+ },
+ {
+  "key": "Etzioni1967",
+  "n": 3
+ },
+ {
+  "key": "Festinger1957",
+  "n": 1
+ },
+ {
+  "key": "Freire2005",
+  "n": 13
+ },
+ {
+  "key": "Funnell2011",
+  "n": 19
+ },
+ {
+  "key": "Funtowicz1993",
+  "n": 13
+ },
+ {
+  "key": "GallegoCartagena2026",
+  "n": 1
+ },
+ {
+  "key": "Gertler2016",
+  "n": 16
+ },
+ {
+  "key": "Giordano2021",
+  "n": 37
+ },
+ {
+  "key": "Glouberman2002",
+  "n": 6
+ },
+ {
+  "key": "Godet2001",
+  "n": 3
+ },
+ {
+  "key": "Grieves2017",
+  "n": 11
+ },
+ {
+  "key": "Gumaste2021",
+  "n": 5
+ },
+ {
+  "key": "Hale2025",
+  "n": 3
+ },
+ {
+  "key": "Haris2026",
+  "n": 3
+ },
+ {
+  "key": "Hay2002",
+  "n": 2
+ },
+ {
+  "key": "Hevner2004",
+  "n": 5
+ },
+ {
+  "key": "Huang2025",
+  "n": 9
+ },
+ {
+  "key": "Hurst2024",
+  "n": 6
+ },
+ {
+  "key": "Hwang1981",
+  "n": 1
+ },
+ {
+  "key": "Izod2023",
+  "n": 3
+ },
+ {
+  "key": "Janis1982",
+  "n": 4
+ },
+ {
+  "key": "Jayaratne2018",
+  "n": 31
+ },
+ {
+  "key": "Jessop2008",
+  "n": 1
+ },
+ {
+  "key": "Kahneman1979",
+  "n": 3
+ },
+ {
+  "key": "Karagulian2019",
+  "n": 10
+ },
+ {
+  "key": "Kessler1963",
+  "n": 1
+ },
+ {
+  "key": "Klein2007",
+  "n": 7
+ },
+ {
+  "key": "Koppinen2019",
+  "n": 6
+ },
+ {
+  "key": "Kotter2012",
+  "n": 9
+ },
+ {
+  "key": "KumarP2015",
+  "n": 11
+ },
+ {
+  "key": "Kumar2026",
+  "n": 10
+ },
+ {
+  "key": "Landrigan2004",
+  "n": 8
+ },
+ {
+  "key": "Liao2026",
+  "n": 30
+ },
+ {
+  "key": "Lindblom1959",
+  "n": 4
+ },
+ {
+  "key": "Lipsky1980",
+  "n": 9
+ },
+ {
+  "key": "Lotka1926",
+  "n": 3
+ },
+ {
+  "key": "Machida2025",
+  "n": 5
+ },
+ {
+  "key": "Magi2020",
+  "n": 4
+ },
+ {
+  "key": "Malings2020",
+  "n": 17
+ },
+ {
+  "key": "Mankins1995",
+  "n": 18
+ },
+ {
+  "key": "MarchOlsen1989",
+  "n": 1
+ },
+ {
+  "key": "Mayne2012",
+  "n": 11
+ },
+ {
+  "key": "Merton1936",
+  "n": 10
+ },
+ {
+  "key": "Mills1959",
+  "n": 1
+ },
+ {
+  "key": "Res2254",
+  "n": 5
+ },
+ {
+  "key": "Miraglia2025",
+  "n": 4
+ },
+ {
+  "key": "Mirjalili2014",
+  "n": 1
+ },
+ {
+  "key": "MisionSabios2019",
+  "n": 5
+ },
+ {
+  "key": "Mitchell1997",
+  "n": 13
+ },
+ {
+  "key": "Morawska2018",
+  "n": 6
+ },
+ {
+  "key": "MuradPedraza2026",
+  "n": 77
+ },
+ {
+  "key": "Nelson2026",
+  "n": 4
+ },
+ {
+  "key": "North1990",
+  "n": 7
+ },
+ {
+  "key": "UNISDR2015",
+  "n": 9
+ },
+ {
+  "key": "ONU2015",
+  "n": 9
+ },
+ {
+  "key": "ISO31000",
+  "n": 11
+ },
+ {
+  "key": "WHO2021",
+  "n": 12
+ },
+ {
+  "key": "OCDE2015",
+  "n": 5
+ },
+ {
+  "key": "OCDE2018",
+  "n": 4
+ },
+ {
+  "key": "Ostrom2005",
+  "n": 18
+ },
+ {
+  "key": "Page2021",
+  "n": 5
+ },
+ {
+  "key": "Patton2011",
+  "n": 13
+ },
+ {
+  "key": "Pawson1997",
+  "n": 16
+ },
+ {
+  "key": "Pearl2018",
+  "n": 1
+ },
+ {
+  "key": "Pope2006",
+  "n": 6
+ },
+ {
+  "key": "PMI2021",
+  "n": 17
+ },
+ {
+  "key": "Raiffa1968",
+  "n": 2
+ },
+ {
+  "key": "Reintjes1995",
+  "n": 5
+ },
+ {
+  "key": "RendnMarn2024",
+  "n": 8
+ },
+ {
+  "key": "Ries2011",
+  "n": 12
+ },
+ {
+  "key": "Roine2024",
+  "n": 4
+ },
+ {
+  "key": "RodrguezVillamizar2022",
+  "n": 37
+ },
+ {
+  "key": "Rogers2003",
+  "n": 25
+ },
+ {
+  "key": "RuizCarrascal2026",
+  "n": 53
+ },
+ {
+  "key": "Saaty1980",
+  "n": 1
+ },
+ {
+  "key": "Scharpf1997",
+  "n": 4
+ },
+ {
+  "key": "Schon1994",
+  "n": 8
+ },
+ {
+  "key": "Shediac1998",
+  "n": 12
+ },
+ {
+  "key": "Shi2016",
+  "n": 15
+ },
+ {
+  "key": "Simon1955",
+  "n": 4
+ },
+ {
+  "key": "Simon1973",
+  "n": 7
+ },
+ {
+  "key": "Small1973",
+  "n": 1
+ },
+ {
+  "key": "Smalley2018",
+  "n": 2
+ },
+ {
+  "key": "Snowden2007",
+  "n": 5
+ },
+ {
+  "key": "SpasojevicBrkic2026",
+  "n": 7
+ },
+ {
+  "key": "Stieb2008",
+  "n": 13
+ },
+ {
+  "key": "SIC2026",
+  "n": 8
+ },
+ {
+  "key": "Suresh2025",
+  "n": 51
+ },
+ {
+  "key": "Swales1990",
+  "n": 5
+ },
+ {
+  "key": "Swales2004",
+  "n": 3
+ },
+ {
+  "key": "Tao2019",
+  "n": 10
+ },
+ {
+  "key": "Taplin2012",
+  "n": 2
+ },
+ {
+  "key": "Tavella2026",
+  "n": 47
+ },
+ {
+  "key": "Teece1986",
+  "n": 15
+ },
+ {
+  "key": "Thompson1959",
+  "n": 1
+ },
+ {
+  "key": "Toulmin1958",
+  "n": 7
+ },
+ {
+  "key": "Tsebelis2002",
+  "n": 1
+ },
+ {
+  "key": "Tversky1974",
+  "n": 8
+ },
+ {
+  "key": "EPA2021",
+  "n": 63
+ },
+ {
+  "key": "VanEck2010",
+  "n": 3
+ },
+ {
+  "key": "VlezPereira2025",
+  "n": 3
+ },
+ {
+  "key": "Venkatesh2003",
+  "n": 18
+ },
+ {
+  "key": "Vester2007",
+  "n": 6
+ },
+ {
+  "key": "Vickers1965",
+  "n": 1
+ },
+ {
+  "key": "Warden2019",
+  "n": 7
+ },
+ {
+  "key": "Wei2026",
+  "n": 9
+ },
+ {
+  "key": "Weiss1995",
+  "n": 8
+ },
+ {
+  "key": "Wilson2024",
+  "n": 12
+ }
+]
