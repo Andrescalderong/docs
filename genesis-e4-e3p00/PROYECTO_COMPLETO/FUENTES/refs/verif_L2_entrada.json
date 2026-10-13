@@ -1,0 +1,212 @@
+[
+ {
+  "key": "Adelantado2017",
+  "apa": "Adelantado, F., Vilajosana, X., Tuset-Peiro, P., Martinez, B., Melià-Seguí, J., y Watteyne, T. (2017). Understanding the limits of LoRaWAN. *IEEE Communications Magazine, 55*(9), 34–40. https://doi.org/10.1109/MCOM.2017.1600613",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Hevner2004",
+  "apa": "Hevner, A. R., March, S. T., Park, J., y Ram, S. (2004). Design science in information systems research. *MIS Quarterly, 28*(1), 75–105. https://doi.org/10.2307/25148625",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Cooper2008",
+  "apa": "Cooper, R. G. (2008). Perspective: The Stage-Gate® idea-to-launch process—Update, what's new, and NexGen systems. *Journal of Product Innovation Management, 25*(3), 213–232. https://doi.org/10.1111/j.1540-5885.2008.00296.x",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Davis1989",
+  "apa": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly, 13*(3), 319–340. https://doi.org/10.2307/249008",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Venkatesh2003",
+  "apa": "Venkatesh, V., Morris, M. G., Davis, G. B., y Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly, 27*(3), 425–478. https://doi.org/10.2307/30036540",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Arnstein1969",
+  "apa": "Arnstein, S. R. (1969). A ladder of citizen participation. *Journal of the American Institute of Planners, 35*(4), 216–224. https://doi.org/10.1080/01944366908977225",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Callon1999",
+  "apa": "Callon, M. (1999). The role of lay people in the production and dissemination of scientific knowledge. *Science, Technology & Society, 4*(1), 81–94. https://doi.org/10.1177/097172189900400106",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Funtowicz1993",
+  "apa": "Funtowicz, S. O., y Ravetz, J. R. (1993). Science for the post-normal age. *Futures, 25*(7), 739–755. https://doi.org/10.1016/0016-3287(93)90022-L",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Teece1986",
+  "apa": "Teece, D. J. (1986). Profiting from technological innovation: Implications for integration, collaboration, licensing and public policy. *Research Policy, 15*(6), 285–305. https://doi.org/10.1016/0048-7333(86)90027-2",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Lotka1926",
+  "apa": "Lotka, A. J. (1926). The frequency distribution of scientific productivity. *Journal of the Washington Academy of Sciences, 16*(12), 317–323.",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Bradford1934",
+  "apa": "Bradford, S. C. (1934). Sources of information on specific subjects. *Engineering, 137*, 85–86.",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "VanEck2010",
+  "apa": "van Eck, N. J., y Waltman, L. (2010). Software survey: VOSviewer, a computer program for bibliometric mapping. *Scientometrics, 84*(2), 523–538. https://doi.org/10.1007/s11192-009-0146-3",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Kessler1963",
+  "apa": "Kessler, M. M. (1963). Bibliographic coupling between scientific papers. *American Documentation, 14*(1), 10–25. https://doi.org/10.1002/asi.5090140103",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Small1973",
+  "apa": "Small, H. (1973). Co-citation in the scientific literature: A new measure of the relationship between two documents. *Journal of the American Society for Information Science, 24*(4), 265–269. https://doi.org/10.1002/asi.4630240406",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Callon1991",
+  "apa": "Callon, M., Courtial, J.-P., y Laville, F. (1991). Co-word analysis as a tool for describing the network of interactions between basic and technological research: The case of polymer chemistry. *Scientometrics, 22*(1), 155–205. https://doi.org/10.1007/BF02019280",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Cobo2011",
+  "apa": "Cobo, M. J., López-Herrera, A. G., Herrera-Viedma, E., y Herrera, F. (2011). An approach for detecting, quantifying, and visualizing the evolution of a research field: A practical application to the fuzzy sets theory field. *Journal of Informetrics, 5*(1), 146–166. https://doi.org/10.1016/j.joi.2010.10.002",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Rezaei2015",
+  "apa": "Rezaei, J. (2015). Best-worst multi-criteria decision-making method. *Omega, 53*, 49–57. https://doi.org/10.1016/j.omega.2014.11.009",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "WHO2021",
+  "apa": "Organización Mundial de la Salud. (2021). *WHO global air quality guidelines: Particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide*. OMS.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "EPA2021",
+  "apa": "U.S. Environmental Protection Agency. (2021). *Performance testing protocols, metrics, and target values for fine particulate matter air sensors: Use in ambient, outdoor, fixed sites, non-regulatory supplemental and informational monitoring applications* (EPA/600/R-20/280). Office of Research and Development.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "Warden2019",
+  "apa": "Warden, P., y Situnayake, D. (2019). *TinyML: Machine learning with TensorFlow Lite on Arduino and ultra-low-power microcontrollers*. O'Reilly Media.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Ries2011",
+  "apa": "Ries, E. (2011). *The lean startup: How today's entrepreneurs use continuous innovation to create radically successful businesses*. Crown Business.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Mankins1995",
+  "apa": "Mankins, J. C. (1995). *Technology readiness levels: A white paper*. National Aeronautics and Space Administration, Office of Space Access and Technology.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "PMI2021",
+  "apa": "Project Management Institute. (2021). *Guía de los fundamentos para la dirección de proyectos (Guía del PMBOK®)* y *el estándar para la dirección de proyectos* (7.ª ed.). PMI.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "ISO31000",
+  "apa": "Organización Internacional de Normalización. (2018). *ISO 31000:2018. Gestión del riesgo: Directrices*. ISO.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "Patton2011",
+  "apa": "Patton, M. Q. (2011). *Developmental evaluation: Applying complexity concepts to enhance innovation and use*. Guilford Press.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Rogers2003",
+  "apa": "Rogers, E. M. (2003). *Diffusion of innovations* (5.ª ed.). Free Press.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Freire2005",
+  "apa": "Freire, P. (2005). *Pedagogía del oprimido* (2.ª ed.). Siglo XXI. (Obra original publicada en 1970)",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "OCDE2018",
+  "apa": "Organización para la Cooperación y el Desarrollo Económicos, y Eurostat. (2018). *Oslo manual 2018: Guidelines for collecting, reporting and using data on innovation* (4.ª ed.). OECD Publishing. https://doi.org/10.1787/9789264304604-en",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "OCDE2015",
+  "apa": "Organización para la Cooperación y el Desarrollo Económicos. (2015). *Frascati manual 2015: Guidelines for collecting and reporting data on research and experimental development*. OECD Publishing. https://doi.org/10.1787/9789264239012-en",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "Chesbrough2003",
+  "apa": "Chesbrough, H. W. (2003). *Open innovation: The new imperative for creating and profiting from technology*. Harvard Business School Press.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Boardman2018",
+  "apa": "Boardman, A. E., Greenberg, D. H., Vining, A. R., y Weimer, D. L. (2018). *Cost-benefit analysis: Concepts and practice* (5.ª ed.). Cambridge University Press.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Gertler2016",
+  "apa": "Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., y Vermeersch, C. M. J. (2016). *Impact evaluation in practice* (2.ª ed.). Banco Mundial. https://doi.org/10.1596/978-1-4648-0779-4",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "Hwang1981",
+  "apa": "Hwang, C.-L., y Yoon, K. (1981). *Multiple attribute decision making: Methods and applications*. Springer.",
+  "origen": "DOMINIO",
+  "tipo": "libro"
+ },
+ {
+  "key": "UNISDR2015",
+  "apa": "Oficina de las Naciones Unidas para la Reducción del Riesgo de Desastres. (2015). *Marco de Sendái para la reducción del riesgo de desastres 2015-2030*. UNDRR.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ },
+ {
+  "key": "ONU2015",
+  "apa": "Organización de las Naciones Unidas. (2015). *Transformar nuestro mundo: La Agenda 2030 para el Desarrollo Sostenible* (A/RES/70/1). ONU.",
+  "origen": "DOMINIO",
+  "tipo": "informe"
+ }
+]

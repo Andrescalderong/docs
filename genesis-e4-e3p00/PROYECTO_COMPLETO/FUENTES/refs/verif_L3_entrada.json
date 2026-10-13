@@ -1,0 +1,236 @@
+[
+ {
+  "key": "Befani2014",
+  "apa": "Befani, B., y Mayne, J. (2014). Process tracing and contribution analysis: A combined approach to generative causal inference for impact evaluation. *IDS Bulletin, 45*(6), 17–36.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Elmore1979",
+  "apa": "Elmore, R. F. (1979). Backward mapping: Implementation research and policy decisions. *Political Science Quarterly, 94*(4), 601–616.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Etzioni1967",
+  "apa": "Etzioni, A. (1967). Mixed-scanning: A «third» approach to decision-making. *Public Administration Review, 27*(5), 385–392.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Klein2007",
+  "apa": "Klein, G. (2007). Performing a project premortem. *Harvard Business Review, 85*(9), 18–19.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Lindblom1959",
+  "apa": "Lindblom, C. E. (1959). The science of «muddling through». *Public Administration Review, 19*(2), 79–88.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Mayne2012",
+  "apa": "Mayne, J. (2012). Contribution analysis: Coming of age? *Evaluation, 18*(3), 270–280.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Merton1936",
+  "apa": "Merton, R. K. (1936). The unanticipated consequences of purposive social action. *American Sociological Review, 1*(6), 894–904.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Mitchell1997",
+  "apa": "Mitchell, R. K., Agle, B. R., y Wood, D. J. (1997). Toward a theory of stakeholder identification and salience. *Academy of Management Review, 22*(4), 853–886.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Shediac1998",
+  "apa": "Shediac-Rizkallah, M. C., y Bone, L. R. (1998). Planning for the sustainability of community-based health programs. *Health Education Research, 13*(1), 87–108.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Simon1955",
+  "apa": "Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics, 69*(1), 99–118.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Simon1973",
+  "apa": "Simon, H. A. (1973). The structure of ill structured problems. *Artificial Intelligence, 4*(3–4), 181–201.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Snowden2007",
+  "apa": "Snowden, D. J., y Boone, M. E. (2007). A leader's framework for decision making. *Harvard Business Review, 85*(11), 68–76.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Tversky1974",
+  "apa": "Tversky, A., y Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. *Science, 185*(4157), 1124–1131.",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Kahneman1979",
+  "apa": "Kahneman, D., y Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica, 47*(2), 263–291. https://doi.org/10.2307/1914185",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Mirjalili2014",
+  "apa": "Mirjalili, S., Mirjalili, S. M., y Lewis, A. (2014). Grey wolf optimizer. *Advances in Engineering Software, 69*, 46–61. https://doi.org/10.1016/j.advengsoft.2013.12.007",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Aria2017",
+  "apa": "Aria, M., y Cuccurullo, C. (2017). bibliometrix: An R-tool for comprehensive science mapping analysis. *Journal of Informetrics, 11*(4), 959–975. https://doi.org/10.1016/j.joi.2017.08.007",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Page2021",
+  "apa": "Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., et al. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, Artículo n71. https://doi.org/10.1136/bmj.n71",
+  "origen": "CANON",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Ley1523",
+  "apa": "Congreso de la República de Colombia. (2012, 24 de abril). *Ley 1523 de 2012. Por la cual se adopta la política nacional de gestión del riesgo de desastres y se establece el Sistema Nacional de Gestión del Riesgo de Desastres*. Diario Oficial n.º 48.411.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Ley2056",
+  "apa": "Congreso de la República de Colombia. (2020, 30 de septiembre). *Ley 2056 de 2020. Por la cual se regula la organización y el funcionamiento del Sistema General de Regalías*. Diario Oficial n.º 51.453.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Ley1286",
+  "apa": "Congreso de la República de Colombia. (2009, 23 de enero). *Ley 1286 de 2009. Por la cual se modifica la Ley 29 de 1990, se transforma a Colciencias en Departamento Administrativo y se fortalece el Sistema Nacional de Ciencia, Tecnología e Innovación*. Diario Oficial n.º 47.234.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Ley1581",
+  "apa": "Congreso de la República de Colombia. (2012, 17 de octubre). *Ley 1581 de 2012. Por la cual se dictan disposiciones generales para la protección de datos personales*. Diario Oficial n.º 48.587.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Ley2294",
+  "apa": "Congreso de la República de Colombia. (2023, 19 de mayo). *Ley 2294 de 2023. Por el cual se expide el Plan Nacional de Desarrollo 2022-2026 «Colombia potencia mundial de la vida»*. Diario Oficial n.º 52.400.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Res2254",
+  "apa": "Ministerio de Ambiente y Desarrollo Sostenible. (2017, 1 de noviembre). *Resolución 2254 de 2017. Por la cual se adopta la norma de calidad del aire ambiente y se dictan otras disposiciones*.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Conpes3943",
+  "apa": "Departamento Nacional de Planeación. (2018). *Política para el mejoramiento de la calidad del aire* (Documento CONPES 3943). DNP.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Conpes4069",
+  "apa": "Departamento Nacional de Planeación. (2021). *Política nacional de ciencia, tecnología e innovación 2022-2031* (Documento CONPES 4069). DNP.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "Decision486",
+  "apa": "Comunidad Andina. (2000, 14 de septiembre). *Decisión 486. Régimen común sobre propiedad industrial*. Gaceta Oficial del Acuerdo de Cartagena n.º 600.",
+  "origen": "NORMA",
+  "tipo": "norma"
+ },
+ {
+  "key": "MisionSabios2019",
+  "apa": "Misión Internacional de Sabios. (2019). *Colombia hacia una sociedad del conocimiento: Reflexiones y propuestas*. Presidencia de la República.",
+  "origen": "NORMA",
+  "tipo": "informe"
+ },
+ {
+  "key": "Alvarez2026",
+  "apa": "Alvarez, I., Aguiar, D., Correa, M. A., Rendón Giraldo, J., y Colorado, H. A. (2026). Application of remote sensing and geospatial techniques for forest fire monitoring and air quality impact assessment. *Geocarto International, 41*(1),, Article 2684384. https://doi.org/10.1080/10106049.2026.2684384",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "AyalaParra2026",
+  "apa": "Ayala-Parra, G. A., Hernández, K. S., Chalán, C. A., Ramírez, M., Zuluaga, M. D., Ceballos, L. I., y Martínez, J. A. (2026). Regional aerosol transport and vertical mixing: Factors contributing to an air pollution event in a highly urbanized Andean valley. *Atmospheric Research, 329*,, Article 108512. https://doi.org/10.1016/j.atmosres.2025.108512",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Bang2026",
+  "apa": "Bang, S., Kim, K. H., Kim, K.-R., Ha, H.-J., Yoon, J.-C., Jung, H., Lee, M., y Lee, S.-B. (2026). Application of stationary IoT sensor networks to reduce exposure to particulate matter during local hotspot events in a megacity: A fireworks case study. *Sensors, 26*(13),, Article 4307. https://doi.org/10.3390/s26134307",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Becerra2021",
+  "apa": "Becerra, M. A., Uribe, Y., Peluffo-Ordóñez, D. H., Álvarez-Uribe, K. C., y Tobón, C. (2021). Information fusion and information quality assessment for environmental forecasting. *Urban Climate, 39*,, Article 100960. https://doi.org/10.1016/j.uclim.2021.100960",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Botezat2025",
+  "apa": "Botezat, E., Linares, C., Salvador, P., Navas, M. A., Díaz, J., y López-Bueno, J. A. (2025). How air pollution affects cause-specific emergency hospital admissions on days with biomass combustion in Spain? *Science of the Total Environment, 981*,, Article 179560. https://doi.org/10.1016/j.scitotenv.2025.179560",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Chang2023",
+  "apa": "Chang, W., Chen, X., He, Z., y Zhou, S. (2023). A prediction hybrid framework for air quality integrated with W-BiLSTM(PSO)-GRU and XGBoost methods. *Sustainability, 15*(22),, Article 16064. https://doi.org/10.3390/su152216064",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "DeMoura2025",
+  "apa": "de Moura, F. R., Buffarini, R., Barlem, E. L. D., Nadaleti, W. C., Carvalho, H., y da Silva Júnior, F. M. R. (2025). Amazon's climate crossroads: Analyzing air pollution and health impacts under machine learning-based temperature increase scenarios in Northern Mato Grosso, Brazil. *Environmental Geochemistry and Health, 47*,, Article 206. https://doi.org/10.1007/s10653-025-02524-7",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Espinoza2026",
+  "apa": "Espinoza, J. C., Castro, A., Rivera, M., y Vargas, E. (2026). Development and implementation of an automatic lahar monitoring system at Misti volcano, Arequipa, Peru. *Journal of South American Earth Sciences, 182*,, Article 106211. https://doi.org/10.1016/j.jsames.2026.106211",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Essamlali2024",
+  "apa": "Essamlali, I., Nhaila, H., y El Khaili, M. (2024). Supervised machine learning approaches for predicting key pollutants and for the sustainable enhancement of urban air quality: A systematic review. *Sustainability, 16*(3),, Article 976. https://doi.org/10.3390/su16030976",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "GallegoCartagena2026",
+  "apa": "Gallego-Cartagena, E., Morillas, H., y Maguregui, M. (2026). Biodeterioration of built heritage in the context of climate change and atmospheric pollution: Toward transdisciplinary conservation strategies. *Science of the Total Environment, 1013*,, Article 181313. https://doi.org/10.1016/j.scitotenv.2025.181313",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Haris2026",
+  "apa": "Haris, M., Keshtkar, S., Anjum, A., Syed, M. H., Kojima, H., y Ahmad, R. (2026). Disaster management technology and approaches: A focus on heterogeneous systems. *Environment Systems and Decisions, 46*,, Article 33. https://doi.org/10.1007/s10669-026-10090-1",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Huang2025",
+  "apa": "Huang, M.-L., Chamnisampan, N., y Ke, Y.-R. (2025). A deep learning model integrating EEMD and GRU for air quality index forecasting. *Atmosphere, 16*(9),, Article 1095. https://doi.org/10.3390/atmos16091095",
+  "origen": "F-INF",
+  "tipo": "articulo"
+ }
+]
