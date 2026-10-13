@@ -1,0 +1,24 @@
+{
+  "case_id": "SGR_CONV56_AIRE",
+  "implementation": "36.10-RC2-VM-PAR3-MDR3-CONT1",
+  "section": "4.4",
+  "next_section_authorized": false,
+  "calculo": "EJECUTADO",
+  "ratificacion": "PENDIENTE",
+  "fichas_sustantivas_aportadas": 105,
+  "campo_sustantivas_obsoleto": "Cuenta soporte declarado; NO acredita suficiencia semántica.",
+  "conteos_fichas": {
+    "fichas_recibidas": 105,
+    "fichas_bidireccionales_validas": 105,
+    "fichas_con_justificacion_declarada": 105,
+    "fichas_con_dos_valores_propuestos": 105,
+    "fichas_con_adjudicacion_documentada": 0,
+    "direcciones_recibidas_unicas": 210,
+    "direcciones_con_justificacion_declarada": 210,
+    "direcciones_con_valor_propuesto": 210,
+    "direcciones_con_adjudicacion_documentada": 0,
+    "fichas_semanticamente_verificadas": null
+  },
+  "errores_fichas": [],
+  "completitud_fichas": "ESQUEMA_COMPLETO_NO_VALIDACION_CIENTIFICA"
+}
