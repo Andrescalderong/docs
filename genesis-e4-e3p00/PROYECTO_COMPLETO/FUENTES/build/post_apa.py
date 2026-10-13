@@ -63,8 +63,8 @@ def tabla_apa(tbl, d, styles_id):
     for ri, tr in enumerate(rows):
         trPr = tr.find(qn('w:trPr'))
         if trPr is None: trPr = OxmlElement('w:trPr'); tr.insert(0, trPr)
-        trPr.append(OxmlElement('w:cantSplit'))
-        if ri == 0: trPr.append(OxmlElement('w:tblHeader'))
+        if trPr.find(qn('w:cantSplit')) is None: trPr.append(OxmlElement('w:cantSplit'))
+        if ri == 0 and trPr.find(qn('w:tblHeader')) is None: trPr.append(OxmlElement('w:tblHeader'))
         for tc in tr.findall(qn('w:tc')):
             if ri == 0:
                 shade(tc, CLARO); set_cell_border(tc, bottom=(12, AZUL))
@@ -163,6 +163,10 @@ def postprocesar(src, dst, portada=None, wide_cols=12):
     # limpieza de fldChar dirty
     for fc in body.iter(qn('w:fldChar')):
         if fc.get(qn('w:dirty')) is not None: del fc.attrib[qn('w:dirty')]
+    # compatibilidad con Word: jc start/end -> left/right
+    for jc in body.iter(qn('w:jc')):
+        v = jc.get(qn('w:val'))
+        if v in ('start', 'end'): jc.set(qn('w:val'), 'left' if v == 'start' else 'right')
     # orden XML
     reorder(d.element); reorder(d.settings.element); reorder(d.styles.element)
     for rp in d.styles.element.iter(qn('w:rPr')):
