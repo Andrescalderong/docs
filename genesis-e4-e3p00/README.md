@@ -16,6 +16,7 @@ Este directorio reúne la revisión del archivo Problematica_E3-P00 y la ejecuci
 | SECCION_4_4_MDR | Metodología integrada de decisión y resolución: catorce piezas, árboles A-DEC y A-TDC, expediente técnico y registro de contraste |
 | SECCION_4_5 | Árbol de problemas A-PROB con los identificadores de las variables |
 | respaldo | Paquete ZIP de continuidad con inventario, huellas y estado |
+| DOCUMENTO_UNIFICADO | Versión única en Word y PDF (162 páginas) con la revisión, las secciones 4.3, 4.4, 4.4-MDR y 4.5, el expediente MDR, el registro de entregas y tres anexos. Vista derivada: no forma parte del manifiesto del respaldo |
 
 ## Resultados principales
 
