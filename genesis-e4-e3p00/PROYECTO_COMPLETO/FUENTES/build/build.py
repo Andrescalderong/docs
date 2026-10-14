@@ -62,6 +62,7 @@ def main(lista, base):
         pgs, pt, pf = npg, npt, npf
     else:
         raise SystemExit('índices no convergen')
+    import fix_word; tmp = fin + '.tmp'; fix_word.fix(fin, tmp); os.replace(tmp, fin)
     return fin, pdf
 
 if __name__ == '__main__':
