@@ -20,6 +20,9 @@ def fix(src, dst):
                 return m.group(1) + mp[n] + '"'
             s = re.sub(r'(<w:bookmarkStart w:id="\d+" w:name=")([^"]*)"', rn, s)
             s = re.sub(r'(w:anchor=")([^"]*)"', lambda m: m.group(1) + mp.get(m.group(2), m.group(2)) + '"', s)
+            s = s.replace('<w:tblHeader w:val="true"/><w:tblHeader/>', '<w:tblHeader/>').replace('<w:tblHeader w:val="true"/>', '<w:tblHeader/>')
+            s = s.replace('<w:cantSplit w:val="true"/>', '<w:cantSplit/>')
+            s = s.replace('<w:jc w:val="start"/>', '<w:jc w:val="left"/>').replace('<w:jc w:val="end"/>', '<w:jc w:val="right"/>')
             b = s.encode('utf8'); print('marcadores renombrados:', len(mp))
         elif it.filename == 'word/styles.xml':
             s = b.decode('utf8')
