@@ -31,8 +31,8 @@ try:
             pages[nm] = vc.getPage()
 except Exception as e:
     print('aviso: no se obtuvieron páginas de marcadores:', e)
-fd = uno.Any('[]com.sun.star.beans.PropertyValue', (pv('UseLosslessCompression', False), pv('Quality', 80), pv('ReduceImageResolution', True),
-                                                      pv('MaxImageResolution', 200), pv('ExportBookmarks', True), pv('UseTaggedPDF', True),
+fd = uno.Any('[]com.sun.star.beans.PropertyValue', (pv('UseLosslessCompression', False), pv('Quality', 70), pv('ReduceImageResolution', True),
+                                                      pv('MaxImageResolution', 150), pv('ExportBookmarks', True), pv('UseTaggedPDF', True),
                                                       pv('ExportBookmarksToPDFDestination', True)))
 uno.invoke(doc, 'storeToURL', ('file://' + outpdf, (pv('FilterName', 'writer_pdf_Export'), pv('FilterData', fd))))
 doc.close(True)
