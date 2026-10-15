@@ -16,6 +16,7 @@ Este directorio reúne la revisión del archivo Problematica_E3-P00 y la ejecuci
 | SECCION_4_4_MDR | Metodología integrada de decisión y resolución: catorce piezas, árboles A-DEC y A-TDC, expediente técnico y registro de contraste |
 | SECCION_4_5 | Árbol de problemas A-PROB con los identificadores de las variables |
 | respaldo | Paquete ZIP de continuidad con inventario, huellas y estado |
+| PROYECTO_COMPLETO | Proyecto completo SGR_CONV56_AIRE en Word y PDF (pasos 0 a 7, capítulos 1 a 21, paquete 1000X, estrategia y cierre), con las fuentes de trabajo y ESTADO_PROYECTO.md |
 | DOCUMENTO_UNIFICADO | Versión única en Word y PDF (162 páginas) con la revisión, las secciones 4.3, 4.4, 4.4-MDR y 4.5, el expediente MDR, el registro de entregas y tres anexos. Vista derivada: no forma parte del manifiesto del respaldo |
 
 ## Resultados principales
@@ -51,4 +52,4 @@ Los tres archivos aportados no se incluyen en este directorio. Su identidad qued
 
 ## Cómo continuar
 
-Pasos y capítulos posteriores (formalización del problema, alternativas, capítulos 1 a 21, paquete 1000X y estrategia) quedan pendientes. Requieren la orden CONTINUAR, los términos de referencia y la ratificación de las fichas prioritarias. Para reanudar desde el respaldo, adjunte el ZIP y el metaprompt original. La huella del maestro extraído de la conversación es 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8.
+El proyecto completo (pasos 5 a 7, capítulos 1 a 21, paquete 1000X, estrategia y cierre) está en PROYECTO_COMPLETO. Para radicarlo faltan los términos de referencia, los datos pendientes del usuario (Tabla C.3) y la ratificación del panel evaluador. Para reanudar desde el respaldo, adjunte el ZIP y el metaprompt original. La huella del maestro extraído de la conversación es 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8.

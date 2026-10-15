@@ -241,10 +241,9 @@ for k in cuerpo:
 for k in cuerpo:
     cuerpo[k] = re.sub(r"(?m)^(Árbol \d · .*|Pregunta: .*|Naturaleza: .*|Valor esperado en la raíz: .*|Errores de coherencia: .*|Comprobaciones del SVG.*)$", lambda m: "- " + m.group(1).rstrip(), cuerpo[k])
 A("")
-A(cuerpo['4.3']); A("")
-A(cuerpo['4.4']); A("")
-A(cuerpo['MDR']); A("")
-A(cuerpo['4.5']); A("")
+CMP = "::::::::: {custom-style=\"CuerpoCompacto\"}"
+for k_ in ('4.3', '4.4', 'MDR', '4.5'):
+    A(CMP); A(cuerpo[k_]); A(":::::::::"); A("")
 
 # ---- 4.6 a 4.8 ----
 A("## F4.6 Técnica de los cinco porqués")
@@ -327,7 +326,7 @@ B("## Anexo K. Fichas bidireccionales del análisis estructural")
 B("")
 B("El Anexo K reproduce las 105 fichas bidireccionales de la sección F4.4.4 en el orden del plan paritario. Cada ficha registra los dos sentidos de influencia de un par de variables, con sus mecanismos, fundamentos, valores propuestos y estados. Los valores son juicios PROPUESTOS por la instancia analítica y ninguno equivale a una adjudicación independiente.")
 B("")
-B(imp4.renum(fichas_texto).replace('\n\n\n', '\n\n'))
+B("::::::::: {custom-style=\"CuerpoCompacto\"}"); B(imp4.renum(fichas_texto).replace('\n\n\n', '\n\n')); B(":::::::::")
 B("")
 B("## Anexo L. JSON canónico de los árboles A-DEC, A-TDC y A-PROB")
 B("")

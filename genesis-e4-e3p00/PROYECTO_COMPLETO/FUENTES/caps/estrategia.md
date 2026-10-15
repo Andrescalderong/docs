@@ -57,7 +57,7 @@ La figura muestra la magnitud del territorio de mercado nuevo. Entre 1.122 munic
 
 La {F:f02} contrasta los atributos de la estación de referencia y de la red corregida según la evaluación multicriterio. Los puntajes son una propuesta sujeta a la ratificación del panel evaluador.
 
-:::FIGURA f02 | La red corregida cede fiabilidad y gana costo, acceso y cobertura | Nota. Fuente: evaluación multicriterio del libro maestro (puntajes PROPUESTO, escala de 1 a 9; ALT-01 estaciones fijas de referencia; ALT-03 red híbrida con corrección en gateway). Puntaje total ponderado: ALT-01 4,33; ALT-03 5,81. Matplotlib, tamaño 10 × 7 pulgadas. Script: cX4_figuras.py; sin semilla aleatoria.
+:::FIGURA f02 | La red corregida cede fiabilidad y gana costo, acceso y cobertura | Nota. Fuente: evaluación multicriterio del libro maestro (puntajes PROPUESTO, escala de 1 a 9; ALT-01 estaciones fijas de referencia; ALT-03 red híbrida con corrección en gateway). Puntaje total ponderado: ALT-01 4,34; ALT-03 5,81. Matplotlib, tamaño 10 × 7 pulgadas. Script: cX4_figuras.py; sin semilla aleatoria.
 
 La diferencia mayor aparece en ubicuidad y escalabilidad, con cinco puntos en cada atributo. La viabilidad financiera y la accesibilidad suman tres puntos de ventaja. La referencia conserva una sola ventaja, la fiabilidad, con dos puntos. Este perfil replica la forma de la disrupción de gama baja. Por consiguiente, la estrategia debe proteger el atributo cedido, y la verificación colocalizada cumple esa función.
 
@@ -145,7 +145,7 @@ La {T:t04} asigna a cada paso una acción concreta, un responsable por rol, un m
 | 6 | Generar victorias tempranas | Habilitar | Demostrar progreso visible | Ejecutar las cinco victorias planificadas con su evidencia | Gerencia de proyecto | 7 a 17 | 5 de 5 victorias con evidencia |
 | 7 | Consolidar las ganancias | Sostener | Acelerar y expandir con evidencia | Usar C1 y C2 para liberar los tramos 2 y 3 y reentrenar el modelo por departamento | Gerencia de proyecto y científico de datos | 12 a 19 | C1 y C2 superadas con acta; 100 nodos y 10 gateways operativos (H6) |
 | 8 | Anclar en la cultura | Sostener | Institucionalizar el cambio | Firmar convenios de custodia por tramo, la cláusula de apertura y los actos que adoptan el protocolo | Profesional de convenios y custodia | 18 a 24 | Actas de entrega y cláusula firmada (H8); PERS-E01 ≥ 75 % |
-:::NOTA *Nota.* Elaboración propia con datos del cronograma (hitos H0 a H8; actividades A3.1 y A3.3), del presupuesto (M04, S09) y de los indicadores PERS (metas intermedias y finales). Naturaleza: PROPUESTO. Nombres de personas: [DATO_USUARIO].
+:::NOTA *Nota.* Elaboración propia con datos del cronograma (hitos H0 a H8; actividades A3.1 y A3.3), del presupuesto (M04, S09) y de los indicadores PERS (metas intermedias y finales). Naturaleza: PROPUESTO. Nombres de personas: [DATO_USUARIO: nombres del equipo y de los aliados].
 
 La tabla convierte el modelo en compromisos verificables. Cada indicador de éxito remite a un acta, a un hito o a un indicador PERS ya definido. El capítulo no crea cifras nuevas. Los responsables son roles con presupuesto asignado, lo que reduce el riesgo de pasos sin dueño.
 
@@ -193,7 +193,7 @@ La {T:t06} compone la coalición por roles. Los niveles de poder, credibilidad, 
 | Facilitador | Coordinación de apropiación social | [DATO_USUARIO: nombre y organización] | Bajo | Medio | Alto | Co-diseño y formación |
 | Enlace de custodia | Profesional de convenios y custodia | [DATO_USUARIO: nombre y organización] | Medio | Medio | Medio | Convenios y competencia jurídica |
 | Aliado tecnológico | Representante de la empresa tecnológica | [DATO_USUARIO: nombre y organización] | Medio | Medio | Medio | Plataforma en la nube y operación |
-:::NOTA *Nota.* Elaboración propia con los roles del presupuesto de personal (P03 a P14) y de la alianza supuesta. Naturaleza: PROPUESTO para los niveles; SUPUESTO para la alianza. IES: institución de educación superior. Nombres y organizaciones: [DATO_USUARIO].
+:::NOTA *Nota.* Elaboración propia con los roles del presupuesto de personal (P03 a P14) y de la alianza supuesta. Naturaleza: PROPUESTO para los niveles; SUPUESTO para la alianza. IES: institución de educación superior. Nombres y organizaciones: [DATO_USUARIO: razón social de cada organización].
 
 La coalición reúne siete roles con funciones complementarias. El patrocinador combina poder y credibilidad. Los tres promotores aportan experiencia en medición, en red y en uso. El facilitador aporta liderazgo con poca autoridad formal, un perfil adecuado para el co-diseño. El enlace de custodia y el aliado tecnológico cubren los dos puntos donde el proyecto depende de terceros: la continuidad y la plataforma.
 

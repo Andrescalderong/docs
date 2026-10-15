@@ -86,7 +86,7 @@ La formulación exigió quince decisiones que resuelven contradicciones del expe
 :::TABLA t05 | Registro de decisiones de formulación
 | Código | Decisión y fundamento |
 | --- | --- |
-| DEC-F01 | Fuente de financiación y estructura: el expediente mezcla 'Convocatoria 56 MinCiencias' y 'SGR/OCAD/MGA'. Se adopta la denominación 'Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)' del Paso 1 del usuario. Los términos de referencia no se aportaron: la estructura de 21 capítulos es la del metaprompt (SUPUESTO) y los datos que solo el usuario posee se marcan [DATO_USUARIO]. |
+| DEC-F01 | Fuente de financiación y estructura: el expediente mezcla 'Convocatoria 56 MinCiencias' y 'SGR/OCAD/MGA'. Se adopta la denominación 'Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)' del Paso 1 del usuario. Los términos de referencia no se aportaron: la estructura de 21 capítulos es la del metaprompt (SUPUESTO) y los datos que solo el usuario posee se marcan [DATO_USUARIO: descripción del dato requerido]. |
 | DEC-F02 | Arquitectura: la corrección ocurre en el gateway; los nodos hoja usan LoRa y bajo consumo; los gateways usan red celular con enlace satelital alterno y almacenamiento local de 7 días (corrige HR-12 y HR-13). |
 | DEC-F03 | Estrategia de despliegue: R4 de 4.4-MDR (tramos con piloto de contraste y custodia distribuida), con compuertas C1 y C2 que liberan las compras del tramo siguiente. |
 | DEC-F04 | Meta de desempeño: R² ≥ 0,70 y NRMSE ≤ 30 % frente a referencia (ancla EPA, 2021); NMAE ≤ 15 % aspiracional; línea base medida en el tramo 1 (corrige HR-14: tres metas contradictorias). |

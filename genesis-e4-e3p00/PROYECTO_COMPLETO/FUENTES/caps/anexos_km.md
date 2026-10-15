@@ -4,6 +4,7 @@
 
 El Anexo K reproduce las 105 fichas bidireccionales de la sección F4.4.4 en el orden del plan paritario. Cada ficha registra los dos sentidos de influencia de un par de variables, con sus mecanismos, fundamentos, valores propuestos y estados. Los valores son juicios PROPUESTOS por la instancia analítica y ninguno equivale a una adjudicación independiente.
 
+::::::::: {custom-style="CuerpoCompacto"}
 **Ficha 001 · V04__V08 · clase INTER**
 
 - **V04→V08** · valor **1** (admisibles: 0, 1) · signo + · naturaleza SUPUESTO · estado PROPUESTO · confianza BAJA
@@ -2068,6 +2069,7 @@ El Anexo K reproduce las 105 fichas bidireccionales de la sección F4.4.4 en el 
   - Motivo de la confianza: Ausencia de mecanismo por razonamiento físico. Sin medición ni fuente específica.
 
 
+:::::::::
 
 ## Anexo L. JSON canónico de los árboles A-DEC, A-TDC y A-PROB
 

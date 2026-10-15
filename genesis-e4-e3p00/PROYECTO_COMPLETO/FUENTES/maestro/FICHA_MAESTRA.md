@@ -15,7 +15,7 @@ Naturaleza de cada dato: DECLARADO = valor del expediente E3 aportado por el usu
 - Tope normativo declarado: $ 14.000.000.000 (DECLARADO; términos de referencia NO aportados, NO_VERIFICADO)
 - Duración de ejecución: 24 meses (104 semanas); horizonte posproyecto de seguimiento: 12 meses (PROPUESTO)
 - TRL inicial 4; TRL final 7 (PROPUESTO; el expediente E3 declaraba TRL 8 y 'TRL 4 a 7 u 8': se fija 7 porque el sistema se demuestra en entorno operativo sin calificación formal; TRL 8 queda condicionado a evaluación de desempeño independiente)
-- Caso: SGR_CONV56_AIRE. Metaprompt: GENESIS-CTeI 36.10 RC2 (VM-PAR3-MDR3-CONT1); NTC 1.1. Huella SHA-256 del maestro: 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8
+- Caso: SGR_CONV56_AIRE. Metaprompt: GENESIS-CTeI 36.10 RC2 (VM-PAR3-MDR3-CONT1); NTC 1.1. Huella SHA-256 declarada del maestro (extraída de la conversación, DECLARADO): 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8
 - Territorio y alianza: SUPUESTO por instrucción del usuario. Entidad ejecutora (IES con acreditación de alta calidad), empresa tecnológica, alcaldías, UNGRD: nombres [DATO_USUARIO].
 
 ## 2. Solución (PROPUESTO)

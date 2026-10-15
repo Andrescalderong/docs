@@ -551,7 +551,7 @@ def icono(ax, kind, x, y, ms=6.8):
 
 def nodo_arbol(fig, ax, x, ytop, w, partes, fc, kind=None, lw=1.2, ls="-", h=None, pad=0.07, fs_pad=0.0):
     """Nodo de árbol con texto alineado a la izquierda (admite icono de decisión, azar o resultado)."""
-    sangria = 0.2 if kind else 0.0
+    sangria = 0.18 if kind else 0.0
     plan, tot = alto_texto(fig, w - 2 * pad - sangria, partes)
     alto = h if h else tot + 2 * pad + 0.02
     caja_u(ax, x, ytop - alto, w, alto, fc=fc, lw=lw, ls=ls, rs=0.07)
@@ -647,7 +647,7 @@ def cf4_atdc():
     pit = 0.92
     ypos = {"P1": y0, "P2": y0 - pit, "P3": y0 - 2 * pit, "P4": y0 - 3 * pit,
             "R2": y0, "R1": y0 - pit, "R3": y0 - 2 * pit,
-            "I2": y0 - 0.5 * pit, "I1": y0 - 2 * pit, "I3": y0 - 3 * pit, "IM": y0 - 1.5 * pit}
+            "I2": y0 - 0.5 * pit, "I1": y0 - 2 * pit, "I3": y0 - 3 * pit, "IM": y0 - 2 * pit}
     assert set(ypos) == set(nodos)
     fill = {0: GRIS, 1: CLARO, 2: MEDIO, 3: AZUL}
     geo = {}
@@ -678,10 +678,10 @@ def cf4_atdc():
     rutas[("R2", "I2")] = [(R("R2"), Y("R2") - 0.1), (L("I2"), Y("I2") + 0.17)]
     rutas[("R1", "I2")] = [(R("R1"), Y("R1") + 0.1), (L("I2"), Y("I2") - 0.17)]
     rutas[("R3", "I1")] = [(R("R3"), Y("R3")), (L("I1"), Y("I1"))]
-    xim = L("IM") - 0.38
-    rutas[("I2", "IM")] = [(R("I2"), Y("I2")), (xim, Y("I2")), (xim, Y("IM") + 0.28), (L("IM"), Y("IM") + 0.28)]
-    rutas[("I1", "IM")] = [(R("I1"), Y("I1")), (L("IM"), Y("I1") + 0.0)]
-    rutas[("I3", "IM")] = [(R("I3"), Y("I3")), (xim, Y("I3")), (xim, Y("IM") - 0.28), (L("IM"), Y("IM") - 0.28)]
+    xim = (R("I1") + L("IM")) / 2
+    rutas[("I2", "IM")] = [(R("I2"), Y("I2")), (xim, Y("I2")), (xim, Y("IM") + 0.4), (L("IM"), Y("IM") + 0.4)]
+    rutas[("I1", "IM")] = [(R("I1"), Y("I1")), (L("IM"), Y("IM"))]
+    rutas[("I3", "IM")] = [(R("I3"), Y("I3")), (xim, Y("I3")), (xim, Y("IM") - 0.4), (L("IM"), Y("IM") - 0.4)]
     for (a, b), pts in rutas.items():
         ruta(ax, pts, ms=13)
     # retroalimentación I1 -> P4 (discontinua)
@@ -694,14 +694,14 @@ def cf4_atdc():
     pos_sc = {("P1", "R2"): (2.47, Y("P1") + 0.11), ("P1", "R1"): (2.62, (Y("P1") + Y("R1")) / 2 + 0.2),
               ("P2", "R1"): (2.47, Y("P2") - 0.2), ("P3", "R3"): (2.47, Y("P3") + 0.11),
               ("P4", "I3"): (3.0, Y("P4") - 0.12), ("R3", "I1"): (4.99, Y("R3") + 0.11),
-              ("I1", "IM"): (xim + 0.18, Y("I1") + 0.12), ("I3", "IM"): (xim + 0.08, Y("IM") - 0.52)}
+              ("I1", "IM"): (xim, Y("I1") + 0.11), ("I3", "IM"): ((R("I3") + xim) / 2, Y("I3") - 0.13)}
     for (a, b), (x, y) in pos_sc.items():
         if sc[(a, b)]:
             etiqueta(ax, x, y, sc[(a, b)], fs=8.8, bold=True)
     for (a, b), v in sc.items():
         if v and (a, b) not in pos_sc and (a, b) != ("I1", "P4"):
             print("  AVISO atdc: supuesto sin rótulo", a, b, v)
-    etiqueta(ax, 3.7, yfb - 0.0 + 0.0, "retroalimentación", fs=8.6, ha="center", va="center")
+    etiqueta(ax, 3.7, yfb - 0.12, "retroalimentación", fs=8.6, ha="center", va="center")
     # techo de rendición de cuentas
     xt = (R("R1") + L("I1")) / 2
     ax.plot([xt, xt], [H - 0.35, 2.82 + 0.0], color=TINTA, lw=1.5, ls=(0, (6, 3, 1.5, 3)), zorder=2)
@@ -719,21 +719,26 @@ def cf4_atdc():
         ax.text(0.14, y, "\n".join(plan[0][0]), fontsize=8.0, color=TINTA, va="top", ha="left", linespacing=1.2)
         y -= tot + 0.055
     ysc_fin = y
-    # leyenda
+    # leyenda (una fila; el ancho total se comprueba para que no salga del lienzo)
     yl = max(ysc_fin - 0.12, 0.25)
     x = 0.12
+    FSLG, GAPI = 8.0, 0.13
     for txt, fc in [("Producto", GRIS), ("Resultado inmediato", CLARO), ("Resultado intermedio", MEDIO), ("Impacto", AZUL)]:
-        caja_u(ax, x, yl - 0.1, 0.3, 0.2, fc=fc, lw=1.1, rs=0.04)
-        etiqueta(ax, x + 0.38, yl, txt, fs=8.6, ha="left")
-        x += 0.38 + medir(fig, txt, 8.6)[0] + 0.28
-    ruta(ax, [(x, yl), (x + 0.45, yl)], ms=11)
-    etiqueta(ax, x + 0.53, yl, "Relación causal", fs=8.6, ha="left")
-    x += 0.53 + medir(fig, "Relación causal", 8.6)[0] + 0.28
-    ruta(ax, [(x, yl), (x + 0.45, yl)], ms=11, ls=(0, (5, 3)))
-    etiqueta(ax, x + 0.53, yl, "Retroalimentación", fs=8.6, ha="left")
-    x += 0.53 + medir(fig, "Retroalimentación", 8.6)[0] + 0.28
-    ax.plot([x, x + 0.45], [yl, yl], color=TINTA, lw=1.5, ls=(0, (6, 3, 1.5, 3)))
-    etiqueta(ax, x + 0.53, yl, "Techo de rendición de cuentas", fs=8.6, ha="left")
+        caja_u(ax, x, yl - 0.1, 0.26, 0.2, fc=fc, lw=1.1, rs=0.04)
+        etiqueta(ax, x + 0.33, yl, txt, fs=FSLG, ha="left")
+        x += 0.33 + medir(fig, txt, FSLG)[0] + GAPI
+    ruta(ax, [(x, yl), (x + 0.32, yl)], ms=10)
+    etiqueta(ax, x + 0.39, yl, "Relación causal", fs=FSLG, ha="left")
+    x += 0.39 + medir(fig, "Relación causal", FSLG)[0] + GAPI
+    ruta(ax, [(x, yl), (x + 0.32, yl)], ms=10, ls=(0, (5, 3)))
+    etiqueta(ax, x + 0.39, yl, "Retroalimentación", fs=FSLG, ha="left")
+    x += 0.39 + medir(fig, "Retroalimentación", FSLG)[0] + GAPI
+    for xa_, xb_ in [(0.0, 0.11), (0.16, 0.19), (0.24, 0.32)]:
+        ax.plot([x + xa_, x + xb_], [yl, yl], color=TINTA, lw=1.5, solid_capstyle="butt")
+    etiqueta(ax, x + 0.39, yl, "Techo de rendición", fs=FSLG, ha="left")
+    x_fin = x + 0.39 + medir(fig, "Techo de rendición", FSLG)[0]
+    print("  atdc: ancho de la leyenda hasta x =", round(x_fin, 2))
+    assert x_fin <= 9.95
     ax.text(0.12, yl - 0.24, "Mapeo inverso: se construye desde el impacto hacia las precondiciones. Cada flecha rotulada remite a un "
             "supuesto SC-n verificable.", fontsize=8.4, color=TINTA, ha="left", va="center")
     print("  atdc: fondo del bloque de supuestos y =", round(ysc_fin, 2), "leyenda y =", round(yl, 2))
@@ -746,150 +751,142 @@ def cf4_adec():
     raiz = d["raiz"]
     assert raiz["tipo"] == "DECISION" and len(raiz["hijos"]) == 3
     fig, ax = lienzo_u("Sin probabilidades ni utilidades, A-DEC no marca ninguna rama elegida",
-                       h2_arbol(d), figsize=(10, 8), top=0.885)
+                       h2_arbol(d), figsize=(10, 8), top=0.895)
     H = ax.get_ylim()[1]
     NIV = {"PRODUCTO": GRIS, "RESULTADO_INMEDIATO": CLARO, "RESULTADO_INTERMEDIO": MEDIO, "IMPACTO": AZUL}
-    FS = 8.0
-    # --- estructura: cada opción es una cadena de nodos de azar; "falla" sale a un resultado, "se cumple" sigue
+    FS, FSR, FSL = 8.1, 7.3, 7.8
+
     def cadena(nodo):
-        azar, fallas, final = [], [], None
-        cur = nodo
+        azar, fallas, cur = [], [], nodo
         while cur["tipo"] == "AZAR":
             azar.append(cur)
             ok = [h for h in cur["hijos"] if h["rama"].endswith("se cumple")]
             ko = [h for h in cur["hijos"] if h["rama"].endswith("falla")]
             assert len(ok) == 1 and len(ko) == 1
             fallas.append((ko[0]["rama"], ko[0]["nodo"]))
+            rama_ok = ok[0]["rama"]
             cur = ok[0]["nodo"]
-            final_rama = ok[0]["rama"]
-        return azar, fallas, (final_rama, cur)
-    opciones = {}
+        return azar, fallas, (rama_ok, cur)
+    opc = {}
     for h in raiz["hijos"]:
-        if h["nodo"]["tipo"] == "AZAR":
-            opciones[h["rama"][:2]] = (h["rama"], cadena(h["nodo"]))
-        else:
-            opciones[h["rama"][:2]] = (h["rama"], h["nodo"])
-    assert set(opciones) == {"R4", "R3", "R0"}
-    ids_json = set()
+        opc[h["rama"][:2]] = (h["rama"], cadena(h["nodo"]) if h["nodo"]["tipo"] == "AZAR" else h["nodo"])
+    assert set(opc) == {"R4", "R3", "R0"}
+    ids = set()
 
     def recoge(n):
-        ids_json.add(n["id"])
+        ids.add(n["id"])
         for h in n.get("hijos", []):
             recoge(h["nodo"])
     recoge(raiz)
-    assert len(ids_json) == 20
-    # --- geometría en pulgadas
-    wc, wt, gap = 1.95, 2.05, 0.75
-    xA, xB = 0.10, 5.15
-    # alto requerido por cada nodo
-    def partes_azar(n):
+    assert len(ids) == 20
+    # --- geometría (pulgadas): ladder A a la izquierda; ladder B en espejo a la derecha
+    wc, wt, gap, pad = 1.65, 2.45, 0.65, 0.05
+    xcA, xtA = 0.10, 0.10 + wc + gap
+    xtB, xcB = 5.15, 5.15 + wt + gap
+    inner_c, inner_t = wc - 2 * pad - 0.18, wt - 2 * pad - 0.18
+
+    def p_azar(n):
         return [(f"{n['id']} · Azar · {n['supuesto']}", FS + 0.2, True), (n["etiqueta"], FS, False)]
 
-    def partes_term(n):
-        return [(f"{n['id']} · {n['etiqueta']} [{n['nivel_tdc']}]", FS, False), (f"Resultado: {n['resultado']}", FS, True)]
+    def p_term(n):
+        return [(f"{n['id']} · {n['etiqueta']} [{n['nivel_tdc']}]", FS, False), (n["resultado"], FSR, True)]
+
+    def alto(partes, w_in): return float(alto_texto(fig, w_in, partes)[1]) + 2 * pad + 0.03
+    A, B, c0 = opc["R4"][1], opc["R3"][1], opc["R0"][1]
     filas = []
     for i in range(4):
-        ha = alto_texto(fig, wc - 0.34, partes_azar(opciones["R4"][1][0][i]))[1] + 0.16
-        hb = alto_texto(fig, wc - 0.34, partes_azar(opciones["R3"][1][0][i]))[1] + 0.16
-        ta = alto_texto(fig, wt - 0.34, partes_term(opciones["R4"][1][1][i][1]))[1] + 0.16
-        tb = alto_texto(fig, wt - 0.34, partes_term(opciones["R3"][1][1][i][1]))[1] + 0.16
-        filas.append(max(ha, hb, ta, tb))
-    fa = alto_texto(fig, wc - 0.34, partes_term(opciones["R4"][1][2][1]))[1] + 0.16
-    fb = alto_texto(fig, wc - 0.34, partes_term(opciones["R3"][1][2][1]))[1] + 0.16
-    filas.append(max(fa, fb))
-    vgap = 0.27
-    y_d1 = H - 0.38
-    y_first = H - 1.05
+        filas.append(max(alto(p_azar(A[0][i]), inner_c), alto(p_azar(B[0][i]), inner_c),
+                         alto(p_term(A[1][i][1]), inner_t), alto(p_term(B[1][i][1]), inner_t)))
+    filas.append(max(alto(p_term(A[2][1]), inner_t), alto(p_term(B[2][1]), inner_t)))
+    vgap = 0.17
+    y_d1 = H - 0.37
+    y = H - 0.86
     ytops = []
-    y = y_first
     for h in filas:
         ytops.append(y)
         y -= h + vgap
     y_end = y + vgap
-    print("  adec: filas", [round(f, 2) for f in filas], "fondo de ladders y =", round(y_end, 2))
-    # --- D1
-    plan = [("D1 · Decisión", FS + 0.4, True), (raiz["etiqueta"], FS, False)]
-    wd = 2.5
-    hd = alto_texto(fig, wd - 0.34, plan)[1] + 0.16
-    nodo_arbol(fig, ax, 5.0 - wd / 2, y_d1 + hd / 2, wd, plan, CAJA, kind="decision", lw=1.8, h=hd)
-    # --- ladders
-    centros = {}
-    for key, x0 in [("R4", xA), ("R3", xB)]:
-        rama, (azar, fallas, (rama_ok, term_ok)) = opciones[key]
-        xc, xt = x0, x0 + wc + gap
+    print("  adec: filas", [round(f, 2) for f in filas], " fondo de la fila 5 y =", round(y_end, 2))
+    wd = 2.4
+    plan_d = [("D1 · Decisión", FS + 0.5, True), (raiz["etiqueta"], FS, False)]
+    hd = alto(plan_d, wd - 2 * pad - 0.18)
+    nodo_arbol(fig, ax, 5.0 - wd / 2, y_d1 + hd / 2, wd, plan_d, CAJA, kind="decision", lw=1.8, h=hd, pad=pad)
+    for key, xc, xt, lado in [("R4", xcA, xtA, "A"), ("R3", xcB, xtB, "B")]:
+        rama, (azar, fallas, (rama_ok4, final)) = opc[key]
         for i in range(4):
             h = filas[i]
-            nodo_arbol(fig, ax, xc, ytops[i], wc, partes_azar(azar[i]), CAJA, kind="azar", lw=1.3, h=h)
+            nodo_arbol(fig, ax, xc, ytops[i], wc, p_azar(azar[i]), CAJA, kind="azar", lw=1.3, h=h, pad=pad)
             nT = fallas[i][1]
-            nodo_arbol(fig, ax, xt, ytops[i], wt, partes_term(nT), NIV[nT["nivel_tdc"]], kind="terminal", lw=1.2, h=h)
-            # flecha de falla y rótulo de rama
+            nodo_arbol(fig, ax, xt, ytops[i], wt, p_term(nT), NIV[nT["nivel_tdc"]], kind="terminal", lw=1.2, h=h, pad=pad)
             ym = ytops[i] - h / 2
-            ruta(ax, [(xc + wc, ym), (xt, ym)], ms=12)
-            etiqueta(ax, (xc + wc + xt) / 2, ym + 0.05, fallas[i][0].replace("SC-", "SC-"), fs=7.8, ha="center", va="bottom")
-            centros[azar[i]["id"]] = (xc + wc / 2, ytops[i], h)
-        # resultado final de la cadena (se cumple SC-4) en la columna de azar
-        nodo_arbol(fig, ax, xc, ytops[4], wc, partes_term(term_ok), NIV[term_ok["nivel_tdc"]], kind="terminal", lw=1.2, h=filas[4])
-        # flechas verticales "se cumple"
-        okr = []
-        for i in range(4):
-            cur = azar[i]
-            rama_i = [h["rama"] for h in cur["hijos"] if h["rama"].endswith("se cumple")][0]
-            okr.append(rama_i)
-            yb = ytops[i] - filas[i]
-            ytn = ytops[i + 1]
-            xa = xc + wc * 0.5
-            ruta(ax, [(xa, yb), (xa, ytn)], ms=12)
-            etiqueta(ax, xa + 0.07, (yb + ytn) / 2, rama_i, fs=7.8, ha="left")
-        # rama desde D1
+            if lado == "A":
+                ruta(ax, [(xc + wc, ym), (xt, ym)], ms=11)
+                xr = (xc + wc + xt) / 2
+            else:
+                ruta(ax, [(xc, ym), (xt + wt, ym)], ms=11)
+                xr = (xt + wt + xc) / 2
+            etiqueta(ax, xr, ym + 0.04, fallas[i][0], fs=FSL, ha="center", va="bottom")
+            if i < 3:
+                rama_ok = [hh["rama"] for hh in azar[i]["hijos"] if hh["rama"].endswith("se cumple")][0]
+                xa = xc + wc * 0.5
+                yb, ytn = ytops[i] - h, ytops[i + 1]
+                ruta(ax, [(xa, yb), (xa, ytn)], ms=11)
+                etiqueta(ax, xa + 0.07, (yb + ytn) / 2, rama_ok, fs=FSL, ha="left")
+        # A4 -> AT5 (se cumple): baja y entra al resultado final de la columna de resultados
         xa = xc + wc * 0.5
-        yline = y_d1
-        if key == "R4":
-            ruta(ax, [(5.0 - wd / 2, yline), (xa, yline), (xa, ytops[0])], ls=(0, (5, 3)), ms=12)
-            txt = rama
-            lin = envolver(fig, txt, 3.0, 8.4)
-            ax.text(5.0 - wd / 2 - 0.1, yline + 0.06, "\n".join(lin), ha="right", va="bottom", fontsize=8.4, color=TINTA, linespacing=1.2)
+        xv = xc + wc - 0.35 if lado == "A" else xc + 0.35
+        yb = ytops[3] - filas[3]
+        ym5 = ytops[4] - filas[4] / 2
+        if lado == "A":
+            ruta(ax, [(xv, yb), (xv, ym5), (xt, ym5)], ms=11)
+            etiqueta(ax, xv - 0.07, (yb + ytops[4]) / 2, rama_ok4, fs=FSL, ha="right")
         else:
-            ruta(ax, [(5.0 + wd / 2, yline), (xa, yline), (xa, ytops[0])], ls=(0, (5, 3)), ms=12)
-            lin = envolver(fig, rama, 3.0, 8.4)
-            ax.text(5.0 + wd / 2 + 0.1, yline + 0.06, "\n".join(lin), ha="left", va="bottom", fontsize=8.4, color=TINTA, linespacing=1.2)
-    # --- R0: línea por el centro hasta C0
-    rama0, c0 = opciones["R0"]
-    pl0 = [(f"{c0['id']} · {c0['etiqueta']} [{c0['nivel_tdc']}]", FS, False), (f"Resultado: {c0['resultado']}", FS, True)]
-    wc0 = 3.9
-    hc0 = alto_texto(fig, wc0 - 0.34, pl0)[1] + 0.16
-    yc0 = y_end - 0.5
-    ruta(ax, [(5.0, y_d1 - hd / 2), (5.0, yc0)], ls=(0, (5, 3)), ms=12)
-    ax.text(5.1, y_end - 0.2, rama0, ha="left", va="center", fontsize=8.4, color=TINTA)
-    nodo_arbol(fig, ax, 5.0 - wc0 / 2, yc0, wc0, pl0, NIV[c0["nivel_tdc"]], kind="terminal", lw=1.2, h=hc0)
-    ybot = yc0 - hc0
-    print("  adec: fondo de C0 y =", round(ybot, 2))
-    # --- leyenda (a la izquierda de C0) y notas
-    yl = yc0 - 0.02
-    ax.text(0.12, yl, "Leyenda", fontsize=8.6, fontweight="bold", color=TINTA, va="center")
-    leg = [("decision", "Decisión"), ("azar", "Azar o supuesto SC"), ("terminal", "Resultado")]
-    yy = yl - 0.2
-    for k, t in leg:
-        icono(ax, k, 0.2, yy)
-        etiqueta(ax, 0.34, yy, t, fs=8.2, ha="left")
-        yy -= 0.19
-    xl = 1.75
-    yy = yl - 0.2
-    for t, fc in [("PRODUCTO", GRIS), ("RESULTADO_INMEDIATO", CLARO), ("RESULTADO_INTERMEDIO", MEDIO), ("IMPACTO", AZUL)]:
-        caja_u(ax, xl - 0.0, yy - 0.065, 0.2, 0.13, fc=fc, lw=1.0, rs=0.03)
-        etiqueta(ax, xl + 0.28, yy, t, fs=7.6, ha="left")
-        yy -= 0.17
-        if t == "RESULTADO_INMEDIATO":
-            pass
-    # trazos
-    ruta(ax, [(7.2, yl - 0.2), (7.65, yl - 0.2)], ms=10)
-    etiqueta(ax, 7.72, yl - 0.2, "Rama de azar", fs=8.0, ha="left")
-    ruta(ax, [(7.2, yl - 0.39), (7.65, yl - 0.39)], ms=10, ls=(0, (5, 3)))
-    etiqueta(ax, 7.72, yl - 0.39, "Rama de decisión (no elegida)", fs=8.0, ha="left")
-    ax.text(0.12, 0.30 if ybot > 0.5 else 0.12, "", fontsize=8)
-    pregunta = f"Pregunta: {d['pregunta']}"
-    ax.text(0.12, ybot - 0.12 if False else 0.22, pregunta, fontsize=8.2, color=TINTA, ha="left", va="center")
-    ax.text(0.12, 0.04, "Sin probabilidades ni utilidades declaradas, el valor esperado es NO_CALCULABLE y no se marca ninguna rama "
-            "elegida. SC-n: supuesto crítico de la teoría del cambio.", fontsize=8.2, color=TINTA, ha="left", va="center")
+            ruta(ax, [(xv, yb), (xv, ym5), (xt + wt, ym5)], ms=11)
+            etiqueta(ax, xv + 0.07, (yb + ytops[4]) / 2, rama_ok4, fs=FSL, ha="left")
+        nodo_arbol(fig, ax, xt, ytops[4], wt, p_term(final), NIV[final["nivel_tdc"]], kind="terminal", lw=1.2, h=filas[4], pad=pad)
+        xs = 5.0 - wd / 2 if lado == "A" else 5.0 + wd / 2
+        ruta(ax, [(xs, y_d1), (xa, y_d1), (xa, ytops[0])], ls=(0, (5, 3)), ms=11)
+        lin = envolver(fig, rama, 2.7, 8.2)
+        if lado == "A":
+            ax.text(xs - 0.1, y_d1 + 0.05, "\n".join(lin), ha="right", va="bottom", fontsize=8.2, color=TINTA, linespacing=1.2)
+        else:
+            ax.text(xs + 0.1, y_d1 + 0.05, "\n".join(lin), ha="left", va="bottom", fontsize=8.2, color=TINTA, linespacing=1.2)
+    # --- R0 por el eje central hasta C0
+    rama0 = opc["R0"][0]
+    wc0 = 4.0
+    hc0 = alto(p_term(c0), wc0 - 2 * pad - 0.18)
+    ytc0 = y_end - 0.36
+    ruta(ax, [(5.0, y_d1 - hd / 2), (5.0, ytc0)], ls=(0, (5, 3)), ms=11)
+    ax.text(5.1, y_end - 0.17, rama0, ha="left", va="center", fontsize=8.2, color=TINTA)
+    nodo_arbol(fig, ax, 5.0 - wc0 / 2, ytc0, wc0, p_term(c0), NIV[c0["nivel_tdc"]], kind="terminal", lw=1.2, h=hc0, pad=pad)
+    # --- leyenda en los dos costados de C0 y nota final
+    yb0 = ytc0 - hc0                                  # base de C0
+    xl, yy0 = 0.12, ytc0 - 0.04
+    ax.text(xl, yy0, "Leyenda", fontsize=7.8, fontweight="bold", color=TINTA, va="top")
+    ent = [("decision", "Decisión"), ("azar", "Azar o supuesto SC"), ("terminal", "Resultado")]
+    for j, (k, t) in enumerate(ent):
+        yy = yy0 - 0.2 - j * 0.15
+        icono(ax, k, xl + 0.07, yy, ms=5.5)
+        etiqueta(ax, xl + 0.2, yy, t, fs=7.4, ha="left")
+    xl2 = xl + 1.45
+    ruta(ax, [(xl2, yy0 - 0.2), (xl2 + 0.3, yy0 - 0.2)], ms=8)
+    etiqueta(ax, xl2 + 0.38, yy0 - 0.2, "Rama de azar", fs=7.4, ha="left")
+    ruta(ax, [(xl2, yy0 - 0.35), (xl2 + 0.3, yy0 - 0.35)], ms=8, ls=(0, (5, 3)))
+    etiqueta(ax, xl2 + 0.38, yy0 - 0.35, "Rama de decisión", fs=7.4, ha="left")
+    xr = 7.1
+    ax.text(xr, yy0, "Color: nivel de la teoría del cambio. Última línea en negrita: resultado.", fontsize=7.4,
+            color=TINTA, va="top")
+    cols = [("PRODUCTO", GRIS), ("RESULTADO_INMEDIATO", CLARO), ("RESULTADO_INTERMEDIO", MEDIO), ("IMPACTO", AZUL)]
+    for j, (t, fc) in enumerate(cols):
+        xx = xr + (j // 2) * 1.5
+        yy = yy0 - 0.22 - (j % 2) * 0.16
+        caja_u(ax, xx, yy - 0.06, 0.2, 0.12, fc=fc, lw=1.0, rs=0.03)
+        etiqueta(ax, xx + 0.27, yy, t, fs=7.2, ha="left")
+    yl2 = min(yb0 - 0.12, yy0 - 0.2 - 2 * 0.15 - 0.17)
+    ax.text(0.12, yl2, "Sin probabilidades ni utilidades declaradas, el valor esperado es NO_CALCULABLE y no se marca ninguna "
+            "rama elegida.", fontsize=7.8, color=TINTA, ha="left", va="center")
+    print("  adec: último texto y =", round(float(yl2), 2), " alto del C0 =", round(hc0, 2))
+    revisar(fig, "cF4_adec")
     E.guardar(fig, "cF4_adec")
 
 

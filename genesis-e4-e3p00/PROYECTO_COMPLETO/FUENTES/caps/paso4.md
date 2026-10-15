@@ -1,9 +1,9 @@
 %% PREFIJO: F4
 # Paso 4. Análisis causal completo
 
-El Paso 4 identifica las causas del problema central, desmantela las ortodoxias que condicionan el diseño y establece qué afirmaciones causales admite la evidencia. Sigue la secuencia del metaprompt: identificación de causas (F4.1), desmantelamiento de ortodoxias (F4.2), clasificación de variables para inferencia causal (F4.3), análisis estructural de Vester y MICMAC (F4.4), metodología integrada de decisión y resolución (F4.4-MDR), árbol de problemas (F4.5), cinco porqués (F4.6), causas priorizadas (F4.7) y causa raíz (F4.8).
+El Paso 4 identifica las causas del problema central, desmantela las ortodoxias que condicionan el diseño y establece qué afirmaciones causales admite la evidencia. Sigue la secuencia del metaprompt. Comprende la identificación de causas (F4.1), el desmantelamiento de ortodoxias (F4.2) y la clasificación de variables para inferencia causal (F4.3). Sigue con el análisis estructural de Vester y MICMAC (F4.4) y la metodología integrada de decisión y resolución (F4.4-MDR). Cierra con el árbol de problemas (F4.5), los cinco porqués (F4.6), las causas priorizadas (F4.7) y la causa raíz (F4.8).
 
-El análisis recorre 15 variables que E3-P01 definió y que esta formulación conserva. Ninguna relación entre variables se trata como efecto causal estimado. Todas son hipótesis de influencia estructural (estatuto HIE). El único estimando con identificación posible es el efecto del método de corrección sobre el error de medición, y solo si se ejecuta el sorteo semanal que propone el informe de vigilancia (estatuto IDC prospectivo). Las secciones F4.3 a F4.5 reproducen el análisis completo, con sus 105 fichas bidireccionales en el Anexo K.
+El análisis recorre 15 variables que E3-P01 definió y que esta formulación conserva. Ninguna relación entre variables se trata como efecto causal estimado. Todas son hipótesis de influencia estructural (estatuto HIE). El único estimando con identificación posible es el efecto del método de corrección sobre el error de medición. Solo es identificable si se ejecuta el sorteo semanal que propone el informe de vigilancia (estatuto IDC prospectivo). Las secciones F4.3 a F4.5 reproducen el análisis completo, con sus 105 fichas bidireccionales en el Anexo K.
 
 ## F4.1 Identificación de causas con evidencia
 
@@ -31,11 +31,11 @@ El diccionario no contiene variables económicas. El costo de calibrar, el costo
 | V15 | Institucional | Adopción institucional del tablero | Supuesto crítico SC-3; sin medición de uso | VACIO: se mide desde el tramo 1 | SUPUESTO | NO_VERIFICADO |
 :::NOTA *Nota.* Elaboración propia con el diccionario de la sección F4.4.2, la ficha maestra y el informe de vigilancia tecnológica (F-INF). Las citas con página proceden del informe, no de lectura de la fuente primaria.
 
-De las 15 variables, 8 cuentan con una cita del corpus y 7 quedan sin evidencia propia. Las 8 citas tienen una limitación común: provienen de entornos distintos del sitio de remoción de escombros, como una mina a cielo abierto, estaciones brasileñas o estudios de índices en China. Por esa razón, el proyecto no usa ninguna de estas cifras como línea base. Las usa como motivo para medir: la colocalización del tramo 1 produce la línea base propia de V06, V12 y V15.
+De las 15 variables, 8 cuentan con una cita del corpus y 7 quedan sin evidencia propia. Las 8 citas tienen una limitación común. Provienen de entornos distintos del sitio de remoción de escombros, como una mina a cielo abierto, estaciones brasileñas o estudios de índices en China. Por esa razón, el proyecto no usa ninguna de estas cifras como línea base. Las usa como motivo para medir: la colocalización del tramo 1 produce la línea base propia de V06, V12 y V15.
 
 ### F4.1.1 Validación de la articulación territorial de las causas
 
-El metaprompt exige que al menos dos causas provengan del diagnóstico del Plan de Desarrollo Departamental (PDD), de las demandas territoriales del Anexo 4 o de los diagnósticos del Observatorio de Ciencia y Tecnología. Exige también que al menos 8 de 15 causas tengan un respaldo territorial. El expediente E3-P00 declara 10 causas articuladas, con artículo del PDD, indicador, código de demanda y misión de la política de investigación e innovación orientada por misiones (PIIOM).
+El metaprompt exige que al menos dos causas provengan de una de tres fuentes. Estas son el diagnóstico del Plan de Desarrollo Departamental (PDD), las demandas territoriales del Anexo 4 y los diagnósticos del Observatorio de Ciencia y Tecnología. Exige también que al menos 8 de 15 causas tengan un respaldo territorial. El expediente E3-P00 declara 10 causas articuladas. Cada una cita un artículo del PDD, un indicador, un código de demanda y una misión de la política de investigación e innovación orientada por misiones (PIIOM).
 
 Ninguno de esos documentos se aportó. Los artículos, indicadores y códigos de la {T:t02} son declaraciones de E3 sin fuente verificable. Algunos códigos repiten el mismo patrón entre departamentos, y por ello la tabla los conserva como declarados. La regla de 8 de 15 se cumple en la declaración y no se cumple en la verificación: 0 de 15 respaldos verificados.
 
@@ -59,13 +59,13 @@ Ninguno de esos documentos se aportó. Los artículos, indicadores y códigos de
 | V15 | PDD Cundinamarca, Art. 30; «% de municipios con SAT» | Cun-11 | Misión 3 | DECLARADO | NO_VERIFICADO |
 :::NOTA *Nota.* Elaboración propia con el expediente E3-P00 (Tabla E3-4.1a). El PDD, el Anexo 4 de la convocatoria, la PIIOM y el diagnóstico del Observatorio no se aportaron. SAT: sistema de alerta temprana. Ver decisión DEC-F12.
 
-La decisión DEC-F12 mantiene la formulación y registra la reserva R-ART. La corrida continúa por orden expresa del usuario, y el cierre del documento lista los cinco documentos que el equipo formulador debe obtener antes de radicar: PDD de los tres departamentos, Anexo 4, PIIOM, diagnóstico del Observatorio y CONPES vigentes.
+La decisión DEC-F12 mantiene la formulación y registra la reserva R-ART. La corrida continúa por orden expresa del usuario. El cierre del documento lista los cinco documentos que el equipo formulador debe obtener antes de radicar: PDD de los tres departamentos, Anexo 4, PIIOM, diagnóstico del Observatorio y CONPES vigentes.
 
 ## F4.2 Desmantelamiento de ortodoxias
 
-Una ortodoxia es un supuesto implícito que orienta el diseño sin haberse sometido a prueba. El método pregunta, para cada variable, si la creencia perjudica el objetivo, si se puede imaginar una alternativa y qué ocurriría si el supuesto fuera falso. La {T:t03} aplica las tres preguntas a las 15 variables. Las decisiones posibles son mantener, cuestionar o eliminar el supuesto.
+Una ortodoxia es un supuesto implícito que orienta el diseño sin haberse sometido a prueba. El método formula tres preguntas para cada variable. La primera es si la creencia perjudica el objetivo. La segunda es si se puede imaginar una alternativa. La tercera es qué ocurriría si el supuesto fuera falso. La {T:t03} aplica las tres preguntas a las 15 variables. Las decisiones posibles son mantener, cuestionar o eliminar el supuesto.
 
-El expediente E3-P00 eliminó nueve de quince ortodoxias con alternativas técnicas específicas, como la inferencia en el chip del sensor o los nodos que duermen el 90 % del tiempo. Esta formulación revisa cada decisión contra el corpus y contra la arquitectura que adopta (corrección en el gateway). Una ortodoxia solo se elimina cuando existe evidencia en contra; si la alternativa carece de respaldo, el supuesto se cuestiona y se pone a prueba en el piloto.
+El expediente E3-P00 eliminó nueve de quince ortodoxias con alternativas técnicas específicas. Dos ejemplos son la inferencia en el chip del sensor y los nodos que duermen el 90 % del tiempo. Esta formulación revisa cada decisión contra el corpus y contra la arquitectura que adopta (corrección en el gateway). Una ortodoxia solo se elimina cuando existe evidencia en contra. Si la alternativa carece de respaldo, el supuesto se cuestiona y se pone a prueba en el piloto.
 
 :::TABLA t03 | Análisis crítico de supuestos implícitos por variable
 | Variable | Supuesto implícito | ¿Perjudicial? | Alternativa imaginable | Decisión | Fundamento |
@@ -87,7 +87,7 @@ El expediente E3-P00 eliminó nueve de quince ortodoxias con alternativas técni
 | V15 | Las alcaldías usarán el sistema solo por ser nuevo. | Sí | Convenios por tramo y compuertas que condicionan la ampliación | Eliminar | La adopción es el supuesto crítico SC-3 y se verifica en las compuertas C1 y C2. |
 :::NOTA *Nota.* Elaboración propia con el expediente E3-P00 (Tabla E3-4.2), el informe de vigilancia y la ficha maestra. Naturaleza: PROPUESTO. Verificación: NO_VERIFICADO salvo donde se cita fuente.
 
-El resultado difiere del expediente: 5 supuestos se eliminan, 9 se cuestionan y 1 se mantiene. La diferencia obedece a un criterio de prueba: una creencia se elimina cuando una fuente la contradice, y se cuestiona cuando solo hay una alternativa plausible. Cuatro alternativas de E3 se retiran del diseño porque no tienen respaldo en el corpus: la inferencia en el chip del sensor, el silencio del 90 % de los nodos, los modelos de cizalladura del viento y la provisión de mascarillas.
+El resultado difiere del expediente: 5 supuestos se eliminan, 9 se cuestionan y 1 se mantiene. La diferencia obedece a un criterio de prueba. Una creencia se elimina cuando una fuente la contradice. Se cuestiona cuando solo hay una alternativa plausible. Cuatro alternativas de E3 se retiran del diseño porque no tienen respaldo en el corpus. Son la inferencia en el chip del sensor, el silencio del 90 % de los nodos, los modelos de cizalladura del viento y la provisión de mascarillas.
 
 El registro de decisión de la {T:t04} cierra el nodo ND-06.
 
@@ -115,6 +115,7 @@ El registro de decisión de la {T:t04} cierra el nodo ND-06.
 :::NOTA *Nota.* Elaboración propia con el protocolo de decisión GENESIS. Las referencias de las celdas corresponden a la lista del capítulo 19.
 
 
+::::::::: {custom-style="CuerpoCompacto"}
 ## F4.3 Clasificación de variables para inferencia causal
 
 Esta sección declara el estimando antes de clasificar variables. Deriva los roles del grafo y no de la clase de Vester. La clasificación estructural de 4.4 aporta hipótesis de influencia (HIE). No sustituye la identificación causal (Pearl y Mackenzie, 2018). Todos los juicios son propuestas de la instancia analítica y carecen de ratificación.
@@ -272,7 +273,7 @@ La {T:i007} reúne los datos de «Pruebas de robustez».
 | Datos faltantes | No se imputa Y. Se ponderan las observaciones y se informan cotas por escenarios de pérdida. | Diseño propuesto; NO_EJECUTADO |
 | Confusión no observada | El sorteo la neutraliza si se cumple. Sin sorteo, se requiere análisis de sensibilidad a confusión no medida [conocimiento externo]. | No aplicable aún |
 | Sensibilidad compatible con el diseño | Balance de covariables por nivel, prueba de arrastre con una semana de lavado, pruebas placebo con fechas falsas y modelos alternos M2 y M3 del informe_FINAL. | Diseño propuesto; NO_EJECUTADO |
-| Potencia (recalculada) | Con desviación 0,25, efecto de diseño 3, 5.200 nodo-semanas y proporción 0,5, el error estándar es 0.0120 y la diferencia mínima detectable con 80 % de potencia es 0.0336 puntos de NMAE, cerca de 11.2 % de una línea base de 0,30. Premisas del informe_FINAL §11.8. | CALCULADO sobre premisas NO_VERIFICADAS |
+| Potencia (recalculada) | Con desviación 0,25, efecto de diseño 3, 5.200 nodo-semanas y proporción 0,5, el error estándar es 0,0120 y la diferencia mínima detectable con 80 % de potencia es 0,0336 puntos de NMAE, cerca de 11,2 % de una línea base de 0,30. Premisas del informe_FINAL §11.8. | CALCULADO sobre premisas NO_VERIFICADAS |
 | Predicción frente a causalidad | El modelo TinyML puede usar V03 y V01 como predictores de corrección. Que mejoren el ajuste no los convierte en causas de V06 ni valida el efecto del método. | Regla de interpretación |
 :::NOTA *Nota.* Elaboración propia con el expediente de la sección F4.3.
 
@@ -311,7 +312,9 @@ La {T:i008} reúne los datos de «Registro de decisión GENESIS: ND-07 Estimando
 
 
 
+:::::::::
 
+::::::::: {custom-style="CuerpoCompacto"}
 ## F4.4 Vester y MICMAC: protocolo paritario integrado
 
 Sección generada con GENESIS-CTeI 36.10 RC2 / VM-PAR3-MDR3-CONT1. Contiene las catorce piezas MP-06, numeradas F4.4.1 a F4.4.14. Las piezas son subsecciones y no autorizan otras secciones. Los valores son propuestas no ratificadas. El análisis estructural expresa hipótesis de influencia (HIE), no efectos causales.
@@ -1571,7 +1574,9 @@ La {T:i051} reúne los datos de «Artefactos entregados de 4.4».
 
 **Alcance de esta pieza.** La sección F4.4 termina aquí. Esta sección no autoriza por sí sola otra sección; la cadena 4.3, 4.4, F4.4-MDR y 4.5 se ejecuta bajo la autorización de la corrida completa.
 
+:::::::::
 
+::::::::: {custom-style="CuerpoCompacto"}
 ## F4.4-MDR Metodología integrada de decisión y resolución
 
 Esta sección aplica la metodología integrada de decisión y resolución al fenómeno de la vigilancia de material particulado en sitios de remoción de escombros. Se ejecuta en modo estándar, con perfil de proyecto de ciencia, tecnología e innovación. Las catorce piezas siguen este orden: síntesis, árboles, nueve análisis por fases, premortem y escenarios, valor y vacíos, y referencias. Utiliza los resultados de 4.3 y 4.4 sin modificarlos. Los departamentos y la alianza son SUPUESTO por instrucción del usuario. Los términos de referencia de la convocatoria no fueron aportados. El expediente técnico (fichas, métricas, señales, cálculos y pruebas) se entrega en archivos separados.
@@ -2841,7 +2846,9 @@ La {T:i106} reúne los datos de «Efectos propuestos sobre capítulos posteriore
 **Autorización.** Esta sección no muta la autorización contractual ni selecciona la alternativa final. La recomendación es una propuesta condicionada y no un acuerdo institucional.
 
 
+:::::::::
 
+::::::::: {custom-style="CuerpoCompacto"}
 ## F4.5 ÁRBOL DE PROBLEMAS COMPLETO
 
 Esta sección construye el árbol de problemas (tipo 5, rol A-PROB). Utiliza los resultados causales de 4.3 y 4.4 y el registro de contraste de F4.4-MDR. Los nodos conservan los identificadores de las quince variables del modelo. El árbol no sustituye al árbol de decisión ni al de teoría del cambio. No selecciona una alternativa. Todas las relaciones tienen estatuto HIE (hipótesis de influencia estructural): ninguna es un efecto estimado. Las fuentes se identifican con dos códigos: F-INF es el informe_FINAL de vigilancia tecnológica y F-E3 es el expediente Problematica_E3-P00.
@@ -2982,6 +2989,7 @@ El árbol de E3 (sección F4.5 del expediente, con sus tablas 4.6 a 4.8) se cont
 El árbol queda como borrador con vacíos. Sus relaciones requieren la sesión de adjudicación de las fichas de 4.4, comenzando por los enlaces de mayor efecto. Un cambio de ficha obliga a reconstruir solo los nodos y enlaces afectados. Esta sección no modifica las decisiones de F4.4-MDR ni selecciona la alternativa final. La formalización del problema y la generación de alternativas dependen de este árbol, pero no se ejecutan aquí.
 
 
+:::::::::
 
 ## F4.6 Técnica de los cinco porqués
 
@@ -3001,7 +3009,7 @@ La {T:t05} presenta las cinco preguntas. La quinta respuesta es una hipótesis d
 
 ## F4.7 Causas priorizadas para intervención
 
-La priorización usa el escenario de trabajo S2 con corte por mediana (influencia y dependencia con mediana de 5). La clasificación de Vester ordena variables por su posición estructural y no estima efectos. La {T:t06} reúne las cinco causas que el análisis prioriza. La variable V04 (viento) tiene influencia 8 y dependencia 0, pero es exógena: el proyecto no puede intervenir sobre ella y por eso no integra la lista.
+La priorización usa el escenario de trabajo S2 con corte por mediana (influencia y dependencia con mediana de 5). La clasificación de Vester ordena variables por su posición estructural y no estima efectos. La {T:t06} reúne las cinco causas que el análisis prioriza. La variable V04 (viento) tiene influencia 8 y dependencia 0, pero es exógena. El proyecto no puede intervenir sobre ella y por eso no integra la lista.
 
 :::TABLA t06 | Cinco causas críticas o activas priorizadas para intervención
 | Código | Nombre | Influencia (TA) | Dependencia (TP) | Cuadrante (mediana) | Estatuto | Justificación | Intervención |
@@ -3017,13 +3025,13 @@ Las tres variables críticas (V02, V06 y V15) y las dos activas (V03 y V05) coin
 
 ## F4.8 Causa raíz identificada
 
-**Formulación.** La red de bajo costo opera sin un protocolo de calibración colocalizada y de corrección en el borde, con custodia institucional, adaptado a sitios de remoción de escombros. Por ello entrega mediciones de error desconocido y reduce el uso institucional de las alertas.
+**Formulación.** La red de bajo costo opera sin un protocolo de calibración colocalizada y de corrección en el borde. Tampoco tiene custodia institucional adaptada a sitios de remoción de escombros. Por ello entrega mediciones de error desconocido y reduce el uso institucional de las alertas.
 
 **Evidencia.** Tres fuentes respaldan la formulación. Primera, Bang et al. (2026, pp. 6-8) muestran que una corrección local con estación cercana eleva el R² de menos de 0,2 a 0,81. Segunda, Murad Pedraza et al. (2026, pp. 10-11 y 13) reportan que 90,8 % de las estaciones de la red nacional propuesta serían sensores sin plan de calibración, cálculo del analista sobre las cifras del documento. Tercera, Suresh et al. (2025, p. 30) reportan una correlación de 0,73 entre partículas y humedad en una mina a cielo abierto.
 
 **Clasificación de inferencia causal.** La causa raíz es una hipótesis estructural (HIE) y no un efecto estimado. Debe incluirse en el modelo como exposición X (método de corrección) y no como mecanismo, porque el proyecto la manipula por diseño. El estimando E1 es identificable solo si se ejecuta el sorteo semanal descrito en la sección F4.3.
 
-**Validación contra las ortodoxias desmanteladas.** La formulación no depende de las creencias eliminadas en la {T:t03}: no supone inferencia en el chip del sensor, ni nodos silenciosos al 90 %, ni modelos de cizalladura. Depende de dos supuestos aún no verificados: que la corrección con colocalización generaliza a sitios de remoción (R-TEC-04) y que los comités adoptan el tablero (SC-3).
+**Validación contra las ortodoxias desmanteladas.** La formulación no depende de las creencias eliminadas en la {T:t03}. No supone inferencia en el chip del sensor, ni nodos silenciosos al 90 %, ni modelos de cizalladura. Depende de dos supuestos aún no verificados. El primero es que la corrección con colocalización generaliza a sitios de remoción (R-TEC-04). El segundo es que los comités adoptan el tablero (SC-3).
 
 La {T:t07} registra la decisión sobre la causa raíz (nodo ND-10).
 

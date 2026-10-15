@@ -1,7 +1,7 @@
 %% PREFIJO: F6
 # Paso 6. Generación y evaluación de alternativas
 
-El Paso 6 convierte el problema formalizado en un conjunto de alternativas y elige una con un método multicriterio explícito. Sigue cuatro etapas: árbol de objetivos (F6.1), identificación de alternativas con una contrainductiva obligatoria (F6.2), evaluación multicriterio con análisis de sensibilidad (F6.3) y selección con validación territorial (F6.4). Los puntajes de desempeño son juicios PROPUESTOS por la instancia analítica y requieren ratificación del panel evaluador. Ningún puntaje se interpreta como probabilidad de éxito.
+El Paso 6 convierte el problema formalizado en un conjunto de alternativas y elige una con un método multicriterio explícito. Sigue cuatro etapas. La primera es el árbol de objetivos (F6.1). La segunda es la identificación de alternativas con una contrainductiva obligatoria (F6.2). La tercera es la evaluación multicriterio con análisis de sensibilidad (F6.3). La cuarta es la selección con validación territorial (F6.4). Los puntajes de desempeño son juicios PROPUESTOS por la instancia analítica y requieren ratificación del panel evaluador. Ningún puntaje se interpreta como probabilidad de éxito.
 
 ## F6.1 Árbol de objetivos
 
@@ -26,9 +26,9 @@ El árbol de objetivos invierte el árbol de problemas A-PROB (sección F4.5). E
 
 ## F6.2 Identificación de alternativas
 
-El conjunto de alternativas incluye cuatro opciones. ALT-00 mantiene la práctica actual y sirve de línea de comparación. ALT-01 sustituye el sensor de bajo costo por estaciones de referencia en cada sitio. ALT-02 corrige los datos de forma centralizada en la nube. ALT-03 es la alternativa contrainductiva que exige el metaprompt: corrige en el gateway, despliega por tramos condicionados y distribuye la custodia. El expediente E3-P00 presentaba tres alternativas con presupuestos no comparables; esta formulación incorpora el statu quo y compara costos solo cuando proceden de la misma fuente.
+El conjunto de alternativas incluye cuatro opciones. ALT-00 mantiene la práctica actual y sirve de línea de comparación. ALT-01 sustituye el sensor de bajo costo por estaciones de referencia en cada sitio. ALT-02 corrige los datos de forma centralizada en la nube. ALT-03 es la alternativa contrainductiva que exige el metaprompt: corrige en el gateway, despliega por tramos condicionados y distribuye la custodia. El expediente E3-P00 presentaba tres alternativas con presupuestos no comparables. Esta formulación incorpora el statu quo y compara costos solo cuando proceden de la misma fuente.
 
-Las cuatro fichas siguientes ({T:t02}, {T:t03}, {T:t04} y {T:t05}) usan los mismos diez aspectos. Los campos de articulación con el PDD, la demanda territorial y la misión PIIOM quedan como VACIO en las cuatro, porque los documentos de origen no se aportaron.
+Las cuatro fichas siguientes ({T:t02}, {T:t03}, {T:t04} y {T:t05}) usan los mismos diez aspectos. Los campos de articulación con el PDD, la demanda territorial y la misión PIIOM quedan como VACIO en las cuatro. Los documentos de origen no se aportaron.
 
 :::TABLA t02 | Alternativa ALT-00: statu quo
 | Aspecto | Descripción |
@@ -94,7 +94,7 @@ Las cuatro fichas siguientes ({T:t02}, {T:t03}, {T:t04} y {T:t05}) usan los mism
 
 ### F6.2.1 Test de autenticidad contrainductiva
 
-Tres condiciones acumulativas separan la contrainducción genuina de la cosmética. El incumplimiento de cualquiera devuelve la alternativa a rediseño. La {T:t06} verifica cada condición para ALT-03. La primera condición cierra el circuito con el desmantelamiento de ortodoxias de la {T:t03} de la sección F4.2, de la cual cita las filas V07 y V06.
+Tres condiciones acumulativas separan la contrainducción genuina de la cosmética. El incumplimiento de cualquiera devuelve la alternativa a rediseño. La {T:t06} verifica cada condición para ALT-03. La primera condición cierra el circuito con el desmantelamiento de ortodoxias de la sección F4.2. Cita las filas V07 y V06 de la tabla F4.3.
 
 :::TABLA t06 | Test de autenticidad contrainductiva de ALT-03
 | Condición | Verificación | Cumple |
@@ -115,6 +115,8 @@ Las analogías no sustituyen evidencia. Orientan el diseño y se mantienen como 
 | Metrología | Trazabilidad por transferencia de calibración desde un patrón hasta los instrumentos de campo | El modelo de corrección transfiere la exactitud de la referencia al nodo | Registrar la versión del modelo por gateway y por periodo |
 | Gestión de la innovación | Compuertas de etapa que condicionan la inversión siguiente a criterios medibles (Cooper, 2008) | Las compuertas C1 y C2 liberan la compra de cada tramo | Fijar umbrales de desempeño y de uso institucional como criterios de decisión |
 :::NOTA *Nota.* Elaboración propia. Naturaleza: ILUSTRATIVO. Verificación: NO_VERIFICADO salvo la cita de Cooper (2008), que no fue consultada en esta corrida.
+
+La {T:t08} registra la decisión ND-12 sobre la autenticidad contrainductiva de ALT-03.
 
 :::TABLA t08 | Registro de decisión GENESIS: ND-12 Autenticidad contrainductiva
 | Campo | Contenido |
@@ -141,9 +143,9 @@ Las analogías no sustituyen evidencia. Orientan el diseño y se mantienen como 
 
 ## F6.3 Evaluación multicriterio
 
-La evaluación usa una suma ponderada con una escala ordinal de desempeño de 1 a 9. Esa escala no es la escala de Saaty (1980) ni un proceso analítico jerárquico: el nombre AHP se reserva para la elicitación de pesos mediante comparaciones pareadas con control de consistencia. Los términos de referencia no se aportaron y, por tanto, no fijan pesos. La matriz usa los pesos por defecto del metaprompt, que suman 100 %. Los dos criterios territoriales conservan su piso protegido de 10 % y 8 %, aunque la convocatoria no los pondere.
+La evaluación usa una suma ponderada con una escala ordinal de desempeño de 1 a 9. Esa escala no es la escala de Saaty (1980) ni un proceso analítico jerárquico. El nombre AHP se reserva para la elicitación de pesos mediante comparaciones pareadas con control de consistencia. Los términos de referencia no se aportaron y, por tanto, no fijan pesos. La matriz usa los pesos por defecto del metaprompt, que suman 100 %. Los dos criterios territoriales conservan su piso protegido de 10 % y 8 %, aunque la convocatoria no los pondere.
 
-La {T:t09} presenta la matriz de desempeño. Los puntajes de los criterios territoriales reflejan la ausencia de documentos de origen: 5 equivale a articulación genérica, 1 a ausencia de articulación demostrable y 9 exigiría artículo del PDD, código de demanda e indicador.
+La {T:t09} presenta la matriz de desempeño. Los puntajes de los criterios territoriales reflejan la ausencia de documentos de origen. El puntaje 5 equivale a articulación genérica y el 1 a ausencia de articulación demostrable. El puntaje 9 exigiría artículo del PDD, código de demanda e indicador.
 
 :::TABLA t09 | Matriz de desempeño multicriterio en escala ordinal de 1 a 9
 | Criterio | Peso | ALT-00 | ALT-01 | ALT-02 | ALT-03 |
@@ -188,7 +190,7 @@ La {T:t10} registra la justificación de cada puntaje. Cada una cabe en una lín
 
 ### F6.3.1 Análisis de sensibilidad
 
-La perturbación de «+10 %» es relativa: el peso del criterio perturbado se multiplica por 1,10 y todos los pesos se renormalizan para que sumen 1. La {T:t11} publica el vector completo de cada escenario y verifica que la suma sea 1. La {T:t12} compara los totales con el caso base.
+La perturbación de «+10 %» es relativa. El peso del criterio perturbado se multiplica por 1,10 y todos los pesos se renormalizan para que sumen 1. La {T:t11} publica el vector completo de cada escenario y verifica que la suma sea 1. La {T:t12} compara los totales con el caso base.
 
 :::TABLA t11 | Vectores de pesos de los escenarios de sensibilidad
 | Criterio | Base | E1 | E2 | E3 | E4 | E5 |
@@ -221,12 +223,14 @@ La perturbación de «+10 %» es relativa: el peso del criterio perturbado se mu
 | Prioridad territorial | criterios territoriales +10 % | ALT-03 | 4,414 | 4,339 | 5,147 | 5,791 | No cambia |
 :::NOTA *Nota.* Elaboración propia con maestro/alternativas.py. Los escenarios perturban un peso o un grupo de pesos en +10 % relativo y renormalizan.
 
-La alternativa ganadora no cambia en ningún escenario. Además, ninguna perturbación de un solo peso entre −99 % y +500 % invierte el primer lugar entre ALT-03 y ALT-02. El margen entre ambas es de 0,655 puntos en el caso base. Este resultado no valida el ranking: refleja que ALT-03 supera a ALT-02 en impacto, escalabilidad, innovación y fiabilidad ubicua, y que ALT-02 solo la supera en nivel de riesgo, con puntaje 4 frente a 4 en el nivel de riesgo.
+La alternativa ganadora no cambia en ningún escenario. Además, ninguna perturbación de un solo peso entre −99 % y +500 % invierte el primer lugar entre ALT-03 y ALT-02. El margen entre ambas es de 0,655 puntos en el caso base. Este resultado no valida el ranking. ALT-03 supera a ALT-02 en 6 criterios. Son viabilidad técnica, impacto esperado, sostenibilidad, nivel de innovación, PAFU fiable y PAFU ubicua. ALT-02 supera a ALT-03 solo en un criterio, a saber tiempo de implementación.
 
 
 ### F6.3.2 Optimización metaheurística (GWO)
 
-El módulo de optimización con el algoritmo del lobo gris (Grey Wolf Optimizer, Mirjalili et al., 2014) se activa solo si la enumeración exacta no es viable. El espacio de decisión de esta formulación contiene cuatro alternativas discretas, y la suma ponderada se evalúa por enumeración completa. Por esa razón, GWO no se activa (aserción AS-32 y decisión DEC-F15). No se ejecutó ningún algoritmo, de modo que no existe tabla de contraste GWO-MCDA ni estabilidad multisemilla.
+El módulo de optimización con el algoritmo del lobo gris, Grey Wolf Optimizer (Mirjalili et al., 2014) se activa solo si la enumeración exacta no es viable. El espacio de decisión de esta formulación contiene cuatro alternativas discretas, y la suma ponderada se evalúa por enumeración completa. Por esa razón, GWO no se activa (aserción AS-32 y decisión DEC-F15). No se ejecutó ningún algoritmo, de modo que no existe tabla de contraste GWO-MCDA ni estabilidad multisemilla.
+
+La {T:t13} registra la decisión ND-14 de no activar la metaheurística.
 
 :::TABLA t13 | Registro de decisión GENESIS: ND-14 Activación de la metaheurística
 | Campo | Contenido |
@@ -250,6 +254,8 @@ El módulo de optimización con el algoritmo del lobo gris (Grey Wolf Optimizer,
 | RAZON_DEL_DESCARTE | Se descarta activarlo porque la búsqueda exacta es viable. |
 | RESULTADO | CIERRA sin vacíos. |
 :::NOTA *Nota.* Elaboración propia con el protocolo de decisión GENESIS y el módulo GWO del metaprompt.
+
+La {T:t14} registra la decisión ND-13 sobre los pesos y los puntajes de la matriz.
 
 :::TABLA t14 | Registro de decisión GENESIS: ND-13 Pesos y puntajes MCDA
 | Campo | Contenido |
@@ -280,7 +286,7 @@ El módulo de optimización con el algoritmo del lobo gris (Grey Wolf Optimizer,
 
 **Puntaje.** 5,805 de 9,000 (5,81 con dos decimales). El puntaje ordena las alternativas y no estima probabilidad de éxito.
 
-**Justificación.** ALT-03 obtiene el mayor puntaje en impacto esperado (7), escalabilidad (7) y nivel de innovación (8), y empata con ALT-02 en viabilidad financiera (6). Su desventaja frente a ALT-00 está en viabilidad técnica (6 frente a 9), tiempo de implementación (5 frente a 9) y nivel de riesgo (4 frente a 9), porque exige desarrollo y piloto. Los tramos condicionados acotan esos riesgos sin eliminarlos.
+**Justificación.** ALT-03 obtiene el mayor puntaje en impacto esperado (7) y nivel de innovación (8). Empata con ALT-02 en escalabilidad (7) y en viabilidad financiera (6). Su desventaja frente a ALT-00 está en tres criterios. Son viabilidad técnica (6 frente a 9), tiempo de implementación (5 frente a 9) y nivel de riesgo (4 frente a 9). La causa es que exige desarrollo y piloto. Los tramos condicionados acotan esos riesgos sin eliminarlos.
 
 La {T:t15} valida la articulación territorial de la alternativa seleccionada. El criterio «Articulación con PDD y demandas territoriales» recibió 5 de 9, que es el umbral de la regla del metaprompt. Por tanto, no se activa la alerta, pero el 5 equivale a articulación genérica y no está verificado. La alerta se activaría si el equipo no obtiene los documentos territoriales.
 
@@ -290,12 +296,14 @@ La {T:t15} valida la articulación territorial de la alternativa seleccionada. E
 | PDD vigente | [DATO_USUARIO: nombre del PDD, eje y artículo] | PDD de cada departamento | VACIO |
 | Indicador PDD | [DATO_USUARIO: indicador, línea base y meta] | Capítulo de metas del PDD | VACIO |
 | Demanda territorial | [DATO_USUARIO: código y nombre de la demanda] | Anexo 4 de la convocatoria | VACIO |
-| Contribución a la meta PDD | ALT-03 contribuye a un indicador de estaciones de monitoreo y alerta mediante 100 nodos y 10 gateways con error verificado; el indicador exacto es [DATO_USUARIO] | Análisis propio | INFERIDO |
+| Contribución a la meta PDD | ALT-03 contribuye a un indicador de estaciones de monitoreo y alerta mediante 100 nodos y 10 gateways con error verificado; el indicador exacto es [DATO_USUARIO: indicador del PDD] | Análisis propio | INFERIDO |
 | Misión PIIOM | [DATO_USUARIO: misión aplicable] | PIIOM de MinCiencias | VACIO |
 | CONPES articulado | CONPES 4069 de política de ciencia, tecnología e innovación (DNP, 2021); objetivo [DATO_USUARIO: objetivo y línea] | Departamento Nacional de Planeación | NO_VERIFICADO |
 | Actores territoriales involucrados | Alcaldías de 12 municipios, comités de gestión del riesgo y empresa tecnológica [DATO_USUARIO: nombres y cartas de intención] | Cartas de intención | SUPUESTO |
 | Beneficiarios territoriales | 150 funcionarios en 15 comités; indirectos [DATO_USUARIO: población de los municipios] | Cálculo propio | SUPUESTO |
 :::NOTA *Nota.* Elaboración propia. Los elementos VACIO son documentos que solo la entidad ejecutora posee. Ver la reserva R-ART de la decisión DEC-F12.
+
+La {T:t16} registra la decisión ND-15 de seleccionar ALT-03 con reservas.
 
 :::TABLA t16 | Registro de decisión GENESIS: ND-15 Alternativa seleccionada
 | Campo | Contenido |
@@ -324,4 +332,4 @@ La {F:f02} resume el ranking y el rango del puntaje en los cinco escenarios.
 
 :::FIGURA f02 | Puntaje ponderado por alternativa y rango en los escenarios de sensibilidad | Nota. Elaboración propia con maestro/alternativas.py. Escala ordinal de desempeño de 1 a 9; caso base con pesos por defecto y cinco perturbaciones de +10 % relativo con renormalización. Los puntajes son juicios PROPUESTOS.
 
-El Paso 6 crea valor al ofrecer una decisión auditable: cualquier lector reproduce los totales con los pesos y los puntajes publicados, identifica los juicios más débiles y comprueba que la conclusión resiste cambios de peso. El Paso 7 diseña el sistema de indicadores que verifica la alternativa seleccionada.
+El Paso 6 crea valor al ofrecer una decisión auditable. Cualquier lector reproduce los totales con los pesos y los puntajes publicados. Identifica los juicios más débiles y comprueba que la conclusión resiste cambios de peso. El Paso 7 diseña el sistema de indicadores que verifica la alternativa seleccionada.

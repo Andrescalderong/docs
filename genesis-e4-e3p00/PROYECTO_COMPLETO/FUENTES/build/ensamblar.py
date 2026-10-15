@@ -24,18 +24,18 @@ def pesos_tabla(blk, landscape_cols=12):
     rows = [cells(x) for x in blk]
     n = len(rows[0]); data = [r for k, r in enumerate(rows) if k != 1]
     avail = 24.9 if n >= landscape_cols else 17.0
-    cc = 0.16 if n <= 6 else (0.145 if n <= 9 else (0.13 if n <= 14 else 0.115))
+    cc = 0.19 if n <= 6 else (0.17 if n <= 9 else (0.15 if n <= 14 else 0.135))
     need = []; des = []
     for c in range(n):
         col = [r[c] if c < len(r) else "" for r in data]
         ml = max(len(x) for x in col); mean = sum(len(x) for x in col) / len(col)
         tok = 0
         for x in col:
-            for tk in re.split(r"[\s/]+", x):
+            for tk in re.split(r"[\s/_]+", x):
                 L_ = 64 if re.fullmatch(r"[0-9a-f]{64}", tk) else min(len(tk), 22)
                 up = sum(ch.isupper() for ch in tk) / max(1, len(tk))
-                tok = max(tok, L_ * (1 + 0.14 * up))
-        need.append(tok * cc + 0.25)
+                tok = max(tok, L_ * (1 + 0.28 * up))
+        need.append(tok * cc + 0.35)
         des.append(0.5 * min(ml, 60) + 0.5 * min(mean, 70) + 3)
     base = sum(need)
     if base >= avail: wcm = [x / base * avail for x in need]
@@ -44,7 +44,9 @@ def pesos_tabla(blk, landscape_cols=12):
         wcm = [need[c] + left * des[c] / sd for c in range(n)]
     d = [max(3, round(x / avail * 120)) for x in wcm]
     sep = "|" + "|".join(" " + "-" * k + " " for k in d) + "|"
-    return [blk[0], sep] + blk[2:]
+    # permite el salto de línea tras el guion bajo en etiquetas en mayúsculas (p. ej., NO_VERIFICADO)
+    sal = lambda ln: re.sub(r"(?<=[A-Z])_(?=[A-Z])", "_\u200b", ln)
+    return [sal(blk[0]), sep] + [sal(x) for x in blk[2:]]
 
 def convertir(texto, prefijo, reg, archivo=""):
     """reg: dict global con 'tab' y 'fig' -> {(prefijo,id): numero}; contadores en reg['cnt']. Devuelve markdown pandoc."""
@@ -110,7 +112,7 @@ def a_pandoc(L, prefijo, reg, ancho_fig_cm=15.5):
             nota = re.sub(r"^Nota\.", "*Nota.*", nota)
             out += ["", '::: {custom-style="FiguraRotulo"}', f"**Figura {prefijo}.{n}**", ":::", "",
                     '::: {custom-style="FiguraTitulo"}', f"*{titulo}*", ":::", "",
-                    f"![]({png}){{width={ancho_fig_cm}cm}}", "",
+                    (f"![]({png}){{width={ancho_fig_cm}cm}}" if os.path.exists(png) else f"**[FIGURA PENDIENTE: {os.path.basename(png)}]**"), "",
                     '::: {custom-style="FiguraNota"}', nota, ":::", ""]
             i += 1; continue
         if l.startswith(":::NOTA"):

@@ -79,6 +79,11 @@ Origen F-INF = corpus del informe_FINAL aportado por el usuario (DECLARADO, no v
 | Toulmin1958 | Toulmin (1958) | 1958 | libro | CANON | Toulmin, S. E. (1958). *The uses of argument*. Cambridge University Press. |
 | Tversky1974 | Tversky y Kahneman (1974) | 1974 | articulo | CANON | Tversky, A., y Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. *Science, 185*(4157), 1124–1131. |
 | Weiss1995 | Weiss (1995) | 1995 | capitulo | CANON | Weiss, C. H. (1995). Nothing as practical as good theory. En J. P. Connell et al. (Eds.), *New approaches to evaluating community initiatives* (pp. 65–92). Aspen Institute. |
+| Dror1968 | Dror (1968) | 1968 | libro | CANON | Dror, Y. (1968). *Public policymaking reexamined*. Chandler. |
+| Hiatt2006 | Hiatt (2006) | 2006 | libro | CANON | Hiatt, J. M. (2006). *ADKAR: A model for change in business, government and our community*. Prosci. |
+| Ragin1987 | Ragin (1987) | 1987 | libro | CANON | Ragin, C. C. (1987). *The comparative method: Moving beyond qualitative and quantitative strategies*. University of California Press. |
+| Rosenhead2001 | Rosenhead y Mingers (2001) | 2001 | libro | CANON | Rosenhead, J., y Mingers, J. (Eds.). (2001). *Rational analysis for a problematic world revisited* (2.ª ed.). Wiley. |
+| WilsonGrau2019 | Wilson-Grau (2019) | 2019 | libro | CANON | Wilson-Grau, R. (2019). *Outcome harvesting: Principles, steps, and evaluation applications*. Information Age Publishing. |
 | Festinger1957 | Festinger (1957) | 1957 | libro | CANON | Festinger, L. (1957). *A theory of cognitive dissonance*. Stanford University Press. |
 | Hay2002 | Hay (2002) | 2002 | libro | CANON | Hay, C. (2002). *Political analysis: A critical introduction*. Palgrave. |
 | Jessop2008 | Jessop (2008) | 2008 | libro | CANON | Jessop, B. (2008). *State power: A strategic-relational approach*. Polity. |

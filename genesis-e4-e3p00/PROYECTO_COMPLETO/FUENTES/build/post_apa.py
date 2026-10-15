@@ -57,6 +57,21 @@ def tabla_apa(tbl, d, styles_id):
                            f'<w:bottom w:val="single" w:sz="12" w:space="0" w:color="{TINTA}"/></w:tblBorders>'))
     tblPr.append(parse_xml(f'<w:tblCellMar {nsdecls("w")}><w:top w:w="30" w:type="dxa"/><w:left w:w="70" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="70" w:type="dxa"/></w:tblCellMar>'))
     lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed'); tblPr.append(lay)
+    # anchos: reescala la cuadrícula de pandoc al ancho útil de la página (vertical 9360 dxa; apaisada 13840 dxa)
+    grid = tbl.find(qn('w:tblGrid')); cols = grid.findall(qn('w:gridCol'))
+    base_w = [int(c.get(qn('w:w'))) for c in cols]; tot_b = sum(base_w) or 1
+    ancho = 13840 if n >= 12 else 9340
+    nw = [max(300, round(b / tot_b * ancho)) for b in base_w]
+    dif = ancho - sum(nw); nw[nw.index(max(nw))] += dif
+    for c_, w_ in zip(cols, nw): c_.set(qn('w:w'), str(w_))
+    for old in tblPr.findall(qn('w:tblW')): tblPr.remove(old)
+    tw = OxmlElement('w:tblW'); tw.set(qn('w:w'), str(ancho)); tw.set(qn('w:type'), 'dxa'); tblPr.append(tw)
+    for tr_ in tbl.findall(qn('w:tr')):
+        for k_, tc_ in enumerate(tr_.findall(qn('w:tc'))):
+            tcPr_ = tc_.find(qn('w:tcPr'))
+            if tcPr_ is None: tcPr_ = OxmlElement('w:tcPr'); tc_.insert(0, tcPr_)
+            for old in tcPr_.findall(qn('w:tcW')): tcPr_.remove(old)
+            w_el = OxmlElement('w:tcW'); w_el.set(qn('w:w'), str(nw[min(k_, len(nw) - 1)])); w_el.set(qn('w:type'), 'dxa'); tcPr_.append(w_el)
     st = 'Tabla9' if n <= 6 else ('Tabla8' if n <= 10 else ('Tabla7' if n <= 14 else 'Tabla65'))
     if re.search(r'[0-9a-f]{64}', ''.join(x.text or '' for x in tbl.iter(qn('w:t')))) and n < 9: st = 'Tabla8'
     rows = tbl.findall(qn('w:tr'))

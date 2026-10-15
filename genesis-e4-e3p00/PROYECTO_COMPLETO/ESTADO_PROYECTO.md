@@ -1,16 +1,35 @@
-# Estado del proyecto completo (corte 13-oct-2026, 19:50 UTC)
+# Estado del proyecto completo (corte 15-oct-2026)
 
-Documento en construcción: proyecto completo SGR_CONV56_AIRE según GENESIS-CTeI 36.10 RC2 en un solo documento (Word y PDF).
-Este directorio guarda las fuentes de trabajo (Markdown con directivas, scripts de figuras y de ensamblado). El metaprompt y los tres archivos de entrada del usuario no se versionan.
+Documento: proyecto completo SGR_CONV56_AIRE según GENESIS-CTeI 36.10 RC2, en un solo archivo (Word y PDF).
 
-## Archivos terminados (verificador `build/check_cap.py`: sin problemas salvo nota)
-Pasos 0, 1, 2, 3 (paso3.md), 4 (paso4.md), 5, 6; capítulos 1, 2 (02a y 02b), 3, 4, 5, 6, 11, 13, 14, 15, 17, 18; capítulo de estrategia (estrategia.md); documentos 1000X x01, x02, x05, x06, x07, x08, x09; anexos K a M (anexos_km.md).
-Con observaciones menores de estilo: cap16 (2 oraciones largas), cap18 (1 oración larga).
+| Archivo | Contenido |
+| --- | --- |
+| PROYECTO_COMPLETO_SGR_CONV56_AIRE.docx | 979 páginas en el PDF; encabezados APA 7 de cinco niveles; tablas con bordes APA; figuras con fondo transparente y paleta única |
+| PROYECTO_COMPLETO_SGR_CONV56_AIRE.pdf | Misma maquetación, con marcadores, índice, lista de tablas y lista de figuras |
+| FUENTES/ | Fuentes de trabajo: Markdown con directivas, libro maestro de datos, generadores, scripts de figuras y de ensamblado |
 
-## Pendiente
-Paso 7 (indicadores PERS), capítulos 7, 8, 9, 10, 12, 19 (bibliografía desde el banco), 20 (anexos A a J), 21 (Project Charter), documentos 1000X x03 y x10, cierre F-01 a F-04, portada e índices.
-Las figuras de los capítulos 7 a 10, 12 y 21 ya existen (figs_png/c7_* a c21_*); falta el texto.
-Los agentes redactores se interrumpieron por el límite semanal de uso (reinicio: 14-oct-2026, 21:00 UTC).
+## Estructura
+Parte I (pasos 0 a 7), Parte II (capítulos 1 a 21), Parte III (paquete 1000X, diez documentos, y capítulo de estrategia) y cierre F-01 a F-04.
+
+## Verificación ejecutada
+- Verificador mecánico `build/check_cap.py` por archivo: palabras de prosa, tablas, figuras, orden de mención, citas frente al banco, oraciones de más de 25 palabras, términos enfáticos, marcadores de omisión.
+- Los 21 capítulos cumplen los mínimos del metaprompt (palabras, tablas, figuras, referencias); la Tabla C.1 del cierre lo detalla.
+- El archivo DOCX valida contra el esquema (validate.py: PASSED).
+- Citas y referencias: 161 obras en el capítulo 19; 44 (27,3 %) son de 2021 a 2026.
+
+## Limitaciones que el documento declara
+- Los términos de referencia de la convocatoria no se aportaron. El territorio, el evento y la alianza son supuestos por instrucción del usuario.
+- 270 descripciones distintas de datos pendientes del usuario (463 apariciones) quedan como [DATO_USUARIO: …] y se registran en la Tabla C.3.
+- Cartas, hojas de vida, certificados, cotizaciones y términos de referencia no existen: el capítulo 20 entrega listas de verificación para esos documentos.
+- No se ejecutaron corrector ortográfico ni lectura de un tercero independiente.
+- Criterio de 70 % de referencias de los últimos cinco años: NO CUMPLE (27,3 %). Criterio de cuartiles: no determinable con los archivos disponibles.
+- Los puntajes multicriterio, las probabilidades de riesgo y las metas de indicadores son PROPUESTOS y requieren ratificación del panel evaluador.
+- La huella SHA-256 del maestro es una constante declarada en la conversación; no es el SHA-256 de `maestro/maestro.py`.
+- La reserva de contingencia (636,0 millones de COP) redondea la suma exacta de 636,5 millones con la regla del par entero; el redondeo convencional daría 637,0 millones.
 
 ## Cómo reconstruir
-`python3 build/build.py LISTA.json SALIDA` (ver build/build.py y build/post_apa.py). Las figuras se regeneran con los scripts de figs_scripts/.
+Los scripts usan una ruta absoluta de trabajo (constante `RAIZ`); ajústela antes de ejecutar.
+1. `python3 -I pasos/gen_paso0.py` y los demás `pasos/gen_*.py` regeneran los pasos 0 a 7, el frente, el capítulo 19 (`gen_cap19.py`) y el cierre (`gen_cierre.py`).
+2. `figs_scripts/` regenera las figuras; `figs_png/` conserva las versiones finales.
+3. `python3 -I build/lista.py build/opts.json` crea la lista de archivos y `LC_ALL=C.UTF-8 python3 -I build/build.py LISTA.json SALIDA` produce DOCX y PDF (LibreOffice con UNO).
+4. `pasos/x10/gen_x10.py` regenera el checklist 1000X-10 (ejecutar dos veces).

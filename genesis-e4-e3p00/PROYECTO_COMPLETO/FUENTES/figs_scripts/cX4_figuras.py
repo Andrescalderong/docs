@@ -89,7 +89,7 @@ def f02():
     ax.text(v01[0] + 0.75, y[0] + h / 2, "ALT-01: estación de referencia", fontsize=9.5, va="center", color=T)
     ax.text(v03[0] + 0.75, y[0] - h / 2, "ALT-03: red corregida en gateway", fontsize=9.5, va="center", color=T)
     tot = A.BASE
-    ax.text(12.6, -0.78, f"Puntaje total ponderado: ALT-01 {n(tot[1], 2)}; ALT-03 {n(tot[3], 2)}", fontsize=9.5, ha="right", va="center", color=T)
+    ax.text(12.6, -0.78, f"Puntaje total ponderado: ALT-01 {n(tot[1] + 1e-9, 2)}; ALT-03 {n(tot[3] + 1e-9, 2)}", fontsize=9.5, ha="right", va="center", color=T)
     ax.set_ylim(-1.1, len(attrs) - 0.45)
     return E.guardar(fig, "cX4_f02")
 

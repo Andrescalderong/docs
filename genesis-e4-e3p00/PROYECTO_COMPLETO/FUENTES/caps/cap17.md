@@ -180,7 +180,7 @@ El mapa de la {F:f02} muestra la misma estructura. Mitchell et al. (1997) define
 
 :::FIGURA f02 | Mapa de alianzas estratégicas del proyecto | Nota. Elaboración propia con la contrapartida de maestro.py (C01 a C06) y los actores de 4.4-MDR.5; script c17_figs.py, sin semilla; corte de datos 13 de octubre de 2026. Montos en millones de COP. Naturaleza: aportes DECLARADO, con desglose de la IES PROPUESTO; alianza SUPUESTO.
 
-El Sistema Nacional de Gestión del Riesgo de Desastres organiza instancias nacionales y territoriales de decisión (Congreso de la República, 2012). Los 15 comités del proyecto, 12 municipales y tres departamentales, pertenecen a ese sistema y son los usuarios del tablero (SUPUESTO). Ningún actor del sistema firmó un compromiso con el proyecto. Por consiguiente, el proyecto no cuenta con las alcaldías como aportantes. Las trata como custodios potenciales sujetos a las compuertas C1 y C2.
+El Sistema Nacional de Gestión del Riesgo de Desastres organiza instancias nacionales y territoriales de decisión (Congreso de la República, 2012a). Los 15 comités del proyecto, 12 municipales y tres departamentales, pertenecen a ese sistema y son los usuarios del tablero (SUPUESTO). Ningún actor del sistema firmó un compromiso con el proyecto. Por consiguiente, el proyecto no cuenta con las alcaldías como aportantes. Las trata como custodios potenciales sujetos a las compuertas C1 y C2.
 
 ### 17.4.2 Rol de cada co-ejecutor
 

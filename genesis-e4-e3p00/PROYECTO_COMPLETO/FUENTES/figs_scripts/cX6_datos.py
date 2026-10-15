@@ -86,7 +86,7 @@ V["comites_meta"] = str(cu["comites_meta"])
 
 # ---- t04 alternativas
 filas_a, pres3, nodo = C.alternativas_costos()
-pts = dict(zip(["ALT-00", "ALT-01", "ALT-02", "ALT-03"], [round(x, 2) for x in C.A.BASE]))
+pts = dict(zip(["ALT-00", "ALT-01", "ALT-02", "ALT-03"], [round(x + 1e-9, 2) for x in C.A.BASE]))
 a3 = [f for f in filas_a if f["id"] == "ALT-03"][0]["total"]
 filas = []
 for f in filas_a:

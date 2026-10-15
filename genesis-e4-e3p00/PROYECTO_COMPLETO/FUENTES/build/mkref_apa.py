@@ -64,16 +64,22 @@ for nm,(b,i,sz,before,after,keep,al) in {
   'FiguraNota':(False,False,9.5,2,12,False,WD_ALIGN_PARAGRAPH.LEFT)}.items():
     st=nuevo(nm); font(st,size=sz,bold=b,italic=i); para(st,before,after,1.0,keep=keep,align=al,indent=0)
 for nm,sz in (('Tabla9',9),('Tabla8',8),('Tabla7',7),('Tabla65',6.3)):
-    st=nuevo(nm,'Compact'); font(st,size=sz); para(st,0,0,1.0)
-st=nuevo('Codigo','Normal'); font(st,'Courier New',6.5); para(st,0,0,1.0)
+    st=nuevo(nm,'Compact'); font(st,size=sz); para(st,0,0,1.0,indent=0,left=0,align=WD_ALIGN_PARAGRAPH.LEFT)
+st=nuevo('Codigo','Normal'); font(st,'Courier New',6.5); para(st,0,0,1.0,indent=0)
 if 'Source Code' not in S:
     st=nuevo('Source Code','Normal')
 font(S['Source Code'],'Courier New',6.5); para(S['Source Code'],0,0,1.0)
 for i,(sz,left,bf) in {1:(11,0,6),2:(11,0.6,0),3:(10,1.2,0)}.items():
     nm=f'TOC {i}'; st=nuevo(nm)
-    font(st,size=sz,bold=(i==1)); para(st,bf,0,1.0,left=left)
+    font(st,size=sz,bold=(i==1)); para(st,bf,0,1.0,left=left,indent=0)
 for nm in ('Indice','Indice2'):
-    st=nuevo(nm); font(st,size=11); para(st,0,0,1.0,left=0)
+    st=nuevo(nm); font(st,size=11); para(st,0,0,1.0,left=0,indent=0)
+st=nuevo('CuerpoCompacto','Body Text'); font(st,size=11.5); para(st,0,4,1.12,indent=1.27,align=WD_ALIGN_PARAGRAPH.LEFT)
+st=nuevo('Referencia','Normal'); font(st,size=12); para(st,0,0,'double',left=1.27,indent=-1.27,align=WD_ALIGN_PARAGRAPH.LEFT)
+if 'Block Text' in S:
+    font(S['Block Text'],size=11); para(S['Block Text'],6,6,1.15,left=1.27,indent=0,align=WD_ALIGN_PARAGRAPH.LEFT)
+font(S['Source Code'],'Courier New',7.5); para(S['Source Code'],0,0,1.0,indent=0,left=0)
+if 'Compact' in S: para(S['Compact'],0,0,1.0,indent=0,left=0)
 for s in d.sections:
     s.page_width=Cm(21.59); s.page_height=Cm(27.94)
     s.left_margin=s.right_margin=Cm(2.54); s.top_margin=Cm(2.54); s.bottom_margin=Cm(2.54)
