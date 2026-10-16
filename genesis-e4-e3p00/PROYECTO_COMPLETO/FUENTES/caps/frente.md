@@ -4,10 +4,11 @@ Este documento reúne en una sola pieza el proyecto completo SGR_CONV56_AIRE, fo
 
 ## Estructura
 
-El documento sigue el orden del metaprompt. Se compone de cuatro partes. La numeración de tablas y figuras usa el prefijo de cada parte, de modo que «Tabla F4.3» pertenece al Paso 4 y «Tabla 12.5» pertenece al capítulo 12.
+El documento sigue el orden del metaprompt. Se compone de cinco partes. La numeración de tablas y figuras usa el prefijo de cada parte, de modo que «Tabla F4.3» pertenece al Paso 4 y «Tabla 12.5» pertenece al capítulo 12.
 
 | Parte | Contenido | Prefijo de tablas y figuras |
 | --- | --- | --- |
+| Soporte de la solicitud | Mensaje recibido, alianza de cuatro actores, roles, presupuesto por actor, beneficios, calendario hacia el documento técnico y borrador de correo | S |
 | I. Pasos del metaprompt | Pasos 0 a 7: configuración, información básica, vigilancia tecnológica, bibliometría, análisis causal, formalización del problema, alternativas e indicadores | F0 a F7 |
 | II. Capítulos del documento técnico | Capítulos 1 a 21: del planteamiento del problema al acta de constitución, con la bibliografía y los anexos A a N | 1 a 21 |
 | III. Paquete 1000X | Resumen ejecutivo, one-pager, pitch deck, capítulo de estrategia, modelo de negocio, análisis financiero, hoja de ruta, mapa de interesados, tablero de riesgos y checklist de cumplimiento | X1 a X10 |

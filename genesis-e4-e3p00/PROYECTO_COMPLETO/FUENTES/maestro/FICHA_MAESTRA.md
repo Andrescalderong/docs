@@ -258,6 +258,7 @@ Puntajes totales ponderados (escala 1 a 9): ALT-00 = 4,475; ALT-01 = 4,335; ALT-
 - DEC-F13 Estética: se aplica la paleta y la jerarquía tipográfica del usuario; excepción a FIG-02: opacidad 0,25 solo en la cuadrícula; el relleno de encabezados de tabla usa #B9D9EB con texto #2A3439 (contraste superior a 4,5:1; el texto sobre #6699CC no lo alcanza) y #6699CC como filete inferior del encabezado; filas alternas #F7F7F7.
 - DEC-F14 Numeración: tablas y figuras 'c.n' por capítulo; Parte I con prefijo F (F5.1), paquete 1000X con prefijo X (X6.1) y anexos con letra (A1).
 - DEC-F15 GWO no se activa porque el espacio de decisión (4 alternativas) es enumerable (AS-32).
+- DEC-F19 Alianza y presupuesto por actor (Parte inicial S): proponente universidad con grupo de investigación; municipio beneficiario sin aporte (regla del Anexo 2: una entidad no es cooperante y beneficiaria a la vez); actor reconocido por MinCiencias; empresa aliada. Las 56 líneas SGR se asignan a actores (Universidad 3.909,7 M; actor reconocido 852,0 M; empresa 4.505,6 M; municipio 0). PROPUESTO; requiere ratificación de la Universidad y verificación de la categoría de la empresa en los TdR.
 
 ## 12. Reglas de coherencia obligatorias
 
