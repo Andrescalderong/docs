@@ -2,7 +2,7 @@
 
 ## S.2 Qué pide el mensaje y dónde se responde
 
-El mensaje de la sección S.1 contiene nueve solicitudes. Cada una tiene una respuesta en esta parte inicial. La {T:t01} las relaciona con la sección que las contesta. El equipo remitente no podrá participar en la formulación porque atiende otro proyecto. Por esa razón, el calendario de la sección S.9 asigna a la Universidad la entrega de datos y la validación. La redacción queda en este documento.
+El mensaje de la sección S.1 contiene nueve solicitudes. Cada una tiene una respuesta en esta parte inicial. La {T:t01} las relaciona con la sección que las contesta. La sección S.13 responde a una solicitud posterior: verificar el presupuesto frente a la Convocatoria 56. El equipo remitente no podrá participar en la formulación porque atiende otro proyecto. Por esa razón, el calendario de la sección S.9 asigna a la Universidad la entrega de datos y la validación. La redacción queda en este documento.
 
 :::TABLA t01 | Solicitudes del mensaje y sección que las responde
 | N.º | Solicitud del mensaje | Respuesta | Sección |
@@ -13,7 +13,7 @@ El mensaje de la sección S.1 contiene nueve solicitudes. Cada una tiene una res
 | 4 | Presupuesto asociado a esas actividades y organizaciones | Presupuesto SGR y contrapartida por actor y por rubro | S.7 |
 | 5 | Opción más alineada al departamento y al terremoto | Alternativa única recomendada y criterios de selección del departamento | S.3 y S.4 |
 | 6 | Reunión con la Universidad | Agenda con decisiones y datos que se necesitan | S.10 |
-| 7 | Fechas claras del documento técnico completo | Calendario del 16 de octubre al 11 de noviembre de 2026 | S.9 |
+| 7 | Fechas claras del documento técnico completo | Calendario del 16 de octubre al 3 de noviembre de 2026 | S.9 |
 | 8 | Beneficio que recibe cada actor | Beneficios y obligaciones por actor | S.8 |
 | 9 | Correo con la presentación | Borrador listo para enviar | S.11 |
 :::NOTA *Nota.* Elaboración propia a partir del mensaje de la sección S.1. Los números de sección remiten a esta parte inicial.
@@ -231,44 +231,45 @@ En una frase por actor, la respuesta a la pregunta «y yo qué gano» es la sigu
 
 ## S.9 Calendario hacia el documento técnico completo
 
-La fecha límite de la convocatoria es el 11 de noviembre de 2026. Desde el 16 de octubre quedan 26 días calendario. El calendario de la {T:t12} fija fechas de entrega para que el documento técnico completo exista seis días hábiles antes del cierre. El 2 de noviembre es probablemente festivo por el traslado de Todos los Santos. El calendario oficial debe confirmarlo [DATO_USUARIO: hora de cierre en la plataforma].
+Dos fechas de cierre coinciden en los documentos del proyecto. La guía financiera de la Convocatoria 56 indica que la radicación cierra el 3 de noviembre de 2026 a las 4:00 p. m. La ficha del proyecto registra el 11 de noviembre. Este calendario usa la fecha más próxima. Los términos de referencia deben confirmar la correcta [DATO_USUARIO: fecha y hora de cierre confirmadas].
 
-:::TABLA t12 | Calendario propuesto del 16 de octubre al 11 de noviembre de 2026
+Desde el 16 de octubre quedan 18 días calendario hasta el 3 de noviembre. El 2 de noviembre es probablemente festivo por el traslado de Todos los Santos. La {T:t12} fija fechas de entrega para que el documento técnico exista cuatro días hábiles antes del cierre.
+
+:::TABLA t12 | Calendario propuesto del 16 de octubre al 3 de noviembre de 2026
 | Fecha | Hito | Responsable | Entregable |
 | --- | --- | --- | --- |
-| Vie 16 oct | Envío del correo con la presentación y este borrador | Persona usuaria | Correo y documento |
-| Mar 20 oct | Reunión con la Universidad | Persona usuaria y Universidad | Decisiones D1 a D8 de la sección S.10 |
-| Jue 22 oct | Datos de la Universidad | Universidad | Nombre, grupos, investigadores, certificación de contrapartida |
-| Lun 26 oct | Confirmación de municipio, actor reconocido y empresa | Universidad | Cartas de intención en borrador; lista de municipios |
-| Mié 28 oct | Congelamiento de datos de entrada | Universidad y empresa | Cotizaciones y presupuesto verificado |
-| Vie 30 oct | Documento técnico completo v1.0 | Persona usuaria | Documento sin datos pendientes y con verificadores ejecutados |
-| Mar 3 y mié 4 nov | Revisión cruzada por los cuatro actores | Los cuatro actores | Comentarios consolidados |
-| Jue 5 nov | Documento técnico v1.1 aprobado | Universidad | Versión final y carga de prueba en la plataforma |
-| Vie 6 nov | Cartas y certificaciones firmadas | Los cuatro actores | Cartas de compromiso y certificación de contrapartida |
-| Lun 9 nov | Verificación final de requisitos | Persona usuaria | Lista de chequeo sin alertas activas |
-| Mar 10 nov | Margen de seguridad | Universidad | Radicación anticipada sin cambios de contenido |
-| Mié 11 nov | Fecha límite de la convocatoria | Universidad | Proyecto radicado |
-:::NOTA *Nota.* Elaboración propia. Las fechas son PROPUESTAS y los días de la semana se verificaron con el calendario de 2026. La fecha límite es DECLARADA por el usuario. El festivo del 2 de noviembre queda NO_VERIFICADO.
+| Vie 16 oct | Envío del correo con la presentación y este borrador; confirmación de la fecha de cierre | Persona usuaria | Correo, documento y fecha de cierre confirmada |
+| Lun 19 oct | Reunión con la Universidad | Persona usuaria y Universidad | Decisiones D1 a D9 de la sección S.10 |
+| Mié 21 oct | Datos de la Universidad y confirmación de los cuatro actores | Universidad | Nombre, grupos, investigadores, certificación de contrapartida |
+| Vie 23 oct | Decisiones presupuestales de la sección S.13 y solicitud de cotizaciones | Universidad y empresa | Presupuesto ajustado y cotizaciones solicitadas |
+| Mar 27 oct | Cartas de intención, lista de municipios y reportes de afectación | Universidad y municipio | Cartas en borrador; lista de municipios afectados |
+| Mié 28 oct | Congelamiento de datos y recepción de cotizaciones | Universidad y empresa | Al menos dos cotizaciones por rubro; Anexo 3 diligenciado |
+| Jue 29 oct | Documento técnico completo v1.0 | Persona usuaria | Documento y Anexo 3 sin datos pendientes; verificadores ejecutados |
+| Vie 30 oct | Revisión cruzada, firma del representante legal y carga de prueba en SIGP | Los cuatro actores | Comentarios cerrados; archivos dentro de los límites de tamaño |
+| Lun 2 nov | Festivo probable: sin actividades | — | — |
+| Mar 3 nov | Radicación antes de las 12:00 m. | Universidad | Proyecto radicado; cierre a las 4:00 p. m. |
+:::NOTA *Nota.* Elaboración propia. Fechas PROPUESTAS; los días de la semana se verificaron con el calendario de 2026. La fecha del 3 de noviembre procede de la guía financiera de la Convocatoria 56 (NO_VERIFICADO frente a los términos de referencia). El festivo del 2 de noviembre queda NO_VERIFICADO.
 
-La regla de control es sencilla. Ningún dato que llegue después del 28 de octubre cambia la estructura del documento. Los datos tardíos se incorporan como anexos o como notas de corrección. Esa regla evita que la formulación se concentre en los últimos días.
+Si el cierre fuera el 11 de noviembre, la Universidad dispondría de seis días hábiles adicionales. El calendario no los consume. La regla de control es sencilla. Ningún dato posterior al 28 de octubre cambia la estructura del documento. Los datos tardíos se incorporan como anexos o como notas de corrección.
 
 
 ## S.10 Agenda de la reunión con la Universidad
 
-La reunión del 20 de octubre busca ocho decisiones. La {T:t13} las enumera con el motivo por el cual cada una condiciona el documento. La reunión dura 90 minutos y termina con un acta que asigna responsable y fecha a cada dato pendiente.
+La reunión del 19 de octubre busca nueve decisiones. La {T:t13} las enumera con el motivo por el cual cada una condiciona el documento. La reunión dura 90 minutos y termina con un acta que asigna responsable y fecha a cada dato pendiente.
 
 :::TABLA t13 | Decisiones y datos que se requieren de la Universidad
 | N.º | Decisión o dato | Por qué condiciona el documento |
 | --- | --- | --- |
 | D1 | Nombre de la universidad, grupo(s) de investigación y categoría vigente en MinCiencias | El proponente debe contar con un grupo de investigación, según los términos de referencia |
 | D2 | Departamento sede y municipio acompañante | Fija el territorio, los sitios y el comité beneficiario |
-| D3 | Actor reconocido por MinCiencias y su papel | Define el verificador independiente y la línea de formación |
+| D3 | Actor reconocido por MinCiencias, su papel y su contrapartida | Cada integrante de la alianza debe comprometer una contrapartida |
 | D4 | Empresa aliada, contrapartida y forma de contratación | Determina si la empresa puede ejecutar líneas del SGR |
 | D5 | Certificación de la contrapartida de 1.100 millones de COP | El expediente no la soporta y el riesgo R-FIN-02 la menciona |
 | D6 | Titularidad de la propiedad intelectual y destino de los equipos | Condiciona el beneficio de cada actor y la cláusula de apertura |
 | D7 | Nivel de madurez tecnológica objetivo: TRL 7 o TRL 9 | El Anexo 2 prioriza TRL 9 y el proyecto compromete TRL 7 |
-| D8 | Términos de referencia y anexos de la convocatoria | Sin ellos, la estructura y el puntaje siguen siendo supuestos |
-:::NOTA *Nota.* Elaboración propia. Los términos de referencia, el Plan de Desarrollo y los anexos de la convocatoria no se aportaron al proyecto (NO_VERIFICADO).
+| D8 | Fecha y hora de cierre, y términos de referencia completos | El 3 y el 11 de noviembre figuran como cierre en documentos distintos |
+| D9 | Ajustes del presupuesto de la sección S.13 | Seguros, movilidad, posdoctorado y reserva afectan el valor solicitado |
+:::NOTA *Nota.* Elaboración propia. Los términos de referencia completos, el Plan de Desarrollo y los demás anexos no se aportaron al proyecto (NO_VERIFICADO).
 
 
 ## S.11 Borrador del correo
@@ -281,7 +282,7 @@ Hola [DATO_USUARIO: nombre del destinatario],
 
 Gracias por tu mensaje. Aquí está la presentación que pediste, con una sola opción: la más alineada con la emergencia del terremoto.
 
-**1. Qué es el proyecto.** Una red de 100 nodos de bajo costo y 10 gateways mide PM2,5 y PM10 en sitios de remoción de escombros. Corrige el error de cada medición. Entrega un tablero y un protocolo de alerta a 15 comités de gestión del riesgo. Dura 24 meses. Solicita 9.267.260.000 COP al SGR y suma 2.110.000.000 COP de contrapartida.
+**1. Qué es el proyecto.** Una red de 100 nodos de bajo costo y 10 gateways mide PM2,5 y PM10 en sitios de remoción de escombros. Corrige el error de cada medición. Entrega un tablero y un protocolo de alerta a 15 comités de gestión del riesgo. Dura 24 meses. Solicita 9.267.260.000 COP al SGR y suma 2.110.000.000 COP de contrapartida. El presupuesto tiene ajustes pendientes frente a la convocatoria, descritos en la sección S.13.
 
 **2. Alianza propuesta.** La Universidad, con su grupo de investigación reconocido por MinCiencias, es la proponente. La acompañan un municipio beneficiario, un actor reconocido por MinCiencias y una empresa aliada.
 
@@ -291,9 +292,9 @@ Gracias por tu mensaje. Aquí está la presentación que pediste, con una sola o
 
 **5. Beneficio de cada actor.** Está en la sección S.8, con lo que cada uno recibe y lo que asume.
 
-**6. Fechas.** El documento técnico completo estará listo el 30 de octubre. Los cuatro actores lo revisan el 3 y el 4 de noviembre. La radicación se prevé el 10 de noviembre, un día antes del cierre.
+**6. Fechas.** La guía de la convocatoria indica cierre el 3 de noviembre a las 4:00 p. m. Por eso el documento técnico completo estará listo el 29 de octubre. Los cuatro actores lo revisan y firman el 30 de octubre. La radicación se prevé el 3 de noviembre antes del mediodía.
 
-**7. Lo que necesitamos.** Una reunión con la Universidad el 20 de octubre y los datos de la sección S.10 antes del 22 de octubre.
+**7. Lo que necesitamos.** Una reunión con la Universidad el 19 de octubre. Necesitamos también los datos de la sección S.10 antes del 21 de octubre. Y, de cada aliado, al menos dos cotizaciones por rubro antes del 28 de octubre.
 
 Quedo atento.
 
@@ -302,20 +303,85 @@ Quedo atento.
 
 ## S.12 ¿Qué se me escapa?
 
-Cinco vacíos pueden afectar la propuesta. La {T:t14} los relaciona con su riesgo y con una ruta de solución. El riesgo mayor es de calendario. Si la Universidad entrega los datos después del 28 de octubre, el documento llegaría al cierre sin certificaciones ni cartas.
+Seis vacíos pueden afectar la propuesta. La {T:t14} los relaciona con su riesgo y con una ruta de solución. El riesgo mayor es de calendario. Si la Universidad entrega los datos después del 28 de octubre, el documento llegaría al cierre sin certificaciones, cotizaciones ni cartas.
 
 :::TABLA t14 | Vacíos de la alianza, riesgo y ruta de solución
 | Vacío | Riesgo si no se resuelve | Ruta de solución |
 | --- | --- | --- |
-| Términos de referencia no aportados | La estructura, los topes y el puntaje siguen siendo supuestos | Solicitar los términos y el listado de municipios en la reunión del 20 de octubre |
+| Términos de referencia completos no aportados | La estructura, los topes y el puntaje siguen parcialmente supuestos | Obtener los términos en la reunión del 19 de octubre; hoy solo se consultó la guía financiera y el Anexo 3 |
+| Dos fechas de cierre: 3 y 11 de noviembre | Perder la radicación por una fecha equivocada | Confirmar la fecha y la hora con los términos de referencia |
 | La empresa no figura entre las categorías de puntuación | La empresa podría no ser aliada ni ejecutar líneas del SGR | Confirmar con los términos; si no procede, contratarla como proveedora |
 | El municipio como beneficiario no puede aportar recursos | Un aporte municipal lo convierte en cooperante | Mantener cartas de apoyo sin aporte económico |
 | Risaralda no está en la ficha maestra | El territorio podría quedar fuera del ámbito de la emergencia | Verificar la declaratoria antes de definir la sede |
 | El actor reconocido sin contrapartida ni papel pactado | La verificación independiente quedaría sin responsable | Acordar el papel y su valor en la reunión con la Universidad |
-:::NOTA *Nota.* Elaboración propia con el Anexo 2, la ficha maestra y los registros DEC-F del proyecto.
+:::NOTA *Nota.* Elaboración propia con el Anexo 2, la guía financiera de la Convocatoria 56, la ficha maestra y los registros DEC-F del proyecto.
 
-El premortem identifica una causa probable de fracaso: la Universidad no puede certificar la contrapartida o el grupo no tiene categoría vigente. La contingencia es preparar desde ya una segunda universidad candidata y reservar el 30 de octubre como fecha límite para decidir el cambio.
+El premortem identifica una causa probable de fracaso: la Universidad no puede certificar la contrapartida o el grupo no tiene categoría vigente. La contingencia es preparar desde ya una segunda universidad candidata y reservar el 28 de octubre como fecha límite para decidir el cambio.
 
 El valor estratégico de esta parte es doble. Responde las nueve solicitudes del mensaje en un solo lugar y convierte los roles de los actores en tablas verificables. Con ello reduce el riesgo de que MinCiencias detecte ambigüedad en las funciones y el presupuesto de cada organización.
 
 La decisión DEC-F19 registra tres hechos. La alianza propuesta tiene cuatro actores. El municipio es beneficiario sin aporte. El presupuesto se asigna por actor de forma PROPUESTA. Esa decisión queda sujeta a la ratificación de la Universidad.
+
+
+## S.13 Verificación del presupuesto frente a la Convocatoria 56
+
+La guía financiera de la Convocatoria 56 y el Anexo 3 oficial permiten verificar el presupuesto del proyecto. El Anexo 3 se descargó del portal de MinCiencias y se leyó su hoja de resumen. Los términos de referencia completos no se consultaron, y las exigencias de la guía son literales solo según su propia indicación de fuente. La {T:t15} resume 20 verificaciones. El proyecto cumple siete, incumple cinco, cumple parcialmente cuatro y deja cuatro pendientes de documentos que solo la alianza puede aportar.
+
+:::TABLA t15 | Verificación del proyecto frente a la Convocatoria 56
+| N.º | Exigencia | Estado del proyecto | Resultado | Acción |
+| --- | --- | --- | --- | --- |
+| 1 | Monto SGR hasta 14.000 millones de COP | Solicita $ 9.267.260.000 (66,2 %) | CUMPLE | Ninguna |
+| 2 | Duración hasta 24 meses | 24 meses | CUMPLE | Ninguna |
+| 3 | Contrapartida en efectivo de al menos 1 % del SGR para obtener puntos | Efectivo de 210 millones de COP (2,27 % del SGR) | CUMPLE | Certificar el efectivo |
+| 4 | Talento humano: 6 jóvenes investigadores con apoyo de 2.000.000 COP por 12 meses | P01: 6 × 12 × 2.000.000 = 144 millones de COP | CUMPLE | Verificar edad máxima de 28 años (diferencia entre TdR y Anexo 12) |
+| 5 | Talento humano: 2 estudiantes de maestría con apoyo de 4.350.000 COP y matrícula hasta 48 millones de COP | P02: apoyo de 208,8 millones de COP y matrícula de 96 millones de COP | CUMPLE | Ninguna |
+| 6 | Talento humano: 1 doctor en estancia posdoctoral con apoyo de 12.920.000 COP | No hay línea de posdoctorado; el proyecto tiene un científico de datos senior (P03) | NO CUMPLE | Reconvertir P03 o agregar la línea (310,08 millones de COP por 24 meses) |
+| 7 | Movilidad misional financiada por el SGR hasta 2 % del monto solicitado | Viajes V01 a V04: $ 432.000.000 (4,66 %); el tope es $ 185.345.200 | NO CUMPLE | Reducir al 2 % o trasladar el exceso a contrapartida |
+| 8 | Seguros excluidos de la financiación | S04 y O04 suman $ 110.000.000 | NO CUMPLE | Retirar del SGR; asumir con contrapartida |
+| 9 | Imprevistos asociados al análisis de riesgos y soportados en el análisis de costos | Reserva de $ 636.000.000 igual a la suma de los valores monetarios esperados de 12 riesgos | PARCIAL | Ubicarla en el rubro 11 y asociarla por rubro |
+| 10 | Cada integrante de la alianza debe comprometer contrapartida | Universidad y empresa sí; el actor reconocido no | NO CUMPLE | Pactar su aporte en efectivo o en especie |
+| 11 | Rubros del Anexo 3: 11 categorías oficiales | El presupuesto usa 7 categorías propias | PARCIAL | Trasladar con la {T:t16} |
+| 12 | Seguimiento con cálculo objetivo y sin porcentaje arbitrario | O05 asigna 15 millones de COP al mes sin memoria de cálculo | PARCIAL | Agregar actividades, perfiles y dedicaciones |
+| 13 | Software, nube y conectividad recurrentes: precisar financiabilidad y sostenibilidad | E10, E11, E12 y S10 suman $ 314.560.000 | PARCIAL | Justificar su uso durante el proyecto y asignar la operación posterior |
+| 14 | Sin doble financiación de una misma actividad | El aporte C05 de la empresa cubre logística y viáticos; V01 a V03 también | PENDIENTE | Separar los viajes que cubre cada fuente |
+| 15 | Presupuesto completo, sin depender de financiación futura indispensable | La custodia posterior depende de partidas de los custodios (R-ORG-02) | PENDIENTE | Documentar partidas y convenios de custodia |
+| 16 | Análisis de costos con dos cotizaciones por rubro | Los precios son DECLARADOS o PROPUESTOS; no hay cotizaciones | PENDIENTE | Solicitar cotizaciones; el Anexo 3 las pide después de la lista de elegibles y el Anexo 14 no admite subsanar su ausencia |
+| 17 | Anexo 3 oficial en Excel, con fecha y firma del representante legal | El presupuesto está en el formato del proyecto | PENDIENTE | Diligenciar la plantilla oficial; confirmar cómo se incorpora la firma |
+| 18 | Coherencia de valores entre SIGP, Anexos 1, 2 y 3 y la MGA | Los valores salen de una sola ficha maestra | CUMPLE | Reconciliar con SIGP y la MGA al cargar |
+| 19 | Honorarios de formulación no financiables | El presupuesto no incluye honorarios de formulación | CUMPLE | Ninguna |
+| 20 | Archivos en PDF de 3 MB como máximo; adjuntos comprimidos hasta 10 MB | El expediente completo pesa 30 MB en Word y 52 MB en PDF | NO CUMPLE | Radicar solo el documento técnico de 30 secciones y comprimir los soportes |
+:::NOTA *Nota.* Elaboración propia con la guía financiera de la Convocatoria 56 (fecha de corte 16 de octubre de 2026) y el Anexo 3 oficial. Las exigencias son NO_VERIFICADAS frente a los términos de referencia completos, que no se aportaron. Algunas cifras de la guía son ejemplos ilustrativos.
+
+La {T:t16} traslada las 56 líneas a las 11 categorías oficiales del Anexo 3. El rubro de infraestructura queda en cero, porque el proyecto no adecúa infraestructura. El rubro de administrativos queda en cero, porque la administración del proyecto se registra en seguimiento.
+
+:::TABLA t16 | Presupuesto SGR trasladado a los 11 rubros del Anexo 3
+| N.º | Rubro del Anexo 3 | Líneas del proyecto | Valor SGR (M COP) | % del SGR |
+| --- | --- | --- | --- | --- |
+| 1 | Talento humano | P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14 | 4.552,8 | 49,1 |
+| 2 | Equipos y software | E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11 | 1.851,0 | 20,0 |
+| 3 | Capacitación y eventos | M05, S09, V05, O02 | 282,0 | 3,0 |
+| 4 | Servicios tecnológicos y pruebas | E12, S01, S03, S05, S06, S08, S10 | 485,6 | 5,2 |
+| 5 | Materiales, insumos y documentación | M01, M02, M03, M06, M07 | 170,4 | 1,8 |
+| 6 | Protección del conocimiento y divulgación | M04, S02, O01, O03, O06 | 187,5 | 2,0 |
+| 7 | Gastos de viaje | V01, V02, V03, V04 | 432,0 | 4,7 |
+| 8 | Infraestructura | — | 0,0 | 0,0 |
+| 9 | Administrativos | — | 0,0 | 0,0 |
+| 10 | Seguimiento | S07, O05 | 480,0 | 5,2 |
+| 11 | Otros | S04, S11, O04, X01 | 826,0 | 8,9 |
+|  | Total | 56 líneas | 9.267,3 | 100,0 |
+:::NOTA *Nota.* Elaboración propia con la ficha maestra y la hoja RESUMEN del Anexo 3. La asignación de cada línea a un rubro es PROPUESTA. S04 y O04 se muestran en Otros solo para evidenciar que son seguros no financiables.
+
+Cuatro ajustes llevan el presupuesto al cumplimiento mínimo. Se retiran los seguros del SGR. Se reconvierte el cargo de científico de datos senior en el posdoctorado exigido. Se reduce la movilidad al 2 % del valor SGR resultante. Se mantiene la reserva, ubicada en el rubro 11 y asociada al análisis de riesgos. La {T:t17} calcula el resultado.
+
+:::TABLA t17 | Escenario de ajuste mínimo del presupuesto SGR
+| Concepto | Valor SGR (M COP) | Observación |
+| --- | --- | --- |
+| Presupuesto SGR actual | 9.267,3 | 56 líneas |
+| Retiro de seguros (S04 y O04) | −110,0 | Se asumen con contrapartida si la alianza los mantiene |
+| Reconversión de P03 en posdoctorado | −169,9 | De 480,0 a 310,1 millones de COP; valor fijado por el numeral 14.4 |
+| Reducción de movilidad al 2 % | −257,4 | Movilidad resultante: 174,6 millones de COP |
+| Presupuesto SGR ajustado | 8.729,9 | Tope de 14.000 millones de COP: se mantiene |
+| Contrapartida adicional si se mantienen los gastos retirados | 367,4 | Seguros y exceso de movilidad; sin doble financiación |
+:::NOTA *Nota.* Elaboración propia (CALCULADO). El ajuste exige decisión de la alianza (D9). El valor ajustado cambia las metas porcentuales de la sección S.7 y la contrapartida de la sección 28.
+
+Mientras la alianza no decida, el documento conserva el presupuesto original en las secciones 15 y 28 y señala la advertencia. El Anexo 3 oficial en Excel debe diligenciarse con el presupuesto ajustado. El proyecto no cumple todavía las exigencias de radicación en tamaño de archivo ni en presupuesto, y la causa es corregible antes del cierre.

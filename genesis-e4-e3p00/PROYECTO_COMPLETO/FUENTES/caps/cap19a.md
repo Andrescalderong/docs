@@ -1,9 +1,9 @@
-%% PREFIJO: 19
+%% PREFIJO: 29
 
-# Capítulo 19. Bibliografía
+# 29. BIBLIOGRAFÍA
 
 
-## 19.1 Referencias Bibliográficas
+## 29.1 Referencias bibliográficas
 
 Esta lista reúne las 156 obras citadas en el documento, ordenadas alfabéticamente y con sangría francesa, en formato APA 7. Cada cita del texto corresponde a una referencia de la lista, y cada referencia de la lista se cita al menos una vez. Cuando dos obras comparten autor y año, el año lleva una letra: 2012a y 2012b distinguen la Ley 1523 de la Ley 1581. La lista no incluye obras no citadas.
 

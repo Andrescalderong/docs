@@ -1,6 +1,6 @@
-%% PREFIJO: 19
+%% PREFIJO: 29
 
-## 19.2 Análisis Bibliométrico de Referencias
+## 29.2 Análisis bibliométrico de las referencias
 
 El análisis describe la composición de las 156 referencias por tipo de fuente, por año de publicación, por origen y por estado de verificación. El cuartil de las revistas no se consultó en esta corrida, porque no se accedió a SJR ni a JCR. La {T:t01} presenta el resumen estadístico.
 
