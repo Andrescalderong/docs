@@ -23,7 +23,13 @@ def fix(src, dst):
             s = s.replace('<w:tblHeader w:val="true"/><w:tblHeader/>', '<w:tblHeader/>').replace('<w:tblHeader w:val="true"/>', '<w:tblHeader/>')
             s = s.replace('<w:cantSplit w:val="true"/>', '<w:cantSplit/>')
             s = s.replace('<w:jc w:val="start"/>', '<w:jc w:val="left"/>').replace('<w:jc w:val="end"/>', '<w:jc w:val="right"/>')
+            s = re.sub(r'<w:pgMar ((?:(?!w:gutter)[^>])*?)/>', lambda m: '<w:pgMar ' + m.group(1).rstrip() + ' w:gutter="0"/>', s)
             b = s.encode('utf8'); print('marcadores renombrados:', len(mp))
+        elif re.fullmatch(r'word/(header|footer)\d+\.xml', it.filename):
+            s = b.decode('utf8')
+            s = re.sub(r'w:firstLine="-?[0-9.]+"', 'w:firstLine="0"', s)
+            s = re.sub(r'(<wps:cNvSpPr[^>]*/>)(<wps:cNvPr [^>]*/>)', r'\2\1', s)
+            b = s.encode('utf8')
         elif it.filename == 'word/styles.xml':
             s = b.decode('utf8')
             if 'w:styleId="TableNormal"' not in s:

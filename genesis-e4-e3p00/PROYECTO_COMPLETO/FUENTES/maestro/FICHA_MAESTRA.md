@@ -279,6 +279,7 @@ Puntajes totales ponderados (escala 1 a 9): ALT-00 = 4,475; ALT-01 = 4,335; ALT-
 - DEC-F20 Cierre de radicación: 3 de noviembre de 2026, 4:00 p. m. (decisión del usuario del 16-oct-2026). Sustituye al 11 de noviembre de la ficha anterior.
 - DEC-F21 Ajuste del presupuesto a la guía financiera de la Convocatoria 56 (decisión del usuario del 16-oct-2026): se retiran los seguros (S04 y O04, 110 M); P03 pasa a doctor en estancia posdoctoral (24 meses × 12,92 M, numeral 14.4); la movilidad (V01 a V04) se reduce a 174,5 M, 2 % del SGR; las líneas se presentan en los 11 rubros del Anexo 3; la reserva se conserva en el rubro 11 asociada al análisis de riesgos. El exceso de viajes lo cubre la logística de emergencia de la empresa (C05). Si los TdR aclaran que el tope de 2 % no aplica a viajes de campo, se restituyen 257,5 M.
 - DEC-F22 Formato de radicación: el documento técnico se entrega en las 30 secciones del Anexo 2 (PDF de 3 MB como máximo); el expediente completo se entrega aparte, comprimido (10 MB como máximo).
+- DEC-F23 Formato del documento: el expediente completo se presenta en el formato oficial del Anexo 2 (plantilla, Arial, tablas con encabezado verde); las figuras conservan la plantilla visual.
 
 ## 12. Reglas de coherencia obligatorias
 

@@ -49,7 +49,7 @@ La estructura obedece a la secuencia del metaprompt GENESIS-CTeI 36.10 RC2 y se 
 
 ## F0.4 Convenciones de presentación
 
-El usuario fijó dos reglas de presentación el 13 de octubre de 2026. La primera adopta los cinco niveles de encabezado de la séptima edición de las normas APA (American Psychological Association, 2020). La segunda impone una sola plantilla visual para todas las figuras y tablas. Ambas reglas se aplican al documento completo mediante estilos de Word y una hoja de estilo gráfica común. Ningún capítulo usa un criterio propio.
+El usuario fijó dos reglas de presentación el 13 de octubre de 2026. La primera adopta los cinco niveles de encabezado de la séptima edición de las normas APA (American Psychological Association, 2020). La segunda impone una sola plantilla visual para todas las figuras y tablas. Ambas reglas se aplican al documento completo mediante estilos de Word y una hoja de estilo gráfica común. Ningún capítulo usa un criterio propio. El 16 de octubre de 2026 el usuario ordenó presentar el documento en el formato oficial del Anexo 2 de la convocatoria (decisión DEC-F23). Esa decisión reemplaza la presentación de encabezados y de tablas descrita abajo, y conserva la plantilla visual para las figuras.
 
 ### F0.4.1 Jerarquía de encabezados
 
@@ -58,7 +58,7 @@ La {T:t04} describe los cinco niveles. Los niveles 1 a 3 aparecen en la tabla de
 :::TABLA t04 | Niveles de encabezado según APA 7 aplicados al documento
 | Nivel | Formato | Ubicación del texto | Uso en el documento |
 | --- | --- | --- | --- |
-| 1 | Centrado, negrita, mayúscula inicial en cada palabra principal | Párrafo nuevo bajo el título | Pasos, capítulos, paquete 1000X y cierre |
+| 1 | Alineado a la izquierda, negrita, mayúscula sostenida (formato Anexo 2, DEC-F23) | Párrafo nuevo bajo el título | Pasos, capítulos, paquete 1000X y cierre |
 | 2 | Alineado a la izquierda, negrita | Párrafo nuevo bajo el título | Secciones numeradas (por ejemplo, 8.2) |
 | 3 | Alineado a la izquierda, negrita cursiva | Párrafo nuevo bajo el título | Subsecciones numeradas (por ejemplo, 8.2.1) |
 | 4 | Sangría de 1,27 cm, negrita, con punto final | Misma línea que el título | Apartados dentro de una subsección |
@@ -73,7 +73,7 @@ La plantilla visual asigna una función a cada color y define una jerarquía tip
 
 Las figuras siguen cuatro reglas adicionales. El título de la figura enuncia el hallazgo en negrita y el subtítulo indica variable, periodo y unidades en peso normal. Las etiquetas de datos se escriben junto a la marca y no en una leyenda separada. Los ejes superior y derecho no se dibujan, y la cuadrícula horizontal es una línea discontinua fina con opacidad de 0,25. El fondo es transparente, con exportación recortada al contenido. Este último criterio exceptúa la regla FIG-02 del metaprompt, que prohíbe la cuadrícula, por instrucción expresa del usuario (decisión DEC-F13).
 
-Las tablas siguen el estilo APA. El rótulo («Tabla c.n») va en negrita y el título en cursiva, sin punto final. La tabla lleva un filete superior, otro inferior y otro bajo el encabezado. La nota comienza con la palabra «Nota» en cursiva. Ninguna tabla lleva líneas verticales. El encabezado usa relleno #B9D9EB y texto #2A3439; las filas pares usan #F7F7F7. Las tablas con doce o más columnas se imprimen en hoja apaisada.
+Las tablas siguen el formato del Anexo 2 (decisión DEC-F23). El rótulo («Tabla c.n») va en negrita y el título en cursiva, sin punto final. La tabla lleva bordes negros en todas las celdas. El encabezado usa relleno verde #00B050 con texto blanco en negrita y centrado. La nota comienza con la palabra «Nota» en cursiva. Las tablas con doce o más columnas se imprimen en hoja apaisada.
 
 ### F0.4.3 Convenciones de redacción y de trazabilidad
 
@@ -101,6 +101,7 @@ La formulación exigió quince decisiones que resuelven contradicciones del expe
 | DEC-F13 | Estética: se aplica la paleta y la jerarquía tipográfica del usuario; excepción a FIG-02: opacidad 0,25 solo en la cuadrícula; el relleno de encabezados de tabla usa #B9D9EB con texto #2A3439 (contraste superior a 4,5:1; el texto sobre #6699CC no lo alcanza) y #6699CC como filete inferior del encabezado; filas alternas #F7F7F7. |
 | DEC-F14 | Numeración: tablas y figuras 'c.n' por capítulo; Parte I con prefijo F (F5.1), paquete 1000X con prefijo X (X6.1) y anexos con letra (A1). |
 | DEC-F15 | GWO no se activa porque el espacio de decisión (4 alternativas) es enumerable (AS-32). |
+| DEC-F23 | Formato: el documento completo se presenta con el formato oficial del Anexo 2 (encabezado y pie de la plantilla, Arial, encabezados en mayúscula sostenida, tablas con encabezado verde #00B050 y bordes negros). Las figuras conservan la plantilla visual de DEC-F13. |
 :::NOTA *Nota.* Elaboración propia con la ficha maestra (sección 11). Naturaleza: PROPUESTO. Las decisiones DEC-F05 y DEC-F09 dependen de la ratificación del panel evaluador.
 
 ## F0.6 Valor que crea el paso

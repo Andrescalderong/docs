@@ -3,7 +3,7 @@
 Uso: python3 build.py LISTA.json SALIDA_BASE   (LISTA.json: [[ruta, 'cap'|'raw'], ...] ; opciones en 'opts')"""
 import sys, os, json, subprocess, re
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-import ensamblar, post_apa, docx
+import ensamblar, post_apa, post_a2, docx
 import pypdf, unicodedata
 os.environ['LC_ALL'] = 'C.UTF-8'
 FLAGS = '-f markdown-smart-raw_html-tex_math_dollars-citations-superscript-subscript-implicit_header_references-yaml_metadata_block-pandoc_title_block-fancy_lists-raw_tex-inline_notes-footnotes'
@@ -34,11 +34,14 @@ def main(lista, base):
     reg = ensamblar.ensamblar(entradas, md)
     json.dump({'tab': {f'{k[0]}|{k[1]}': v for k, v in reg['tab'].items()}, 'fig': {f'{k[0]}|{k[1]}': v for k, v in reg['fig'].items()}},
               open(base + '_registro.json', 'w'), ensure_ascii=False)
-    cmd = ['pandoc', md] + FLAGS.split() + ['-t', 'docx', f'--reference-doc={os.path.join(HERE, "reference_apa.docx")}', '--wrap=none', '--toc', '--toc-depth=3',
-           '--no-highlight', '-M', f'title={opts.get("title", "Proyecto")}', '-M', f'subtitle={opts.get("subtitle", "")}', '-M', 'lang=es-CO',
-           '-M', 'toc-title=Contenido', '-o', raw]
+    a2 = opts.get('formato') == 'a2'
+    cmd = ['pandoc', md] + FLAGS.split() + ['-t', 'docx', f'--reference-doc={os.path.join(HERE, "reference_a2.docx" if a2 else "reference_apa.docx")}', '--wrap=none', '--toc', '--toc-depth=3',
+           '--no-highlight', '-M', 'lang=es-CO', '-M', 'toc-title=Contenido', '-o', raw]
+    if not a2: cmd[-2:-2] = ['-M', f'title={opts.get("title", "Proyecto")}', '-M', f'subtitle={opts.get("subtitle", "")}']
     subprocess.run(cmd, check=True)
-    post_apa.postprocesar(raw, d0, portada=opts.get('portada'))
+    if a2: post_a2.postprocesar(raw, d0, opts)
+    else: post_apa.postprocesar(raw, d0, portada=opts.get('portada'))
+    tab = 9974 if a2 else 9360
     d = docx.Document(d0); post_apa.marcar_bookmarks(d); d.save(d0)
     d = docx.Document(d0)
     H = post_apa.titulos(d)
@@ -46,9 +49,9 @@ def main(lista, base):
     pgs = [1] * len(H); pt = [1] * len(ET); pf = [1] * len(EF)
     for it in range(6):
         d = docx.Document(d0)
-        post_apa.construir_toc(d, H, pgs)
-        post_apa.construir_lista(d, '@@INDICE_TABLAS@@', ET, pt)
-        post_apa.construir_lista(d, '@@INDICE_FIGURAS@@', EF, pf)
+        post_apa.construir_toc(d, H, pgs, tab)
+        post_apa.construir_lista(d, '@@INDICE_TABLAS@@', ET, pt, tab)
+        post_apa.construir_lista(d, '@@INDICE_FIGURAS@@', EF, pf, tab)
         post_apa.reorder(d.element)
         d.save(fin)
         subprocess.run(['python3', os.path.join(HERE, 'lo_export2.py'), fin, pdf, base + '_pag.json'], check=True)
