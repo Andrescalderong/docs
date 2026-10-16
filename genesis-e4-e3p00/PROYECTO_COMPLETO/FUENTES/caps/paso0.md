@@ -13,9 +13,9 @@ La {T:t01} registra la identificación de la convocatoria. Los valores del exped
 | Nombre de la convocatoria | Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56) | Paso 1 del usuario (E3-P00) | DECLARADO | NO_VERIFICADO |
 | Entidad financiadora | Sistema General de Regalías (SGR) / Ministerio de Ciencia, Tecnología e Innovación (MinCiencias) | Paso 1 del usuario (E3-P00) | DECLARADO | NO_VERIFICADO |
 | Tipología del proyecto | Investigación aplicada, desarrollo tecnológico e innovación | Paso 1 del usuario (E3-P00) | DECLARADO | NO_APLICA |
-| Fecha límite de presentación | 11 de noviembre de 2026 (cierre de ajustes) | Paso 1 del usuario (E3-P00) | DECLARADO | NO_VERIFICADO |
+| Fecha límite de presentación | 3 de noviembre de 2026, 4:00 p. m. | Paso 1 del usuario (E3-P00) | DECLARADO | NO_VERIFICADO |
 | Presupuesto máximo por proyecto | $ 14.000.000.000 COP | Paso 1 del usuario (E3-P00) | DECLARADO | NO_VERIFICADO |
-| Contrapartida requerida (%) | [DATO_USUARIO: porcentaje exigido por los TdR]. Contrapartida ofrecida: $ 2,110,000,000 COP, equivalente a 22,8 % del valor solicitado al SGR y a 18,5 % del total | Cálculo sobre maestro.py | CALCULADO | NO_VERIFICADO |
+| Contrapartida requerida (%) | [DATO_USUARIO: porcentaje exigido por los TdR]. Contrapartida ofrecida: $ 2,110,000,000 COP, equivalente a 22,8 % del valor solicitado al SGR y a 19,5 % del total | Cálculo sobre maestro.py | CALCULADO | NO_VERIFICADO |
 | Duración máxima (meses) | 24 meses de ejecución (104 semanas) y 12 meses de seguimiento posproyecto | Paso 1 del usuario y decisión DEC-F08 | DECLARADO y PROPUESTO | NO_VERIFICADO |
 :::NOTA *Nota.* Elaboración propia con el expediente E3-P00 y la ficha maestra (sección 1). Los TdR no se aportaron; la regla bloqueante de articulación territorial (Paso 5.0) queda registrada como reserva en el cierre del documento.
 
@@ -91,7 +91,7 @@ La formulación exigió quince decisiones que resuelven contradicciones del expe
 | DEC-F03 | Estrategia de despliegue: R4 de 4.4-MDR (tramos con piloto de contraste y custodia distribuida), con compuertas C1 y C2 que liberan las compras del tramo siguiente. |
 | DEC-F04 | Meta de desempeño: R² ≥ 0,70 y NRMSE ≤ 30 % frente a referencia (ancla EPA, 2021); NMAE ≤ 15 % aspiracional; línea base medida en el tramo 1 (corrige HR-14: tres metas contradictorias). |
 | DEC-F05 | TRL final 7 (no 8): demostración en entorno operativo; TRL 8 exige calificación independiente que el plazo no cubre. |
-| DEC-F06 | Presupuesto: se solicita la suma justificada por actividad (66,2 % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10). |
+| DEC-F06 | Presupuesto: se solicita la suma justificada por actividad (62,4 % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10). |
 | DEC-F07 | Contrapartida: 2.110 M (IES 1.100 en especie; empresa 210 en efectivo y 800 en especie), valores del expediente E3 con desglose de la IES reconstruido; certificaciones pendientes; las alcaldías no aportan (VACIO). |
 | DEC-F08 | Cronograma: red de 17 actividades con ruta crítica igual a la duración (104 semanas); importación de 12 semanas máximo por lote; compras por tramo y no 100 % en la semana 2 (corrige HR-11). |
 | DEC-F09 | Alternativa seleccionada: ALT-03 híbrida por tramos, condicionada a la ratificación del panel; el puntaje no se interpreta como probabilidad de éxito. |

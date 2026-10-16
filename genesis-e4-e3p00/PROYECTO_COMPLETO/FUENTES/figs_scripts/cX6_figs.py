@@ -61,7 +61,7 @@ def f03():
     filas = filas[::-1]
     mayor = filas[-1]
     fig, ax = E.lienzo(h1=f"El plazo mueve el valor solicitado hasta ±{E.num(mayor['expo'] * 0.2 / M, 1)} millones con una variación de ±20 %",
-                       h2="Variación del valor solicitado al SGR frente a la base de 9.267,3 millones de COP, una variable a la vez", figsize=(10, 5.6))
+                       h2="Variación del valor solicitado al SGR frente a la base de 8.729,8 millones de COP, una variable a la vez", figsize=(10, 5.6))
     y = np.arange(len(filas))
     for i, f in enumerate(filas):
         e = f["expo"] / M

@@ -96,7 +96,7 @@ def f02():
     fig, ax = E.lienzo(h1=f"El SGR se ejecuta {pct(c1)} % hasta la compuerta C1 y {pct(c2)} % hasta C2",
                        h2=None, figsize=(10, 6.2))
     fig.subplots_adjust(left=0.08, right=0.97, top=0.86, bottom=0.11)
-    _h2(fig, "Ejecución acumulada por mes, en porcentaje del valor de cada fuente (SGR: 9.267,3 M COP; contrapartida: 2.110,0 M COP)".replace("9.267,3", M.mm(SGR)).replace("2.110,0", M.mm(CONTRA)))
+    _h2(fig, "Ejecución acumulada por mes, en porcentaje del valor de cada fuente (SGR: 8.729,8 M COP; contrapartida: 2.110,0 M COP)".replace("8.729,8", M.mm(SGR)).replace("2.110,0", M.mm(CONTRA)))
     ax.plot(meses, ys, color=E.AZUL, lw=2.4, marker="o", ms=4.2, mfc=E.AZUL, mec=E.TINTA, mew=0.6, label="SGR", zorder=3)
     ax.plot(meses, yc, color=E.MEDIO, lw=2.0, ls="--", marker="s", ms=3.8, mfc=E.CLARO, mec=E.TINTA, mew=0.6, label="Contrapartida", zorder=2)
     # compuertas

@@ -15,7 +15,7 @@ def tabla(tid, titulo, filas, nota):
 A("%% PREFIJO: F1")
 A("# Paso 1. Información básica del proyecto")
 A("")
-A("El sistema se configura para la Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56). La entidad financiadora es el Sistema General de Regalías (SGR), con el Ministerio de Ciencia, Tecnología e Innovación (MinCiencias). La tipología es investigación aplicada, desarrollo tecnológico e innovación. La fecha límite declarada es el 11 de noviembre de 2026. El Paso 1 se organiza en cinco secciones: identificación, caracterización del problema, hipótesis de solución, contexto y alcance, y capacidades. Cada sección contrasta la respuesta del expediente E3-P00 con el valor adoptado en esta formulación. Cada fila declara la naturaleza del dato y su estado de verificación.")
+A("El sistema se configura para la Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56). La entidad financiadora es el Sistema General de Regalías (SGR), con el Ministerio de Ciencia, Tecnología e Innovación (MinCiencias). La tipología es investigación aplicada, desarrollo tecnológico e innovación. La fecha límite es el 3 de noviembre de 2026 a las 4:00 p. m.. El Paso 1 se organiza en cinco secciones: identificación, caracterización del problema, hipótesis de solución, contexto y alcance, y capacidades. Cada sección contrasta la respuesta del expediente E3-P00 con el valor adoptado en esta formulación. Cada fila declara la naturaleza del dato y su estado de verificación.")
 A("")
 A("## F1.1 Identificación del proyecto (Sección A)")
 A("")
@@ -68,7 +68,7 @@ tabla("t03", "Hipótesis de solución", [
 ], "*Nota.* Elaboración propia con el expediente E3-P00 (Paso 1, Sección C) y la ficha maestra (sección 2).")
 A("## F1.4 Contexto y alcance (Sección D)")
 A("")
-A("La Sección D fija territorio, duración, presupuesto y participantes. La {T:t04} contiene los siete campos. El valor solicitado al SGR se reduce de 14.000 millones al monto justificado por actividad, " + M.cop(M.total(M.BUDGET)) + " COP. Ese monto equivale a 66,2 % del tope declarado (DEC-F06). La diferencia no se solicita y se describe como opciones de ampliación condicionadas a los términos de referencia. Los beneficiarios directos se cuantifican por comité: 15 comités y 150 funcionarios, a razón de 10 por comité (SUPUESTO).")
+A("La Sección D fija territorio, duración, presupuesto y participantes. La {T:t04} contiene los siete campos. El valor solicitado al SGR se reduce de 14.000 millones al monto justificado por actividad, " + M.cop(M.total(M.BUDGET)) + " COP. Ese monto equivale a 62,4 % del tope declarado (DEC-F06). La diferencia no se solicita y se describe como opciones de ampliación condicionadas a los términos de referencia. Los beneficiarios directos se cuantifican por comité: 15 comités y 150 funcionarios, a razón de 10 por comité (SUPUESTO).")
 A("")
 tabla("t04", "Contexto y alcance", [
  ("Ubicación geográfica", "Caldas, Cundinamarca y Valle del Cauca, en zonas con declaratoria de calamidad por escombros (Anexo 8)", "Caldas (33 nodos), Cundinamarca (34) y Valle del Cauca (33); 12 municipios [DATO_USUARIO: lista y polígonos]", "SUPUESTO", "NO_VERIFICADO"),

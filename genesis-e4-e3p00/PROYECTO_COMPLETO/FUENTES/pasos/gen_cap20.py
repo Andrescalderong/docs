@@ -151,7 +151,7 @@ fil8.append(("Total SGR",) + tuple(mm(x) for x in tot_sem) + (mm(sum(tot_sem)),)
 assert abs(sum(tot_sem) - SGR) < 5
 d.tabla("a08", "Valor solicitado al SGR por rubro y semestre, en millones de COP",
         ["Rubro", "Semestre 1", "Semestre 2", "Semestre 3", "Semestre 4", "Total"], fil8,
-        "*Nota.* Elaboración propia con datos de maestro.py (spread y flujo de equipos por tramo). Las compras de nodos, cabezales y gateways se asignan a los meses 5, 13 y 18. Los totales por semestre son 2.689,3; 1.936,1; 2.634,1 y 2.007,8 millones de COP. Naturaleza: CALCULADO. Decimales con coma.")
+        "*Nota.* Elaboración propia con datos de maestro.py (spread y flujo de equipos por tramo). Las compras de nodos, cabezales y gateways se asignan a los meses 5, 13 y 18. Los totales por semestre son 2.557,9; 1.804,7; 2.497,2 y 1.869,9 millones de COP. Naturaleza: CALCULADO. Decimales con coma.")
 wp = collections.OrderedDict((k, collections.OrderedDict()) for k in ["WP0", "WP1", "WP2", "WP3"])
 for r in sgr:
     wp[r["wbs"]][r["rubro"]] = wp[r["wbs"]].get(r["rubro"], 0) + r["total"]
@@ -163,7 +163,7 @@ fil9.append(("Total",) + tuple(mm(sum(wp[k].get(x, 0) for k in wp)) for x in rub
 d.tabla("a09", "Valor solicitado al SGR por paquete de trabajo y rubro, en millones de COP",
         ["WP", "Personal", "Equipos", "Materiales", "Servicios", "Viajes", "Otros", "Reserva", "Total"], fil9,
         "*Nota.* Elaboración propia con datos de maestro.py (campo wbs de cada línea). Equipos: equipos y software; Materiales: materiales e insumos; Servicios: servicios técnicos; Viajes: viajes y viáticos; Otros: otros rubros; Reserva: reserva de contingencia. La reserva se asigna a WP0. Naturaleza: CALCULADO. Decimales con coma.")
-d.p("El formato de la entidad puede exigir códigos presupuestales propios, que la ficha no contiene [DATO_USUARIO: códigos presupuestales del formato de la entidad]. El archivo de hoja de cálculo reúne las 56 líneas del SGR y las seis de contrapartida. Se genera a partir del libro maestro cuando el usuario fije el formato.")
+d.p("El formato de la entidad puede exigir códigos presupuestales propios, que la ficha no contiene [DATO_USUARIO: códigos presupuestales del formato de la entidad]. El archivo de hoja de cálculo reúne las 54 líneas del SGR y las seis de contrapartida. Se genera a partir del libro maestro cuando el usuario fije el formato.")
 
 # ---------------------------------------------------------------- H
 d.h(2, "Anexo H. Cronograma detallado")

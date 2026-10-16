@@ -6,7 +6,7 @@ La {T:t07} identifica a los participantes con la tabla del Anexo 2. La regla de 
 :::TABLA t07 | Análisis de participantes
 | Datos de la entidad | Posición | Contribución o gestión |
 | --- | --- | --- |
-| Actor: Otro. Entidad: Sistema General de Regalías, Asignación de CTeI. Intereses: financiar investigación aplicada para la emergencia | Cooperante | Financiar el proyecto con $ 9.267.260.000 de la Asignación de CTeI del SGR |
+| Actor: Otro. Entidad: Sistema General de Regalías, Asignación de CTeI. Intereses: financiar investigación aplicada para la emergencia | Cooperante | Financiar el proyecto con $ 8.729.840.000 de la Asignación de CTeI del SGR |
 | Actor: Académico. Entidad: [DATO_USUARIO: universidad proponente]. Intereses: investigación aplicada, formación y publicaciones | Cooperante | Formular y ejecutar el proyecto; calibrar y validar el modelo; aportar 1.100 millones de COP en especie; administrar y rendir cuentas |
 | Actor: Centro o instituto de CTeI. Entidad: [DATO_USUARIO: actor reconocido por MinCiencias]. Intereses: capacidad de referencia metrológica | Cooperante | Verificar de forma independiente la medición, ensayar el desempeño y formar a los custodios |
 | Actor: Empresa. Entidad: [DATO_USUARIO: empresa aliada]. Intereses: producto validado en entorno operativo | Cooperante | Diseñar, fabricar, instalar y operar la red y la plataforma; aportar 210 millones de COP en efectivo y 800 millones en especie |
@@ -196,7 +196,7 @@ Las líneas temáticas y los componentes de los términos de referencia no se ap
 
 # 15. CADENA DE VALOR
 
-La {T:t15} relaciona cada objetivo con sus productos, el medio de verificación, la meta y las actividades. Las actividades de administración y apoyo a la supervisión aparecen en cada objetivo. La {T:t16} valora cada actividad con la asignación de las 56 líneas del presupuesto SGR, de modo que la suma coincide con el total solicitado.
+La {T:t15} relaciona cada objetivo con sus productos, el medio de verificación, la meta y las actividades. Las actividades de administración y apoyo a la supervisión aparecen en cada objetivo. La {T:t16} valora cada actividad con la asignación de las 54 líneas del presupuesto SGR, de modo que la suma coincide con el total solicitado.
 
 :::TABLA t15 | Cadena de valor
 | Objetivo específico | Producto | Medido a través de | Cantidad o meta | Actividades asociadas |
@@ -214,39 +214,39 @@ La {T:t15} relaciona cada objetivo con sus productos, el medio de verificación,
 :::TABLA t16 | Valor de cada actividad (recursos SGR)
 | Objetivo | Actividad | Meses | Valor SGR |
 | --- | --- | --- | --- |
-| OE1 | A0.1 Contratar equipo y firmar convenios de ejecución | 1 a 2 | $ 216.666.668 |
-| OE1 | A1.1 Seleccionar sitios y diseñar la colocalización | 2 a 3 | $ 111.120.000 |
-| OE1 | A1.2 Adquirir y caracterizar lote 1 de nodos y referencias | 4 a 6 | $ 995.800.000 |
-| OE1 | A1.3 Colocalizar y calibrar en el piloto (tramo 1) | 6 a 10 | $ 623.763.793 |
-| OE1 | A1.4 Entrenar y validar el modelo de corrección | 10 a 12 | $ 212.240.000 |
+| OE1 | A0.1 Contratar equipo y firmar convenios de ejecución | 1 a 2 | $ 106.666.668 |
+| OE1 | A1.1 Seleccionar sitios y diseñar la colocalización | 2 a 3 | $ 99.792.000 |
+| OE1 | A1.2 Adquirir y caracterizar lote 1 de nodos y referencias | 4 a 6 | $ 967.480.000 |
+| OE1 | A1.3 Colocalizar y calibrar en el piloto (tramo 1) | 6 a 10 | $ 480.251.793 |
+| OE1 | A1.4 Entrenar y validar el modelo de corrección | 10 a 12 | $ 189.584.000 |
 | OE1 | C1 Compuerta C1: decisión de ampliación al tramo 2 | 12 a 12 | $ 344.666.666 |
-| OE1 | A1.5 Reentrenar y verificar por departamento (tramo 2) | 15 a 16 | $ 143.848.419 |
-| OE1 | A1.6 Verificar desempeño final y ensayo independiente | 19 a 23 | $ 522.595.788 |
+| OE1 | A1.5 Reentrenar y verificar por departamento (tramo 2) | 15 a 16 | $ 126.856.419 |
+| OE1 | A1.6 Verificar desempeño final y ensayo independiente | 19 a 23 | $ 465.283.788 |
 | OE1 | ADM1 Administración y apoyo a la supervisión (OE1) | 1 a 24 | $ 120.000.000 |
-| OE1 | Subtotal OE1 |  | $ 3.290.701.334 |
+| OE1 | Subtotal OE1 |  | $ 2.900.581.334 |
 | OE2 | A2.1 Diseñar arquitectura de enlace y energía | 2 a 4 | $ 391.200.000 |
 | OE2 | A2.2 Desarrollar firmware y plataforma base | 4 a 6 | $ 777.000.000 |
-| OE2 | A2.3 Instalar tramo 2 (40 nodos, 4 gateways) | 12 a 15 | $ 1.412.424.000 |
+| OE2 | A2.3 Instalar tramo 2 (40 nodos, 4 gateways) | 12 a 15 | $ 1.338.774.000 |
 | OE2 | C2 Compuerta C2: decisión de consolidación al tramo 3 | 16 a 17 | $ 344.666.666 |
-| OE2 | A2.4 Instalar tramo 3 (30 nodos, 3 gateways) | 17 a 19 | $ 1.266.768.000 |
+| OE2 | A2.4 Instalar tramo 3 (30 nodos, 3 gateways) | 17 a 19 | $ 1.193.118.000 |
 | OE2 | ADM2 Administración y apoyo a la supervisión (OE2) | 1 a 24 | $ 120.000.000 |
-| OE2 | Subtotal OE2 |  | $ 4.312.058.666 |
+| OE2 | Subtotal OE2 |  | $ 4.164.758.666 |
 | OE3 | A3.1 Co-diseñar umbrales y protocolo de alerta con comités | 3 a 9 | $ 523.615.395 |
 | OE3 | A3.2 Poner en uso el tablero con los comités | 12 a 15 | $ 261.807.686 |
 | OE3 | A3.3 Formar custodios y firmar convenios por tramo | 17 a 20 | $ 559.076.919 |
 | OE3 | A3.4 Transferir, cerrar y evaluar | 23 a 24 | $ 200.000.000 |
 | OE3 | ADM3 Administración y apoyo a la supervisión (OE3) | 1 a 24 | $ 120.000.000 |
 | OE3 | Subtotal OE3 |  | $ 1.664.500.000 |
-| Total | Valor SGR del proyecto |  | $ 9.267.260.000 |
-:::NOTA *Nota.* Elaboración propia con las 56 líneas del presupuesto SGR. Regla de asignación PROPUESTA: el personal se reparte según la duración de las actividades de su paquete; los equipos y servicios se asignan a la actividad que los usa; la reserva de contingencia (636 millones de COP) se asigna por mitades a las compuertas C1 y C2, que la liberan; la administración (360 millones de COP) se divide en tres partes iguales.
+| Total | Valor SGR del proyecto |  | $ 8.729.840.000 |
+:::NOTA *Nota.* Elaboración propia con las 54 líneas del presupuesto SGR. Regla de asignación PROPUESTA: el personal se reparte según la duración de las actividades de su paquete; los equipos y servicios se asignan a la actividad que los usa; la reserva de contingencia (636 millones de COP) se asigna por mitades a las compuertas C1 y C2, que la liberan; la administración (360 millones de COP) se divide en tres partes iguales.
 
-La administración y el apoyo a la supervisión suman $ 360.000.000, equivalentes a 3,9 % del valor SGR. El tope porcentual de esta categoría no se verificó (NO_VERIFICADO). Los miembros de la alianza participan en actividades presupuestadas según el presupuesto por actor del expediente.
+La administración y el apoyo a la supervisión suman $ 360.000.000, equivalentes a 4,1 % del valor SGR. El tope porcentual de esta categoría no se verificó (NO_VERIFICADO). Los miembros de la alianza participan en actividades presupuestadas según el presupuesto por actor del expediente.
 
-Los valores de esta sección corresponden al presupuesto original. La verificación presupuestal identifica ajustes pendientes: seguros, movilidad, posdoctorado y contrapartida del actor reconocido. Los valores se actualizan cuando la alianza decida.
+Los valores incorporan los ajustes de la verificación presupuestal. Se retiraron los seguros, se incluyó el posdoctorado y la movilidad se limitó al 2 % del valor SGR. Quedan pendientes las cotizaciones y la contrapartida del actor reconocido.
 
 # 16. SOSTENIBILIDAD SOCIAL Y AMBIENTAL DEL PROYECTO
 
-El proyecto contribuye a los Objetivos de Desarrollo Sostenible 11, 9, 17 y 3, este último de forma indirecta (Organización de las Naciones Unidas [ONU], 2015). Se alinea con el Plan Nacional de Desarrollo en gestión del riesgo y acción climática (Congreso de la República, 2023). Fortalece la capacidad de generación de conocimiento con dos artículos, un laboratorio de calibración y la formación de ocho personas en investigación.
+El proyecto contribuye a los Objetivos de Desarrollo Sostenible 11, 9, 17 y 3, este último de forma indirecta (Organización de las Naciones Unidas [ONU], 2015). Se alinea con el Plan Nacional de Desarrollo en gestión del riesgo y acción climática (Congreso de la República, 2023). Fortalece la capacidad de generación de conocimiento con dos artículos, un laboratorio de calibración y la formación de nueve personas en investigación.
 
 La sostenibilidad se gestiona con custodia distribuida por componente. La {T:t17} resume los componentes, el custodio candidato, el mecanismo y la condición de recepción. Los custodios no están asignados: se definen con un índice de capacidad de absorción (ICAR) que evalúa seis dimensiones. El costo de sostenimiento y el ICAR son NO_CALCULABLE hasta que los candidatos aporten evidencia.
 

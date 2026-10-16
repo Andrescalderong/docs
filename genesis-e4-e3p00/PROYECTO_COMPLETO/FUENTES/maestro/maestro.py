@@ -18,7 +18,8 @@ IDENT = {
     "ocde": "1.2 Ingeniería eléctrica, electrónica e informática",
     "territorio": "Departamentos de Caldas, Cundinamarca y Valle del Cauca",
     "fecha_corte": "13 de octubre de 2026",
-    "fecha_limite": "11 de noviembre de 2026",
+    "fecha_limite": "3 de noviembre de 2026",
+    "hora_limite": "4:00 p. m.",
     "tope_cop": 14_000_000_000,
     "duracion_meses": 24,
     "horizonte_posproyecto_meses": 12,
@@ -83,7 +84,7 @@ BUDGET = [
     # --- Personal SGR (E3 = valores heredados del expediente revisado)
     L("P01", R_PERS, "Jóvenes investigadores (6)", "persona-mes", 72, 2.0 * M, "SGR", "DECLARADO", "WP1", 1, 12, "Requisito de formación de talento; valor del expediente E3 (Tabla 8.2)."),
     L("P02", R_PERS, "Estudiantes de maestría (2)", "persona-mes", 48, 6.35 * M, "SGR", "DECLARADO", "WP1", 1, 24, "Sostenimiento y matrícula; valor del expediente E3."),
-    L("P03", R_PERS, "Científico de datos senior (1)", "persona-mes", 24, 20.0 * M, "SGR", "DECLARADO", "WP1", 1, 24, "Modelo de corrección y validación; valor E3."),
+    L("P03", R_PERS, "Doctor en estancia posdoctoral con perfil de ciencia de datos (1)", "persona-mes", 24, 12.92 * M, "SGR", "PROPUESTO", "WP1", 1, 24, "Perfil exigido por el numeral 9 de los TdR; apoyo mensual fijado en el numeral 14.4; modelo de corrección y validación."),
     L("P04", R_PERS, "Ingenieros IoT y de campo (3)", "persona-mes", 72, 9.0 * M, "SGR", "DECLARADO", "WP2", 1, 24, "Instalación y operación de la red; valor E3."),
     L("P05", R_PERS, "Coordinación de apropiación social (1)", "persona-mes", 24, 8.0 * M, "SGR", "DECLARADO", "WP3", 1, 24, "Escalera ASC niveles 1 a 4; valor E3."),
     L("P06", R_PERS, "Gerencia de proyecto (1)", "persona-mes", 24, 10.0 * M, "SGR", "DECLARADO", "WP0", 1, 24, "Seguimiento físico y financiero; valor E3."),
@@ -120,7 +121,6 @@ BUDGET = [
     L("S01", R_SERV, "Análisis gravimétrico en laboratorio acreditado", "muestra", 240, 350_000, "SGR", "DECLARADO", "WP1", 3, 24, "Lectura certificada de filtros; valor E3."),
     L("S02", R_SERV, "Consultoría jurídica en propiedad intelectual y libertad de operación", "hora", 150, 300_000, "SGR", "DECLARADO", "WP3", 1, 24, "Solicitudes PCT con Colombia designada; valor E3."),
     L("S03", R_SERV, "Auditoría externa de ciberseguridad", "servicio", 2, 15.0 * M, "SGR", "DECLARADO", "WP2", 8, 24, "Dos pruebas de penetración; valor E3."),
-    L("S04", R_SERV, "Póliza todo riesgo de equipos", "prima anual", 2, 25.0 * M, "SGR", "DECLARADO", "WP0", 1, 24, "Robo y daño climático; valor E3."),
     L("S05", R_SERV, "Instalación en sitio, mástiles y obra menor (100 nodos y 10 gateways)", "sitio", 110, 1.2 * M, "SGR", "PROPUESTO", "WP2", 3, 24, "Ejecución por tramo."),
     L("S06", R_SERV, "Estudio de cobertura y de enlace en tres departamentos", "estudio", 3, 20.0 * M, "SGR", "PROPUESTO", "WP2", 1, 4, "Presupuesto de enlace de los gateways."),
     L("S07", R_SERV, "Evaluación externa independiente (meses 12 y 24)", "evaluación", 2, 60.0 * M, "SGR", "PROPUESTO", "WP0", 12, 24, "Verificación de resultados frente a la línea base."),
@@ -129,16 +129,15 @@ BUDGET = [
     L("S10", R_SERV, "Planes de enlace satelital de respaldo (10 módulos, 22 meses)", "módulo-mes", 220, 250_000, "SGR", "PROPUESTO", "WP2", 3, 24, "Datos de respaldo."),
     L("S11", R_SERV, "Importación y nacionalización de equipos", "servicio", 1, 80.0 * M, "SGR", "PROPUESTO", "WP0", 1, 18, "Tres lotes de importación."),
     # --- Viajes
-    L("V01", R_VIAJ, "Tiquetes aéreos nacionales", "trayecto", 150, 0.6 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Ampliado respecto del expediente E3 por cubrir tres departamentos."),
-    L("V02", R_VIAJ, "Viáticos de alojamiento y manutención", "día-persona", 600, 0.35 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Instalación, mantenimiento y talleres."),
-    L("V03", R_VIAJ, "Arrendamiento de vehículos 4x4", "día", 240, 0.45 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Acceso a sitios sin vía pavimentada."),
-    L("V04", R_VIAJ, "Viaje internacional para divulgación científica", "viaje", 2, 12.0 * M, "SGR", "DECLARADO", "WP3", 14, 24, "Presentación de resultados; valor E3."),
+    L("V01", R_VIAJ, "Tiquetes aéreos nacionales", "trayecto", 50, 0.6 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Reducido para respetar el tope de movilidad de 2 % del valor SGR; técnicos residentes en cada departamento."),
+    L("V02", R_VIAJ, "Viáticos de alojamiento y manutención", "día-persona", 250, 0.35 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Instalación, mantenimiento y talleres; el complemento lo cubre la logística de emergencia de la empresa (C05)."),
+    L("V03", R_VIAJ, "Arrendamiento de vehículos 4x4", "día", 100, 0.45 * M, "SGR", "PROPUESTO", "WP2", 1, 24, "Acceso a sitios sin vía pavimentada; arrendamiento, no compra."),
+    L("V04", R_VIAJ, "Viaje internacional para divulgación científica", "viaje", 1, 12.0 * M, "SGR", "DECLARADO", "WP3", 14, 24, "Presentación de resultados; valor E3; reducido de 2 a 1 viaje por el tope de movilidad."),
     L("V05", R_VIAJ, "Alimentación de laboratorios ciudadanos", "evento", 20, 1.5 * M, "SGR", "DECLARADO", "WP3", 2, 24, "Participación comunitaria; valor E3."),
     # --- Otros rubros
     L("O01", R_OTR, "Cargos de procesamiento de artículos de acceso abierto", "artículo", 2, 12.5 * M, "SGR", "DECLARADO", "WP3", 14, 24, "Dos artículos Q1 o Q2; valor E3 (sin duplicar en servicios)."),
     L("O02", R_OTR, "Logística de ferias y laboratorios de apropiación", "evento", 9, 8.0 * M, "SGR", "DECLARADO", "WP3", 4, 24, "Espacios, pantallas y moderación; valor E3."),
     L("O03", R_OTR, "Registro ante la DNDA y asesoría de propiedad intelectual", "paquete", 1, 15.0 * M, "SGR", "DECLARADO", "WP3", 12, 24, "Registro del software; valor E3."),
-    L("O04", R_OTR, "Pólizas y garantías del SGR", "prima anual", 2, 30.0 * M, "SGR", "DECLARADO", "WP0", 1, 24, "Cumplimiento, anticipo y responsabilidad civil; valor E3."),
     L("O05", R_OTR, "Administración (revisoría y plataforma de seguimiento)", "mes", 24, 15.0 * M, "SGR", "DECLARADO", "WP0", 1, 24, "Valor E3; el tope porcentual de administración no se verificó."),
     L("O06", R_OTR, "Publicaciones de divulgación y eventos de socialización", "paquete", 1, 60.0 * M, "SGR", "PROPUESTO", "WP3", 6, 24, "Piezas audiovisuales y jornadas de cierre."),
 ]
@@ -151,6 +150,20 @@ CONTRA = [
     L("C05", "Efectivo", "Aporte de la empresa tecnológica: logística y viáticos de emergencia", "global", 1, 210.0 * M, "EMP", "DECLARADO", "WP2", 1, 24, "Valor E3, Tabla 8.1."),
     L("C06", "Infraestructura (especie)", "Infraestructura en la nube de la empresa", "global", 1, 800.0 * M, "EMP", "DECLARADO", "WP2", 1, 24, "Valor E3, Tabla 8.1."),
 ]
+
+RUBROS11 = ["Talento humano", "Equipos y software", "Capacitación y eventos", "Servicios tecnológicos y pruebas",
+            "Materiales, insumos y documentación", "Protección del conocimiento y divulgación", "Gastos de viaje", "Infraestructura",
+            "Administrativos", "Seguimiento", "Otros"]
+_R11 = {}
+for _i in [f"P{n:02d}" for n in range(1, 15)]: _R11[_i] = 1
+for _i in [f"E{n:02d}" for n in range(1, 12)]: _R11[_i] = 2
+for _i in ["S09", "V05", "O02", "M05"]: _R11[_i] = 3
+for _i in ["S01", "S03", "S05", "S06", "S08", "S10", "E12"]: _R11[_i] = 4
+for _i in ["M01", "M02", "M03", "M06", "M07"]: _R11[_i] = 5
+for _i in ["S02", "O03", "O01", "O06", "M04"]: _R11[_i] = 6
+for _i in ["V01", "V02", "V03", "V04"]: _R11[_i] = 7
+for _i in ["O05", "S07"]: _R11[_i] = 10
+for _i in ["X01", "S11"]: _R11[_i] = 11
 
 def bud_rows(rows):
     out = collections.OrderedDict()
@@ -170,7 +183,7 @@ RIESGOS = [
     ("R-ORG-01", "Organizacional", "Los comités de gestión del riesgo no adoptan el tablero ni el protocolo.", "V15", 3, 5, 40, 90.0 * M, "Mitigar", "Co-diseño de umbrales, formación por comité y uso piloto con registro de decisiones.", "Coordinación de apropiación", "Menos de 50 % de uso en el tramo 1"),
     ("R-ORG-02", "Organizacional", "Los custodios no asumen la operación en el posproyecto.", "V15", 4, 4, 50, 120.0 * M, "Mitigar", "Convenios por tramo, formación de custodios y cláusula de apertura.", "Profesional de convenios", "Convenio sin partida al cierre del tramo 2"),
     ("R-EXT-01", "Externo", "Deslizamientos o réplicas bloquean vías y retrasan la instalación.", "V05", 4, 3, 50, 120.0 * M, "Aceptar y mitigar", "Instalación en ventanas secas, técnicos locales y holgura en el cronograma.", "Gerencia de proyecto", "Retraso de instalación > 3 semanas"),
-    ("R-EXT-02", "Externo", "Robo o vandalismo de nodos en sitios de remoción.", "V09", 3, 3, 40, 60.0 * M, "Transferir y mitigar", "Póliza todo riesgo, cerramientos y custodia local por sitio.", "Técnicos de campo", "Dos o más nodos perdidos en un mes"),
+    ("R-EXT-02", "Externo", "Robo o vandalismo de nodos en sitios de remoción.", "V09", 3, 3, 40, 60.0 * M, "Transferir y mitigar", "Cerramientos, custodia local por sitio y seguro de equipos de la entidad ejecutora, fuera del presupuesto SGR.", "Técnicos de campo", "Dos o más nodos perdidos en un mes"),
     ("R-FIN-01", "Financiero", "La devaluación del peso encarece los equipos importados.", "—", 4, 4, 55, 300.0 * M, "Mitigar", "Compra por tramo con cobertura cambiaria y cotizaciones vigentes.", "Gerencia de proyecto", "TRM supera en 10 % la de la cotización"),
     ("R-FIN-02", "Financiero", "La contrapartida en especie no se certifica a tiempo.", "—", 2, 4, 25, 80.0 * M, "Evitar", "Certificación de la IES y de la empresa antes del acta de inicio.", "Gerencia de proyecto", "Certificación pendiente al mes 2"),
     ("R-JUR-01", "Jurídico", "Una solicitud de patente de terceros afecta la libertad de operación.", "—", 2, 4, 20, 100.0 * M, "Mitigar", "Análisis de libertad de operación y diseño alternativo del módulo afectado.", "Consultoría en propiedad intelectual", "Solicitud con fase nacional abierta que reivindique el método"),
@@ -194,6 +207,8 @@ RESERVA = int(round(RESERVA / M)) * M   # redondeo a millones
 
 BUDGET.append(L("X01", R_RES, "Reserva de contingencia (suma de valores monetarios esperados)", "global", 1, RESERVA, "SGR", "CALCULADO", "WP0", 1, 24,
                 "Suma de EMV de la Tabla de riesgos; su admisibilidad como rubro depende de los términos de referencia (VACIO)."))
+for _r in BUDGET: _r["rubro11"] = RUBROS11[_R11[_r["id"]] - 1]
+assert len(_R11) == len(BUDGET), (len(_R11), len(BUDGET))
 
 # ------------------------------------------------------------------ CALENDARIO Y FLUJO DE CAJA
 def spread(line, months=24):

@@ -30,11 +30,11 @@ def suma(ids):
     return sum(B[i]["total"] for i in ids)
 
 # ---------------------------------------------------------------- clasificaciones (PROPUESTO)
-IDS_INDIRECTOS = ["P06", "S04", "S07", "O04", "O05"]            # gestión y control (WP0) salvo importación y reserva
+IDS_INDIRECTOS = ["P06", "S07", "O05"]            # gestión y control (WP0) salvo importación y reserva
 IDS_RESERVA = ["X01"]
 IDS_VARIABLES = ["E01", "E02", "E04", "E05", "E06", "E12", "M03", "M07", "S05", "S10", "S11", "V01", "V02", "V03"]
 IDS_IMPORTADOS = ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09"]   # equipos físicos
-IDS_PLAZO = [l["id"] for l in M.BUDGET if l["rubro"] == "Personal"] + ["E10", "E11", "E12", "S04", "S10", "O04", "O05"]
+IDS_PLAZO = [l["id"] for l in M.BUDGET if l["rubro"] == "Personal"] + ["E10", "E11", "E12", "S10", "O05"]
 
 def clase(l):
     if l["id"] in IDS_RESERVA: return "Reserva"

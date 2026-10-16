@@ -142,7 +142,7 @@ d.raw("# 26. IDONEIDAD Y TRAYECTORIA DE LA ENTIDAD PROPONENTE Y DEMÁS PARTICIPA
 d.p("La {T:t28} describe el aporte individual de cada integrante de la alianza. El Anexo 2 exige tres tipos de aporte: financieros, técnicos o tecnológicos y de talento humano de alto nivel. La trayectoria de cada entidad está pendiente. Debe coincidir con la carta aval, el compromiso institucional y el modelo de gobernanza [DATO_USUARIO: trayectoria y soportes de cada entidad].")
 d.tabla("t28", "Aportes de cada integrante de la alianza",
         ["Integrante", "Aporte financiero", "Aporte técnico o tecnológico", "Talento humano de alto nivel", "Trayectoria"],
-        [("Universidad proponente", "1.100 millones de COP en especie (reconstruida; certificación pendiente)", "Laboratorios, banco de calibración y estaciones de trabajo", "Investigador principal (50 %), coinvestigadores y científico de datos senior", "[DATO_USUARIO: proyectos y grupo reconocido]"),
+        [("Universidad proponente", "1.100 millones de COP en especie (reconstruida; certificación pendiente)", "Laboratorios, banco de calibración y estaciones de trabajo", "Investigador principal (50 %), coinvestigadores y doctor en estancia posdoctoral", "[DATO_USUARIO: proyectos y grupo reconocido]"),
          ("Actor reconocido por MinCiencias", "[DATO_USUARIO: contrapartida, si aplica]", "Laboratorio y referencias gravimétricas", "Especialista en metrología y profesional en calidad del aire", "[DATO_USUARIO: reconocimiento y proyectos]"),
          ("Empresa aliada", "210 millones de COP en efectivo y 800 millones en especie", "Infraestructura en la nube, hardware IoT y plataforma", "Ingenieros de software, de firmware y de campo", "[DATO_USUARIO: experiencia de la empresa]"),
          ("Municipio focal y municipios focalizados", "Sin aporte (beneficiarios)", "Acceso a sitios y comités de gestión del riesgo", "Funcionarios de gestión del riesgo", "[DATO_USUARIO: trayectoria del comité]")],
@@ -176,7 +176,7 @@ d.tabla("t30", "Resumen de fuentes de financiación",
          ("Entidad aliada: actor reconocido por MinCiencias", "Propios [DATO_USUARIO: valor, si aplica]", "$ 0"),
          ("Total", "", cop(TOT_T))],
         "*Nota.* Elaboración propia con la ficha maestra (CALCULADO). La contrapartida de la Universidad es una reconstrucción PROPUESTA y la de la empresa es DECLARADA en el expediente E3.")
-d.p("Los valores corresponden al presupuesto original. Los ajustes pendientes de las Tablas S.15 a S.17 modificarían el valor SGR y la contrapartida. La alianza debe decidirlos antes de radicar.")
+d.p("Los valores incorporan los ajustes de la verificación presupuestal. La contrapartida del actor reconocido queda en blanco hasta que la alianza la defina.")
 d.p("**Valor total de recursos solicitados a la Asignación de CTeI del SGR:** " + pesos_letras(SGR_T) + ".")
 d.p("**Valor total contrapartida:** " + pesos_letras(CON_T) + ".")
 d.p("**Valor total del proyecto:** " + pesos_letras(TOT_T) + ".")

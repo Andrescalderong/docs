@@ -7,7 +7,7 @@ El cierre sigue el orden fijado por el metaprompt: autoauditoría (F-01), vacío
 
 ## F-01 Autoauditoría
 
-La autoauditoría compara cada capítulo con los mínimos de extensión del metaprompt. Los capítulos 1 a 21 suman 96.189 palabras de prosa, 191 tablas y 68 figuras, frente a mínimos de 73.500 palabras, 87 tablas y 44 figuras. La {T:t01} presenta el detalle. Las palabras se cuentan sin las tablas, las notas ni las listas de referencias.
+La autoauditoría compara cada capítulo con los mínimos de extensión del metaprompt. Los capítulos 1 a 21 suman 96.196 palabras de prosa, 191 tablas y 68 figuras, frente a mínimos de 73.500 palabras, 87 tablas y 44 figuras. La {T:t01} presenta el detalle. Las palabras se cuentan sin las tablas, las notas ni las listas de referencias.
 
 :::TABLA t01 | Cumplimiento de los mínimos de extensión por capítulo
 | Capítulo | Palabras | Mínimo de palabras | Tablas | Mínimo de tablas | Figuras | Mínimo de figuras | Estado |
@@ -25,15 +25,15 @@ La autoauditoría compara cada capítulo con los mínimos de extensión del meta
 | Capítulo 11 | 2.669 | 2.000 | 5 | 4 | 2 | 2 | CUMPLE |
 | Capítulo 12 | 3.663 | 3.500 | 22 | 18 | 5 | 5 | CUMPLE |
 | Capítulo 13 | 6.704 | 4.000 | 11 | 8 | 6 | 5 | CUMPLE |
-| Capítulo 14 | 4.506 | 3.500 | 11 | 4 | 2 | 2 | CUMPLE |
+| Capítulo 14 | 4.507 | 3.500 | 11 | 4 | 2 | 2 | CUMPLE |
 | Capítulo 15 | 3.816 | 3.500 | 6 | 3 | 2 | 2 | CUMPLE |
 | Capítulo 16 | 5.731 | 3.500 | 6 | 6 | 4 | 4 | CUMPLE |
-| Capítulo 17 | 3.416 | 2.000 | 4 | 4 | 2 | 2 | CUMPLE |
+| Capítulo 17 | 3.422 | 2.000 | 4 | 4 | 2 | 2 | CUMPLE |
 | Capítulo 18 | 1.823 | 1.500 | 3 | 2 | 1 | 1 | CUMPLE |
 | Capítulo 19 | 465 | 0 | 1 | 1 | 0 | 0 | CUMPLE |
 | Capítulo 20 | 2.163 | 0 | 18 | 0 | 0 | 0 | CUMPLE |
 | Capítulo 21 | 2.552 | 2.500 | 7 | 6 | 2 | 2 | CUMPLE |
-| Total capítulos 1 a 21 | 96.189 | 73.500 | 191 | 87 | 68 | 44 | CUMPLE |
+| Total capítulos 1 a 21 | 96.196 | 73.500 | 191 | 87 | 68 | 44 | CUMPLE |
 :::NOTA *Nota.* Elaboración propia con el verificador mecánico del proyecto (check_cap.py). El capítulo 2 reúne sus dos partes; el capítulo 19 incluye la lista de referencias aparte; el capítulo 20 incluye el anexo N y no cuenta los anexos K a M, que son datos. Los mínimos provienen del metaprompt y de las plantillas por capítulo. Naturaleza: CALCULADO. Decimales con coma y miles con punto.
 
 La verificación mecánica comprueba oraciones de 25 palabras o menos, palabras enfáticas, marcadores de omisión, citas frente al banco, menciones previas de tablas y figuras y archivos de figuras. El verificador no reporta problemas, con dos excepciones declaradas. El Paso 4 conserva nueve secuencias de más de 25 palabras: cuatro supuestos en formato SI-ENTONCES-PORQUE con sus fundamentos y tres líneas técnicas de comprobación del SVG, que el metaprompt exceptúa o que se conservan por fidelidad. El capítulo 19 menciona una tabla que se define en su segundo archivo. El paquete 1000X suma 17.370 palabras de prosa, y el capítulo de estrategia suma 9.907, frente a mínimos de 15.000 y 8.000. Los pasos 0 a 7 suman 23.151 palabras de prosa y 173 tablas.
@@ -93,3 +93,5 @@ Las restricciones son cuatro. El territorio y la alianza son supuestos por instr
 La siguiente acción es de tres pasos. Primero, el usuario decide el nivel de madurez tecnológica y registra la decisión en el reporte B1 del checklist. Segundo, aporta los términos de referencia, los anexos 4, 10 y 12, los reportes de afectación y las cartas. Tercero, se actualiza el documento con esos insumos y se vuelven a ejecutar los verificadores. La condición de aceptación es que los dos bloqueos finales del checklist queden sin alertas activas.
 
 La decisión DEC-F16 registra que el Anexo 2 gobierna la estructura de radicación y que el metaprompt gobierna la estructura de trabajo. La decisión DEC-F17 registra que las fichas completas de los 15 indicadores viven en el capítulo 12 y que el Paso 7 contiene el diseño y el registro. La decisión DEC-F18 registra que el capítulo 19 contiene solo las obras citadas, con las condiciones de verificación declaradas.
+
+Cuatro decisiones posteriores al cierre de esta autoauditoría modifican el traspaso. La decisión DEC-F19 define la alianza de cuatro actores. La decisión DEC-F20 fija el cierre de radicación en el 3 de noviembre de 2026 a las 4:00 p. m. La decisión DEC-F21 ajusta el presupuesto a la guía financiera de la convocatoria: retira los seguros, incorpora el posdoctorado y limita la movilidad al 2 % del valor solicitado. La decisión DEC-F22 separa el documento técnico de 30 secciones, que se radica, del expediente completo, que se entrega comprimido. Los cinco pendientes que solo la alianza resuelve figuran en la sección S.13.

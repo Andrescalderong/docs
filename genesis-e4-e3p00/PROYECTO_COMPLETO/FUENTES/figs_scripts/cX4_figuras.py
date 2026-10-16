@@ -279,7 +279,7 @@ def f08():
     xs = [17, 46, 75]
     w = 24
     # capacidades
-    cap = ["Equipo: 14 líneas\nde personal", "Alianzas: IES, empresa\ntecnológica, alcaldías\ny UNGRD (SUPUESTO)", "Recursos: SGR 9.267,26\n+ contrapartida 2.110\n(millones de COP)"]
+    cap = ["Equipo: 14 líneas\nde personal", "Alianzas: IES, empresa\ntecnológica, alcaldías\ny UNGRD (SUPUESTO)", "Recursos: SGR 8.729,84\n+ contrapartida 2.110\n(millones de COP)"]
     for x, t in zip(xs, cap):
         E.caja(ax, x, 4.5, w, 11, t, relleno=E.CAJA, fs=9)
     # procesos

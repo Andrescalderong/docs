@@ -14,7 +14,8 @@ def build():
     w("## 1. Identidad congelada (H36-02)\n")
     for k in ("titulo", "convocatoria", "financiador", "tipologia", "ocde", "territorio", "fecha_corte", "fecha_limite"):
         w(f"- {k}: {ID[k]}")
-    w(f"- Tope normativo declarado: {M.cop(ID['tope_cop'])} (DECLARADO; términos de referencia NO aportados, NO_VERIFICADO)")
+    w(f"- Tope normativo declarado: {M.cop(ID['tope_cop'])} (según la guía financiera de la Convocatoria 56; términos de referencia completos NO aportados, NO_VERIFICADO)")
+    w(f"- Cierre de radicación: {ID['fecha_limite']}, {ID['hora_limite']} (confirmado por el usuario el 16-oct-2026; la guía financiera coincide)")
     w(f"- Duración de ejecución: {ID['duracion_meses']} meses ({M.DURACION_SEMANAS} semanas); horizonte posproyecto de seguimiento: {ID['horizonte_posproyecto_meses']} meses (PROPUESTO)")
     w(f"- TRL inicial {ID['trl_inicial']}; TRL final {ID['trl_final']} (PROPUESTO; el expediente E3 declaraba TRL 8 y 'TRL 4 a 7 u 8': se fija 7 porque el sistema se demuestra en entorno operativo sin calificación formal; TRL 8 queda condicionado a evaluación de desempeño independiente)")
     w(f"- Caso: {ID['caso']}. Metaprompt: {ID['metaprompt']}; {ID['ntc']}. Huella SHA-256 del maestro: {ID['hash_maestro']}")
@@ -37,7 +38,15 @@ def build():
     w("| Rubro SGR | Millones de COP | % del SGR |\n| --- | --- | --- |")
     for k, v in r["por_rubro"].items(): w(f"| {k} | {M.mm(v)} | {v / r['sgr'] * 100:.1f} |".replace(".", ",", 1) if False else f"| {k} | {M.mm(v)} | {str(round(v / r['sgr'] * 100, 1)).replace('.', ',')} |")
     w(f"- Flujo semestral SGR (millones): {', '.join(M.mm(x) for x in r['flujo_sgr_sem'])}. Flujo semestral de contrapartida: {', '.join(M.mm(x) for x in r['flujo_con_sem'])}.")
-    w(f"- Reserva de contingencia: {M.cop(M.RESERVA)} = suma de valores monetarios esperados (EMV) de 12 riesgos (CALCULADO); su admisibilidad como rubro depende de los TdR (VACIO). Administración: 360 M (3,9 % del SGR solicitado; el tope porcentual del expediente E3, 5 %, no se verificó).")
+    w(f"- Reserva de contingencia: {M.cop(M.RESERVA)} = suma de valores monetarios esperados (EMV) de 12 riesgos (CALCULADO); según el Anexo 3 oficial, los imprevistos son admisibles si se asocian al análisis de riesgos y se soportan en el análisis de costos; se ubican en el rubro 11 (Otros) y su asociación por rubro figura en la sección 5 de esta ficha. Administración: 360 M (" + str(round(360e6 / r['sgr'] * 100, 1)).replace('.', ',') + " % del SGR solicitado; el tope porcentual del expediente E3, 5 %, no se verificó).")
+    w("\n### Equivalencia con los 11 rubros del Anexo 3 oficial (CALCULADO)\n")
+    w("| N.º | Rubro del Anexo 3 | Líneas | Millones de COP | % del SGR |\n| --- | --- | --- | --- | --- |")
+    for i, nom in enumerate(M.RUBROS11, 1):
+        ls = [x for x in M.BUDGET if x["rubro11"] == nom and x["fuente"] == "SGR"]
+        v = sum(x["total"] for x in ls)
+        w(f"| {i} | {nom} | {', '.join(x['id'] for x in ls) or '—'} | {M.mm(v)} | {str(round(v / r['sgr'] * 100, 1)).replace('.', ',')} |")
+    w("- Imprevistos por rubro (EMV de los 12 riesgos, CALCULADO): Equipos y software 363,0 M (R-TEC-01, R-TEC-02, R-EXT-02, R-FIN-01); Servicios tecnológicos y pruebas 77,5 M (R-TEC-03, R-TEC-04, R-DAT-01); Capacitación y eventos 96,0 M (R-ORG-01, R-ORG-02); Protección del conocimiento 20,0 M (R-JUR-01); Otros 80,0 M (R-EXT-01, R-FIN-02). Suma 636,5 M; la reserva se redondea a 636,0 M.")
+    w("- Movilidad financiada por el SGR (líneas V01 a V04): " + M.mm(sum(x["total"] for x in M.BUDGET if x["id"] in ("V01", "V02", "V03", "V04"))) + " M, equivalente a " + str(round(sum(x["total"] for x in M.BUDGET if x["id"] in ("V01", "V02", "V03", "V04")) / r["sgr"] * 100, 2)).replace(".", ",") + " % del SGR (tope de la guía financiera: 2 %; NO_VERIFICADO frente a los TdR).")
     w("- Decisión DEC-F06: se solicita la suma justificada, no el tope. La holgura se describe como opciones de ampliación condicionadas a TdR (más nodos, un cuarto tramo, un año adicional de custodia) y no se presupuesta.\n")
     w("### Líneas de presupuesto SGR\n")
     w("| Id | Rubro | Concepto | Unidad | Cantidad | Costo unitario (COP) | Total (COP) | Naturaleza | WP | Meses |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
@@ -94,7 +103,7 @@ DECISIONES = [
  "DEC-F03 Estrategia de despliegue: R4 de 4.4-MDR (tramos con piloto de contraste y custodia distribuida), con compuertas C1 y C2 que liberan las compras del tramo siguiente.",
  "DEC-F04 Meta de desempeño: R² ≥ 0,70 y NRMSE ≤ 30 % frente a referencia (ancla EPA, 2021); NMAE ≤ 15 % aspiracional; línea base medida en el tramo 1 (corrige HR-14: tres metas contradictorias).",
  "DEC-F05 TRL final 7 (no 8): demostración en entorno operativo; TRL 8 exige calificación independiente que el plazo no cubre.",
- "DEC-F06 Presupuesto: se solicita la suma justificada por actividad (66,2 % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10).",
+ "DEC-F06 Presupuesto: se solicita la suma justificada por actividad (" + str(round(M.resumen()["pct_tope"] * 100, 1)).replace(".", ",") + " % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10).",
  "DEC-F07 Contrapartida: 2.110 M (IES 1.100 en especie; empresa 210 en efectivo y 800 en especie), valores del expediente E3 con desglose de la IES reconstruido; certificaciones pendientes; las alcaldías no aportan (VACIO).",
  "DEC-F08 Cronograma: red de 17 actividades con ruta crítica igual a la duración (104 semanas); importación de 12 semanas máximo por lote; compras por tramo y no 100 % en la semana 2 (corrige HR-11).",
  "DEC-F09 Alternativa seleccionada: ALT-03 híbrida por tramos, condicionada a la ratificación del panel; el puntaje no se interpreta como probabilidad de éxito.",
@@ -104,6 +113,10 @@ DECISIONES = [
  "DEC-F13 Estética: se aplica la paleta y la jerarquía tipográfica del usuario; excepción a FIG-02: opacidad 0,25 solo en la cuadrícula; el relleno de encabezados de tabla usa #B9D9EB con texto #2A3439 (contraste superior a 4,5:1; el texto sobre #6699CC no lo alcanza) y #6699CC como filete inferior del encabezado; filas alternas #F7F7F7.",
  "DEC-F14 Numeración: tablas y figuras 'c.n' por capítulo; Parte I con prefijo F (F5.1), paquete 1000X con prefijo X (X6.1) y anexos con letra (A1).",
  "DEC-F15 GWO no se activa porque el espacio de decisión (4 alternativas) es enumerable (AS-32).",
+ "DEC-F19 Alianza y presupuesto por actor (Parte inicial S): proponente universidad con grupo de investigación; municipio beneficiario sin aporte (regla del Anexo 2: una entidad no es cooperante y beneficiaria a la vez); actor reconocido por MinCiencias; empresa aliada. Las líneas SGR se asignan a actores de forma PROPUESTA; requiere ratificación de la Universidad y verificación de la categoría de la empresa en los TdR.",
+ "DEC-F20 Cierre de radicación: 3 de noviembre de 2026, 4:00 p. m. (decisión del usuario del 16-oct-2026). Sustituye al 11 de noviembre de la ficha anterior.",
+ "DEC-F21 Ajuste del presupuesto a la guía financiera de la Convocatoria 56 (decisión del usuario del 16-oct-2026): se retiran los seguros (S04 y O04, 110 M); P03 pasa a doctor en estancia posdoctoral (24 meses × 12,92 M, numeral 14.4); la movilidad (V01 a V04) se reduce a 174,5 M, 2 % del SGR; las líneas se presentan en los 11 rubros del Anexo 3; la reserva se conserva en el rubro 11 asociada al análisis de riesgos. El exceso de viajes lo cubre la logística de emergencia de la empresa (C05). Si los TdR aclaran que el tope de 2 % no aplica a viajes de campo, se restituyen 257,5 M.",
+ "DEC-F22 Formato de radicación: el documento técnico se entrega en las 30 secciones del Anexo 2 (PDF de 3 MB como máximo); el expediente completo se entrega aparte, comprimido (10 MB como máximo).",
 ]
 
 if __name__ == "__main__":

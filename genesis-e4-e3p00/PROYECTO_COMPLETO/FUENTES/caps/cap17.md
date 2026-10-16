@@ -26,7 +26,7 @@ Los roles se definen por línea presupuestal y se asignan a un paquete de trabaj
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | P01 | Jóvenes investigadores | 6 | WP1 | Apoyan la colocalización, el análisis de datos y la documentación del piloto. | 1,0 | 1 a 12 | DECLARADO |
 | P02 | Estudiantes de maestría | 2 | WP1 | Desarrollan tesis sobre el modelo de corrección y su validación frente a la referencia. | 1,0 | 1 a 24 | DECLARADO |
-| P03 | Científico de datos senior | 1 | WP1 | Diseña, entrena y valida el modelo de corrección que se ejecuta en los gateways. | 1,0 | 1 a 24 | DECLARADO |
+| P03 | Doctor en estancia posdoctoral con perfil de ciencia de datos | 1 | WP1 | Diseña, entrena y valida el modelo de corrección que se ejecuta en los gateways. | 1,0 | 1 a 24 | DECLARADO |
 | P04 | Ingenieros IoT y de campo | 3 | WP2 | Instalan, configuran y operan nodos y gateways; uno de ellos coordina WP2. | 1,0 | 1 a 24 | DECLARADO |
 | P05 | Coordinación de apropiación social | 1 | WP3 | Coordina la apropiación social y el co-diseño con los comités de gestión del riesgo. | 1,0 | 1 a 24 | DECLARADO |
 | P06 | Gerencia de proyecto | 1 | WP0 | Gerencia el alcance, el cronograma, el presupuesto y la preparación de las compuertas. | 1,0 | 1 a 24 | DECLARADO |
@@ -73,7 +73,7 @@ La {T:t02} reúne los perfiles requeridos por cada rol. La hoja de vida de cada 
 | C03 Coinvestigadores de ambiente y ciencias sociales (IES) | Ciencias ambientales, salud ambiental y ciencias sociales | Diseño participativo con instituciones y análisis de gestión del riesgo | [DATO_USUARIO: nombre y hoja de vida] |
 | P01 Jóvenes investigadores | Ingeniería, estadística, ciencias ambientales o afín | Procesamiento de series de sensores y registro de bitácoras de campo | [DATO_USUARIO: nombre y hoja de vida o proceso de selección] |
 | P02 Estudiantes de maestría | Posgrado en ingeniería, estadística o ciencias ambientales | Tesis sobre el modelo de corrección o la validación con datos del proyecto | [DATO_USUARIO: nombre y hoja de vida o proceso de selección] |
-| P03 Científico de datos senior | Estadística, ciencia de datos o ingeniería | Modelos de corrección con validación cruzada por departamento y partición temporal | [DATO_USUARIO: nombre y hoja de vida] |
+| P03 Doctor en estancia posdoctoral con perfil de ciencia de datos | Estadística, ciencia de datos o ingeniería | Modelos de corrección con validación cruzada por departamento y partición temporal | [DATO_USUARIO: nombre y hoja de vida] |
 | P04 Ingenieros IoT y de campo | Ingeniería electrónica o de telecomunicaciones | Instalación de redes LoRa con gateways, energía solar y enlace celular o satelital | [DATO_USUARIO: nombre y hoja de vida] |
 | P05 Coordinación de apropiación social | Ciencias sociales, comunicación o gestión del riesgo | Facilitación de talleres de co-diseño y actas con comunidades e instituciones | [DATO_USUARIO: nombre y hoja de vida] |
 | P06 Gerencia de proyecto | Ingeniería, administración o afín, con formación en gerencia de proyectos | Control de alcance, cronograma, presupuesto y compuertas con informes de seguimiento | [DATO_USUARIO: nombre y hoja de vida] |
@@ -111,7 +111,7 @@ El personal técnico y profesional suma 21 personas y 504 persona-mes, es decir 
 
 El perfil de la ingeniería de red y de firmware depende de una decisión de arquitectura. La computación en el borde procesa los datos cerca de la fuente y reduce la dependencia del enlace (Shi et al., 2016). La red de área amplia de baja potencia presenta límites de capacidad que condicionan la tasa de envío de cada nodo (Adelantado et al., 2017). Una posición centraliza la corrección en la nube. La otra la ubica en el borde. La decisión DEC-F02 del proyecto fija la corrección en el gateway. Por ello los perfiles P04 y P09 requieren competencia en diseño de redes LoRa y en firmware de bajo consumo.
 
-La consecuencia metodológica es que el científico de datos senior (P03) debe entregar un modelo que quepa en el gateway. El criterio de parsimonia del capítulo 6 se convierte en requisito de perfil. La plataforma en la nube (P08) y el análisis espacial (P12) usan el resultado del gateway y no lo reemplazan. Los seis técnicos de campo (P10) reciben formación en trabajo seguro (PROPUESTO). En los sitios de remoción usan las mascarillas de la línea M06.
+La consecuencia metodológica es clara. El doctor posdoctoral con perfil de ciencia de datos (P03) debe entregar un modelo que quepa en el gateway. El criterio de parsimonia del capítulo 6 se convierte en requisito de perfil. La plataforma en la nube (P08) y el análisis espacial (P12) usan el resultado del gateway y no lo reemplazan. Los seis técnicos de campo (P10) reciben formación en trabajo seguro (PROPUESTO). En los sitios de remoción usan las mascarillas de la línea M06.
 
 ### 17.2.4 Estudiantes vinculados
 
@@ -194,6 +194,6 @@ La consecuencia metodológica es que el convenio de ejecución debe fijar quién
 
 La contrapartida suma 2.110 millones de COP (DECLARADO, con certificaciones pendientes). La IES aporta 1.100 millones en especie. Corresponden 350 millones al investigador principal y 250 al coinvestigador técnico. Otros 200 millones corresponden a los coinvestigadores de ambiente y ciencias sociales y 300 al uso de laboratorios y equipos. La empresa aporta 210 millones en efectivo y 800 millones en especie. Las alcaldías no aportan (VACIO).
 
-La contrapartida equivale a 22,8 % del valor solicitado al SGR y a 18,5 % del total del proyecto. La especie representa 90,0 % del aporte. El efectivo representa 10,0 % del aporte y 1,8 % del total del proyecto. Estas proporciones muestran que el proyecto depende de valoraciones en especie, que requieren certificación para ser admisibles. El riesgo R-FIN-02 recoge esa dependencia y el plan lo trata con la estrategia de evitar: certificar antes del acta de inicio.
+La contrapartida equivale a 22,8 % del valor solicitado al SGR y a 19,5 % del total del proyecto. La especie representa 90,0 % del aporte. El efectivo representa 10,0 % del aporte y 1,8 % del total del proyecto. Estas proporciones muestran que el proyecto depende de valoraciones en especie, que requieren certificación para ser admisibles. El riesgo R-FIN-02 recoge esa dependencia y el plan lo trata con la estrategia de evitar: certificar antes del acta de inicio.
 
 Ostrom (2005) distingue reglas de posición, de información y de pago que gobiernan quién actúa, qué sabe y qué recibe en un arreglo institucional. La contrapartida es una regla de pago. La custodia por tramo es una regla de posición. El tablero compartido es una regla de información. El proyecto diseña los convenios con las tres reglas explícitas. El anexo A del capítulo 20 lista las cartas y las certificaciones que respaldan cada aporte. La compuerta C2 exige convenios de custodia con partida, de modo que ningún tramo se libera sin compromiso presupuestal verificable.

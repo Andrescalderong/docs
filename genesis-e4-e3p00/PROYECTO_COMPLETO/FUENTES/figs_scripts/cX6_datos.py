@@ -43,7 +43,7 @@ filas.append(["Total SGR", mm(col["a"]), mm(col["b"]), mm(col["c"]), mm(col["d"]
 filas.append(["% del SGR", pct(col["a"] / sgr), pct(col["b"] / sgr), pct(col["c"] / sgr), pct(col["d"] / sgr), "100,0", "—"])
 T["t02"] = tabla("t02", "Costos del SGR por rubro, clase y comportamiento, en millones de COP",
                  ["Rubro", "Directo fijo", "Directo variable", "Indirecto", "Reserva", "Total", "% del SGR"], filas,
-                 "*Nota.* Elaboración propia con datos de maestro.py. Clasificación PROPUESTA: indirectos P06, S04, S07, O04 y O05; variables E01, E02, E04, E05, E06, E12, M03, M07, S05, S10, S11 y V01 a V03. Naturaleza: CALCULADO. Decimales con coma.")
+                 "*Nota.* Elaboración propia con datos de maestro.py. Clasificación PROPUESTA: indirectos P06, S07 y O05; variables E01, E02, E04, E05, E06, E12, M03, M07, S05, S10, S11 y V01 a V03. Naturaleza: CALCULADO. Decimales con coma.")
 V["directos"] = mm(col["a"] + col["b"]); V["pct_directos"] = pct((col["a"] + col["b"]) / sgr)
 V["indirectos"] = mm(col["c"]); V["pct_indirectos"] = pct(col["c"] / sgr)
 V["fijos"] = mm(col["a"] + col["c"]); V["pct_fijos"] = pct((col["a"] + col["c"]) / sgr)
@@ -104,7 +104,7 @@ V["eq_rubro"] = mm(C.RES["por_rubro"]["Equipos y software"])
 
 # ---- t05 y t06 sensibilidad
 filas_s, esc, expo = C.sensibilidad()
-reglas = {"Plazo de ejecución": "Personal, E10, E11, E12, S04, S10, O04 y O05",
+reglas = {"Plazo de ejecución": "Personal, E10, E11, E12, S10 y O05",
           "Costo de personal": "Líneas P01 a P14",
           "Tipo de cambio de equipos importados": "Equipos físicos E01 a E09",
           "Reserva de contingencia": "Línea X01"}

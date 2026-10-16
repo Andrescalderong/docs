@@ -85,7 +85,7 @@ Las cuatro fichas siguientes ({T:t02}, {T:t03}, {T:t04} y {T:t05}) usan los mism
 | TRL objetivo | TRL 4 a TRL 7 (PROPUESTO) |
 | Componentes | Técnico: 100 nodos, 10 gateways, 3 monitores de referencia y modelo de corrección en gateway. Organizacional: compuertas C1 y C2, comités y custodios por componente. Económico: presupuesto por tramos con reserva de contingencia. |
 | Duración | 24 meses (104 semanas) y 12 meses de seguimiento |
-| Presupuesto | $ 9.267.260.000 COP solicitados al SGR y $ 2.110.000.000 COP de contrapartida |
+| Presupuesto | $ 8.729.840.000 COP solicitados al SGR y $ 2.110.000.000 COP de contrapartida |
 | Beneficiarios | 15 comités y 150 funcionarios (SUPUESTO); operarios [DATO_USUARIO: número en los sitios monitoreados] |
 | Articulación PDD | [DATO_USUARIO: eje y artículo del PDD, indicador y meta] |
 | Demanda territorial | [DATO_USUARIO: código y nombre de la demanda territorial] |

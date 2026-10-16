@@ -74,7 +74,7 @@ La {T:t02} muestra la asignación. El supuesto SC-4, de custodia, corresponde al
 | Ídem | Ídem | R-JUR-01: Una solicitud de patente de terceros afecta la libertad de operación. | — | 2 × 4 = 8 (MEDIO) | 20,0 | Mitigar: Análisis de libertad de operación y diseño alternativo del módulo afectado. |
 | Subtotal Componentes | — | 5 riesgos | — | — | 387,0 | — |
 | Actividades | Acceso a los sitios en ventanas secas y contratación oportuna. | R-EXT-01: Deslizamientos o réplicas bloquean vías y retrasan la instalación. | — | 4 × 3 = 12 (ALTO) | 60,0 | Aceptar y mitigar: Instalación en ventanas secas, técnicos locales y holgura en el cronograma. |
-| Ídem | Ídem | R-EXT-02: Robo o vandalismo de nodos en sitios de remoción. | — | 3 × 3 = 9 (MEDIO) | 24,0 | Transferir y mitigar: Póliza todo riesgo, cerramientos y custodia local por sitio. |
+| Ídem | Ídem | R-EXT-02: Robo o vandalismo de nodos en sitios de remoción. | — | 3 × 3 = 9 (MEDIO) | 24,0 | Transferir y mitigar: Cerramientos, custodia local por sitio y seguro de equipos de la entidad ejecutora, fuera del presupuesto SGR. |
 | Ídem | Ídem | R-FIN-02: La contrapartida en especie no se certifica a tiempo. | — | 2 × 4 = 8 (MEDIO) | 20,0 | Evitar: Certificación de la IES y de la empresa antes del acta de inicio. |
 | Subtotal Actividades | — | 3 riesgos | — | — | 104,0 | — |
 | Total | — | 12 riesgos | — | — | 636,5 | La reserva de contingencia redondea a 636,0 |

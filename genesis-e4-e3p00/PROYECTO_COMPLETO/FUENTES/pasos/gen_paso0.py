@@ -34,7 +34,7 @@ filas = [
  ("Nombre de la convocatoria", M.IDENT["convocatoria"], "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_VERIFICADO"),
  ("Entidad financiadora", M.IDENT["financiador"], "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_VERIFICADO"),
  ("Tipología del proyecto", M.IDENT["tipologia"], "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_APLICA"),
- ("Fecha límite de presentación", "11 de noviembre de 2026 (cierre de ajustes)", "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_VERIFICADO"),
+ ("Fecha límite de presentación", "3 de noviembre de 2026, 4:00 p. m.", "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_VERIFICADO"),
  ("Presupuesto máximo por proyecto", "$ 14.000.000.000 COP", "Paso 1 del usuario (E3-P00)", "DECLARADO", "NO_VERIFICADO"),
  ("Contrapartida requerida (%)", "[DATO_USUARIO: porcentaje exigido por los TdR]. Contrapartida ofrecida: " + f"{c(contra)} COP, equivalente a {pc_sgr:.1f} % del valor solicitado al SGR y a {pc_tot:.1f} % del total".replace(".", ","), "Cálculo sobre maestro.py", "CALCULADO", "NO_VERIFICADO"),
  ("Duración máxima (meses)", "24 meses de ejecución (104 semanas) y 12 meses de seguimiento posproyecto", "Paso 1 del usuario y decisión DEC-F08", "DECLARADO y PROPUESTO", "NO_VERIFICADO"),

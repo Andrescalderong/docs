@@ -28,7 +28,7 @@ def main():
         (15, "Solicitud", f"Aprobar {C.mm(C.SGR, 1)}\nmillones y las\ncompuertas", 3),
     ]
     actos = [("Por qué (1 a 3)", E.CLARO, ""), ("Qué (4 a 8)", E.MEDIO, ""), ("Quién y cuándo (9 a 12)", E.CLARO, "///"), ("Cuánto y qué se pide (13 a 15)", E.MEDIO, "///")]
-    fig, ax = C.lienzo_libre2(h1="Quince diapositivas llevan del problema medido a una solicitud concreta de $ 9.267,3 millones",
+    fig, ax = C.lienzo_libre2(h1="Quince diapositivas llevan del problema medido a una solicitud concreta de $ 8.729,8 millones",
                              h2="Estructura del pitch deck en cuatro actos, con la cifra de respaldo de cada diapositiva", figsize=(10, 7.0), xlim=(0, 100), ylim=(0, 70), top=0.90)
     cols = 5; w = 18.0; h = 17.0; gx = 1.7; gy = 3.2; x0 = 1.6; y0 = 70 - 4 - h
     for k, (n, tit, dato, acto) in enumerate(d):

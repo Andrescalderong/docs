@@ -38,7 +38,7 @@ La {T:t20} describe la estrategia y las barreras. El proyecto transfiere primero
 
 ## 18.4 Actividades, productos, indicadores y presupuesto
 
-La {T:t21} presenta las tres actividades del plan con su presupuesto. Suman $ 378.000.000, equivalentes a 4,08 % del valor SGR y a 3,32 % del valor total. El mínimo de 1 % del valor total es $ 113.772.600. El proyecto lo supera. Las publicaciones y los talleres de apropiación social no se cuentan.
+La {T:t21} presenta las tres actividades del plan con su presupuesto. Suman $ 378.000.000, equivalentes a 4,33 % del valor SGR y a 3,49 % del valor total. El mínimo de 1 % del valor total es $ 108.398.400. El proyecto lo supera. Las publicaciones y los talleres de apropiación social no se cuentan.
 
 :::TABLA t21 | Actividades, productos, indicadores y presupuesto del plan de transferencia
 | Actividad | Resultado asociado | Producto o evidencia | Indicador | Responsable | Periodo | Presupuesto |
@@ -75,7 +75,7 @@ La estrategia entiende la apropiación como participación, diálogo de saberes 
 | G. Sistematización | Actas firmadas, bitácora de aprendizajes, informe por tramo y 29 actividades documentadas (PERS-P04) |
 :::NOTA *Nota.* Elaboración propia con el capítulo 16 del expediente. Las cantidades por tramo son PROPUESTAS.
 
-El presupuesto de apropiación social suma $ 726.500.000, equivalentes a 7,8 % del valor SGR. Incluye la coordinación y los profesionales sociales. Incluye también cartillas, kits de talleres y elementos de protección personal. Incluye la logística de ferias y las publicaciones de divulgación (líneas P05, P11, M04, M05, M06, V05, O02 y O06).
+El presupuesto de apropiación social suma $ 726.500.000, equivalentes a 8,3 % del valor SGR. Incluye la coordinación y los profesionales sociales. Incluye también cartillas, kits de talleres y elementos de protección personal. Incluye la logística de ferias y las publicaciones de divulgación (líneas P05, P11, M04, M05, M06, V05, O02 y O06).
 
 # 20. PRODUCTOS ESPERADOS
 
@@ -140,7 +140,7 @@ La {T:t25} analiza los riesgos con las categorías del Anexo 2. La probabilidad 
 | Operacionales | Los comités de gestión del riesgo no adoptan el tablero ni el protocolo. | Probable | Mayor | Co-diseño de umbrales, formación por comité y uso piloto con registro de decisiones. |
 | Financieros | Los custodios no asumen la operación en el posproyecto. | Probable | Mayor | Convenios por tramo, formación de custodios y cláusula de apertura. |
 | De calendario | Deslizamientos o réplicas bloquean vías y retrasan la instalación. | Probable | Moderado | Instalación en ventanas secas, técnicos locales y holgura en el cronograma. |
-| Operacionales | Robo o vandalismo de nodos en sitios de remoción. | Probable | Moderado | Póliza todo riesgo, cerramientos y custodia local por sitio. |
+| Operacionales | Robo o vandalismo de nodos en sitios de remoción. | Probable | Moderado | Cerramientos, custodia local por sitio y seguro de equipos de la entidad ejecutora, fuera del presupuesto SGR. |
 | De costos | La devaluación del peso encarece los equipos importados. | Probable | Mayor | Compra por tramo con cobertura cambiaria y cotizaciones vigentes. |
 | Financieros | La contrapartida en especie no se certifica a tiempo. | Improbable | Mayor | Certificación de la IES y de la empresa antes del acta de inicio. |
 | Legales | Una solicitud de patente de terceros afecta la libertad de operación. | Improbable | Mayor | Análisis de libertad de operación y diseño alternativo del módulo afectado. |
@@ -197,7 +197,7 @@ La {T:t28} describe el aporte individual de cada integrante de la alianza. El An
 :::TABLA t28 | Aportes de cada integrante de la alianza
 | Integrante | Aporte financiero | Aporte técnico o tecnológico | Talento humano de alto nivel | Trayectoria |
 | --- | --- | --- | --- | --- |
-| Universidad proponente | 1.100 millones de COP en especie (reconstruida; certificación pendiente) | Laboratorios, banco de calibración y estaciones de trabajo | Investigador principal (50 %), coinvestigadores y científico de datos senior | [DATO_USUARIO: proyectos y grupo reconocido] |
+| Universidad proponente | 1.100 millones de COP en especie (reconstruida; certificación pendiente) | Laboratorios, banco de calibración y estaciones de trabajo | Investigador principal (50 %), coinvestigadores y doctor en estancia posdoctoral | [DATO_USUARIO: proyectos y grupo reconocido] |
 | Actor reconocido por MinCiencias | [DATO_USUARIO: contrapartida, si aplica] | Laboratorio y referencias gravimétricas | Especialista en metrología y profesional en calidad del aire | [DATO_USUARIO: reconocimiento y proyectos] |
 | Empresa aliada | 210 millones de COP en efectivo y 800 millones en especie | Infraestructura en la nube, hardware IoT y plataforma | Ingenieros de software, de firmware y de campo | [DATO_USUARIO: experiencia de la empresa] |
 | Municipio focal y municipios focalizados | Sin aporte (beneficiarios) | Acceso a sitios y comités de gestión del riesgo | Funcionarios de gestión del riesgo | [DATO_USUARIO: trayectoria del comité] |
@@ -229,17 +229,17 @@ La {T:t30} resume las fuentes de financiación. El aporte de cada cooperante coi
 :::TABLA t30 | Resumen de fuentes de financiación
 | Entidad | Fuente de recursos | Valor |
 | --- | --- | --- |
-| Asignación de CTeI del SGR | Asignación de CTeI del SGR | $ 9.267.260.000 |
+| Asignación de CTeI del SGR | Asignación de CTeI del SGR | $ 8.729.840.000 |
 | Entidad proponente: Universidad | Propios, en especie | $ 1.100.000.000 |
 | Entidad aliada: empresa | Propios, en efectivo (210 millones) y en especie (800 millones) | $ 1.010.000.000 |
 | Entidad aliada: actor reconocido por MinCiencias | Propios [DATO_USUARIO: valor, si aplica] | $ 0 |
-| Total |  | $ 11.377.260.000 |
+| Total |  | $ 10.839.840.000 |
 :::NOTA *Nota.* Elaboración propia con la ficha maestra (CALCULADO). La contrapartida de la Universidad es una reconstrucción PROPUESTA y la de la empresa es DECLARADA en el expediente E3.
 
-Los valores corresponden al presupuesto original. Los ajustes pendientes de la verificación presupuestal modificarían el valor SGR y la contrapartida. La alianza debe decidirlos antes de radicar.
+Los valores incorporan los ajustes de la verificación presupuestal. La contrapartida del actor reconocido queda en blanco hasta que la alianza la defina.
 
-**Valor total de recursos solicitados a la Asignación de CTeI del SGR:** nueve mil doscientos sesenta y siete millones doscientos sesenta mil pesos ($ 9.267.260.000).
+**Valor total de recursos solicitados a la Asignación de CTeI del SGR:** ocho mil setecientos veintinueve millones ochocientos cuarenta mil pesos ($ 8.729.840.000).
 
 **Valor total contrapartida:** dos mil ciento diez millones de pesos ($ 2.110.000.000).
 
-**Valor total del proyecto:** once mil trescientos setenta y siete millones doscientos sesenta mil pesos ($ 11.377.260.000).
+**Valor total del proyecto:** diez mil ochocientos treinta y nueve millones ochocientos cuarenta mil pesos ($ 10.839.840.000).

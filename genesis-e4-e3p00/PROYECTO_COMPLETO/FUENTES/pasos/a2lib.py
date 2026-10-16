@@ -42,7 +42,7 @@ MAP = {
     "S03": {"A2.3": Fraction(1, 2), "A2.4": Fraction(1, 2)}, "S06": {"A2.1": 1}, "S07": {"A3.4": 1}, "S08": {"A1.6": 1},
     "S09": {"A3.3": 1}, "S02": {"A3.3": 1}, "O03": {"A3.3": 1}, "O01": {"A1.6": 1}, "V04": {"A1.6": 1},
     "V01": V3, "V02": V3, "V03": V3, "M04": ASC3, "M05": ASC3, "M06": ASC3, "V05": ASC3, "O02": ASC3, "O06": ASC3,
-    "O04": {"A0.1": 1}, "S04": {"A0.1": 1}, "O05": {"ADM1": Fraction(1, 3), "ADM2": Fraction(1, 3), "ADM3": Fraction(1, 3)},
+    "O05": {"ADM1": Fraction(1, 3), "ADM2": Fraction(1, 3), "ADM3": Fraction(1, 3)},
     "X01": {"C1": Fraction(1, 2), "C2": Fraction(1, 2)},
 }
 VAL = {a: 0 for a in ORDEN}

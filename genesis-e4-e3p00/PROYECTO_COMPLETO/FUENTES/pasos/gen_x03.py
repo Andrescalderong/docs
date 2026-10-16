@@ -8,7 +8,7 @@ R = D.resumen(); ID = D.IDENT
 SGR, CON, TOT = R["sgr"], R["contra"], R["total"]
 
 SLIDES = [
- (1, "Portada", ["Título: " + ID["titulo"], "Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)", "Fecha de corte: 13 de octubre de 2026; fecha límite: 11 de noviembre de 2026", "Logotipos: [DATO_USUARIO: logotipos de la entidad ejecutora y de los aliados]"],
+ (1, "Portada", ["Título: " + ID["titulo"], "Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)", "Fecha de corte: 13 de octubre de 2026; fecha límite: 3 de noviembre de 2026", "Logotipos: [DATO_USUARIO: logotipos de la entidad ejecutora y de los aliados]"],
   "Visual limpio y sin texto adicional."),
  (2, "El problema", ["Dato central: 90,8 % de las 5.076 estaciones de la red nacional propuesta serían sensores sin plan de calibración (Murad Pedraza et al., 2026; cálculo del analista)", "La remoción de escombros posterremoto genera PM2,5 y PM10", "Los sensores de bajo costo sin calibración local entregan error desconocido", "Los comités deciden alertas con datos de calidad desconocida"],
   "Abrir con el dato y no con la cifra de salud. El proyecto no afirma efectos en salud."),
@@ -32,7 +32,7 @@ SLIDES = [
   "La alianza es un supuesto por instrucción del usuario."),
  (12, "Cronograma", ["24 meses y 104 semanas con ruta crítica de 13 actividades", "Tres tramos: meses 1 a 12, 13 a 17 y 18 a 24", "Compuertas C1 (mes 12), C2 (mes 17) y C3 (mes 24)", "Nueve hitos de H0 a H8"],
   "Línea de tiempo con hitos."),
- (13, "Presupuesto", ["Total: " + cop(TOT), "SGR: " + cop(SGR) + " (66,2 % del tope declarado)", "Contrapartida: " + cop(CON), "Personal 49,1 %; equipos y software 20,3 %; reserva de contingencia 6,9 %", "Relación costo-beneficio: NO_CALCULABLE sin fuente de beneficios"],
+ (13, "Presupuesto", ["Total: " + cop(TOT), "SGR: " + cop(SGR) + " (62,4 % del tope declarado)", "Contrapartida: " + cop(CON), "Personal 50,2 %; equipos y software 21,6 %; reserva de contingencia 7,3 %", "Relación costo-beneficio: NO_CALCULABLE sin fuente de beneficios"],
   "Mostrar eficiencia en el uso de recursos y la reserva de 636 millones."),
  (14, "Sostenibilidad", ["Transferencia por tramos con convenios de custodia y partida", "Cláusula de apertura: datos y código abiertos si ningún custodio demuestra capacidad", "Activación del protocolo de 80 % o más a los 12 meses del cierre (PERS-S01)", "Índice de capacidad de absorción y costo de sostenimiento: NO_CALCULABLE"],
   "Visión de largo plazo con vacíos declarados."),

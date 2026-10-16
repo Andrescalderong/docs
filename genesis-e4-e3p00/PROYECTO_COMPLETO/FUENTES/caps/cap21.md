@@ -23,10 +23,10 @@ La ficha de identificación reúne los datos que no cambian durante la ejecució
 | Duración de ejecución | 24 meses (104 semanas); seguimiento posproyecto de 12 meses | PROPUESTO |
 | Madurez tecnológica | TRL 4 al inicio y TRL 7 al cierre | PROPUESTO |
 | Fecha de corte de la formulación | 13 de octubre de 2026 | DECLARADO |
-| Fecha límite de la convocatoria | 11 de noviembre de 2026 | DECLARADO |
-| Valor solicitado al SGR | $ 9.267.260.000 | CALCULADO |
+| Fecha límite de la convocatoria | 3 de noviembre de 2026 | DECLARADO |
+| Valor solicitado al SGR | $ 8.729.840.000 | CALCULADO |
 | Contrapartida | $ 2.110.000.000 | DECLARADO |
-| Total del proyecto | $ 11.377.260.000 | CALCULADO |
+| Total del proyecto | $ 10.839.840.000 | CALCULADO |
 | Entidad ejecutora | [DATO_USUARIO: nombre de la institución de educación superior ejecutora] | VACIO |
 | Director del proyecto | [DATO_USUARIO: nombre y cargo] | VACIO |
 | Fecha de aprobación del acta | [DATO_USUARIO: fecha de firma] | VACIO |
@@ -137,25 +137,25 @@ La línea de tiempo muestra que 10 de los 24 meses transcurren antes de que exis
 
 ## 21.8 Presupuesto Resumido
 
-El presupuesto resumido presenta el total, la distribución por fuente y las reservas. El valor solicitado al SGR es de 9.267.260.000 COP, que equivale a 66,2 % del tope declarado. La contrapartida es de 2.110.000.000 COP. La reserva de contingencia, de 636.000.000 COP, está incluida en el valor solicitado y suma los valores esperados de los 12 riesgos. La {T:t06} presenta el resumen por rubro y por fuente.
+El presupuesto resumido presenta el total, la distribución por fuente y las reservas. El valor solicitado al SGR es de 8.729.840.000 COP, que equivale a 62,4 % del tope declarado. La contrapartida es de 2.110.000.000 COP. La reserva de contingencia, de 636.000.000 COP, está incluida en el valor solicitado y suma los valores esperados de los 12 riesgos. La {T:t06} presenta el resumen por rubro y por fuente.
 
 :::TABLA t06 | Resumen presupuestal por rubro y por fuente
 | Concepto | Valor (millones de COP) | Porcentaje del SGR |
 | --- | --- | --- |
-| Personal | 4.552,8 | 49,1 % |
-| Equipos y software | 1.885,6 | 20,3 % |
-| Materiales e insumos | 242,9 | 2,6 % |
-| Servicios técnicos | 896,0 | 9,7 % |
-| Viajes y viáticos | 462,0 | 5,0 % |
-| Otros rubros | 592,0 | 6,4 % |
-| Reserva de contingencia | 636,0 | 6,9 % |
-| Total solicitado al SGR | 9.267,3 | 100,0 % |
+| Personal | 4.382,9 | 50,2 % |
+| Equipos y software | 1.885,6 | 21,6 % |
+| Materiales e insumos | 242,9 | 2,8 % |
+| Servicios técnicos | 846,0 | 9,7 % |
+| Viajes y viáticos | 204,5 | 2,3 % |
+| Otros rubros | 532,0 | 6,1 % |
+| Reserva de contingencia | 636,0 | 7,3 % |
+| Total solicitado al SGR | 8.729,8 | 100,0 % |
 | Contrapartida de la entidad ejecutora (especie) | 1.100,0 | — |
 | Contrapartida de la empresa tecnológica (efectivo y especie) | 1.010,0 | — |
-| Total del proyecto | 11.377,3 | — |
+| Total del proyecto | 10.839,8 | — |
 :::NOTA *Nota.* Elaboración propia con datos de maestro.py y de la ficha maestra §5. La reserva de contingencia depende de su admisibilidad como rubro según los términos de referencia (VACIO). La contrapartida no está certificada. Decimales con coma.
 
-La holgura entre lo solicitado y el tope declarado es de 4.732.740.000 COP. El acta no la presupuesta. Se describe como opciones de ampliación que dependen de los términos de referencia. Esa decisión busca que cada peso solicitado tenga una actividad que lo justifique. Si la reserva de contingencia no se admite como rubro, el valor solicitado baja a 8.631.260.000 COP y la reserva debe absorberse de otra manera. El capítulo 8 desarrolla cada línea.
+La holgura entre lo solicitado y el tope declarado es de 5.270.160.000 COP. El acta no la presupuesta. Se describe como opciones de ampliación que dependen de los términos de referencia. Esa decisión busca que cada peso solicitado tenga una actividad que lo justifique. Si la reserva de contingencia no se admite como rubro, el valor solicitado baja a 8.631.260.000 COP y la reserva debe absorberse de otra manera. El capítulo 8 desarrolla cada línea.
 
 
 ## 21.9 Stakeholders Clave

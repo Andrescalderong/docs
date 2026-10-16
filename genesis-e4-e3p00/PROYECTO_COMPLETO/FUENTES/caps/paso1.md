@@ -1,7 +1,7 @@
 %% PREFIJO: F1
 # Paso 1. Información básica del proyecto
 
-El sistema se configura para la Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56). La entidad financiadora es el Sistema General de Regalías (SGR), con el Ministerio de Ciencia, Tecnología e Innovación (MinCiencias). La tipología es investigación aplicada, desarrollo tecnológico e innovación. La fecha límite declarada es el 11 de noviembre de 2026. El Paso 1 se organiza en cinco secciones: identificación, caracterización del problema, hipótesis de solución, contexto y alcance, y capacidades. Cada sección contrasta la respuesta del expediente E3-P00 con el valor adoptado en esta formulación. Cada fila declara la naturaleza del dato y su estado de verificación.
+El sistema se configura para la Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56). La entidad financiadora es el Sistema General de Regalías (SGR), con el Ministerio de Ciencia, Tecnología e Innovación (MinCiencias). La tipología es investigación aplicada, desarrollo tecnológico e innovación. La fecha límite es el 3 de noviembre de 2026 a las 4:00 p. m.. El Paso 1 se organiza en cinco secciones: identificación, caracterización del problema, hipótesis de solución, contexto y alcance, y capacidades. Cada sección contrasta la respuesta del expediente E3-P00 con el valor adoptado en esta formulación. Cada fila declara la naturaleza del dato y su estado de verificación.
 
 ## F1.1 Identificación del proyecto (Sección A)
 
@@ -63,14 +63,14 @@ El desempeño se mide con los umbrales de la Agencia de Protección Ambiental de
 
 ## F1.4 Contexto y alcance (Sección D)
 
-La Sección D fija territorio, duración, presupuesto y participantes. La {T:t04} contiene los siete campos. El valor solicitado al SGR se reduce de 14.000 millones al monto justificado por actividad, $ 9.267.260.000 COP. Ese monto equivale a 66,2 % del tope declarado (DEC-F06). La diferencia no se solicita y se describe como opciones de ampliación condicionadas a los términos de referencia. Los beneficiarios directos se cuantifican por comité: 15 comités y 150 funcionarios, a razón de 10 por comité (SUPUESTO).
+La Sección D fija territorio, duración, presupuesto y participantes. La {T:t04} contiene los siete campos. El valor solicitado al SGR se reduce de 14.000 millones al monto justificado por actividad, $ 8.729.840.000 COP. Ese monto equivale a 62,4 % del tope declarado (DEC-F06). La diferencia no se solicita y se describe como opciones de ampliación condicionadas a los términos de referencia. Los beneficiarios directos se cuantifican por comité: 15 comités y 150 funcionarios, a razón de 10 por comité (SUPUESTO).
 
 :::TABLA t04 | Contexto y alcance
 | Campo | Respuesta del expediente E3-P00 | Valor adoptado en esta formulación | Naturaleza | Verificación |
 | --- | --- | --- | --- | --- |
 | Ubicación geográfica | Caldas, Cundinamarca y Valle del Cauca, en zonas con declaratoria de calamidad por escombros (Anexo 8) | Caldas (33 nodos), Cundinamarca (34) y Valle del Cauca (33); 12 municipios [DATO_USUARIO: lista y polígonos] | SUPUESTO | NO_VERIFICADO |
 | Duración estimada | 24 meses (límite normativo de los TdR) | 24 meses (104 semanas) más 12 meses de seguimiento posproyecto | DECLARADO y PROPUESTO | NO_VERIFICADO |
-| Presupuesto estimado | $ 14.000.000.000 COP (límite normativo) | Solicitado al SGR: $ 9.267.260.000 COP; contrapartida: $ 2.110.000.000 COP; total: $ 11.377.260.000 COP | CALCULADO | NO_VERIFICADO |
+| Presupuesto estimado | $ 14.000.000.000 COP (límite normativo) | Solicitado al SGR: $ 8.729.840.000 COP; contrapartida: $ 2.110.000.000 COP; total: $ 10.839.840.000 COP | CALCULADO | NO_VERIFICADO |
 | Entidad ejecutora | Institución de educación superior con acreditación de alta calidad (por definir) | [DATO_USUARIO: nombre de la entidad ejecutora]; institución de educación superior con acreditación de alta calidad | SUPUESTO | NO_VERIFICADO |
 | Co-ejecutores | Empresa tecnológica y alcaldías municipales | Empresa tecnológica [DATO_USUARIO: razón social y NIT]; las alcaldías participan como custodios y no aportan contrapartida (VACIO) | SUPUESTO | NO_VERIFICADO |
 | Beneficiarios directos | Operarios de rescate y funcionarios de la Defensa Civil y la UNGRD que usan los tableros | 150 funcionarios de 15 comités de gestión del riesgo; operarios de remoción [DATO_USUARIO: número de operarios en sitios monitoreados] | SUPUESTO | NO_VERIFICADO |

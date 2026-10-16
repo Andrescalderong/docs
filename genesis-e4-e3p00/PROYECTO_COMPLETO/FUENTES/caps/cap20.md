@@ -49,7 +49,7 @@ Las hojas de vida acreditan que el equipo tiene la capacidad que el presupuesto 
 | --- | --- | --- | --- | --- | --- |
 | P01 | Jóvenes investigadores (6) | 72 | Profesional recién graduado en ingeniería, ciencias ambientales o estadística; formación en investigación | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
 | P02 | Estudiantes de maestría (2) | 48 | Profesional con admisión a maestría en un programa afín; dedicación al proyecto | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
-| P03 | Científico de datos senior (1) | 24 | Doctorado o maestría con experiencia en series ambientales, aprendizaje automático y calibración de sensores | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
+| P03 | Doctor en estancia posdoctoral con perfil de ciencia de datos (1) | 24 | Doctorado o maestría con experiencia en series ambientales, aprendizaje automático y calibración de sensores | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
 | P04 | Ingenieros IoT y de campo (3) | 72 | Ingeniería electrónica, de telecomunicaciones o similar; experiencia en instalación de redes IoT | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
 | P05 | Coordinación de apropiación social (1) | 24 | Profesional en ciencias sociales o comunicación con experiencia en procesos de participación | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
 | P06 | Gerencia de proyecto (1) | 24 | Profesional con experiencia en gerencia de proyectos de ciencia, tecnología e innovación con recursos públicos | Hoja de vida; CvLAC si aplica; soportes de formación y experiencia | VACIO |
@@ -94,7 +94,7 @@ Las cotizaciones respaldan los costos unitarios del presupuesto. Ningún costo u
 | S08 | Ensayo de desempeño con laboratorio externo | 1 campaña | $ 90.000.000 | $ 90.000.000 | PROPUESTO | Tres cotizaciones comparables de proveedores distintos |
 | S09 | Formación y soporte a custodios por tramo | 3 tramo | $ 50.000.000 | $ 150.000.000 | PROPUESTO | Tres cotizaciones comparables de proveedores distintos |
 | S11 | Importación y nacionalización de equipos | 1 servicio | $ 80.000.000 | $ 80.000.000 | PROPUESTO | Tres cotizaciones comparables de proveedores distintos |
-| Total | Líneas que requieren cotización |  |  | $ 2.541.560.000 | CALCULADO | 27,4 % del valor solicitado al SGR |
+| Total | Líneas que requieren cotización |  |  | $ 2.541.560.000 | CALCULADO | 29,1 % del valor solicitado al SGR |
 :::NOTA *Nota.* Elaboración propia con datos de maestro.py. Se incluyen todas las líneas de equipos y software, y las líneas de servicios técnicos y de materiales de 80 millones de COP o más. Las cotizaciones son VACIO [DATO_USUARIO: cotizaciones vigentes con fecha y proveedor]. Decimales con coma y miles con punto.
 
 Las cotizaciones deben llevar fecha, proveedor, vigencia, moneda y condiciones de entrega. Para equipos importados, la cotización debe indicar el tipo de cambio de referencia, porque el riesgo R-FIN-01 depende de él. La compra del tramo 1 ocurre en el mes 5. Las cotizaciones deben tener vigencia hasta esa fecha o renovarse. Si el costo real difiere más de 10 % de lo presupuestado, la gerencia informa al comité directivo. El comité decide si ajusta el tamaño del tramo.
@@ -161,27 +161,27 @@ El presupuesto detallado por línea está en el capítulo 8, en las Tablas 8.3, 
 :::TABLA a08 | Valor solicitado al SGR por rubro y semestre, en millones de COP
 | Rubro | Semestre 1 | Semestre 2 | Semestre 3 | Semestre 4 | Total |
 | --- | --- | --- | --- | --- | --- |
-| Personal | 1.174,2 | 1.174,2 | 1.102,2 | 1.102,2 | 4.552,8 |
+| Personal | 1.131,7 | 1.131,7 | 1.059,7 | 1.059,7 | 4.382,9 |
 | Equipos y software | 909,8 | 93,9 | 787,9 | 93,9 | 1.885,6 |
 | Materiales e insumos | 51,8 | 63,7 | 63,7 | 63,7 | 242,9 |
-| Servicios técnicos | 167,6 | 189,7 | 237,7 | 301,0 | 896,0 |
-| Viajes y viáticos | 108,5 | 109,8 | 120,7 | 122,9 | 462,0 |
-| Otros rubros | 118,4 | 145,7 | 162,8 | 165,1 | 592,0 |
+| Servicios técnicos | 155,1 | 177,2 | 225,2 | 288,5 | 846,0 |
+| Viajes y viáticos | 47,1 | 48,5 | 53,9 | 55,0 | 204,5 |
+| Otros rubros | 103,4 | 130,7 | 147,8 | 150,1 | 532,0 |
 | Reserva de contingencia | 159,0 | 159,0 | 159,0 | 159,0 | 636,0 |
-| Total SGR | 2.689,3 | 1.936,1 | 2.634,1 | 2.007,8 | 9.267,3 |
-:::NOTA *Nota.* Elaboración propia con datos de maestro.py (spread y flujo de equipos por tramo). Las compras de nodos, cabezales y gateways se asignan a los meses 5, 13 y 18. Los totales por semestre son 2.689,3; 1.936,1; 2.634,1 y 2.007,8 millones de COP. Naturaleza: CALCULADO. Decimales con coma.
+| Total SGR | 2.557,9 | 1.804,7 | 2.497,2 | 1.869,9 | 8.729,8 |
+:::NOTA *Nota.* Elaboración propia con datos de maestro.py (spread y flujo de equipos por tramo). Las compras de nodos, cabezales y gateways se asignan a los meses 5, 13 y 18. Los totales por semestre son 2.557,9; 1.804,7; 2.497,2 y 1.869,9 millones de COP. Naturaleza: CALCULADO. Decimales con coma.
 
 :::TABLA a09 | Valor solicitado al SGR por paquete de trabajo y rubro, en millones de COP
 | WP | Personal | Equipos | Materiales | Servicios | Viajes | Otros | Reserva | Total |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| WP0 | 240,0 | 0,0 | 0,0 | 250,0 | 0,0 | 420,0 | 636,0 | 1.546,0 |
-| WP1 | 1.216,8 | 455,0 | 56,4 | 174,0 | 0,0 | 0,0 | 0,0 | 1.902,2 |
-| WP2 | 2.208,0 | 1.430,6 | 102,0 | 277,0 | 408,0 | 0,0 | 0,0 | 4.425,6 |
-| WP3 | 888,0 | 0,0 | 84,5 | 195,0 | 54,0 | 172,0 | 0,0 | 1.393,5 |
-| Total | 4.552,8 | 1.885,6 | 242,9 | 896,0 | 462,0 | 592,0 | 636,0 | 9.267,3 |
+| WP0 | 240,0 | 0,0 | 0,0 | 200,0 | 0,0 | 360,0 | 636,0 | 1.436,0 |
+| WP1 | 1.046,9 | 455,0 | 56,4 | 174,0 | 0,0 | 0,0 | 0,0 | 1.732,3 |
+| WP2 | 2.208,0 | 1.430,6 | 102,0 | 277,0 | 162,5 | 0,0 | 0,0 | 4.180,1 |
+| WP3 | 888,0 | 0,0 | 84,5 | 195,0 | 42,0 | 172,0 | 0,0 | 1.381,5 |
+| Total | 4.382,9 | 1.885,6 | 242,9 | 846,0 | 204,5 | 532,0 | 636,0 | 8.729,8 |
 :::NOTA *Nota.* Elaboración propia con datos de maestro.py (campo wbs de cada línea). Equipos: equipos y software; Materiales: materiales e insumos; Servicios: servicios técnicos; Viajes: viajes y viáticos; Otros: otros rubros; Reserva: reserva de contingencia. La reserva se asigna a WP0. Naturaleza: CALCULADO. Decimales con coma.
 
-El formato de la entidad puede exigir códigos presupuestales propios, que la ficha no contiene [DATO_USUARIO: códigos presupuestales del formato de la entidad]. El archivo de hoja de cálculo reúne las 56 líneas del SGR y las seis de contrapartida. Se genera a partir del libro maestro cuando el usuario fije el formato.
+El formato de la entidad puede exigir códigos presupuestales propios, que la ficha no contiene [DATO_USUARIO: códigos presupuestales del formato de la entidad]. El archivo de hoja de cálculo reúne las 54 líneas del SGR y las seis de contrapartida. Se genera a partir del libro maestro cuando el usuario fije el formato.
 
 
 ## Anexo H. Cronograma detallado

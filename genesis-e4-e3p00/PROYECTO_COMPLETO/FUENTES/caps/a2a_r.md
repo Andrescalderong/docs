@@ -20,7 +20,7 @@ La {T:t01} diligencia los campos de identificación del Anexo 2. Los nombres de 
 | Beneficiario focal | [DATO_USUARIO: municipio de Cundinamarca, Risaralda, Caldas o Valle del Cauca], como beneficiario sin aporte de recursos |
 | Código SIGP | [DATO_USUARIO: código asignado en la plataforma SIGP] |
 | Tiempo de ejecución en meses | 24 |
-| Fecha y hora de cierre de la radicación | [DATO_USUARIO: confirmar 3 de noviembre de 2026 a las 4:00 p. m. (guía financiera) o 11 de noviembre de 2026 (ficha del proyecto)] |
+| Fecha y hora de cierre de la radicación | 3 de noviembre de 2026, 4:00 p. m. (confirmado por el usuario; coincide con la guía financiera de la convocatoria) |
 | Región (SGR) | [DATO_USUARIO: dos regiones del SGR según el artículo 45 de la Ley 2056 de 2020]. Con tres departamentos, el alcance podría abarcar más de dos regiones (NO_VERIFICADO) |
 | Departamento(s) | Caldas, Cundinamarca y Valle del Cauca (SUPUESTO por instrucción del usuario); Risaralda por verificar |
 | Municipio(s) | 12 municipios, cuatro por departamento [DATO_USUARIO: lista de municipios afectados por la emergencia] |
@@ -36,7 +36,7 @@ La {T:t02} registra los grupos de investigación que se vincularán. Las cifras 
 :::TABLA t02 | Grupos de investigación vinculados al proyecto
 | Nombre del grupo | Entidad | Líneas de investigación | Investigadores y formación | Estudiantes que puede vincular | Contribución a la demanda territorial |
 | --- | --- | --- | --- | --- | --- |
-| [DATO_USUARIO: grupo de la Universidad] | Universidad proponente | [DATO_USUARIO: líneas] | Investigador principal (50 %) y coinvestigador técnico (30 %); más coinvestigadores de ambiente y ciencias sociales (20 %) | 8: 6 jóvenes investigadores y 2 de maestría | Calibración y validación del modelo de corrección; gerencia científica; apropiación social |
+| [DATO_USUARIO: grupo de la Universidad] | Universidad proponente | [DATO_USUARIO: líneas] | Investigador principal (50 %) y coinvestigador técnico (30 %); más coinvestigadores de ambiente y ciencias sociales (20 %) | 9: 6 jóvenes investigadores, 2 de maestría y 1 doctor en estancia posdoctoral | Calibración y validación del modelo de corrección; gerencia científica; apropiación social |
 | [DATO_USUARIO: grupo del actor reconocido] | Actor reconocido por MinCiencias | [DATO_USUARIO: líneas] | [DATO_USUARIO: número y formación] | [DATO_USUARIO] | Verificación metrológica independiente y formación de custodios |
 :::NOTA *Nota.* Elaboración propia con el presupuesto (líneas P01, P02, P07, P13 y C01 a C03). Se tendrá en cuenta la categoría obtenida en la convocatoria 894 de 2021 [DATO_USUARIO: categoría vigente de cada grupo].
 
@@ -48,7 +48,7 @@ La propuesta instala una red de 100 nodos y 10 gateways en municipios afectados 
 
 El despliegue avanza por tres tramos de 30, 40 y 30 nodos. Dos compuertas, en los meses 12 y 17, liberan la compra del tramo siguiente. Lo hacen solo si el modelo cumple R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia. La custodia de cada componente se transfiere a instituciones con competencia y partida. La madurez tecnológica pasa de TRL 4 a TRL 7 en 24 meses.
 
-Los resultados esperados son una red operativa con disponibilidad mensual de nodos de 90 % o más y un modelo de corrección validado. Se esperan también dos artículos científicos y un software registrado. Se espera además que 75 % o más de 15 comités use el tablero en decisiones documentadas y que 60 personas queden certificadas. El proyecto no afirma efectos en la salud. Solicita $ 9.267.260.000 al SGR y suma una contrapartida de $ 2.110.000.000.
+Los resultados esperados son una red operativa con disponibilidad mensual de nodos de 90 % o más y un modelo de corrección validado. Se esperan también dos artículos científicos y un software registrado. Se espera además que 75 % o más de 15 comités use el tablero en decisiones documentadas y que 60 personas queden certificadas. El proyecto no afirma efectos en la salud. Solicita $ 8.729.840.000 al SGR y suma una contrapartida de $ 2.110.000.000.
 
 # 3. PALABRAS CLAVE
 

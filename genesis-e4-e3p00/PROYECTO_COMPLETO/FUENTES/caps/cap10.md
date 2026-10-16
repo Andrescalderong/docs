@@ -98,7 +98,7 @@ La reserva equivale al valor esperado y no a una cota de la pérdida. Si los 12 
 
 El percentil 80 de la pérdida es de 850,0 millones de COP y el percentil 95 es de 1.020,0 millones. La reserva cubre entonces 43,9 % de la suma de los impactos y 75 % del percentil 80. El supuesto de independencia probablemente subestima la cola. R-TEC-01 y R-TEC-04 comparten la variable V06, y una falla de humedad puede propagarse a ambos. La correlación positiva amplía la dispersión. La conclusión es que la reserva sirve para el escenario esperado, y no para un escenario adverso.
 
-Tres opciones permiten tratar esa brecha. La primera acepta que, en la mitad de los casos, las pérdidas superarán la reserva. Las absorben el cronograma y la holgura no solicitada, de 4.732.740.000 COP bajo el tope declarado. La segunda solicita una reserva mayor, si los términos de referencia la admiten, y la decisión DEC-F06 no la adopta. La tercera reduce la exposición con compra por tramos y cobertura cambiaria, que atacan los dos riesgos de mayor valor esperado. El proyecto adopta la tercera y deja la segunda como opción condicionada, a decidir con el financiador.
+Tres opciones permiten tratar esa brecha. La primera acepta que, en la mitad de los casos, las pérdidas superarán la reserva. Las absorben el cronograma y la holgura no solicitada, de 5.270.160.000 COP bajo el tope declarado. La segunda solicita una reserva mayor, si los términos de referencia la admiten, y la decisión DEC-F06 no la adopta. La tercera reduce la exposición con compra por tramos y cobertura cambiaria, que atacan los dos riesgos de mayor valor esperado. El proyecto adopta la tercera y deja la segunda como opción condicionada, a decidir con el financiador.
 
 
 ## 10.4 Plan de Respuesta
@@ -115,7 +115,7 @@ El plan de respuesta asigna a cada riesgo una estrategia, una acción específic
 | R-ORG-01 | Mitigar | Co-diseño de umbrales, formación por comité y uso piloto con registro de decisiones. | Coordinación de apropiación | Menos de 50 % de uso en el tramo 1 | 36,0 |
 | R-ORG-02 | Mitigar | Convenios por tramo, formación de custodios y cláusula de apertura. | Profesional de convenios | Convenio sin partida al cierre del tramo 2 | 60,0 |
 | R-EXT-01 | Aceptar y mitigar | Instalación en ventanas secas, técnicos locales y holgura en el cronograma. | Gerencia de proyecto | Retraso de instalación > 3 semanas | 60,0 |
-| R-EXT-02 | Transferir y mitigar | Póliza todo riesgo, cerramientos y custodia local por sitio. | Técnicos de campo | Dos o más nodos perdidos en un mes | 24,0 |
+| R-EXT-02 | Transferir y mitigar | Cerramientos, custodia local por sitio y seguro de equipos de la entidad ejecutora, fuera del presupuesto SGR. | Técnicos de campo | Dos o más nodos perdidos en un mes | 24,0 |
 | R-FIN-01 | Mitigar | Compra por tramo con cobertura cambiaria y cotizaciones vigentes. | Gerencia de proyecto | TRM supera en 10 % la de la cotización | 165,0 |
 | R-FIN-02 | Evitar | Certificación de la IES y de la empresa antes del acta de inicio. | Gerencia de proyecto | Certificación pendiente al mes 2 | 20,0 |
 | R-JUR-01 | Mitigar | Análisis de libertad de operación y diseño alternativo del módulo afectado. | Consultoría en propiedad intelectual | Solicitud con fase nacional abierta que reivindique el método | 20,0 |

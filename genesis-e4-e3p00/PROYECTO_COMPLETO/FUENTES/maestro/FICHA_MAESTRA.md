@@ -11,8 +11,9 @@ Naturaleza de cada dato: DECLARADO = valor del expediente E3 aportado por el usu
 - ocde: 1.2 Ingeniería eléctrica, electrónica e informática
 - territorio: Departamentos de Caldas, Cundinamarca y Valle del Cauca
 - fecha_corte: 13 de octubre de 2026
-- fecha_limite: 11 de noviembre de 2026
-- Tope normativo declarado: $ 14.000.000.000 (DECLARADO; términos de referencia NO aportados, NO_VERIFICADO)
+- fecha_limite: 3 de noviembre de 2026
+- Tope normativo declarado: $ 14.000.000.000 (según la guía financiera de la Convocatoria 56; términos de referencia completos NO aportados, NO_VERIFICADO)
+- Cierre de radicación: 3 de noviembre de 2026, 4:00 p. m. (confirmado por el usuario el 16-oct-2026; la guía financiera coincide)
 - Duración de ejecución: 24 meses (104 semanas); horizonte posproyecto de seguimiento: 12 meses (PROPUESTO)
 - TRL inicial 4; TRL final 7 (PROPUESTO; el expediente E3 declaraba TRL 8 y 'TRL 4 a 7 u 8': se fija 7 porque el sistema se demuestra en entorno operativo sin calificación formal; TRL 8 queda condicionado a evaluación de desempeño independiente)
 - Caso: SGR_CONV56_AIRE. Metaprompt: GENESIS-CTeI 36.10 RC2 (VM-PAR3-MDR3-CONT1); NTC 1.1. Huella SHA-256 del maestro: 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8
@@ -42,20 +43,38 @@ Compuertas: C1 (mes 12) decide ampliar al tramo 2 si el modelo cumple los umbral
 
 ## 5. Presupuesto (CALCULADO desde maestro.py)
 
-- Valor solicitado al SGR: $ 9.267.260.000 (66.2 % del tope; holgura no solicitada: $ 4.732.740.000).
+- Valor solicitado al SGR: $ 8.729.840.000 (62.4 % del tope; holgura no solicitada: $ 5.270.160.000).
 - Contrapartida: $ 2.110.000.000 (IES 1.100 M en especie; empresa 210 M en efectivo y 800 M en especie; alcaldías: sin aporte, VACIO). Todas las cifras de contrapartida son DECLARADO (E3) salvo el desglose de la IES, PROPUESTO; certificaciones pendientes.
-- Total del proyecto: $ 11.377.260.000.
+- Total del proyecto: $ 10.839.840.000.
 | Rubro SGR | Millones de COP | % del SGR |
 | --- | --- | --- |
-| Personal | 4.552,8 | 49,1 |
-| Equipos y software | 1.885,6 | 20,3 |
-| Materiales e insumos | 242,9 | 2,6 |
-| Servicios técnicos | 896,0 | 9,7 |
-| Viajes y viáticos | 462,0 | 5,0 |
-| Otros rubros | 592,0 | 6,4 |
-| Reserva de contingencia | 636,0 | 6,9 |
-- Flujo semestral SGR (millones): 2.689,3, 1.936,1, 2.634,1, 2.007,8. Flujo semestral de contrapartida: 527,5, 527,5, 527,5, 527,5.
-- Reserva de contingencia: $ 636.000.000 = suma de valores monetarios esperados (EMV) de 12 riesgos (CALCULADO); su admisibilidad como rubro depende de los TdR (VACIO). Administración: 360 M (3,9 % del SGR solicitado; el tope porcentual del expediente E3, 5 %, no se verificó).
+| Personal | 4.382,9 | 50,2 |
+| Equipos y software | 1.885,6 | 21,6 |
+| Materiales e insumos | 242,9 | 2,8 |
+| Servicios técnicos | 846,0 | 9,7 |
+| Viajes y viáticos | 204,5 | 2,3 |
+| Otros rubros | 532,0 | 6,1 |
+| Reserva de contingencia | 636,0 | 7,3 |
+- Flujo semestral SGR (millones): 2.557,9, 1.804,7, 2.497,2, 1.869,9. Flujo semestral de contrapartida: 527,5, 527,5, 527,5, 527,5.
+- Reserva de contingencia: $ 636.000.000 = suma de valores monetarios esperados (EMV) de 12 riesgos (CALCULADO); según el Anexo 3 oficial, los imprevistos son admisibles si se asocian al análisis de riesgos y se soportan en el análisis de costos; se ubican en el rubro 11 (Otros) y su asociación por rubro figura en la sección 5 de esta ficha. Administración: 360 M (4,1 % del SGR solicitado; el tope porcentual del expediente E3, 5 %, no se verificó).
+
+### Equivalencia con los 11 rubros del Anexo 3 oficial (CALCULADO)
+
+| N.º | Rubro del Anexo 3 | Líneas | Millones de COP | % del SGR |
+| --- | --- | --- | --- | --- |
+| 1 | Talento humano | P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14 | 4.382,9 | 50,2 |
+| 2 | Equipos y software | E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11 | 1.851,0 | 21,2 |
+| 3 | Capacitación y eventos | M05, S09, V05, O02 | 282,0 | 3,2 |
+| 4 | Servicios tecnológicos y pruebas | E12, S01, S03, S05, S06, S08, S10 | 485,6 | 5,6 |
+| 5 | Materiales, insumos y documentación | M01, M02, M03, M06, M07 | 170,4 | 2,0 |
+| 6 | Protección del conocimiento y divulgación | M04, S02, O01, O03, O06 | 187,5 | 2,1 |
+| 7 | Gastos de viaje | V01, V02, V03, V04 | 174,5 | 2,0 |
+| 8 | Infraestructura | — | 0,0 | 0,0 |
+| 9 | Administrativos | — | 0,0 | 0,0 |
+| 10 | Seguimiento | S07, O05 | 480,0 | 5,5 |
+| 11 | Otros | S11, X01 | 716,0 | 8,2 |
+- Imprevistos por rubro (EMV de los 12 riesgos, CALCULADO): Equipos y software 363,0 M (R-TEC-01, R-TEC-02, R-EXT-02, R-FIN-01); Servicios tecnológicos y pruebas 77,5 M (R-TEC-03, R-TEC-04, R-DAT-01); Capacitación y eventos 96,0 M (R-ORG-01, R-ORG-02); Protección del conocimiento 20,0 M (R-JUR-01); Otros 80,0 M (R-EXT-01, R-FIN-02). Suma 636,5 M; la reserva se redondea a 636,0 M.
+- Movilidad financiada por el SGR (líneas V01 a V04): 174,5 M, equivalente a 2,0 % del SGR (tope de la guía financiera: 2 %; NO_VERIFICADO frente a los TdR).
 - Decisión DEC-F06: se solicita la suma justificada, no el tope. La holgura se describe como opciones de ampliación condicionadas a TdR (más nodos, un cuarto tramo, un año adicional de custodia) y no se presupuesta.
 
 ### Líneas de presupuesto SGR
@@ -64,7 +83,7 @@ Compuertas: C1 (mes 12) decide ampliar al tramo 2 si el modelo cumple los umbral
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | P01 | Personal | Jóvenes investigadores (6) | persona-mes | 72 | $ 2.000.000 | $ 144.000.000 | DECLARADO | WP1 | 1–12 |
 | P02 | Personal | Estudiantes de maestría (2) | persona-mes | 48 | $ 6.350.000 | $ 304.800.000 | DECLARADO | WP1 | 1–24 |
-| P03 | Personal | Científico de datos senior (1) | persona-mes | 24 | $ 20.000.000 | $ 480.000.000 | DECLARADO | WP1 | 1–24 |
+| P03 | Personal | Doctor en estancia posdoctoral con perfil de ciencia de datos (1) | persona-mes | 24 | $ 12.920.000 | $ 310.080.000 | PROPUESTO | WP1 | 1–24 |
 | P04 | Personal | Ingenieros IoT y de campo (3) | persona-mes | 72 | $ 9.000.000 | $ 648.000.000 | DECLARADO | WP2 | 1–24 |
 | P05 | Personal | Coordinación de apropiación social (1) | persona-mes | 24 | $ 8.000.000 | $ 192.000.000 | DECLARADO | WP3 | 1–24 |
 | P06 | Personal | Gerencia de proyecto (1) | persona-mes | 24 | $ 10.000.000 | $ 240.000.000 | DECLARADO | WP0 | 1–24 |
@@ -98,7 +117,6 @@ Compuertas: C1 (mes 12) decide ampliar al tramo 2 si el modelo cumple los umbral
 | S01 | Servicios técnicos | Análisis gravimétrico en laboratorio acreditado | muestra | 240 | $ 350.000 | $ 84.000.000 | DECLARADO | WP1 | 3–24 |
 | S02 | Servicios técnicos | Consultoría jurídica en propiedad intelectual y libertad de operación | hora | 150 | $ 300.000 | $ 45.000.000 | DECLARADO | WP3 | 1–24 |
 | S03 | Servicios técnicos | Auditoría externa de ciberseguridad | servicio | 2 | $ 15.000.000 | $ 30.000.000 | DECLARADO | WP2 | 8–24 |
-| S04 | Servicios técnicos | Póliza todo riesgo de equipos | prima anual | 2 | $ 25.000.000 | $ 50.000.000 | DECLARADO | WP0 | 1–24 |
 | S05 | Servicios técnicos | Instalación en sitio. mástiles y obra menor (100 nodos y 10 gateways) | sitio | 110 | $ 1.200.000 | $ 132.000.000 | PROPUESTO | WP2 | 3–24 |
 | S06 | Servicios técnicos | Estudio de cobertura y de enlace en tres departamentos | estudio | 3 | $ 20.000.000 | $ 60.000.000 | PROPUESTO | WP2 | 1–4 |
 | S07 | Servicios técnicos | Evaluación externa independiente (meses 12 y 24) | evaluación | 2 | $ 60.000.000 | $ 120.000.000 | PROPUESTO | WP0 | 12–24 |
@@ -106,15 +124,14 @@ Compuertas: C1 (mes 12) decide ampliar al tramo 2 si el modelo cumple los umbral
 | S09 | Servicios técnicos | Formación y soporte a custodios por tramo | tramo | 3 | $ 50.000.000 | $ 150.000.000 | PROPUESTO | WP3 | 6–24 |
 | S10 | Servicios técnicos | Planes de enlace satelital de respaldo (10 módulos. 22 meses) | módulo-mes | 220 | $ 250.000 | $ 55.000.000 | PROPUESTO | WP2 | 3–24 |
 | S11 | Servicios técnicos | Importación y nacionalización de equipos | servicio | 1 | $ 80.000.000 | $ 80.000.000 | PROPUESTO | WP0 | 1–18 |
-| V01 | Viajes y viáticos | Tiquetes aéreos nacionales | trayecto | 150 | $ 600.000 | $ 90.000.000 | PROPUESTO | WP2 | 1–24 |
-| V02 | Viajes y viáticos | Viáticos de alojamiento y manutención | día-persona | 600 | $ 350.000 | $ 210.000.000 | PROPUESTO | WP2 | 1–24 |
-| V03 | Viajes y viáticos | Arrendamiento de vehículos 4x4 | día | 240 | $ 450.000 | $ 108.000.000 | PROPUESTO | WP2 | 1–24 |
-| V04 | Viajes y viáticos | Viaje internacional para divulgación científica | viaje | 2 | $ 12.000.000 | $ 24.000.000 | DECLARADO | WP3 | 14–24 |
+| V01 | Viajes y viáticos | Tiquetes aéreos nacionales | trayecto | 50 | $ 600.000 | $ 30.000.000 | PROPUESTO | WP2 | 1–24 |
+| V02 | Viajes y viáticos | Viáticos de alojamiento y manutención | día-persona | 250 | $ 350.000 | $ 87.500.000 | PROPUESTO | WP2 | 1–24 |
+| V03 | Viajes y viáticos | Arrendamiento de vehículos 4x4 | día | 100 | $ 450.000 | $ 45.000.000 | PROPUESTO | WP2 | 1–24 |
+| V04 | Viajes y viáticos | Viaje internacional para divulgación científica | viaje | 1 | $ 12.000.000 | $ 12.000.000 | DECLARADO | WP3 | 14–24 |
 | V05 | Viajes y viáticos | Alimentación de laboratorios ciudadanos | evento | 20 | $ 1.500.000 | $ 30.000.000 | DECLARADO | WP3 | 2–24 |
 | O01 | Otros rubros | Cargos de procesamiento de artículos de acceso abierto | artículo | 2 | $ 12.500.000 | $ 25.000.000 | DECLARADO | WP3 | 14–24 |
 | O02 | Otros rubros | Logística de ferias y laboratorios de apropiación | evento | 9 | $ 8.000.000 | $ 72.000.000 | DECLARADO | WP3 | 4–24 |
 | O03 | Otros rubros | Registro ante la DNDA y asesoría de propiedad intelectual | paquete | 1 | $ 15.000.000 | $ 15.000.000 | DECLARADO | WP3 | 12–24 |
-| O04 | Otros rubros | Pólizas y garantías del SGR | prima anual | 2 | $ 30.000.000 | $ 60.000.000 | DECLARADO | WP0 | 1–24 |
 | O05 | Otros rubros | Administración (revisoría y plataforma de seguimiento) | mes | 24 | $ 15.000.000 | $ 360.000.000 | DECLARADO | WP0 | 1–24 |
 | O06 | Otros rubros | Publicaciones de divulgación y eventos de socialización | paquete | 1 | $ 60.000.000 | $ 60.000.000 | PROPUESTO | WP3 | 6–24 |
 | X01 | Reserva de contingencia | Reserva de contingencia (suma de valores monetarios esperados) | global | 1 | $ 636.000.000 | $ 636.000.000 | CALCULADO | WP0 | 1–24 |
@@ -248,7 +265,7 @@ Puntajes totales ponderados (escala 1 a 9): ALT-00 = 4,475; ALT-01 = 4,335; ALT-
 - DEC-F03 Estrategia de despliegue: R4 de 4.4-MDR (tramos con piloto de contraste y custodia distribuida), con compuertas C1 y C2 que liberan las compras del tramo siguiente.
 - DEC-F04 Meta de desempeño: R² ≥ 0,70 y NRMSE ≤ 30 % frente a referencia (ancla EPA, 2021); NMAE ≤ 15 % aspiracional; línea base medida en el tramo 1 (corrige HR-14: tres metas contradictorias).
 - DEC-F05 TRL final 7 (no 8): demostración en entorno operativo; TRL 8 exige calificación independiente que el plazo no cubre.
-- DEC-F06 Presupuesto: se solicita la suma justificada por actividad (66,2 % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10).
+- DEC-F06 Presupuesto: se solicita la suma justificada por actividad (62,4 % del tope), no el tope; la holgura se describe como opciones sin presupuestar (corrige HR-10).
 - DEC-F07 Contrapartida: 2.110 M (IES 1.100 en especie; empresa 210 en efectivo y 800 en especie), valores del expediente E3 con desglose de la IES reconstruido; certificaciones pendientes; las alcaldías no aportan (VACIO).
 - DEC-F08 Cronograma: red de 17 actividades con ruta crítica igual a la duración (104 semanas); importación de 12 semanas máximo por lote; compras por tramo y no 100 % en la semana 2 (corrige HR-11).
 - DEC-F09 Alternativa seleccionada: ALT-03 híbrida por tramos, condicionada a la ratificación del panel; el puntaje no se interpreta como probabilidad de éxito.
@@ -258,7 +275,10 @@ Puntajes totales ponderados (escala 1 a 9): ALT-00 = 4,475; ALT-01 = 4,335; ALT-
 - DEC-F13 Estética: se aplica la paleta y la jerarquía tipográfica del usuario; excepción a FIG-02: opacidad 0,25 solo en la cuadrícula; el relleno de encabezados de tabla usa #B9D9EB con texto #2A3439 (contraste superior a 4,5:1; el texto sobre #6699CC no lo alcanza) y #6699CC como filete inferior del encabezado; filas alternas #F7F7F7.
 - DEC-F14 Numeración: tablas y figuras 'c.n' por capítulo; Parte I con prefijo F (F5.1), paquete 1000X con prefijo X (X6.1) y anexos con letra (A1).
 - DEC-F15 GWO no se activa porque el espacio de decisión (4 alternativas) es enumerable (AS-32).
-- DEC-F19 Alianza y presupuesto por actor (Parte inicial S): proponente universidad con grupo de investigación; municipio beneficiario sin aporte (regla del Anexo 2: una entidad no es cooperante y beneficiaria a la vez); actor reconocido por MinCiencias; empresa aliada. Las 56 líneas SGR se asignan a actores (Universidad 3.909,7 M; actor reconocido 852,0 M; empresa 4.505,6 M; municipio 0). PROPUESTO; requiere ratificación de la Universidad y verificación de la categoría de la empresa en los TdR.
+- DEC-F19 Alianza y presupuesto por actor (Parte inicial S): proponente universidad con grupo de investigación; municipio beneficiario sin aporte (regla del Anexo 2: una entidad no es cooperante y beneficiaria a la vez); actor reconocido por MinCiencias; empresa aliada. Las líneas SGR se asignan a actores de forma PROPUESTA; requiere ratificación de la Universidad y verificación de la categoría de la empresa en los TdR.
+- DEC-F20 Cierre de radicación: 3 de noviembre de 2026, 4:00 p. m. (decisión del usuario del 16-oct-2026). Sustituye al 11 de noviembre de la ficha anterior.
+- DEC-F21 Ajuste del presupuesto a la guía financiera de la Convocatoria 56 (decisión del usuario del 16-oct-2026): se retiran los seguros (S04 y O04, 110 M); P03 pasa a doctor en estancia posdoctoral (24 meses × 12,92 M, numeral 14.4); la movilidad (V01 a V04) se reduce a 174,5 M, 2 % del SGR; las líneas se presentan en los 11 rubros del Anexo 3; la reserva se conserva en el rubro 11 asociada al análisis de riesgos. El exceso de viajes lo cubre la logística de emergencia de la empresa (C05). Si los TdR aclaran que el tope de 2 % no aplica a viajes de campo, se restituyen 257,5 M.
+- DEC-F22 Formato de radicación: el documento técnico se entrega en las 30 secciones del Anexo 2 (PDF de 3 MB como máximo); el expediente completo se entrega aparte, comprimido (10 MB como máximo).
 
 ## 12. Reglas de coherencia obligatorias
 

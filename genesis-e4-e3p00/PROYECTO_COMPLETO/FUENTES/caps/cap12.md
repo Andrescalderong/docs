@@ -117,7 +117,7 @@ PERS-R01 mide el cumplimiento del despliegue por tramo. Compara los nodos instal
 |  | Producto asociado | Componente C1: modelo de corrección validado |
 |  | Actividad (ACT) | A1.4 (semanas 40 a 48), A1.5 (semanas 62 a 68) y A1.6 (semanas 82 a 98) |
 |  | Hito | H3 (mes 12), H4 (mes 16) y H7 (mes 23) |
-|  | Rubro presupuestal | P03, P07, E07, E08 y M02: 1.010,0 millones de COP (CALCULADO) |
+|  | Rubro presupuestal | P03, P07, E07, E08 y M02: 840,1 millones de COP (CALCULADO) |
 | 2. Definición | Descripción | Cuenta los ciclos completos de entrenamiento, validación y despliegue del modelo de corrección que se aplica en los gateways. |
 |  | Justificación | El modelo de corrección explica la reducción del error (SC-1). Sin ciclos completos no hay evidencia para decidir las compuertas. |
 | 3. Fórmula | Expresión | Número de ciclos completos de entrenamiento, validación y despliegue del modelo de corrección |
@@ -230,7 +230,7 @@ PERS-R04 mide la desviación de la ejecución presupuestal. La meta de desviaci�
 |  | Actividad (ACT) | A0.1 (semanas 0 a 8), C1 (semanas 48 a 50), C2 (semanas 68 a 70) y A3.4 (semanas 98 a 104) |
 |  | Hito | H0 (mes 2), H3 (mes 12), H5 (mes 17) y H8 (mes 24) |
 |  | Rubro presupuestal | P06 y O05: 600,0 millones de COP (CALCULADO) |
-| 2. Definición | Descripción | Compara la ejecución acumulada con la programación acumulada del presupuesto SGR de $ 9.267.260.000. |
+| 2. Definición | Descripción | Compara la ejecución acumulada con la programación acumulada del presupuesto SGR de $ 8.729.840.000. |
 |  | Justificación | Controla la viabilidad presupuestal y activa la reprogramación antes de que la desviación comprometa las compras por tramo. |
 | 3. Fórmula | Expresión | (Ejecución acumulada − programación acumulada) ÷ programación acumulada × 100 |
 |  | Variables | Numerador: ejecución acumulada menos programación acumulada. Denominador: programación acumulada. Factor: 100. |
@@ -242,7 +242,7 @@ PERS-R04 mide la desviación de la ejecución presupuestal. La meta de desviaci�
 | 5. Metas | Meta al mes 12 (año 1; compuerta C1) | \|desviación\| ≤ 10 % |
 |  | Meta al mes 17 (año 2; compuerta C2) | \|desviación\| ≤ 10 % |
 |  | Meta final | \|desviación\| ≤ 5 % al cierre |
-|  | Justificación | El límite de 5 % al cierre equivale a 463,4 millones de COP sobre el SGR solicitado (CALCULADO). La reserva de contingencia es de 636,0 millones de COP y su admisibilidad depende de los TdR (VACIO). |
+|  | Justificación | El límite de 5 % al cierre equivale a 436,5 millones de COP sobre el SGR solicitado (CALCULADO). La reserva de contingencia es de 636,0 millones de COP y su admisibilidad depende de los TdR (VACIO). |
 | 6. Periodicidad | Frecuencia de medición | Mensual |
 |  | Frecuencia de reporte | Mensual a la gerencia del proyecto; al financiador según los TdR [DATO_USUARIO: calendario de informes] |
 |  | Responsable de medición | Gerencia de proyecto |
@@ -1009,7 +1009,7 @@ El formato de la Metodología General Ajustada (MGA) del Sistema Unificado de In
 | Localización geográfica | Caldas, Cundinamarca y Valle del Cauca; 12 municipios, 4 por departamento [DATO_USUARIO: lista de municipios] | PERS-R01, PERS-P01 | SUPUESTO |
 | Demanda territorial (código ID) | [DATO_USUARIO: código ID de la demanda territorial del Anexo 4] | PERS-S01, PERS-S02 | VACIO |
 | Entidades participantes y roles | [DATO_USUARIO: nombres y roles de la entidad ejecutora, la empresa tecnológica, las alcaldías y la Unidad Nacional para la Gestión del Riesgo de Desastres] | — | VACIO |
-| Presupuesto estimado por fuente | SGR $ 9.267.260.000; contrapartida $ 2.110.000.000; total $ 11.377.260.000 | PERS-R04 | CALCULADO |
+| Presupuesto estimado por fuente | SGR $ 8.729.840.000; contrapartida $ 2.110.000.000; total $ 10.839.840.000 | PERS-R04 | CALCULADO |
 | Productos esperados (tipificados MMG) | PERS-P01: Red de 100 nodos y 10 gateways operativa; PROT-FUNC; meta final: 100 / 10 al mes 24 | PERS-P01 | PROPUESTO; MMG NO_VERIFICADO |
 | Productos esperados (tipificados MMG) | PERS-P02: Software de corrección y gemelo digital registrado; SW-REG; meta final: 1 registro vigente | PERS-P02 | PROPUESTO; MMG NO_VERIFICADO |
 | Productos esperados (tipificados MMG) | PERS-P03: Artículos científicos en revistas Q1 o Q2; ART-A1 / ART-A2; meta final: 2 sometidos y al menos 1 aceptado al mes 24 | PERS-P03 | PROPUESTO; MMG NO_VERIFICADO |

@@ -59,7 +59,7 @@ def f02():
         "Salidas durante la ejecución, efectos al mes 24 e impactos tras el cierre",
         "Cadena de valor del proyecto con los 15 indicadores PERS (ficha maestra, sección 8).\nValores monetarios en millones de pesos colombianos (COP)")
     cols = [
-        ("Insumos", GRIS, False, ["SGR: COP 9.267,3 millones", "Contrapartida: COP 2.110", "millones (DECLARADO;", "desglose IES PROPUESTO)", "Duración: 24 meses", "(104 semanas)"]),
+        ("Insumos", GRIS, False, ["SGR: COP 8.729,8 millones", "Contrapartida: COP 2.110", "millones (DECLARADO;", "desglose IES PROPUESTO)", "Duración: 24 meses", "(104 semanas)"]),
         ("Actividades", CLARO, False, ["WP1: medición verificada", "(OE1)", "WP2: red, energía y", "plataforma (OE2)", "WP3: uso institucional", "y custodia (OE3)", "WP0: gestión y", "compuertas"]),
         ("Outputs", MEDIO, False, ["PERS-P01: 100 nodos y", "10 gateways operativos", "PERS-P02: software y", "gemelo digital registrado", "PERS-P03: 2 artículos", "sometidos", "PERS-P04: 29 actividades", "de apropiación social"]),
         ("Outcomes", AZUL, False, ["PERS-E01: uso del tablero", "en al menos 75 % de los", "comités al mes 24", "PERS-E02: reducción", "relativa de falsas alarmas", "de al menos 30 %", "PERS-E03: 60 personas", "certificadas"]),
@@ -94,7 +94,7 @@ def f03():
     fig, ax = lienzo(
         "La alianza supuesta asigna roles verificables y deja sin nombre a las entidades",
         "Mapa de alianzas con roles y aportes. Alianza y territorio: SUPUESTO por instrucción del usuario;\nnombres de entidades: [DATO_USUARIO]. Valores en millones de pesos colombianos (COP)")
-    caja_texto(ax, 50, 62, 36, 8.5, ["Financiador: SGR y MinCiencias", "Valor solicitado: COP 9.267,3 millones"], GRIS, fs=8.6)
+    caja_texto(ax, 50, 62, 36, 8.5, ["Financiador: SGR y MinCiencias", "Valor solicitado: COP 8.729,8 millones"], GRIS, fs=8.6)
     caja_texto(ax, 86, 62, 27, 8.5, ["UNGRD (SUPUESTO)", "Articulación nacional del protocolo"], GRIS, fs=8.2, dashed=True)
     caja_texto(ax, 50, 39, 30, 15, ["Entidad ejecutora", "IES con acreditación de alta calidad", "[DATO_USUARIO: nombre]", "Coordina, mide y custodia los datos"], AZUL, bold=True, grosor=2.2, fs=8.6)
     caja_texto(ax, 13, 39, 25, 15, ["Empresa tecnológica", "[DATO_USUARIO: nombre]", "Plataforma, nube y desarrollo IoT", "Contrapartida: 210 en efectivo", "y 800 en especie (DECLARADO)"], MEDIO, fs=8.0)

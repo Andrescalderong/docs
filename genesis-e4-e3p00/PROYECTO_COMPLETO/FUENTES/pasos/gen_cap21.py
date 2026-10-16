@@ -111,7 +111,7 @@ d.p("La línea de tiempo muestra que 10 de los 24 meses transcurren antes de que
 
 # ---------------------------------------------------------------- 21.8
 d.h(2, "21.8 Presupuesto Resumido")
-d.p("El presupuesto resumido presenta el total, la distribución por fuente y las reservas. El valor solicitado al SGR es de 9.267.260.000 COP, que equivale a 66,2 % del tope declarado. La contrapartida es de 2.110.000.000 COP. La reserva de contingencia, de 636.000.000 COP, está incluida en el valor solicitado y suma los valores esperados de los 12 riesgos. La {T:t06} presenta el resumen por rubro y por fuente.")
+d.p("El presupuesto resumido presenta el total, la distribución por fuente y las reservas. El valor solicitado al SGR es de 8.729.840.000 COP, que equivale a 62,4 % del tope declarado. La contrapartida es de 2.110.000.000 COP. La reserva de contingencia, de 636.000.000 COP, está incluida en el valor solicitado y suma los valores esperados de los 12 riesgos. La {T:t06} presenta el resumen por rubro y por fuente.")
 fil = []
 for k, v in D.resumen()["por_rubro"].items():
     fil.append((k, mm(v), num(100 * v / SGR, 1) + " %"))
@@ -122,7 +122,7 @@ fil.append(("Total del proyecto", mm(TOT), "—"))
 d.tabla("t06", "Resumen presupuestal por rubro y por fuente",
         ["Concepto", "Valor (millones de COP)", "Porcentaje del SGR"], fil,
         "*Nota.* Elaboración propia con datos de maestro.py y de la ficha maestra §5. La reserva de contingencia depende de su admisibilidad como rubro según los términos de referencia (VACIO). La contrapartida no está certificada. Decimales con coma.")
-d.p("La holgura entre lo solicitado y el tope declarado es de 4.732.740.000 COP. El acta no la presupuesta. Se describe como opciones de ampliación que dependen de los términos de referencia. Esa decisión busca que cada peso solicitado tenga una actividad que lo justifique. Si la reserva de contingencia no se admite como rubro, el valor solicitado baja a 8.631.260.000 COP y la reserva debe absorberse de otra manera. El capítulo 8 desarrolla cada línea.")
+d.p("La holgura entre lo solicitado y el tope declarado es de 5.270.160.000 COP. El acta no la presupuesta. Se describe como opciones de ampliación que dependen de los términos de referencia. Esa decisión busca que cada peso solicitado tenga una actividad que lo justifique. Si la reserva de contingencia no se admite como rubro, el valor solicitado baja a 8.631.260.000 COP y la reserva debe absorberse de otra manera. El capítulo 8 desarrolla cada línea.")
 
 # ---------------------------------------------------------------- 21.9
 d.h(2, "21.9 Stakeholders Clave")

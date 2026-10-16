@@ -28,7 +28,7 @@ d.tabla("t01", "Identificación del proyecto",
          ("Beneficiario focal", "[DATO_USUARIO: municipio de Cundinamarca, Risaralda, Caldas o Valle del Cauca], como beneficiario sin aporte de recursos"),
          ("Código SIGP", "[DATO_USUARIO: código asignado en la plataforma SIGP]"),
          ("Tiempo de ejecución en meses", "24"),
-         ("Fecha y hora de cierre de la radicación", "[DATO_USUARIO: confirmar 3 de noviembre de 2026 a las 4:00 p. m. (guía financiera) o 11 de noviembre de 2026 (ficha del proyecto)]"),
+         ("Fecha y hora de cierre de la radicación", "3 de noviembre de 2026, 4:00 p. m. (confirmado por el usuario; coincide con la guía financiera de la convocatoria)"),
          ("Región (SGR)", "[DATO_USUARIO: dos regiones del SGR según el artículo 45 de la Ley 2056 de 2020]. Con tres departamentos, el alcance podría abarcar más de dos regiones (NO_VERIFICADO)"),
          ("Departamento(s)", "Caldas, Cundinamarca y Valle del Cauca (SUPUESTO por instrucción del usuario); Risaralda por verificar"),
          ("Municipio(s)", "12 municipios, cuatro por departamento [DATO_USUARIO: lista de municipios afectados por la emergencia]"),
@@ -41,7 +41,7 @@ d.tabla("t01", "Identificación del proyecto",
 d.p("La {T:t02} registra los grupos de investigación que se vincularán. Las cifras de investigadores y estudiantes son las que sustenta el presupuesto. Los nombres y las categorías vigentes en MinCiencias los aportan los grupos.")
 d.tabla("t02", "Grupos de investigación vinculados al proyecto",
         ["Nombre del grupo", "Entidad", "Líneas de investigación", "Investigadores y formación", "Estudiantes que puede vincular", "Contribución a la demanda territorial"],
-        [("[DATO_USUARIO: grupo de la Universidad]", "Universidad proponente", "[DATO_USUARIO: líneas]", "Investigador principal (50 %) y coinvestigador técnico (30 %); más coinvestigadores de ambiente y ciencias sociales (20 %)", "8: 6 jóvenes investigadores y 2 de maestría", "Calibración y validación del modelo de corrección; gerencia científica; apropiación social"),
+        [("[DATO_USUARIO: grupo de la Universidad]", "Universidad proponente", "[DATO_USUARIO: líneas]", "Investigador principal (50 %) y coinvestigador técnico (30 %); más coinvestigadores de ambiente y ciencias sociales (20 %)", "9: 6 jóvenes investigadores, 2 de maestría y 1 doctor en estancia posdoctoral", "Calibración y validación del modelo de corrección; gerencia científica; apropiación social"),
          ("[DATO_USUARIO: grupo del actor reconocido]", "Actor reconocido por MinCiencias", "[DATO_USUARIO: líneas]", "[DATO_USUARIO: número y formación]", "[DATO_USUARIO]", "Verificación metrológica independiente y formación de custodios")],
         "*Nota.* Elaboración propia con el presupuesto (líneas P01, P02, P07, P13 y C01 a C03). Se tendrá en cuenta la categoría obtenida en la convocatoria 894 de 2021 [DATO_USUARIO: categoría vigente de cada grupo].")
 

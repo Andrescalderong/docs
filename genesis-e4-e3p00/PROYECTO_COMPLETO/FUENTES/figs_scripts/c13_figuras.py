@@ -151,9 +151,9 @@ def f02():
     fig.suptitle("El costo se calcula por rubro; los beneficios y el ROI no se pueden calcular", fontsize=14, fontweight="bold",
                  color=T, x=0.01, ha="left", y=0.995)
     ax = fig.add_axes([0.20, 0.10, 0.31, 0.74])
-    rubros = [("Personal", 4552.8, 49.1), ("Equipos y software", 1885.6, 20.3), ("Servicios técnicos", 896.0, 9.7),
-              ("Reserva de contingencia", 636.0, 6.9), ("Otros rubros", 592.0, 6.4), ("Viajes y viáticos", 462.0, 5.0),
-              ("Materiales e insumos", 242.9, 2.6)]
+    rubros = [("Personal", 4382.9, 50.2), ("Equipos y software", 1885.6, 21.6), ("Servicios técnicos", 846.0, 9.7),
+              ("Reserva de contingencia", 636.0, 7.3), ("Otros rubros", 532.0, 6.1), ("Materiales e insumos", 242.9, 2.8),
+              ("Viajes y viáticos", 204.5, 2.3)]
     rubros = rubros[::-1]
     ys = range(len(rubros))
     barras = ax.barh(list(ys), [r[1] for r in rubros], color=E.MEDIO, edgecolor=T, height=0.62)
@@ -166,7 +166,7 @@ def f02():
                     textcoords="offset points", ha="left", va="center", fontsize=8.5, fontweight="bold", color=T)
     ax.set_xlim(0, 8400)
     ax.set_xticks([0, 2000, 4000]); ax.set_xticklabels(["0", "2.000", "4.000"], fontsize=8.5)
-    ax.set_title("Costos calculables\nSGR por rubro, millones de COP\nTotal: 9.267,26", fontsize=9.5, loc="left", pad=10, color=T, fontweight="bold")
+    ax.set_title("Costos calculables\nSGR por rubro, millones de COP\nTotal: 8.729,84", fontsize=9.5, loc="left", pad=10, color=T, fontweight="bold")
     ax.grid(axis="x"); ax.grid(axis="y", visible=False)
     # panel derecho: estructura de beneficios
     bx = fig.add_axes([0.58, 0.10, 0.41, 0.74]); bx.set_xlim(0, 40); bx.set_ylim(0, 70); bx.axis("off")
@@ -181,7 +181,7 @@ def f02():
         bx.text(26.0, yb - 2.75, "NO_CALCULABLE", ha="left", va="center", fontsize=8.2, fontweight="bold", color=T)
         bx.text(26.0, yb - 5.6, n, ha="left", va="center", fontsize=7.3, color=T, wrap=True)
         yb -= 11.5
-    caja2(bx, 0.5, 6.0, 38, 10.5, "ROI = (B − C) ÷ C\nC: 11.377,26 millones de COP (total del proyecto, CALCULADO)\nB: NO_CALCULABLE, por tanto ROI: NO_CALCULABLE",
+    caja2(bx, 0.5, 6.0, 38, 10.5, "ROI = (B − C) ÷ C\nC: 10.839,84 millones de COP (total del proyecto, CALCULADO)\nB: NO_CALCULABLE, por tanto ROI: NO_CALCULABLE",
           relleno=E.CLARO, fs=8.2)
     fig.text(0.01, 0.02, "Trama: reserva de contingencia (suma de 12 valores esperados). Elaboración propia con la ficha maestra, sección 5. Los beneficios no se monetizan por falta de fuente.", fontsize=8, color=T)
     return E.guardar(fig, "c13_f02")

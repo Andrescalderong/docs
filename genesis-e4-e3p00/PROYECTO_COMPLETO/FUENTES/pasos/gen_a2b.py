@@ -141,7 +141,7 @@ d.p("Las líneas temáticas y los componentes de los términos de referencia no 
 
 # ============================================================== 15
 d.raw("# 15. CADENA DE VALOR")
-d.p("La {T:t15} relaciona cada objetivo con sus productos, el medio de verificación, la meta y las actividades. Las actividades de administración y apoyo a la supervisión aparecen en cada objetivo. La {T:t16} valora cada actividad con la asignación de las 56 líneas del presupuesto SGR, de modo que la suma coincide con el total solicitado.")
+d.p("La {T:t15} relaciona cada objetivo con sus productos, el medio de verificación, la meta y las actividades. Las actividades de administración y apoyo a la supervisión aparecen en cada objetivo. La {T:t16} valora cada actividad con la asignación de las 54 líneas del presupuesto SGR, de modo que la suma coincide con el total solicitado.")
 def acts(oe, lst): return "; ".join(f"{a}" for a in lst)
 d.tabla("t15", "Cadena de valor",
         ["Objetivo específico", "Producto", "Medido a través de", "Cantidad o meta", "Actividades asociadas"],
@@ -163,13 +163,13 @@ for oe in ("OE1", "OE2", "OE3"):
 filas.append(("Total", "Valor SGR del proyecto", "", cop(SGR_T)))
 d.tabla("t16", "Valor de cada actividad (recursos SGR)",
         ["Objetivo", "Actividad", "Meses", "Valor SGR"], filas,
-        "*Nota.* Elaboración propia con las 56 líneas del presupuesto SGR. Regla de asignación PROPUESTA: el personal se reparte según la duración de las actividades de su paquete; los equipos y servicios se asignan a la actividad que los usa; la reserva de contingencia (636 millones de COP) se asigna por mitades a las compuertas C1 y C2, que la liberan; la administración (360 millones de COP) se divide en tres partes iguales.")
+        "*Nota.* Elaboración propia con las 54 líneas del presupuesto SGR. Regla de asignación PROPUESTA: el personal se reparte según la duración de las actividades de su paquete; los equipos y servicios se asignan a la actividad que los usa; la reserva de contingencia (636 millones de COP) se asigna por mitades a las compuertas C1 y C2, que la liberan; la administración (360 millones de COP) se divide en tres partes iguales.")
 d.p("La administración y el apoyo a la supervisión suman " + cop(VAL["ADM1"] + VAL["ADM2"] + VAL["ADM3"]) + ", equivalentes a " + num((VAL["ADM1"] + VAL["ADM2"] + VAL["ADM3"]) / SGR_T * 100, 1) + " % del valor SGR. El tope porcentual de esta categoría no se verificó (NO_VERIFICADO). Los miembros de la alianza participan en actividades presupuestadas según la Tabla S.8 de la sección S.7.")
-d.p("Los valores de esta sección corresponden al presupuesto original. La verificación de las Tablas S.15 a S.17 identifica ajustes pendientes: seguros, movilidad, posdoctorado y contrapartida del actor reconocido. Los valores se actualizan cuando la alianza decida.")
+d.p("Los valores incorporan los ajustes de la verificación presupuestal. Se retiraron los seguros, se incluyó el posdoctorado y la movilidad se limitó al 2 % del valor SGR. Quedan pendientes las cotizaciones y la contrapartida del actor reconocido.")
 
 # ============================================================== 16
 d.raw("# 16. SOSTENIBILIDAD SOCIAL Y AMBIENTAL DEL PROYECTO")
-d.p("El proyecto contribuye a los Objetivos de Desarrollo Sostenible 11, 9, 17 y 3, este último de forma indirecta (Organización de las Naciones Unidas [ONU], 2015). Se alinea con el Plan Nacional de Desarrollo en gestión del riesgo y acción climática (Congreso de la República, 2023). Fortalece la capacidad de generación de conocimiento con dos artículos, un laboratorio de calibración y la formación de ocho personas en investigación.")
+d.p("El proyecto contribuye a los Objetivos de Desarrollo Sostenible 11, 9, 17 y 3, este último de forma indirecta (Organización de las Naciones Unidas [ONU], 2015). Se alinea con el Plan Nacional de Desarrollo en gestión del riesgo y acción climática (Congreso de la República, 2023). Fortalece la capacidad de generación de conocimiento con dos artículos, un laboratorio de calibración y la formación de nueve personas en investigación.")
 d.p("La sostenibilidad se gestiona con custodia distribuida por componente. La {T:t17} resume los componentes, el custodio candidato, el mecanismo y la condición de recepción. Los custodios no están asignados: se definen con un índice de capacidad de absorción (ICAR) que evalúa seis dimensiones. El costo de sostenimiento y el ICAR son NO_CALCULABLE hasta que los candidatos aporten evidencia.")
 d.tabla("t17", "Sostenibilidad: transferencia por componente y condición de recepción",
         ["Componente", "Candidatos a custodia", "Mecanismo", "Mes", "Condición de recepción"],

@@ -1,6 +1,6 @@
 # Guía de lectura
 
-Este documento reúne en una sola pieza el proyecto completo SGR_CONV56_AIRE, formulado con el metaprompt GENESIS-CTeI 36.10 RC2. El proyecto propone una red de 100 nodos con sensores de bajo costo y 10 gateways que mide PM2,5 y PM10 en sitios de remoción de escombros posterremoto de Caldas, Cundinamarca y Valle del Cauca. Pide al Sistema General de Regalías 9.267.260.000 COP y suma una contrapartida de 2.110.000.000 COP, con una duración de 24 meses. El estado del documento es borrador con vacíos. No es un paquete de radicación. Para radicar se usa el documento técnico de 30 secciones, que se entrega aparte porque la convocatoria limita el tamaño de los archivos.
+Este documento reúne en una sola pieza el proyecto completo SGR_CONV56_AIRE, formulado con el metaprompt GENESIS-CTeI 36.10 RC2. El proyecto propone una red de 100 nodos con sensores de bajo costo y 10 gateways que mide PM2,5 y PM10 en sitios de remoción de escombros posterremoto de Caldas, Cundinamarca y Valle del Cauca. Pide al Sistema General de Regalías 8.729.840.000 COP y suma una contrapartida de 2.110.000.000 COP, con una duración de 24 meses. El estado del documento es borrador con vacíos. No es un paquete de radicación. Para radicar se usa el documento técnico de 30 secciones, que se entrega aparte porque la convocatoria limita el tamaño de los archivos.
 
 ## Estructura
 
