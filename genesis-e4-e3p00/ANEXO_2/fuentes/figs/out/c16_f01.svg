@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="576pt" viewBox="0 0 720 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-17T00:21:39.481569</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 720 576 
+L 720 0 
+L 0 0 
+L 0 576 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 226.8 354.47 
+L 493.2 354.47 
+Q 500.4 354.47 500.4 347.27 
+L 500.4 109.67 
+Q 500.4 102.47 493.2 102.47 
+L 226.8 102.47 
+Q 219.6 102.47 219.6 109.67 
+L 219.6 347.27 
+Q 219.6 354.47 226.8 354.47 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 14.4 164.39 
+L 172.8 164.39 
+Q 180 164.39 180 157.19 
+L 180 86.63 
+Q 180 79.43 172.8 79.43 
+L 14.4 79.43 
+Q 7.2 79.43 7.2 86.63 
+L 7.2 157.19 
+Q 7.2 164.39 14.4 164.39 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 14.4 270.95 
+L 172.8 270.95 
+Q 180 270.95 180 263.75 
+L 180 193.19 
+Q 180 185.99 172.8 185.99 
+L 14.4 185.99 
+Q 7.2 185.99 7.2 193.19 
+L 7.2 263.75 
+Q 7.2 270.95 14.4 270.95 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 14.4 377.51 
+L 172.8 377.51 
+Q 180 377.51 180 370.31 
+L 180 299.75 
+Q 180 292.55 172.8 292.55 
+L 14.4 292.55 
+Q 7.2 292.55 7.2 299.75 
+L 7.2 370.31 
+Q 7.2 377.51 14.4 377.51 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 547.2 164.39 
+L 705.6 164.39 
+Q 712.8 164.39 712.8 157.19 
+L 712.8 86.63 
+Q 712.8 79.43 705.6 79.43 
+L 547.2 79.43 
+Q 540 79.43 540 86.63 
+L 540 157.19 
+Q 540 164.39 547.2 164.39 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 547.2 270.95 
+L 705.6 270.95 
+Q 712.8 270.95 712.8 263.75 
+L 712.8 193.19 
+Q 712.8 185.99 705.6 185.99 
+L 547.2 185.99 
+Q 540 185.99 540 193.19 
+L 540 263.75 
+Q 540 270.95 547.2 270.95 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 547.2 377.51 
+L 705.6 377.51 
+Q 712.8 377.51 712.8 370.31 
+L 712.8 299.75 
+Q 712.8 292.55 705.6 292.55 
+L 547.2 292.55 
+Q 540 292.55 540 299.75 
+L 540 370.31 
+Q 540 377.51 547.2 377.51 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #b9d9eb; stroke-dasharray: 7,4.2; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 14.4 502.79 
+L 165.6 502.79 
+Q 172.8 502.79 172.8 495.59 
+L 172.8 427.91 
+Q 172.8 420.71 165.6 420.71 
+L 14.4 420.71 
+Q 7.2 420.71 7.2 427.91 
+L 7.2 495.59 
+Q 7.2 502.79 14.4 502.79 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #f7f7f7; stroke: #2a3439; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 194.4 502.79 
+L 345.6 502.79 
+Q 352.8 502.79 352.8 495.59 
+L 352.8 427.91 
+Q 352.8 420.71 345.6 420.71 
+L 194.4 420.71 
+Q 187.2 420.71 187.2 427.91 
+L 187.2 495.59 
+Q 187.2 502.79 194.4 502.79 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #f7f7f7; stroke: #2a3439; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 374.4 502.79 
+L 525.6 502.79 
+Q 532.8 502.79 532.8 495.59 
+L 532.8 427.91 
+Q 532.8 420.71 525.6 420.71 
+L 374.4 420.71 
+Q 367.2 420.71 367.2 427.91 
+L 367.2 495.59 
+Q 367.2 502.79 374.4 502.79 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #f7f7f7; stroke: #2a3439; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 554.4 502.79 
+L 705.6 502.79 
+Q 712.8 502.79 712.8 495.59 
+L 712.8 427.91 
+Q 712.8 420.71 705.6 420.71 
+L 554.4 420.71 
+Q 547.2 420.71 547.2 427.91 
+L 547.2 495.59 
+Q 547.2 502.79 554.4 502.79 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #f7f7f7; stroke: #2a3439; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15.5px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="21.037578" transform="rotate(-0 7.2 21.037578)">Cada componente de la red pasa a un custodio con una condición de recepción</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="43.187969" transform="rotate(-0 7.2 43.187969)">Servicio de vigilancia con cinco componentes, posibles custodios</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="59.047969" transform="rotate(-0 7.2 59.047969)">por tipo e hitos de transferencia en los meses 6, 12, 18 y 24</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="142.634961" transform="rotate(-0 360 142.634961)">Servicio de vigilancia de PM2,5 y</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="158.494961" transform="rotate(-0 360 158.494961)">PM10 con custodia distribuida</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="194.179961" transform="rotate(-0 360 194.179961)">Gobernanza y acuerdos · mes 6</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="226.159961" transform="rotate(-0 360 226.159961)">Protocolo de calibración · mes 12</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="257.619961" transform="rotate(-0 360 257.619961)">Nodos y repuestos · mes 18</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="289.339961" transform="rotate(-0 360 289.339961)">Tablero y alertas · mes 18</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="321.059961" transform="rotate(-0 360 321.059961)">Gemelo digital y datos · mes 24</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="107.704961" transform="rotate(-0 93.6 107.704961)">Empresa tecnológica</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="127.269961" transform="rotate(-0 93.6 127.269961)">nodos, repuestos y</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="143.129961" transform="rotate(-0 93.6 143.129961)">gemelo digital</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 183.117051 121.91 
+Q 199.8 121.91 216.482949 121.91 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 187.917051 124.31 
+L 183.117051 121.91 
+L 187.917051 119.51 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 211.682949 119.51 
+L 216.482949 121.91 
+L 211.682949 124.31 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="206.074961" transform="rotate(-0 93.6 206.074961)">Universidad</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="221.934453" transform="rotate(-0 93.6 221.934453)">proponente</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="241.759961" transform="rotate(-0 93.6 241.759961)">protocolo, datos y</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="257.619961" transform="rotate(-0 93.6 257.619961)">gemelo digital</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 183.117051 228.47 
+Q 199.8 228.47 216.482949 228.47 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 187.917051 230.87 
+L 183.117051 228.47 
+L 187.917051 226.07 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 211.682949 226.07 
+L 216.482949 228.47 
+L 211.682949 230.87 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="320.564961" transform="rotate(-0 93.6 320.564961)">Actor del SNCTI</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="340.389961" transform="rotate(-0 93.6 340.389961)">repositorio de datos y</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="93.6" y="356.509961" transform="rotate(-0 93.6 356.509961)">formación de custodios</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 183.117051 335.03 
+Q 199.8 335.03 216.482949 335.03 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 187.917051 337.43 
+L 183.117051 335.03 
+L 187.917051 332.63 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 211.682949 332.63 
+L 216.482949 335.03 
+L 211.682949 337.43 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="107.444961" transform="rotate(-0 626.4 107.444961)">Municipio y unidades</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="123.564961" transform="rotate(-0 626.4 123.564961)">de gestión del riesgo</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="143.129961" transform="rotate(-0 626.4 143.129961)">tablero y alertas</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 503.517051 121.91 
+Q 520.2 121.91 536.882949 121.91 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 508.317051 124.31 
+L 503.517051 121.91 
+L 508.317051 119.51 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 532.082949 119.51 
+L 536.882949 121.91 
+L 532.082949 124.31 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="221.934961" transform="rotate(-0 626.4 221.934961)">Autoridad ambiental</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="242.019961" transform="rotate(-0 626.4 242.019961)">protocolo de calibración</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 503.517051 228.47 
+Q 520.2 228.47 536.882949 228.47 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 508.317051 230.87 
+L 503.517051 228.47 
+L 508.317051 226.07 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 532.082949 226.07 
+L 536.882949 228.47 
+L 532.082949 230.87 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="312.634961" transform="rotate(-0 626.4 312.634961)">Comunidad y</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="328.494961" transform="rotate(-0 626.4 328.494961)">operarios</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="348.319961" transform="rotate(-0 626.4 348.319961)">usuarios y red de</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="626.4" y="364.179453" transform="rotate(-0 626.4 364.179453)">soporte</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 503.517051 335.03 
+Q 520.2 335.03 536.882949 335.03 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke-dasharray: 7.5,4.5; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 508.317051 337.43 
+L 503.517051 335.03 
+L 508.317051 332.63 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke-dasharray: 7.5,4.5; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 532.082949 332.63 
+L 536.882949 335.03 
+L 532.082949 337.43 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke-dasharray: 7.5,4.5; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="90" y="447.284453" transform="rotate(-0 90 447.284453)">Mes 6</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="90" y="467.109961" transform="rotate(-0 90 467.109961)">acuerdo marco y</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="90" y="483.229961" transform="rotate(-0 90 483.229961)">cláusula de apertura</text>
+   </g>
+   <g id="patch_19">
+    <path d="M 173.52 461.75 
+Q 180 461.75 184.914752 461.75 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 181.314752 459.95 
+L 184.914752 461.75 
+L 181.314752 463.55 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="270" y="447.284453" transform="rotate(-0 270 447.284453)">Mes 12</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="270" y="467.109961" transform="rotate(-0 270 467.109961)">protocolo y series de</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="270" y="482.969961" transform="rotate(-0 270 482.969961)">datos</text>
+   </g>
+   <g id="patch_20">
+    <path d="M 353.52 461.75 
+Q 360 461.75 364.914752 461.75 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 361.314752 459.95 
+L 364.914752 461.75 
+L 361.314752 463.55 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="450" y="447.284453" transform="rotate(-0 450 447.284453)">Mes 18</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="450" y="467.109961" transform="rotate(-0 450 467.109961)">nodos adicionales y</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="450" y="482.969961" transform="rotate(-0 450 482.969961)">tablero</text>
+   </g>
+   <g id="patch_21">
+    <path d="M 533.52 461.75 
+Q 540 461.75 544.914752 461.75 
+" clip-path="url(#p4c93b85d2e)" style="fill: none; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 541.314752 459.95 
+L 544.914752 461.75 
+L 541.314752 463.55 
+z
+" clip-path="url(#p4c93b85d2e)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="630" y="447.284453" transform="rotate(-0 630 447.284453)">Mes 24</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="630" y="467.369961" transform="rotate(-0 630 467.369961)">operación con custodio</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="630" y="482.969961" transform="rotate(-0 630 482.969961)">y gemelo digital</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="409.687461" transform="rotate(-0 7.2 409.687461)">Hitos de transferencia</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="535.957461" transform="rotate(-0 7.2 535.957461)">Sin un custodio que cumpla la condición de recepción, el componente permanece bajo la alianza o pasa a</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="551.817461" transform="rotate(-0 7.2 551.817461)">la cláusula de apertura.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4c93b85d2e">
+   <rect x="0" y="0" width="720" height="576"/>
+  </clipPath>
+ </defs>
+</svg>
