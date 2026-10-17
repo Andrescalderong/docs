@@ -1,0 +1,12 @@
+{"title":"Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto",
+ "subtitle":"Proyecto completo conforme a GENESIS-CTeI 36.10 RC2",
+ "portada":[
+  ["p","Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)",{"size":12,"before":24}],
+  ["p","Caso SGR_CONV56_AIRE",{"size":12}],
+  ["p","[DATO_USUARIO: nombre de la entidad ejecutora]",{"size":12,"before":18}],
+  ["p","Metaprompt GENESIS-CTeI 36.10 RC2 (VM-PAR3-MDR3-CONT1); norma de trazabilidad NTC 1.1",{"size":11,"before":30}],
+  ["p","Huella SHA-256 declarada del maestro (DECLARADO): 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8",{"size":8.5}],
+  ["p","Fecha de corte de los datos: 13 de octubre de 2026",{"size":11,"before":12}],
+  ["p","Estado: documento de formulación. No apto para radicar mientras existan datos pendientes del usuario.",{"size":11,"italic":true,"before":12}],
+  ["break","",{}]
+ ]}
