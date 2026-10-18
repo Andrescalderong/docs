@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Construye el Anexo 2: expande macros -> ensambla -> pandoc (plantilla oficial) -> posprocesado -> índices con páginas (LibreOffice) -> PDF.
-Uso: python3 build/build_a2.py SALIDA_BASE [--soporte]   (con --soporte incluye la parte inicial de soporte para la alianza)"""
+Uso: python3 build/build_a2.py SALIDA_BASE [--soporte] [--anexo | --solo-anexo]
+--soporte incluye la parte inicial de soporte para la alianza; --anexo agrega el Anexo A al final; --solo-anexo genera el Anexo A como documento independiente"""
 import sys, os, json, subprocess, re, glob, unicodedata
 HERE = os.path.dirname(os.path.abspath(__file__)); A2 = os.path.dirname(HERE)
 sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(A2, "v2"))
@@ -39,26 +40,38 @@ SIGLAS = [
  ("UNGRD", "Unidad Nacional para la Gestión del Riesgo de Desastres"),
 ]
 
-def front_md(path):
+SIGLAS_ANEXO = [("ARL", "Administradora de riesgos laborales"), ("HIE", "Hipótesis de influencia estructural"),
+                ("IDEAM", "Instituto de Hidrología, Meteorología y Estudios Ambientales")]
+TITULO_ANEXO = "ANEXO A. ANÁLISIS DEL PROBLEMA PÚBLICO Y DE LA ESTRUCTURA CAUSAL"
+
+def front_md(path, anexo=False, texto=None):
+    siglas = sorted(SIGLAS + (SIGLAS_ANEXO if anexo else []), key=lambda t: unicodedata.normalize("NFKD", t[0].lower()))
+    if texto is not None:   # anexo independiente: solo las siglas que el texto usa
+        siglas = [t for t in siglas if re.search(r"(?<![\w])" + re.escape(t[0].split(" ")[0]) + r"(?![\w])", texto)]
     L = ['::: {custom-style="FrontTitulo"}', 'Índice de tablas', ':::', '', '@@INDICE_TABLAS@@', '',
          '::: {custom-style="FrontTitulo"}', 'Índice de figuras', ':::', '', '@@INDICE_FIGURAS@@', '',
          '::: {custom-style="FrontTitulo"}', 'Lista de siglas', ':::', '']
-    for s, d in SIGLAS: L.append(f'**{s}.** {d}.  ')
-    L.append('')
+    for s_, d in siglas:
+        L += ['::: {custom-style="Referencia"}', f'**{s_}.** {d}.', ':::', '']
     open(path, 'w', encoding='utf-8').write('\n'.join(L))
 
-def main(base, soporte):
+def main(base, soporte, anexo=False, solo_anexo=False):
     out_md = os.path.join(A2, 'out_md'); os.makedirs(out_md, exist_ok=True)
-    subprocess.run([sys.executable, os.path.join(HERE, 'gen_s29.py')], check=True)
-    secs = sorted(glob.glob(os.path.join(A2, 'sec', 's[0-9][0-9].md')))
-    if not soporte: secs = [s for s in secs if not s.endswith('s00.md')]
-    for s in secs: subprocess.run([sys.executable, os.path.join(A2, 'v2', 'expand.py'), s], check=True, stdout=subprocess.DEVNULL)
-    fm = os.path.join(out_md, 'front.md'); front_md(fm)
-    entradas = [(fm, 'raw')] + [(os.path.join(out_md, os.path.basename(s)), 'cap') for s in secs]
+    subprocess.run([sys.executable, os.path.join(HERE, 'gen_s29.py')] + (['--solo-anexo'] if solo_anexo else ([] if anexo else ['--sin-anexo'])), check=True)
+    if solo_anexo:
+        secs = [os.path.join(A2, 'sec', 'sA.md')]
+    else:
+        secs = sorted(glob.glob(os.path.join(A2, 'sec', 's[0-9][0-9].md')))
+        if not soporte: secs = [s for s in secs if not s.endswith('s00.md')]
+        if anexo: secs.append(os.path.join(A2, 'sec', 'sA.md'))
+    for s_ in secs: subprocess.run([sys.executable, os.path.join(A2, 'v2', 'expand.py'), s_], check=True, stdout=subprocess.DEVNULL)
+    fm = os.path.join(out_md, 'front.md'); front_md(fm, anexo or solo_anexo, open(os.path.join(out_md, 'sA.md'), encoding='utf-8').read() + open(os.path.join(out_md, 'sA_refs.md'), encoding='utf-8').read() if solo_anexo else None)
+    entradas = [(fm, 'raw')] + [(os.path.join(out_md, os.path.basename(s_)), 'cap') for s_ in secs]
+    if solo_anexo: entradas.append((os.path.join(out_md, 'sA_refs.md'), 'cap'))
     md = base + '.md'; raw = base + '_raw.docx'; d0 = base + '_0.docx'; fin = base + '.docx'; pdf = base + '.pdf'
     reg = ensamblar.ensamblar(entradas, md)
     cmd = ['pandoc', md] + FLAGS.split() + ['-t', 'docx', f'--reference-doc={os.path.join(HERE, "reference_a2.docx")}', '--wrap=none', '--toc', '--toc-depth=2',
-           '--no-highlight', '-M', f'title={TITULO}', '-M', 'subtitle=ANEXO 2. DOCUMENTO TÉCNICO', '-M', 'lang=es-CO', '-M', 'toc-title=CONTENIDO', '-o', raw]
+           '--no-highlight', '-M', f'title={TITULO}', '-M', 'subtitle=' + ('ANEXO 2. DOCUMENTO TÉCNICO. ' + TITULO_ANEXO if solo_anexo else 'ANEXO 2. DOCUMENTO TÉCNICO'), '-M', 'lang=es-CO', '-M', 'toc-title=CONTENIDO', '-o', raw]
     subprocess.run(cmd, check=True)
     import m2
     portada = [('p', 'Nombre del proyecto: ' + m2.IDENT['titulo'], dict(size=11, bold=False, before=4, after=10))]
@@ -67,7 +80,7 @@ def main(base, soporte):
     post_apa.postprocesar(raw, d0, portada=portada)
     d = docx.Document(d0)
     n_dil = post_apa.colorear_diligenciar(d)
-    pre = ['1. IDENTIFICACIÓN DEL PROYECTO'] + (['SOPORTE INICIAL'] if soporte else [])
+    pre = ([] if solo_anexo else ['1. IDENTIFICACIÓN DEL PROYECTO']) + (['SOPORTE INICIAL'] if soporte else []) + (['ANEXO A.'] if (anexo or solo_anexo) else [])
     post_apa.salto_antes(d, pre)
     post_apa.marcar_bookmarks(d); post_apa.reorder(d.element); d.save(d0)
     d = docx.Document(d0)
@@ -95,4 +108,4 @@ def main(base, soporte):
 
 if __name__ == '__main__':
     base = sys.argv[1]; sop = '--soporte' in sys.argv
-    print(main(base, sop))
+    print(main(base, sop, '--anexo' in sys.argv, '--solo-anexo' in sys.argv))

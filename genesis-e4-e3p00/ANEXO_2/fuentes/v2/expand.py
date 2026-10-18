@@ -182,6 +182,9 @@ TABLAS = {k[2:]: v for k, v in globals().items() if k.startswith("t_")}
 import alianza
 alianza.cop = cop; alianza.pct = pct
 TABLAS.update(alianza.TABLAS_ALIANZA)
+import causal
+TABLAS.update(causal.TABLAS_CAUSAL)
+V.update(causal.resumen())
 
 def _expandir_tabla(m):
     tid, gen = m.group(1), m.group(2)

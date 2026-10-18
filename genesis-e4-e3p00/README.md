@@ -18,7 +18,7 @@ Este directorio reúne la revisión del archivo Problematica_E3-P00 y la ejecuci
 | respaldo | Paquete ZIP de continuidad con inventario, huellas y estado |
 | PROYECTO_COMPLETO | Proyecto completo SGR_CONV56_AIRE en Word y PDF (pasos 0 a 7, capítulos 1 a 21, paquete 1000X, estrategia y cierre), con las fuentes de trabajo y ESTADO_PROYECTO.md |
 | DOCUMENTO_UNIFICADO | Versión única en Word y PDF (162 páginas) con la revisión, las secciones 4.3, 4.4, 4.4-MDR y 4.5, el expediente MDR, el registro de entregas y tres anexos. Vista derivada: no forma parte del manifiesto del respaldo |
-| ANEXO_2 | Anexo 2 (documento técnico) de la Convocatoria 56 del SGR sobre la plantilla oficial, en Word y PDF, con el soporte inicial para la alianza, la versión para radicar y las fuentes de ensamblado |
+| ANEXO_2 | Anexo 2 (documento técnico) de la Convocatoria 56 del SGR sobre la plantilla oficial, en Word y PDF, con el soporte inicial para la alianza, la versión para radicar, el Anexo A (análisis del problema público y de la estructura causal) con su libro de respaldo y las fuentes de ensamblado |
 
 ## Resultados principales
 

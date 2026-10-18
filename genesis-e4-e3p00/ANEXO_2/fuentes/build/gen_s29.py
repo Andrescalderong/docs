@@ -8,9 +8,10 @@ import check_cap as cc
 BANCO = json.load(open(os.path.join(A2, "refs", "banco.json"), encoding="utf-8"))
 byk = {r["key"]: r for r in BANCO}
 SUF = {"Ley1523": "2012a", "Ley1581": "2012b"}
+SUF_ACT = set()   # sufijos activos: solo si las dos leyes de 2012 se citan en la lista
 def apa_de(r):
     a = r["apa"]
-    if r["key"] in SUF: a = a.replace("(2012,", f"({SUF[r['key']]},")
+    if r["key"] in SUF_ACT: a = a.replace("(2012,", f"({SUF[r['key']]},")
     return a
 norm = cc.norm
 IDX = collections.defaultdict(lambda: collections.defaultdict(set))
@@ -56,29 +57,34 @@ def usadas_en(archivos):
         for pat, k in NORMAS:
             if re.search(pat, t): usadas[k] += 1
     return usadas, no, amb
-def main():
+def main(solo_anexo=False, sin_anexo=False):
     archivos = sorted(f for f in glob.glob(os.path.join(A2, "sec", "s*.md")) if not re.search(r"s(00|29)\.md$", f))
+    if sin_anexo: archivos = [f for f in archivos if not f.endswith("sA.md")]
+    if solo_anexo: archivos = [os.path.join(A2, "sec", "sA.md")]
     usadas, no, amb = usadas_en(archivos)
     if no: print("NO RESUELTAS:", sorted(no))
     if amb: print("AMBIGUAS:", sorted(amb))
     refs = [byk[k] for k in sorted(usadas)]
+    SUF_ACT.clear()
+    if all(k in usadas for k in SUF): SUF_ACT.update(SUF)
     def orden(r):
         s = re.sub(r"[*_]", "", apa_de(r)); s = unicodedata.normalize("NFKD", s.lower())
         return "".join(c for c in s if not unicodedata.combining(c))
     refs.sort(key=orden)
-    L = ["%% PREFIJO: 29", "# 29. BIBLIOGRAFÍA", ""]
-    L.append(f"La lista reúne las {len(refs)} fuentes que el documento cita, ordenadas alfabéticamente según las normas APA 7. Cada cita del texto tiene su referencia en la lista, y cada referencia tiene al menos una cita en el texto. Las leyes, los decretos y los documentos de política se nombran en el texto por su denominación y se listan con la entidad que los expide.")
+    L = ["%% PREFIJO: 29", "# 29. BIBLIOGRAFÍA", ""] if not solo_anexo else ["%% PREFIJO: R", "# REFERENCIAS DEL ANEXO A", ""]
+    L.append(f"La lista reúne las {len(refs)} fuentes que {'el anexo' if solo_anexo else 'el documento'} cita, ordenadas alfabéticamente según las normas APA 7. Cada cita del texto tiene su referencia en la lista, y cada referencia tiene al menos una cita en el texto. Las leyes, los decretos y los documentos de política se nombran en el texto por su denominación y se listan con la entidad que los expide.")
     L.append("")
-    if any(r["key"] in SUF for r in refs):
+    if SUF_ACT:
         L.append("Las dos leyes del Congreso de la República de 2012 se distinguen con los sufijos «a» y «b», porque comparten autor y año. La Ley 1523 es 2012a y la Ley 1581 es 2012b.")
         L.append("")
     for r in refs:
         L += ['::: {custom-style="Referencia"}', apa_de(r), ":::", ""]
-    out = os.path.join(A2, "sec", "s29.md")
+    out = os.path.join(A2, "sec", "s29.md") if not solo_anexo else os.path.join(A2, "out_md", "sA_refs.md")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write("\n".join(L))
     os.makedirs(os.path.join(A2, "out"), exist_ok=True)
-    json.dump([r["key"] for r in refs], open(os.path.join(A2, "out", "refs_usadas.json"), "w"))
+    json.dump([r["key"] for r in refs], open(os.path.join(A2, "out", "refs_usadas.json" if not solo_anexo else "refs_anexoA.json"), "w"))
     ver = collections.Counter(r["ver"] for r in refs)
     print("ok", len(refs), "referencias", dict(ver))
 if __name__ == "__main__":
-    main()
+    main("--solo-anexo" in sys.argv, "--sin-anexo" in sys.argv)
