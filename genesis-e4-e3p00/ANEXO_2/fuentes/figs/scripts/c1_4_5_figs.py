@@ -73,11 +73,11 @@ def c4_f01():
     y2 = 1.0
     cajas = [
         ("1. Terremoto y declaratoria de emergencia", "", CAJA, 1.5),
-        ("2. Remoción y manejo de escombros", "Resuspenden material particulado", CAJA, 1.5),
-        ("3. Brecha de CTeI", "PM2,5 y PM10 medidos sin error conocido y sin uso institucional en los sitios de remoción", AZUL, 2.6),
-        ("4. Solución del proyecto", "Red híbrida con corrección en el gateway y gemelo digital", MEDIO, 1.5),
-        ("5. Productos verificables", "Prototipo validado, infraestructura, documentos y formación", CLARO, 1.5),
-        ("6. Resultado", f"Decisiones de alerta con datos de error conocido en {COMITES} comités de gestión del riesgo", CLARO, 1.5),
+        ("2. Demolición y remoción de escombros", "Emiten y resuspenden material particulado", CAJA, 1.5),
+        ("3. Brecha de CTeI", "PM2,5 y PM10 sin error conocido, sin uso institucional y sin estimación previa en demoliciones", AZUL, 2.6),
+        ("4. Solución del proyecto", "Red híbrida con corrección en el gateway, gemelo digital y laboratorio de modelación", MEDIO, 1.5),
+        ("5. Productos verificables", "Prototipos validados, infraestructura, documentos y formación", CLARO, 1.5),
+        ("6. Resultado", f"Decisiones de alerta con datos de error conocido y evaluación previa de demoliciones en {COMITES} comités", CLARO, 1.5),
     ]
     pos = []
     for k, (tit, cuerpo, col, lw) in enumerate(cajas):

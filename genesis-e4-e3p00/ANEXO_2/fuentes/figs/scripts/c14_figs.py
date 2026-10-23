@@ -25,8 +25,8 @@ def _semanas():
 # ============================================================ c14_f01
 def f01():
     f1, f2, f3, f5, c1, c2 = _semanas()
-    L = Lienzo(10, 8.0, h1="Cinco fases en tres tramos ordenan el trabajo y cada compuerta libera la compra siguiente",
-               h2="Fases con las semanas de la ruta crítica (semanas 0 a 104) y tramos con sus compuertas por mes (meses 1 a 24)")
+    L = Lienzo(10, 10.4, h1="Cinco fases en tres tramos ordenan el trabajo y cada compuerta libera la compra siguiente",
+               h2="Fases con las semanas de la ruta crítica (semanas 0 a 104), laboratorio de modelación por semanas y tramos con sus compuertas por mes (meses 1 a 24)")
     top = L.top
     fases = [
         ("Fase 1", "Diseñar y planificar", "Semanas\n%d a %d" % f1, "Actividades\n1.1 y 2.1", CLARO, None),
@@ -50,11 +50,29 @@ def f01():
     # ciclo de corrección: de la fase 4 a la fase 2 (arco por encima)
     L.flecha((xs[3] + w / 2, ytop_box + 0.6), (xs[1] + w / 2, ytop_box + 0.6), ls=(0, (5, 3)), rad=0.22, lw=1.5)
     L.t(xs[2] + w / 2, ytop_box + 6.9, "ciclo de corrección: volver a construir o a medir", ha="center", va="center")
-    # tramos (proporcionales a los meses)
+    # laboratorio de modelación (semanas de m2.ACTD en la misma escala horizontal que los tramos)
     x_ini, x_fin = 1.0, 94.0
+    def xw(w):
+        return x_ini + w / 104.0 * (x_fin - x_ini)
+    ylab_top = yb_box - 3.6
+    L.t(1.0, ylab_top + 0.2, "Laboratorio de modelación (actividades 2.5, 2.6, 2.7, 1.7 y 3.5)", bold=True, ha="left", va="center")
+    hA = 8.6
+    yA = ylab_top - 2.2 - hA
+    yB = yA - 1.2 - hA
+    lab = [("2.5", yA, "Diseñar", None, CLARO, None), ("2.6", yA, "Dotar", "hito H9, mes 11", CLARO, None),
+           ("2.7", yA, "Calibrar", "hito H10, mes 17", MEDIO, None), ("1.7", yB, "Validar con eventos", "hito H11, mes 22", AZUL, None),
+           ("3.5", yA, "", None, CLARO, None)]
+    for k, y, tit, hito, col, tr_ in lab:
+        a, b = ACTD[k]["es"], ACTD[k]["ef"]
+        if k == "3.5":
+            L.caja(xw(a) + 0.15, y, xw(b) - xw(a) - 0.3, hA, titulo="3.5", fc=col, trama=tr_, pad=0.4, radio=0.6, marco=0.8)
+            L.t(xw(a) - 0.8, y + hA / 2, "Adoptar y\ntransferir", ha="right", va="center")
+            continue
+        L.caja(xw(a) + 0.15, y, xw(b) - xw(a) - 0.3, hA, titulo="%s %s" % (k, tit), cuerpo=hito or "", fc=col, trama=tr_, pad=0.5, radio=0.6, marco=0.8)
+    # tramos (proporcionales a los meses)
     def xm(m):
         return x_ini + m / 24.0 * (x_fin - x_ini)
-    ytr_top = yb_box - 3.6
+    ytr_top = yB - 3.6
     L.t(1.0, ytr_top + 0.2, "Tramos de despliegue (meses 1 a 24)", bold=True, ha="left", va="center")
     htr = 15.5
     ytr = ytr_top - 2.2 - htr
@@ -138,5 +156,46 @@ def f02():
     L.guardar("c14_f02")
 
 
+# ============================================================ c14_f03
+def f03():
+    L = Lienzo(10, 8.6, h1="La cadena de modelación combina inventario, emisión, dispersión y evaluación previa, y se valida con mediciones en eventos reales",
+               h2="Cuatro módulos del gemelo predictivo de demolición, sus entradas y el ciclo de validación con eventos reales")
+    top = L.top
+    w, gap = 22.0, 3.3
+    xs = [1.0 + i * (w + gap) for i in range(4)]
+    hin, hmod, hval = 22.5, 16.5, 15.5
+    y_in = top - 0.4 - hin
+    y_mod = y_in - 5.0 - hmod
+    y_val = y_mod - 9.0 - hval
+    ent = [("Entradas de emisión", "Inventario de la demolición: volumen, material, método, altura y calendario. Polvo del territorio: granulometría y composición"),
+           ("Entradas de dispersión", "Geometría con dron LiDAR y cartografía; terreno; 4 estaciones meteorológicas y pronóstico"),
+           ("Entradas del sustituto", "Casos tipo de geometría, material y viento simulados con el modelo de dispersión"),
+           ("Criterios de lectura", "Valores guía de 24 horas de la OMS (2021) y escenarios de medidas de control")]
+    mods = [("1. Emisión", "Factores de la EPA (1995) ajustados con el polvo local", CLARO),
+            ("2. Dispersión", "AERMOD y simulación del flujo entre edificios", MEDIO),
+            ("3. Modelo sustituto", "Aprendizaje supervisado entrenado con las simulaciones", MEDIO),
+            ("4. Evaluación previa", "Concentración esperada con incertidumbre en los receptores", AZUL)]
+    for x, (t, c), (tm, cm, col) in zip(xs, ent, mods):
+        L.caja(x, y_in, w, hin, titulo=t, cuerpo=c, fc=CAJA, lw=1.3, va="center", pad=0.9)
+        L.caja(x, y_mod, w, hmod, titulo=tm, cuerpo=cm, fc=col, lw=1.5, pad=0.9)
+        L.flecha((x + w / 2, y_in - 0.2), (x + w / 2, y_mod + hmod + 0.2), lw=1.6)
+    for i in range(3):
+        yc = y_mod + hmod / 2
+        L.flecha((xs[i] + w + 0.15, yc), (xs[i + 1] - 0.15, yc), lw=1.8, ms=12)
+    # validación con eventos reales: recalibra los módulos 1 a 3
+    wv = 3 * w + 2 * gap
+    L.caja(xs[0], y_val, wv, hval, titulo="Validación con eventos reales",
+           cuerpo="Nueve campañas con monitores portátiles a barlovento y a sotavento; FAC2 y sesgo fraccional por evento; validación cruzada dejando un evento fuera; verificación independiente",
+           fc=BLANCO, lw=1.6, ls=(0, (6, 3)), pad=1.2)
+    for i in range(3):
+        L.flecha((xs[i] + w / 2, y_val + hval + 0.2), (xs[i] + w / 2, y_mod - 0.2), ls=(0, (4, 3)), lw=1.6, ms=12)
+    L.t(xs[0] + w / 2 + 2.0, (y_mod + y_val + hval) / 2, "compara y recalibra", ha="left", va="center")
+    # salida: informe y decisión
+    L.caja(xs[3], y_val, w, hval, titulo="Informe de evaluación previa",
+           cuerpo="El comité o la entidad territorial decide; no es una autorización", fc=CAJA, lw=1.5, pad=1.0)
+    L.flecha((xs[3] + w / 2, y_mod - 0.2), (xs[3] + w / 2, y_val + hval + 0.2), lw=1.8)
+    L.guardar("c14_f03")
+
+
 if __name__ == "__main__":
-    f01(); f02()
+    f01(); f02(); f03()

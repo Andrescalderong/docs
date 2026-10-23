@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-17T00:00:06.922816</dc:date>
+    <dc:date>2026-10-23T20:29:50.487744</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,7 +41,7 @@ Q 7.2 94.74 7.2 101.94
 L 7.2 189.78 
 Q 7.2 196.98 14.4 196.98 
 z
-" clip-path="url(#p05da86812b)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 144 196.98 
@@ -54,7 +54,7 @@ Q 136.8 94.74 136.8 101.94
 L 136.8 189.78 
 Q 136.8 196.98 144 196.98 
 z
-" clip-path="url(#p05da86812b)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 482.4 185.46 
@@ -67,7 +67,7 @@ Q 475.2 106.26 475.2 113.46
 L 475.2 178.26 
 Q 475.2 185.46 482.4 185.46 
 z
-" clip-path="url(#p05da86812b)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 144 330.9 
@@ -80,7 +80,7 @@ Q 136.8 258.9 136.8 266.1
 L 136.8 323.7 
 Q 136.8 330.9 144 330.9 
 z
-" clip-path="url(#p05da86812b)" style="fill: #ffffff; stroke-dasharray: 9.6,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #ffffff; stroke-dasharray: 9.6,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 14.4 541.14 
@@ -93,7 +93,7 @@ Q 7.2 392.82 7.2 400.02
 L 7.2 533.94 
 Q 7.2 541.14 14.4 541.14 
 z
-" clip-path="url(#p05da86812b)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 144 541.14 
@@ -106,7 +106,7 @@ Q 136.8 392.82 136.8 400.02
 L 136.8 533.94 
 Q 136.8 541.14 144 541.14 
 z
-" clip-path="url(#p05da86812b)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 482.4 506.58 
@@ -119,7 +119,7 @@ Q 475.2 427.38 475.2 434.58
 L 475.2 499.38 
 Q 475.2 506.58 482.4 506.58 
 z
-" clip-path="url(#p05da86812b)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 1.6; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 15.5px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="20.417578" transform="rotate(-0 7.2 20.417578)">En cada compuerta se aplican tres criterios y un</text>
@@ -160,12 +160,12 @@ z
    <g id="patch_9">
     <path d="M 113.04 145.86 
 Q 124.2 145.86 133.571146 145.86 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 127.971146 143.06 
 L 133.571146 145.86 
 L 127.971146 148.66 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="text_13">
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="594" y="131.394961" transform="rotate(-0 594 131.394961)">Se libera la compra</text>
@@ -179,12 +179,12 @@ z
    <g id="patch_10">
     <path d="M 433.44 145.86 
 Q 453.6 145.86 471.971146 145.86 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 466.371146 143.06 
 L 471.971146 145.86 
 L 466.371146 148.66 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="text_16">
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="145.44" y="280.694961" transform="rotate(-0 145.44 280.694961)">Ciclo de corrección</text>
@@ -198,22 +198,22 @@ z
    <g id="patch_11">
     <path d="M 194.4 197.7 
 Q 194.4 227.94 194.4 256.391146 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 197.2 250.791146 
 L 194.4 256.391146 
 L 191.6 250.791146 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
     <path d="M 352.8 258.18 
 Q 352.8 227.94 352.8 199.488854 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 350 205.088854 
 L 352.8 199.488854 
 L 355.6 205.088854 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="text_19">
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="59.4" y="452.514453" transform="rotate(-0 59.4 452.514453)">Compuerta</text>
@@ -248,12 +248,12 @@ z
    <g id="patch_13">
     <path d="M 113.04 466.98 
 Q 124.2 466.98 133.571146 466.98 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 127.971146 464.18 
 L 133.571146 466.98 
 L 127.971146 469.78 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="text_29">
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="594" y="452.514961" transform="rotate(-0 594 452.514961)">Se libera la compra</text>
@@ -267,32 +267,32 @@ z
    <g id="patch_14">
     <path d="M 433.44 466.98 
 Q 453.6 466.98 471.971146 466.98 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 466.371146 464.18 
 L 471.971146 466.98 
 L 466.371146 469.78 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="patch_15">
     <path d="M 194.4 392.1 
 Q 194.4 361.86 194.4 333.408854 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 191.6 339.008854 
 L 194.4 333.408854 
 L 197.2 339.008854 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="patch_16">
     <path d="M 352.8 331.62 
 Q 352.8 361.86 352.8 390.311146 
-" clip-path="url(#p05da86812b)" style="fill: none; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: none; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 355.6 384.711146 
 L 352.8 390.311146 
 L 350 384.711146 
 z
-" clip-path="url(#p05da86812b)" style="fill: #2a3439; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#p3a2caa282f)" style="fill: #2a3439; stroke-dasharray: 6.4,4.8; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="text_32">
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.6" y="132.937461" transform="rotate(-0 453.6 132.937461)">Sí</text>
@@ -318,7 +318,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p05da86812b">
+  <clipPath id="p3a2caa282f">
    <rect x="0" y="0" width="720" height="583.2"/>
   </clipPath>
  </defs>

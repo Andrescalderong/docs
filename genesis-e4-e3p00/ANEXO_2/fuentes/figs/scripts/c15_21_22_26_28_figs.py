@@ -47,65 +47,76 @@ def rangos(ids):
 
 
 # ============================================================ c15_f01
-def c15_f01():
-    OE = [("OE1", "Medición verificada", ["Prototipo validado: 1 sistema de 100 nodos y 10 gateways", "Documentos de investigación: 9",
+def c15_f01(h=16.0, medir=False):
+    """Con medir=True devuelve el alto del contenido (unidades) desde el borde superior; el dibujo final usa esa altura."""
+    OE = [("OE1", "Medición verificada", ["Prototipos validados: 2 (red de 100 nodos y 10 gateways, y gemelo predictivo de demolición)", "Documentos de investigación: 9",
                                            "Maestría en investigación: 2 personas", "Estancia posdoctoral: 1 persona", "Jóvenes investigadores: 6 personas"],
            ["1.1 Sitios y colocalización", "1.2 Lote 1 y referencias", "1.3 Tramo 1 y piloto", "1.4 Modelo y compuerta C1", "1.5 Tramo 2 y compuerta C2",
-            "1.6 Desempeño final y ensayo", "1.7 Administración y supervisión"]),
-          ("OE2", "Disponibilidad de la red", ["Infraestructura de medición: 1 infraestructura integrada"],
-           ["2.1 Enlace y energía", "2.2 Firmware y plataforma", "2.3 Tramo 2", "2.4 Tramo 3", "2.5 Administración y supervisión"]),
-          ("OE3", "Uso institucional y custodia", ["Documentos de planeación: 2", "Apropiación social: 29 actividades", "Asistencia técnica: 60 personas y 15 comités"],
-           ["3.1 Umbrales y protocolo", "3.2 Uso del tablero", "3.3 Custodios y convenios", "3.4 Transferencia y cierre", "3.5 Administración y supervisión"])]
-    h1 = "Tres objetivos específicos, nueve productos y 17 actividades se financian con %s millones del SGR" % num(m2.SGR / 1e6, 0)
-    L = Lienzo(10, 10.2, h1=h1, h2="Valor solicitado al SGR por objetivo específico, en millones de pesos colombianos (COP); cada producto se cuenta una sola vez")
-    xo, wo, xp, wp, xa, wa = 1.0, 24.0, 29.5, 33.0, 67.0, 32.0
+            "1.6 Desempeño final y ensayo", "1.7 Validación del gemelo", "1.8 Administración y supervisión"]),
+          ("OE2", "Disponibilidad de la red", ["Infraestructura de medición y de modelación: 1 infraestructura integrada"],
+           ["2.1 Enlace y energía", "2.2 Firmware y plataforma", "2.3 Tramo 2", "2.4 Tramo 3", "2.5 Diseño del laboratorio", "2.6 Dotación del laboratorio",
+            "2.7 Calibración del gemelo", "2.8 Administración y supervisión"]),
+          ("OE3", "Uso institucional y custodia", ["Documentos de planeación: 3", "Apropiación social: 29 actividades", "Asistencia técnica: 60 personas y 15 comités"],
+           ["3.1 Umbrales y protocolo", "3.2 Uso del tablero", "3.3 Custodios y convenios", "3.4 Transferencia y cierre", "3.5 Protocolo previo y laboratorio",
+            "3.6 Administración y supervisión"])]
+    h1 = "Tres objetivos específicos, nueve productos y %d actividades se financian con %s millones del SGR" % (len(m2.ACTD), num(m2.SGR / 1e6, 0))
+    assert len(m2.ACTD) == sum(len(o[3]) for o in OE)
+    L = Lienzo(10, h, h1=h1, h2="Valor solicitado al SGR por objetivo específico, en millones de pesos colombianos (COP); cada producto se cuenta una sola vez")
+    xo, wo, xp, wp, xa, wa = 1.0, 24.0, 29.0, 33.0, 65.0, 34.0
     # encabezados de columna
     y = L.top - 0.5
     for x, w, s in ((xo, wo, "Objetivo específico"), (xp, wp, "Productos"), (xa, wa, "Actividades")):
         L.t(x, y, s, bold=True, va="center")
-    y -= 3.2
-    gap = 1.2
+    y -= 2.6
+    gap = 1.0
     for oe, nom, prods, acts in OE:
-        hp = [L.necesita(wp, cuerpo=p, pad=0.8) for p in prods]
-        ha = [L.necesita(wa, cuerpo=a, pad=0.8, trama=("Administración" in a), marco=0.9) for a in acts]
-        sp = sum(hp) + 0.7 * (len(hp) - 1); sa = sum(ha) + 0.7 * (len(ha) - 1)
-        H = max(sp, sa, 14)
+        hp = [L.necesita(wp, cuerpo=p, pad=0.6) for p in prods]
+        ha = [L.necesita(wa, cuerpo=a, pad=0.6, trama=("Administración" in a), marco=0.9) for a in acts]
+        sp = sum(hp) + 0.5 * (len(hp) - 1); sa = sum(ha) + 0.5 * (len(ha) - 1)
+        H = max(sp, sa, 12)
         top = y
         # objetivo
         v = m2.POR_OE[oe]["sgr"] / 1e6
         L.caja(xo, top - H, wo, H, cuerpo="SGR: %s millones" % num(v, 1), titulo="%s. %s" % (oe, nom), fc=CLARO, fs=FS, pad=1.0)
         yy = top - (H - sp) / 2
         for p, h in zip(prods, hp):
-            L.caja(xp, yy - h, wp, h, cuerpo=p, fc=CAJA, pad=0.8, ha="left")
-            yy -= h + 0.7
+            L.caja(xp, yy - h, wp, h, cuerpo=p, fc=CAJA, pad=0.6, ha="left")
+            yy -= h + 0.5
         yy = top - (H - sa) / 2
         for a, h in zip(acts, ha):
             adm = "Administración" in a
-            L.caja(xa, yy - h, wa, h, cuerpo=a, fc=MEDIO if adm else BLANCO, pad=0.8, ha="left", trama="///" if adm else None, marco=0.9)
-            yy -= h + 0.7
+            L.caja(xa, yy - h, wa, h, cuerpo=a, fc=MEDIO if adm else BLANCO, pad=0.6, ha="left", trama="///" if adm else None, marco=0.9)
+            yy -= h + 0.5
         L.flecha((xo + wo, top - H / 2), (xp, top - H / 2), lw=1.4)
         L.flecha((xp + wp, top - H / 2), (xa, top - H / 2), lw=1.4)
         y = top - H - gap
+    if medir:
+        plt.close(L.fig)
+        return L.H - (y + gap)
     L.guardar("c15_f01")
 
 
 # ============================================================ c21_f01
 def c21_f01():
     cortos = {"1.1": "Sitios y colocalización", "1.2": "Lote 1 y referencias", "1.3": "Tramo 1 y piloto", "1.4": "Modelo y compuerta C1",
-              "1.5": "Tramo 2 y compuerta C2", "1.6": "Desempeño final y ensayo", "1.7": "Administración y supervisión",
+              "1.5": "Tramo 2 y compuerta C2", "1.6": "Desempeño final y ensayo", "1.7": "Validación del gemelo",
+              "1.8": "Administración y supervisión",
               "2.1": "Enlace y energía", "2.2": "Firmware y plataforma", "2.3": "Instalar tramo 2", "2.4": "Instalar tramo 3",
-              "2.5": "Administración y supervisión", "3.1": "Umbrales y protocolo", "3.2": "Uso del tablero", "3.3": "Custodios y convenios",
-              "3.4": "Transferencia y cierre", "3.5": "Administración y supervisión"}
+              "2.5": "Diseño del laboratorio", "2.6": "Dotación del laboratorio", "2.7": "Calibración del gemelo", "2.8": "Administración y supervisión",
+              "3.1": "Umbrales y protocolo", "3.2": "Uso del tablero", "3.3": "Custodios y convenios",
+              "3.4": "Transferencia y cierre", "3.5": "Protocolo previo y laboratorio", "3.6": "Administración y supervisión"}
     filas = []  # (tipo, texto, datos)
     for oe, nom in (("OE1", "Objetivo específico 1"), ("OE2", "Objetivo específico 2"), ("OE3", "Objetivo específico 3")):
         filas.append(("grupo", nom, None))
         for a in m2.ACTD.values():
             if a["oe"] == oe: filas.append(("act", f"{a['id']} {cortos[a['id']]}", a))
     filas.append(("relleno", "", None))
-    filas.append(("hitos", "Hitos y compuertas", None))
+    filas.append(("hitos", "Hitos y compuertas de la red", None))
+    filas.append(("hitos2", "Hitos del laboratorio", None))
     n = len(filas)
-    L = Lienzo(10, 9.0, h1="Diecisiete actividades ocupan 24 meses y tres compuertas ordenan los hitos",
-               h2="Cronograma mensual: actividades de ruta crítica, con holgura y de administración; compuertas C1, C2 y C3 e hitos H0 a H8")
+    assert len(m2.ACTD) == 22
+    L = Lienzo(10, 10.2, h1="Veintidós actividades ocupan 24 meses y tres compuertas ordenan los hitos",
+               h2="Cronograma mensual: actividades de ruta crítica, con holgura y de administración; compuertas C1, C2 y C3 e hitos H0 a H11")
     ax = eje_en_unidades(L, 34, 12.0, 98.5, L.top - 3.5)
     for s in ("top", "right", "left"): ax.spines[s].set_visible(False)
     ax.spines["bottom"].set_color(T)
@@ -122,7 +133,7 @@ def c21_f01():
             ax.text(-0.4, k, txt, ha="right", va="center", fontsize=FS, fontweight="bold", color=T, clip_on=False)
             ax.axhline(k - 0.5, color=MEDIO, lw=0.8, zorder=0)
         elif tipo == "act":
-            adm = a["id"].endswith(("7", "5")) and a["m_ini"] == 1 and a["m_fin"] == 24
+            adm = a["nombre"].startswith("Administración") and a["m_ini"] == 1 and a["m_fin"] == 24
             ax.text(-0.4, k, txt, ha="right", va="center", fontsize=FS, color=T, clip_on=False)
             x0, w = a["m_ini"] - 1, a["m_fin"] - a["m_ini"] + 1
             if adm:
@@ -131,21 +142,26 @@ def c21_f01():
             else:
                 crit = a["critica"]
                 ax.barh(k, w, left=x0, height=0.56, color=AZUL if crit else CLARO, edgecolor=T, linewidth=1.0, zorder=3)
-        else:
+        elif tipo == "hitos":
             yhit = k
             ax.text(-0.4, k, txt, ha="right", va="center", fontsize=FS, fontweight="bold", color=T, clip_on=False)
+            ax.axhline(k - 1.5, color=MEDIO, lw=0.8, zorder=0)   # por encima de las etiquetas de los hitos
+        else:
+            yhit2 = k
+            ax.text(-0.4, k, txt, ha="right", va="center", fontsize=FS, fontweight="bold", color=T, clip_on=False)
             ax.axhline(k - 0.5, color=MEDIO, lw=0.8, zorder=0)
-    # hitos
-    hit = [(h["id"], h["mes"]) for h in m2.HITOS]
-    cmap = {"C3": 24}
-    for i, (hid, mes) in enumerate(hit):
-        if hid == "C3":
-            continue
-        comp = hid in ("H3", "H5")
-        ax.plot([mes - 0.5], [yhit], marker="D" if comp else "o", ms=11 if comp else 8, mfc=T if comp else BLANCO, mec=T, mew=1.4, ls="none", color=T, zorder=6)
-        up = (i % 2 == 0)
-        ax.annotate(hid, xy=(mes - 0.5, yhit), xytext=(0, 14 if up else -15), textcoords="offset points", ha="center", va="center",
-                    fontsize=FS, color=T, zorder=7)
+    # hitos de la red y del laboratorio (H9, H10 y H11 van en su propia fila)
+    LAB_H = ("H9", "H10", "H11")
+    for yy, sel in ((yhit, [h for h in m2.HITOS if h["id"] not in LAB_H]), (yhit2, [h for h in m2.HITOS if h["id"] in LAB_H])):
+        for i, h in enumerate(sel):
+            hid, mes = h["id"], h["mes"]
+            if hid == "C3":
+                continue
+            comp = hid in ("H3", "H5")
+            ax.plot([mes - 0.5], [yy], marker="D" if comp else "o", ms=11 if comp else 8, mfc=T if comp else BLANCO, mec=T, mew=1.4, ls="none", color=T, zorder=6)
+            up = yy == yhit   # hitos de la red: etiqueta arriba; hitos del laboratorio: etiqueta abajo (sin cruces entre filas)
+            ax.annotate(hid, xy=(mes - 0.5, yy), xytext=(0, 14 if up else -15), textcoords="offset points", ha="center", va="center",
+                        fontsize=FS, color=T, zorder=7, bbox=dict(boxstyle="round,pad=0.08", fc=BLANCO, ec="none"))
     # compuerta C3 coincide con H8: rombo lleno en el mes 24
     ax.plot([24 - 0.5], [yhit], marker="D", ms=11, mfc=T, mec=T, ls="none", color=T, zorder=6)
     for m, s in ((12, "C1"), (17, "C2"), (24, "C3")):
@@ -163,10 +179,9 @@ def c22_f01():
     pr = ["Probable", "Improbable", "Raro"]; im = ["Menor", "Moderado", "Mayor"]
     prob = sum(r["n_prob"] == "Probable" for r in R); mayor = sum(r["n_imp"] == "Mayor" for r in R)
     ambos = sum(r["n_prob"] == "Probable" and r["n_imp"] == "Mayor" for r in R)
-    pal = {1: "Siete", 7: "siete", 12: "doce", 15: "quince"}
-    assert (prob, mayor, len(R), ambos) == (7, 12, 15, 5)
-    L = Lienzo(10, 8.0, h1="Siete de quince riesgos son probables y doce tienen impacto mayor, y cada uno tiene una respuesta asignada",
-               h2="Matriz de probabilidad (raro, improbable, probable) e impacto (menor, moderado, mayor) de los 15 riesgos del registro")
+    assert (prob, mayor, len(R), ambos) == (8, 15, 19, 6)
+    L = Lienzo(10, 8.4, h1="Ocho de diecinueve riesgos son probables y quince tienen impacto mayor, y cada uno tiene una respuesta asignada",
+               h2="Matriz de probabilidad (raro, improbable, probable) e impacto (menor, moderado, mayor) de los 19 riesgos del registro")
     x0, y0 = 13.0, 21.0
     cw, ch = 28.0, 11.5
     top = L.top - 3.2
@@ -207,12 +222,12 @@ def c26_f01():
     OEN = [("OE1", "Medición verificada"), ("OE2", "Disponibilidad de la red"), ("OE3", "Uso institucional y custodia")]
     lid = alianza.LIDERA
     nombres = {"IES": "Universidad proponente", "ENT": "Municipio aliado", "SNCTI": "Actor del SNCTI", "EMP": "Empresa tecnológica"}
-    aportes = {"IES": "Contrapartida C01 a C04: 1.100 millones en especie", "ENT": "Contrapartida C07: 120 millones en especie",
+    aportes = {"IES": "Contrapartida C01 a C04 y C09: 1.244 millones en especie", "ENT": "Contrapartida C07: 120 millones en especie",
                "SNCTI": "Contrapartida C08: valor por certificar", "EMP": "Contrapartida C05 y C06: 210 millones en efectivo y 800 millones en especie"}
-    for ac, txt in (("IES", 1.1e9), ("ENT", 1.2e8)):
+    for ac, txt in (("IES", 1.244e9), ("ENT", 1.2e8)):
         tot = sum(r["total"] for r in m2.CONTRA if r["fuente"] == ac)
         assert abs(tot - txt) < 1, (ac, tot)
-    L = Lienzo(10, 9.2, h1="La alianza reparte capacidades entre cuatro integrantes y ocho aportes de contrapartida",
+    L = Lienzo(10, 9.2, h1="La alianza reparte capacidades entre cuatro integrantes y nueve aportes de contrapartida",
                h2="Función de cada integrante por objetivo específico y actividades en que participa; aportes de contrapartida de cada uno")
     xl, wl = 1.0, 28.0
     xc0, wc, gp = 31.0, 22.0, 0.8
@@ -228,10 +243,13 @@ def c26_f01():
         for j, (oe, nom) in enumerate(OEN):
             acts = alianza._por_oe(ac, oe)
             x = xc0 + j * (wc + gp)
+            # las actividades del laboratorio (2.5 a 2.7 y 3.5) las lidera la universidad dentro de los objetivos 2 y 3
+            matiz = {("IES", "OE2"): "2.1 a 2.4 y 2.8; lidera 2.5 a 2.7", ("IES", "OE3"): "3.1 a 3.4 y 3.6; lidera 3.5",
+                     ("EMP", "OE2"): "2.1 a 2.4; participa en 2.5 a 2.7", ("ENT", "OE3"): "3.1 a 3.4; participa en 3.5"}
             if acts:
                 rol = "Lidera" if oe in lid[ac] else "Participa"
                 fc = AZUL if rol == "Lidera" else BLANCO
-                L.caja(x, y - rh, wc, rh, cuerpo=rangos(acts), titulo=rol, fc=fc, pad=0.8, lw=1.6 if rol == "Lidera" else 1.2,
+                L.caja(x, y - rh, wc, rh, cuerpo=matiz.get((ac, oe), rangos(acts)), titulo=rol, fc=fc, pad=0.8, lw=1.6 if rol == "Lidera" else 1.2,
                        trama=None if rol == "Lidera" else "...", marco=0.9)
             else:
                 L.caja(x, y - rh, wc, rh, cuerpo="Sin función", fc=GRIS, ls="--", pad=0.8, lw=1.0)
@@ -248,8 +266,8 @@ def c28_f01():
     d.sort(key=lambda kv: -kv[1])
     tot = m2.SGR
     top2 = (d[0][1] + d[1][1]) / tot
-    assert abs(top2 - 0.7464) < 0.001
-    L = Lienzo(10, 5.8, h1="El talento humano y los equipos suman tres cuartas partes del valor solicitado al SGR",
+    assert abs(top2 - 0.7421) < 0.001
+    L = Lienzo(10, 6.8, h1="El talento humano y los equipos suman casi tres cuartas partes del valor solicitado al SGR",
                h2="Valor solicitado al SGR por rubro, en millones de pesos colombianos (COP) y porcentaje del total")
     ax = eje_en_unidades(L, 40, 9.0, 83, L.top - 1.5)
     estilo_eje(ax)
@@ -300,4 +318,4 @@ def c28_f02():
 if __name__ == "__main__":
     which = sys.argv[1:] or ["c15", "c21", "c22", "c26", "c28a", "c28b"]
     for w in which:
-        {"c15": c15_f01, "c21": c21_f01, "c22": c22_f01, "c26": c26_f01, "c28a": c28_f01, "c28b": c28_f02}[w]()
+        {"c15": lambda: c15_f01(h=(c15_f01(medir=True) + 1.0) / 10), "c21": c21_f01, "c22": c22_f01, "c26": c26_f01, "c28a": c28_f01, "c28b": c28_f02}[w]()

@@ -4,19 +4,21 @@ Esta ficha incorpora los términos de referencia (TdR v1.6, convocatoria 56) que
 
 ## 1. Identidad
 
-- Título (183 caracteres con espacios): Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto en Caldas, Cundinamarca y Valle del Cauca
-- Proceso: Implementación. Objeto: red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto. Localización: Caldas, Cundinamarca y Valle del Cauca.
+- Título (214 caracteres con espacios): Implementación de una red IoT híbrida Edge-Cloud y de un gemelo digital predictivo de demolición para la gestión anticipada del riesgo por material particulado posterremoto en Caldas, Cundinamarca y Valle del Cauca
+- Proceso: Implementación. Objeto: red IoT híbrida Edge-Cloud y gemelo digital predictivo de demolición para la gestión anticipada del riesgo por material particulado posterremoto. Localización: Caldas, Cundinamarca y Valle del Cauca.
 - Convocatoria: 56, Convocatoria de emergencia para la recuperación y generación de capacidades transformadoras, en el marco del Decreto 1414 de 17 de septiembre de 2026. Cierre de presentación: 3 de noviembre de 2026, 4:00 p. m.
 - Línea temática principal: 5.1. Ciencia, tecnología e innovación para la gestión anticipada del riesgo y la seguridad de las regiones; subnumerales 5.1.1 (monitoreo inteligente, observación territorial y alerta temprana) y 5.1.2 (modelación avanzada, gemelos digitales y analítica predictiva). Sin línea secundaria.
 - Territorio: Caldas (región Eje Cafetero), Cundinamarca (Centro Oriente) y Valle del Cauca (Pacífico); verificar con el Anexo 8. 12 municipios (4 por departamento; nombres por diligenciar). Nodos: Caldas 33, Cundinamarca 34, Valle del Cauca 33.
 - Evento: terremoto (Decreto 1261 de 2026, modificado por el Decreto 1348 de 2026). Territorio y alianza son supuestos de trabajo por instrucción del usuario; no hay reportes oficiales de afectación en los archivos.
-- Duración: 24 meses (104 semanas). TRL de entrada 4; TRL comprometido al cierre 8; piso TRL 7 al mes 19. La evidencia del TRL 8 es el ensayo independiente y la evaluación externa del mes 23 (hito H7).
-- Alianza (numeral 3 de los TdR): entidad proponente = IES con acreditación de alta calidad (supuesto); aliada 1 = empresa tecnológica (actor del sector productivo); aliada 2 = entidad territorial de un departamento afectado. Nombres por diligenciar. Cada integrante aporta contrapartida cuantificada. La entidad territorial aliada no puede figurar también como beneficiaria; si coincide con la jurisdicción de alguno de los 15 comités, ese comité se sustituye por otro de la misma jurisdicción.
+- Duración: 24 meses (104 semanas). Red: TRL de entrada 4; TRL comprometido al cierre 8; piso TRL 7 al mes 19. La evidencia del TRL 8 es el ensayo independiente y la evaluación externa del mes 23 (hito H7). Gemelo predictivo de demolición: TRL 3 de entrada y TRL 6 al cierre, con validación en al menos 6 eventos reales.
+- Alianza (numeral 3 de los TdR): cuatro integrantes. Entidad proponente y ejecutora = IES con acreditación de alta calidad (supuesto), que aloja y valida el laboratorio de modelación; aliado 1 = municipio de un departamento afectado (usuario del laboratorio y custodio con su comité); aliado 2 = actor del SNCTI con reconocimiento vigente de MinCiencias (estancias, formación y validación metodológica); aliado 3 = empresa tecnológica (plataforma, nube y actor del sector productivo). Nombres por diligenciar. Cada integrante aporta contrapartida cuantificada; el valor del aporte del actor del SNCTI está por certificar. El municipio aliado no puede figurar también como beneficiario; si coincide con la jurisdicción de alguno de los 15 comités, ese comité se sustituye por otro de la misma jurisdicción.
 - Beneficiarios: 15 comités de gestión del riesgo (12 municipales y 3 departamentales), 150 funcionarios (supuesto), operarios de remoción, población expuesta, autoridades ambientales.
 
 ## 2. Solución
 
 Red de 100 nodos hoja de medición de PM2,5 y PM10 (sensor óptico de bajo costo con temperatura y humedad), 10 gateways y 3 monitores gravimétricos de referencia (uno por departamento) para colocalización. Los nodos transmiten por LoRa al gateway; el gateway aplica el modelo de corrección (humedad, temperatura, fracción gruesa) y reenvía por red celular con enlace satelital de respaldo y almacenamiento local de 7 días; nodos con autonomía mínima de 14 días sin sol; la nube aloja el gemelo digital, la base de datos y el tablero con el índice local y el protocolo de alerta. Custodia distribuida por componente y por tramo, con cláusula de apertura. Metas técnicas: R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia (guía de la EPA de 2021 como ancla informativa); pendiente 0,65–1,35; sesgo entre −5,0 y 5,0 µg/m³; disponibilidad mensual ≥ 90 %; pérdida de paquetes ≤ 10 %. NMAE ≤ 15 % es aspiración. La línea base de error se mide en el tramo 1.
+
+Laboratorio de modelación y gemelo predictivo de demolición (dentro de los objetivos 1, 2 y 3; sin objetivo adicional): alojado en la IES y validado por ella, con servidor de cómputo, 4 estaciones meteorológicas, dron con LiDAR y GNSS y 2 monitores portátiles. Cadena de cinco bloques: inventario de entrada, emisión (factores AP-42 13.2.3 de la EPA ajustados con polvo local), dispersión (AERMOD de tamizaje y CFD entre edificios), modelo sustituto supervisado y evaluación previa con escenarios de control. Validación con 9 campañas y al menos 6 eventos válidos (al menos 2 por departamento), validación cruzada dejando un evento fuera, FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3; línea base: tamizaje con factores genéricos; verificador independiente. El resultado es una evaluación previa y no una autorización; no se afirman efectos en la salud.
 
 ## 3. Objetivos
 
@@ -37,23 +39,23 @@ Compuertas: C1 (mes 12) libera el tramo 2 si R² ≥ 0,70 y NRMSE ≤ 30 % en el
 
 ## 5. Presupuesto v2 (SGR)
 
-- Valor solicitado al SGR: $ 8.351.340.000 (59,7 % del tope de $ 14.000.000.000; no se solicita la holgura de $ 5.648.660.000).
-- Contrapartida: $ 2.230.000.000 (efectivo $ 210.000.000, 2,51 % del SGR; especie $ 2.020.000.000). Total del proyecto: $ 10.581.340.000.
-- Transferencia: $ 210.000.000 = 1,98 % del valor total (mínimo 1 %). Movilidad: $ 24.000.000 = 0,29 % del SGR (máximo 2 %).
+- Valor solicitado al SGR: $ 10.022.840.000 (71,6 % del tope de $ 14.000.000.000; no se solicita la holgura de $ 3.977.160.000).
+- Contrapartida: $ 2.374.000.000 (efectivo $ 210.000.000, 2,10 % del SGR; especie $ 2.164.000.000). Total del proyecto: $ 12.396.840.000.
+- Transferencia: $ 268.000.000 = 2,16 % del valor total (mínimo 1 %). Movilidad: $ 24.000.000 = 0,24 % del SGR (máximo 2 %).
 - Sin reserva de contingencia, sin pólizas ni seguros (excluidos por el numeral 14.3 de los TdR). El riesgo se atiende con 20 nodos y 1 gateway de reserva, compras por tramo, compuertas y cotizaciones vigentes.
 
 | Rubro del TdR | Valor (COP) | % SGR |
 | --- | --- | --- |
-| Talento Humano | $ 4.382.880.000 | 52,5 % |
-| Equipos y software | $ 1.851.000.000 | 22,2 % |
-| Capacitación y eventos | $ 252.000.000 | 3,0 % |
-| Servicios tecnológicos y pruebas | $ 473.560.000 | 5,7 % |
-| Materiales, insumos y documentación | $ 200.400.000 | 2,4 % |
-| Protección del conocimiento y divulgación | $ 187.500.000 | 2,2 % |
-| Gastos de viaje | $ 432.000.000 | 5,2 % |
-| Infraestructura | $ 132.000.000 | 1,6 % |
-| Administrativos | $ 248.000.000 | 3,0 % |
-| Seguimiento | $ 192.000.000 | 2,3 % |
+| Talento Humano | $ 4.994.880.000 | 49,8 % |
+| Equipos y software | $ 2.443.000.000 | 24,4 % |
+| Capacitación y eventos | $ 300.000.000 | 3,0 % |
+| Servicios tecnológicos y pruebas | $ 718.560.000 | 7,2 % |
+| Materiales, insumos y documentación | $ 228.400.000 | 2,3 % |
+| Protección del conocimiento y divulgación | $ 197.500.000 | 2,0 % |
+| Gastos de viaje | $ 543.500.000 | 5,4 % |
+| Infraestructura | $ 132.000.000 | 1,3 % |
+| Administrativos | $ 273.000.000 | 2,7 % |
+| Seguimiento | $ 192.000.000 | 1,9 % |
 
 ### Líneas de presupuesto SGR
 
@@ -114,6 +116,25 @@ Compuertas: C1 (mes 12) libera el tramo 2 si R² ≥ 0,70 y NRMSE ≤ 30 % en el
 | O05a | Administrativos | Administración del proyecto (gastos administrativos y revisoría) | mes | 24 | $ 7.000.000 | $ 168.000.000 | PROPUESTO |
 | O05b | Seguimiento | Apoyo a la supervisión y plataforma de seguimiento | mes | 24 | $ 8.000.000 | $ 192.000.000 | PROPUESTO |
 | O06 | Protección del conocimiento y divulgación | Publicaciones de divulgación y eventos de socialización | paquete | 1 | $ 60.000.000 | $ 60.000.000 | PROPUESTO |
+| P15 | Talento Humano | Investigador líder en modelación atmosférica y dispersión de contaminantes (1) | persona-mes | 22 | $ 13.000.000 | $ 286.000.000 | PROPUESTO |
+| P16 | Talento Humano | Ingeniero en dinámica de fluidos computacional y cómputo de alto rendimiento (1) | persona-mes | 20 | $ 10.000.000 | $ 200.000.000 | PROPUESTO |
+| P17 | Talento Humano | Ingeniero en demolición y control de polvo en obra (1) | persona-mes | 14 | $ 9.000.000 | $ 126.000.000 | PROPUESTO |
+| E13 | Equipos y software | Servidor de cálculo de alto rendimiento y almacenamiento del laboratorio de modelación | unidad | 1 | $ 160.000.000 | $ 160.000.000 | PROPUESTO |
+| E14 | Equipos y software | Estaciones meteorológicas automáticas con anemómetro sónico. pluviómetro y radiómetro (3 departamentales y 1 móvil) | unidad | 4 | $ 32.000.000 | $ 128.000.000 | PROPUESTO |
+| E15 | Equipos y software | Dron con sensor LiDAR y cámara fotogramétrica y receptor GNSS RTK | unidad | 1 | $ 105.000.000 | $ 105.000.000 | PROPUESTO |
+| E16 | Equipos y software | Monitores portátiles de material particulado de referencia equivalente para campañas de demolición | unidad | 2 | $ 72.000.000 | $ 144.000.000 | PROPUESTO |
+| E17 | Equipos y software | Licencias de software de modelación urbana. de dispersión y SIG. de pago único con soporte durante la ejecución | paquete | 1 | $ 55.000.000 | $ 55.000.000 | PROPUESTO |
+| S12 | Servicios tecnológicos y pruebas | Campañas de medición en demoliciones y remociones reales (logística. seguridad industrial y acceso) | campaña | 9 | $ 16.000.000 | $ 144.000.000 | PROPUESTO |
+| S13 | Servicios tecnológicos y pruebas | Caracterización granulométrica y química del polvo de escombros en laboratorio acreditado | muestra | 30 | $ 1.100.000 | $ 33.000.000 | PROPUESTO |
+| S14 | Servicios tecnológicos y pruebas | Verificación y validación independiente del modelo predictivo | servicio | 1 | $ 48.000.000 | $ 48.000.000 | PROPUESTO |
+| S15 | Servicios tecnológicos y pruebas | Cartografía de alta resolución y modelos digitales de terreno de los sitios | paquete | 1 | $ 20.000.000 | $ 20.000.000 | PROPUESTO |
+| S16 | Capacitación y eventos | Talleres de evaluación previa de demolición con comités y obras (6) | taller | 6 | $ 8.000.000 | $ 48.000.000 | PROPUESTO |
+| S17 | Administrativos | Importación y nacionalización de equipos del laboratorio de modelación | servicio | 1 | $ 25.000.000 | $ 25.000.000 | PROPUESTO |
+| M08 | Materiales. insumos y documentación | Consumibles y repuestos de las campañas de medición (filtros. baterías y verificaciones de campo) | lote | 1 | $ 28.000.000 | $ 28.000.000 | PROPUESTO |
+| V06 | Gastos de viaje | Tiquetes aéreos nacionales de las campañas de demolición | trayecto | 40 | $ 600.000 | $ 24.000.000 | PROPUESTO |
+| V07 | Gastos de viaje | Viáticos de alojamiento y manutención de las campañas de demolición | día-persona | 160 | $ 350.000 | $ 56.000.000 | PROPUESTO |
+| V08 | Gastos de viaje | Arrendamiento de vehículos 4x4 de las campañas de demolición | día | 70 | $ 450.000 | $ 31.500.000 | PROPUESTO |
+| O07 | Protección del conocimiento y divulgación | Registro del software y de los datos del modelo predictivo ante la DNDA | paquete | 1 | $ 10.000.000 | $ 10.000.000 | PROPUESTO |
 
 ### Contrapartida
 
@@ -125,7 +146,8 @@ Compuertas: C1 (mes 12) libera el tramo 2 si R² ≥ 0,70 y NRMSE ≤ 30 % en el
 | C04 | IES | Uso de laboratorios y equipos de la IES | Especie | $ 300.000.000 |
 | C05 | EMP | Aporte de la empresa tecnológica: logística y viáticos de emergencia | Efectivo | $ 210.000.000 |
 | C06 | EMP | Infraestructura en la nube de la empresa | Especie | $ 800.000.000 |
-| C07 | ENT | Entidad territorial aliada: profesionales de gestión del riesgo y logística de acceso a sitios | Especie | $ 120.000.000 |
+| C07 | ENT | Municipio aliado: profesionales de gestión del riesgo y logística de acceso a sitios | Especie | $ 120.000.000 |
+| C09 | IES | Entidad proponente: espacio, energía, red y soporte técnico del laboratorio de modelación (24 meses) | Especie | $ 144.000.000 |
 
 ### Ajustes por los TdR (respecto de la ficha anterior)
 
@@ -136,13 +158,14 @@ Compuertas: C1 (mes 12) libera el tramo 2 si R² ≥ 0,70 y NRMSE ≤ 30 % en el
 | AJ-03 | Pólizas y garantías | 60.000.000 COP en otros rubros | Se elimina del SGR | El numeral 14.3 excluye los seguros del apoyo del SGR |
 | AJ-05 | Administración (360.000.000 COP en otros rubros) | Un solo rubro de administración | Se separa en Administrativos (168.000.000 COP) y Seguimiento (192.000.000 COP), con el mismo total | Los numerales 12.2 y 14.3 exigen el rubro Seguimiento para la vigilancia del proyecto |
 | AJ-01 | Reserva de contingencia | 636.000.000 COP como rubro del SGR | Se elimina como rubro; el riesgo se atiende con unidades de reserva, compuertas y programación | El numeral 12.2 no contempla la reserva como rubro y el numeral 14.3 exige justificar cada rubro con cotizaciones |
+| AJ-10 | Laboratorio de modelación predictiva de demolición | Sin módulo predictivo; el gemelo digital solo estimaba entre nodos | Cinco actividades nuevas repartidas en los objetivos 1, 2 y 3 y 19 líneas nuevas del SGR | Decisión de la alianza del 23 de octubre de 2026; responde al alcance 5.1.2 de los TdR (modelación avanzada, gemelos digitales y analítica predictiva) |
 | AJ-06 | Contrapartida de la entidad territorial | Sin aporte (VACIO) | 120.000.000 COP en especie (PROPUESTO, pendiente de certificación) | El numeral 3 exige que cada integrante de la alianza aporte una contrapartida cuantificada en términos monetarios |
 
 - AJ-07 TRL: de TRL 4 a 7 (ficha anterior) a TRL 4 a 8 con piso 7 al mes 19; los TdR valoran el TRL 8 con 8 puntos y el TRL 7 con 3; la evidencia es el ensayo independiente (S08) y la evaluación externa (S07) del mes 23.
 - AJ-08 Productos: seis artículos de jóvenes, dos productos de maestría y uno de posdoctorado (9 documentos de investigación) en lugar de 2 artículos; cada persona entrega además un producto de divulgación (numeral 9).
 - AJ-09 Alcance integral: se elimina el lenguaje de «opciones de ampliación» posteriores; el proyecto no depende de fases posteriores (numerales 1, 3 y 6).
 
-## 6. Actividades, periodo y valor (17 actividades)
+## 6. Actividades, periodo y valor (22 actividades)
 
 | N.º | Actividad | OE | Meses | Semanas (inicio–fin) | Holgura | SGR | Contrapartida |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -152,21 +175,26 @@ Compuertas: C1 (mes 12) libera el tramo 2 si R² ≥ 0,70 y NRMSE ≤ 30 % en el
 | 1.4 | Entrenar y validar el modelo de corrección y decidir en la compuerta C1 | OE1 | M10–M12 | 40–50 | 0 | $ 273.575.000 | $ 85.937.500 |
 | 1.5 | Reentrenar y verificar por departamento el tramo 2 y decidir en la compuerta C2 | OE1 | M15–M17 | 62–70 | 0 | $ 147.660.000 | $ 68.750.000 |
 | 1.6 | Verificar el desempeño final y ejecutar el ensayo independiente | OE1 | M19–M23 | 82–98 | 0 | $ 407.680.000 | $ 137.500.000 |
-| 1.7 | Administración y apoyo a la supervisión (objetivo específico 1) | OE1 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.666 |
+| 1.7 | Validar el gemelo predictivo con demoliciones y remociones reales en los tres departamentos | OE1 | M14–M23 | 60–96 | 4 | $ 505.100.000 | $ 48.000.000 |
+| 1.8 | Administración y apoyo a la supervisión (objetivo específico 1) | OE1 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.666 |
 | 2.1 | Diseñar la arquitectura de enlace y energía | OE2 | M2–M4 | 8–14 | 0 | $ 391.200.000 | $ 0 |
 | 2.2 | Desarrollar el firmware y la plataforma base (gemelo digital y tablero) | OE2 | M4–M6 | 14–24 | 0 | $ 792.000.000 | $ 800.000.000 |
 | 2.3 | Instalar el tramo 2 | OE2 | M12–M15 | 50–62 | 0 | $ 1.364.490.667 | $ 105.000.000 |
 | 2.4 | Instalar el tramo 3 | OE2 | M17–M19 | 70–82 | 0 | $ 1.238.234.667 | $ 105.000.000 |
-| 2.5 | Administración y apoyo a la supervisión (objetivo específico 2) | OE2 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.667 |
+| 2.5 | Diseñar el laboratorio de modelación y el inventario de emisión de demolición | OE2 | M2–M6 | 8–26 | 6 | $ 113.900.000 | $ 24.000.000 |
+| 2.6 | Dotar el laboratorio y montar la cadena de modelación | OE2 | M7–M11 | 26–44 | 6 | $ 682.400.000 | $ 24.000.000 |
+| 2.7 | Construir y calibrar el gemelo predictivo de demolición | OE2 | M11–M17 | 44–70 | 6 | $ 223.100.000 | $ 34.666.667 |
+| 2.8 | Administración y apoyo a la supervisión (objetivo específico 2) | OE2 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.667 |
 | 3.1 | Co-diseñar los umbrales y el protocolo de alerta con los comités | OE3 | M3–M9 | 12–36 | 12 | $ 468.248.276 | $ 132.413.794 |
 | 3.2 | Poner en uso el tablero con los comités | OE3 | M12–M15 | 50–62 | 6 | $ 295.824.138 | $ 66.206.896 |
 | 3.3 | Formar custodios y firmar los convenios por tramo | OE3 | M17–M20 | 70–86 | 12 | $ 466.565.518 | $ 88.275.862 |
 | 3.4 | Transferir, cerrar y evaluar | OE3 | M23–M24 | 98–104 | 0 | $ 287.862.068 | $ 33.103.448 |
-| 3.5 | Administración y apoyo a la supervisión (objetivo específico 3) | OE3 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.667 |
+| 3.5 | Adoptar el protocolo de evaluación previa de demolición y transferir el laboratorio | OE3 | M21–M24 | 90–100 | 4 | $ 147.000.000 | $ 13.333.333 |
+| 3.6 | Administración y apoyo a la supervisión (objetivo específico 3) | OE3 | M1–M24 | 0–104 | 0 | $ 200.000.000 | $ 116.666.667 |
 
-Ruta crítica: 1.2, 1.3, 1.4, 1.5, 1.6, 2.1, 2.2, 2.3, 2.4 y 3.4 (más las compuertas C1 y C2 incluidas en 1.4 y 1.5) = 104 semanas. Con holgura: 1.1 (2 semanas), 3.1 (12), 3.2 (6), 3.3 (12). 1 mes = 52/12 semanas.
+Ruta crítica: 1.2, 1.3, 1.4, 1.5, 1.6, 2.1, 2.2, 2.3, 2.4 y 3.4 (más las compuertas C1 y C2 incluidas en 1.4 y 1.5) = 104 semanas. Con holgura: 1.1 (2 semanas), 1.7 (4 semanas), 2.5 (6 semanas), 2.6 (6 semanas), 2.7 (6 semanas), 3.1 (12 semanas), 3.2 (6 semanas), 3.3 (12 semanas), 3.5 (4 semanas). Las actividades de administración y apoyo a la supervisión (1.8, 2.8, 3.6) acompañan los 24 meses. 1 mes = 52/12 semanas.
 
-Hitos: H0 mes 2: Acta de inicio y contratación completa; H1 mes 4: Sitios del tramo 1 y diseño de enlace y energía listos; H2 mes 10: Colocalización del tramo 1 finalizada; H3 mes 12: Compuerta C1: modelo validado en el piloto; H4 mes 16: Tramo 2 instalado y verificado; H5 mes 17: Compuerta C2: uso institucional y desempeño; H6 mes 19: Tramo 3 instalado; H7 mes 23: Ensayo independiente y evaluación final; H8 mes 24: Transferencia y cierre del tramo 3; C3 mes 24: Compuerta C3: cierre y transferencia con evidencia del TRL 8
+Hitos: H0 mes 2: Acta de inicio y contratación completa; H1 mes 4: Sitios del tramo 1 y diseño de enlace y energía listos; H2 mes 10: Colocalización del tramo 1 finalizada; H9 mes 11: Laboratorio de modelación dotado y con la cadena de cálculo en operación; H3 mes 12: Compuerta C1: modelo validado en el piloto; H4 mes 16: Tramo 2 instalado y verificado; H5 mes 17: Compuerta C2: uso institucional y desempeño; H10 mes 17: Gemelo predictivo calibrado con el polvo del territorio y la campaña piloto; H6 mes 19: Tramo 3 instalado; H11 mes 22: Validación del gemelo con seis eventos reales y verificación independiente; H7 mes 23: Ensayo independiente y evaluación final; H8 mes 24: Transferencia y cierre del tramo 3; C3 mes 24: Compuerta C3: cierre y transferencia con evidencia del TRL 8
 
 ## 7. Talento humano de formación (numeral 9 y 14.4 de los TdR)
 
@@ -176,19 +204,19 @@ Hitos: H0 mes 2: Acta de inicio y contratación completa; H1 mes 4: Sitios del t
 | Estudiante de maestría en modalidad de investigación | 2 | 24 meses | $ 4.350.000 | $ 304.800.000 | Dos personas, meses 1 a 24; matrícula hasta 48.000.000 COP por persona. | Un producto tipo TOP o tipo A sometido o publicado y un producto de divulgación pública de la ciencia por persona. |
 | Doctor en estancia posdoctoral | 1 | 24 meses | $ 12.920.000 | $ 310.080.000 | Una persona, meses 1 a 24, sin vínculo laboral con las entidades de la alianza. | Un producto tipo TOP o tipo A, un producto de divulgación pública de la ciencia y un informe técnico final. |
 
-Otro personal del equipo (SGR): ingenieros IoT y de campo (3), técnicos de campo departamentales (6), ingenieros de software y nube (2), ingeniero de firmware y energía (1), analista de datos espaciales y gemelo digital (1), especialista en metrología y calibración (1), profesional en calidad del aire y salud ambiental (1), coordinación de apropiación social (1), profesionales de apropiación social (2), profesional de convenios y custodia (1), gerencia de proyecto (1).
+Otro personal del equipo (SGR): ingenieros IoT y de campo (3), técnicos de campo departamentales (6), ingenieros de software y nube (2), ingeniero de firmware y energía (1), analista de datos espaciales y gemelo digital (1), especialista en metrología y calibración (1), profesional en calidad del aire y salud ambiental (1), coordinación de apropiación social (1), profesionales de apropiación social (2), profesional de convenios y custodia (1), gerencia de proyecto (1), investigador líder en modelación atmosférica y dispersión de contaminantes (1), ingeniero en dinámica de fluidos computacional y cómputo de alto rendimiento (1) e ingeniero en demolición y control de polvo en obra (1).
 
 ## 8. Productos MGA (sector 39, programa 3906)
 
 | N.º | OE | Producto | Medido a través de | Indicador | Unidad | Meta |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | OE1 | Servicio de apoyo para la generación de prototipos de materiales, productos o dispositivos | Prototipos validados en condiciones reales | Prototipos funcionales validados (red de nodos y gateways con modelo de corrección) | Número | 1 sistema de 100 nodos y 10 gateways |
+| 1 | OE1 | Servicio de apoyo para la generación de prototipos de materiales, productos o dispositivos | Prototipos validados en condiciones reales | Prototipos funcionales validados (red de nodos y gateways con modelo de corrección y gemelo predictivo de demolición) | Número | 2 prototipos: sistema de 100 nodos y 10 gateways y gemelo predictivo de demolición |
 | 2 | OE1 | Documentos de investigación | Documentos de investigación elaborados | Documentos de investigación elaborados (6 de jóvenes, 2 de maestría y 1 de posdoctorado) | Número | 9 |
 | 3 | OE1 | Servicio de apoyo financiero para la formación de maestría ya sea nacional o en el exterior, en la modalidad de investigación | Personas apoyadas con formación de maestría | Estudiantes de maestría en modalidad de investigación apoyados | Número | 2 |
 | 4 | OE1 | Servicio de apoyo financiero de estancias de investigación | Estancias de investigación apoyadas | Doctores con estancia posdoctoral apoyados | Número | 1 |
 | 5 | OE1 | Servicio de apoyo financiero para el fortalecimiento de las vocaciones científicas en CTI | Jóvenes investigadores e innovadores apoyados | Jóvenes investigadores e innovadores apoyados con beca-pasantía | Número | 6 |
-| 6 | OE2 | Servicio de apoyo financiero para programas y proyectos de infraestructura científica y tecnológica | Infraestructura científica y tecnológica dotada | Equipos y plataforma de medición dotados y en operación (3 referencias, 100 nodos, 10 gateways y plataforma) | Número | 1 infraestructura integrada |
-| 7 | OE3 | Documentos de política: Documentos de planeación | Documentos de planeación elaborados | Documentos de planeación elaborados (protocolo de alerta y plan de sostenibilidad con convenios de custodia) | Número | 2 |
+| 6 | OE2 | Servicio de apoyo financiero para programas y proyectos de infraestructura científica y tecnológica | Infraestructura científica y tecnológica dotada | Equipos y plataformas de medición y de modelación dotados y en operación (3 referencias, 100 nodos, 10 gateways, plataforma y laboratorio de modelación) | Número | 1 infraestructura integrada |
+| 7 | OE3 | Documentos de política: Documentos de planeación | Documentos de planeación elaborados | Documentos de planeación elaborados (protocolo de alerta, plan de sostenibilidad con convenios de custodia y protocolo de evaluación previa de demolición) | Número | 3 |
 | 8 | OE3 | Servicio de apropiación social del conocimiento | Actividades de apropiación social realizadas | Estrategias y actividades de apropiación social del conocimiento realizadas (20 talleres de co-diseño y 9 jornadas) | Número | 29 |
 | 9 | OE3 | Servicio de Asistencia Técnica | Personas y entidades asistidas técnicamente | Personas de comités y custodios certificadas en el uso y la custodia de la red | Número | 60 personas y 15 comités |
 
@@ -201,12 +229,14 @@ Otro personal del equipo (SGR): ingenieros IoT y de campo (3), técnicos de camp
 | R3 | Resultado | Uso institucional del tablero y del protocolo | Sin uso documentado | ≥ 75 % al mes 24 |
 | R4 | Resultado | Reducción relativa de falsas alarmas | Se mide en el tramo 1 | ≥ 30 % de reducción relativa |
 | R5 | Resultado | Capacidad instalada en custodios | 0 | ≥ 60 personas certificadas |
+| R6 | Resultado | Desempeño del gemelo predictivo frente a mediciones en demoliciones reales | Sin modelo predictivo | FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 en al menos 6 eventos al mes 22 |
+| R7 | Resultado | Evaluaciones previas de demolición entregadas | 0 | ≥ 12 informes, con al menos 3 por departamento, al mes 24 |
 | I1 | Impacto | Activación del protocolo ante superación de umbral | Sin protocolo | ≥ 80 % a los 12 meses posteriores al cierre |
 | I2 | Impacto | Continuidad de la red bajo custodia | 0 | ≥ 70 % a los 12 meses posteriores al cierre |
 
-Indicadores de gestión: 8 informes trimestrales de supervisión (meses 3, 6, 9, 12, 15, 18, 21, 24); ejecución presupuestal con desviación ≤ 5 % al cierre; cumplimiento de los hitos H0 a H8 y C3.
+Indicadores de gestión: 8 informes trimestrales de supervisión (meses 3, 6, 9, 12, 15, 18, 21, 24); ejecución presupuestal con desviación ≤ 5 % al cierre; cumplimiento de los hitos H0 a H11 y de la compuerta C3.
 
-## 10. Riesgos (15)
+## 10. Riesgos (19)
 
 | Id | Tipo | Riesgo | Probabilidad | Impacto | Respuesta |
 | --- | --- | --- | --- | --- | --- |
@@ -217,7 +247,7 @@ Indicadores de gestión: 8 informes trimestrales de supervisión (meses 3, 6, 9,
 | R-ORG-01 | Operacionales | Los comités de gestión del riesgo no adoptan el tablero ni el protocolo. | Probable (40 %) | Mayor | Co-diseño de umbrales, formación por comité y uso piloto con registro de decisiones. |
 | R-ORG-02 | Operacionales | Los custodios no asumen la operación en el posproyecto. | Probable (50 %) | Mayor | Convenios por tramo, formación de custodios y cláusula de apertura. |
 | R-EXT-01 | Operacionales | Deslizamientos o réplicas bloquean vías y retrasan la instalación. | Probable (50 %) | Moderado | Instalación en ventanas secas, técnicos locales y holgura en las actividades 1.1, 3.1, 3.2 y 3.3; las instalaciones de los tramos 2 y 3 se programan con acceso previamente verificado. |
-| R-EXT-02 | Operacionales | Robo o vandalismo de nodos en sitios de remoción. | Probable (40 %) | Moderado | Cerramientos y mástiles protegidos, custodia local por sitio, 20 nodos y 1 gateway de reserva y convenio de custodia con la entidad territorial. |
+| R-EXT-02 | Operacionales | Robo o vandalismo de nodos en sitios de remoción. | Probable (40 %) | Moderado | Cerramientos y mástiles protegidos, custodia local por sitio, 20 nodos y 1 gateway de reserva y convenio de custodia con el municipio aliado. |
 | R-FIN-01 | De costos | La devaluación del peso encarece los equipos importados. | Probable (55 %) | Mayor | Compra por tramo con cotizaciones vigentes, orden de compra anticipada y cobertura cambiaria del proveedor; la contrapartida en efectivo cubre variaciones menores. |
 | R-FIN-02 | Financieros | La contrapartida en especie no se certifica a tiempo. | Improbable (25 %) | Mayor | Certificación de la IES y de la empresa antes del acta de inicio. |
 | R-JUR-01 | Legales | Una solicitud de patente de terceros afecta la libertad de operación. | Improbable (20 %) | Mayor | Análisis de libertad de operación y diseño alternativo del módulo afectado. |
@@ -225,6 +255,10 @@ Indicadores de gestión: 8 informes trimestrales de supervisión (meses 3, 6, 9,
 | R-ADM-01 | Administrativos | La contratación del equipo y la firma de los convenios de ejecución se demoran más de ocho semanas. | Improbable (30 %) | Mayor | Convenio marco previo con la IES y la empresa, plan de contratación con lista de elegibles y seguimiento semanal de la gerencia. |
 | R-CAL-01 | De calendario | La importación y la nacionalización de un lote de equipos exceden doce semanas. | Improbable (35 %) | Mayor | Importación por lote con anticipación de la orden, agente aduanero contratado y lote de reserva de cabezales en el país. |
 | R-SAN-01 | Sanitarios | El personal de campo se expone al polvo y a los escombros durante la instalación y el mantenimiento. | Improbable (30 %) | Moderado | Protocolo de seguridad y salud con respiradores N95, inducción previa y ventanas de trabajo fuera de la remoción activa. |
+| R-MOD-01 | Operacionales | Los propietarios o las autoridades no permiten medir en un número suficiente de demoliciones o remociones reales entre los meses 13 y 22. | Probable (40 %) | Mayor | Acuerdo con comités y municipios para anunciar cada demolición con 15 días de antelación, uso de remociones de menor escala y de sitios de prueba como respaldo, y regla mínima de seis eventos válidos en nueve campañas. |
+| R-MOD-02 | Operacionales | El gemelo predictivo no alcanza el desempeño fijado (FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 en promedios de 24 horas). | Improbable (35 %) | Mayor | Calibración por etapas con la campaña piloto, comparación del modelo sustituto con el modelo físico, verificación independiente y restricción del uso del resultado al dominio validado, con el desempeño real informado. |
+| R-MOD-03 | Operacionales | Los datos de entrada del modelo (geometría, material, método de demolición o meteorología) faltan o son de baja calidad. | Improbable (30 %) | Moderado | Levantamiento con dron antes de cada evento, cuatro estaciones meteorológicas propias, inventario de emisión expresado en rangos y resultados presentados como escenarios. |
+| R-JUR-02 | Legales | El resultado del laboratorio se interpreta como autorización de demolición, licencia o prueba de responsabilidad. | Improbable (25 %) | Mayor | El protocolo define el resultado como estimación de apoyo a la decisión, con advertencia expresa de alcance, convenio de uso con el municipio y revisión jurídica previa a la adopción. |
 
 ## 11. Alternativas (puntaje ponderado, escala 1 a 9; puntajes PROPUESTO)
 
@@ -232,8 +266,8 @@ Statu quo 4,475; estaciones fijas de referencia en los sitios 4,335; red con cal
 
 ## 12. Datos que solo el usuario o los TdR pueden aportar (marcar con [Diligenciar: …])
 
-Nombres de la IES, la empresa y la entidad territorial; categoría de cada entidad; código SIGP; nombres de los 12 municipios y centros poblados; resguardos; código de la demanda territorial (Anexo 4) o reportes oficiales de afectación; grupos de investigación (nombre, categoría A1/A/B/C, líneas, investigadores, estudiantes); artículos y programas de los planes de desarrollo; población afectada y objetivo con fuente DANE; experiencia de los integrantes (Anexo 5); cotizaciones; certificaciones de contrapartida; aval de ética si aplica; permisos.
+Nombres de la IES, el municipio aliado, el actor del SNCTI y la empresa; categoría de cada entidad; valor del aporte del actor del SNCTI; cotizaciones del dron, del servidor, de las estaciones, de los monitores portátiles y de las licencias de software del laboratorio; acuerdos de acceso a al menos seis demoliciones reales; ubicación definitiva del laboratorio (IES o municipio) y compromiso de la IES de sostenerlo;  código SIGP; nombres de los 12 municipios y centros poblados; resguardos; código de la demanda territorial (Anexo 4) o reportes oficiales de afectación; grupos de investigación (nombre, categoría A1/A/B/C, líneas, investigadores, estudiantes); artículos y programas de los planes de desarrollo; población afectada y objetivo con fuente DANE; experiencia de los integrantes (Anexo 5); cotizaciones; certificaciones de contrapartida; aval de ética si aplica; permisos.
 
 ## 13. Reglas de coherencia
 
-1. Una cifra, una fuente: esta ficha. 2. Corrección en el gateway. 3. R² ≥ 0,70 y NRMSE ≤ 30 %; línea base medida en el tramo 1. 4. TRL 4 a 8 (piso 7 al mes 19). 5. 24 meses y 104 semanas. 6. 100 nodos y 10 gateways operativos; 120 y 11 comprados. 7. Valores según la sección 5. 8. Ninguna afirmación causal sobre salud: los resultados son técnicos, de adopción y de continuidad. 9. Ninguna probabilidad sin fuente en los árboles de decisión; las probabilidades de riesgo son estimaciones de formulación. 10. Sin reserva de contingencia ni seguros en el presupuesto.
+1. Una cifra, una fuente: esta ficha. 2. Corrección en el gateway. 3. R² ≥ 0,70 y NRMSE ≤ 30 %; línea base medida en el tramo 1. 4. TRL 4 a 8 (piso 7 al mes 19). 5. 24 meses y 104 semanas. 6. 100 nodos y 10 gateways operativos; 120 y 11 comprados. 7. Valores según la sección 5. 8. Ninguna afirmación causal sobre salud: los resultados son técnicos, de adopción y de continuidad. 9. Ninguna probabilidad sin fuente en los árboles de decisión; las probabilidades de riesgo son estimaciones de formulación. 10. Sin reserva de contingencia ni seguros en el presupuesto. 11. El laboratorio de modelación se integra en los objetivos específicos 1, 2 y 3; el proyecto mantiene tres objetivos específicos. 12. El resultado del gemelo predictivo es una evaluación previa de la exposición esperada y no autoriza ni prohíbe una demolición.

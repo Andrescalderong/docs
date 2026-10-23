@@ -100,7 +100,7 @@ def main():
         parrs += 0 if item else 1
         for sent in sents:
             n = len(re.findall(r"[\wÁÉÍÓÚÜÑáéíóúüñ%/.,:\-→]+", re.sub(r"\([^()]*\d{4}[^()]*\)", "", sent)))
-            if n > a.maxw: largas.append((ln, n, sent[:140]))
+            if n > a.maxw: largas.append((ln, n, sent[:500]))
     # ---- prohibidas
     low = texto.lower(); enf = {w: low.count(w) for w in ENF if w in low}
     omit = {p: len(re.findall(p, texto)) for p in OMIT if re.search(p, texto)}
@@ -163,7 +163,7 @@ def main():
     print("RESULTADO:", "SIN PROBLEMAS" if not problems else f"{len(problems)} problema(s)")
     if a.v and largas:
         print("oraciones largas (primeras 12):")
-        for l in largas[:12]: print("   ", l)
+        for l in largas[:60]: print("   ", l)
     return 0 if not problems else 1
 
 if __name__ == "__main__":

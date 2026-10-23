@@ -67,7 +67,7 @@ V = {
  "R_SERV": cop(m2.POR_RUBRO["Servicios tecnológicos y pruebas"]), "R_MAT": cop(m2.POR_RUBRO["Materiales, insumos y documentación"]),
  "R_PROT": cop(m2.POR_RUBRO["Protección del conocimiento y divulgación"]), "R_VIAJE": cop(m2.POR_RUBRO["Gastos de viaje"]),
  "R_INFRA": cop(m2.POR_RUBRO["Infraestructura"]), "R_ADMIN": cop(m2.POR_RUBRO["Administrativos"]), "R_SEG": cop(m2.POR_RUBRO["Seguimiento"]),
- "N_INFORMES": str(len(m2.INFORMES)), "ADM_ACT": cop(m2.ACTD["1.7"]["sgr"]),
+ "N_INFORMES": str(len(m2.INFORMES)), "ADM_ACT": cop(m2.ACTD["1.8"]["sgr"]), "N_ACT": str(len(m2.ACTD)), "N_PROB": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable")), "N_MAYOR": str(sum(1 for r in m2.RIESGOS if r["n_imp"] == "Mayor")), "N_AMBOS": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_OTROS": str(len(m2.RIESGOS) - sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_RIESGOS": str(len(m2.RIESGOS)), "LAB_SGR": cop(sum(r["total"] for r in m2.LAB_LINEAS)), "LAB_CONTRA": cop(next(r["total"] for r in m2.CONTRA if r["id"] == "C09")),
  "FLUJO1": mm(m2.FLUJO_SEM[0]), "FLUJO2": mm(m2.FLUJO_SEM[1]), "FLUJO3": mm(m2.FLUJO_SEM[2]), "FLUJO4": mm(m2.FLUJO_SEM[3]),
 }
 
@@ -134,14 +134,14 @@ def t_actividades():
 
 def t_cronograma():
     enc = ["Objetivo específico", "Producto", "Actividad"] + [str(m) for m in range(1, 25)]
-    prod_oe = {"OE1": "Prototipo validado y documentos de investigación", "OE2": "Infraestructura de medición dotada y operando", "OE3": "Documentos de planeación, apropiación social y asistencia técnica"}
+    prod_oe = {"OE1": "Prototipo validado y documentos de investigación", "OE2": "Infraestructura de medición y de modelación dotada y operando", "OE3": "Documentos de planeación, apropiación social y asistencia técnica"}
     f = []; prev = None
     for a in m2.ACTD.values():
         marks = ["x" if a["m_ini"] <= m <= a["m_fin"] else "" for m in range(1, 25)]
         oe = {"OE1": "OE1", "OE2": "OE2", "OE3": "OE3"}[a["oe"]]
         f.append((oe if oe != prev else "", prod_oe[a["oe"]] if oe != prev else "", f"{a['id']} {a['nombre']}") + tuple(marks)); prev = oe
     return ("Cronograma de actividades por objetivo específico, en meses", enc, f,
-            "*Nota.* Elaboración propia con el cronograma de ruta crítica de 104 semanas. Las compuertas C1 y C2 se ejecutan al final de las actividades 1.4 y 1.5; la compuerta C3 cierra el mes 24. Las actividades de administración y apoyo a la supervisión abarcan los 24 meses.")
+            "*Nota.* Elaboración propia con el cronograma de ruta crítica de 104 semanas. Las compuertas C1 y C2 se ejecutan al final de las actividades 1.4 y 1.5; la compuerta C3 cierra el mes 24. Las actividades del laboratorio de modelación (1.7, 2.5, 2.6, 2.7 y 3.5) tienen holgura de 4 a 6 semanas y no integran la ruta crítica. Las actividades de administración y apoyo a la supervisión abarcan los 24 meses.")
 
 def t_hitos():
     f = [(h["id"], h["desc"], f"Mes {h['mes']}", h["verif"]) for h in m2.HITOS]
@@ -152,7 +152,7 @@ def t_flujo():
     f = [(f"Semestre {i + 1} (meses {6 * i + 1} a {6 * i + 6})", cop(m2.FLUJO_SEM[i]), cop(m2.FLUJO_CON_SEM[i]), cop(m2.FLUJO_SEM[i] + m2.FLUJO_CON_SEM[i])) for i in range(4)]
     f.append(("**Total**", "**" + cop(m2.SGR) + "**", "**" + cop(m2.CON) + "**", "**" + cop(m2.TOTAL) + "**"))
     return ("Programación semestral de los recursos", ["Periodo", "SGR (COP)", "Contrapartida (COP)", "Total (COP)"], f,
-            "*Nota.* Elaboración propia. Las compras de nodos, cabezales y gateways se programan en los meses 5, 13 y 18; los demás rubros se distribuyen de forma uniforme en su ventana de ejecución.")
+            "*Nota.* Elaboración propia. Las compras de nodos, cabezales y gateways se programan en los meses 5, 13 y 18; los equipos del laboratorio de modelación se compran entre los meses 7 y 10; los demás rubros se distribuyen de forma uniforme en su ventana de ejecución.")
 
 def t_tramos():
     f = []
@@ -182,6 +182,17 @@ TABLAS = {k[2:]: v for k, v in globals().items() if k.startswith("t_")}
 import alianza
 alianza.cop = cop; alianza.pct = pct
 TABLAS.update(alianza.TABLAS_ALIANZA)
+_dep = alianza.por_departamento(); _t = [sum(v[i] for v in _dep.values()) for i in range(4)]
+V.update({"DEP_DIR": pct(sum(_t[:3]) / m2.SGR), "DEP_CAL": pct(_t[0] / m2.SGR), "DEP_CUN": pct(_t[1] / m2.SGR), "DEP_VAL": pct(_t[2] / m2.SGR), "DEP_TRANS": pct(_t[3] / m2.SGR),
+          "TRAYECTOS": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("V01", "V06"))), "DIAS_VEH": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("V03", "V08"))),
+          "REC_PCT": pct(167_280_000 / m2.SGR), "SGR_M0": fmt(round(m2.SGR / 1e6)), "PCT_ESPECIE": pct((m2.CON - m2.CON_EFECTIVO) / m2.CON), "LICENCIAS_ANUAL": cop(next(r["total"] for r in m2.BUD if r["id"] == "E17") / 2)})
+
+_PAL = {1: "uno", 2: "dos", 3: "tres", 4: "cuatro", 5: "cinco", 6: "seis", 7: "siete", 8: "ocho", 9: "nueve", 10: "diez", 11: "once", 12: "doce", 13: "trece", 14: "catorce",
+        15: "quince", 16: "dieciséis", 17: "diecisiete", 18: "dieciocho", 19: "diecinueve", 20: "veinte", 21: "veintiuno", 22: "veintidós", 23: "veintitrés", 24: "veinticuatro", 25: "veinticinco"}
+def palabra(n, cap=False):
+    t = _PAL[int(n)]
+    return t[0].upper() + t[1:] if cap else t
+V.update({"N_PROB_P": palabra(V["N_PROB"], True), "N_RIESGOS_P": palabra(V["N_RIESGOS"]), "N_MAYOR_P": palabra(V["N_MAYOR"]), "N_ACT_P": palabra(V["N_ACT"], True)})
 import causal
 TABLAS.update(causal.TABLAS_CAUSAL)
 V.update(causal.resumen())

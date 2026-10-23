@@ -29,17 +29,22 @@ R = {
  "1.4": ("Entrena y valida el modelo", "Participa en la decisión de la compuerta", "Valida el procedimiento metrológico", "Despliega el modelo en el gateway", "Evaluador externo independiente"),
  "1.5": ("Reentrena y verifica por departamento", "Participa en la compuerta y en los convenios", "No participa", "Mantiene la red", "Comités y custodios"),
  "1.6": ("Dirige la verificación final", "Aporta registros de uso", "Contrasta los resultados finales", "Entrega la versión congelada", "Laboratorio externo y evaluador independiente"),
- "1.7": ("Ejerce la gerencia y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
+ "1.7": ("Lidera la validación y el análisis de desempeño del gemelo predictivo", "Gestiona con los propietarios el acceso a las demoliciones y los permisos de medición", "Verifica la trazabilidad de los monitores portátiles", "Integra los datos de campo a la plataforma", "Responsables de obra y verificador independiente"),
+ "1.8": ("Ejerce la gerencia y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
  "2.1": ("Revisa el diseño", "Informa restricciones del sitio", "No participa", "Lidera el diseño del enlace y de la energía", "Estudio de cobertura"),
  "2.2": ("Define requisitos de calidad de datos", "No participa", "No participa", "Lidera el firmware, la nube y el tablero", "Auditor de ciberseguridad"),
  "2.3": ("Coordina la instalación", "Provee acceso y custodia local", "No participa", "Lidera la instalación y el mantenimiento", "Técnicos de campo departamentales"),
  "2.4": ("Coordina la instalación", "Provee acceso y custodia local", "No participa", "Lidera la instalación y el mantenimiento", "Técnicos de campo departamentales"),
- "2.5": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Agente aduanero"),
+ "2.5": ("Lidera el diseño del laboratorio y del inventario de emisión de demolición", "Informa las demoliciones previstas y aporta la cartografía local", "No participa", "Define la interfaz de datos con la plataforma", "Laboratorio acreditado de caracterización del polvo"),
+ "2.6": ("Dota el laboratorio y monta la cadena de modelación", "No participa", "Revisa la especificación de los monitores portátiles", "Instala las estaciones meteorológicas y conecta el laboratorio a la plataforma", "Proveedores de equipos y agente aduanero"),
+ "2.7": ("Lidera la construcción y la calibración del gemelo predictivo", "No participa", "No participa", "Integra la asimilación de datos y la salida al tablero", "Servicio de cartografía"),
+ "2.8": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Agente aduanero"),
  "3.1": ("Facilita el co-diseño", "Lidera la convocatoria de los comités", "No participa", "Adapta el tablero", "Comités de gestión del riesgo"),
  "3.2": ("Acompaña y evalúa el uso", "Lidera el registro de decisiones", "No participa", "Da soporte técnico", "Comités de gestión del riesgo"),
  "3.3": ("Diseña y certifica la formación", "Firma los convenios de custodia", "Participa en la formación de custodios", "Transfiere conocimiento técnico", "Custodios designados"),
  "3.4": ("Entrega y evalúa", "Recibe la custodia", "Asume la custodia científica del repositorio de datos", "Entrega la plataforma", "Custodios y evaluador independiente"),
- "3.5": ("Gestiona eventos y logística", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores de logística"),
+ "3.5": ("Lidera el protocolo de evaluación previa y entrega el laboratorio", "Adopta el protocolo y usa las evaluaciones en sus decisiones", "Participa en la revisión del protocolo", "Documenta la interfaz del modelo con la plataforma", "Comités, responsables de obra y verificador independiente"),
+ "3.6": ("Gestiona eventos y logística", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores de logística"),
 }
 # actividades en que cada integrante tiene una función real (no «No participa» ni solo reporte de contrapartida)
 def actividades_de(actor):
@@ -70,10 +75,10 @@ def _por_oe(actor, oe):
 
 LIDERA = {"IES": ["OE1"], "ENT": ["OE3"], "SNCTI": [], "EMP": ["OE2"]}
 APORTE = {
-    "IES": "Coordina el proyecto y lidera la medición verificada; forma al talento y produce los documentos de investigación",
-    "ENT": "Facilita el acceso a los sitios, convoca a los comités y asume la custodia local de la red",
-    "SNCTI": "Aporta la validación metrológica y la formación de custodios, y asume la custodia científica de los datos",
-    "EMP": "Aporta nodos, gateways, firmware, nube y tablero, y mantiene la red",
+    "IES": "Coordina el proyecto, lidera la medición verificada y aloja el laboratorio de modelación; forma al talento y produce los documentos de investigación",
+    "ENT": "Facilita el acceso a los sitios y a las demoliciones, convoca a los comités, adopta el protocolo de evaluación previa y asume la custodia local de la red",
+    "SNCTI": "Aporta la validación metrológica de los monitores, la formación de custodios y la custodia científica de los datos",
+    "EMP": "Aporta nodos, gateways, firmware, nube y tablero, integra el gemelo predictivo a la plataforma y mantiene la red",
 }
 
 def _contrapartida_actor(actor):
@@ -99,24 +104,24 @@ def t_roles_alianza():
 
 BENEF = [
  ("Universidad proponente",
-  "Formación de nueve personas (seis jóvenes investigadores, dos estudiantes de maestría y un posdoctor) y nueve documentos de investigación; datos colocalizados y un modelo de corrección para su línea de investigación; capacidad de medición durante el proyecto; titularidad de los resultados según la regla de propiedad intelectual",
-  "Productos 2 a 6 de la sección 20",
+  "Formación de nueve personas (seis jóvenes investigadores, dos estudiantes de maestría y un posdoctor) y nueve documentos de investigación; datos colocalizados y un modelo de corrección para su línea de investigación; capacidad de medición durante el proyecto; laboratorio de modelación y gemelo predictivo propios para su línea de investigación; titularidad de los resultados según la regla de propiedad intelectual",
+  "Productos 1 a 6 de la sección 20 e indicador R6",
   "La titularidad de los bienes adquiridos se fija en el convenio de la alianza"),
  ("Municipio aliado",
-  "Tablero con índice local de calidad del aire y protocolo de alerta de su jurisdicción, con umbrales que el municipio co-diseña como integrante que lidera el uso institucional; personas funcionarias formadas y certificadas como custodias; mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción de su territorio; custodia local de los componentes con partida por convenio",
-  "Indicadores R3 y R5 de resultado e I1 e I2 de impacto",
+  "Tablero con índice local de calidad del aire y protocolo de alerta de su jurisdicción, con umbrales que el municipio co-diseña como integrante que lidera el uso institucional; personas funcionarias formadas y certificadas como custodias; mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción de su territorio; evaluación previa de las demoliciones de su jurisdicción con la exposición esperada y las medidas de control; custodia local de los componentes con partida por convenio",
+  "Indicadores R3, R5 y R7 de resultado e I1 e I2 de impacto",
   "Su comité municipal no se cuenta entre los 15 comités beneficiarios y se sustituye por otro de la misma jurisdicción; la custodia exige una partida del municipio"),
  ("Actor del SNCTI reconocido por MinCiencias",
-  "Coautoría de los documentos de investigación; acceso a series colocalizadas y verificadas; fortalecimiento de su capacidad de metrología de aerosoles; custodia científica del repositorio de datos; registro de los productos de CTeI en que participa",
-  "Productos 2 y 9; actividades 1.1, 1.2, 1.4, 1.6, 3.3 y 3.4",
+  "Coautoría de los documentos de investigación; acceso a series colocalizadas y verificadas; fortalecimiento de su capacidad de metrología de aerosoles, con la comparación de monitores portátiles; custodia científica del repositorio de datos; registro de los productos de CTeI en que participa",
+  "Productos 2 y 9; actividades 1.1, 1.2, 1.4, 1.6, 1.7, 2.6, 3.3, 3.4 y 3.5",
   "El valor de su contrapartida está por certificar"),
  ("Empresa tecnológica",
-  "Validación independiente de su tecnología hasta el TRL 8 con informe de laboratorio externo; datos de campo para mejorar su producto; derechos de explotación según el acuerdo de propiedad intelectual; oportunidad de ofrecer el servicio a otras entidades",
+  "Validación independiente de su tecnología hasta el TRL 8 con informe de laboratorio externo; datos de campo y un gemelo predictivo integrado a su plataforma para mejorar su producto; derechos de explotación según el acuerdo de propiedad intelectual; oportunidad de ofrecer el servicio a otras entidades",
   "Informe del ensayo independiente (actividad 1.6) y acuerdo de propiedad intelectual",
   "La oferta a terceros es una oportunidad y no un compromiso del proyecto"),
  ("Comités de gestión del riesgo y operarios de remoción",
-  "Alertas y decisiones con datos de error conocido; cartillas del índice y del protocolo de alerta; mascarillas de protección para el personal de campo; formación en el uso del tablero",
-  "Indicador R3 y productos 8 y 9",
+  "Alertas y decisiones con datos de error conocido; estimación previa de la exposición por polvo antes de una demolición y medidas de control sugeridas; cartillas del índice y del protocolo de alerta; mascarillas de protección para el personal de campo; formación en el uso del tablero",
+  "Indicadores R3 y R7 y productos 8 y 9",
   "La protección de las personas depende de que el comité active el protocolo"),
 ]
 def t_beneficios():
@@ -134,6 +139,7 @@ TERR = {
  "E04": K_GW, "E06": K_GW, "E12": K_GW, "S10": K_GW,
  "E03": K_IGUAL, "M01": K_IGUAL, "S01": K_IGUAL, "S06": K_IGUAL, "P10": K_IGUAL,
  "V05": K_IGUAL, "O02": K_IGUAL, "M04": K_IGUAL, "M05": K_IGUAL, "S09": K_IGUAL,
+ "E14": K_IGUAL, "S12": K_IGUAL, "S16": K_IGUAL, "M08": K_IGUAL, "V06": K_IGUAL, "V07": K_IGUAL, "V08": K_IGUAL,
 }
 def _repartir(total, clave):
     s = sum(clave); out = [int(round(total * k / s)) for k in clave]
@@ -164,7 +170,7 @@ def t_presupuesto_departamento():
     f.append(("Participación en el SGR",) + tuple(pct(x / m2.SGR) for x in tot) + ("100,0 %",))
     return ("Valor solicitado al SGR por rubro y departamento",
             ["Rubro", "Caldas", "Cundinamarca", "Valle del Cauca", "Transversal", "Total"], f,
-            "*Nota.* Elaboración propia, con valores calculados. Los gastos territoriales se reparten con claves explícitas: nodos operativos (33, 34 y 33) para nodos, cabezales, energía, mástiles, insumos y viajes; sitios (36, 38 y 36) para instalación y equipos de campo; gateways (3, 4 y 3) para gateways, enlaces y planes de datos; y partes iguales para monitores de referencia, gravimetría, estudios, técnicos de campo, formación y apropiación. Los gastos transversales sirven a los tres departamentos y no se reparten.")
+            "*Nota.* Elaboración propia, con valores calculados. Los gastos territoriales se reparten con claves explícitas: nodos operativos (33, 34 y 33) para nodos, cabezales, energía, mástiles, insumos y viajes; sitios (36, 38 y 36) para instalación y equipos de campo; gateways (3, 4 y 3) para gateways, enlaces y planes de datos; y partes iguales para monitores de referencia, gravimetría, estudios, técnicos de campo, formación, apropiación, estaciones meteorológicas, campañas de medición en demoliciones y talleres de evaluación previa. Los gastos transversales, entre ellos el laboratorio de modelación con sede en la entidad proponente, sirven a los tres departamentos y no se reparten.")
 
 def nodos_por_depto():
     return list(K_NODOS)

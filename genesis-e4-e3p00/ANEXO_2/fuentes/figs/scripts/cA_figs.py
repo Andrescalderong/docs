@@ -250,11 +250,11 @@ def cA_f06():
 
 # ============================================================ cA_f07: teoría del cambio por componente y techo de rendición de cuentas
 def cA_f07():
-    L = Lienzo(10, 7.8, "Tres cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados",
+    L = Lienzo(10, 9.4, "Cuatro cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados",
                "Teoría del cambio por componente; los rombos son supuestos críticos y la línea discontinua vertical es el techo de rendición de cuentas")
     T0 = L.top
     h, gap = 14.0, 6.0
-    ys = [T0 - 1.0 - h, T0 - 1.0 - 2 * h - gap, T0 - 1.0 - 3 * h - 2 * gap]
+    ys = [T0 - 1.0 - (k + 1) * h - k * gap for k in range(4)]
     xt, wt = 1.0, 12.0
     xp, wp = 15.0, 22.0
     xr, wr = 47.0, 22.0
@@ -266,6 +266,8 @@ def cA_f07():
          "R3 Uso institucional y R4 menos falsas alarmas", "I1 Activación del protocolo ante superación de umbral"),
         ("Custodia", "Convenios de custodia por tramos y plan de sostenibilidad",
          "R5 Capacidad instalada en custodios", "I2 Continuidad de la red bajo custodia"),
+        ("Predicción", "Laboratorio de modelación y gemelo predictivo de demolición",
+         "R6 Desempeño del gemelo y R7 evaluaciones previas entregadas", "Decisión de la entidad sobre método y control (sin indicador)"),
     ]
     for (nm, p, r, i_), y in zip(lanes, ys):
         L.t(xt, y + h / 2, nm, bold=True, w=wt)
@@ -285,6 +287,8 @@ def cA_f07():
     L.flecha((xp + wp, ym[2]), (xr, ym[2]))
     rombo_flecha(xr + wr, xi, ym[1], "SC-3")
     rombo_flecha(xr + wr, xi, ym[2], "SC-4")
+    rombo_flecha(xp + wp, xr, ym[3], "SC-5")
+    rombo_flecha(xr + wr, xi, ym[3], "SC-6")
     # la medición alimenta las alertas
     L.flecha((xr + wr / 2, ys[0]), (xr + wr / 2, ys[1] + h))
     # el uso justifica la custodia
@@ -292,9 +296,9 @@ def cA_f07():
     # techo de rendición de cuentas
     xtecho = xr + wr + 3.0 - 0.0
     xtecho = (xr + wr + xi) / 2 + 0.0
-    L.ax.plot([xtecho, xtecho], [ys[2] - 2.0, T0 - 1.0 + 0.5], color=T, lw=1.6, ls=(0, (6, 3)), zorder=1)
-    L.t(xtecho - 1.0, ys[2] - 3.4, "El proyecto compromete", ha="right", bold=True)
-    L.t(xtecho + 1.0, ys[2] - 3.4, "El proyecto contribuye", ha="left", bold=True)
+    L.ax.plot([xtecho, xtecho], [ys[3] - 2.0, T0 - 1.0 + 0.5], color=T, lw=1.6, ls=(0, (6, 3)), zorder=1)
+    L.t(xtecho - 1.0, ys[3] - 3.4, "El proyecto compromete", ha="right", bold=True)
+    L.t(xtecho + 1.0, ys[3] - 3.4, "El proyecto contribuye", ha="left", bold=True)
     return L.guardar("cA_f07")
 
 

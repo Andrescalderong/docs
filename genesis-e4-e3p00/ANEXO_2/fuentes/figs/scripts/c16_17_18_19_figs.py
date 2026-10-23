@@ -25,11 +25,11 @@ def f16():
     hc = 35.0
     yc = ycol_top - hcol / 2 - hc / 2
     comp = ["Gobernanza y acuerdos · mes 6", "Protocolo de calibración · mes 12", "Nodos y repuestos · mes 18",
-            "Tablero y alertas · mes 18", "Gemelo digital y datos · mes 24"]
+            "Tablero y alertas · mes 18", "Gemelo digital, laboratorio y datos · mes 24"]
     L.caja(xc, yc, wc, hc, titulo="Servicio de vigilancia de PM2,5 y PM10 con custodia distribuida",
            cuerpo="\n" + "\n\n".join(comp), fc=AZUL, lw=2.0, pad=1.4)
     izq = [("Empresa tecnológica", "nodos, repuestos y gemelo digital", MEDIO, "-"),
-           ("Universidad proponente", "protocolo, datos y gemelo digital", MEDIO, "-"),
+           ("Universidad proponente", "protocolo, datos y laboratorio", MEDIO, "-"),
            ("Actor del SNCTI", "repositorio de datos y formación de custodios", MEDIO, "-")]
     der = [("Municipio y unidades de gestión del riesgo", "tablero y alertas", MEDIO, "-"),
            ("Autoridad ambiental", "protocolo de calibración", MEDIO, "-"),
@@ -44,7 +44,7 @@ def f16():
     ylab = ycol_top - hcol - 4.0
     L.t(1.0, ylab, "Hitos de transferencia", bold=True, ha="left", va="center")
     hitos = [("Mes 6", "acuerdo marco y cláusula de apertura"), ("Mes 12", "protocolo y series de datos"),
-             ("Mes 18", "nodos adicionales y tablero"), ("Mes 24", "operación con custodio y gemelo digital")]
+             ("Mes 18", "nodos adicionales y tablero"), ("Mes 24", "operación con custodio, gemelo digital y laboratorio")]
     wh, gh, hh = 23.0, 2.0, 11.4
     yh = ylab - 2.0 - hh
     for i, (m, tx) in enumerate(hitos):
@@ -57,22 +57,22 @@ def f16():
 
 
 # ============================================================ c17_f01
-def f17():
+def f17(h=16.0, medir=False):
+    """Con medir=True devuelve el alto del contenido (unidades); el dibujo final usa esa altura."""
     P = {p["n"]: p for p in m2.PRODUCTOS}
-    assert [P[n]["meta"] for n in range(1, 10)] == ["1 sistema de 100 nodos y 10 gateways", "9", "2", "1", "6", "1 infraestructura integrada",
-                                                    "2", "29", "60 personas y 15 comités"]
-    prods = ["Prototipo validado: 1 sistema", "Documentos de investigación: 9", "Maestría apoyada: 2 personas", "Estancia posdoctoral: 1",
-             "Jóvenes investigadores: 6", "Infraestructura integrada: 1", "Documentos de planeación: 2", "Actividades de apropiación: 29",
+    assert P[1]["meta"].startswith("2 prototipos") and P[6]["meta"].startswith("1 infraestructura") and P[7]["meta"] == "3" and P[8]["meta"] == "29"
+    prods = ["Prototipos validados: 2 (red y gemelo predictivo)", "Documentos de investigación: 9", "Maestría apoyada: 2 personas", "Estancia posdoctoral: 1",
+             "Jóvenes investigadores: 6", "Infraestructura de medición y de modelación: 1", "Documentos de planeación: 3", "Actividades de apropiación: 29",
              "Asistencia técnica: 60 personas y 15 comités"]
     res = [r for r in m2.IND_RES if r["nivel"] == "Resultado"]
     imp = [r for r in m2.IND_RES if r["nivel"] == "Impacto"]
-    assert [r["cod"] for r in res] == ["R1", "R2", "R3", "R4", "R5"] and [r["cod"] for r in imp] == ["I1", "I2"]
-    L = Lienzo(10, 8.0, h1="Nueve productos sostienen cinco resultados y dos impactos que se miden después del cierre",
+    assert [r["cod"] for r in res] == ["R1", "R2", "R3", "R4", "R5", "R6", "R7"] and [r["cod"] for r in imp] == ["I1", "I2"]
+    L = Lienzo(10, h, h1="Nueve productos sostienen siete resultados y dos impactos que se miden después del cierre",
                h2="Productos y metas (meses 1 a 24), resultados con su meta al mes 24 e impactos a 12 meses del cierre")
     top = L.top
-    x1, w1 = 1.0, 33.0
-    x2, w2 = 38.5, 35.0
-    x3, w3 = 78.0, 21.0
+    x1, w1 = 1.0, 31.0
+    x2, w2 = 36.0, 39.0
+    x3, w3 = 79.5, 19.5
     yh = top - 0.6
     cab = [(x1, w1, "Productos", "meses 1 a 24", CLARO), (x2, w2, "Resultados", "al mes 24", MEDIO),
            (x3, w3, "Impactos", "12 meses después del cierre", AZUL)]
@@ -80,30 +80,30 @@ def f17():
     for x, w, t, c, col in cab:
         L.caja(x, yh - hh, w, hh, titulo=t, cuerpo=c, fc=col, lw=1.6, pad=0.9)
     ycur = yh - hh - 1.4
-    # ---- productos
     y_prod_top = ycur
-    hred = L.necesita(w1, cuerpo="100 nodos, 10 gateways y 3 monitores de referencia", titulo="Red operativa", pad=0.9) + 0.4
-    L.caja(x1, ycur - hred, w1, hred, titulo="Red operativa", cuerpo="100 nodos, 10 gateways y 3 monitores de referencia", fc=BLANCO,
-           lw=1.6, pad=0.9)
+    txt_red = "100 nodos, 10 gateways, 3 monitores de referencia y laboratorio de modelación"
+    hred = L.necesita(w1, cuerpo=txt_red, titulo="Red operativa y laboratorio", pad=0.9) + 0.4
+    hprod = [L.necesita(w1, cuerpo=t, pad=0.9) + 0.5 for t in prods]
+    hres = [L.necesita(w2, cuerpo=r["meta"], titulo="%s · %s" % (r["cod"], r["nombre"]), pad=0.7) + 0.2 for r in res]
+    need_prod = hred + 1.2 + sum(hprod) + 0.9 * (len(prods) - 1)
+    need_res = sum(hres) + 0.8 * (len(res) - 1)
+    tall = max(need_prod, need_res)
+    y_prod_bot = y_prod_top - tall
+    # ---- productos
+    L.caja(x1, ycur - hred, w1, hred, titulo="Red operativa y laboratorio", cuerpo=txt_red, fc=BLANCO, lw=1.6, pad=0.9)
     ycur -= hred + 1.2
-    for t in prods:
-        hbx = L.necesita(w1, cuerpo=t, pad=0.9) + 0.5
+    gp = (tall - hred - 1.2 - sum(hprod)) / (len(prods) - 1)
+    for t, hbx in zip(prods, hprod):
         L.caja(x1, ycur - hbx, w1, hbx, cuerpo=t, fc=CLARO, lw=1.2, pad=0.9)
-        ycur -= hbx + 0.9
-    y_prod_bot = ycur + 0.9
+        ycur -= hbx + gp
     # ---- resultados
-    hres = []
-    for r in res:
-        hres.append(L.necesita(w2, cuerpo=r["meta"], titulo="%s · %s" % (r["cod"], r["nombre"]), pad=0.9) + 0.4)
-    gap = (y_prod_top - y_prod_bot - sum(hres)) / (len(res) - 1)
+    gap = (tall - sum(hres)) / (len(res) - 1)
     yy = y_prod_top
     for r, hbx in zip(res, hres):
-        L.caja(x2, yy - hbx, w2, hbx, titulo="%s · %s" % (r["cod"], r["nombre"]), cuerpo=r["meta"], fc=MEDIO, lw=1.2, pad=0.9)
+        L.caja(x2, yy - hbx, w2, hbx, titulo="%s · %s" % (r["cod"], r["nombre"]), cuerpo=r["meta"], fc=MEDIO, lw=1.2, pad=0.7)
         yy -= hbx + gap
     # ---- impactos
-    himp = []
-    for r in imp:
-        himp.append(L.necesita(w3, cuerpo=r["meta"], titulo="%s · %s" % (r["cod"], r["nombre"]), pad=0.9) + 0.4)
+    himp = [L.necesita(w3, cuerpo=r["meta"], titulo="%s · %s" % (r["cod"], r["nombre"]), pad=0.9) + 0.4 for r in imp]
     gi = 3.0
     tot = sum(himp) + gi
     ymid = (y_prod_top + y_prod_bot) / 2
@@ -116,6 +116,9 @@ def f17():
         xm_ = xa + 1.6
         L.ax.plot([xa + 0.3, xm_, xm_, xa + 0.3], [ya, ya, yb, yb], color=T, lw=1.8, solid_joinstyle="miter", zorder=3)
         L.flecha((xm_, ymid), (xb - 0.3, ymid), lw=2.0, ms=15)
+    if medir:
+        plt.close(L.fig)
+        return L.H - y_prod_bot + 1.2
     L.guardar("c17_f01")
 
 
@@ -125,7 +128,7 @@ def f18():
                h2="Entregas por componente y mes de transferencia, con la condición de recepción de cada una")
     top = L.top
     filas = ["Gobernanza y acuerdos", "Protocolo de calibración y series de datos", "Nodos adicionales y repuestos", "Tablero y alertas",
-             "Gemelo digital y operación"]
+             "Gemelo digital, laboratorio y operación"]
     meses = [6, 12, 18, 24]
     OP = "Operación con custodio"
     celdas = {
@@ -136,7 +139,7 @@ def f18():
         (2, 3): ("o", OP),
         (3, 2): ("t", "Partida en el plan operativo y personal designado"),
         (3, 3): ("o", OP),
-        (4, 3): ("t", "Competencia jurídica y primer pago del servicio"),
+        (4, 3): ("t", "Competencia jurídica, partida y sostenimiento del laboratorio"),
     }
     xl, wl = 1.0, 20.0
     x0, wcel, g = 22.0, 18.9, 0.5
@@ -271,4 +274,7 @@ TODAS = {"f16": f16, "f17": f17, "f18": f18, "f19a": f19a, "f19b": f19b}
 if __name__ == "__main__":
     sel = sys.argv[1:] or list(TODAS)
     for k in sel:
-        TODAS[k]()
+        if k == "f17":
+            f17(h=f17(medir=True) / 10)
+        else:
+            TODAS[k]()

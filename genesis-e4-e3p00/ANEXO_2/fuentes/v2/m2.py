@@ -13,14 +13,14 @@ L = M0.L
 
 # ------------------------------------------------------------------ IDENTIDAD
 IDENT = dict(M0.IDENT)
-IDENT["titulo"] = ("Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo "
-                   "por material particulado posterremoto en Caldas, Cundinamarca y Valle del Cauca")
+IDENT["titulo"] = ("Implementación de una red IoT híbrida Edge-Cloud y de un gemelo digital predictivo de demolición para la gestión "
+                   "anticipada del riesgo por material particulado posterremoto en Caldas, Cundinamarca y Valle del Cauca")
 IDENT["proceso"] = "Implementación"
-IDENT["objeto"] = "red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto"
+IDENT["objeto"] = "red IoT híbrida Edge-Cloud y gemelo digital predictivo de demolición para la gestión anticipada del riesgo por material particulado posterremoto"
 IDENT["localizacion"] = "Caldas, Cundinamarca y Valle del Cauca"
 IDENT["trl_final"] = 8
 IDENT["trl_piso"] = 7
-IDENT["fecha_corte"] = "15 de octubre de 2026"
+IDENT["fecha_corte"] = "23 de octubre de 2026"
 IDENT["fecha_cierre_conv"] = "3 de noviembre de 2026"
 IDENT["linea_principal"] = "5.1. Ciencia, tecnología e innovación para la gestión anticipada del riesgo y la seguridad de las regiones"
 IDENT["tope_cop"] = 14_000_000_000
@@ -43,6 +43,12 @@ RUBRO_DE = {  # línea del libro anterior -> rubro del TdR
     **{f"M{n:02d}": "Materiales, insumos y documentación" for n in (1, 2, 3, 5, 6, 7)},
     "V01": "Gastos de viaje", "V02": "Gastos de viaje", "V03": "Gastos de viaje", "V04": "Gastos de viaje",
     "S11": "Administrativos", "O05a": "Administrativos", "O05b": "Seguimiento",
+    # laboratorio de modelación predictiva de demolición
+    "P15": "Talento Humano", "P16": "Talento Humano", "P17": "Talento Humano",
+    **{f"E{n}": "Equipos y software" for n in (13, 14, 15, 16, 17)},
+    "S12": "Servicios tecnológicos y pruebas", "S13": "Servicios tecnológicos y pruebas", "S14": "Servicios tecnológicos y pruebas", "S15": "Servicios tecnológicos y pruebas",
+    "S16": "Capacitación y eventos", "S17": "Administrativos", "M08": "Materiales, insumos y documentación",
+    "V06": "Gastos de viaje", "V07": "Gastos de viaje", "V08": "Gastos de viaje", "O07": "Protección del conocimiento y divulgación",
 }
 
 # ------------------------------------------------------------------ PRESUPUESTO SGR v2
@@ -92,6 +98,50 @@ for r in M0.BUDGET:
                "Los numerales 12.2 y 14.3 exigen el rubro Seguimiento para la vigilancia del proyecto")
         BUD += [a, b]; continue
     BUD.append(dict(r))
+# ------------------------------------------------------------------ LABORATORIO DE MODELACIÓN PREDICTIVA DE DEMOLICIÓN (dentro de los objetivos 1, 2 y 3)
+# Decisión de la alianza del 23 de octubre de 2026: el proyecto incorpora un laboratorio, ubicado en la IES y validado por ella, que modela la emisión,
+# la dispersión y la exposición esperada de polvo antes de demoler una edificación. No crea un objetivo específico adicional: su validación
+# se ubica en el objetivo 1, su construcción en el objetivo 2 y su adopción en el objetivo 3. Los valores son estimaciones sujetas a cotización.
+LAB_LINEAS = [
+ L("P15", "Personal", "Investigador líder en modelación atmosférica y dispersión de contaminantes (1)", "persona-mes", 22, 13_000_000, "SGR", "PROPUESTO", "WP2", 3, 24,
+   "Lidera el laboratorio de modelación, el modelo de emisión y de dispersión y la validación del gemelo predictivo."),
+ L("P16", "Personal", "Ingeniero en dinámica de fluidos computacional y cómputo de alto rendimiento (1)", "persona-mes", 20, 10_000_000, "SGR", "PROPUESTO", "WP2", 7, 24,
+   "Monta las simulaciones de calles y edificios y el modelo sustituto de respuesta rápida."),
+ L("P17", "Personal", "Ingeniero en demolición y control de polvo en obra (1)", "persona-mes", 14, 9_000_000, "SGR", "PROPUESTO", "WP2", 3, 22,
+   "Define el inventario de actividad de demolición, las medidas de control y las campañas de campo."),
+ L("E13", "Equipos y software", "Servidor de cálculo de alto rendimiento y almacenamiento del laboratorio de modelación", "unidad", 1, 160_000_000, "SGR", "PROPUESTO", "WP2", 7, 9,
+   "Ejecuta las simulaciones de dispersión y entrena el modelo sustituto."),
+ L("E14", "Equipos y software", "Estaciones meteorológicas automáticas con anemómetro sónico, pluviómetro y radiómetro (3 departamentales y 1 móvil)", "unidad", 4, 32_000_000, "SGR", "PROPUESTO", "WP2", 7, 10,
+   "Miden viento, lluvia y radiación en los sitios; el viento es el principal dato de entrada del modelo."),
+ L("E15", "Equipos y software", "Dron con sensor LiDAR y cámara fotogramétrica y receptor GNSS RTK", "unidad", 1, 105_000_000, "SGR", "PROPUESTO", "WP2", 7, 9,
+   "Levanta la geometría de las edificaciones y de su entorno para el modelo."),
+ L("E16", "Equipos y software", "Monitores portátiles de material particulado de referencia equivalente para campañas de demolición", "unidad", 2, 72_000_000, "SGR", "PROPUESTO", "WP2", 8, 10,
+   "Miden a distintas distancias de la demolición para validar el modelo."),
+ L("E17", "Equipos y software", "Licencias de software de modelación urbana, de dispersión y SIG, de pago único con soporte durante la ejecución", "paquete", 1, 55_000_000, "SGR", "PROPUESTO", "WP2", 7, 24,
+   "Complementa las herramientas de código abierto con soporte técnico."),
+ L("S12", "Servicios técnicos", "Campañas de medición en demoliciones y remociones reales (logística, seguridad industrial y acceso)", "campaña", 9, 16_000_000, "SGR", "PROPUESTO", "WP1", 14, 22,
+   "Nueve campañas para obtener al menos seis eventos válidos de validación."),
+ L("S13", "Servicios técnicos", "Caracterización granulométrica y química del polvo de escombros en laboratorio acreditado", "muestra", 30, 1_100_000, "SGR", "PROPUESTO", "WP2", 5, 16,
+   "Ajusta los factores de emisión y la distribución de tamaños con polvo del territorio."),
+ L("S14", "Servicios técnicos", "Verificación y validación independiente del modelo predictivo", "servicio", 1, 48_000_000, "SGR", "PROPUESTO", "WP1", 21, 23,
+   "Revisión externa del modelo y de sus métricas antes de la transferencia."),
+ L("S15", "Servicios técnicos", "Cartografía de alta resolución y modelos digitales de terreno de los sitios", "paquete", 1, 20_000_000, "SGR", "PROPUESTO", "WP2", 5, 6,
+   "Base geográfica del modelo."),
+ L("S16", "Otros rubros", "Talleres de evaluación previa de demolición con comités y obras (6)", "taller", 6, 8_000_000, "SGR", "PROPUESTO", "WP3", 21, 24,
+   "Dos talleres por departamento para leer el resultado y decidir medidas."),
+ L("S17", "Otros rubros", "Importación y nacionalización de equipos del laboratorio de modelación", "servicio", 1, 25_000_000, "SGR", "PROPUESTO", "WP2", 7, 10,
+   "Trámite de importación del servidor, el dron y los monitores portátiles."),
+ L("M08", "Materiales e insumos", "Consumibles y repuestos de las campañas de medición (filtros, baterías y verificaciones de campo)", "lote", 1, 28_000_000, "SGR", "PROPUESTO", "WP1", 14, 22,
+   "Insumos de las nueve campañas."),
+ L("V06", "Viajes y viáticos", "Tiquetes aéreos nacionales de las campañas de demolición", "trayecto", 40, 600_000, "SGR", "PROPUESTO", "WP1", 14, 22, "Desplazamiento del equipo a los sitios."),
+ L("V07", "Viajes y viáticos", "Viáticos de alojamiento y manutención de las campañas de demolición", "día-persona", 160, 350_000, "SGR", "PROPUESTO", "WP1", 14, 22, "Equipo de cuatro personas por campaña."),
+ L("V08", "Viajes y viáticos", "Arrendamiento de vehículos 4x4 de las campañas de demolición", "día", 70, 450_000, "SGR", "PROPUESTO", "WP1", 14, 22, "Transporte de equipos de medición."),
+ L("O07", "Otros rubros", "Registro del software y de los datos del modelo predictivo ante la DNDA", "paquete", 1, 10_000_000, "SGR", "PROPUESTO", "WP3", 22, 24, "Protección del software y de la base de datos."),
+]
+BUD += LAB_LINEAS
+ajuste("AJ-10", "Laboratorio de modelación predictiva de demolición", "Sin módulo predictivo; el gemelo digital solo estimaba entre nodos",
+       "Cinco actividades nuevas repartidas en los objetivos 1, 2 y 3 y 19 líneas nuevas del SGR",
+       "Decisión de la alianza del 23 de octubre de 2026; responde al alcance 5.1.2 de los TdR (modelación avanzada, gemelos digitales y analítica predictiva)")
 for r in BUD:
     r["rubro_tdr"] = RUBRO_DE[r["id"]]
 
@@ -100,10 +150,12 @@ CONTRA = [dict(r) for r in M0.CONTRA]
 CONTRA.append(L("C07", "Personal (especie)", "Municipio aliado: profesionales de gestión del riesgo y logística de acceso a sitios", "mes", 24, 5_000_000,
                 "ENT", "PROPUESTO", "WP3", 1, 24,
                 "Tres profesionales al 20 % durante 24 meses y apoyo logístico; valor sujeto a certificación del municipio aliado."))
+CONTRA.append(L("C09", "Infraestructura (especie)", "Entidad proponente: espacio, energía, red y soporte técnico del laboratorio de modelación (24 meses)", "mes", 24, 6_000_000,
+                "IES", "PROPUESTO", "WP2", 3, 24, "Espacio con control de acceso y climatización, energía, red y soporte del cómputo institucional; valor sujeto a certificación de la IES."))
 ajuste("AJ-06", "Contrapartida de la entidad territorial", "Sin aporte (VACIO)", "120.000.000 COP en especie (PROPUESTO, pendiente de certificación)",
        "El numeral 3 exige que cada integrante de la alianza aporte una contrapartida cuantificada en términos monetarios")
 
-# ------------------------------------------------------------------ ACTIVIDADES v2 (17) con semanas del CPM
+# ------------------------------------------------------------------ ACTIVIDADES v2 (22) con semanas del CPM
 # id Anexo 2, id CPM, nombre, OE
 ACT = [
  ("1.1", "A1.1", "Seleccionar los sitios y diseñar la colocalización", "OE1"),
@@ -112,18 +164,26 @@ ACT = [
  ("1.4", "A1.4", "Entrenar y validar el modelo de corrección y decidir en la compuerta C1", "OE1"),
  ("1.5", "A1.5", "Reentrenar y verificar por departamento el tramo 2 y decidir en la compuerta C2", "OE1"),
  ("1.6", "A1.6", "Verificar el desempeño final y ejecutar el ensayo independiente", "OE1"),
- ("1.7", None,   "Administración y apoyo a la supervisión (objetivo específico 1)", "OE1"),
+ ("1.7", None,   "Validar el gemelo predictivo con demoliciones y remociones reales en los tres departamentos", "OE1"),
+ ("1.8", None,   "Administración y apoyo a la supervisión (objetivo específico 1)", "OE1"),
  ("2.1", "A2.1", "Diseñar la arquitectura de enlace y energía", "OE2"),
  ("2.2", "A2.2", "Desarrollar el firmware y la plataforma base (gemelo digital y tablero)", "OE2"),
  ("2.3", "A2.3", "Instalar el tramo 2", "OE2"),
  ("2.4", "A2.4", "Instalar el tramo 3", "OE2"),
- ("2.5", None,   "Administración y apoyo a la supervisión (objetivo específico 2)", "OE2"),
+ ("2.5", None,   "Diseñar el laboratorio de modelación y el inventario de emisión de demolición", "OE2"),
+ ("2.6", None,   "Dotar el laboratorio y montar la cadena de modelación", "OE2"),
+ ("2.7", None,   "Construir y calibrar el gemelo predictivo de demolición", "OE2"),
+ ("2.8", None,   "Administración y apoyo a la supervisión (objetivo específico 2)", "OE2"),
  ("3.1", "A3.1", "Co-diseñar los umbrales y el protocolo de alerta con los comités", "OE3"),
  ("3.2", "A3.2", "Poner en uso el tablero con los comités", "OE3"),
  ("3.3", "A3.3", "Formar custodios y firmar los convenios por tramo", "OE3"),
  ("3.4", "A3.4", "Transferir, cerrar y evaluar", "OE3"),
- ("3.5", None,   "Administración y apoyo a la supervisión (objetivo específico 3)", "OE3"),
+ ("3.5", None,   "Adoptar el protocolo de evaluación previa de demolición y transferir el laboratorio", "OE3"),
+ ("3.6", None,   "Administración y apoyo a la supervisión (objetivo específico 3)", "OE3"),
 ]
+OE_NOMBRE = {"OE1": "Medición verificada", "OE2": "Disponibilidad de la red", "OE3": "Uso institucional y custodia"}
+# actividades del laboratorio (fuera de la ruta crítica): semana de inicio, semana de fin y holgura en semanas
+SEM_LAB = {"2.5": (8, 26, 6), "2.6": (26, 44, 6), "2.7": (44, 70, 6), "1.7": (60, 96, 4), "3.5": (90, 100, 4)}
 ACTD = collections.OrderedDict((a[0], dict(id=a[0], cpm=a[1], nombre=a[2], oe=a[3])) for a in ACT)
 SEM_MES = 52 / 12
 def mes_ini(sem): return int(math.floor(sem / SEM_MES + 1e-9)) + 1
@@ -135,6 +195,8 @@ for k, a in ACTD.items():
         if k == "1.4": ef = M0.ACTS["C1"]["EF"]
         if k == "1.5": ef = M0.ACTS["C2"]["EF"]
         a.update(es=es, ef=ef, holgura=c["holgura"], critica=(c["holgura"] == 0))
+    elif k in SEM_LAB:
+        a.update(es=SEM_LAB[k][0], ef=SEM_LAB[k][1], holgura=SEM_LAB[k][2], critica=False)
     else:
         a.update(es=0, ef=M0.DURACION_SEMANAS, holgura=0, critica=False)
     a["m_ini"] = mes_ini(a["es"]) if a["es"] > 0 else 1
@@ -145,7 +207,8 @@ def dur(k): return max(1, ACTD[k]["ef"] - ACTD[k]["es"])
 def por_duracion(keys):
     t = sum(dur(k) for k in keys); return {k: dur(k) / t for k in keys}
 OE1 = ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"]; OE2 = ["2.1", "2.2", "2.3", "2.4"]; OE3 = ["3.1", "3.2", "3.3", "3.4"]
-ADM = ["1.7", "2.5", "3.5"]
+LAB = ["2.5", "2.6", "2.7", "1.7", "3.5"]   # actividades del laboratorio de modelación (objetivos 2, 1 y 3)
+ADM = ["1.8", "2.8", "3.6"]
 TERCIOS = {k: 1 / 3 for k in ADM}
 TR = {"1.2": 36 / 120, "2.3": 48 / 120, "2.4": 36 / 120}   # por tramo de compra de nodos (36, 48, 36)
 TRG = {"1.2": 4 / 11, "2.3": 4 / 11, "2.4": 3 / 11}        # gateways comprados (4, 4, 3)
@@ -166,10 +229,15 @@ ALLOC = {
  "V01": VIAJE, "V02": VIAJE, "V03": VIAJE, "V04": {"3.4": 1.0}, "V05": {"3.1": 1.0},
  "O01": {"1.6": 1.0}, "O02": {"3.2": 4 / 9, "3.3": 3 / 9, "3.4": 2 / 9}, "O03": {"3.4": 1.0}, "O05a": TERCIOS, "O05b": TERCIOS,
  "O06": {"3.2": .4, "3.4": .6},
+ # laboratorio de modelación predictiva
+ "P15": {"2.5": .15, "2.6": .15, "2.7": .30, "1.7": .30, "3.5": .10}, "P16": {"2.6": .25, "2.7": .45, "1.7": .30}, "P17": {"2.5": .30, "1.7": .55, "3.5": .15},
+ "E13": {"2.6": 1.0}, "E14": {"2.6": 1.0}, "E15": {"2.6": 1.0}, "E16": {"2.6": 1.0}, "E17": {"2.6": .5, "2.7": .5},
+ "S12": {"1.7": 1.0}, "S13": {"2.5": .4, "2.7": .6}, "S14": {"1.7": .6, "3.5": .4}, "S15": {"2.5": 1.0}, "S16": {"3.5": 1.0}, "S17": {"2.6": 1.0},
+ "M08": {"1.7": 1.0}, "V06": {"1.7": .8, "3.5": .2}, "V07": {"1.7": .8, "3.5": .2}, "V08": {"1.7": .8, "3.5": .2}, "O07": {"3.5": 1.0},
 }
 CALLOC = {  # contrapartida
  "C01": TERCIOS, "C02": por_duracion(OE1), "C03": por_duracion(OE3), "C04": por_duracion(OE1),
- "C05": {"2.3": .5, "2.4": .5}, "C06": {"2.2": 1.0}, "C07": por_duracion(OE3),
+ "C05": {"2.3": .5, "2.4": .5}, "C06": {"2.2": 1.0}, "C07": por_duracion(OE3), "C09": por_duracion(LAB),
 }
 def repartir(total, shares):
     """Reparte un total entero según proporciones; el residuo va a la mayor participación (suma exacta)."""
@@ -196,7 +264,7 @@ POR_RUBRO = collections.OrderedDict((k, sum(r["total"] for r in BUD if r["rubro_
 assert sum(POR_RUBRO.values()) == SGR
 assert sum(a["sgr"] for a in ACTD.values()) == SGR and sum(a["contra"] for a in ACTD.values()) == CON
 POR_OE = {oe: dict(sgr=sum(a["sgr"] for a in ACTD.values() if a["oe"] == oe), contra=sum(a["contra"] for a in ACTD.values() if a["oe"] == oe)) for oe in ("OE1", "OE2", "OE3")}
-TRANSFER = sum(r["total"] for r in BUD if r["id"] in ("S09", "S02", "O03"))
+TRANSFER = sum(r["total"] for r in BUD if r["id"] in ("S09", "S02", "O03", "S16", "O07"))
 MOVILIDAD = sum(r["total"] for r in BUD if r["id"] == "V04")
 assert TRANSFER >= 0.01 * TOTAL, (TRANSFER, TOTAL)
 assert MOVILIDAD <= 0.02 * SGR
@@ -253,6 +321,18 @@ RIESGOS_NUEVOS = [
  dict(id="R-SAN-01", cat="Sanitario", tipo="Sanitarios", desc="El personal de campo se expone al polvo y a los escombros durante la instalación y el mantenimiento.",
       P=3, I=3, prob=30, imp=0, estrategia="Mitigar", respuesta="Protocolo de seguridad y salud con respiradores N95, inducción previa y ventanas de trabajo fuera de la remoción activa.",
       resp="Ingenieros IoT y de campo", disparador="Incidente de salud reportado o sitio sin protocolo firmado", n_prob="Improbable", n_imp="Moderado"),
+ dict(id="R-MOD-01", cat="Externo", tipo="Operacionales", desc="Los propietarios o las autoridades no permiten medir en un número suficiente de demoliciones o remociones reales entre los meses 13 y 22.",
+      P=4, I=4, prob=40, imp=0, estrategia="Mitigar", respuesta="Acuerdo con comités y municipios para anunciar cada demolición con 15 días de antelación, uso de remociones de menor escala y de sitios de prueba como respaldo, y regla mínima de seis eventos válidos en nueve campañas.",
+      resp="Municipio aliado y líder del laboratorio", disparador="Menos de tres campañas ejecutadas al mes 16", n_prob="Probable", n_imp="Mayor"),
+ dict(id="R-MOD-02", cat="Técnico", tipo="Operacionales", desc="El gemelo predictivo no alcanza el desempeño fijado (FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 en promedios de 24 horas).",
+      P=3, I=4, prob=35, imp=0, estrategia="Mitigar", respuesta="Calibración por etapas con la campaña piloto, comparación del modelo sustituto con el modelo físico, verificación independiente y restricción del uso del resultado al dominio validado, con el desempeño real informado.",
+      resp="Investigador líder en modelación", disparador="Desempeño por debajo de la meta en los tres primeros eventos de validación", n_prob="Improbable", n_imp="Mayor"),
+ dict(id="R-MOD-03", cat="Datos", tipo="Operacionales", desc="Los datos de entrada del modelo (geometría, material, método de demolición o meteorología) faltan o son de baja calidad.",
+      P=3, I=3, prob=30, imp=0, estrategia="Mitigar", respuesta="Levantamiento con dron antes de cada evento, cuatro estaciones meteorológicas propias, inventario de emisión expresado en rangos y resultados presentados como escenarios.",
+      resp="Ingeniero en demolición y control de polvo", disparador="Evento sin geometría o sin viento medido", n_prob="Improbable", n_imp="Moderado"),
+ dict(id="R-JUR-02", cat="Jurídico", tipo="Legales", desc="El resultado del laboratorio se interpreta como autorización de demolición, licencia o prueba de responsabilidad.",
+      P=3, I=4, prob=25, imp=0, estrategia="Evitar", respuesta="El protocolo define el resultado como estimación de apoyo a la decisión, con advertencia expresa de alcance, convenio de uso con el municipio y revisión jurídica previa a la adopción.",
+      resp="Gerencia de proyecto y municipio aliado", disparador="Solicitud de usar el informe como requisito o como prueba", n_prob="Improbable", n_imp="Mayor"),
 ]
 RIESGOS += RIESGOS_NUEVOS
 # riesgos que cambian por los ajustes de los TdR
@@ -283,8 +363,8 @@ assert sum(t["total"] for t in TALENTO) == sum(r["total"] for r in BUD if r["id"
 # ------------------------------------------------------------------ PRODUCTOS (MGA, sector 39, programa 3906)
 PRODUCTOS = [
  dict(n=1, oe="OE1", programa="3906", producto="Servicio de apoyo para la generación de prototipos de materiales, productos o dispositivos",
-      medido="Prototipos validados en condiciones reales", indicador="Prototipos funcionales validados (red de nodos y gateways con modelo de corrección)", unidad="Número", meta="1 sistema de 100 nodos y 10 gateways",
-      act=["1.2", "1.3", "1.4", "1.5", "1.6", "2.3", "2.4"], resp="IES ejecutora y empresa tecnológica"),
+      medido="Prototipos validados en condiciones reales", indicador="Prototipos funcionales validados (red de nodos y gateways con modelo de corrección y gemelo predictivo de demolición)", unidad="Número", meta="2 prototipos: sistema de 100 nodos y 10 gateways y gemelo predictivo de demolición",
+      act=["1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.3", "2.4", "2.7"], resp="IES ejecutora y empresa tecnológica"),
  dict(n=2, oe="OE1", programa="3906", producto="Documentos de investigación",
       medido="Documentos de investigación elaborados", indicador="Documentos de investigación elaborados (6 de jóvenes, 2 de maestría y 1 de posdoctorado)", unidad="Número", meta="9",
       act=["1.6", "3.4"], resp="IES ejecutora"),
@@ -298,11 +378,11 @@ PRODUCTOS = [
       medido="Jóvenes investigadores e innovadores apoyados", indicador="Jóvenes investigadores e innovadores apoyados con beca-pasantía", unidad="Número", meta="6",
       act=["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"], resp="IES ejecutora"),
  dict(n=6, oe="OE2", programa="3906", producto="Servicio de apoyo financiero para programas y proyectos de infraestructura científica y tecnológica",
-      medido="Infraestructura científica y tecnológica dotada", indicador="Equipos y plataforma de medición dotados y en operación (3 referencias, 100 nodos, 10 gateways y plataforma)", unidad="Número", meta="1 infraestructura integrada",
-      act=["2.1", "2.2", "2.3", "2.4"], resp="IES ejecutora y empresa tecnológica"),
+      medido="Infraestructura científica y tecnológica dotada", indicador="Equipos y plataformas de medición y de modelación dotados y en operación (3 referencias, 100 nodos, 10 gateways, plataforma y laboratorio de modelación)", unidad="Número", meta="1 infraestructura integrada",
+      act=["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"], resp="IES ejecutora y empresa tecnológica"),
  dict(n=7, oe="OE3", programa="3906", producto="Documentos de política: Documentos de planeación",
-      medido="Documentos de planeación elaborados", indicador="Documentos de planeación elaborados (protocolo de alerta y plan de sostenibilidad con convenios de custodia)", unidad="Número", meta="2",
-      act=["3.1", "3.3", "3.4"], resp="IES ejecutora y municipio aliado"),
+      medido="Documentos de planeación elaborados", indicador="Documentos de planeación elaborados (protocolo de alerta, plan de sostenibilidad con convenios de custodia y protocolo de evaluación previa de demolición)", unidad="Número", meta="3",
+      act=["3.1", "3.3", "3.4", "3.5"], resp="IES ejecutora y municipio aliado"),
  dict(n=8, oe="OE3", programa="3906", producto="Servicio de apropiación social del conocimiento",
       medido="Actividades de apropiación social realizadas", indicador="Estrategias y actividades de apropiación social del conocimiento realizadas (20 talleres de co-diseño y 9 jornadas)", unidad="Número", meta="29",
       act=["3.1", "3.2", "3.3", "3.4"], resp="IES ejecutora y municipio aliado"),
@@ -315,6 +395,15 @@ for p in PRODUCTOS:
 
 # ------------------------------------------------------------------ HITOS
 HITOS = [dict(id=h[0], desc=h[1], mes=h[2], verif=h[3]) for h in M0.HITOS]
+HITOS += [
+    dict(id="H9", desc="Laboratorio de modelación dotado y con la cadena de cálculo en operación", mes=11,
+         verif="Actas de recibo del servidor, las estaciones meteorológicas, el dron y los monitores portátiles; ejecución de un caso de prueba documentado"),
+    dict(id="H10", desc="Gemelo predictivo calibrado con el polvo del territorio y la campaña piloto", mes=17,
+         verif="Informe de calibración con el inventario de emisión, la caracterización del polvo y las métricas frente a la campaña piloto"),
+    dict(id="H11", desc="Validación del gemelo con seis eventos reales y verificación independiente", mes=22,
+         verif="Informe de validación con FAC2 y sesgo fraccional por evento e informe del verificador independiente"),
+]
+HITOS.sort(key=lambda h: (h["mes"], int(h["id"][1:])))
 HITOS.append(dict(id="C3", desc="Compuerta C3: cierre y transferencia con evidencia del TRL 8", mes=24,
                   verif="Informe de evaluación final con el desempeño de los 100 nodos y acta de entrega a custodios"))
 
@@ -341,8 +430,8 @@ if __name__ == "__main__":
 # ------------------------------------------------------------------ INDICADORES DE PRODUCTO Y DE RESULTADO
 IND_PROD = [
  dict(n=1, prod="Servicio de apoyo para la generación de prototipos de materiales, productos o dispositivos", ind="Prototipos funcionales validados", unidad="Número",
-      meta="1 sistema de 100 nodos y 10 gateways: 30 y 3 al mes 12; 70 y 7 al mes 17; 100 y 10 al mes 19", resp="IES ejecutora y empresa tecnológica", periodo="Meses 4 a 24",
-      evidencia="Inventario con coordenadas y número de serie; informes de validación frente a la referencia (R² ≥ 0,70 y NRMSE ≤ 30 %); informe del ensayo independiente", territorio="12 municipios de Caldas, Cundinamarca y Valle del Cauca"),
+      meta="2 prototipos: un sistema de 100 nodos y 10 gateways (30 y 3 al mes 12; 70 y 7 al mes 17; 100 y 10 al mes 19) y un gemelo predictivo de demolición validado al mes 22", resp="IES ejecutora y empresa tecnológica", periodo="Meses 4 a 24",
+      evidencia="Inventario con coordenadas y número de serie; informes de validación frente a la referencia (R² ≥ 0,70 y NRMSE ≤ 30 %); informe del ensayo independiente; informe de validación del gemelo con seis eventos y verificación independiente", territorio="12 municipios de Caldas, Cundinamarca y Valle del Cauca"),
  dict(n=2, prod="Documentos de investigación", ind="Documentos de investigación elaborados", unidad="Número",
       meta="9: seis de jóvenes investigadores, dos de maestría y uno de posdoctorado; al menos 2 sometidos a revistas Q1 o Q2", resp="IES ejecutora", periodo="Meses 6 a 24",
       evidencia="Manuscritos con constancia de sometimiento o publicación", territorio="Tres departamentos"),
@@ -352,23 +441,27 @@ IND_PROD = [
       meta="1", resp="IES ejecutora", periodo="Meses 1 a 24", evidencia="Contrato o beca, producto TOP o tipo A, producto de divulgación e informe técnico final", territorio="Tres departamentos"),
  dict(n=5, prod="Servicio de apoyo financiero para el fortalecimiento de las vocaciones científicas en CTI", ind="Jóvenes investigadores e innovadores apoyados", unidad="Número",
       meta="6: tres en los meses 1 a 12 y tres en los meses 13 a 24", resp="IES ejecutora", periodo="Meses 1 a 24", evidencia="Contratos de beca-pasantía, CvLAC actualizado, artículo en formato publicable y producto de divulgación por persona", territorio="Tres departamentos"),
- dict(n=6, prod="Servicio de apoyo financiero para programas y proyectos de infraestructura científica y tecnológica", ind="Infraestructura de medición dotada y en operación", unidad="Número",
-      meta="1 infraestructura integrada: 3 monitores de referencia, banco de calibración, 100 nodos, 10 gateways y plataforma", resp="IES ejecutora y empresa tecnológica", periodo="Meses 2 a 19",
-      evidencia="Actas de recibo, inventario con huella de configuración y registro fotográfico", territorio="12 municipios"),
+ dict(n=6, prod="Servicio de apoyo financiero para programas y proyectos de infraestructura científica y tecnológica", ind="Infraestructura de medición y de modelación dotada y en operación", unidad="Número",
+      meta="1 infraestructura integrada: 3 monitores de referencia, banco de calibración, 100 nodos, 10 gateways, plataforma y laboratorio de modelación", resp="IES ejecutora y empresa tecnológica", periodo="Meses 2 a 19",
+      evidencia="Actas de recibo, inventario con huella de configuración y registro fotográfico; acta de puesta en operación del laboratorio", territorio="12 municipios y laboratorio en la entidad proponente"),
  dict(n=7, prod="Documentos de política: Documentos de planeación", ind="Documentos de planeación elaborados", unidad="Número",
-      meta="2: protocolo de alerta co-diseñado con los comités y plan de sostenibilidad con convenios de custodia", resp="IES ejecutora y municipio aliado", periodo="Meses 3 a 24",
-      evidencia="Documentos adoptados por acta de cada comité y convenios de custodia firmados", territorio="15 comités de gestión del riesgo"),
+      meta="3: protocolo de alerta co-diseñado con los comités, plan de sostenibilidad con convenios de custodia y protocolo de evaluación previa de demolición", resp="IES ejecutora y municipio aliado", periodo="Meses 3 a 24",
+      evidencia="Documentos adoptados por acta de cada comité y convenios de custodia firmados; protocolo de evaluación previa adoptado por acta de la entidad territorial", territorio="15 comités de gestión del riesgo"),
  dict(n=8, prod="Servicio de apropiación social del conocimiento", ind="Actividades de apropiación social del conocimiento realizadas", unidad="Número",
       meta="29: 20 talleres de co-diseño y 9 jornadas públicas", resp="IES ejecutora y municipio aliado", periodo="Meses 3 a 24", evidencia="Actas, listas de asistencia y piezas producidas con las comunidades", territorio="12 municipios"),
  dict(n=9, prod="Servicio de Asistencia Técnica", ind="Personas certificadas y comités asistidos", unidad="Número",
       meta="60 personas certificadas y 15 comités asistidos", resp="IES ejecutora y empresa tecnológica", periodo="Meses 6 a 24", evidencia="Certificados de formación y actas de asistencia técnica", territorio="15 comités de gestión del riesgo"),
 ]
 IND_RES = [
+ # R6 y R7 se anexan al final de la lista de resultados, antes de los indicadores de impacto
+
  dict(cod="R1", nombre="Error de medición frente a la referencia en los tres tramos", formula="NRMSE y R² de cada nodo corregido frente al monitor de referencia colocalizado", lb="Se mide en el tramo 1 (mes 12)", meta="R² ≥ 0,70 y NRMSE ≤ 30 % en 100 nodos al mes 24", nivel="Resultado"),
  dict(cod="R2", nombre="Disponibilidad mensual de nodos", formula="Horas con dato válido ÷ horas del mes", lb="0 %", meta="≥ 90 % y pérdida de paquetes ≤ 10 % al mes 24", nivel="Resultado"),
  dict(cod="R3", nombre="Uso institucional del tablero y del protocolo", formula="Comités con al menos una decisión documentada por trimestre ÷ comités focalizados × 100", lb="Sin uso documentado", meta="≥ 75 % al mes 24", nivel="Resultado"),
  dict(cod="R4", nombre="Reducción relativa de falsas alarmas", formula="1 − (tasa del periodo ÷ tasa medida en el tramo 1)", lb="Se mide en el tramo 1", meta="≥ 30 % de reducción relativa", nivel="Resultado"),
  dict(cod="R5", nombre="Capacidad instalada en custodios", formula="Personas certificadas en el uso y la custodia de la red", lb="0", meta="≥ 60 personas certificadas", nivel="Resultado"),
+ dict(cod="R6", nombre="Desempeño del gemelo predictivo frente a mediciones en demoliciones reales", formula="Fracción de pares estimado y medido con razón entre 0,5 y 2 (FAC2) y sesgo fraccional, en promedios de 24 horas, por evento", lb="Sin modelo predictivo", meta="FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 en al menos 6 eventos al mes 22", nivel="Resultado"),
+ dict(cod="R7", nombre="Evaluaciones previas de demolición entregadas", formula="Informes de evaluación previa entregados a las entidades territoriales o a los responsables de obra", lb="0", meta="≥ 12 informes, con al menos 3 por departamento, al mes 24", nivel="Resultado"),
  dict(cod="I1", nombre="Activación del protocolo ante superación de umbral", formula="Activaciones documentadas ÷ superaciones de umbral × 100", lb="Sin protocolo", meta="≥ 80 % a los 12 meses posteriores al cierre", nivel="Impacto"),
  dict(cod="I2", nombre="Continuidad de la red bajo custodia", formula="Nodos operativos bajo custodia ÷ nodos entregados × 100", lb="0", meta="≥ 70 % a los 12 meses posteriores al cierre", nivel="Impacto"),
 ]

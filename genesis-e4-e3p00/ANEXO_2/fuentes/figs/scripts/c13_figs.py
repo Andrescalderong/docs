@@ -122,8 +122,8 @@ def f02():
 
 # ============================================================ c13_f03
 def f03():
-    L = Lienzo(10, 7.6, h1="La corrección se aplica en 10 gateways y las mediciones llegan a 15 comités",
-               h2="Arquitectura de la red completa (100 nodos, 10 gateways y 15 comités), operativa desde el mes 19 hasta el cierre en el mes 24")
+    L = Lienzo(10, 8.3, h1="La corrección se aplica en 10 gateways y las mediciones llegan a 15 comités",
+               h2="Arquitectura de la red completa (100 nodos, 10 gateways y 15 comités) y laboratorio de modelación, operativos desde el mes 19 hasta el cierre en el mes 24")
     x0, wt, wd = 1.0, 21.0, 44.0          # celda de título y celda de detalle
     h = 11.6
     gap = 5.4
@@ -159,6 +159,16 @@ def f03():
     yb = ys[2]
     ytop_r = ys[1] + h
     L.caja(xm, yb, wm, ytop_r - yb, titulo="Instalación por tramos", cuerpo=cuerpo, fc=BLANCO, lw=1.4, pad=1.2, va="top")
+    # laboratorio de modelación: recibe de la nube las mediciones corregidas y devuelve escenarios al tablero
+    hl = 19.0
+    yl = ys[3] + h - hl
+    L.caja(xm, yl, wm, hl, titulo="Laboratorio de modelación",
+           cuerpo="Gemelo predictivo de demolición con servidor, 4 estaciones, dron y 2 monitores portátiles", fc=CLARO, lw=1.4, pad=1.2)
+    ym = ys[2] + h / 2
+    xa, xb = 69.4, 67.4
+    # datos de la nube al laboratorio (arriba y a la derecha) y escenarios del laboratorio a la nube (abajo y a la izquierda)
+    L.camino([(xr + 0.3, ym + 2.2), (xa, ym + 2.2), (xa, yl + hl * 0.78), (xm - 0.3, yl + hl * 0.78)], lw=1.6)
+    L.camino([(xm - 0.3, yl + hl * 0.30), (xb, yl + hl * 0.30), (xb, ym - 2.2), (xr + 0.3, ym - 2.2)], lw=1.6, ls=(0, (5, 3)))
     L.guardar("c13_f03")
 
 

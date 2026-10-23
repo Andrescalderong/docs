@@ -14,7 +14,8 @@ from matplotlib.patches import Rectangle
 from matplotlib.lines import Line2D
 
 OE = {o["id"]: o for o in A.m2.M0.OE}
-OG = A.m2.M0.OG
+OG = ("Reducir el error de medición de material particulado de una red de 100 nodos de bajo costo, y asegurar el uso institucional de esa medición y de un gemelo predictivo de demolición validado en la gestión del riesgo, "
+      "mediante calibración dinámica en gateways, operación con energía y enlace redundantes, un laboratorio de modelación y custodia distribuida por tramos, en Caldas, Cundinamarca y Valle del Cauca, durante 24 meses.")
 NODOS, GW = A.m2.IDENT["nodos"], A.m2.IDENT["gateways"]
 DISCONT = (0, (4.5, 3))
 
@@ -251,7 +252,7 @@ def c10_f01():
         q = "cerca" if (p >= 6 and i >= 6) else ("satisfecho" if p >= 6 else ("informado" if i >= 6 else "monitorear"))
         cuadr.setdefault(q, []).append(n)
     assert {k: len(v) for k, v in cuadr.items()} == {"cerca": 9, "satisfecho": 3, "informado": 4, "monitorear": 3}, cuadr
-    H = 96
+    H = 92
     fig, ax = A.lienzo("Nueve de diecinueve interesados exigen gestión cercana por su poder y su interés",
                        "Posición de cada interesado por interés (eje x) y poder (eje y), escala de 1 a 10; alto = 6 o más", H)
     a = A.subeje(fig, ax, 9, 11.5, 99, H - 1.0)
@@ -299,11 +300,11 @@ def c10_f01():
 
 # ------------------------------------------------------------------ c12_f01
 def c12_f01():
-    H = 86
+    H = 96
     fig, ax = A.lienzo("Los tres objetivos específicos convierten las causas priorizadas en medios verificables",
                        "Árbol de objetivos: fines, objetivo general, objetivos específicos con su meta y medios", H)
     xl, xr = 15.0, 99.0
-    alt = [9.5, 16.5, 25.0, 13.0]
+    alt = [9.5, 19.0, 29.0, 19.0]
     gv = 6.2
     ytop = [H - 0.6]
     for a_ in alt[:-1]:
@@ -323,14 +324,17 @@ def c12_f01():
     # objetivos específicos y medios
     wo, go = 27.0, 1.5
     xo = [xl + i * (wo + go) for i in range(3)]
-    corto = {"OE1": "Corregir la interferencia de humedad y de fracción gruesa",
-             "OE2": f"Mantener la disponibilidad de {NODOS} nodos y {GW} gateways",
-             "OE3": "Lograr el uso del tablero y del protocolo de alerta por los comités"}
-    medios = [f"Colocalización con {A.m2.IDENT['referencias']} monitores de referencia y modelo de corrección en el gateway",
-              "Energía con 14 días de autonomía, enlace satelital y almacenamiento local de 7 días",
-              "Co-diseño con los comités, formación y convenios de custodia por tramo"]
+    corto = {"OE1": "Corregir la interferencia de humedad y de fracción gruesa y validar el gemelo predictivo",
+             "OE2": f"Mantener la disponibilidad de {NODOS} nodos y {GW} gateways y poner en operación el laboratorio de modelación",
+             "OE3": "Lograr el uso del tablero y del protocolo de alerta por los comités y adoptar la evaluación previa de demolición"}
+    metas = {"OE1": "R² ≥ 0,70 y NRMSE ≤ 30\u00a0%; FAC2 ≥ 0,5 en 6 eventos",
+             "OE2": "Disponibilidad ≥ 90\u00a0%; laboratorio dotado al mes 11",
+             "OE3": "Uso en ≥ 75\u00a0% de los comités; 12 evaluaciones previas"}
+    medios = [f"Colocalización con {A.m2.IDENT['referencias']} monitores de referencia y modelo de corrección en el gateway; validación con mediciones en demoliciones reales",
+              "Energía con 14 días de autonomía, enlace satelital y almacenamiento local de 7 días; laboratorio de modelación con gemelo predictivo",
+              "Co-diseño con los comités, formación y convenios de custodia por tramo; protocolo de evaluación previa de demolición"]
     for i, k in enumerate(("OE1", "OE2", "OE3")):
-        A.caja(ax, xo[i], yb[2], wo, alt[2], [(k, "b"), (corto[k], "n"), ("Meta: " + OE[k]["meta"], "i")], relleno=MEDIO, gap=0.8)
+        A.caja(ax, xo[i], yb[2], wo, alt[2], [(k, "b"), (corto[k], "n"), ("Meta: " + metas[k], "i")], relleno=MEDIO, gap=0.8)
         A.caja(ax, xo[i], yb[3], wo, alt[3], medios[i], relleno=CAJA)
         A.flecha(ax, (xo[i] + wo / 2, yb[3] + alt[3] + 0.3), (xo[i] + wo / 2, yb[2] - 0.3))
         A.flecha(ax, (xo[i] + wo / 2, yb[2] + alt[2] + 0.3), (xl + (xr - xl) / 2 + (i - 1) * 14, yb[1] - 0.3))
@@ -343,8 +347,8 @@ def c12_f02():
            ("ODS 9. Industria, innovación e infraestructura", "Infraestructura fiable y resiliente; capacidades científicas y tecnológicas"),
            ("ODS 11. Ciudades y comunidades sostenibles", "Menos personas afectadas por desastres; atención a la calidad del aire"),
            ("ODS 13. Acción por el clima", "Resiliencia y capacidad institucional ante riesgos y desastres")]
-    oes = [("OE1", "Medición verificada de PM2,5 y PM10"), ("OE2", "Red disponible con energía y enlace redundantes"),
-           ("OE3", "Uso institucional y custodia por tramos")]
+    oes = [("OE1", "Medición verificada de PM2,5 y PM10 y validación del gemelo predictivo"), ("OE2", "Red disponible y laboratorio de modelación"),
+           ("OE3", "Uso institucional, custodia y evaluación previa de demolición")]
     # (OE, ODS, tipo): D directa, I indirecta
     links = [(0, 1, "D"), (1, 1, "D"), (2, 2, "D"), (0, 0, "I"), (0, 2, "I"), (1, 3, "I"), (2, 0, "I"), (2, 3, "I")]
     nd = sum(1 for l in links if l[2] == "D"); ni = len(links) - nd

@@ -9,7 +9,11 @@ Los términos de referencia exigen un problema central con causas y efectos (Min
 
 Dos reglas orientan la lectura. La primera se refiere al tipo de afirmación. Una hipótesis de influencia estructural (HIE) es un juicio ordinal sobre cuánto una variable condiciona a otra dentro del modelo. No es un efecto estimado con datos (Pearl y Mackenzie, 2018). Todas las relaciones de este anexo son HIE, salvo que el texto indique otra cosa.
 
-La segunda regla se refiere al origen de los valores. Los valores de influencia son juicios de formulación, cada uno con su mecanismo, su explicación rival y su nivel de confianza. Ningún panel externo los ha adjudicado. La sección A.11 propone la ruta para hacerlo. La {T:t01} relaciona cada apartado con la sección del Anexo 2 que lo usa.
+La segunda regla se refiere al origen de los valores. Los valores de influencia son juicios de formulación, cada uno con su mecanismo, su explicación rival y su nivel de confianza. Ningún panel externo los ha adjudicado. La sección A.11 propone la ruta para hacerlo.
+
+El análisis estructural cubre el problema de medición, con quince variables. El laboratorio de modelación atiende una brecha complementaria de predicción, que la sección 5.2.2 del Anexo 2 describe y que no integra la matriz. La subsección A.10.3 trata su teoría del cambio y sus supuestos críticos. No se le asignan fichas ni valores de influencia.
+
+La {T:t01} relaciona cada apartado con la sección del Anexo 2 que lo usa.
 
 :::TABLA t01 | Relación entre los apartados del anexo y las secciones del Anexo 2
 | Sección del Anexo 2 | Qué toma del anexo | Apartado |
@@ -49,14 +53,14 @@ La {T:t02} delimita el fenómeno con un campo por característica. El enunciado 
 
 Bacchi (2009) propone preguntar cómo se representa un problema, qué supuestos sostienen esa representación, qué queda sin problematizar y qué efectos produce. Schön y Rein (1994) señalan que cada parte interesada encuadra de manera distinta una misma situación. Las dos lecturas orientan el análisis siguiente.
 
-El problema se representa como una limitación técnica de medición y de comunicaciones. Tres supuestos sostienen esa representación. La causa principal es metrológica y energética. La respuesta es tecnológica. Y los comités adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos. Son la emisión en la fuente, las acciones que activa la alerta y el umbral normativo aplicable. Es también la responsabilidad de contratistas y administradoras de riesgos laborales (ARL).
+El problema se representa como una limitación técnica de medición y de comunicaciones. Tres supuestos sostienen esa representación. La causa principal es metrológica y energética. La respuesta es tecnológica. Y los comités adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos. Son la emisión en la fuente, las acciones que activa la alerta y el umbral normativo aplicable. Es también la responsabilidad de contratistas y administradoras de riesgos laborales (ARL). La emisión en la fuente deja de estar del todo sin problematizar, porque el gemelo predictivo la estima antes de una demolición. El proyecto no la controla.
 
 La representación también produce un efecto sobre los afectados. Operarios y comunidades figuran como receptores de alertas. Para reducir ese efecto, el proyecto los vincula al co-diseño de los umbrales y del protocolo en los talleres de la sección 19. La {T:t03} registra los tres marcos rivales y el tratamiento que reciben.
 
 :::TABLA t03 | Marcos rivales del problema y su tratamiento en el proyecto
 | Marco rival | Portador | Qué sostendría | Tratamiento en el proyecto |
 | --- | --- | --- | --- |
-| Control en la fuente y salud ocupacional | Autoridades laborales y ARL | El problema es la emisión de polvo en obra y la medición es secundaria | Fuera del alcance. La medición verificada es condición previa de cualquier estimación de exposición |
+| Control en la fuente y salud ocupacional | Autoridades laborales y ARL | El problema es la emisión de polvo en obra y la medición es secundaria | Fuera del alcance en cuanto a ejecutar el control. El gemelo predictivo incorpora la estimación previa de la exposición en demoliciones (A.10.3). La medición verificada es condición previa de cualquier estimación de exposición |
 | Gestión del riesgo de desastres como servicio | UNGRD y puestos de mando unificado | La alerta solo existe si un protocolo de mando la activa | Se incorpora: el protocolo de alerta se co-diseña con los comités en el objetivo específico 3 |
 | Metrología y acreditación | Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM) | Solo un equipo acreditado como referencia sustenta una alerta oficial | Se atiende con verificación gravimétrica en laboratorio acreditado y validación metrológica. La acreditación del sistema como referencia oficial queda fuera del alcance |
 :::NOTA *Nota.* Elaboración propia con las secciones 5.1, 14 y 19 del Anexo 2.
@@ -381,7 +385,7 @@ El árbol no representa seis elementos.
 - **Bucles.** S2 contiene cuatro ciclos de dos vínculos. V15 retroalimenta a V05, V07, V09, V10 y V14.
 - **Variables fuera del tronco.** V04, V08, V09, V10 y V13 no se dibujan. V04 y V10 tienen relaciones de confianza baja o de peso 1 con V06. V08 y V13 no se vinculan con V06 en S2. V09 actúa sobre V10 y sobre V15.
 - **Variables latentes omitidas.** La distancia a la referencia, la edad del sensor, los episodios de humo y la precipitación no tienen identificador y pueden alterar las relaciones dibujadas.
-- **Marco rival de control en la fuente.** Su construcción exigiría otro problema central, la exposición, y ese árbol no se construyó.
+- **Marco rival de control en la fuente.** Su construcción exigiría otro problema central, la exposición, y ese árbol no se construyó. El gemelo predictivo incorpora la estimación previa de ese marco sin cambiar el árbol (A.10.3).
 - **Continuidad posterior al proyecto.** No existe una variable de continuidad en el modelo. Se trata en la sección 18 y en A.10.
 - **Morbilidad.** No existe variable de resultado en salud. Se declara como hipótesis y no como compromiso.
 
@@ -399,7 +403,7 @@ El análisis evaluó seis alternativas con criterios registrados antes de compar
 | R2 | Malla de sensores con corrección centralizada en la nube | Alternativa 2, calibración centralizada en la nube |
 | R3 | Red híbrida con corrección local y transferencia a las alcaldías en el mes 25 | Variante de la alternativa 1 que supone un receptor público único |
 | R4 | La misma tecnología que R3, por tramos, con piloto de contraste y custodia distribuida | Alternativa 1, seleccionada |
-| R5 | Control del polvo en la fuente con medición de referencia mínima | Marco rival (A.2); no se evalúa con datos |
+| R5 | Control del polvo en la fuente con medición de referencia mínima | Marco rival (A.2); no se evalúa con datos. La estimación previa se incorpora como módulo (A.10.3) |
 :::NOTA *Nota.* Elaboración propia con la sección 13 del Anexo 2.
 
 La {T:t29} compara las alternativas sin agregar los criterios. La matriz describe propiedades de diseño y no resultados medidos. Por eso la sección 13 complementa este análisis con una matriz ponderada de 14 criterios y su sensibilidad. La elección de R4 no depende de ese ponderador.
@@ -419,18 +423,18 @@ No se confirma ninguna relación de dominancia entre las alternativas. R4 no emp
 
 - R4 se prefiere a R3 si el costo adicional del piloto, de la gobernanza y de los tramos cabe en el tope. Debe cumplirse además que la continuidad bajo custodia distribuida no sea menos probable que bajo un receptor único.
 - R3 se prefiere a R4 si, antes de la firma, cada componente cuenta con una entidad territorial con compromiso presupuestal vinculante y competencia jurídica documentada.
-- R5 se combina con R4 si la evidencia de emisión en la fuente muestra que la mayor parte de la exposición es controlable. Esa evidencia no existe todavía.
+- R5 se combina con R4 si la evidencia de emisión en la fuente muestra que la mayor parte de la exposición es controlable. Esa evidencia no existe todavía. Las campañas del laboratorio la producirán para los eventos medidos.
 - R0 solo se admite si el financiador no acepta R3 ni R4.
 
 ### A.10.2 Teoría del cambio por componente
 
-La teoría del cambio es anidada. Tiene una versión ejecutiva y una cadena por componente (Funnell y Rogers, 2011). La parte de medición es de dominio complicado y la parte de adopción y custodia es de dominio complejo. Por eso cada componente revisa sus supuestos de manera periódica. La {F:f07} muestra las tres cadenas: medición, alertas y adopción, y custodia. Los rombos son los cuatro supuestos críticos.
+La teoría del cambio es anidada. Tiene una versión ejecutiva y una cadena por componente (Funnell y Rogers, 2011). La parte de medición es de dominio complicado y la parte de adopción y custodia es de dominio complejo. Por eso cada componente revisa sus supuestos de manera periódica. La {F:f07} muestra las cuatro cadenas: medición, alertas y adopción, custodia y predicción. Los rombos son los seis supuestos críticos.
 
-:::FIGURA f07 | Tres cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados | Nota. Elaboración propia con las secciones 12, 14 y 17 del Anexo 2. R1 a R5 son los resultados al mes 24 e I1 e I2 los impactos a 12 meses del cierre. SC-1 a SC-4 son los supuestos críticos de la {T:t30}. La flecha discontinua indica que el uso institucional justifica la custodia. Software: Python 3 y matplotlib.
+:::FIGURA f07 | Cuatro cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados | Nota. Elaboración propia con las secciones 12, 14 y 17 del Anexo 2. R1 a R7 son los resultados al mes 24 e I1 e I2 los impactos a 12 meses del cierre. SC-1 a SC-6 son los supuestos críticos de la {T:t30}. La flecha discontinua indica que el uso institucional justifica la custodia. Software: Python 3 y matplotlib.
 
-La línea discontinua vertical de la figura es el techo de rendición de cuentas. Los productos y los resultados R1 a R5 quedan bajo el techo: son responsabilidad del proyecto. Los impactos I1 e I2 quedan sobre el techo, porque dependen de decisiones de los comités y de las entidades custodias. El proyecto contribuye a ellos y fija metas con esa condición, como establece la sección 17.
+La línea discontinua vertical de la figura es el techo de rendición de cuentas. Los productos y los resultados R1 a R7 quedan bajo el techo: son responsabilidad del proyecto. Los impactos I1 e I2 quedan sobre el techo, porque dependen de decisiones de los comités y de las entidades custodias. El proyecto contribuye a ellos y fija metas con esa condición, como establece la sección 17.
 
-Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyecto. La {T:t30} los presenta. Los cuatro se verifican con criterios que las compuertas C1 y C2 ya aplican antes de liberar cada compra.
+Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyecto. La {T:t30} los presenta. Los cuatro primeros se verifican con criterios que las compuertas C1 y C2 ya aplican antes de liberar cada compra. Los dos últimos se verifican con los hitos H10 y H11, que no liberan compras.
 
 :::TABLA t30 | Supuestos críticos de la teoría del cambio y su verificación en el proyecto
 | Supuesto | Si | Entonces | Porque | Verificación |
@@ -439,11 +443,19 @@ Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyect
 | SC-2. Energía y enlace | Los nodos conservan energía y enlace bajo maquinaria, polvo y humedad | El gemelo digital recibe datos suficientes: disponibilidad ≥ 90 % y pérdida de paquetes ≤ 10 % | La transmisión por eventos reduce el consumo y los nodos averiados se reponen (V05→V09 pesa 2) | Compuerta C2; indicador R2 |
 | SC-3. Uso institucional | La autoridad valida el índice local y los umbrales, y los comités los incorporan en sus protocolos | Las alertas inducen acciones de protección | Una alerta sin portador de decisión no modifica la conducta. V11→V14 y V13→V14 pesan 2 y son HIE | Compuerta C1 (uso en al menos 50 % de los comités); indicadores R3 e I1 |
 | SC-4. Custodia | Al menos un custodio por componente demuestra capacidad de absorción antes de cada tramo | El servicio continúa después del mes 24 sin un receptor público único | Cada tramo exige presupuesto aprobado, personal designado y competencia jurídica documentada. Sin ellos rige la cláusula de apertura | Compuerta C2 (convenios con partida); indicadores R5 e I2 |
+| SC-5. Acceso y desempeño del modelo | Se miden al menos seis eventos válidos con acceso acordado y el modelo se calibra con polvo del territorio | El gemelo alcanza FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 fuera de muestra | La emisión depende de la distancia y del viento y se contrasta con mediciones (Dorevitch et al., 2006). El modelo se evalúa con métricas estándar (Chang y Hanna, 2004) | Hitos H10 y H11; indicador R6 |
+| SC-6. Uso de la evaluación previa | La entidad territorial o el propietario solicitan la evaluación antes de demoler y la leen como insumo | Se entregan al menos 12 evaluaciones y las medidas sugeridas entran en la decisión | Una estimación sin solicitante no modifica la decisión. El protocolo define quién solicita y cómo se usa | Hito H11, acta de adopción del protocolo e indicador R7 |
 :::NOTA *Nota.* Elaboración propia con las secciones 14, 17 y 24 del Anexo 2. Los umbrales de las compuertas son los de la sección 14.1.
+
+### A.10.3 Teoría del cambio del módulo predictivo
+
+El módulo predictivo no integra el modelo estructural de quince variables, porque no actúa sobre el error de medición. Su cadena tiene cinco eslabones. Los datos de entrada son la geometría, el material, el método y la meteorología. Los modelos de emisión y de dispersión producen una estimación con su incertidumbre. La evaluación previa la compara con los valores guía y con escenarios de control. La entidad territorial decide el método y las medidas. La exposición real depende de lo que ejecute la obra.
+
+La rendición de cuentas llega hasta los resultados R6 y R7. El desempeño del modelo y la entrega de las evaluaciones dependen del proyecto. La decisión de la entidad y la reducción real de la exposición quedan sobre el techo, porque dependen de terceros. El proyecto no estima efectos en la salud. El efecto esperado de una medida de control es un supuesto mientras una campaña no lo verifique. Los supuestos SC-5 y SC-6 de la {T:t30} fijan las condiciones de la cadena y los hitos H10 y H11 las verifican.
 
 ## A.11. Límites, brechas y ruta de resolución
 
-El análisis tiene seis límites. Los 210 juicios son de formulación y ninguno fue adjudicado por un panel externo. Las fuentes primarias de los vínculos no se leyeron con localizador de página. La autorrevisión de las fichas no equivale a una revisión independiente. Los dominios admisibles expresan incertidumbre ordinal y no probabilidad. La estabilidad observada de los rangos no demuestra convergencia dinámica. Y las posiciones dependen de la definición de las variables y de tres ambigüedades del diccionario.
+El análisis tiene siete límites. Los 210 juicios son de formulación y ninguno fue adjudicado por un panel externo. Las fuentes primarias de los vínculos no se leyeron con localizador de página. La autorrevisión de las fichas no equivale a una revisión independiente. Los dominios admisibles expresan incertidumbre ordinal y no probabilidad. La estabilidad observada de los rangos no demuestra convergencia dinámica. Las posiciones dependen de la definición de las variables y de tres ambigüedades del diccionario. Y el módulo predictivo se trata con una teoría del cambio y no con una matriz.
 
 La {T:t31} registra las brechas, su efecto sobre las conclusiones y la ruta para resolverlas. Las rutas son propuestas de la formulación y se ejecutan con recursos ya presupuestados del proyecto, salvo que se indique otra cosa.
 
@@ -456,6 +468,8 @@ La {T:t31} registra las brechas, su efecto sobre las conclusiones y la ruta para
 | Ambigüedades del diccionario: V01 y V02 por inclusión, V10 nominal o efectiva y V06 del sensor o de la red | Cambian los vínculos V06→V01, V09→V10 y V10→V06 | Aclarar el diccionario antes de ratificar las fichas | Equipo formulador |
 | Fórmula local del índice de calidad del aire y salud (Stieb et al., 2008) | Los vínculos V01→V11 y V02→V11 dependen de ella | Definir la fórmula y validarla con la autoridad de salud | Municipio aliado y autoridad de salud |
 | Diseño sin asignación aleatoria | El efecto de la calibración sobre el error queda como HIE | Si la alianza lo decide, asignar al azar el nivel de calibración por semana en los nodos colocalizados, con registro de la asignación | Universidad y empresa tecnológica |
+| Gemelo predictivo sin evaluación con eventos reales al formular el proyecto | El desempeño del modelo y su dominio de validez no se conocen | Validar con al menos seis eventos y declarar el dominio (actividad 1.7) | Universidad |
+| Efecto de las medidas de control sin evidencia local | Las reducciones de emisión son supuestos | Medir el efecto cuando el contratista aplique la medida durante una campaña | Universidad y contratistas |
 | Población expuesta y carga de morbilidad sin variable de resultado | El modelo no alcanza la protección de las personas | Documentar la población en la sección 11 y mantener la morbilidad como hipótesis | Universidad |
 | Dependencia de los juicios durante la ejecución | Las clases pueden cambiar al ratificar las fichas | Recalcular cada trimestre las clases directa e indirecta con las fichas vigentes y registrar las variables que cambian | Gerencia del proyecto |
 :::NOTA *Nota.* Elaboración propia con los resultados de A.3 a A.10.
