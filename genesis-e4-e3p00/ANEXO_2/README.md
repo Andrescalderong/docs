@@ -1,6 +1,6 @@
 # Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE)
 
-Fecha de corte: 23 de octubre de 2026. Estado: borrador completo con datos pendientes de la alianza.
+Fecha de corte: 24 de octubre de 2026. Estado: borrador completo con datos pendientes de la alianza.
 
 El documento sigue la plantilla oficial del Anexo 2 de los términos de referencia (TdR) v1.6, con los 50 títulos de nivel 1 y 2 del numeral 10.6 en su texto original, encabezado y pie oficiales, referencias en APA 7, 108 tablas y 28 figuras. Incorpora un laboratorio de modelación y un gemelo predictivo de demolición dentro de los tres objetivos específicos, sin un cuarto objetivo. El Anexo A reúne el análisis del problema público y de la estructura causal (Vester, MICMAC, inferencia causal, árbol de problemas y teoría del cambio) con 31 tablas y 7 figuras, para no recargar el cuerpo del documento.
 
@@ -8,11 +8,12 @@ El documento sigue la plantilla oficial del Anexo 2 de los términos de referenc
 
 | Archivo | Contenido |
 | --- | --- |
-| anexo_2._documento_tecnico_15.docx y .pdf | Versión de trabajo completa: soporte inicial para la alianza (secciones S.1 a S.7, que se retiran antes de radicar), Anexo 2 y Anexo A. 338 páginas |
+| anexo_2._documento_tecnico_15.docx y .pdf | Versión de trabajo completa: soporte inicial para la alianza (secciones S.1 a S.7, que se retiran antes de radicar), Anexo 2 y Anexo A. 339 páginas |
 | anexo_2._documento_tecnico_15_para_radicar.docx y .pdf | Anexo 2 sin el soporte inicial y sin el Anexo A. 275 páginas. El PDF pesa 2,9 MB, por debajo del límite de 3 MB por archivo del SIGP |
 | anexo_a._analisis_problema_publico_y_estructura_causal.docx y .pdf | Anexo A como documento independiente, con su propia lista de referencias. 50 páginas. El PDF se carga como otro adjunto del SIGP (hasta 10 MB) |
+| guia_explicar_el_proyecto.docx y .pdf | Guía de cuatro páginas para explicar el proyecto a los integrantes de la alianza en lenguaje sencillo: la frase de apertura, la figura del recorrido del terremoto del 10 de agosto a la decisión del comité, las etapas de los 24 meses, lo que hace y recibe cada integrante, un guion de cinco minutos con prueba de comprensión, un glosario de palabras que se deben evitar, preguntas frecuentes y lo que se necesita esta semana |
 | anexo_a._respaldo_fichas_y_matrices.xlsx | Libro de respaldo del Anexo A: variables, 210 fichas de dirección, matrices de S0 a S4 con totales por fórmula, clases, potencias y ciclos de S2 |
-| fuentes/ | Secciones en Markdown (`sec/`, con `sA.md` para el Anexo A), datos maestros y generadores de tablas (`v2/`, con `causal.py`), resultados del cálculo estructural (`data_causal/`), guiones de figuras (`figs/`), banco cerrado de referencias (`refs/`) y herramientas de ensamblado y control (`build/`) |
+| fuentes/ | Secciones en Markdown (`sec/`, con `sA.md` para el Anexo A), datos maestros y generadores de tablas (`v2/`, con `causal.py`), resultados del cálculo estructural (`data_causal/`), guiones de figuras (`figs/`), banco cerrado de referencias (`refs/`), herramientas de ensamblado y control (`build/`) y la fuente de la guía (`guia/`) |
 
 ## Alianza modelada
 
@@ -44,9 +45,13 @@ El laboratorio estima, antes de demoler una edificación, la emisión de polvo d
 - Reparto del valor solicitado: Caldas 1.233.519.514 COP, Cundinamarca 1.292.920.970 COP, Valle del Cauca 1.233.519.516 COP y componentes transversales 6.262.880.000 COP.
 - Riesgos: 19 en el registro, 8 probables y 15 con impacto mayor. Hitos: H0 a H11 y compuertas C1 a C3.
 
+## Conexión con la emergencia
+
+El documento toma como evento de origen el terremoto del 10 de agosto de 2026, fecha que aportó la alianza y que debe confirmarse con el acto de declaratoria (Decreto 1261 de 2026, modificado por el Decreto 1348 de 2026). La cadena es: terremoto, demolición y remoción de escombros en los centros urbanos, polvo que respiran operarios y vecinos, y un comité de gestión del riesgo que debe decidir sin un dato confiable ni una estimación previa. La figura 4.1 del Anexo 2 y la figura S.1 del soporte la muestran. El eslabón de la remoción de escombros sigue siendo un supuesto de trabajo hasta que el municipio aliado entregue tres soportes: el acto de calamidad pública, el reporte de afectación de las edificaciones y el cronograma de demoliciones y remoción por sitio.
+
 ## Datos pendientes
 
-El texto contiene 154 datos distintos con la marca `[Diligenciar: …]` en color verde, como indica la plantilla. La tabla S.9 de la versión de trabajo los agrupa por sección y por responsable. Quedan doce decisiones por confirmar (tabla S.8): departamento del municipio aliado, valor del aporte del actor del SNCTI, titularidad de los bienes y resultados, nivel TRL comprometido, criterio de aceptación de las compuertas, demanda territorial, sede y validación del laboratorio, valor del laboratorio, título y número de objetivos, acceso a demoliciones reales para validar, ratificación de las fichas del Anexo A y diseño con asignación aleatoria de la calibración. La hoja de ruta de la tabla S.7 parte del viernes 23 de octubre y fija la radicación anticipada para el viernes 30 de octubre. El cierre oficial es el martes 3 de noviembre de 2026 a las 4:00 p. m.
+El texto contiene 153 datos distintos con la marca `[Diligenciar: …]` en color verde, como indica la plantilla. La tabla S.9 de la versión de trabajo los agrupa por sección y por responsable. Quedan doce decisiones por confirmar (tabla S.8): departamento del municipio aliado, valor del aporte del actor del SNCTI, titularidad de los bienes y resultados, nivel TRL comprometido, criterio de aceptación de las compuertas, demanda territorial, sede y validación del laboratorio, valor del laboratorio, título y número de objetivos, acceso a demoliciones reales para validar, ratificación de las fichas del Anexo A y diseño con asignación aleatoria de la calibración. La hoja de ruta de la tabla S.7 parte del sábado 24 de octubre y fija la radicación anticipada para el viernes 30 de octubre. El cierre oficial es el martes 3 de noviembre de 2026 a las 4:00 p. m.
 
 ## Controles ejecutados
 

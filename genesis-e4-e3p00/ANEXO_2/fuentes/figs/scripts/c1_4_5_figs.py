@@ -72,7 +72,7 @@ def c4_f01():
     y1 = H - 0.8 - h
     y2 = 1.0
     cajas = [
-        ("1. Terremoto y declaratoria de emergencia", "", CAJA, 1.5),
+        ("1. Terremoto del 10 de agosto y declaratoria de emergencia", "", CAJA, 1.5),
         ("2. Demolición y remoción de escombros", "Emiten y resuspenden material particulado", CAJA, 1.5),
         ("3. Brecha de CTeI", "PM2,5 y PM10 sin error conocido, sin uso institucional y sin estimación previa en demoliciones", AZUL, 2.6),
         ("4. Solución del proyecto", "Red híbrida con corrección en el gateway, gemelo digital y laboratorio de modelación", MEDIO, 1.5),
