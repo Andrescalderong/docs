@@ -41,6 +41,7 @@
 | Crilley2018 | Crilley et al. | 2018 | articulo | DOMINIO | VERIFICADO |
 | David2021 | David et al. | 2021 | articulo | DOMINIO | PARCIALMENTE_VERIFICADO |
 | Davis1989 | Davis | 1989 | articulo | DOMINIO | VERIFICADO |
+| Dec1171 | Presidencia de la República de Colombia (Decreto 1171) | 2026 | norma | NORMA | NO_VERIFICADO |
 | Dec1261 | Presidencia de la República de Colombia (Decreto 1261) | 2026 | norma | NORMA | NO_VERIFICADO |
 | Dec1414 | Presidencia de la República de Colombia | 2026 | norma | NORMA | NO_VERIFICADO |
 | Dec1821 | Presidencia de la República de Colombia (Decreto 1821) | 2020 | norma | NORMA | NO_VERIFICADO |
@@ -149,6 +150,7 @@
 | Saaty1980 | Saaty | 1980 | libro | CANON | NO_VERIFICADO |
 | Scharpf1997 | Scharpf | 1997 | libro | CANON | NO_VERIFICADO |
 | Schon1994 | Schön y Rein | 1994 | libro | CANON | NO_VERIFICADO |
+| SecTec2026 | Secretaría Técnica de la Convocatoria 56 | 2026 | informe | NORMA | VERIFICADO |
 | Shediac1998 | Shediac-Rizkallah y Bone | 1998 | articulo | CANON | VERIFICADO |
 | Shi2016 | Shi et al. | 2016 | articulo | DOMINIO | VERIFICADO |
 | SIC2026 | Superintendencia de Industria y Comercio [SIC] | 2026 | informe | F-INF | NO_VERIFICADO |

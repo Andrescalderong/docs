@@ -390,6 +390,16 @@
   "ver": "VERIFICADO"
  },
  {
+  "key": "Dec1171",
+  "cite": "Presidencia de la República de Colombia (Decreto 1171)",
+  "year": 2026,
+  "apa": "Presidencia de la República de Colombia. (2026). *Decreto 1171 de 2026* [declaratoria de la situación de desastre de carácter nacional]. Citado en las respuestas de la Secretaría Técnica a las observaciones a los términos de referencia de la Convocatoria 56.",
+  "origen": "NORMA",
+  "nat": "DOCUMENTADO",
+  "ver": "NO_VERIFICADO",
+  "tipo": "norma"
+ },
+ {
   "key": "Dec1261",
   "cite": "Presidencia de la República de Colombia (Decreto 1261)",
   "year": 2026,
@@ -1468,6 +1478,16 @@
   "origen": "CANON",
   "nat": "DOCUMENTADO",
   "ver": "NO_VERIFICADO"
+ },
+ {
+  "key": "SecTec2026",
+  "cite": "Secretaría Técnica de la Convocatoria 56",
+  "year": 2026,
+  "apa": "Secretaría Técnica de la Convocatoria 56 del SGR. (2026, 23 de octubre). *Respuesta a las observaciones a los términos de referencia de la Convocatoria 56* [Hoja de cálculo]. Ministerio de Ciencia, Tecnología e Innovación.",
+  "origen": "NORMA",
+  "nat": "DOCUMENTADO",
+  "ver": "VERIFICADO",
+  "tipo": "informe"
  },
  {
   "key": "Shediac1998",

@@ -78,11 +78,11 @@ const etapas = table([1500, 4800, 3780], ["Etapa", "Qué ocurre", "Qué ve el co
 ], { boldFirst: true });
 
 const integrantes = table([1700, 2900, 2700, 2780], ["Integrante", "Qué hace", "Qué recibe", "Qué se le pide ahora"], [
-  ["Universidad (entidad proponente)", "Lidera la ciencia y la administración, aloja y valida el laboratorio y forma a 9 personas.",
-   "Documentos de investigación, datos propios, y un laboratorio y un modelo propios.", "Carta de aval, certificado de existencia y representación legal, y contrapartida en especie ($ 1.244 millones)."],
+  ["Universidad (entidad proponente)", "Lidera la ciencia y la administración, valida el laboratorio y forma a 9 personas.",
+   "Documentos de investigación, datos propios y la capacidad de modelación del laboratorio.", "Carta de aval, certificado de existencia y representación legal, y contrapartida en especie ($ 1.244 millones)."],
   ["Municipio aliado", "Facilita el acceso a los sitios y a las demoliciones, su comité usa el tablero y decide, y custodia la red en su territorio.",
    "Tablero y protocolo de alerta, personas formadas, evaluación previa de demoliciones y los equipos en custodia.",
-   "Los tres soportes de la emergencia (acto de calamidad, reporte de afectación y cronograma de demoliciones), aval, partida para operar la red y contrapartida en especie ($ 120 millones)."],
+   "Soportes de la emergencia (reporte de afectación, decreto o acto de desastre, certificado del plan de acción y cronograma de demoliciones), aval, carta de uso del comité, partida para operar la red y contrapartida en especie ($ 120 millones)."],
   ["Actor del SNCTI", "Valida el método comparando los monitores, forma custodios y custodia los datos con criterio científico.",
    "Coautoría de documentos, capacidad en medición de partículas y acceso a las series de datos.", "Resolución de reconocimiento vigente, aval y valor certificado de su aporte."],
   ["Empresa tecnológica", "Instala y mantiene los sensores, la plataforma y la nube, e integra el modelo del laboratorio.",
@@ -107,13 +107,14 @@ const preguntas = table([3300, 6780], ["Pregunta", "Respuesta corta"], [
   ["¿Y si la remoción termina antes de que el proyecto avance?", "La reconstrucción también demuele y levanta polvo. El laboratorio y el protocolo sirven para demoliciones futuras y la red queda en custodia. Por eso se pide a cada municipio su cronograma de demoliciones y remoción."],
   ["¿Y si el modelo del laboratorio falla?", "Se informa el desempeño real y se limita su uso. El resultado apoya la decisión del comité y nunca autoriza ni prohíbe una demolición."],
   ["¿Quién se queda con los equipos?", "Al mes 24 pasan a custodios designados por convenio. La titularidad se define en el convenio."],
+  ["¿Por qué solo algunos municipios?", "Cada municipio registrado necesita la declaratoria de desastre y el certificado del plan de acción. Si falta un soporte en uno solo, el proyecto no continúa y no se subsana. Es mejor registrar menos municipios con todos los soportes."],
   ["¿Por qué sensores y no estaciones oficiales?", "Una estación fija cuesta más de siete veces por punto de medición y no se puede mover. Los sensores cubren más sitios si se corrigen con los equipos de referencia."],
 ]);
 
 const semana = table([2300, 5600, 2180], ["Fecha", "Qué se necesita", "Quién"], [
-  ["Sábado 24 y domingo 25", "Reunión corta con cada integrante, con el guion de esta guía. Pedir los soportes y las cotizaciones.", "Universidad"],
-  ["Lunes 26", "Los tres soportes de la emergencia, los datos pendientes del documento, las cotizaciones y el valor certificado del aporte del actor del SNCTI.", "Municipio aliado y demás integrantes"],
-  ["Martes 27", "Firma de la carta de aval (Anexo 1) y de los certificados de los numerales 10.18 y 10.19. Versión 2 del Anexo 2 con los datos reales.", "Los cuatro representantes legales; universidad"],
+  ["Sábado 24 y domingo 25", "Reunión corta con cada integrante, con el guion de esta guía. Pedir los soportes, el certificado del plan de acción a cada gobernación o alcaldía y las cotizaciones.", "Universidad"],
+  ["Lunes 26", "Los soportes de cada municipio, los datos pendientes, las cotizaciones, el aval de ética y el valor del aporte del actor del SNCTI.", "Municipio aliado y demás integrantes"],
+  ["Martes 27", "Decisión de los municipios que se registran. Firma de la carta de aval (Anexo 1) y de los certificados de los numerales 10.18 y 10.19. Versión 2 del Anexo 2.", "Los cuatro representantes legales; universidad"],
   ["Miércoles 28 y jueves 29", "Congelación del Anexo 2 y del Anexo A, revisión cruzada, PDF de menos de 3 MB y prueba de carga.", "Universidad"],
   ["Viernes 30", "Radicación anticipada en el SIGP. El cierre oficial es el martes 3 de noviembre a las 4:00 p. m.", "Universidad"],
 ], { boldFirst: true });
@@ -129,7 +130,7 @@ const children = [
   bullet("Sin el terremoto no habría esta demolición ni esta remoción masiva de escombros en los centros urbanos."),
   bullet("Sin ellas no habría este polvo en sitios donde los comités no tienen cómo medirlo."),
   bullet("El proyecto no repara edificios. Atiende el riesgo nuevo que dejó el terremoto en la reconstrucción."),
-  para("La convocatoria exige una relación directa y específica con la emergencia, y estar en un departamento afectado no basta. Por eso el municipio aliado debe aportar tres soportes: el acto de calamidad pública, el reporte de afectación de las edificaciones y el cronograma de demoliciones y remoción.", { before: 60 }),
+  para("La convocatoria exige una relación directa y específica con la emergencia, y estar en un departamento afectado no basta. Por eso cada municipio donde se ejecuta debe tener tres soportes: el reporte de afectación, la declaratoria de desastre (el Decreto 1171 de 2026 sirve si lo comprende) y el certificado del plan de acción de la gobernación o la alcaldía. Si falta uno solo, el proyecto no continúa y no se subsana: se registran solo los municipios con soportes en mano.", { before: 60, keepLines: true }),
 
   h2("Qué se hace durante los 24 meses", true),
   etapas,
@@ -154,7 +155,7 @@ const children = [
 
   h2("Lo que se necesita esta semana"),
   semana,
-  para([run("Las fechas son una propuesta que la alianza ajusta. El detalle está en la tabla S.7 del soporte inicial del documento de trabajo.", { italics: true, size: 18 })], { before: 80 }),
+  para([run("Las fechas son una propuesta que la alianza ajusta. El detalle está en la tabla S.7 del soporte inicial del documento de trabajo, y las reglas de la Secretaría Técnica, en la tabla S.10.", { italics: true, size: 18 })], { before: 80 }),
 ];
 
 const doc = new Document({

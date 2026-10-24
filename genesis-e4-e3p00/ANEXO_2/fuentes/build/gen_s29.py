@@ -37,7 +37,7 @@ def resolver(autor, año):
 # normas nombradas en el texto (sin paréntesis de autor y año)
 NORMAS = [
  (r"Ley 1523 de 2012", "Ley1523"), (r"Ley 2056 de 2020", "Ley2056"), (r"Ley 2294 de 2023", "Ley2294"), (r"Ley 1286 de 2009", "Ley1286"),
- (r"Ley 1581 de 2012", "Ley1581"), (r"Ley 1955 de 2019", "Ley1955"), (r"Decreto 1261 de 2026", "Dec1261"), (r"Decreto Legislativo 1414|Decreto 1414", "Dec1414"),
+ (r"Ley 1581 de 2012", "Ley1581"), (r"Ley 1955 de 2019", "Ley1955"), (r"Decreto 1261 de 2026", "Dec1261"), (r"Decreto 1171 de 2026", "Dec1171"), (r"Decreto Legislativo 1414|Decreto 1414", "Dec1414"),
  (r"Decreto 1821 de 2020", "Dec1821"), (r"Decreto 591 de 1991", "Dec591"), (r"Resolución 2254 de 2017", "Res2254"),
  (r"CONPES 3943|documento CONPES 3943", "Conpes3943"), (r"CONPES 4069|documento CONPES 4069", "Conpes4069"),
  (r"Acuerdo 12 de 2024", "Acuerdo12"), (r"Decisión 486", "Decision486"), (r"Marco de Sendái", "UNISDR2015"),
