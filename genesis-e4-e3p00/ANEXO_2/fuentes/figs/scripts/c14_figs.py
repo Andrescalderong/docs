@@ -116,7 +116,7 @@ def f02():
     y1 = top - 0.5 - h1c
     L.caja(xg, y1, wg, h1c, titulo="Compuerta C1", cuerpo="mes 12", fc=MEDIO, lw=1.5)
     L.caja(xc, y1, wc, h1c, titulo="¿Se cumplen todos los criterios?",
-           cuerpo="1. R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia en el piloto\n2. Uso del tablero en al menos 50 % de los comités del tramo",
+           cuerpo="1. R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia en el piloto\n2. Uso del tablero en al menos 50 % de los consejos del tramo",
            fc=CLARO, lw=1.4, ha="left", va="center")
     L.flecha((xg + wg + 0.2, y1 + h1c / 2), (xc - 0.2, y1 + h1c / 2), lw=1.6)
     L.caja(xs_, y1 + h1c / 2 - hs / 2, ws, hs, titulo="Se libera la compra\ndel tramo 2",
@@ -126,7 +126,7 @@ def f02():
     # --- ciclo de corrección (compartido por las dos compuertas)
     ycor = y1 - 2 * gap - hcor
     L.caja(xc, ycor, 80.0, hcor, titulo="Ciclo de corrección",
-           cuerpo="Reentrenar por departamento, reforzar energía y enlace, o reforzar el co-diseño con los comités; "
+           cuerpo="Reentrenar por municipio, reforzar energía y enlace, o reforzar el co-diseño con los consejos; "
                   "nueva verificación antes de comprar",
            fc=BLANCO, lw=1.6, ls=(0, (6, 3)), ha="left", va="center", pad=1.2)
     xn, xv = xc + 8.0, xc + 30.0
@@ -138,8 +138,8 @@ def f02():
     y2 = ycor - 2 * gap - h2c
     L.caja(xg, y2, wg, h2c, titulo="Compuerta C2", cuerpo="mes 17", fc=MEDIO, lw=1.5)
     L.caja(xc, y2, wc, h2c, titulo="¿Se cumplen todos los criterios?",
-           cuerpo="1. R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia en los tres departamentos\n"
-                  "2. Uso del tablero en al menos 50 % de los comités del tramo\n"
+           cuerpo="1. R² ≥ 0,70 y NRMSE ≤ 30 % frente a la referencia en los dos municipios\n"
+                  "2. Uso del tablero en al menos 50 % de los consejos del tramo\n"
                   "3. Disponibilidad mensual ≥ 90 % y convenios de custodia con partida",
            fc=CLARO, lw=1.4, ha="left", va="center")
     L.flecha((xg + wg + 0.2, y2 + h2c / 2), (xc - 0.2, y2 + h2c / 2), lw=1.6)
@@ -192,7 +192,7 @@ def f03():
     L.t(xs[0] + w / 2 + 2.0, (y_mod + y_val + hval) / 2, "compara y recalibra", ha="left", va="center")
     # salida: informe y decisión
     L.caja(xs[3], y_val, w, hval, titulo="Informe de evaluación previa",
-           cuerpo="El comité o la entidad territorial decide; no es una autorización", fc=CAJA, lw=1.5, pad=1.0)
+           cuerpo="El consejo o la entidad territorial decide; no es una autorización", fc=CAJA, lw=1.5, pad=1.0)
     L.flecha((xs[3] + w / 2, y_mod - 0.2), (xs[3] + w / 2, y_val + hval + 0.2), lw=1.8)
     L.guardar("c14_f03")
 

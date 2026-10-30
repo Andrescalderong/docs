@@ -122,8 +122,8 @@ def f02():
 
 # ============================================================ c13_f03
 def f03():
-    L = Lienzo(10, 8.3, h1="La corrección se aplica en 10 gateways y las mediciones llegan a 15 comités",
-               h2="Arquitectura de la red completa (100 nodos, 10 gateways y 15 comités) y laboratorio de modelación, operativos desde el mes 19 hasta el cierre en el mes 24")
+    L = Lienzo(10, 8.3, h1="La corrección se aplica en 10 gateways y las mediciones llegan a cuatro consejos",
+               h2="Arquitectura de la red completa (100 nodos, 10 gateways y 4 consejos) y laboratorio de modelación, operativos desde el mes 19 hasta el cierre en el mes 24")
     x0, wt, wd = 1.0, 21.0, 44.0          # celda de título y celda de detalle
     h = 11.6
     gap = 5.4
@@ -132,7 +132,7 @@ def f03():
         ("100 nodos hoja", "PM2,5 y PM10, temperatura y humedad; panel solar y batería de 14 días", CLARO),
         ("10 gateways (borde)", "Modelo de corrección; almacenamiento local de 7 días; enlace celular con respaldo satelital", MEDIO),
         ("Nube", "Gemelo digital, base de datos, tablero del índice local y protocolo de alerta", AZUL),
-        ("15 comités de gestión del riesgo", "12 municipales y 3 departamentales; reciben alertas con mediciones de error conocido", CAJA),
+        ("4 consejos de gestión del riesgo", "2 municipales (Manizales y Calarcá) y 2 departamentales (Caldas y Quindío); reciben alertas con mediciones de error conocido", CAJA),
     ]
     ys = []
     for i, (tit, det, col) in enumerate(bandas):
@@ -150,8 +150,8 @@ def f03():
     xm, wm = 71.0, 28.0
     xr = x0 + wt + wd
     hm = h + gap
-    L.caja(xm, ys[0] + h - hm, wm, hm, titulo="3 monitores gravimétricos de referencia",
-           cuerpo="uno por departamento, colocalizados con los nodos", fc=GRIS, lw=1.4, ls=(0, (5, 3)), pad=1.2)
+    L.caja(xm, ys[0] + h - hm, wm, hm, titulo="Conjunto de referencia rotativo",
+           cuerpo="monitor beta, monitor óptico y muestreador gravimétrico, que rotan entre los dos municipios", fc=GRIS, lw=1.4, ls=(0, (5, 3)), pad=1.2)
     L.flecha((xm - 0.3, ys[0] + h / 2), (xr + 0.5, ys[0] + h / 2), ls=(0, (5, 3)), lw=1.8)
     tr = m2.M0.TRAMOS
     cuerpo = "\n\n".join("Tramo %d, meses %d a %d\n%d nodos y %d gateways" % (t["id"], t["m_ini"], t["m_fin"], t["nodos"], t["gateways"]) for t in tr)

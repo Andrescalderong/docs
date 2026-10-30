@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Figuras del Anexo 2: c1_f01 (territorio y tramos), c4_f01 (cadena de la emergencia a la decisión), c5_f01 (municipios y estaciones),
-c5_f02 (árbol de problemas). Cifras: A2/v2/m2.py (tramos, nodos, gateways, comités) y A2/FIGS_A2.md (nodos por departamento y
+c5_f02 (árbol de problemas). Cifras: A2/v2/m2.py (tramos, nodos, gateways, consejos) y A2/FIGS_A2.md (nodos por departamento y
 cifras del informe de vigilancia). Ejecución: python3 c1_4_5_figs.py  -> A2/figs/out/c1_f01.png, c4_f01.png, c5_f01.png, c5_f02.png"""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -11,30 +11,31 @@ import matplotlib.pyplot as plt
 TR = A.m2.M0.TRAMOS
 NODOS, GW = A.m2.IDENT["nodos"], A.m2.IDENT["gateways"]
 COMP_NODOS, COMP_GW = A.m2.IDENT["nodos_comprados"], A.m2.IDENT["gateways_comprados"]
-DEP = [("Caldas", "Región Eje Cafetero", 33), ("Cundinamarca", "Región Centro Oriente", 34), ("Valle del Cauca", "Región Pacífico", 33)]
+DEP = [("Manizales", "Caldas, región Eje Cafetero", 50), ("Calarcá", "Quindío, región Eje Cafetero", 50)]
 assert sum(d[2] for d in DEP) == NODOS == sum(t["nodos"] for t in TR) and sum(t["gateways"] for t in TR) == GW
-MUN, COMITES = 12, 15
+MUN, COMITES = 2, 4
 
 
 # ------------------------------------------------------------------ c1_f01
 def c1_f01():
     H = 70.5
-    fig, ax = A.lienzo("Tres departamentos, 12 municipios y 100 nodos distribuidos en tres tramos",
-                       "Esquema sin escala: nodos operativos por departamento y por tramo, meses 1 a 24", H)
+    fig, ax = A.lienzo("Dos municipios de dos departamentos reciben 100 nodos en tres tramos",
+                       "Esquema sin escala: nodos operativos por municipio y por tramo, meses 1 a 24", H)
     w, x0 = 29.0, 1.0
     gap = (98 - 3 * w) / 2
     y = H - 0.5
     hd = 16.0
+    wm, gm = 44.0, 98 - 2 * 44.0
     for i, (nom, reg, n) in enumerate(DEP):
-        A.caja(ax, x0 + i * (w + gap), y - hd, w, hd,
-               [(nom, "b", 9.4), (reg, "n"), (f"{n} nodos operativos", "b"), ("4 municipios", "n"), ("1 monitor de referencia", "n")],
+        A.caja(ax, x0 + i * (wm + gm), y - hd, wm, hd,
+               [(nom, "b", 9.4), (reg, "n"), (f"{n} nodos operativos", "b"), ("5 gateways y su consejo municipal", "n"), ("Conjunto de referencia rotativo", "n")],
                relleno=CLARO, gap=0.5)
     y -= hd + 1.8
     # llave de total bajo las tres cajas
     ax.plot([x0, x0, x0 + 98, x0 + 98], [y + 0.8, y, y, y + 0.8], color=T, lw=1.3)
     y -= 0.9
-    h_tot = A.lineas(ax, 50, y, f"Total: {NODOS} nodos operativos, {GW} gateways, {A.m2.IDENT['referencias']} monitores de referencia, "
-                     f"{MUN} municipios y {COMITES} comités de gestión del riesgo", F_B, False, ha="center", ancho=96)
+    h_tot = A.lineas(ax, 50, y, f"Total: {NODOS} nodos operativos, {GW} gateways, 1 conjunto de referencia rotativo, "
+                     f"{MUN} municipios y {COMITES} consejos de gestión del riesgo", F_B, False, ha="center", ancho=96)
     y -= h_tot + 0.6
     A.flecha(ax, (50, y), (50, y - 4.2))
     A.txt(ax, 52.5, y - 2.1, "Se despliegan en tres tramos", F_B, ha="left")
@@ -77,7 +78,7 @@ def c4_f01():
         ("3. Brecha de CTeI", "PM2,5 y PM10 sin error conocido, sin uso institucional y sin estimación previa en demoliciones", AZUL, 2.6),
         ("4. Solución del proyecto", "Red híbrida con corrección en el gateway, gemelo digital y laboratorio de modelación", MEDIO, 1.5),
         ("5. Productos verificables", "Prototipos validados, infraestructura, documentos y formación", CLARO, 1.5),
-        ("6. Resultado", f"Decisiones de alerta con datos de error conocido y evaluación previa de demoliciones en {COMITES} comités", CLARO, 1.5),
+        ("6. Resultado", f"Decisiones de alerta con datos de error conocido y evaluación previa de demoliciones en {COMITES} consejos", CLARO, 1.5),
     ]
     pos = []
     for k, (tit, cuerpo, col, lw) in enumerate(cajas):
@@ -109,7 +110,7 @@ def c5_f01():
     A.txt(ax, 1, H - 2.0, "Municipios de Colombia", F_B, True)
     etiq = ["Municipios del país", "Municipios que miden la calidad del aire",
             "Municipios con estaciones utilizables para estimar la carga", "Municipios focalizados por el proyecto"]
-    val = [1122, 92, 28, 12]
+    val = [1122, 92, 28, 2]
     col = [AZUL, MEDIO, CLARO, GRIS]
     hat = ["", "///", "...", "xx"]
     a1 = A.subeje(fig, ax, 38, H - 31.5, 97, H - 4.0)
@@ -178,7 +179,7 @@ def c5_f02():
     # problema central
     xc, wc = 26.0, 63.0
     A.caja(ax, xc, yb[2], wc, alt[2],
-           [("Los comités de gestión del riesgo no disponen de mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción de escombros", "b")],
+           [("Los consejos de gestión del riesgo no disponen de mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción de escombros", "b")],
            relleno=AZUL, lw=2.6, fs=F_B)
     # causas directas
     wcau, gcau = 19.5, 2.0

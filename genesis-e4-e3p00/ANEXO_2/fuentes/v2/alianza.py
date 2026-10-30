@@ -1,52 +1,50 @@
 # -*- coding: utf-8 -*-
-"""Datos de la alianza (cuatro integrantes), roles por actividad, beneficios y presupuesto por departamento.
+"""Datos de la alianza (cuatro integrantes, Anexo 3 v5), roles por actividad, beneficios y localización del presupuesto por municipio.
 Se importa desde expand.py. Todas las cifras monetarias salen de m2."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import m2
 cop = pct = None  # los inyecta expand.py
 
-# ---------------------------------------------------------------- integrantes
-ACTORES = ["IES", "ENT", "SNCTI", "EMP"]
+# ---------------------------------------------------------------- integrantes (cuatro integrantes; Gestión y Medio Ambiente es actor técnico externo)
+ACTORES = ["IES", "MAN", "CAL", "AVA"]
 NOMBRE = {
-    "IES": "Entidad proponente: universidad",
-    "ENT": "Entidad aliada 1: municipio",
-    "SNCTI": "Entidad aliada 2: actor del SNCTI",
-    "EMP": "Entidad aliada 3: empresa tecnológica",
+    "IES": "Universidad Santo Tomás, sede Villavicencio",
+    "MAN": "Municipio de Manizales",
+    "CAL": "Municipio de Calarcá",
+    "AVA": "Avanciencia",
 }
 NATURALEZA = {
     "IES": "Institución de educación superior; entidad proponente y ejecutora",
-    "ENT": "Entidad territorial: municipio de un departamento afectado, uno de los municipios de intervención",
-    "SNCTI": "Actor del Sistema Nacional de Ciencia, Tecnología e Innovación con reconocimiento vigente de MinCiencias",
-    "EMP": "Actor del sector productivo con domicilio en un departamento afectado",
+    "MAN": "Entidad territorial de Caldas; municipio afectado y lugar de ejecución",
+    "CAL": "Entidad territorial de Quindío; municipio afectado y lugar de ejecución",
+    "AVA": "Oficina de transferencia de resultados de investigación (OTRI); actor del SNCTI con reconocimiento de MinCiencias",
 }
-
-# actividad: (IES, ENT, SNCTI, EMP, actores de cambio y proveedores)
+# actividad: (USTA, Manizales, Calarcá, Avanciencia, actores de cambio, actores técnicos y proveedores)
 R = {
- "1.1": ("Lidera el diseño y el plan de análisis", "Facilita el acceso a sitios y aporta datos de afectación", "Revisa el diseño metrológico de la colocalización", "Aporta datos de cobertura", "Comités de los municipios"),
- "1.2": ("Dirige la compra y recibe las referencias", "No participa", "Participa en la caracterización de los cabezales", "Entrega nodos y gateways", "Laboratorio acreditado"),
- "1.3": ("Opera la colocalización y mide la línea base", "Provee acceso y seguridad en los sitios", "No participa", "Instala nodos y gateways", "Técnicos de campo departamentales"),
- "1.4": ("Entrena y valida el modelo", "Participa en la decisión de la compuerta", "Valida el procedimiento metrológico", "Despliega el modelo en el gateway", "Evaluador externo independiente"),
- "1.5": ("Reentrena y verifica por departamento", "Participa en la compuerta y en los convenios", "No participa", "Mantiene la red", "Comités y custodios"),
- "1.6": ("Dirige la verificación final", "Aporta registros de uso", "Contrasta los resultados finales", "Entrega la versión congelada", "Laboratorio externo y evaluador independiente"),
- "1.7": ("Lidera la validación y el análisis de desempeño del gemelo predictivo", "Gestiona con los propietarios el acceso a las demoliciones y los permisos de medición", "Verifica la trazabilidad de los monitores portátiles", "Integra los datos de campo a la plataforma", "Responsables de obra y verificador independiente"),
- "1.8": ("Ejerce la gerencia y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
- "2.1": ("Revisa el diseño", "Informa restricciones del sitio", "No participa", "Lidera el diseño del enlace y de la energía", "Estudio de cobertura"),
- "2.2": ("Define requisitos de calidad de datos", "No participa", "No participa", "Lidera el firmware, la nube y el tablero", "Auditor de ciberseguridad"),
- "2.3": ("Coordina la instalación", "Provee acceso y custodia local", "No participa", "Lidera la instalación y el mantenimiento", "Técnicos de campo departamentales"),
- "2.4": ("Coordina la instalación", "Provee acceso y custodia local", "No participa", "Lidera la instalación y el mantenimiento", "Técnicos de campo departamentales"),
- "2.5": ("Lidera el diseño del laboratorio y del inventario de emisión de demolición", "Informa las demoliciones previstas y aporta la cartografía local", "No participa", "Define la interfaz de datos con la plataforma", "Laboratorio acreditado de caracterización del polvo"),
- "2.6": ("Dota el laboratorio y monta la cadena de modelación", "No participa", "Revisa la especificación de los monitores portátiles", "Instala las estaciones meteorológicas y conecta el laboratorio a la plataforma", "Proveedores de equipos y agente aduanero"),
- "2.7": ("Lidera la construcción y la calibración del gemelo predictivo", "No participa", "No participa", "Integra la asimilación de datos y la salida al tablero", "Servicio de cartografía"),
- "2.8": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Agente aduanero"),
- "3.1": ("Facilita el co-diseño", "Lidera la convocatoria de los comités", "No participa", "Adapta el tablero", "Comités de gestión del riesgo"),
- "3.2": ("Acompaña y evalúa el uso", "Lidera el registro de decisiones", "No participa", "Da soporte técnico", "Comités de gestión del riesgo"),
- "3.3": ("Diseña y certifica la formación", "Firma los convenios de custodia", "Participa en la formación de custodios", "Transfiere conocimiento técnico", "Custodios designados"),
- "3.4": ("Entrega y evalúa", "Recibe la custodia", "Asume la custodia científica del repositorio de datos", "Entrega la plataforma", "Custodios y evaluador independiente"),
- "3.5": ("Lidera el protocolo de evaluación previa y entrega el laboratorio", "Adopta el protocolo y usa las evaluaciones en sus decisiones", "Participa en la revisión del protocolo", "Documenta la interfaz del modelo con la plataforma", "Comités, responsables de obra y verificador independiente"),
+ "1.1": ("Lidera el diseño de la colocalización, el mapeo diagnóstico y el plan de análisis", "Facilita el acceso a los sitios de Manizales y aporta los datos de afectación", "Facilita el acceso a los sitios de Calarcá y aporta los datos de afectación", "Revisa el diseño de la colocalización y la vigilancia tecnológica", "Consejos de gestión del riesgo de los dos municipios; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
+ "1.2": ("Dirige la compra y caracteriza los nodos en el banco de calibración", "No participa", "No participa", "Revisa la libertad de operación de los nodos y de los cabezales", "Proveedores de nodos, monitores de referencia y banco de calibración"),
+ "1.3": ("Instala el tramo 1, opera la colocalización y mide la línea base", "Provee acceso y seguridad en los sitios de Manizales", "Provee acceso y seguridad en los sitios de Calarcá", "No participa", "Técnicos de campo y laboratorio acreditado; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
+ "1.4": ("Entrena y valida el modelo de corrección", "Participa en la decisión de la compuerta C1", "Participa en la decisión de la compuerta C1", "Documenta el modelo de corrección como resultado protegible", "Evaluador externo independiente"),
+ "1.5": ("Reentrena y verifica el modelo por municipio", "Participa en la compuerta C2", "Participa en la compuerta C2", "No participa", "Consejos de gestión del riesgo y custodios"),
+ "1.6": ("Dirige la verificación final y el ensayo independiente", "Aporta registros de uso", "Aporta registros de uso", "Valora los resultados finales para su transferencia", "Laboratorio externo y evaluador independiente; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
+ "1.7": ("Lidera la validación del gemelo predictivo con demoliciones reales", "Gestiona el acceso a las demoliciones de Manizales", "Gestiona el acceso a las demoliciones de Calarcá", "No participa", "Responsables de obra, verificador independiente y servicio contratado de analítica geoespacial"),
+ "1.8": ("Ejerce la gerencia, la dirección científica y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
+ "2.1": ("Lidera el diseño del enlace, de la energía y de la arquitectura de la plataforma", "Informa restricciones de los sitios", "Informa restricciones de los sitios", "No participa", "Estudio de cobertura por municipio y servicio contratado de arquitectura geoespacial"),
+ "2.2": ("Desarrolla el firmware, la ingesta y la corrección en el gateway, y dirige el servicio contratado de la plataforma geoespacial", "No participa", "No participa", "No participa", "Proveedor de la plataforma geoespacial y auditor de ciberseguridad"),
+ "2.3": ("Instala y mantiene el tramo 2", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Técnicos de campo"),
+ "2.4": ("Instala y mantiene el tramo 3", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Técnicos de campo"),
+ "2.5": ("Lidera el diseño del laboratorio y del inventario de emisión de demolición", "Informa las demoliciones previstas y aporta cartografía local", "Informa las demoliciones previstas y aporta cartografía local", "No participa", "Laboratorio acreditado de caracterización del polvo"),
+ "2.6": ("Dota el laboratorio y monta la cadena de modelación", "No participa", "No participa", "No participa", "Proveedores de equipos con entrega en Colombia"),
+ "2.7": ("Lidera la construcción y la calibración del gemelo predictivo", "No participa", "No participa", "No participa", "Servicio de cartografía y proveedor de la plataforma geoespacial"),
+ "2.8": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores y revisoría fiscal"),
+ "3.1": ("Coordina el co-diseño y la apropiación social", "Convoca a su consejo de gestión del riesgo y a la comunidad", "Convoca a su consejo de gestión del riesgo y a la comunidad", "No participa", "Consejos de gestión del riesgo, comunidades vecinas y servicio contratado de diseño del tablero"),
+ "3.2": ("Acompaña y evalúa el uso del tablero y coordina su soporte técnico", "Lidera el registro de decisiones en Manizales", "Lidera el registro de decisiones en Calarcá", "No participa", "Consejos de gestión del riesgo"),
+ "3.3": ("Diseña y certifica la formación de custodios", "Firma el convenio de custodia", "Firma el convenio de custodia", "Estructura los convenios de transferencia y de custodia", "Custodios designados"),
+ "3.4": ("Entrega los bienes y evalúa el cierre", "Recibe la custodia local", "Recibe la custodia local", "Lidera la valoración y la ruta de transferencia", "Custodios, evaluador independiente y proveedor de la plataforma geoespacial"),
+ "3.5": ("Lidera el protocolo de evaluación previa y transfiere el laboratorio", "Adopta el protocolo en Manizales", "Adopta el protocolo en Calarcá", "No participa", "Consejos, responsables de obra y verificador independiente"),
  "3.6": ("Gestiona eventos y logística", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores de logística"),
 }
-# actividades en que cada integrante tiene una función real (no «No participa» ni solo reporte de contrapartida)
 def actividades_de(actor):
     k = ACTORES.index(actor)
     out = []
@@ -67,24 +65,22 @@ def t_roles_actividad():
         v = R[a["id"]]
         f.append((f"{a['id']} {a['nombre']}",) + v)
     return ("Roles de los integrantes de la alianza y de los actores de cambio por actividad",
-            ["Actividad", NOMBRE["IES"], NOMBRE["ENT"], NOMBRE["SNCTI"], NOMBRE["EMP"], "Actores de cambio y proveedores"], f,
-            "*Nota.* Elaboración propia con la formulación del proyecto. Una misma entidad no figura como integrante de la alianza y como beneficiaria. Los proveedores y el evaluador externo no integran la alianza.")
+            ["Actividad", NOMBRE["IES"], NOMBRE["MAN"], NOMBRE["CAL"], NOMBRE["AVA"], "Actores de cambio, actores técnicos y proveedores"], f,
+            "*Nota.* Elaboración propia con la formulación del proyecto y el Anexo 3. Una misma entidad no figura como integrante de la alianza y como beneficiaria. Gestión y Medio Ambiente, los proveedores y el evaluador externo no integran la alianza.")
 
 def _por_oe(actor, oe):
     return [a for a in actividades_de(actor) if a.startswith(oe[2])]
 
-LIDERA = {"IES": ["OE1"], "ENT": ["OE3"], "SNCTI": [], "EMP": ["OE2"]}
+LIDERA = {"IES": ["OE1", "OE2"], "MAN": ["OE3"], "CAL": ["OE3"], "AVA": []}
 APORTE = {
-    "IES": "Coordina el proyecto, lidera la medición verificada y aloja el laboratorio de modelación; forma al talento y produce los documentos de investigación",
-    "ENT": "Facilita el acceso a los sitios y a las demoliciones, convoca a los comités, adopta el protocolo de evaluación previa y asume la custodia local de la red",
-    "SNCTI": "Aporta la validación metrológica de los monitores, la formación de custodios y la custodia científica de los datos",
-    "EMP": "Aporta nodos, gateways, firmware, nube y tablero, integra el gemelo predictivo a la plataforma y mantiene la red",
+    "IES": "Coordina y ejecuta el proyecto; lidera la medición verificada, la red, la plataforma geoespacial con un servicio contratado y el laboratorio de modelación; forma al talento y produce los documentos de investigación",
+    "MAN": "Asume la responsabilidad territorial en Manizales: acceso a sitios y demoliciones, convocatoria del consejo de gestión del riesgo, adopción de los protocolos y custodia local",
+    "CAL": "Asume la responsabilidad territorial en Calarcá: acceso a sitios y demoliciones, convocatoria del consejo de gestión del riesgo, adopción de los protocolos y custodia local",
+    "AVA": "Lidera el componente de transferencia: vigilancia tecnológica, valoración, propiedad intelectual y convenios de transferencia y custodia",
 }
 
 def _contrapartida_actor(actor):
     rows = [r for r in m2.CONTRA if r["fuente"] == actor]
-    if actor == "SNCTI":
-        return "Especie: [Diligenciar: valor certificado del aporte]"
     tot = sum(r["total"] for r in rows)
     efe = sum(r["total"] for r in rows if r["rubro"] == "Efectivo")
     esp = tot - efe
@@ -100,102 +96,96 @@ def t_roles_alianza():
         f.append((NOMBRE[ac], NATURALEZA[ac], lid, part, _compacta(actividades_de(ac)), APORTE[ac], _contrapartida_actor(ac)))
     return ("Integrantes de la alianza: naturaleza, objetivos, actividades, aporte y contrapartida",
             ["Integrante", "Naturaleza", "Objetivo que lidera", "Objetivos en que participa", "Actividades con función", "Qué aporta", "Contrapartida"], f,
-            "*Nota.* Elaboración propia con los numerales 3 y 18 de los términos de referencia y la formulación del proyecto. Cada integrante asume al menos una actividad, designa un responsable institucional y aporta una contrapartida cuantificada.")
+            "*Nota.* Elaboración propia con los numerales 3 y 18 de los términos de referencia y el Anexo 3. Cada integrante asume al menos una actividad, designa un responsable institucional y aporta una contrapartida cuantificada, sujeta a la certificación de su representante legal.")
 
 BENEF = [
- ("Universidad proponente",
-  "Formación de nueve personas (seis jóvenes investigadores, dos estudiantes de maestría y un posdoctor) y nueve documentos de investigación; datos colocalizados y un modelo de corrección para su línea de investigación; capacidad de medición durante el proyecto; laboratorio de modelación y gemelo predictivo propios para su línea de investigación; titularidad de los resultados según la regla de propiedad intelectual",
+ ("Universidad Santo Tomás",
+  "Formación de nueve personas (seis jóvenes investigadores, dos estudiantes de maestría y un posdoctor) y nueve documentos de investigación; datos colocalizados y un modelo de corrección para su línea de investigación; experiencia en la operación de un laboratorio de modelación predictiva",
   "Productos 1 a 6 de la sección 20 e indicador R6",
-  "La titularidad de los bienes adquiridos se fija en el convenio de la alianza"),
- ("Municipio aliado",
-  "Tablero con índice local de calidad del aire y protocolo de alerta de su jurisdicción, con umbrales que el municipio co-diseña como integrante que lidera el uso institucional; personas funcionarias formadas y certificadas como custodias; mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción de su territorio; evaluación previa de las demoliciones de su jurisdicción con la exposición esperada y las medidas de control; custodia local de los componentes con partida por convenio",
+  "La titularidad de los bienes adquiridos se fija en el certificado del numeral 10.19 y en el convenio de la alianza"),
+ ("Municipios de Manizales y de Calarcá",
+  "Tablero con índice local de calidad del aire y protocolo de alerta de su jurisdicción, con umbrales co-diseñados; personas funcionarias formadas como custodias; mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción; evaluaciones previas de demolición para sus decisiones",
   "Indicadores R3, R5 y R7 de resultado e I1 e I2 de impacto",
-  "Su comité municipal no se cuenta entre los 15 comités beneficiarios y se sustituye por otro de la misma jurisdicción; la custodia exige una partida del municipio"),
- ("Actor del SNCTI reconocido por MinCiencias",
-  "Coautoría de los documentos de investigación; acceso a series colocalizadas y verificadas; fortalecimiento de su capacidad de metrología de aerosoles, con la comparación de monitores portátiles; custodia científica del repositorio de datos; registro de los productos de CTeI en que participa",
-  "Productos 2 y 9; actividades 1.1, 1.2, 1.4, 1.6, 1.7, 2.6, 3.3, 3.4 y 3.5",
-  "El valor de su contrapartida está por certificar"),
- ("Empresa tecnológica",
-  "Validación independiente de su tecnología hasta el TRL 8 con informe de laboratorio externo; datos de campo y un gemelo predictivo integrado a su plataforma para mejorar su producto; derechos de explotación según el acuerdo de propiedad intelectual; oportunidad de ofrecer el servicio a otras entidades",
-  "Informe del ensayo independiente (actividad 1.6) y acuerdo de propiedad intelectual",
-  "La oferta a terceros es una oportunidad y no un compromiso del proyecto"),
- ("Comités de gestión del riesgo y operarios de remoción",
-  "Alertas y decisiones con datos de error conocido; estimación previa de la exposición por polvo antes de una demolición y medidas de control sugeridas; cartillas del índice y del protocolo de alerta; mascarillas de protección para el personal de campo; formación en el uso del tablero",
+  "Como integrantes de la alianza no figuran como beneficiarios; la custodia exige una partida de cada municipio"),
+ ("Avanciencia",
+  "Cartera de resultados para valorar y transferir; acuerdos de propiedad intelectual y de licencia; experiencia en transferencia de tecnologías de monitoreo ambiental; coautoría de los productos en que participa",
+  "Productos 7 y 9; actividades 1.1, 1.2, 1.4, 1.6, 3.3 y 3.4",
+  "El valor de su contrapartida requiere la certificación de su representante legal"),
+ ("Consejos de gestión del riesgo, operarios y comunidad vecina",
+  "Alertas y decisiones con datos de error conocido; estimación previa de la exposición por polvo antes de una demolición y medidas de control sugeridas; cartillas del índice y del protocolo de alerta; mascarillas para el personal de campo; formación en el uso del tablero",
   "Indicadores R3 y R7 y productos 8 y 9",
-  "La protección de las personas depende de que el comité active el protocolo"),
+  "La protección de las personas depende de que el consejo active el protocolo"),
 ]
 def t_beneficios():
     return ("Qué recibe cada integrante y cada grupo de usuarios del proyecto",
             ["Integrante o grupo", "Qué recibe", "Cómo se verifica", "Condición"], [tuple(b) for b in BENEF],
             "*Nota.* Elaboración propia con la formulación del proyecto. Los beneficios son resultados técnicos, de capacidad y de uso. El proyecto no promete efectos en la salud ni retornos monetarios.")
 
-# ---------------------------------------------------------------- presupuesto por departamento
-DEPTOS = ("Caldas", "Cundinamarca", "Valle del Cauca")
-K_NODOS = (33, 34, 33); K_GW = (3, 4, 3); K_SITIOS = (36, 38, 36); K_IGUAL = (1, 1, 1)
-TERR = {
- "E01": K_NODOS, "E02": K_NODOS, "E05": K_NODOS, "M03": K_NODOS, "M06": K_NODOS, "M07": K_NODOS,
- "V01": K_NODOS, "V02": K_NODOS, "V03": K_NODOS,
- "S05": K_SITIOS, "E09": K_SITIOS,
- "E04": K_GW, "E06": K_GW, "E12": K_GW, "S10": K_GW,
- "E03": K_IGUAL, "M01": K_IGUAL, "S01": K_IGUAL, "S06": K_IGUAL, "P10": K_IGUAL,
- "V05": K_IGUAL, "O02": K_IGUAL, "M04": K_IGUAL, "M05": K_IGUAL, "S09": K_IGUAL,
- "E14": K_IGUAL, "S12": K_IGUAL, "S16": K_IGUAL, "M08": K_IGUAL, "V06": K_IGUAL, "V07": K_IGUAL, "V08": K_IGUAL,
+# ---------------------------------------------------------------- localización del valor por municipio (solo la que declara el Anexo 3)
+# Fracciones (Manizales, Calarcá) que el Anexo 3 v5 declara de forma expresa; el resto de cada partida es común a los dos municipios.
+LOCAL = {
+ "TH-12": (0.5, 0.5, "tres técnicos por municipio"),
+ "EQ-18": (0.25, 0.25, "una estación por municipio; la de laboratorio y la móvil son comunes"),
+ "ST-04": (0.5, 0.5, "un estudio por municipio"),
+ "CA-04": (0.5, 0.5, "tres talleres por municipio"),
 }
-def _repartir(total, clave):
-    s = sum(clave); out = [int(round(total * k / s)) for k in clave]
-    out[max(range(3), key=lambda i: clave[i])] += total - sum(out)
-    return out
+def localizar(r):
+    if r["id"] in LOCAL:
+        a, b, _ = LOCAL[r["id"]]
+        man = int(round(r["total"] * a)); cal = int(round(r["total"] * b))
+        return man, cal, r["total"] - man - cal
+    return 0, 0, r["total"]
 
-def por_departamento():
-    """Devuelve {rubro: [caldas, cundinamarca, valle, transversal]} del SGR."""
-    res = {k: [0, 0, 0, 0] for k in m2.RUB}
+def por_municipio():
+    """{rubro: [Manizales, Calarcá, común]} del SGR."""
+    res = {k: [0, 0, 0] for k in m2.RUB}
     for r in m2.BUD:
-        rb = r["rubro_tdr"]
-        if r["id"] in TERR:
-            v = _repartir(r["total"], TERR[r["id"]])
-            for i in range(3): res[rb][i] += v[i]
-        else:
-            res[rb][3] += r["total"]
+        v = localizar(r)
+        for i in range(3): res[r["rubro_tdr"]][i] += v[i]
     return res
 
-def t_presupuesto_departamento():
-    d = por_departamento()
-    f = []; tot = [0, 0, 0, 0]
+def t_presupuesto_municipio():
+    d = por_municipio()
+    f = []; tot = [0, 0, 0]
     for rb, v in d.items():
         if sum(v) == 0: continue
         f.append((rb,) + tuple(cop(x) for x in v) + (cop(sum(v)),))
-        for i in range(4): tot[i] += v[i]
+        for i in range(3): tot[i] += v[i]
     assert sum(tot) == m2.SGR
     f.append(("**Total**",) + tuple("**" + cop(x) + "**" for x in tot) + ("**" + cop(sum(tot)) + "**",))
     f.append(("Participación en el SGR",) + tuple(pct(x / m2.SGR) for x in tot) + ("100,0 %",))
-    return ("Valor solicitado al SGR por rubro y departamento",
-            ["Rubro", "Caldas", "Cundinamarca", "Valle del Cauca", "Transversal", "Total"], f,
-            "*Nota.* Elaboración propia, con valores calculados. Los gastos territoriales se reparten con claves explícitas: nodos operativos (33, 34 y 33) para nodos, cabezales, energía, mástiles, insumos y viajes; sitios (36, 38 y 36) para instalación y equipos de campo; gateways (3, 4 y 3) para gateways, enlaces y planes de datos; y partes iguales para monitores de referencia, gravimetría, estudios, técnicos de campo, formación, apropiación, estaciones meteorológicas, campañas de medición en demoliciones y talleres de evaluación previa. Los gastos transversales, entre ellos el laboratorio de modelación con sede en la entidad proponente, sirven a los tres departamentos y no se reparten.")
+    return ("Valor solicitado al SGR por rubro y municipio, según la localización que declara el Anexo 3",
+            ["Rubro", "Manizales (Caldas)", "Calarcá (Quindío)", "Común a los dos municipios", "Total"], f,
+            "*Nota.* Elaboración propia con el Anexo 3. Solo se asignan a un municipio las partidas cuya cantidad por municipio declara el Anexo 3: técnicos de campo (tres por municipio), estaciones meteorológicas (una por municipio), estudio de cobertura (uno por municipio) y talleres de evaluación previa (tres por municipio). Las demás partidas sirven a los dos municipios y no se reparten.")
 
-def nodos_por_depto():
-    return list(K_NODOS)
+def por_departamento():
+    """Compatibilidad: {rubro: [Manizales, Calarcá, común, 0]}."""
+    return {k: v + [0] for k, v in por_municipio().items()}
+
+def nodos_por_municipio():
+    return [50, 50]
 
 TABLAS_ALIANZA = {
     "roles_actividad": t_roles_actividad,
     "roles_alianza": t_roles_alianza,
     "beneficios": t_beneficios,
-    "presupuesto_departamento": t_presupuesto_departamento,
+    "presupuesto_departamento": t_presupuesto_municipio,
+    "presupuesto_municipio": t_presupuesto_municipio,
 }
 
 # ---------------------------------------------------------------- registro de datos pendientes
 import re, glob, collections
 SEC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "sec")
 OWN = [
- (r"actor del SNCTI|reconocimiento", "Actor del SNCTI"),
- (r"empresa|RUES|razón social de la empresa", "Empresa tecnológica"),
- (r"municipio|alcald|gobernaci|plan municipal|plan departamental|departamental|declaratoria|calamidad|afectaci|DANE|población|poblaci|resguardo|consejo comunitario|centro poblado|reporte oficial|autoridad ambiental|comités|comité de gestión|demanda|Anexo 4|operarios|remoción", "Municipio aliado y entidades territoriales"),
- (r"cotizaci|presupuesto|valor", "Universidad, con la empresa y el actor del SNCTI"),
+ (r"Avanciencia|actor del SNCTI|reconocimiento|transferencia", "Avanciencia"),
+ (r"Manizales|Calarcá|municipio|alcald|gobernaci|plan municipal|plan departamental|departamental|declaratoria|calamidad|afectaci|DANE|población|poblaci|resguardo|consejo comunitario|centro poblado|reporte oficial|autoridad ambiental|comités|consejo|demanda|Anexo 4|operarios|remoción", "Municipios de Manizales y de Calarcá"),
+ (r"cotizaci|presupuesto|valor", "Universidad Santo Tomás, con Avanciencia"),
 ]
 def _owner(txt):
     low = txt.lower()
     for pat, o in OWN:
         if re.search(pat, txt, re.I): return o
-    return "Universidad"
+    return "Universidad Santo Tomás"
 def t_pendientes():
     d = collections.OrderedDict()
     for f in sorted(glob.glob(os.path.join(SEC, "s[0-9][0-9].md"))):

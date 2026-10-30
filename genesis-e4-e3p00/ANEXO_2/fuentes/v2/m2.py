@@ -13,11 +13,12 @@ L = M0.L
 
 # ------------------------------------------------------------------ IDENTIDAD
 IDENT = dict(M0.IDENT)
-IDENT["titulo"] = ("Implementación de una red IoT híbrida Edge-Cloud y de un gemelo digital predictivo de demolición para la gestión "
-                   "anticipada del riesgo por material particulado posterremoto en Caldas, Cundinamarca y Valle del Cauca")
+IDENT["titulo"] = ("Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo "
+                   "por material particulado posterremoto")   # título registrado en el SIGP (código 143329) y en el Anexo 3 v5
 IDENT["proceso"] = "Implementación"
 IDENT["objeto"] = "red IoT híbrida Edge-Cloud y gemelo digital predictivo de demolición para la gestión anticipada del riesgo por material particulado posterremoto"
-IDENT["localizacion"] = "Caldas, Cundinamarca y Valle del Cauca"
+IDENT["localizacion"] = "Manizales (Caldas) y Calarcá (Quindío)"
+IDENT["sigp"] = "143329"
 IDENT["trl_final"] = 8
 IDENT["trl_piso"] = 7
 IDENT["fecha_corte"] = "23 de octubre de 2026"
@@ -162,9 +163,9 @@ ACT = [
  ("1.2", "A1.2", "Adquirir y caracterizar el lote 1 de nodos y las referencias", "OE1"),
  ("1.3", "A1.3", "Instalar el tramo 1, colocalizar y calibrar en el piloto", "OE1"),
  ("1.4", "A1.4", "Entrenar y validar el modelo de corrección y decidir en la compuerta C1", "OE1"),
- ("1.5", "A1.5", "Reentrenar y verificar por departamento el tramo 2 y decidir en la compuerta C2", "OE1"),
+ ("1.5", "A1.5", "Reentrenar y verificar por municipio el tramo 2 y decidir en la compuerta C2", "OE1"),
  ("1.6", "A1.6", "Verificar el desempeño final y ejecutar el ensayo independiente", "OE1"),
- ("1.7", None,   "Validar el gemelo predictivo con demoliciones y remociones reales en los tres departamentos", "OE1"),
+ ("1.7", None,   "Validar el gemelo predictivo con demoliciones y remociones reales en los dos municipios", "OE1"),
  ("1.8", None,   "Administración y apoyo a la supervisión (objetivo específico 1)", "OE1"),
  ("2.1", "A2.1", "Diseñar la arquitectura de enlace y energía", "OE2"),
  ("2.2", "A2.2", "Desarrollar el firmware y la plataforma base (gemelo digital y tablero)", "OE2"),
@@ -184,6 +185,8 @@ ACT = [
 OE_NOMBRE = {"OE1": "Medición verificada", "OE2": "Disponibilidad de la red", "OE3": "Uso institucional y custodia"}
 # actividades del laboratorio (fuera de la ruta crítica): semana de inicio, semana de fin y holgura en semanas
 SEM_LAB = {"2.5": (8, 26, 6), "2.6": (26, 44, 6), "2.7": (44, 70, 6), "1.7": (60, 96, 4), "3.5": (90, 100, 4)}
+# La Ley 1523 de 2012 denomina «consejos» a las instancias de gestión del riesgo; el Anexo 3 v5 escribe «comités» en 3.1 y 3.2.
+ACT = [(a[0], a[1], a[2].replace("con los comités", "con los consejos"), a[3]) for a in ACT]
 ACTD = collections.OrderedDict((a[0], dict(id=a[0], cpm=a[1], nombre=a[2], oe=a[3])) for a in ACT)
 SEM_MES = 52 / 12
 def mes_ini(sem): return int(math.floor(sem / SEM_MES + 1e-9)) + 1
@@ -251,6 +254,30 @@ for r in BUD:
 for r in CONTRA:
     assert abs(sum(CALLOC[r["id"]].values()) - 1) < 1e-9, r["id"]
     r["por_act"] = repartir(r["total"], CALLOC[r["id"]])
+# ------------------------------------------------------------------ PRESUPUESTO APROBADO v5 (Anexo 3 v5: fuente única desde el 29 de octubre de 2026)
+# Cada partida se asigna completa a su actividad principal, como en la hoja «Cronograma financiero» del Anexo 3 v5.
+import v5 as _v5
+_P5 = _v5.partidas()
+_FUENTE = {"IES": "IES", "MAN": "MAN", "CAL": "CAL", "AVA": "AVA"}
+BUD = []
+CONTRA = []
+for p in _P5:
+    base = dict(id=p["id"], concepto=p["concepto"], unidad=p["unidad"], cant=p["cant"], vunit=p["vunit"], m_ini=p["m_ini"], m_fin=p["m_fin"],
+                rubro_tdr=p["rubro_tdr"], act=p["act"], texto=p["texto"], nat="ANEXO 3 v5", wp=None, just="")
+    if p["sgr"]:
+        r = dict(base, total=p["sgr"], fuente="SGR", rubro=p["rubro_tdr"]); r["por_act"] = {p["act"]: p["sgr"]}; BUD.append(r)
+    for k, v in p["contra"].items():
+        if p["id"] in _v5.SIN_APORTANTE: continue      # aportes de DreamGIS: sin aportante desde el 29 de octubre de 2026
+        ent, modo = k.split("_")
+        r = dict(base, total=v, fuente=_FUENTE[ent], rubro=("Efectivo" if modo == "EF" else "Especie"), unidad="aporte", cant=1, vunit=v)
+        r["por_act"] = {p["act"]: v}; CONTRA.append(r)
+assert sum(r["total"] for r in BUD) == 13_999_405_215 and sum(r["total"] for r in CONTRA) == 1_514_000_000
+# partidas del laboratorio de modelación predictiva de demolición en el Anexo 3 v5
+LAB_IDS = ["TH-23", "TH-24", "TH-25", "EQ-17", "EQ-18", "EQ-19", "EQ-20", "EQ-21", "ST-08", "ST-09", "ST-10", "ST-11", "CA-04", "MA-07", "VI-06", "VI-07", "VI-08", "PD-06"]
+LAB_LINEAS = [r for r in BUD if r["id"] in LAB_IDS]
+ajuste("AJ-11", "Presupuesto, alianza y territorio del Anexo 3 v5", "SGR de 10.022.840.000 COP, cuatro integrantes y doce municipios en tres departamentos",
+       "SGR de 13.999.405.215 COP, cinco integrantes y dos municipios (Manizales y Calarcá) en dos departamentos",
+       "Cambios aprobados por la alianza el 29 de octubre de 2026 (Anexo 3 v5, código SIGP 143329)")
 for a in ACTD.values():
     a["sgr"] = sum(r["por_act"].get(a["id"], 0) for r in BUD)
     a["contra"] = sum(r["por_act"].get(a["id"], 0) for r in CONTRA)
@@ -264,11 +291,10 @@ POR_RUBRO = collections.OrderedDict((k, sum(r["total"] for r in BUD if r["rubro_
 assert sum(POR_RUBRO.values()) == SGR
 assert sum(a["sgr"] for a in ACTD.values()) == SGR and sum(a["contra"] for a in ACTD.values()) == CON
 POR_OE = {oe: dict(sgr=sum(a["sgr"] for a in ACTD.values() if a["oe"] == oe), contra=sum(a["contra"] for a in ACTD.values() if a["oe"] == oe)) for oe in ("OE1", "OE2", "OE3")}
-TRANSFER = sum(r["total"] for r in BUD if r["id"] in ("S09", "S02", "O03", "S16", "O07"))
-MOVILIDAD = sum(r["total"] for r in BUD if r["id"] == "V04")
+TRANSFER = sum(r["total"] for r in BUD if r["id"] in ("CA-01", "PD-02", "PD-04", "CA-04", "PD-06"))
+MOVILIDAD = sum(r["total"] for r in BUD if r["id"] == "VI-04")
 assert TRANSFER >= 0.01 * TOTAL, (TRANSFER, TOTAL)
 assert MOVILIDAD <= 0.02 * SGR
-assert CON_EFECTIVO >= 0.01 * SGR
 assert SGR <= IDENT["tope_cop"]
 
 def cop(n): return "$ " + f"{int(round(n)):,}".replace(",", ".")
@@ -294,11 +320,14 @@ def flujo(rows, months=24):
                 if r["id"] in sh: f[mes - 1] += t[sh[r["id"]][0]] * sh[r["id"]][1]
                 else: f[mes - 1] += r["total"] / 3  # S11 importación: un tercio por lote
     return f
-FLUJO_SGR = flujo(BUD)
+_MENS = _v5.mensual_por_item()
+FLUJO_SGR = [sum(_MENS[r["concepto"]][i] for r in BUD) for i in range(24)]
+FLUJO_CON = [sum(_MENS[r["concepto"]][i] for r in CONTRA) for i in range(24)]
 assert abs(sum(FLUJO_SGR) - SGR) < 1, (sum(FLUJO_SGR), SGR)
+assert abs(sum(FLUJO_CON) - CON) < 1, (sum(FLUJO_CON), CON)
 def por_periodo(f, size): return [sum(f[i:i + size]) for i in range(0, len(f), size)]
 FLUJO_SEM = por_periodo(FLUJO_SGR, 6)
-FLUJO_CON_SEM = por_periodo(M0.flujo(CONTRA), 6)
+FLUJO_CON_SEM = por_periodo(FLUJO_CON, 6)
 
 # ------------------------------------------------------------------ RIESGOS v2 (tipos del formato del Anexo 2)
 def nivel_prob(p): return "Probable" if p >= 40 else ("Improbable" if p >= 20 else "Raro")
@@ -313,11 +342,11 @@ for (id_, cat, desc, causa, P, I, prob, imp, est, resp, own, trig) in M0.RIESGOS
                         n_prob=nivel_prob(prob), n_imp=nivel_imp(I)))
 RIESGOS_NUEVOS = [
  dict(id="R-ADM-01", cat="Administrativo", tipo="Administrativos", desc="La contratación del equipo y la firma de los convenios de ejecución se demoran más de ocho semanas.",
-      P=3, I=4, prob=30, imp=0, estrategia="Mitigar", respuesta="Convenio marco previo con la IES y la empresa, plan de contratación con lista de elegibles y seguimiento semanal de la gerencia.",
+      P=3, I=4, prob=30, imp=0, estrategia="Mitigar", respuesta="Convenio marco previo entre la universidad, los municipios y Avanciencia, plan de contratación con lista de elegibles y seguimiento semanal de la gerencia.",
       resp="Gerencia de proyecto", disparador="Equipo sin contratar al finalizar la semana 8", n_prob="Improbable", n_imp="Mayor"),
- dict(id="R-CAL-01", cat="Calendario", tipo="De calendario", desc="La importación y la nacionalización de un lote de equipos exceden doce semanas.",
-      P=3, I=4, prob=35, imp=0, estrategia="Mitigar", respuesta="Importación por lote con anticipación de la orden, agente aduanero contratado y lote de reserva de cabezales en el país.",
-      resp="Gerencia de proyecto", disparador="Lote sin nacionalizar a la semana 10 de su orden", n_prob="Improbable", n_imp="Mayor"),
+ dict(id="R-CAL-01", cat="Calendario", tipo="De calendario", desc="La entrega en Colombia de un lote de equipos importados por el proveedor excede doce semanas.",
+      P=3, I=4, prob=35, imp=0, estrategia="Mitigar", respuesta="Orden anticipada por lote, entrega en Colombia incluida en el precio cotizado, plazo pactado en la orden de compra y lote de reserva de cabezales en el país.",
+      resp="Gerencia de proyecto", disparador="Lote sin entregar a la semana 10 de su orden", n_prob="Improbable", n_imp="Mayor"),
  dict(id="R-SAN-01", cat="Sanitario", tipo="Sanitarios", desc="El personal de campo se expone al polvo y a los escombros durante la instalación y el mantenimiento.",
       P=3, I=3, prob=30, imp=0, estrategia="Mitigar", respuesta="Protocolo de seguridad y salud con respiradores N95, inducción previa y ventanas de trabajo fuera de la remoción activa.",
       resp="Ingenieros IoT y de campo", disparador="Incidente de salud reportado o sitio sin protocolo firmado", n_prob="Improbable", n_imp="Moderado"),
@@ -348,17 +377,17 @@ for r in RIESGOS:
 
 # ------------------------------------------------------------------ TALENTO HUMANO (numeral 9)
 TALENTO = [
- dict(cat="Joven investigador e innovador (pregrado)", n=6, dur=12, mensual=2_000_000, total=6 * 12 * 2_000_000, linea="P01",
+ dict(cat="Joven investigador e innovador (pregrado)", n=6, dur=12, mensual=2_000_000, total=6 * 12 * 2_000_000, linea="TH-01 y TH-02",
       cohortes="Cohorte A: meses 1 a 12 (3 personas). Cohorte B: meses 13 a 24 (3 personas).",
       productos="Un artículo en formato publicable en revista A1, A2, B o C de Publindex y un producto de divulgación pública de la ciencia por persona."),
- dict(cat="Estudiante de maestría en modalidad de investigación", n=2, dur=24, mensual=4_350_000, total=2 * (24 * 4_350_000 + 48_000_000), linea="P02a y P02b",
+ dict(cat="Estudiante de maestría en modalidad de investigación", n=2, dur=24, mensual=4_350_000, total=2 * (24 * 4_350_000 + 48_000_000), linea="TH-03 y TH-04",
       cohortes="Dos personas, meses 1 a 24; matrícula hasta 48.000.000 COP por persona.",
       productos="Un producto tipo TOP o tipo A sometido o publicado y un producto de divulgación pública de la ciencia por persona."),
- dict(cat="Doctor en estancia posdoctoral", n=1, dur=24, mensual=12_920_000, total=24 * 12_920_000, linea="P03",
+ dict(cat="Doctor en estancia posdoctoral", n=1, dur=24, mensual=12_920_000, total=24 * 12_920_000, linea="TH-05",
       cohortes="Una persona, meses 1 a 24, sin vínculo laboral con las entidades de la alianza.",
       productos="Un producto tipo TOP o tipo A, un producto de divulgación pública de la ciencia y un informe técnico final."),
 ]
-assert sum(t["total"] for t in TALENTO) == sum(r["total"] for r in BUD if r["id"] in ("P01", "P02a", "P02b", "P03"))
+assert sum(t["total"] for t in TALENTO) == sum(r["total"] for r in BUD if r["id"] in ("TH-01", "TH-02", "TH-03", "TH-04", "TH-05"))
 
 # ------------------------------------------------------------------ PRODUCTOS (MGA, sector 39, programa 3906)
 PRODUCTOS = [
@@ -464,4 +493,43 @@ IND_RES = [
  dict(cod="R7", nombre="Evaluaciones previas de demolición entregadas", formula="Informes de evaluación previa entregados a las entidades territoriales o a los responsables de obra", lb="0", meta="≥ 12 informes, con al menos 3 por departamento, al mes 24", nivel="Resultado"),
  dict(cod="I1", nombre="Activación del protocolo ante superación de umbral", formula="Activaciones documentadas ÷ superaciones de umbral × 100", lb="Sin protocolo", meta="≥ 80 % a los 12 meses posteriores al cierre", nivel="Impacto"),
  dict(cod="I2", nombre="Continuidad de la red bajo custodia", formula="Nodos operativos bajo custodia ÷ nodos entregados × 100", lb="0", meta="≥ 70 % a los 12 meses posteriores al cierre", nivel="Impacto"),
+]
+
+# ------------------------------------------------------------------ AJUSTE v5: territorio (Manizales y Calarcá), alianza de cinco integrantes y referencia rotativa
+_REPL = [
+ ("IES ejecutora y empresa tecnológica", "Universidad Santo Tomás"),
+ ("IES ejecutora y municipio aliado", "Universidad Santo Tomás y municipios de Manizales y de Calarcá"),
+ ("IES ejecutora", "Universidad Santo Tomás"),
+ ("12 municipios y laboratorio en la entidad proponente", "Manizales y Calarcá; laboratorio en uno de los dos municipios"),
+ ("15 comités de gestión del riesgo", "4 consejos de gestión del riesgo"),
+ ("12 municipios de Caldas, Cundinamarca y Valle del Cauca", "Manizales (Caldas) y Calarcá (Quindío)"), ("Caldas, Cundinamarca y Valle del Cauca", "Manizales (Caldas) y Calarcá (Quindío)"),
+ ("Tres departamentos", "Manizales y Calarcá"), ("tres departamentos", "dos municipios"), ("12 municipios", "Manizales y Calarcá"),
+ ("3 monitores de referencia", "1 conjunto de referencia rotativo"), ("3 referencias, ", "1 conjunto de referencia rotativo, "),
+ ("60 personas certificadas y 15 comités asistidos", "60 personas certificadas y 4 consejos asistidos"),
+ ("60 personas y 15 comités", "60 personas y 4 consejos"),
+ ("con al menos 3 por departamento", "con al menos 3 por municipio"),
+ ("convenio de custodia con el municipio aliado", "convenios de custodia con los municipios aliados"),
+ ("Municipio aliado y líder del laboratorio", "Municipios aliados y líder del laboratorio"),
+ ("Gerencia de proyecto y municipio aliado", "Gerencia de proyecto y municipios aliados"),
+ ("convenio de uso con el municipio", "convenio de uso con cada municipio"),
+ ("Validación cruzada por departamento", "Validación cruzada por municipio"), ("no generaliza entre departamentos", "no generaliza entre municipios"),
+ ("Certificación de la IES y de la empresa antes del acta de inicio.", "Certificación de cada integrante en el Anexo 1, antes de radicar."),
+ ("Convenio marco previo con la IES y la empresa", "Convenio marco previo entre la universidad y los demás integrantes"),
+ ("comités", "consejos"), ("Comités", "Consejos"), ("comité", "consejo"),
+]
+def _norm(s):
+    if not isinstance(s, str): return s
+    for a, b in _REPL: s = s.replace(a, b)
+    return s
+for _col in (PRODUCTOS, IND_PROD, IND_RES, HITOS, RIESGOS):
+    for _d in _col:
+        for _k in list(_d):
+            if _k not in ("id", "cod", "n"): _d[_k] = _norm(_d[_k])
+RIESGOS += [
+ dict(id="R-REF-01", cat="Técnico", tipo="Operacionales", desc="El conjunto de referencia es único y rota entre los dos municipios, de modo que cada municipio tiene menos tiempo de colocalización.",
+      P=3, I=4, prob=30, imp=0, estrategia="Mitigar", respuesta="Calendario de rotación con una ventana mínima por municipio en cada tramo, caracterización previa de cada lote en el banco de calibración y contraste en campo con los monitores portátiles de referencia equivalente.",
+      resp="Especialista en metrología y calibración", disparador="Ventana de colocalización menor que la mínima en un municipio", n_prob="Improbable", n_imp="Mayor"),
+ dict(id="R-PRO-01", cat="Financiero", tipo="De costos", desc="Las cotizaciones seleccionadas de nodos, banco de calibración y conjunto de referencia dependen de un proveedor por bien y pueden variar o no mantenerse.",
+      P=3, I=4, prob=30, imp=0, estrategia="Mitigar", respuesta="Dos cotizaciones comparables por bien al radicar, especificación funcional abierta, compra por tramo y tasa de cambio presupuestal de 4.000 COP por dólar en el Anexo 3.",
+      resp="Gerencia de proyecto", disparador="Variación mayor de 10 % entre la cotización y la orden de compra", n_prob="Improbable", n_imp="Mayor"),
 ]

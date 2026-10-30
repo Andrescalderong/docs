@@ -1,4 +1,29 @@
-# Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE)
+# Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE, SIGP 143329)
+
+## Versión 5 (30 de octubre de 2026): alianza Universidad Santo Tomás, Manizales, Calarcá y Avanciencia
+
+La carpeta `v5_alianza_USTA/` contiene la versión vigente, ajustada al Anexo 3 versión 5 y a los cambios aprobados de alianza, territorio y presupuesto.
+
+| Archivo | Contenido |
+| --- | --- |
+| anexo_2._documento_tecnico_15_v5.docx y .pdf | Anexo 2 para radicar: 289 páginas; PDF de 2,8 MB, bajo el límite de 3 MB del SIGP |
+| anexo_2._documento_tecnico_15_v5_con_cambios.docx | Copia con control de cambios frente a la versión del 24 de octubre |
+| anexo_a._analisis_problema_publico_y_estructura_causal_v5.docx y .pdf | Anexo A actualizado al nuevo territorio |
+| matriz_correspondencia_v5.xlsx | 96 partidas con objetivo, producto, actividad, cantidad, unidad, costo, fuente, responsable, municipio, período y ubicación en el Anexo 2, la MGA y el SIGP; hojas de actividades, alertas, conciliación y cambios |
+| complementarios/ | Estrategia de apropiación social, plan de sostenibilidad revisado (10.16), certificados de precios unitarios de Manizales y Calarcá y correo para la universidad |
+
+| Integrante | Rol | Objetivo que lidera |
+| --- | --- | --- |
+| Universidad Santo Tomás, sede Villavicencio | Entidad proponente y ejecutora | OE1 y OE2 |
+| Municipio de Manizales (Caldas) | Entidad territorial aliada y lugar de ejecución | OE3 en su jurisdicción |
+| Municipio de Calarcá (Quindío) | Entidad territorial aliada y lugar de ejecución | OE3 en su jurisdicción |
+| Avanciencia | Oficina de transferencia de resultados de investigación (actor del SNCTI) | Ninguno; propiedad intelectual y transferencia |
+| Gestión y Medio Ambiente (Manizales) | Actor técnico externo; no integra la alianza | — |
+
+Cifras: SGR 13.999.405.215 COP; contrapartida 1.514.000.000 COP, toda en especie; total 15.513.405.215 COP. Las fuentes actualizadas están en `fuentes/` (`v2/v5.py` lee el Anexo 3 v5 desde `fuentes/data_v5/`; `v2/sim_coloc.py` reproduce la simulación de colocalización con el conjunto de referencia rotativo).
+
+## Versión anterior (24 de octubre de 2026)
+
 
 Fecha de corte: 24 de octubre de 2026. Estado: borrador completo con datos pendientes de la alianza. Incorpora las respuestas de la Secretaría Técnica a las observaciones a los términos de referencia, publicadas el 23 de octubre de 2026.
 

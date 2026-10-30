@@ -56,7 +56,7 @@ def c15_f01(h=16.0, medir=False):
           ("OE2", "Disponibilidad de la red", ["Infraestructura de medición y de modelación: 1 infraestructura integrada"],
            ["2.1 Enlace y energía", "2.2 Firmware y plataforma", "2.3 Tramo 2", "2.4 Tramo 3", "2.5 Diseño del laboratorio", "2.6 Dotación del laboratorio",
             "2.7 Calibración del gemelo", "2.8 Administración y supervisión"]),
-          ("OE3", "Uso institucional y custodia", ["Documentos de planeación: 3", "Apropiación social: 29 actividades", "Asistencia técnica: 60 personas y 15 comités"],
+          ("OE3", "Uso institucional y custodia", ["Documentos de planeación: 3", "Apropiación social: 29 actividades", "Asistencia técnica: 60 personas y 4 consejos"],
            ["3.1 Umbrales y protocolo", "3.2 Uso del tablero", "3.3 Custodios y convenios", "3.4 Transferencia y cierre", "3.5 Protocolo previo y laboratorio",
             "3.6 Administración y supervisión"])]
     h1 = "Tres objetivos específicos, nueve productos y %d actividades se financian con %s millones del SGR" % (len(m2.ACTD), num(m2.SGR / 1e6, 0))
@@ -179,8 +179,8 @@ def c22_f01():
     pr = ["Probable", "Improbable", "Raro"]; im = ["Menor", "Moderado", "Mayor"]
     prob = sum(r["n_prob"] == "Probable" for r in R); mayor = sum(r["n_imp"] == "Mayor" for r in R)
     ambos = sum(r["n_prob"] == "Probable" and r["n_imp"] == "Mayor" for r in R)
-    assert (prob, mayor, len(R), ambos) == (8, 15, 19, 6)
-    L = Lienzo(10, 8.4, h1="Ocho de diecinueve riesgos son probables y quince tienen impacto mayor, y cada uno tiene una respuesta asignada",
+    assert (prob, mayor, len(R), ambos) == (8, 17, 21, 6)
+    L = Lienzo(10, 8.4, h1="Ocho de veintiún riesgos son probables y diecisiete tienen impacto mayor, y cada uno tiene una respuesta asignada",
                h2="Matriz de probabilidad (raro, improbable, probable) e impacto (menor, moderado, mayor) de los 19 riesgos del registro")
     x0, y0 = 13.0, 21.0
     cw, ch = 28.0, 11.5
@@ -221,13 +221,13 @@ def c22_f01():
 def c26_f01():
     OEN = [("OE1", "Medición verificada"), ("OE2", "Disponibilidad de la red"), ("OE3", "Uso institucional y custodia")]
     lid = alianza.LIDERA
-    nombres = {"IES": "Universidad proponente", "ENT": "Municipio aliado", "SNCTI": "Actor del SNCTI", "EMP": "Empresa tecnológica"}
-    aportes = {"IES": "Contrapartida C01 a C04 y C09: 1.244 millones en especie", "ENT": "Contrapartida C07: 120 millones en especie",
-               "SNCTI": "Contrapartida C08: valor por certificar", "EMP": "Contrapartida C05 y C06: 210 millones en efectivo y 800 millones en especie"}
-    for ac, txt in (("IES", 1.244e9), ("ENT", 1.2e8)):
+    nombres = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia (OTRI)"}
+    aportes = {"IES": "Cinco aportes: 1.244 millones en especie", "MAN": "Un aporte: 60 millones en especie",
+               "CAL": "Un aporte: 60 millones en especie", "AVA": "Un aporte: 150 millones en especie"}
+    for ac, txt in (("IES", 1.244e9), ("MAN", 6e7), ("CAL", 6e7), ("AVA", 1.5e8)):
         tot = sum(r["total"] for r in m2.CONTRA if r["fuente"] == ac)
         assert abs(tot - txt) < 1, (ac, tot)
-    L = Lienzo(10, 9.2, h1="La alianza reparte capacidades entre cuatro integrantes y nueve aportes de contrapartida",
+    L = Lienzo(10, 9.2, h1="La alianza reparte capacidades entre cuatro integrantes y ocho aportes de contrapartida",
                h2="Función de cada integrante por objetivo específico y actividades en que participa; aportes de contrapartida de cada uno")
     xl, wl = 1.0, 28.0
     xc0, wc, gp = 31.0, 22.0, 0.8
@@ -244,8 +244,7 @@ def c26_f01():
             acts = alianza._por_oe(ac, oe)
             x = xc0 + j * (wc + gp)
             # las actividades del laboratorio (2.5 a 2.7 y 3.5) las lidera la universidad dentro de los objetivos 2 y 3
-            matiz = {("IES", "OE2"): "2.1 a 2.4 y 2.8; lidera 2.5 a 2.7", ("IES", "OE3"): "3.1 a 3.4 y 3.6; lidera 3.5",
-                     ("EMP", "OE2"): "2.1 a 2.4; participa en 2.5 a 2.7", ("ENT", "OE3"): "3.1 a 3.4; participa en 3.5"}
+            matiz = {("IES", "OE3"): "3.1 a 3.6; lidera 3.5"}
             if acts:
                 rol = "Lidera" if oe in lid[ac] else "Participa"
                 fc = AZUL if rol == "Lidera" else BLANCO
@@ -255,7 +254,7 @@ def c26_f01():
                 L.caja(x, y - rh, wc, rh, cuerpo="Sin función", fc=GRIS, ls="--", pad=0.8, lw=1.0)
         y -= rh + 0.9
     # actores que rodean
-    L.t(xl, y - 1.0, "Actores de cambio y proveedores: comités de gestión del riesgo, custodios, laboratorio acreditado, laboratorio externo y evaluador externo.",
+    L.t(xl, y - 1.0, "Actores de cambio, actores técnicos y proveedores: consejos de gestión del riesgo, custodios, Gestión y Medio Ambiente, laboratorio acreditado, servicio de plataforma geoespacial y evaluador externo.",
         w=98, va="top")
     L.guardar("c26_f01")
 
@@ -266,8 +265,8 @@ def c28_f01():
     d.sort(key=lambda kv: -kv[1])
     tot = m2.SGR
     top2 = (d[0][1] + d[1][1]) / tot
-    assert abs(top2 - 0.7421) < 0.001
-    L = Lienzo(10, 6.8, h1="El talento humano y los equipos suman casi tres cuartas partes del valor solicitado al SGR",
+    assert abs(top2 - 0.7658) < 0.001
+    L = Lienzo(10, 6.8, h1="El talento humano y los equipos suman más de tres cuartas partes del valor solicitado al SGR",
                h2="Valor solicitado al SGR por rubro, en millones de pesos colombianos (COP) y porcentaje del total")
     ax = eje_en_unidades(L, 40, 9.0, 83, L.top - 1.5)
     estilo_eje(ax)

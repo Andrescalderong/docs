@@ -51,13 +51,13 @@ def fmt(n): return f"{int(round(n)):,}".replace(",", ".")
 V = {
  "SGR": cop(m2.SGR), "SGR_N": fmt(m2.SGR), "SGR_MM": mm(m2.SGR) + " millones de COP", "SGR_LETRAS": pesos_letras(m2.SGR),
  "CON": cop(m2.CON), "CON_N": fmt(m2.CON), "CON_MM": mm(m2.CON) + " millones de COP", "CON_LETRAS": pesos_letras(m2.CON),
- "CON_EF": cop(m2.CON_EFECTIVO), "CON_EF_MM": mm(m2.CON_EFECTIVO) + " millones de COP", "PCT_EF": pct(R["pct_efectivo"]),
+ "CON_EF": cop(m2.CON_EFECTIVO), "CON_EF_MM": mm(m2.CON_EFECTIVO) + " millones de COP", "PCT_EF": pct(R["pct_efectivo"], 2),
  "TOTAL": cop(m2.TOTAL), "TOTAL_N": fmt(m2.TOTAL), "TOTAL_MM": mm(m2.TOTAL) + " millones de COP", "TOTAL_LETRAS": pesos_letras(m2.TOTAL),
- "TOPE": cop(m2.IDENT["tope_cop"]), "PCT_TOPE": pct(R["pct_tope"]), "HOLGURA": cop(R["holgura"]),
+ "TOPE": cop(m2.IDENT["tope_cop"]), "PCT_TOPE": pct(R["pct_tope"], 3), "HOLGURA": cop(R["holgura"]),
  "TRANSFER": cop(m2.TRANSFER), "TRANSFER_MM": mm(m2.TRANSFER) + " millones de COP", "PCT_TRANSFER": pct(R["pct_transfer"], 2),
  "MOV": cop(m2.MOVILIDAD), "PCT_MOV": pct(R["pct_mov"], 2),
  "TITULO": m2.IDENT["titulo"], "NOMBRE_LEN": str(len(m2.IDENT["titulo"])),
- "NODOS": "100", "NODOS_COMP": "120", "GW": "10", "GW_COMP": "11", "REFS": "3", "MUN": "12", "COMITES": "15", "MESES": "24", "SEMANAS": "104",
+ "NODOS": "100", "NODOS_COMP": "120", "GW": "10", "GW_COMP": "11", "REFS": "1", "MUN": "2", "COMITES": "4", "SIGP": m2.IDENT["sigp"], "MESES": "24", "SEMANAS": "104",
  "TRL0": "4", "TRL1": "8", "TRL_PISO": "7",
  "OE1_SGR": mm(m2.POR_OE["OE1"]["sgr"]), "OE2_SGR": mm(m2.POR_OE["OE2"]["sgr"]), "OE3_SGR": mm(m2.POR_OE["OE3"]["sgr"]),
  "PERSONAL": cop(m2.POR_RUBRO["Talento Humano"]), "PCT_PERSONAL": pct(m2.POR_RUBRO["Talento Humano"] / m2.SGR),
@@ -67,7 +67,7 @@ V = {
  "R_SERV": cop(m2.POR_RUBRO["Servicios tecnológicos y pruebas"]), "R_MAT": cop(m2.POR_RUBRO["Materiales, insumos y documentación"]),
  "R_PROT": cop(m2.POR_RUBRO["Protección del conocimiento y divulgación"]), "R_VIAJE": cop(m2.POR_RUBRO["Gastos de viaje"]),
  "R_INFRA": cop(m2.POR_RUBRO["Infraestructura"]), "R_ADMIN": cop(m2.POR_RUBRO["Administrativos"]), "R_SEG": cop(m2.POR_RUBRO["Seguimiento"]),
- "N_INFORMES": str(len(m2.INFORMES)), "ADM_ACT": cop(m2.ACTD["1.8"]["sgr"]), "N_ACT": str(len(m2.ACTD)), "N_PROB": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable")), "N_MAYOR": str(sum(1 for r in m2.RIESGOS if r["n_imp"] == "Mayor")), "N_AMBOS": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_OTROS": str(len(m2.RIESGOS) - sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_RIESGOS": str(len(m2.RIESGOS)), "LAB_SGR": cop(sum(r["total"] for r in m2.LAB_LINEAS)), "LAB_CONTRA": cop(next(r["total"] for r in m2.CONTRA if r["id"] == "C09")),
+ "N_INFORMES": str(len(m2.INFORMES)), "ADM_ACT": cop(m2.ACTD["1.8"]["sgr"]), "N_ACT": str(len(m2.ACTD)), "N_PROB": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable")), "N_MAYOR": str(sum(1 for r in m2.RIESGOS if r["n_imp"] == "Mayor")), "N_AMBOS": str(sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_OTROS": str(len(m2.RIESGOS) - sum(1 for r in m2.RIESGOS if r["n_prob"] == "Probable" and r["n_imp"] == "Mayor")), "N_RIESGOS": str(len(m2.RIESGOS)), "LAB_SGR": cop(sum(r["total"] for r in m2.LAB_LINEAS)), "LAB_CONTRA": cop(next(r["total"] for r in m2.CONTRA if r["id"] == "EQ-22")), "LAB_PCT": pct(sum(r["total"] for r in m2.LAB_LINEAS) / m2.SGR),
  "FLUJO1": mm(m2.FLUJO_SEM[0]), "FLUJO2": mm(m2.FLUJO_SEM[1]), "FLUJO3": mm(m2.FLUJO_SEM[2]), "FLUJO4": mm(m2.FLUJO_SEM[3]),
 }
 
@@ -91,30 +91,30 @@ def t_presupuesto_oe():
         v = m2.POR_OE[oe]; f.append((nm, cop(v["sgr"]), cop(v["contra"]), cop(v["sgr"] + v["contra"])))
     f.append(("**Total**", "**" + cop(m2.SGR) + "**", "**" + cop(m2.CON) + "**", "**" + cop(m2.TOTAL) + "**"))
     return ("Valor del proyecto por objetivo específico", ["Objetivo específico", "SGR (COP)", "Contrapartida (COP)", "Total (COP)"], f,
-            "*Nota.* Elaboración propia. Las actividades de administración y apoyo a la supervisión se reparten por partes iguales entre los tres objetivos.")
+            "*Nota.* Elaboración propia con el Anexo 3. Cada partida se asigna a su actividad principal, como en la hoja «Cronograma financiero» del Anexo 3; la administración y el seguimiento se registran en la actividad 1.8.")
 
 def t_fuentes():
+    def s(c): return cop(sum(r["total"] for r in m2.CONTRA if r["fuente"] == c))
     f = [("Asignación de CTeI del SGR", "Asignación de CTeI del SGR", cop(m2.SGR)),
-         ("Entidad proponente (universidad)", "Propios: especie", cop(sum(r["total"] for r in m2.CONTRA if r["fuente"] == "IES"))),
-         ("Entidad aliada 1 (municipio)", "Propios: especie", cop(sum(r["total"] for r in m2.CONTRA if r["fuente"] == "ENT"))),
-         ("Entidad aliada 2 (actor del SNCTI)", "Propios: especie", "[Diligenciar: valor certificado del aporte]"),
-         ("Entidad aliada 3 (empresa tecnológica)", "Propios: efectivo y especie", cop(sum(r["total"] for r in m2.CONTRA if r["fuente"] == "EMP"))),
+         ("Universidad Santo Tomás, sede Villavicencio (proponente)", "Propios: especie", s("IES")),
+         ("Municipio de Manizales", "Propios: especie", s("MAN")),
+         ("Municipio de Calarcá", "Propios: especie", s("CAL")),
+         ("Avanciencia (actor del SNCTI)", "Propios: especie", s("AVA")),
          ("**Total**", "", "**" + cop(m2.TOTAL) + "**")]
     return ("Resumen de las fuentes de financiación", ["Entidad", "Fuente de recursos", "Valor"], f,
-            "*Nota.* Elaboración propia. Los aportes en especie y en efectivo requieren certificación firmada por el representante legal de cada entidad. El total no incluye el aporte del actor del SNCTI, que se suma cuando se certifique.")
+            "*Nota.* Elaboración propia con el Anexo 3. Los aportes en especie y en efectivo requieren certificación firmada por el representante legal de cada entidad.")
 
 def t_contrapartida():
     f = []
-    quien_d = {"IES": "Entidad proponente (universidad)", "EMP": "Entidad aliada 3 (empresa tecnológica)", "ENT": "Entidad aliada 1 (municipio)"}
+    quien_d = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia"}
     for r in m2.CONTRA:
         quien = quien_d[r["fuente"]]
         modo = "Efectivo" if r["rubro"] == "Efectivo" else "Especie"
         acts = ", ".join(k for k, v in r["por_act"].items() if v)
         f.append((r["id"], quien, r["concepto"], modo, cop(r["total"]), acts))
-    f.append(("C08", "Entidad aliada 2 (actor del SNCTI)", "Horas de investigadores y uso de laboratorio del actor del SNCTI", "Especie", "[Diligenciar: valor certificado del aporte]", "1.1, 1.2, 1.4, 1.6, 3.3, 3.4"))
     f.append(("", "**Total**", "", "", "**" + cop(m2.CON) + "**", ""))
-    return ("Contrapartida por aportante, modalidad y actividad financiada", ["Id", "Aportante", "Aporte", "Modalidad", "Valor (COP)", "Actividades"], f,
-            "*Nota.* Elaboración propia. El aporte se cuantifica en términos monetarios y se sustenta con la certificación de cada entidad; el momento del aporte coincide con la ejecución de las actividades indicadas. El total no incluye el aporte C08, que se suma cuando el actor del SNCTI lo certifique.")
+    return ("Contrapartida por aportante, modalidad y actividad financiada", ["Código del Anexo 3", "Aportante", "Aporte", "Modalidad", "Valor (COP)", "Actividad"], f,
+            "*Nota.* Elaboración propia con el Anexo 3. Cada aporte se cuantifica en términos monetarios y se sustenta con la certificación del representante legal de su entidad; el momento del aporte coincide con la ejecución de la actividad indicada.")
 
 def t_talento():
     f = []
@@ -130,7 +130,7 @@ def t_actividades():
         f.append((a["id"], a["nombre"], a["oe"], f"M{a['m_ini']}–M{a['m_fin']}", cop(a["sgr"]), cop(a["contra"])))
     f.append(("", "**Total**", "", "", "**" + cop(m2.SGR) + "**", "**" + cop(m2.CON) + "**"))
     return ("Actividades del proyecto, periodo y valor por fuente", ["N.º", "Actividad", "Objetivo", "Periodo", "SGR (COP)", "Contrapartida (COP)"], f,
-            "*Nota.* Elaboración propia. Los personales se reparten por duración de las actividades y los demás rubros por la actividad que los consume; el periodo resulta de convertir las semanas del cronograma a meses de 52/12 semanas.")
+            "*Nota.* Elaboración propia con el Anexo 3. Cada partida se asigna completa a su actividad principal, como en la hoja «Cronograma financiero» del Anexo 3; por eso las actividades 1.5, 2.4, 2.7, 2.8 y 3.6 no tienen asignación directa y se ejecutan con personal y bienes asignados a otras actividades del mismo objetivo.")
 
 def t_cronograma():
     enc = ["Objetivo específico", "Producto", "Actividad"] + [str(m) for m in range(1, 25)]
@@ -152,7 +152,7 @@ def t_flujo():
     f = [(f"Semestre {i + 1} (meses {6 * i + 1} a {6 * i + 6})", cop(m2.FLUJO_SEM[i]), cop(m2.FLUJO_CON_SEM[i]), cop(m2.FLUJO_SEM[i] + m2.FLUJO_CON_SEM[i])) for i in range(4)]
     f.append(("**Total**", "**" + cop(m2.SGR) + "**", "**" + cop(m2.CON) + "**", "**" + cop(m2.TOTAL) + "**"))
     return ("Programación semestral de los recursos", ["Periodo", "SGR (COP)", "Contrapartida (COP)", "Total (COP)"], f,
-            "*Nota.* Elaboración propia. Las compras de nodos, cabezales y gateways se programan en los meses 5, 13 y 18; los equipos del laboratorio de modelación se compran entre los meses 7 y 10; los demás rubros se distribuyen de forma uniforme en su ventana de ejecución.")
+            "*Nota.* Elaboración propia con la hoja «Cronograma financiero» del Anexo 3. Los semestres coinciden con los cuatro giros del SGR de la proyección financiera del Anexo 3.")
 
 def t_tramos():
     f = []
@@ -172,20 +172,20 @@ def t_riesgos():
 def t_lineas_presupuesto():
     f = []
     for r in m2.BUD:
-        acts = ", ".join(k for k, v in r["por_act"].items() if v)
-        f.append((r["id"], r["rubro_tdr"], r["concepto"], r["unidad"], fmt(r["cant"]), cop(r["vunit"]), cop(r["total"]), acts))
-    f.append(("", "**Total**", "", "", "", "", "**" + cop(m2.SGR) + "**", ""))
-    return ("Líneas del presupuesto solicitado al SGR con unidad, cantidad, costo unitario y actividades", ["N.º de línea", "Rubro", "Concepto", "Unidad", "Cantidad", "Costo unitario (COP)", "Total (COP)", "Actividades"], f,
-            "*Nota.* Elaboración propia. Cada línea se soporta con al menos dos cotizaciones vigentes en el Anexo 3. Los valores excluyen impuestos propios y seguros, que los términos de referencia no financian con recursos del SGR.")
+        q = r["cant"]; qs = fmt(q) if float(q).is_integer() else str(q).replace(".", ",")
+        f.append((r["id"], r["rubro_tdr"], r["concepto"], r["unidad"], qs, cop(r["vunit"]), cop(r["total"]), r["act"], f"M{r['m_ini']}–M{r['m_fin']}"))
+    f.append(("", "**Total**", "", "", "", "", "**" + cop(m2.SGR) + "**", "", ""))
+    return ("Líneas del presupuesto solicitado al SGR con unidad, cantidad, costo unitario, actividad principal y periodo", ["Código del Anexo 3", "Rubro", "Concepto", "Unidad", "Cantidad", "Costo unitario (COP)", "Total (COP)", "Actividad principal", "Periodo"], f,
+            "*Nota.* Elaboración propia con el Anexo 3. Los códigos, las cantidades, los valores, la actividad principal y el periodo son los del Anexo 3. Cada línea se soporta con un análisis de costos y al menos dos cotizaciones, que se cargan al radicar. Los valores incluyen el IVA cuando aplica y excluyen impuestos propios y seguros.")
 
 TABLAS = {k[2:]: v for k, v in globals().items() if k.startswith("t_")}
 import alianza
 alianza.cop = cop; alianza.pct = pct
 TABLAS.update(alianza.TABLAS_ALIANZA)
-_dep = alianza.por_departamento(); _t = [sum(v[i] for v in _dep.values()) for i in range(4)]
-V.update({"DEP_DIR": pct(sum(_t[:3]) / m2.SGR), "DEP_CAL": pct(_t[0] / m2.SGR), "DEP_CUN": pct(_t[1] / m2.SGR), "DEP_VAL": pct(_t[2] / m2.SGR), "DEP_TRANS": pct(_t[3] / m2.SGR),
-          "TRAYECTOS": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("V01", "V06"))), "DIAS_VEH": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("V03", "V08"))),
-          "REC_PCT": pct(167_280_000 / m2.SGR), "SGR_M0": fmt(round(m2.SGR / 1e6)), "PCT_ESPECIE": pct((m2.CON - m2.CON_EFECTIVO) / m2.CON), "LICENCIAS_ANUAL": cop(next(r["total"] for r in m2.BUD if r["id"] == "E17") / 2)})
+_mun = alianza.por_municipio(); _t = [sum(v[i] for v in _mun.values()) for i in range(3)]
+V.update({"MUN_MAN": cop(_t[0]), "MUN_CAL": cop(_t[1]), "MUN_COMUN": cop(_t[2]), "PCT_MUN_COMUN": pct(_t[2] / m2.SGR), "PCT_MUN_LOC": pct((_t[0] + _t[1]) / m2.SGR),
+          "TRAYECTOS": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("VI-01", "VI-06"))), "DIAS_VEH": str(sum(r["cant"] for r in m2.BUD if r["id"] in ("VI-03", "VI-08"))),
+          "SGR_M0": fmt(round(m2.SGR / 1e6)), "PCT_ESPECIE": pct((m2.CON - m2.CON_EFECTIVO) / m2.CON), "LICENCIAS_ANUAL": cop(next(r["total"] for r in m2.BUD if r["id"] == "EQ-21") / 2)})
 
 _PAL = {1: "uno", 2: "dos", 3: "tres", 4: "cuatro", 5: "cinco", 6: "seis", 7: "siete", 8: "ocho", 9: "nueve", 10: "diez", 11: "once", 12: "doce", 13: "trece", 14: "catorce",
         15: "quince", 16: "dieciséis", 17: "diecisiete", 18: "dieciocho", 19: "diecinueve", 20: "veinte", 21: "veintiuno", 22: "veintidós", 23: "veintitrés", 24: "veinticuatro", 25: "veinticinco"}
@@ -196,6 +196,36 @@ V.update({"N_PROB_P": palabra(V["N_PROB"], True), "N_RIESGOS_P": palabra(V["N_RI
 import causal
 TABLAS.update(causal.TABLAS_CAUSAL)
 V.update(causal.resumen())
+
+# ---------------------------------------------------------------- v5: equipos e infraestructura del Anexo 3
+import json as _json
+_PART5 = {p["id"]: p for p in _json.load(open(os.path.join(os.path.dirname(HERE), "data_v5", "partidas.json"), encoding="utf-8"))}
+def _acts_prods(pid):
+    c = _PART5[pid]["campos"]
+    j = str(c.get("JUSTIFICACIÓN") or c.get("Justificación") or c.get("DESCRIPCION") or c.get("JUSTIFICACION") or "")
+    pre = j.split("·")[0] if "·" in j else j[:60]
+    if pid == "IN-01":
+        j = str(c.get("Descripción", "")).split("Justificación:")[-1]; pre = j.split("·")[0]
+    acts = sorted(set(re.findall(r"(\d\.\d)", pre)), key=lambda x: (int(x[0]), int(x[2])))
+    resto = j.split("·")[1] if "·" in j else ""
+    prods = sorted(set(re.findall(r"\bP(\d)\b", resto[:40]) + re.findall(r"productos? (\d)", resto[:40])))
+    return acts, prods
+def t_equipos():
+    import v5 as _v5
+    f = []
+    for r in m2.BUD:
+        if r["rubro_tdr"] not in ("Equipos y software", "Infraestructura"): continue
+        c = _PART5[r["id"]]["campos"]
+        esp = _v5.ren(c.get("ESPECIFICACIONES TÉCNICAS") or c.get("Descripción") or "").split("\n")[0].replace("trazabilidad verificada por el actor del SNCTI", "trazabilidad metrológica verificada")
+        acts, prods = _acts_prods(r["id"])
+        q = r["cant"]; qs = fmt(q) if float(q).is_integer() else str(q).replace(".", ",")
+        f.append((r["id"], r["concepto"], f"{qs} {r['unidad']}", esp, ", ".join(acts) or r["act"], ", ".join(prods) or "—", cop(r["total"])))
+    tot = sum(r["total"] for r in m2.BUD if r["rubro_tdr"] in ("Equipos y software", "Infraestructura"))
+    f.append(("", "**Total**", "", "", "", "", "**" + cop(tot) + "**"))
+    return ("Equipos, software e infraestructura que se adquieren con recursos del SGR",
+            ["Código del Anexo 3", "Bien", "Cantidad", "Especificación", "Actividades", "Productos", "Valor SGR (COP)"], f,
+            "*Nota.* Elaboración propia con el Anexo 3. Las especificaciones, las cantidades, las actividades y los productos son los que declara el Anexo 3 para cada partida. Los productos se numeran como en la sección 20.")
+TABLAS["equipos"] = t_equipos
 
 def _expandir_tabla(m):
     tid, gen = m.group(1), m.group(2)

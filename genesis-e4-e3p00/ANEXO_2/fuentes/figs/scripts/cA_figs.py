@@ -222,7 +222,7 @@ def cA_f06():
     L.caja(xs2[0], yb[1], wb, alt[1], "V11 Índice local sin fórmula validada y con error de entrada", fc=CLARO)
     L.caja(xs2[1], yb[1], wb, alt[1], "V12 Tasa de falsas alarmas sin medir", fc=CLARO)
     xc, wc = 27.0, 56.0
-    L.caja(xc, yb[2], wc, alt[2], "V06 Los comités no disponen de mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción", fc=AZUL, lw=2.4, bold_cuerpo=True)
+    L.caja(xc, yb[2], wc, alt[2], "V06 Los consejos no disponen de mediciones de PM2,5 y PM10 con error conocido en los sitios de remoción", fc=AZUL, lw=2.4, bold_cuerpo=True)
     wcau, g = 19.5, 2.0
     cau = ["V03 Humedad relativa alta en los sitios", "V02 Fracción gruesa de PM10 sin corregir", "V01 PM2,5 sin referencia colocalizada", "V07 Calibración baja o nula"]
     xcs = [15.0 + i * (wcau + g) for i in range(4)]

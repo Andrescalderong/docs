@@ -28,10 +28,10 @@ def f16():
             "Tablero y alertas · mes 18", "Gemelo digital, laboratorio y datos · mes 24"]
     L.caja(xc, yc, wc, hc, titulo="Servicio de vigilancia de PM2,5 y PM10 con custodia distribuida",
            cuerpo="\n" + "\n\n".join(comp), fc=AZUL, lw=2.0, pad=1.4)
-    izq = [("Empresa tecnológica", "nodos, repuestos y gemelo digital", MEDIO, "-"),
-           ("Universidad proponente", "protocolo, datos y laboratorio", MEDIO, "-"),
-           ("Actor del SNCTI", "repositorio de datos y formación de custodios", MEDIO, "-")]
-    der = [("Municipio y unidades de gestión del riesgo", "tablero y alertas", MEDIO, "-"),
+    izq = [("Universidad Santo Tomás", "nodos, repuestos y gemelo digital", MEDIO, "-"),
+           ("Universidad Santo Tomás", "protocolo, datos y laboratorio", MEDIO, "-"),
+           ("Avanciencia", "propiedad intelectual y convenios de custodia", MEDIO, "-")]
+    der = [("Municipios de Manizales y de Calarcá y consejos", "tablero y alertas", MEDIO, "-"),
            ("Autoridad ambiental", "protocolo de calibración", MEDIO, "-"),
            ("Comunidad y operarios", "usuarios y red de soporte", CLARO, (0, (5, 3)))]
     for y, (tit, cu, col, ls) in zip(ys, izq):
@@ -63,7 +63,7 @@ def f17(h=16.0, medir=False):
     assert P[1]["meta"].startswith("2 prototipos") and P[6]["meta"].startswith("1 infraestructura") and P[7]["meta"] == "3" and P[8]["meta"] == "29"
     prods = ["Prototipos validados: 2 (red y gemelo predictivo)", "Documentos de investigación: 9", "Maestría apoyada: 2 personas", "Estancia posdoctoral: 1",
              "Jóvenes investigadores: 6", "Infraestructura de medición y de modelación: 1", "Documentos de planeación: 3", "Actividades de apropiación: 29",
-             "Asistencia técnica: 60 personas y 15 comités"]
+             "Asistencia técnica: 60 personas y 4 consejos"]
     res = [r for r in m2.IND_RES if r["nivel"] == "Resultado"]
     imp = [r for r in m2.IND_RES if r["nivel"] == "Impacto"]
     assert [r["cod"] for r in res] == ["R1", "R2", "R3", "R4", "R5", "R6", "R7"] and [r["cod"] for r in imp] == ["I1", "I2"]
@@ -81,7 +81,7 @@ def f17(h=16.0, medir=False):
         L.caja(x, yh - hh, w, hh, titulo=t, cuerpo=c, fc=col, lw=1.6, pad=0.9)
     ycur = yh - hh - 1.4
     y_prod_top = ycur
-    txt_red = "100 nodos, 10 gateways, 3 monitores de referencia y laboratorio de modelación"
+    txt_red = "100 nodos, 10 gateways, conjunto de referencia rotativo y laboratorio de modelación"
     hred = L.necesita(w1, cuerpo=txt_red, titulo="Red operativa y laboratorio", pad=0.9) + 0.4
     hprod = [L.necesita(w1, cuerpo=t, pad=0.9) + 0.5 for t in prods]
     hres = [L.necesita(w2, cuerpo=r["meta"], titulo="%s · %s" % (r["cod"], r["nombre"]), pad=0.7) + 0.2 for r in res]

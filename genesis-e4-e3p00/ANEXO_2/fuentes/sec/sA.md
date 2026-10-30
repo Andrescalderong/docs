@@ -38,22 +38,22 @@ La {T:t02} delimita el fenómeno con un campo por característica. El enunciado 
 | Campo | Contenido |
 | --- | --- |
 | Fenómeno observado | En los sitios de remoción de escombros posteriores al sismo, la medición de PM2,5 y PM10 con sensores de bajo costo no se verifica frente a una referencia |
-| Unidad decisora | El equipo formulador diseña la propuesta y el financiador decide la asignación. Los comités de gestión del riesgo deciden las alertas |
+| Unidad decisora | El equipo formulador diseña la propuesta y el financiador decide la asignación. Los consejos de gestión del riesgo deciden las alertas |
 | Población afectada | Operarios de remoción y comunidades colindantes. La cifra se documenta en la sección 11 |
-| Territorio | Caldas, Cundinamarca y Valle del Cauca: 12 municipios y 15 comités de gestión del riesgo |
+| Territorio | Manizales (Caldas) y Calarcá (Quindío), con cuatro consejos de gestión del riesgo |
 | Horizonte | 24 meses de ejecución y 12 meses posteriores al cierre, en total 36 meses |
 | Nivel de agregación | Nodo y semana en la medición; municipio y mes en la adopción institucional |
 | Síntoma | Lecturas con error no cuantificado en el territorio. La línea base propia se mide con la colocalización del tramo 1 |
 | Problema como estado observable | En los sitios de remoción no se dispone de mediciones de PM2,5 y PM10 verificadas frente a una referencia ni de alertas incorporadas en protocolos de decisión |
 | Explicación propuesta | El error de medición actúa como cuello de botella estructural entre el entorno físico y las variables de decisión. Es una HIE |
 | Solución preferida | Red híbrida con corrección en el gateway y gemelo digital, desplegada por tramos. Es una hipótesis de intervención |
-:::NOTA *Nota.* Elaboración propia con las secciones 5 y 11 del Anexo 2. El territorio y los comités corresponden a la formulación vigente.
+:::NOTA *Nota.* Elaboración propia con las secciones 5 y 11 del Anexo 2. El territorio y los consejos corresponden a la formulación vigente.
 
 ### A.2.2 Representación del problema y marcos rivales
 
 Bacchi (2009) propone preguntar cómo se representa un problema, qué supuestos sostienen esa representación, qué queda sin problematizar y qué efectos produce. Schön y Rein (1994) señalan que cada parte interesada encuadra de manera distinta una misma situación. Las dos lecturas orientan el análisis siguiente.
 
-El problema se representa como una limitación técnica de medición y de comunicaciones. Tres supuestos sostienen esa representación. La causa principal es metrológica y energética. La respuesta es tecnológica. Y los comités adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos. Son la emisión en la fuente, las acciones que activa la alerta y el umbral normativo aplicable. Es también la responsabilidad de contratistas y administradoras de riesgos laborales (ARL). La emisión en la fuente deja de estar del todo sin problematizar, porque el gemelo predictivo la estima antes de una demolición. El proyecto no la controla.
+El problema se representa como una limitación técnica de medición y de comunicaciones. Tres supuestos sostienen esa representación. La causa principal es metrológica y energética. La respuesta es tecnológica. Y los consejos adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos. Son la emisión en la fuente, las acciones que activa la alerta y el umbral normativo aplicable. Es también la responsabilidad de contratistas y administradoras de riesgos laborales (ARL). La emisión en la fuente deja de estar del todo sin problematizar, porque el gemelo predictivo la estima antes de una demolición. El proyecto no la controla.
 
 La representación también produce un efecto sobre los afectados. Operarios y comunidades figuran como receptores de alertas. Para reducir ese efecto, el proyecto los vincula al co-diseño de los umbrales y del protocolo en los talleres de la sección 19. La {T:t03} registra los tres marcos rivales y el tratamiento que reciben.
 
@@ -61,7 +61,7 @@ La representación también produce un efecto sobre los afectados. Operarios y c
 | Marco rival | Portador | Qué sostendría | Tratamiento en el proyecto |
 | --- | --- | --- | --- |
 | Control en la fuente y salud ocupacional | Autoridades laborales y ARL | El problema es la emisión de polvo en obra y la medición es secundaria | Fuera del alcance en cuanto a ejecutar el control. El gemelo predictivo incorpora la estimación previa de la exposición en demoliciones (A.10.3). La medición verificada es condición previa de cualquier estimación de exposición |
-| Gestión del riesgo de desastres como servicio | UNGRD y puestos de mando unificado | La alerta solo existe si un protocolo de mando la activa | Se incorpora: el protocolo de alerta se co-diseña con los comités en el objetivo específico 3 |
+| Gestión del riesgo de desastres como servicio | UNGRD y puestos de mando unificado | La alerta solo existe si un protocolo de mando la activa | Se incorpora: el protocolo de alerta se co-diseña con los consejos en el objetivo específico 3 |
 | Metrología y acreditación | Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM) | Solo un equipo acreditado como referencia sustenta una alerta oficial | Se atiende con verificación gravimétrica en laboratorio acreditado y validación metrológica. La acreditación del sistema como referencia oficial queda fuera del alcance |
 :::NOTA *Nota.* Elaboración propia con las secciones 5.1, 14 y 19 del Anexo 2.
 
@@ -74,13 +74,13 @@ Los juicios que sostienen el problema son de tres tipos: de realidad, de valor e
 | --- | --- | --- | --- |
 | Realidad | La humedad sesga la lectura de los sensores ópticos de bajo costo | Jayaratne et al. (2018); Suresh et al. (2025) | Se contrasta con los datos del tramo 1 |
 | Realidad | La corrección con una estación cercana puede elevar el ajuste de una red | Bang et al. (2026) | Se adopta como hipótesis de método y se valida fuera de muestra |
-| Valor | Proteger primero a operarios y comunidades cuando se supera un umbral | Sin portador declarado | Se decide en el protocolo co-diseñado con los comités |
+| Valor | Proteger primero a operarios y comunidades cuando se supera un umbral | Sin portador declarado | Se decide en el protocolo co-diseñado con los consejos |
 | Valor | Evitar paros de obra por falsas alarmas | Contratistas de obra | Se mide con la reducción relativa de falsas alarmas (indicador R4) |
 | Instrumental | La corrección local reduce el error sin degradar energía ni disponibilidad | Equipo formulador | Criterio de las compuertas C1 y C2 |
 | Instrumental | Una entidad custodia la red después del mes 24 | Alianza y entidades custodias | Convenios con partida (compuerta C2) |
 :::NOTA *Nota.* Elaboración propia con las secciones 5, 14 y 17 del Anexo 2.
 
-Los dos juicios de valor sobre una misma alerta divergen. La protección inmediata y la continuidad de la obra pueden entrar en conflicto. El análisis conserva ambos y no los reconcilia por decisión de formulación. El protocolo de alerta los resuelve con los comités, que son quienes responden por la decisión.
+Los dos juicios de valor sobre una misma alerta divergen. La protección inmediata y la continuidad de la obra pueden entrar en conflicto. El análisis conserva ambos y no los reconcilia por decisión de formulación. El protocolo de alerta los resuelve con los consejos, que son quienes responden por la decisión.
 
 ### A.2.4 Estructura del problema y dominio causal
 
@@ -89,7 +89,7 @@ Simon (1973) distingue los problemas bien estructurados de los mal estructurados
 :::TABLA t05 | Evaluación de las cuatro condiciones de estructura del problema
 | Condición | Evaluación | Evidencia |
 | --- | --- | --- |
-| C1. Criterio explícito para aceptar una solución | Se cumple con reserva | Las compuertas fijan R² ≥ 0,70, NRMSE ≤ 30 % y uso del tablero en al menos 50 % de los comités. Son umbrales propuestos por el proyecto y no por una norma |
+| C1. Criterio explícito para aceptar una solución | Se cumple con reserva | Las compuertas fijan R² ≥ 0,70, NRMSE ≤ 30 % y uso del tablero en al menos 50 % de los consejos. Son umbrales propuestos por el proyecto y no por una norma |
 | C2. Estados y variables pertinentes identificados | Se cumple con reserva | Quince variables con diccionario. Cuatro variables relevantes quedan fuera del modelo: distancia a la referencia, edad del sensor, episodios de humo y precipitación |
 | C3. Acciones disponibles identificadas | Se cumple | Cuatro alternativas evaluadas en la sección 13 |
 | C4. Relación entre acciones y resultados conocida con precisión | No se cumple | Las relaciones son HIE sin datos del territorio |
@@ -103,7 +103,7 @@ La clasificación del dominio causal sigue a Snowden y Boone (2007) y a Glouberm
 | Parte | Dominio | Evidencia | Observación que cambiaría la clasificación |
 | --- | --- | --- | --- |
 | Medición con corrección local | Complicado | La relación de causa y efecto existe y requiere análisis experto. La corrección con la estación cercana elevó el R² de menos de 0,2 a 0,81 en un caso (Bang et al., 2026). En S2, V03→V06 pesa 3 | Si el efecto de la corrección cambiara de signo entre sitios o semanas sin patrón, pasaría a complejo |
-| Adopción institucional y custodia | Complejo | S2 contiene 144 ciclos simples y 140 incluyen V15 | Si los tres departamentos ejecutaran una partida recurrente con protocolo firmado, pasaría a complicado |
+| Adopción institucional y custodia | Complejo | S2 contiene 144 ciclos simples y 140 incluyen V15 | Si los dos municipios ejecutaran una partida recurrente con protocolo firmado, pasaría a complicado |
 :::NOTA *Nota.* Elaboración propia. La clasificación es una inferencia del equipo formulador. Los ciclos se explican en A.5.
 
 ## A.3. Modelo estructural de quince variables
@@ -254,10 +254,10 @@ La {T:t21} declara dos estimandos. El primero es el efecto de la frecuencia de c
 :::TABLA t21 | Estimandos declarados y evaluación de su identificación
 | Campo | E1. Efecto de la calibración sobre el error de medición | E2. Efecto de la adopción institucional |
 | --- | --- | --- |
-| Intervención X | Frecuencia de calibración de los nodos (V07): calibración inicial por colocalización y recalibración tras cada rotación | Adopción formal del tablero por el comité o la alcaldía (V15) mediante acto administrativo |
+| Intervención X | Frecuencia de calibración de los nodos (V07): calibración inicial por colocalización y recalibración tras cada rotación | Adopción formal del tablero por el consejo o la alcaldía (V15) mediante acto administrativo |
 | Resultado Y | V06: error normalizado (NMAE) del PM2,5 de cada nodo frente a la referencia asignada, por semana | V14: personas bajo protección efectiva |
 | Población | Nodos colocalizados con una referencia, en el tramo 1 y en las rotaciones de los tramos 2 y 3 | Municipios con sitios de remoción |
-| Territorio | Caldas, Cundinamarca y Valle del Cauca | Caldas, Cundinamarca y Valle del Cauca |
+| Territorio | Manizales y Calarcá | Manizales y Calarcá |
 | Horizonte | 24 meses de ejecución | 36 meses: 24 de ejecución y 12 posteriores al cierre |
 | Contraste causal | Nivel de calibración alto frente a bajo en el mismo nodo | Sin grupo comparable ni regla de asignación |
 | Estimando | Efecto promedio en los tratados sobre el logaritmo del NMAE | No definido |
@@ -336,9 +336,9 @@ El proyecto no estima efectos causales, pero sí aplica pruebas que protegen la 
 | Prueba | Aplicación en el proyecto | Sección |
 | --- | --- | --- |
 | Plan de análisis preestablecido | Criterios de selección de sitios, métricas, reglas de dato válido y umbrales de aceptación se fijan antes del primer dato | 14.3 |
-| Referencia de medición | Tres monitores de referencia para 100 nodos y verificación gravimétrica con 240 muestras | 14.2 |
+| Referencia de medición | Conjunto de referencia rotativo, con monitor beta, monitor óptico y muestreador gravimétrico, para 100 nodos y 240 muestras gravimétricas | 14.2 |
 | Sincronización | El desfase de cada par nodo y referencia se estima por correlación cruzada y se corrige antes de calcular las métricas | 14.2 |
-| Validación fuera de muestra | Particiones por departamento y por periodo; todas las métricas se calculan fuera de muestra | 14.2 |
+| Validación fuera de muestra | Particiones por municipio y por periodo; todas las métricas se calculan fuera de muestra | 14.2 |
 | Valores atípicos | Se marcan y no se eliminan sin causa instrumental documentada | 14.2 |
 | Pérdida de nodos | Una reserva de 20 nodos y un gateway absorbe las fallas por maquinaria; la pérdida se informa por tramo | 13 y 14 |
 | Datos faltantes | Con completitud de pares de 75 %, el diseño ofrece 60.480 horas-nodo, y la trayectoria de horas válidas se controla cada semana | 14.2 |
@@ -366,7 +366,7 @@ La {T:t26} relaciona los enunciados del árbol de la sección 5.4 con los nodos 
 | Efectos indirectos | 1.2. Baja adopción institucional del tablero y de las alertas | V15 | Variable de resultado institucional y de sostenibilidad |
 | Efectos directos | 2.1. Índice local de calidad del aire sin fórmula validada y con error de entrada | V11 | La fórmula local del índice está por definir |
 | Efectos directos | 2.2. Tasa de falsas alarmas sin medir | V12 | Depende del umbral del índice y del error de medición |
-| Problema central | Los comités no disponen de mediciones de PM2,5 y PM10 con error conocido | V06 | La sección 5.4 formula el estado observable; V06 es el error del sensor |
+| Problema central | Los consejos no disponen de mediciones de PM2,5 y PM10 con error conocido | V06 | La sección 5.4 formula el estado observable; V06 es el error del sensor |
 | Causas directas | 3.1. Humedad relativa alta en los sitios | V03 | Exógena; sin variable de precipitación en el modelo |
 | Causas directas | 3.2. Fracción gruesa de PM10 sin corrección | V02 | V02 incluye la masa de V01 y se lee como fracción gruesa |
 | Causas directas | 3.3. PM2,5 sin referencia colocalizada | V01 | V01 es la concentración de PM2,5. Su efecto sobre el error solo se cuantifica con una referencia colocalizada |
@@ -432,7 +432,7 @@ La teoría del cambio es anidada. Tiene una versión ejecutiva y una cadena por 
 
 :::FIGURA f07 | Cuatro cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados | Nota. Elaboración propia con las secciones 12, 14 y 17 del Anexo 2. R1 a R7 son los resultados al mes 24 e I1 e I2 los impactos a 12 meses del cierre. SC-1 a SC-6 son los supuestos críticos de la {T:t30}. La flecha discontinua indica que el uso institucional justifica la custodia. Software: Python 3 y matplotlib.
 
-La línea discontinua vertical de la figura es el techo de rendición de cuentas. Los productos y los resultados R1 a R7 quedan bajo el techo: son responsabilidad del proyecto. Los impactos I1 e I2 quedan sobre el techo, porque dependen de decisiones de los comités y de las entidades custodias. El proyecto contribuye a ellos y fija metas con esa condición, como establece la sección 17.
+La línea discontinua vertical de la figura es el techo de rendición de cuentas. Los productos y los resultados R1 a R7 quedan bajo el techo: son responsabilidad del proyecto. Los impactos I1 e I2 quedan sobre el techo, porque dependen de decisiones de los consejos y de las entidades custodias. El proyecto contribuye a ellos y fija metas con esa condición, como establece la sección 17.
 
 Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyecto. La {T:t30} los presenta. Los cuatro primeros se verifican con criterios que las compuertas C1 y C2 ya aplican antes de liberar cada compra. Los dos últimos se verifican con los hitos H10 y H11, que no liberan compras.
 
@@ -441,7 +441,7 @@ Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyect
 | --- | --- | --- | --- | --- |
 | SC-1. Medición | El modelo de corrección se valida fuera de muestra frente a la referencia colocalizada | El error normalizado cumple R² ≥ 0,70 y NRMSE ≤ 30 % | La humedad y el sesgo por tamaño de partícula explican parte del error (V03→V06 pesa 3) y la corrección los compensa | Compuertas C1 y C2; indicador R1 |
 | SC-2. Energía y enlace | Los nodos conservan energía y enlace bajo maquinaria, polvo y humedad | El gemelo digital recibe datos suficientes: disponibilidad ≥ 90 % y pérdida de paquetes ≤ 10 % | La transmisión por eventos reduce el consumo y los nodos averiados se reponen (V05→V09 pesa 2) | Compuerta C2; indicador R2 |
-| SC-3. Uso institucional | La autoridad valida el índice local y los umbrales, y los comités los incorporan en sus protocolos | Las alertas inducen acciones de protección | Una alerta sin portador de decisión no modifica la conducta. V11→V14 y V13→V14 pesan 2 y son HIE | Compuerta C1 (uso en al menos 50 % de los comités); indicadores R3 e I1 |
+| SC-3. Uso institucional | La autoridad valida el índice local y los umbrales, y los consejos los incorporan en sus protocolos | Las alertas inducen acciones de protección | Una alerta sin portador de decisión no modifica la conducta. V11→V14 y V13→V14 pesan 2 y son HIE | Compuerta C1 (uso en al menos 50 % de los consejos); indicadores R3 e I1 |
 | SC-4. Custodia | Al menos un custodio por componente demuestra capacidad de absorción antes de cada tramo | El servicio continúa después del mes 24 sin un receptor público único | Cada tramo exige presupuesto aprobado, personal designado y competencia jurídica documentada. Sin ellos rige la cláusula de apertura | Compuerta C2 (convenios con partida); indicadores R5 e I2 |
 | SC-5. Acceso y desempeño del modelo | Se miden al menos seis eventos válidos con acceso acordado y el modelo se calibra con polvo del territorio | El gemelo alcanza FAC2 ≥ 0,5 y sesgo fraccional absoluto ≤ 0,3 fuera de muestra | La emisión depende de la distancia y del viento y se contrasta con mediciones (Dorevitch et al., 2006). El modelo se evalúa con métricas estándar (Chang y Hanna, 2004) | Hitos H10 y H11; indicador R6 |
 | SC-6. Uso de la evaluación previa | La entidad territorial o el propietario solicitan la evaluación antes de demoler y la leen como insumo | Se entregan al menos 12 evaluaciones y las medidas sugeridas entran en la decisión | Una estimación sin solicitante no modifica la decisión. El protocolo define quién solicita y cómo se usa | Hito H11, acta de adopción del protocolo e indicador R7 |
@@ -462,12 +462,12 @@ La {T:t31} registra las brechas, su efecto sobre las conclusiones y la ruta para
 :::TABLA t31 | Brechas del análisis, efecto y ruta de resolución
 | Brecha | Efecto sobre las conclusiones | Ruta de resolución | Responsable |
 | --- | --- | --- | --- |
-| Ninguna ficha fue adjudicada por un panel externo | Impide certificar la matriz y toda decisión que dependa de ella | Sesión de adjudicación con acta, que comience por los vínculos de la {T:t18} | Equipo formulador y actor del SNCTI |
+| Ninguna ficha fue adjudicada por un panel externo | Impide certificar la matriz y toda decisión que dependa de ella | Sesión de adjudicación con acta, que comience por los vínculos de la {T:t18} | Equipo formulador, con un panel externo de expertos |
 | Fuentes primarias sin lectura con localizador | El respaldo de 41 vínculos es secundario o interno | Leer Suresh et al. (2025), Bang et al. (2026), Ayala-Parra et al. (2026) y Tavella et al. (2026) con localizador de página | Universidad |
 | Variables omitidas: distancia a la referencia, edad del sensor, episodio de humo y precipitación | Pueden inflar la influencia de V03 y V07 | Evaluar la ampliación del modelo a 19 variables y rehacer A.4 y A.5 | Equipo formulador |
 | Ambigüedades del diccionario: V01 y V02 por inclusión, V10 nominal o efectiva y V06 del sensor o de la red | Cambian los vínculos V06→V01, V09→V10 y V10→V06 | Aclarar el diccionario antes de ratificar las fichas | Equipo formulador |
-| Fórmula local del índice de calidad del aire y salud (Stieb et al., 2008) | Los vínculos V01→V11 y V02→V11 dependen de ella | Definir la fórmula y validarla con la autoridad de salud | Municipio aliado y autoridad de salud |
-| Diseño sin asignación aleatoria | El efecto de la calibración sobre el error queda como HIE | Si la alianza lo decide, asignar al azar el nivel de calibración por semana en los nodos colocalizados, con registro de la asignación | Universidad y empresa tecnológica |
+| Fórmula local del índice de calidad del aire y salud (Stieb et al., 2008) | Los vínculos V01→V11 y V02→V11 dependen de ella | Definir la fórmula y validarla con la autoridad de salud | Municipios aliados y autoridad de salud |
+| Diseño sin asignación aleatoria | El efecto de la calibración sobre el error queda como HIE | Si la alianza lo decide, asignar al azar el nivel de calibración por semana en los nodos colocalizados, con registro de la asignación | Universidad Santo Tomás |
 | Gemelo predictivo sin evaluación con eventos reales al formular el proyecto | El desempeño del modelo y su dominio de validez no se conocen | Validar con al menos seis eventos y declarar el dominio (actividad 1.7) | Universidad |
 | Efecto de las medidas de control sin evidencia local | Las reducciones de emisión son supuestos | Medir el efecto cuando el contratista aplique la medida durante una campaña | Universidad y contratistas |
 | Población expuesta y carga de morbilidad sin variable de resultado | El modelo no alcanza la protección de las personas | Documentar la población en la sección 11 y mantener la morbilidad como hipótesis | Universidad |

@@ -15,7 +15,7 @@ from matplotlib.lines import Line2D
 
 OE = {o["id"]: o for o in A.m2.M0.OE}
 OG = ("Reducir el error de medición de material particulado de una red de 100 nodos de bajo costo, y asegurar el uso institucional de esa medición y de un gemelo predictivo de demolición validado en la gestión del riesgo, "
-      "mediante calibración dinámica en gateways, operación con energía y enlace redundantes, un laboratorio de modelación y custodia distribuida por tramos, en Caldas, Cundinamarca y Valle del Cauca, durante 24 meses.")
+      "mediante calibración dinámica en gateways, operación con energía y enlace redundantes, un laboratorio de modelación y custodia distribuida por tramos, en Manizales (Caldas) y Calarcá (Quindío), durante 24 meses.")
 NODOS, GW = A.m2.IDENT["nodos"], A.m2.IDENT["gateways"]
 DISCONT = (0, (4.5, 3))
 
@@ -74,13 +74,13 @@ def c9_f01():
 # (nombre, grupo, poder, interés); grupo: I interno, P externo primario, S externo secundario. Valores de la tabla de interesados de la
 # sección 10 (poder e interés en escala de 1 a 10; alto = 6 o más).
 INTERESADOS = [
-    ("IES ejecutora", "I", 8, 9), ("Gerencia de proyecto", "I", 7, 10), ("Equipo técnico y de formación", "I", 4, 9),
+    ("Universidad Santo Tomás", "I", 8, 9), ("Gerencia de proyecto", "I", 7, 10), ("Equipo técnico y de formación", "I", 4, 9),
     ("Equipo de apropiación y convenios", "I", 3, 8),
-    ("Empresa aliada", "P", 7, 8), ("Municipio aliado", "P", 7, 8), ("Actor del SNCTI aliado", "P", 6, 8), ("Financiador", "P", 10, 7),
-    ("Comités municipales", "P", 6, 8), ("Comités departamentales", "P", 7, 7), ("UNGRD", "P", 8, 5),
-    ("Alcaldías de los demás municipios", "P", 8, 4), ("Entidades custodias", "P", 6, 9), ("Personal operario de remoción", "P", 2, 9),
+    ("Municipios aliados", "P", 7, 8), ("Avanciencia", "P", 6, 8), ("Financiador", "P", 10, 7),
+    ("Consejos municipales", "P", 6, 8), ("Consejos departamentales", "P", 7, 7), ("UNGRD", "P", 8, 5),
+    ("Gobernaciones", "P", 8, 4), ("Entidades custodias", "P", 6, 9), ("Personal operario de remoción", "P", 2, 9),
     ("Población expuesta", "P", 2, 6),
-    ("Autoridades ambientales", "S", 7, 3), ("Laboratorios y evaluación externa", "S", 5, 3), ("Proveedores", "S", 3, 2),
+    ("Gestión y Medio Ambiente", "S", 3, 6), ("Autoridades ambientales", "S", 7, 3), ("Laboratorios y evaluación externa", "S", 5, 3), ("Proveedores", "S", 3, 2),
     ("Comunidad científica", "S", 2, 4),
 ]
 UMBRAL = 5.5
@@ -251,9 +251,9 @@ def c10_f01():
     for (n, g, p, i) in INTERESADOS:
         q = "cerca" if (p >= 6 and i >= 6) else ("satisfecho" if p >= 6 else ("informado" if i >= 6 else "monitorear"))
         cuadr.setdefault(q, []).append(n)
-    assert {k: len(v) for k, v in cuadr.items()} == {"cerca": 9, "satisfecho": 3, "informado": 4, "monitorear": 3}, cuadr
+    assert {k: len(v) for k, v in cuadr.items()} == {"cerca": 8, "satisfecho": 3, "informado": 5, "monitorear": 3}, cuadr
     H = 92
-    fig, ax = A.lienzo("Nueve de diecinueve interesados exigen gestión cercana por su poder y su interés",
+    fig, ax = A.lienzo("Ocho de diecinueve interesados exigen gestión cercana por su poder y su interés",
                        "Posición de cada interesado por interés (eje x) y poder (eje y), escala de 1 a 10; alto = 6 o más", H)
     a = A.subeje(fig, ax, 9, 11.5, 99, H - 1.0)
     a.set_xlim(0.4, 10.8); a.set_ylim(0.4, 10.8)
@@ -267,8 +267,8 @@ def c10_f01():
     a.add_patch(Rectangle((UMBRAL, y0), x1 - UMBRAL, UMBRAL - y0, fc=GRIS, ec="none", zorder=0))
     a.axvline(UMBRAL, color=T, lw=1.1, zorder=1)
     a.axhline(UMBRAL, color=T, lw=1.1, zorder=1)
-    nom = [("Mantener satisfecho (3)", 0.55, 10.55, "left"), ("Gestionar de cerca (9)", 10.65, 10.55, "right"),
-           ("Monitorear (3)", 0.55, 0.75, "left"), ("Mantener informado (4)", 10.65, 0.75, "right")]
+    nom = [("Mantener satisfecho (3)", 0.55, 10.55, "left"), ("Gestionar de cerca (8)", 10.65, 10.55, "right"),
+           ("Monitorear (3)", 0.55, 0.75, "left"), ("Mantener informado (5)", 10.65, 0.75, "right")]
     qt = []
     for s, x, y, ha in nom:
         qt.append(a.text(x, y, s, fontsize=P(F_B), fontweight="bold", color=T, ha=ha, va="center", zorder=5))
@@ -326,13 +326,13 @@ def c12_f01():
     xo = [xl + i * (wo + go) for i in range(3)]
     corto = {"OE1": "Corregir la interferencia de humedad y de fracción gruesa y validar el gemelo predictivo",
              "OE2": f"Mantener la disponibilidad de {NODOS} nodos y {GW} gateways y poner en operación el laboratorio de modelación",
-             "OE3": "Lograr el uso del tablero y del protocolo de alerta por los comités y adoptar la evaluación previa de demolición"}
+             "OE3": "Lograr el uso del tablero y del protocolo de alerta por los consejos y adoptar la evaluación previa de demolición"}
     metas = {"OE1": "R² ≥ 0,70 y NRMSE ≤ 30\u00a0%; FAC2 ≥ 0,5 en 6 eventos",
              "OE2": "Disponibilidad ≥ 90\u00a0%; laboratorio dotado al mes 11",
-             "OE3": "Uso en ≥ 75\u00a0% de los comités; 12 evaluaciones previas"}
-    medios = [f"Colocalización con {A.m2.IDENT['referencias']} monitores de referencia y modelo de corrección en el gateway; validación con mediciones en demoliciones reales",
+             "OE3": "Uso en 3 de los 4 consejos; 12 evaluaciones previas"}
+    medios = ["Banco de calibración, conjunto de referencia rotativo y modelo de corrección en el gateway; validación con mediciones en demoliciones reales",
               "Energía con 14 días de autonomía, enlace satelital y almacenamiento local de 7 días; laboratorio de modelación con gemelo predictivo",
-              "Co-diseño con los comités, formación y convenios de custodia por tramo; protocolo de evaluación previa de demolición"]
+              "Co-diseño con los consejos, formación y convenios de custodia por tramo; protocolo de evaluación previa de demolición"]
     for i, k in enumerate(("OE1", "OE2", "OE3")):
         A.caja(ax, xo[i], yb[2], wo, alt[2], [(k, "b"), (corto[k], "n"), ("Meta: " + metas[k], "i")], relleno=MEDIO, gap=0.8)
         A.caja(ax, xo[i], yb[3], wo, alt[3], medios[i], relleno=CAJA)

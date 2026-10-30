@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Figuras del Anexo 2: c6_f01 (línea de tiempo de antecedentes 2012-2026), c6_f02 (dispersión TRL por IRL de los 41 documentos del
 corpus, con la banda del proyecto de TRL 4 a 8) y c8_f01 (demanda territorial, proyecto, resultado y plan de desarrollo por departamento).
-Datos: A2/v2/m2.py (nodos, comités, tramos), tabla de TRL e IRL del informe de vigilancia tecnológica (work/informe.md, filas G-01 a G-42;
+Datos: A2/v2/m2.py (nodos, consejos, tramos), tabla de TRL e IRL del informe de vigilancia tecnológica (work/informe.md, filas G-01 a G-42;
 la misma lectura de la figura de la línea base) y años de las obras del banco cerrado de referencias (A2/refs/BANCO_REFERENCIAS.md).
 Ejecución: python3 c6_8_figs.py  -> A2/figs/out/c6_f01.png, c6_f02.png, c8_f01.png"""
 import os, sys, re, collections
@@ -138,31 +138,31 @@ def c6_f02():
 
 # ------------------------------------------------------------------ c8_f01
 def c8_f01():
-    nodos = {"Caldas": 33, "Cundinamarca": 34, "Valle del Cauca": 33}
+    nodos = {"Manizales (Caldas)": 50, "Calarcá (Quindío)": 50}
     assert sum(nodos.values()) == A.m2.IDENT["nodos"]
-    plan = {"Caldas": "«Caldas 2024-2027»", "Cundinamarca": "«Gobernando: Más que un Plan»", "Valle del Cauca": "«Liderazgo que Transforma»"}
-    H = 78.5
-    fig, ax = A.lienzo("Cada departamento conecta una demanda territorial con nodos, comités y plan de desarrollo",
-                       "Relación entre la demanda, el proyecto, el resultado medible y el plan de desarrollo de cada departamento", H)
+    consejos = {"Manizales (Caldas)": "Consejo municipal de Manizales y consejo departamental de Caldas", "Calarcá (Quindío)": "Consejo municipal de Calarcá y consejo departamental del Quindío"}
+    H = 60.0
+    fig, ax = A.lienzo("Cada municipio conecta una demanda territorial con nodos, consejos y planes de desarrollo",
+                       "Relación entre la demanda, el proyecto, el resultado medible y los planes de desarrollo de cada municipio", H)
     ga = 3.6
     wc = (98 - 3 * ga) / 4
     xs = [1.0 + i * (wc + ga) for i in range(4)]
-    cab = ["Demanda territorial", "Proyecto", "Resultado medible", "Plan Departamental de Desarrollo"]
+    cab = ["Demanda territorial", "Proyecto", "Resultado medible", "Planes de desarrollo municipal y departamental"]
     y = H - 0.5
     for x, t in zip(xs, cab):
         A.lineas(ax, x + wc / 2, y, t, F_B, True, ha="center", ancho=wc)
     y -= 6.2
-    hr = 19.0
+    hr = 21.5
     for dep in nodos:
         A.txt(ax, 1, y - 1.2, dep, F_B, True, ha="left")
         ax.plot([1, 99], [y - 3.0, y - 3.0], color=MEDIO, lw=1.0, zorder=1)
         yb = y - 3.6 - hr
         A.caja(ax, xs[0], yb, wc, hr, [("por diligenciar", "i")], relleno=CAJA, ls=PUNTEADO, lw=1.6)
-        A.caja(ax, xs[1], yb, wc, hr, [("4 municipios y sus comités de gestión del riesgo", "n"), (f"{nodos[dep]} nodos operativos", "b"),
-                                       ("1 monitor de referencia", "n")], relleno=CLARO, gap=0.6)
+        A.caja(ax, xs[1], yb, wc, hr, [(consejos[dep], "n"), (f"{nodos[dep]} nodos operativos", "b"),
+                                       ("Conjunto de referencia rotativo", "n")], relleno=CLARO, gap=0.6)
         A.caja(ax, xs[2], yb, wc, hr, [("Uso institucional del tablero", "n"), ("Reducción de falsas alarmas", "n"),
                                        ("Activación del protocolo de alerta", "n")], relleno=MEDIO, gap=0.7)
-        A.caja(ax, xs[3], yb, wc, hr, [(plan[dep], "n"), ("eje y programa por diligenciar", "i")], relleno=CAJA, ls=PUNTEADO, lw=1.6, gap=0.8)
+        A.caja(ax, xs[3], yb, wc, hr, [("Planes por diligenciar", "i"), ("eje y programa de cada plan", "i")], relleno=CAJA, ls=PUNTEADO, lw=1.6, gap=0.8)
         for i in range(3):
             A.flecha(ax, (xs[i] + wc + 0.4, yb + hr / 2), (xs[i + 1] - 0.4, yb + hr / 2))
         y = yb - 1.4
