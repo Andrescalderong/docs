@@ -76,7 +76,7 @@ poner(P[95], "Las partes abajo firmantes convienen la intención de acuerdo que 
       "iniciar los mecanismos de protección correspondientes garantizando el respeto de los porcentajes que a cada una de las partes "
       "corresponden sobre los resultados; por su parte, las demás entidades se comprometen a disponer de los recursos que sean necesarios "
       "para facilitar y apoyar que se conceda por la autoridad competente el mecanismo de protección que se determine. Avanciencia "
-      "acompaña la valoración, la protección y el registro de los resultados. iv) La custodia y cuidado de los productos tecnológicos y "
+      "ejecuta la valoración, la protección y el registro de los resultados. iv) La custodia y cuidado de los productos tecnológicos y "
       "prototipos que se materialicen estará a cargo de la Universidad Santo Tomás durante la duración del proyecto. A la finalización y "
       "liquidación del mismo se definirá la custodia y cuidado de tales bienes, con los municipios de Manizales y de Calarcá como custodios "
       "locales de los componentes de su jurisdicción. v) Los derechos morales de autor que correspondan a estudiantes, profesores o "
@@ -173,10 +173,10 @@ celda(15, 0, "Aliado 4")
 fila_ultima(20, "Desarrollar, validar y transferir, en Manizales y en Calarcá, una red de 100 nodos de medición de PM2,5 y PM10 con corrección en el borde, "
             "un gemelo digital y un laboratorio de modelación que estima la exposición esperada antes de cada demolición. La alianza busca que "
             "los consejos de gestión del riesgo decidan alertas con mediciones de error conocido, en el marco de la emergencia del sismo del 10 de agosto de 2026.")
-fila_ultima(21, "Universidad Santo Tomás: ejecuta y administra los recursos del SGR; lidera los objetivos 1 y 2, la apropiación social y la custodia "
-            "durante la ejecución. Municipios de Manizales y de Calarcá: lideran el uso institucional del tablero y del protocolo de alerta en su "
-            "jurisdicción (objetivo 3), facilitan el acceso a sitios y demoliciones y asumen la custodia local. Avanciencia: gestiona la vigilancia "
-            "tecnológica, la propiedad intelectual, la valoración y los convenios de transferencia y custodia. Gestión y Medio Ambiente: aporta equipos "
+fila_ultima(21, "Universidad Santo Tomás: ejecuta y administra los recursos del SGR; lidera los objetivos 1 y 2, contrata con Avanciencia la apropiación social y "
+            "la transferencia y asume la custodia durante la ejecución. Municipios de Manizales y de Calarcá: lideran el uso institucional del tablero y del protocolo de alerta en su "
+            "jurisdicción (objetivo 3), facilitan el acceso a sitios y demoliciones y asumen la custodia local. Avanciencia: ejecuta, por contrato con la universidad, "
+            "la apropiación social del conocimiento (co-diseño, jornadas, cartillas y formación de custodios), la vigilancia tecnológica, la propiedad intelectual, la valoración y los convenios de transferencia y custodia. Gestión y Medio Ambiente: aporta equipos "
             "de monitoreo y apoyo técnico en el diagnóstico, la colocalización y la verificación final en Manizales, y logística de los tramos 2 y 3. "
             "Cada integrante certifica su contrapartida y designa un responsable institucional.")
 fila_ultima(23, "Comité directivo de la alianza, con un delegado con capacidad de decisión de cada integrante [Diligenciar: nombres]. Lo preside la "
@@ -186,7 +186,7 @@ fila_ultima(25, "Investigador principal de la Universidad Santo Tomás [Diligenc
             "el especialista en metrología, el investigador líder en modelación y delegados técnicos de Avanciencia y de Gestión y Medio Ambiente.")
 fila_ultima(26, "Universidad Santo Tomás, como entidad ejecutora, mediante su dependencia financiera [Diligenciar: dependencia y responsable].")
 fila_ultima(27, "Mesa de uso institucional con delegados de los municipios de Manizales y de Calarcá, los consejos de gestión del riesgo y la coordinación de "
-            "apropiación social. Evaluación externa independiente en los meses 12 y 24.")
+            "apropiación social de Avanciencia. Evaluación externa independiente en los meses 12 y 24.")
 fila_ultima(30, "La Universidad Santo Tomás administra el proyecto con su sistema de gestión de proyectos y su manual de contratación. La gerencia lleva el "
             "plan de trabajo, la matriz de riesgos y el registro de permisos, y entrega ocho informes trimestrales a la supervisión. Cada aliado "
             "reporta trimestralmente su contrapartida con soportes. El convenio de la alianza se firma antes del acta de inicio.")

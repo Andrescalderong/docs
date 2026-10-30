@@ -1,8 +1,21 @@
 # Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE, SIGP 143329)
 
+## Versión 6 (30 de octubre de 2026): alianza de cinco integrantes y revisión de cohesión
+
+La carpeta `v6_alianza_cinco/` contiene la versión vigente, ajustada al Anexo 3 versión 6 y revisada en cohesión de párrafos (sin cambiar cifras, fuentes, responsables ni grado de certeza).
+
+- `anexo_2._documento_tecnico_15_v6.docx` y `.pdf`: Anexo 2 (292 páginas, 2,8 MB).
+- `anexo_2._documento_tecnico_15_v6_con_cambios.docx`: copia con control de cambios frente a la versión 5.
+- `anexo_a._analisis_problema_publico_y_estructura_causal_v6.docx` y `.pdf`: Anexo A.
+- `matriz_correspondencia_v6.xlsx`: 97 partidas con entidad ejecutora; conciliación SGR 13.999.405.215 COP, contrapartida 1.774.000.000 COP.
+- `Relacion_cambios_y_vacios_v6.docx` y `.md`: cambios relevantes y vacíos por decidir.
+- `complementarios/`: Anexo 1 con cinco firmas, estrategia ASC ejecutada por Avanciencia, plan de sostenibilidad v3, certificados de precios con CA-05 y VI-01 a VI-03, correo a la universidad.
+
+Cambios principales: Gestión y Medio Ambiente se incorpora como aliado del sector productivo (110.000.000 COP en especie y 150.000.000 COP en efectivo, 1,07 % del SGR, criterio 7); Avanciencia ejecuta por contrato la apropiación social (892.587.696 COP) y la transferencia; PD-02 pasa a la actividad 1.1; la actividad 3.4 queda en 39.000.000 COP; el aval de ética es obligatorio.
+
 ## Versión 5 (30 de octubre de 2026): alianza Universidad Santo Tomás, Manizales, Calarcá y Avanciencia
 
-La carpeta `v5_alianza_USTA/` contiene la versión vigente, ajustada al Anexo 3 versión 5 y a los cambios aprobados de alianza, territorio y presupuesto.
+La carpeta `v5_alianza_USTA/` contiene la versión anterior, ajustada al Anexo 3 versión 5 y a los cambios aprobados de alianza, territorio y presupuesto.
 
 | Archivo | Contenido |
 | --- | --- |

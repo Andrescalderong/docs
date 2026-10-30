@@ -221,13 +221,14 @@ def c22_f01():
 def c26_f01():
     OEN = [("OE1", "Medición verificada"), ("OE2", "Disponibilidad de la red"), ("OE3", "Uso institucional y custodia")]
     lid = alianza.LIDERA
-    nombres = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia (OTRI)"}
+    nombres = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia (OTRI)", "GMA": "Gestión y Medio Ambiente"}
     aportes = {"IES": "Cinco aportes: 1.244 millones en especie", "MAN": "Un aporte: 60 millones en especie",
-               "CAL": "Un aporte: 60 millones en especie", "AVA": "Un aporte: 150 millones en especie"}
-    for ac, txt in (("IES", 1.244e9), ("MAN", 6e7), ("CAL", 6e7), ("AVA", 1.5e8)):
+               "CAL": "Un aporte: 60 millones en especie", "AVA": "Un aporte: 150 millones en especie",
+               "GMA": "Dos aportes: 110 millones en especie y 150 millones en efectivo"}
+    for ac, txt in (("IES", 1.244e9), ("MAN", 6e7), ("CAL", 6e7), ("AVA", 1.5e8), ("GMA", 2.6e8)):
         tot = sum(r["total"] for r in m2.CONTRA if r["fuente"] == ac)
         assert abs(tot - txt) < 1, (ac, tot)
-    L = Lienzo(10, 9.2, h1="La alianza reparte capacidades entre cuatro integrantes y ocho aportes de contrapartida",
+    L = Lienzo(10, 10.6, h1="La alianza reparte capacidades entre cinco integrantes y diez aportes de contrapartida",
                h2="Función de cada integrante por objetivo específico y actividades en que participa; aportes de contrapartida de cada uno")
     xl, wl = 1.0, 28.0
     xc0, wc, gp = 31.0, 22.0, 0.8
@@ -254,7 +255,7 @@ def c26_f01():
                 L.caja(x, y - rh, wc, rh, cuerpo="Sin función", fc=GRIS, ls="--", pad=0.8, lw=1.0)
         y -= rh + 0.9
     # actores que rodean
-    L.t(xl, y - 1.0, "Actores de cambio, actores técnicos y proveedores: consejos de gestión del riesgo, custodios, Gestión y Medio Ambiente, laboratorio acreditado, servicio de plataforma geoespacial y evaluador externo.",
+    L.t(xl, y - 1.0, "Actores de cambio, actores técnicos y proveedores: consejos de gestión del riesgo, custodios, laboratorio acreditado, servicio de plataforma geoespacial y evaluador externo.",
         w=98, va="top")
     L.guardar("c26_f01")
 

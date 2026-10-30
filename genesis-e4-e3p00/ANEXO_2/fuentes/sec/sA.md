@@ -1,15 +1,15 @@
 %% PREFIJO: A
 # ANEXO A. ANÁLISIS DEL PROBLEMA PÚBLICO Y DE LA ESTRUCTURA CAUSAL
 
-Este anexo documenta el análisis que sustenta las secciones 5, 12, 13, 14 y 17 del Anexo 2. Reúne cinco componentes. Son la construcción del problema público, el modelo estructural de quince variables y la clasificación de variables para la inferencia causal. Son también el árbol de problemas completo y la teoría del cambio. El anexo no sustituye ninguna sección del Anexo 2 y no agrega compromisos al proyecto. Cada resultado indica la sección que lo usa. Se separa del cuerpo del documento para conservar la claridad del Anexo 2. Los títulos de este se mantienen textuales según el numeral 10.6 de los TdR.
+Este anexo documenta el análisis que sustenta las secciones 5, 12, 13, 14 y 17 del Anexo 2 y reúne cinco componentes: la construcción del problema público, el modelo estructural de quince variables, la clasificación de variables para la inferencia causal, el árbol de problemas completo y la teoría del cambio. El anexo no sustituye ninguna sección del Anexo 2 ni agrega compromisos al proyecto, y cada resultado indica la sección que lo usa. Se separa del cuerpo del documento para conservar la claridad del Anexo 2, cuyos títulos se mantienen textuales según el numeral 10.6 de los TdR.
 
 ## A.1. Propósito, alcance y lectura del anexo
 
 Los términos de referencia exigen un problema central con causas y efectos (Ministerio de Ciencia, Tecnología e Innovación [MinCiencias], 2026). El Anexo 2 presenta el árbol resultante y sus indicadores. Este anexo muestra cómo se obtuvo y qué límites tiene. Así permite al evaluador verificar que el diseño del proyecto responde a una estructura de causas y no a una preferencia por una solución.
 
-Dos reglas orientan la lectura. La primera se refiere al tipo de afirmación. Una hipótesis de influencia estructural (HIE) es un juicio ordinal sobre cuánto una variable condiciona a otra dentro del modelo. No es un efecto estimado con datos (Pearl y Mackenzie, 2018). Todas las relaciones de este anexo son HIE, salvo que el texto indique otra cosa.
+Dos reglas orientan la lectura. La primera se refiere al tipo de afirmación: una hipótesis de influencia estructural (HIE) es un juicio ordinal sobre cuánto una variable condiciona a otra dentro del modelo, y no un efecto estimado con datos (Pearl y Mackenzie, 2018). Todas las relaciones de este anexo son HIE, salvo que el texto indique otra cosa.
 
-La segunda regla se refiere al origen de los valores. Los valores de influencia son juicios de formulación, cada uno con su mecanismo, su explicación rival y su nivel de confianza. Ningún panel externo los ha adjudicado. La sección A.11 propone la ruta para hacerlo.
+La segunda regla se refiere al origen de los valores: los valores de influencia son juicios de formulación, cada uno con su mecanismo, su explicación rival y su nivel de confianza, y ningún panel externo los ha adjudicado; la sección A.11 propone la ruta para hacerlo.
 
 El análisis estructural cubre el problema de medición, con quince variables. El laboratorio de modelación atiende una brecha complementaria de predicción, que la sección 5.2.2 del Anexo 2 describe y que no integra la matriz. La subsección A.10.3 trata su teoría del cambio y sus supuestos críticos. No se le asignan fichas ni valores de influencia.
 
@@ -28,7 +28,7 @@ La {T:t01} relaciona cada apartado con la sección del Anexo 2 que lo usa.
 
 ## A.2. Construcción del problema público
 
-El problema público se construye antes de modelar sus causas. Esta sección responde cinco preguntas. Qué fenómeno se observa, quién lo representa y de qué manera, qué juicios lo sostienen, qué estructura tiene y en qué dominio causal se ubica.
+El problema público se construye antes de modelar sus causas, y por eso esta sección responde cinco preguntas: qué fenómeno se observa, quién lo representa y de qué manera, qué juicios lo sostienen, qué estructura tiene y en qué dominio causal se ubica.
 
 ### A.2.1 Delimitación del fenómeno
 
@@ -51,9 +51,9 @@ La {T:t02} delimita el fenómeno con un campo por característica. El enunciado 
 
 ### A.2.2 Representación del problema y marcos rivales
 
-Bacchi (2009) propone preguntar cómo se representa un problema, qué supuestos sostienen esa representación, qué queda sin problematizar y qué efectos produce. Schön y Rein (1994) señalan que cada parte interesada encuadra de manera distinta una misma situación. Las dos lecturas orientan el análisis siguiente.
+Bacchi (2009) propone preguntar cómo se representa un problema, qué supuestos sostienen esa representación, qué queda sin problematizar y qué efectos produce, y Schön y Rein (1994) señalan que cada parte interesada encuadra de manera distinta una misma situación. Ambas lecturas orientan el análisis siguiente.
 
-El problema se representa como una limitación técnica de medición y de comunicaciones. Tres supuestos sostienen esa representación. La causa principal es metrológica y energética. La respuesta es tecnológica. Y los consejos adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos. Son la emisión en la fuente, las acciones que activa la alerta y el umbral normativo aplicable. Es también la responsabilidad de contratistas y administradoras de riesgos laborales (ARL). La emisión en la fuente deja de estar del todo sin problematizar, porque el gemelo predictivo la estima antes de una demolición. El proyecto no la controla.
+El problema se representa como una limitación técnica de medición y de comunicaciones, sostenida por tres supuestos: que la causa principal es metrológica y energética, que la respuesta es tecnológica y que los consejos adoptan el tablero mientras una entidad custodia la red. Quedan sin problematizar cuatro asuntos: la emisión en la fuente, las acciones que activa la alerta, el umbral normativo aplicable y la responsabilidad de contratistas y administradoras de riesgos laborales (ARL). La emisión en la fuente deja de estar del todo sin problematizar, porque el gemelo predictivo la estima antes de una demolición, aunque el proyecto no la controla.
 
 La representación también produce un efecto sobre los afectados. Operarios y comunidades figuran como receptores de alertas. Para reducir ese efecto, el proyecto los vincula al co-diseño de los umbrales y del protocolo en los talleres de la sección 19. La {T:t03} registra los tres marcos rivales y el tratamiento que reciben.
 
@@ -67,7 +67,7 @@ La representación también produce un efecto sobre los afectados. Operarios y c
 
 ### A.2.3 Núcleo normativo y sistema apreciativo
 
-Los juicios que sostienen el problema son de tres tipos: de realidad, de valor e instrumentales (Vickers, 1965). Cada juicio tiene un portador. Los TdR fijan el tope de 14.000 millones de pesos, la duración máxima de 24 meses y las reglas de elegibilidad (MinCiencias, 2026). La Ley 1523 de 2012 organiza la gestión del riesgo en los territorios. La {T:t04} reúne los juicios y su tratamiento.
+Los juicios que sostienen el problema son de tres tipos, de realidad, de valor e instrumentales (Vickers, 1965), y cada uno tiene un portador: los TdR fijan el tope de 14.000 millones de pesos, la duración máxima de 24 meses y las reglas de elegibilidad (MinCiencias, 2026), y la Ley 1523 de 2012 organiza la gestión del riesgo en los territorios. La {T:t04} reúne los juicios y su tratamiento.
 
 :::TABLA t04 | Juicios de realidad, de valor e instrumentales que sostienen el problema
 | Tipo | Juicio | Portador o respaldo | Tratamiento en el proyecto |
@@ -84,7 +84,7 @@ Los dos juicios de valor sobre una misma alerta divergen. La protección inmedia
 
 ### A.2.4 Estructura del problema y dominio causal
 
-Simon (1973) distingue los problemas bien estructurados de los mal estructurados según cuatro condiciones. La {T:t05} las evalúa. Dos condiciones se cumplen con reserva, una se cumple y una no. El problema es parcialmente estructurado.
+Simon (1973) distingue los problemas bien estructurados de los mal estructurados según cuatro condiciones, que la {T:t05} evalúa: dos se cumplen con reserva, una se cumple y una no, de modo que el problema es parcialmente estructurado.
 
 :::TABLA t05 | Evaluación de las cuatro condiciones de estructura del problema
 | Condición | Evaluación | Evidencia |
@@ -112,7 +112,7 @@ El modelo estructural reúne quince variables en tres bloques de cinco: físico,
 
 {{TABLA t07 variables}}
 
-Una revisión de los 105 pares posibles de variables examinó el solapamiento de las definiciones. Resultaron 101 pares únicos, un solapamiento definicional (V01 y V02), dos ambigüedades condicionales y una dependencia funcional. Las ambigüedades se registran en A.11.
+Una revisión de los 105 pares posibles de variables examinó el solapamiento de las definiciones y halló 101 pares únicos, un solapamiento definicional (V01 y V02), dos ambigüedades condicionales y una dependencia funcional; las ambigüedades se registran en A.11.
 
 La influencia directa se valora con una escala ordinal de 0 a 3. Los valores no expresan proporciones, probabilidades ni magnitudes. La {T:t08} presenta las anclas, que se fijaron antes de puntuar. La confianza en cada valor es un eje distinto y no multiplica el peso. Cada valor se acompaña de un dominio admisible.
 
@@ -125,25 +125,25 @@ La influencia directa se valora con una escala ordinal de 0 a 3. Los valores no 
 | 3 | Influencia directa fuerte: determina la variable destino casi de forma mecánica, sin agente intermedio | V05→V02 y V06→V11: la remoción mecánica genera PM10 y el error del sensor entra al índice sin acción humana intermedia |
 :::NOTA *Nota.* Elaboración propia. El valor 0 no equivale a un dato faltante: declara la razón de la ausencia.
 
-El equipo formulador valoró cada par en los dos sentidos, con una ficha por par. Son 105 fichas y 210 direcciones. Cada ficha declara el mecanismo o la razón del cero, el fundamento, el valor, la explicación rival, la confianza y el dominio admisible. El orden de las fichas se fijó al azar antes de valorar, con la semilla 20261011. Alterna pares de un mismo bloque y de bloques distintos. La paridad es de atención y no impone simetría de valores.
+El equipo formulador valoró cada par en los dos sentidos, con una ficha por par, para un total de 105 fichas y 210 direcciones. Cada ficha declara el mecanismo o la razón del cero, el fundamento, el valor, la explicación rival, la confianza y el dominio admisible. El orden de las fichas se fijó al azar antes de valorar, con la semilla 20261011, y alterna pares de un mismo bloque y de bloques distintos; esa paridad es de atención y no impone simetría de valores.
 
 De las 210 direcciones, 162 tienen valor 0 con la razón de ausencia o de mediación declarada. Las otras 48 tienen valor positivo: 25 de peso 1, 16 de peso 2 y 7 de peso 3. Cada valor es un juicio de formulación y ninguno fue adjudicado por un panel externo.
 
 ## A.4. Análisis de Vester
 
-El método de Vester (2007) clasifica cada variable por su influencia total y su dependencia total. La influencia total es la suma de la fila de la matriz y la dependencia total es la suma de la columna. Una variable es crítica si supera la mediana en ambos ejes. Es activa si supera solo la de influencia y reactiva si supera solo la de dependencia. Es autónoma relativa si no supera ninguna. Una variable que iguala un corte queda en la frontera.
+El método de Vester (2007) clasifica cada variable por su influencia total, que es la suma de la fila de la matriz, y su dependencia total, que es la suma de la columna. Una variable es crítica si supera la mediana en ambos ejes, activa si supera solo la de influencia, reactiva si supera solo la de dependencia y autónoma relativa si no supera ninguna; una variable que iguala un corte queda en la frontera.
 
 ### A.4.1 Escenarios de la matriz
 
-El análisis usa cinco escenarios, que la {T:t09} resume. S2 es la matriz de trabajo y se deriva de las 105 fichas. S0 y S1 son matrices anteriores del equipo formulador y se conservan para comparar. S3 y S4 toman el mínimo y el máximo admisible de cada vínculo y funcionan como envolventes de sensibilidad. Ninguno de los cinco predice resultados.
+El análisis usa cinco escenarios, que la {T:t09} resume. S2 es la matriz de trabajo y se deriva de las 105 fichas; S0 y S1 son matrices anteriores del equipo formulador que se conservan para comparar; y S3 y S4 toman el mínimo y el máximo admisible de cada vínculo y funcionan como envolventes de sensibilidad. Ninguno de los cinco predice resultados.
 
 {{TABLA t09 escenarios}}
 
-S2 agrega 26 vínculos que S0 codifica como cero y no elimina ninguno de los de S0. Modifica el valor de 7 vínculos heredados. Todos esos cambios tienen mecanismo declarado en las fichas. La densidad de S2, de {{CAUSAL_DENSIDAD}}, resulta de los juicios y no fue un objetivo.
+S2 agrega 26 vínculos que S0 codifica como cero, no elimina ninguno de los de S0 y modifica el valor de 7 vínculos heredados, todos con mecanismo declarado en las fichas. La densidad de S2, de {{CAUSAL_DENSIDAD}}, resulta de los juicios y no fue un objetivo.
 
 ### A.4.2 Matriz de trabajo S2
 
-La {F:f01} muestra la matriz de influencia directa de S2 con sombreado por peso. La {T:t10} la presenta con los valores exactos. La matriz tiene {{CAUSAL_ARISTAS}} vínculos no nulos: {{CAUSAL_W3}} de peso 3, {{CAUSAL_W2}} de peso 2 y {{CAUSAL_W1}} de peso 1. La suma de los pesos es {{CAUSAL_SUMA}}.
+La {F:f01} muestra la matriz de influencia directa de S2 con sombreado por peso, y la {T:t10} la presenta con los valores exactos. La matriz tiene {{CAUSAL_ARISTAS}} vínculos no nulos, {{CAUSAL_W3}} de peso 3, {{CAUSAL_W2}} de peso 2 y {{CAUSAL_W1}} de peso 1, cuya suma de pesos es {{CAUSAL_SUMA}}.
 
 :::FIGURA f01 | Siete vínculos de peso 3 y 16 de peso 2 concentran la influencia directa del escenario de trabajo | Nota. Elaboración propia con las 105 fichas bidireccionales. Los pesos son ordinales y las relaciones son hipótesis de influencia estructural. TA es la influencia total de la fila y TP la dependencia total de la columna. Software: Python 3 y matplotlib.
 
@@ -151,7 +151,7 @@ La {F:f01} muestra la matriz de influencia directa de S2 con sombreado por peso.
 
 ### A.4.3 Clasificación de las variables en S2
 
-La {F:f02} ubica las variables en el plano de Vester de S2, con cortes por mediana en 5 en ambos ejes. La {T:t11} detalla la influencia, la dependencia y la clase de cada una. Con el corte por mediana, V02, V06 y V15 son críticas. V03, V04 y V05 son activas. V09 y V14 son reactivas. V08 y V13 son autónomas relativas. V01, V07, V10, V11 y V12 quedan en la frontera porque igualan un corte.
+La {F:f02} ubica las variables en el plano de Vester de S2, con cortes por mediana en 5 en ambos ejes, y la {T:t11} detalla la influencia, la dependencia y la clase de cada una. Con ese corte, V02, V06 y V15 son críticas; V03, V04 y V05, activas; V09 y V14, reactivas; y V08 y V13, autónomas relativas, mientras que V01, V07, V10, V11 y V12 quedan en la frontera porque igualan un corte.
 
 :::FIGURA f02 | V02, V06 y V15 quedan en el cuadrante crítico del escenario de trabajo | Nota. Elaboración propia con la matriz S2. Los cortes por mediana son 5 en ambos ejes. La clasificación describe posiciones estructurales y no acredita causalidad ni prioridad de inversión. Software: Python 3 y matplotlib.
 
@@ -161,7 +161,7 @@ El contraste con la media cambia la clase de cinco variables. V01 pasa a activa,
 
 ### A.4.4 Estabilidad entre escenarios
 
-La {F:f04} compara la clase por mediana de cada variable en los cinco escenarios, y la {T:t12} la lista. Solo tres variables conservan la clase en los cinco: V05 es activa, V06 es crítica y V14 es reactiva. Las demás cambian al variar los juicios. Esa inestabilidad limita cualquier afirmación sobre el papel de una variable concreta.
+La {F:f04} compara la clase por mediana de cada variable en los cinco escenarios, y la {T:t12} la lista. Solo tres variables conservan la clase en los cinco, V05 como activa, V06 como crítica y V14 como reactiva, y las demás cambian al variar los juicios. Esa inestabilidad limita cualquier afirmación sobre el papel de una variable concreta.
 
 :::FIGURA f04 | Solo V05, V06 y V14 conservan su clase directa en los cinco escenarios | Nota. Elaboración propia con las matrices S0 a S4. La clase se calcula con el corte por mediana. El marco grueso marca las variables con clase estable. Software: Python 3 y matplotlib.
 
@@ -169,9 +169,9 @@ La {F:f04} compara la clase por mediana de cada variable en los cinco escenarios
 
 ### A.4.5 Vínculos no nulos y su respaldo
 
-La {T:t13} lista los 48 vínculos no nulos de S2 con su peso, su dominio admisible, su signo, su confianza, su mecanismo y su respaldo. Dos vínculos se apoyan en estudios publicados que cita el informe de vigilancia tecnológica: V03→V06 y V04→V01 (Equipo formulador, 2026). Veintisiete se infieren de mecanismos físicos o técnicos conocidos. Once son propuestas del equipo formulador y ocho son supuestos de diseño.
+La {T:t13} lista los 48 vínculos no nulos de S2 con su peso, su dominio admisible, su signo, su confianza, su mecanismo y su respaldo. Dos vínculos se apoyan en estudios publicados que cita el informe de vigilancia tecnológica, V03→V06 y V04→V01 (Equipo formulador, 2026); veintisiete se infieren de mecanismos físicos o técnicos conocidos; once son propuestas del equipo formulador; y ocho son supuestos de diseño.
 
-La confianza es baja en 26 vínculos, media en 21 y alta en uno. El respaldo es secundario o interno en 41 vínculos, de modo que ninguna fuente primaria sustenta por sí sola un valor. Esa limitación se declara en A.11. Los 162 pares restantes tienen peso 0, con la razón de ausencia o de mediación en la ficha.
+La confianza es baja en 26 vínculos, media en 21 y alta en uno, y el respaldo es secundario o interno en 41, de modo que ninguna fuente primaria sustenta por sí sola un valor; esa limitación se declara en A.11. Los 162 pares restantes tienen peso 0, con la razón de ausencia o de mediación en la ficha.
 
 {{TABLA t13 aristas}}
 
@@ -183,17 +183,17 @@ El cálculo usa la misma matriz que el análisis de Vester dentro de cada escena
 
 ### A.5.1 Influencia indirecta en S2
 
-La {F:f03} compara los rangos directos con los indirectos de A¹⁰ en S2, y la {T:t14} da los valores y la clase indirecta. Las cinco primeras posiciones de influencia indirecta son V05, V04, V03, V02 y V06. V03 y V05 ganan 3,5 y 3 posiciones frente a la lectura directa. V06 y V15 pierden 3,5 y 2. En dependencia indirecta, V15 pasa del rango 5 al 1.
+La {F:f03} compara los rangos directos con los indirectos de A¹⁰ en S2, y la {T:t14} da los valores y la clase indirecta. Las cinco primeras posiciones de influencia indirecta son V05, V04, V03, V02 y V06: V03 y V05 ganan 3,5 y 3 posiciones frente a la lectura directa, mientras que V06 y V15 pierden 3,5 y 2. En dependencia indirecta, V15 pasa del rango 5 al 1.
 
 :::FIGURA f03 | Al considerar recorridos largos, V05 y V03 ganan posiciones de influencia y V06 y V15 las pierden | Nota. Elaboración propia con las potencias A¹ y A¹⁰ de S2. El rango 1 corresponde a la mayor influencia. Los empates comparten el promedio de sus posiciones. Software: Python 3 y matplotlib.
 
 {{TABLA t14 micmac_s2}}
 
-Dos variables califican como candidatas a variable oculta con un umbral de ganancia de dos o tres posiciones: V03 y V05. Ninguna lo hace con un umbral de cuatro. Ambas son exógenas o poco controlables, reciben poca influencia y alimentan cadenas largas. Su ascenso describe el origen de los recorridos y no una palanca de intervención.
+Dos variables califican como candidatas a variable oculta con un umbral de ganancia de dos o tres posiciones, V03 y V05, y ninguna lo hace con un umbral de cuatro. Ambas son exógenas o poco controlables, reciben poca influencia y alimentan cadenas largas, de modo que su ascenso describe el origen de los recorridos y no una palanca de intervención.
 
 ### A.5.2 Estabilidad de las potencias y rangos por escenario
 
-La {T:t15} muestra el rango indirecto de cada variable en los cinco escenarios. V05 ocupa el primer lugar en S1, S2 y S3. V06 ocupa el cuarto, quinto, séptimo y segundo lugar en S1, S2, S3 y S4. En S1, S2 y S4 las potencias no se estabilizan hasta k = 10. En S0, que no tiene ciclos, los caminos se extinguen en A⁷. En S3 se observa periodicidad. La estabilidad observada no demuestra convergencia dinámica.
+La {T:t15} muestra el rango indirecto de cada variable en los cinco escenarios: V05 ocupa el primer lugar en S1, S2 y S3, y V06 ocupa el cuarto, quinto, séptimo y segundo lugar en S1, S2, S3 y S4. En S1, S2 y S4 las potencias no se estabilizan hasta k = 10; en S0, que no tiene ciclos, los caminos se extinguen en A⁷; y en S3 se observa periodicidad. Por eso la estabilidad observada no demuestra convergencia dinámica.
 
 {{TABLA t15 rangos_5esc}}
 
@@ -215,7 +215,7 @@ La {T:t17} lista, para pares seleccionados, la ruta simple de mayor producto de 
 
 ### A.6.1 Perturbación de un vínculo a la vez
 
-El análisis evalúa {{CAUSAL_OAT}} cambios de un solo valor dentro del dominio admisible de cada vínculo incierto. La {T:t18} lista los vínculos cuyo cambio altera las tres primeras posiciones de influencia indirecta o la clase indirecta de alguna variable. De los {{CAUSAL_OAT}} cambios, 37 alteran la clase directa de alguna variable. El mayor desplazamiento de rango es 4,5 en el plano directo y 4 en el indirecto. No se asignan probabilidades a estos cambios.
+El análisis evalúa {{CAUSAL_OAT}} cambios de un solo valor dentro del dominio admisible de cada vínculo incierto, y la {T:t18} lista los vínculos cuyo cambio altera las tres primeras posiciones de influencia indirecta o la clase indirecta de alguna variable. De esos cambios, 37 alteran la clase directa de alguna variable, y el mayor desplazamiento de rango es 4,5 en el plano directo y 4 en el indirecto. No se asignan probabilidades a estos cambios.
 
 {{TABLA t18 oat}}
 
@@ -223,13 +223,13 @@ Los diez vínculos que alteran el orden de los primeros lugares tienen origen en
 
 ### A.6.2 Recodificación de la escala
 
-La {T:t19} recodifica la escala ordinal con tres conjuntos de valores: [0, 1, 2, 3], [0, 1, 3, 5] y [0, 1, 2, 4]. La recodificación prueba la robustez de una escala ordinal y no aporta evidencia del territorio. Solo cambian de clase directa V10 y V11. Los cinco primeros rangos de influencia indirecta forman el mismo conjunto en las tres codificaciones: V05, V04, V03, V02 y V06. En la tercera codificación se permutan V02, V03 y V04.
+La {T:t19} recodifica la escala ordinal con tres conjuntos de valores, [0, 1, 2, 3], [0, 1, 3, 5] y [0, 1, 2, 4], para probar la robustez de la escala, sin aportar evidencia del territorio. Solo V10 y V11 cambian de clase directa, y los cinco primeros rangos de influencia indirecta forman el mismo conjunto en las tres codificaciones, V05, V04, V03, V02 y V06, aunque en la tercera se permutan V02, V03 y V04.
 
 {{TABLA t19 recodificacion}}
 
 ## A.7. Hallazgos estructurales y su uso en el diseño
 
-Los siete hallazgos siguientes valen para el escenario de trabajo y sus envolventes. Son HIE. Ninguno se eleva a efecto causal identificado ni estimado. La {T:t20} indica la decisión de diseño del Anexo 2 con la que se relaciona cada uno.
+Los siete hallazgos siguientes valen para el escenario de trabajo y sus envolventes, y todos son HIE, de modo que ninguno se eleva a efecto causal identificado ni estimado. La {T:t20} indica la decisión de diseño del Anexo 2 con la que se relaciona cada uno.
 
 :::TABLA t20 | Hallazgos estructurales y decisiones de diseño relacionadas
 | Hallazgo | Lectura estructural | Decisión de diseño en el Anexo 2 |
@@ -249,7 +249,7 @@ La clasificación estructural aporta hipótesis de influencia y no sustituye la 
 
 ### A.8.1 Estimandos
 
-La {T:t21} declara dos estimandos. El primero es el efecto de la frecuencia de calibración sobre el error de medición. El segundo es el efecto de la adopción institucional sobre la protección de personas. Si algún campo carece de definición, no se publica un efecto causal.
+La {T:t21} declara dos estimandos: el efecto de la frecuencia de calibración sobre el error de medición y el efecto de la adopción institucional sobre la protección de personas. Si algún campo carece de definición, no se publica un efecto causal.
 
 :::TABLA t21 | Estimandos declarados y evaluación de su identificación
 | Campo | E1. Efecto de la calibración sobre el error de medición | E2. Efecto de la adopción institucional |
@@ -265,11 +265,11 @@ La {T:t21} declara dos estimandos. El primero es el efecto de la frecuencia de c
 | Resultado de la evaluación | No identificado con el diseño del proyecto. Identificable por diseño si el nivel de calibración se asignara al azar | No identificado con los insumos disponibles |
 :::NOTA *Nota.* Elaboración propia. Un tercer estimando, el efecto del sistema de alerta sobre la morbilidad respiratoria, queda fuera del alcance: el modelo no tiene variable de resultado ni línea base de morbilidad.
 
-El informe de vigilancia tecnológica propone un diseño alternado (Equipo formulador, 2026). Asigna al azar cada semana el nivel de corrección y usa un panel con efectos fijos por nodo y por semana. El proyecto no incorpora ese diseño. Valida los modelos de corrección con colocalización, rotación y particiones fuera de muestra, como describe la sección 14.2. La decisión es coherente con el alcance, pero limita la inferencia. El efecto de la calibración sobre el error queda como hipótesis y no como efecto identificado.
+El informe de vigilancia tecnológica propone un diseño alternado que asigna al azar cada semana el nivel de corrección y usa un panel con efectos fijos por nodo y por semana (Equipo formulador, 2026). El proyecto no incorpora ese diseño, sino que valida los modelos de corrección con colocalización, rotación y particiones fuera de muestra, como describe la sección 14.2. La decisión es coherente con el alcance, pero limita la inferencia: el efecto de la calibración sobre el error queda como hipótesis y no como efecto identificado.
 
 ### A.8.2 Roles de las variables en el grafo
 
-Un confusor es una causa previa de la exposición y del resultado. Un mediador está en el camino causal de X a Y. Un colisionador es el efecto común de dos variables, y condicionar sobre él abre un camino espurio. Un descendiente de X es una variable que X causa. Un moderador cambia la magnitud del efecto de X sobre Y. Una variable latente no se observa. La {T:t22} asigna un rol a cada variable y una regla de ajuste. La {F:f05} dibuja el grafo.
+Las variables se clasifican por su papel causal. Un confusor es una causa previa de la exposición y del resultado; un mediador está en el camino causal de X a Y; un colisionador es el efecto común de dos variables, y condicionar sobre él abre un camino espurio; un descendiente de X es una variable que X causa; un moderador cambia la magnitud del efecto de X sobre Y; y una variable latente no se observa. La {T:t22} asigna un rol a cada variable y una regla de ajuste, y la {F:f05} dibuja el grafo.
 
 :::TABLA t22 | Roles de las variables en el grafo del estimando E1 y regla de ajuste
 | Variable | Temporalidad respecto de X | Rol en el grafo | Caminos relevantes | Regla de ajuste |
@@ -303,7 +303,7 @@ Con asignación aleatoria del nivel de calibración, el conjunto mínimo de ajus
 
 ### A.8.3 Grafos rivales y declaración de identificación
 
-La {T:t23} presenta cuatro grafos rivales. Cada uno describe una amenaza a la identificación y el conjunto de ajuste que la neutralizaría.
+La {T:t23} presenta cuatro grafos rivales, cada uno con una amenaza a la identificación y el conjunto de ajuste que la neutralizaría.
 
 :::TABLA t23 | Grafos rivales, amenaza a la identificación y resultado
 | Grafo rival | Hipótesis | Amenaza | Conjunto de ajuste | Resultado de identificación |
@@ -314,7 +314,7 @@ La {T:t23} presenta cuatro grafos rivales. Cada uno describe una amenaza a la id
 | R4 | La adopción institucional (V15) modifica el uso de X en el tiempo | Retroalimentación que rompe la aciclicidad y la exogeneidad de X | Asignación aleatoria como regla o un instrumento válido y suficientemente fuerte | Identificado solo con asignación aleatoria cumplida o con un instrumento válido |
 :::NOTA *Nota.* Elaboración propia con el grafo de la {F:f05}.
 
-Con el diseño actual del proyecto no existe asignación aleatoria ni una referencia para todos los nodos. El efecto de E1 queda no identificado para cualquier estimación observacional. Es identificable por diseño si se asigna al azar el nivel de calibración y se cumplen los supuestos de A.8.5. El estimando E2 no es identificable en este diseño.
+Con el diseño actual del proyecto no existe asignación aleatoria ni una referencia para todos los nodos, de modo que el efecto de E1 queda no identificado para cualquier estimación observacional; sería identificable por diseño si se asignara al azar el nivel de calibración y se cumplieran los supuestos de A.8.5. El estimando E2 no es identificable en este diseño.
 
 ### A.8.4 Estatutos de afirmación causal
 
@@ -347,9 +347,9 @@ El proyecto no estima efectos causales, pero sí aplica pruebas que protegen la 
 
 ## A.9. Árbol de problemas completo
 
-El árbol de problemas usa los resultados de A.4 a A.8. Sus nodos conservan los identificadores de las variables. No selecciona una alternativa y no sustituye al árbol de objetivos de la sección 12. Todas las relaciones son HIE.
+El árbol de problemas usa los resultados de A.4 a A.8 y conserva en sus nodos los identificadores de las variables. No selecciona una alternativa ni sustituye al árbol de objetivos de la sección 12, y todas sus relaciones son HIE.
 
-El problema central es V06, el error de medición sin verificar. Se toma de dos observaciones independientes. Primero, V06 es crítica en los cinco escenarios de A.4. Segundo, la construcción del fenómeno en A.2 define como problema la ausencia de mediciones verificadas. El árbol sigue cinco criterios.
+El problema central es V06, el error de medición sin verificar, y se toma de dos observaciones independientes: V06 es crítica en los cinco escenarios de A.4, y la construcción del fenómeno en A.2 define como problema la ausencia de mediciones verificadas. El árbol sigue cinco criterios.
 
 - Cada nodo es una variable del modelo, formulada como estado problemático y rotulada con su identificador.
 - Las causas se ubican debajo del problema central y los efectos encima.
@@ -378,15 +378,15 @@ La {T:t26} relaciona los enunciados del árbol de la sección 5.4 con los nodos 
 
 {{TABLA t27 arbol_relaciones}}
 
-El árbol de problemas inicial del equipo formulador se contrastó con los resultados estructurales. Coincide en el problema central. Difiere en tres puntos. La calibración no es la palanca independiente máxima. La latencia no es un polo estructural de la contradicción de fondo. Y la adopción institucional no es solo un efecto, porque retroalimenta a la fuente y a la calibración.
+El árbol de problemas inicial del equipo formulador se contrastó con los resultados estructurales: coincide en el problema central y difiere en tres puntos. La calibración no es la palanca independiente máxima; la latencia no es un polo estructural de la contradicción de fondo; y la adopción institucional no es solo un efecto, porque retroalimenta a la fuente y a la calibración.
 
 El árbol no representa seis elementos.
 
 - **Bucles.** S2 contiene cuatro ciclos de dos vínculos. V15 retroalimenta a V05, V07, V09, V10 y V14.
-- **Variables fuera del tronco.** V04, V08, V09, V10 y V13 no se dibujan. V04 y V10 tienen relaciones de confianza baja o de peso 1 con V06. V08 y V13 no se vinculan con V06 en S2. V09 actúa sobre V10 y sobre V15.
+- **Variables fuera del tronco.** V04, V08, V09, V10 y V13 no se dibujan: V04 y V10 tienen relaciones de confianza baja o de peso 1 con V06, V08 y V13 no se vinculan con V06 en S2, y V09 actúa sobre V10 y sobre V15.
 - **Variables latentes omitidas.** La distancia a la referencia, la edad del sensor, los episodios de humo y la precipitación no tienen identificador y pueden alterar las relaciones dibujadas.
 - **Marco rival de control en la fuente.** Su construcción exigiría otro problema central, la exposición, y ese árbol no se construyó. El gemelo predictivo incorpora la estimación previa de ese marco sin cambiar el árbol (A.10.3).
-- **Continuidad posterior al proyecto.** No existe una variable de continuidad en el modelo. Se trata en la sección 18 y en A.10.
+- **Continuidad posterior al proyecto.** El modelo no contiene una variable de continuidad, y el asunto se trata en la sección 18 y en A.10.
 - **Morbilidad.** No existe variable de resultado en salud. Se declara como hipótesis y no como compromiso.
 
 ## A.10. Teoría del cambio, alternativas y condiciones de decisión
@@ -419,22 +419,22 @@ La {T:t29} compara las alternativas sin agregar los criterios. La matriz describ
 | R5 | No mide el error del sensor; mide exposición con referencia mínima | Poca electrónica; depende de la maquinaria | Operación por contratistas; custodio por definir | Reversible |
 :::NOTA *Nota.* Elaboración propia. La matriz no produce un ganador por sí sola, porque ninguna alternativa domina a otra en todos los criterios.
 
-No se confirma ninguna relación de dominancia entre las alternativas. R4 no empeora a R3 en verificabilidad, operación, continuidad ni corregibilidad por construcción del diseño. El costo del piloto y de la gobernanza se incorpora al presupuesto de la sección 28, dentro del tope de la convocatoria. Cuatro condiciones determinan cuándo cambia la elección.
+No se confirma ninguna relación de dominancia entre las alternativas. Por construcción del diseño, R4 no empeora a R3 en verificabilidad, operación, continuidad ni corregibilidad, y el costo del piloto y de la gobernanza se incorpora al presupuesto de la sección 28, dentro del tope de la convocatoria. Cuatro condiciones determinan cuándo cambia la elección.
 
 - R4 se prefiere a R3 si el costo adicional del piloto, de la gobernanza y de los tramos cabe en el tope. Debe cumplirse además que la continuidad bajo custodia distribuida no sea menos probable que bajo un receptor único.
 - R3 se prefiere a R4 si, antes de la firma, cada componente cuenta con una entidad territorial con compromiso presupuestal vinculante y competencia jurídica documentada.
-- R5 se combina con R4 si la evidencia de emisión en la fuente muestra que la mayor parte de la exposición es controlable. Esa evidencia no existe todavía. Las campañas del laboratorio la producirán para los eventos medidos.
+- R5 se combina con R4 si la evidencia de emisión en la fuente muestra que la mayor parte de la exposición es controlable. Esa evidencia no existe todavía, y las campañas del laboratorio la producirán para los eventos medidos.
 - R0 solo se admite si el financiador no acepta R3 ni R4.
 
 ### A.10.2 Teoría del cambio por componente
 
-La teoría del cambio es anidada. Tiene una versión ejecutiva y una cadena por componente (Funnell y Rogers, 2011). La parte de medición es de dominio complicado y la parte de adopción y custodia es de dominio complejo. Por eso cada componente revisa sus supuestos de manera periódica. La {F:f07} muestra las cuatro cadenas: medición, alertas y adopción, custodia y predicción. Los rombos son los seis supuestos críticos.
+La teoría del cambio es anidada, con una versión ejecutiva y una cadena por componente (Funnell y Rogers, 2011). La parte de medición es de dominio complicado y la de adopción y custodia es de dominio complejo, por lo que cada componente revisa sus supuestos de manera periódica. La {F:f07} muestra las cuatro cadenas, medición, alertas y adopción, custodia y predicción, y los rombos representan los seis supuestos críticos.
 
 :::FIGURA f07 | Cuatro cadenas llevan de los productos al uso y a la continuidad, y el proyecto se compromete hasta los resultados | Nota. Elaboración propia con las secciones 12, 14 y 17 del Anexo 2. R1 a R7 son los resultados al mes 24 e I1 e I2 los impactos a 12 meses del cierre. SC-1 a SC-6 son los supuestos críticos de la {T:t30}. La flecha discontinua indica que el uso institucional justifica la custodia. Software: Python 3 y matplotlib.
 
 La línea discontinua vertical de la figura es el techo de rendición de cuentas. Los productos y los resultados R1 a R7 quedan bajo el techo: son responsabilidad del proyecto. Los impactos I1 e I2 quedan sobre el techo, porque dependen de decisiones de los consejos y de las entidades custodias. El proyecto contribuye a ellos y fija metas con esa condición, como establece la sección 17.
 
-Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyecto. La {T:t30} los presenta. Los cuatro primeros se verifican con criterios que las compuertas C1 y C2 ya aplican antes de liberar cada compra. Los dos últimos se verifican con los hitos H10 y H11, que no liberan compras.
+Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyecto, que la {T:t30} presenta. Los cuatro primeros se verifican con criterios que las compuertas C1 y C2 ya aplican antes de liberar cada compra, y los dos últimos, con los hitos H10 y H11, que no liberan compras.
 
 :::TABLA t30 | Supuestos críticos de la teoría del cambio y su verificación en el proyecto
 | Supuesto | Si | Entonces | Porque | Verificación |
@@ -449,13 +449,13 @@ Cada supuesto crítico tiene un mecanismo y una verificación dentro del proyect
 
 ### A.10.3 Teoría del cambio del módulo predictivo
 
-El módulo predictivo no integra el modelo estructural de quince variables, porque no actúa sobre el error de medición. Su cadena tiene cinco eslabones. Los datos de entrada son la geometría, el material, el método y la meteorología. Los modelos de emisión y de dispersión producen una estimación con su incertidumbre. La evaluación previa la compara con los valores guía y con escenarios de control. La entidad territorial decide el método y las medidas. La exposición real depende de lo que ejecute la obra.
+El módulo predictivo no integra el modelo estructural de quince variables, porque no actúa sobre el error de medición. Su cadena tiene cinco eslabones: los datos de entrada, que son la geometría, el material, el método y la meteorología; los modelos de emisión y de dispersión, que producen una estimación con su incertidumbre; la evaluación previa, que la compara con los valores guía y con escenarios de control; la decisión de la entidad territorial sobre el método y las medidas; y la exposición real, que depende de lo que ejecute la obra.
 
 La rendición de cuentas llega hasta los resultados R6 y R7. El desempeño del modelo y la entrega de las evaluaciones dependen del proyecto. La decisión de la entidad y la reducción real de la exposición quedan sobre el techo, porque dependen de terceros. El proyecto no estima efectos en la salud. El efecto esperado de una medida de control es un supuesto mientras una campaña no lo verifique. Los supuestos SC-5 y SC-6 de la {T:t30} fijan las condiciones de la cadena y los hitos H10 y H11 las verifican.
 
 ## A.11. Límites, brechas y ruta de resolución
 
-El análisis tiene siete límites. Los 210 juicios son de formulación y ninguno fue adjudicado por un panel externo. Las fuentes primarias de los vínculos no se leyeron con localizador de página. La autorrevisión de las fichas no equivale a una revisión independiente. Los dominios admisibles expresan incertidumbre ordinal y no probabilidad. La estabilidad observada de los rangos no demuestra convergencia dinámica. Las posiciones dependen de la definición de las variables y de tres ambigüedades del diccionario. Y el módulo predictivo se trata con una teoría del cambio y no con una matriz.
+El análisis tiene siete límites: los 210 juicios son de formulación y ninguno fue adjudicado por un panel externo; las fuentes primarias de los vínculos no se leyeron con localizador de página; la autorrevisión de las fichas no equivale a una revisión independiente; los dominios admisibles expresan incertidumbre ordinal y no probabilidad; la estabilidad observada de los rangos no demuestra convergencia dinámica; las posiciones dependen de la definición de las variables y de tres ambigüedades del diccionario; y el módulo predictivo se trata con una teoría del cambio y no con una matriz.
 
 La {T:t31} registra las brechas, su efecto sobre las conclusiones y la ruta para resolverlas. Las rutas son propuestas de la formulación y se ejecutan con recursos ya presupuestados del proyecto, salvo que se indique otra cosa.
 

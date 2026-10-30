@@ -1,49 +1,51 @@
 # -*- coding: utf-8 -*-
-"""Datos de la alianza (cuatro integrantes, Anexo 3 v5), roles por actividad, beneficios y localización del presupuesto por municipio.
+"""Datos de la alianza (cinco integrantes, Anexo 3 v6), roles por actividad, beneficios y localización del presupuesto por municipio.
 Se importa desde expand.py. Todas las cifras monetarias salen de m2."""
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import m2
 cop = pct = None  # los inyecta expand.py
 
-# ---------------------------------------------------------------- integrantes (cuatro integrantes; Gestión y Medio Ambiente es actor técnico externo)
-ACTORES = ["IES", "MAN", "CAL", "AVA"]
+# ---------------------------------------------------------------- integrantes (cinco integrantes; Gestión y Medio Ambiente es aliado del sector productivo)
+ACTORES = ["IES", "MAN", "CAL", "AVA", "GMA"]
 NOMBRE = {
     "IES": "Universidad Santo Tomás, sede Villavicencio",
     "MAN": "Municipio de Manizales",
     "CAL": "Municipio de Calarcá",
     "AVA": "Avanciencia",
+    "GMA": "Gestión y Medio Ambiente",
 }
 NATURALEZA = {
     "IES": "Institución de educación superior; entidad proponente y ejecutora",
     "MAN": "Entidad territorial de Caldas; municipio afectado y lugar de ejecución",
     "CAL": "Entidad territorial de Quindío; municipio afectado y lugar de ejecución",
     "AVA": "Oficina de transferencia de resultados de investigación (OTRI); actor del SNCTI con reconocimiento de MinCiencias",
+    "GMA": "Empresa de servicios de calidad del aire con domicilio en Manizales; aliado tecnológico del sector productivo",
 }
-# actividad: (USTA, Manizales, Calarcá, Avanciencia, actores de cambio, actores técnicos y proveedores)
+# actividad: (USTA, Manizales, Calarcá, Avanciencia, Gestión y Medio Ambiente, actores de cambio, actores técnicos y proveedores)
 R = {
- "1.1": ("Lidera el diseño de la colocalización, el mapeo diagnóstico y el plan de análisis", "Facilita el acceso a los sitios de Manizales y aporta los datos de afectación", "Facilita el acceso a los sitios de Calarcá y aporta los datos de afectación", "Revisa el diseño de la colocalización y la vigilancia tecnológica", "Consejos de gestión del riesgo de los dos municipios; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
- "1.2": ("Dirige la compra y caracteriza los nodos en el banco de calibración", "No participa", "No participa", "Revisa la libertad de operación de los nodos y de los cabezales", "Proveedores de nodos, monitores de referencia y banco de calibración"),
- "1.3": ("Instala el tramo 1, opera la colocalización y mide la línea base", "Provee acceso y seguridad en los sitios de Manizales", "Provee acceso y seguridad en los sitios de Calarcá", "No participa", "Técnicos de campo y laboratorio acreditado; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
- "1.4": ("Entrena y valida el modelo de corrección", "Participa en la decisión de la compuerta C1", "Participa en la decisión de la compuerta C1", "Documenta el modelo de corrección como resultado protegible", "Evaluador externo independiente"),
- "1.5": ("Reentrena y verifica el modelo por municipio", "Participa en la compuerta C2", "Participa en la compuerta C2", "No participa", "Consejos de gestión del riesgo y custodios"),
- "1.6": ("Dirige la verificación final y el ensayo independiente", "Aporta registros de uso", "Aporta registros de uso", "Valora los resultados finales para su transferencia", "Laboratorio externo y evaluador independiente; Gestión y Medio Ambiente, actor técnico en calidad del aire"),
- "1.7": ("Lidera la validación del gemelo predictivo con demoliciones reales", "Gestiona el acceso a las demoliciones de Manizales", "Gestiona el acceso a las demoliciones de Calarcá", "No participa", "Responsables de obra, verificador independiente y servicio contratado de analítica geoespacial"),
- "1.8": ("Ejerce la gerencia, la dirección científica y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
- "2.1": ("Lidera el diseño del enlace, de la energía y de la arquitectura de la plataforma", "Informa restricciones de los sitios", "Informa restricciones de los sitios", "No participa", "Estudio de cobertura por municipio y servicio contratado de arquitectura geoespacial"),
- "2.2": ("Desarrolla el firmware, la ingesta y la corrección en el gateway, y dirige el servicio contratado de la plataforma geoespacial", "No participa", "No participa", "No participa", "Proveedor de la plataforma geoespacial y auditor de ciberseguridad"),
- "2.3": ("Instala y mantiene el tramo 2", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Técnicos de campo"),
- "2.4": ("Instala y mantiene el tramo 3", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Técnicos de campo"),
- "2.5": ("Lidera el diseño del laboratorio y del inventario de emisión de demolición", "Informa las demoliciones previstas y aporta cartografía local", "Informa las demoliciones previstas y aporta cartografía local", "No participa", "Laboratorio acreditado de caracterización del polvo"),
- "2.6": ("Dota el laboratorio y monta la cadena de modelación", "No participa", "No participa", "No participa", "Proveedores de equipos con entrega en Colombia"),
- "2.7": ("Lidera la construcción y la calibración del gemelo predictivo", "No participa", "No participa", "No participa", "Servicio de cartografía y proveedor de la plataforma geoespacial"),
- "2.8": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores y revisoría fiscal"),
- "3.1": ("Coordina el co-diseño y la apropiación social", "Convoca a su consejo de gestión del riesgo y a la comunidad", "Convoca a su consejo de gestión del riesgo y a la comunidad", "No participa", "Consejos de gestión del riesgo, comunidades vecinas y servicio contratado de diseño del tablero"),
- "3.2": ("Acompaña y evalúa el uso del tablero y coordina su soporte técnico", "Lidera el registro de decisiones en Manizales", "Lidera el registro de decisiones en Calarcá", "No participa", "Consejos de gestión del riesgo"),
- "3.3": ("Diseña y certifica la formación de custodios", "Firma el convenio de custodia", "Firma el convenio de custodia", "Estructura los convenios de transferencia y de custodia", "Custodios designados"),
- "3.4": ("Entrega los bienes y evalúa el cierre", "Recibe la custodia local", "Recibe la custodia local", "Lidera la valoración y la ruta de transferencia", "Custodios, evaluador independiente y proveedor de la plataforma geoespacial"),
- "3.5": ("Lidera el protocolo de evaluación previa y transfiere el laboratorio", "Adopta el protocolo en Manizales", "Adopta el protocolo en Calarcá", "No participa", "Consejos, responsables de obra y verificador independiente"),
- "3.6": ("Gestiona eventos y logística", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores de logística"),
+ "1.1": ("Lidera el diseño de la colocalización, el mapeo diagnóstico y el plan de análisis", "Facilita el acceso a los sitios de Manizales y aporta los datos de afectación", "Facilita el acceso a los sitios de Calarcá y aporta los datos de afectación", "Ejecuta la vigilancia tecnológica y la asesoría jurídica de libertad de operación antes de la primera compra", "Aporta equipos de monitoreo y apoyo técnico al diagnóstico de los sitios de Manizales", "Consejos de gestión del riesgo de los dos municipios"),
+ "1.2": ("Dirige la compra y caracteriza los nodos en el banco de calibración", "No participa", "No participa", "Revisa la libertad de operación de los nodos y de los cabezales", "No participa", "Proveedores de nodos, monitores de referencia y banco de calibración"),
+ "1.3": ("Instala el tramo 1, opera la colocalización y mide la línea base", "Provee acceso y seguridad en los sitios de Manizales", "Provee acceso y seguridad en los sitios de Calarcá", "No participa", "Apoya la colocalización en Manizales con equipos y personal técnico", "Técnicos de campo y laboratorio acreditado"),
+ "1.4": ("Entrena y valida el modelo de corrección", "Participa en la decisión de la compuerta C1", "Participa en la decisión de la compuerta C1", "Documenta el modelo de corrección como resultado protegible", "No participa", "Evaluador externo independiente"),
+ "1.5": ("Reentrena y verifica el modelo por municipio", "Participa en la compuerta C2", "Participa en la compuerta C2", "No participa", "No participa", "Consejos de gestión del riesgo y custodios"),
+ "1.6": ("Dirige la verificación final y el ensayo independiente", "Aporta registros de uso", "Aporta registros de uso", "Valora los resultados finales para su transferencia", "Apoya la verificación final en Manizales", "Laboratorio externo y evaluador independiente"),
+ "1.7": ("Lidera la validación del gemelo predictivo con demoliciones reales", "Gestiona el acceso a las demoliciones de Manizales", "Gestiona el acceso a las demoliciones de Calarcá", "No participa", "No participa", "Responsables de obra, verificador independiente y servicio contratado de analítica geoespacial"),
+ "1.8": ("Ejerce la gerencia, la dirección científica y la supervisión", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Supervisión del SGR"),
+ "2.1": ("Lidera el diseño del enlace, de la energía y de la arquitectura de la plataforma", "Informa restricciones de los sitios", "Informa restricciones de los sitios", "No participa", "No participa", "Estudio de cobertura por municipio y servicio contratado de arquitectura geoespacial"),
+ "2.2": ("Desarrolla el firmware, la ingesta y la corrección en el gateway, y dirige el servicio contratado de la plataforma geoespacial", "No participa", "No participa", "No participa", "No participa", "Proveedor de la plataforma geoespacial y auditor de ciberseguridad"),
+ "2.3": ("Instala y mantiene el tramo 2", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Aporta en efectivo la logística y los viáticos de la instalación del tramo 2", "Técnicos de campo"),
+ "2.4": ("Instala y mantiene el tramo 3", "Provee acceso y custodia local", "Provee acceso y custodia local", "No participa", "Aporta en efectivo la logística y los viáticos de la instalación del tramo 3", "Técnicos de campo"),
+ "2.5": ("Lidera el diseño del laboratorio y del inventario de emisión de demolición", "Informa las demoliciones previstas y aporta cartografía local", "Informa las demoliciones previstas y aporta cartografía local", "No participa", "No participa", "Laboratorio acreditado de caracterización del polvo"),
+ "2.6": ("Dota el laboratorio y monta la cadena de modelación", "No participa", "No participa", "No participa", "No participa", "Proveedores de equipos con entrega en Colombia"),
+ "2.7": ("Lidera la construcción y la calibración del gemelo predictivo", "No participa", "No participa", "No participa", "No participa", "Servicio de cartografía y proveedor de la plataforma geoespacial"),
+ "2.8": ("Gestiona compras y conciliación", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores y revisoría fiscal"),
+ "3.1": ("Aporta los coinvestigadores de ambiente y ciencias sociales y el profesional en calidad del aire, y diseña el tablero", "Convoca a su consejo de gestión del riesgo y a la comunidad", "Convoca a su consejo de gestión del riesgo y a la comunidad", "Coordina el co-diseño y la apropiación social con su equipo", "No participa", "Consejos de gestión del riesgo, comunidades vecinas y servicio contratado de diseño del tablero"),
+ "3.2": ("Acompaña el uso del tablero y coordina su soporte técnico", "Lidera el registro de decisiones en Manizales", "Lidera el registro de decisiones en Calarcá", "Organiza las jornadas públicas, las cartillas y las publicaciones de divulgación", "No participa", "Consejos de gestión del riesgo"),
+ "3.3": ("Diseña el contenido técnico de la formación y certifica a los custodios", "Firma el convenio de custodia", "Firma el convenio de custodia", "Forma a los custodios y estructura los convenios de custodia", "No participa", "Custodios designados"),
+ "3.4": ("Entrega los bienes y evalúa el cierre", "Recibe la custodia local", "Recibe la custodia local", "Lidera la valoración, el registro de propiedad intelectual y la divulgación internacional", "No participa", "Custodios, evaluador independiente y proveedor de la plataforma geoespacial"),
+ "3.5": ("Lidera el protocolo de evaluación previa y transfiere el laboratorio", "Adopta el protocolo en Manizales", "Adopta el protocolo en Calarcá", "Registra el software y los datos del modelo predictivo", "No participa", "Consejos, responsables de obra y verificador independiente"),
+ "3.6": ("Gestiona eventos y logística", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Reporta su contrapartida", "Proveedores de logística"),
 }
 def actividades_de(actor):
     k = ACTORES.index(actor)
@@ -65,18 +67,19 @@ def t_roles_actividad():
         v = R[a["id"]]
         f.append((f"{a['id']} {a['nombre']}",) + v)
     return ("Roles de los integrantes de la alianza y de los actores de cambio por actividad",
-            ["Actividad", NOMBRE["IES"], NOMBRE["MAN"], NOMBRE["CAL"], NOMBRE["AVA"], "Actores de cambio, actores técnicos y proveedores"], f,
-            "*Nota.* Elaboración propia con la formulación del proyecto y el Anexo 3. Una misma entidad no figura como integrante de la alianza y como beneficiaria. Gestión y Medio Ambiente, los proveedores y el evaluador externo no integran la alianza.")
+            ["Actividad", NOMBRE["IES"], NOMBRE["MAN"], NOMBRE["CAL"], NOMBRE["AVA"], NOMBRE["GMA"], "Actores de cambio, actores técnicos y proveedores"], f,
+            "*Nota.* Elaboración propia con la formulación del proyecto y el Anexo 3 v6. Una misma entidad no figura como integrante de la alianza y como beneficiaria. Los proveedores, los laboratorios y el evaluador externo no integran la alianza.")
 
 def _por_oe(actor, oe):
     return [a for a in actividades_de(actor) if a.startswith(oe[2])]
 
-LIDERA = {"IES": ["OE1", "OE2"], "MAN": ["OE3"], "CAL": ["OE3"], "AVA": []}
+LIDERA = {"IES": ["OE1", "OE2"], "MAN": ["OE3"], "CAL": ["OE3"], "AVA": [], "GMA": []}
 APORTE = {
-    "IES": "Coordina y ejecuta el proyecto; lidera la medición verificada, la red, la plataforma geoespacial con un servicio contratado y el laboratorio de modelación; forma al talento y produce los documentos de investigación",
+    "IES": "Coordina y ejecuta el proyecto; lidera la medición verificada, la red, la plataforma geoespacial con un servicio contratado y el laboratorio de modelación; forma al talento, produce los documentos de investigación y contrata a Avanciencia para la apropiación social y la transferencia",
     "MAN": "Asume la responsabilidad territorial en Manizales: acceso a sitios y demoliciones, convocatoria del consejo de gestión del riesgo, adopción de los protocolos y custodia local",
     "CAL": "Asume la responsabilidad territorial en Calarcá: acceso a sitios y demoliciones, convocatoria del consejo de gestión del riesgo, adopción de los protocolos y custodia local",
-    "AVA": "Lidera el componente de transferencia: vigilancia tecnológica, valoración, propiedad intelectual y convenios de transferencia y custodia",
+    "AVA": "Ejecuta la apropiación social del conocimiento y el componente de transferencia: co-diseño, jornadas, cartillas, formación de custodios, vigilancia tecnológica, valoración, propiedad intelectual y convenios de transferencia y custodia",
+    "GMA": "Aporta equipos de monitoreo y apoyo técnico en Manizales para el diagnóstico, la colocalización y la verificación final, y la logística en efectivo de los tramos 2 y 3"
 }
 
 def _contrapartida_actor(actor):
@@ -109,8 +112,12 @@ BENEF = [
   "Como integrantes de la alianza no figuran como beneficiarios; la custodia exige una partida de cada municipio"),
  ("Avanciencia",
   "Cartera de resultados para valorar y transferir; acuerdos de propiedad intelectual y de licencia; experiencia en transferencia de tecnologías de monitoreo ambiental; coautoría de los productos en que participa",
-  "Productos 7 y 9; actividades 1.1, 1.2, 1.4, 1.6, 3.3 y 3.4",
+  "Productos 7, 8 y 9; actividades 1.1 y 3.1 a 3.5",
   "El valor de su contrapartida requiere la certificación de su representante legal"),
+ ("Gestión y Medio Ambiente",
+  "Datos colocalizados de su red en Manizales, protocolo de calibración verificado y experiencia en una red con error conocido; posibilidad de prestar servicios de mantenimiento o verificación a los custodios por contrato posterior",
+  "Actividades 1.1, 1.3, 1.6, 2.3 y 2.4",
+  "Sus aportes (110.000.000 COP en especie y 150.000.000 COP en efectivo) requieren la certificación de su representante legal"),
  ("Consejos de gestión del riesgo, operarios y comunidad vecina",
   "Alertas y decisiones con datos de error conocido; estimación previa de la exposición por polvo antes de una demolición y medidas de control sugeridas; cartillas del índice y del protocolo de alerta; mascarillas para el personal de campo; formación en el uso del tablero",
   "Indicadores R3 y R7 y productos 8 y 9",

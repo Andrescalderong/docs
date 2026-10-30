@@ -106,7 +106,7 @@ def t_fuentes():
 
 def t_contrapartida():
     f = []
-    quien_d = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia"}
+    quien_d = {"IES": "Universidad Santo Tomás", "MAN": "Municipio de Manizales", "CAL": "Municipio de Calarcá", "AVA": "Avanciencia", "GMA": "Gestión y Medio Ambiente"}
     for r in m2.CONTRA:
         quien = quien_d[r["fuente"]]
         modo = "Efectivo" if r["rubro"] == "Efectivo" else "Especie"

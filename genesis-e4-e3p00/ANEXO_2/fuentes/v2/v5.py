@@ -2,17 +2,18 @@
 """Presupuesto aprobado del Anexo 3 v5 (libro Anexo3_Conv56_POLVO-L51-PM_v5.xlsx): partidas con código, rubro, cantidad, unidad,
 valor unitario, fuentes, actividad principal y meses de ejecución. Es la fuente única del presupuesto del Anexo 2 desde la versión v5."""
 import json, os, re
-D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data_v5")
+D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data_v6")
 PART = json.load(open(os.path.join(D, "partidas.json"), encoding="utf-8"))
 CRONO = json.load(open(os.path.join(D, "cronofin.json"), encoding="utf-8"))
 RUBRO = {"R01": "Talento Humano", "R02": "Equipos y software", "R03": "Capacitación y eventos", "R04": "Servicios tecnológicos y pruebas",
          "R05": "Materiales, insumos y documentación", "R06": "Protección del conocimiento y divulgación", "R07": "Infraestructura",
          "R08": "Gastos de viaje", "R09": "Administrativos", "R10": "Seguimiento", "R11": "Otros"}
-ENT = {"USTA": "IES", "Manizales": "MAN", "Calarcá": "CAL", "Avanciencia": "AVA", "DreamGIS": "DGI"}   # DGI: aportes sin aportante (SIN_APORTANTE)
+ENT = {"USTA": "IES", "Manizales": "MAN", "Calarcá": "CAL", "Avanciencia": "AVA", "GyMA": "GMA", "DreamGIS": "DGI"}
+RESP = {"E1": "IES", "E2": "MAN", "E3": "CAL", "E4": "AVA", "E5": "GMA"}   # DGI: aportes sin aportante (SIN_APORTANTE)
 # Decisiones de la alianza del 29 de octubre de 2026: Avanciencia reemplaza a Cientech y Asociados. DreamGIS S.A.S. sale de la alianza;
 # Gestión y Medio Ambiente (Manizales) participa solo como actor técnico externo. Las partidas de servicios de la plataforma geoespacial
 # se conservan como servicios por contratar; los dos aportes de DreamGIS (EQ-13 en especie y VI-05 en efectivo) quedan sin aportante.
-SIN_APORTANTE = {"EQ-13", "VI-05"}
+SIN_APORTANTE = set()   # Anexo 3 v6: Gestión y Medio Ambiente es la Entidad 5 y aporta EQ-13 (especie) y VI-05 (efectivo)
 import re as _re
 def ren(s):
     if not isinstance(s, str): return s
@@ -38,6 +39,7 @@ def _unidad_cant(p):
         return u, (1 if u == "aporte" else q)
     if p["id"] == "AD-01" or p["id"] == "SE-01": return "mes", 24
     if p["id"] == "IN-01": return "sitio", 110
+    if p["id"] == "CA-05": return "misión", 15
     if c.get("UNIDAD DE MEDIDA"): return c["UNIDAD DE MEDIDA"], c.get("CANTIDAD") or 1
     m = re.search(r"([\d.,]+) ([\wáéíóúñ-]+(?:-[\wáéíóúñ]+)?) × (?:valor unitario )?\$", t)
     q = c.get("CANTIDAD") or c.get("CANTIDAD REQUERIDA") or c.get("Cantidad") or 1
@@ -52,7 +54,7 @@ def partidas():
         tot = p["total"]
         out.append(dict(id=p["id"], rubro_tdr=RUBRO[p["rubro"]], concepto=ren(p["item"]), unidad=u, cant=q,
                         vunit=(tot / q if q else tot), total=tot, sgr=p["sgr"], m_ini=p["ini"], m_fin=p["fin"],
-                        act=p["act"][1:], perfil=p["tipo"], texto=ren(_txt(p)),
+                        act=p["act"][1:], perfil=p["tipo"], texto=ren(_txt(p)), resp=RESP.get(p.get("resp"), "IES"),
                         contra={ENT[k.split()[0]] + ("_EF" if "efectivo" in k else "_ES"): v for k, v in p["fuentes_contra"].items()}))
     return out
 

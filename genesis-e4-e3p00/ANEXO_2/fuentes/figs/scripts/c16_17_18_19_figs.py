@@ -30,7 +30,7 @@ def f16():
            cuerpo="\n" + "\n\n".join(comp), fc=AZUL, lw=2.0, pad=1.4)
     izq = [("Universidad Santo Tomás", "nodos, repuestos y gemelo digital", MEDIO, "-"),
            ("Universidad Santo Tomás", "protocolo, datos y laboratorio", MEDIO, "-"),
-           ("Avanciencia", "propiedad intelectual y convenios de custodia", MEDIO, "-")]
+           ("Avanciencia", "formación de custodios, propiedad intelectual y convenios", MEDIO, "-")]
     der = [("Municipios de Manizales y de Calarcá y consejos", "tablero y alertas", MEDIO, "-"),
            ("Autoridad ambiental", "protocolo de calibración", MEDIO, "-"),
            ("Comunidad y operarios", "usuarios y red de soporte", CLARO, (0, (5, 3)))]

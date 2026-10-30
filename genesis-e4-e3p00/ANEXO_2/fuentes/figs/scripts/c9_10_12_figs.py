@@ -76,11 +76,11 @@ def c9_f01():
 INTERESADOS = [
     ("Universidad Santo Tomás", "I", 8, 9), ("Gerencia de proyecto", "I", 7, 10), ("Equipo técnico y de formación", "I", 4, 9),
     ("Equipo de apropiación y convenios", "I", 3, 8),
-    ("Municipios aliados", "P", 7, 8), ("Avanciencia", "P", 6, 8), ("Financiador", "P", 10, 7),
+    ("Municipios aliados", "P", 7, 8), ("Avanciencia", "P", 6, 8), ("Gestión y Medio Ambiente", "P", 4, 7), ("Financiador", "P", 10, 7),
     ("Consejos municipales", "P", 6, 8), ("Consejos departamentales", "P", 7, 7), ("UNGRD", "P", 8, 5),
     ("Gobernaciones", "P", 8, 4), ("Entidades custodias", "P", 6, 9), ("Personal operario de remoción", "P", 2, 9),
     ("Población expuesta", "P", 2, 6),
-    ("Gestión y Medio Ambiente", "S", 3, 6), ("Autoridades ambientales", "S", 7, 3), ("Laboratorios y evaluación externa", "S", 5, 3), ("Proveedores", "S", 3, 2),
+     ("Autoridades ambientales", "S", 7, 3), ("Laboratorios y evaluación externa", "S", 5, 3), ("Proveedores", "S", 3, 2),
     ("Comunidad científica", "S", 2, 4),
 ]
 UMBRAL = 5.5

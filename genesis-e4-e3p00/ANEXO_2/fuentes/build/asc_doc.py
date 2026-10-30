@@ -53,15 +53,16 @@ p_antes("ESTRATEGIA DE APROPIACIÓN SOCIAL DEL CONOCIMIENTO (ASC)", True, 12)
 p_antes("Proyecto SIGP 143329. Documento extraído del Anexo 2 (sección 19), con la ficha de la estrategia y los datos que la alianza debe aportar. Sigue el numeral 6.1 de los TdR y la plantilla del Anexo 2; se ajusta al formato del Anexo 10 cuando se disponga de él.", italic=True, size=9)
 t_antes(["Campo", "Contenido"], [
  ["Proyecto", "Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto"],
- ["Entidad ejecutora", "Universidad Santo Tomás, sede Villavicencio [Diligenciar: NIT]"],
- ["Aliados en la estrategia", "Municipio de Manizales, Municipio de Calarcá y Avanciencia; Gestión y Medio Ambiente como actor técnico externo"],
+ ["Entidad ejecutora del proyecto", "Universidad Santo Tomás, sede Villavicencio [Diligenciar: NIT]"],
+ ["Ejecutor de la estrategia", "Avanciencia, oficina de transferencia de resultados de investigación, por contrato con la universidad: coordina la estrategia, facilita talleres y jornadas, produce cartillas y publicaciones, sistematiza y forma a los custodios"],
+ ["Aliados en la estrategia", "Municipio de Manizales y Municipio de Calarcá (convocatoria de consejos, registro de decisiones y convenios); Universidad Santo Tomás (coinvestigadores de ambiente y ciencias sociales y soporte del tablero); Gestión y Medio Ambiente (invitado técnico en talleres y jornadas)"],
  ["Territorios", "Manizales (Caldas) y Calarcá (Quindío)"],
  ["Población", "Cuatro consejos de gestión del riesgo, cerca de 40 personas del servicio público, personal operario de remoción y comunidad vecina de los sitios"],
  ["Producto MGA", "Servicio de apropiación social del conocimiento (sector 39, programa 3906): 29 actividades, 20 talleres de co-diseño y 9 jornadas públicas"],
  ["Compromisos asociados", "5.000 cartillas; al menos tres actas firmadas de co-diseño; 60 personas certificadas en uso y custodia (asistencia técnica)"],
  ["Resultado asociado", "Uso del tablero en decisiones documentadas por 75 % o más de los consejos al mes 24"],
- ["Presupuesto", "Actividades 3.1 a 3.4: 1.504.322.462 COP del SGR y 320.000.000 COP de contrapartida en especie"],
- ["Responsables", "Coordinación de apropiación social (Universidad Santo Tomás), con los municipios de Manizales y de Calarcá"],
+ ["Presupuesto", "Actividades 3.1 a 3.4: 1.514.190.872 COP del SGR y 320.000.000 COP de contrapartida en especie; Avanciencia ejecuta 892.587.696 COP de ASC (TH-07, TH-13, MA-04, CA-02, CA-03, CA-05, PD-01, PD-05 y VI-04)"],
+ ["Responsables", "Coordinación de apropiación social de Avanciencia, con los municipios de Manizales y de Calarcá y los coinvestigadores de la universidad"],
  ["Periodo", "Meses 3 a 24"],
 ])
 p_antes("Datos e insumos que la alianza debe aportar", True, 10)
