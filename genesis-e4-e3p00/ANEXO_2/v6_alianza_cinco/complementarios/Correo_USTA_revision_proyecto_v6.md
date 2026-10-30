@@ -14,6 +14,8 @@ Les enviamos para revisión el proyecto «Implementación de una red IoT híbrid
 6. Plan de sostenibilidad (numeral 10.16), con un bloque de firma por entidad operadora.
 7. Borradores de los certificados de precios unitarios de Manizales y de Calarcá, con la partida CA-05 y las nuevas cantidades de VI-01 a VI-03.
 8. Carta unificada del Anexo 1 con los cinco integrantes.
+9. Modelos de certificación de contrapartida de Avanciencia y de Gestión y Medio Ambiente, listos para firmar.
+10. Gráfico integrado del proyecto: red del problema a la solución, árbol de decisión, marco conceptual y compromisos de cada actor.
 
 **2. Qué hace cada integrante**
 
@@ -47,10 +49,9 @@ Les enviamos para revisión el proyecto «Implementación de una red IoT híbrid
 
 **5. Decisiones que necesitamos**
 
-1. **Perfil de pagos de la asesoría jurídica (PD-02).** El Anexo 3 v6 la paga en los meses 2 a 4, pero el Plan de transferencia programa servicios hasta el mes 23. Confirmar si el contrato se paga por anticipado con entregas posteriores.
-2. **Contrato con Avanciencia.** Definir la modalidad de contratación de la apropiación social y la transferencia.
-3. **Plataforma geoespacial.** Las líneas ST-12 a ST-20 necesitan dos cotizaciones nuevas.
-4. **Productos del posdoctor.** El Anexo 12 pide dos productos TOP o A; el numeral 9 de los TdR pide uno. Proponemos acoger dos.
+1. **Contrato con Avanciencia.** Definir la modalidad de contratación de la apropiación social y la transferencia.
+2. **Plataforma geoespacial.** Las líneas ST-12 a ST-20 necesitan dos cotizaciones nuevas.
+3. **Productos del posdoctor.** El Anexo 12 pide dos productos TOP o A; el numeral 9 de los TdR pide uno. Proponemos acoger dos.
 
 Quedamos atentos a sus observaciones. Cualquier ajuste se integra el lunes 2 de noviembre para radicar el martes 3 antes del mediodía.
 

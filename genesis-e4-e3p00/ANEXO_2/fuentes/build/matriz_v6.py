@@ -89,9 +89,9 @@ def obs(p):
     if "15 comités" in t or "comités" in p["concepto"]:
         o.append("El Anexo 3 escribe «comités» o «15 comités»; el Anexo 2 usa cuatro consejos (Ley 1523 de 2012)")
     if p["id"] == "PD-02":
-        o.append("El Anexo 3 v6 programa la partida en la actividad 1.1 (meses 2 a 4); el Plan de transferencia ejecuta horas de asesoría hasta el mes 23: confirmar el perfil de pagos")
+        o.append("Las 150 horas se ejecutan en M2–M4 (actividad 1.1); la aplicación posterior la ejecutan TH-16 y TH-22 de Avanciencia sin costo adicional de esta línea (tabla 18.5)")
     if p["id"] == "VI-05":
-        o.append("El Anexo 3 v6 asigna la partida a la actividad 2.3; su concepto cubre los tramos 2 y 3 (actividades 2.3 y 2.4)")
+        o.append("Partida completa en su actividad principal (2.3), según la regla del cronograma financiero; también financia la instalación del tramo 3 (2.4)")
     if p["id"] == "CA-05":
         o.append("Partida nueva del Anexo 3 v6: 15 misiones de 3 personas por 3 días, trasladadas de VI-01 a VI-03")
     if p["id"] == "TH-12":
@@ -184,7 +184,7 @@ def main(out):
     al.append(["Partidas sin aportante", "Ninguna", "EQ-13 y VI-05 pasan a Gestión y Medio Ambiente, integrante de la alianza en el Anexo 3 v6", "Certificar los aportes"])
     al.append(["Contrapartida en efectivo", m2.cop(m2.CON_EFECTIVO), "El criterio 7 otorga dos puntos con efectivo ≥ 1 % del SGR (139.994.053 COP); VI-05 lo cumple con 1,07 %", "Certificación del representante legal de Gestión y Medio Ambiente"])
     al.append(["Cotizaciones", f"{sum(1 for p in P if re.search(r'pendiente|por reunir', p['texto']))} partidas con cotización pendiente", "TdR 12.2: dos cotizaciones por rubro; su falta no se subsana", "Reunir antes del cierre; prioridad ST-12 a ST-20, EQ-18 a EQ-21, EQ-23"])
-    al.append(["Período de PD-02", "Actividad 1.1, M2–M4", "La consulta de libertad de operación precede a la compra del lote 1, pero el Plan de transferencia programa asesoría hasta el mes 23", "Confirmar si el contrato se paga en M2–M4 con entregas posteriores o extender el perfil de pagos"])
+    al.append(["Período de PD-02", "Actividad 1.1, M2–M4", "Resuelto: las 150 horas producen en M2–M4 el informe de libertad de operación, el borrador del acuerdo marco, las minutas de convenio y la matriz de vencimientos; la aplicación posterior la ejecutan TH-16 y TH-22 de Avanciencia (tabla 18.5)", "Sin ajuste al Anexo 3"])
     al.append(["Importación", "Sin partida", "El Anexo 2 supone entrega en Colombia incluida en el precio cotizado", "Confirmar en cada cotización"])
     al.append(["Sede del laboratorio", "EQ-22, EQ-12", "Los equipos solo se financian en municipios afectados; la universidad no tiene sede en Manizales ni en Calarcá", "Definir el espacio en Manizales o Calarcá"])
     al.append(["Plan de sostenibilidad", "SIG a 1.005.925 COP/usuario-mes", "El Anexo 3 usa 995.103 COP/usuario-mes en EQ-14", "Unificar el precio unitario en el plan"])

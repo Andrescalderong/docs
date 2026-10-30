@@ -8,8 +8,9 @@ La carpeta `v6_alianza_cinco/` contiene la versión vigente, ajustada al Anexo 3
 - `anexo_2._documento_tecnico_15_v6_con_cambios.docx`: copia con control de cambios frente a la versión 5.
 - `anexo_a._analisis_problema_publico_y_estructura_causal_v6.docx` y `.pdf`: Anexo A.
 - `matriz_correspondencia_v6.xlsx`: 97 partidas con entidad ejecutora; conciliación SGR 13.999.405.215 COP, contrapartida 1.774.000.000 COP.
-- `Relacion_cambios_y_vacios_v6.docx` y `.md`: cambios relevantes y vacíos por decidir.
-- `complementarios/`: Anexo 1 con cinco firmas, estrategia ASC ejecutada por Avanciencia, plan de sostenibilidad v3, certificados de precios con CA-05 y VI-01 a VI-03, correo a la universidad.
+- `Relacion_cambios_y_vacios_v6.docx` y `.md`: cambios relevantes y cierre de los diez vacíos detectados.
+- `Grafico_integrado_proyecto_v6.png` y `.pdf`: red del problema a la solución, árbol de decisión de las compuertas, marco conceptual por actividades y compromisos y valor de cada actor.
+- `complementarios/`: modelos de certificación de contrapartida de Avanciencia y de Gestión y Medio Ambiente, Anexo 1 con cinco firmas, estrategia ASC ejecutada por Avanciencia, plan de sostenibilidad v3, certificados de precios con CA-05 y VI-01 a VI-03, correo a la universidad.
 
 Cambios principales: Gestión y Medio Ambiente se incorpora como aliado del sector productivo (110.000.000 COP en especie y 150.000.000 COP en efectivo, 1,07 % del SGR, criterio 7); Avanciencia ejecuta por contrato la apropiación social (892.587.696 COP) y la transferencia; PD-02 pasa a la actividad 1.1; la actividad 3.4 queda en 39.000.000 COP; el aval de ética es obligatorio.
 

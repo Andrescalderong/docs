@@ -15,20 +15,20 @@
 7. Ética: el proyecto requiere aval del comité de ética, porque trata datos personales de participantes en talleres, jornadas y encuestas (secciones 25, 27 y 30).
 8. Coherencia interna: la sección 13 decía «cada departamento cuenta con un monitor gravimétrico»; se corrigió al conjunto de referencia rotativo vigente.
 
-## 2. Vacíos que requieren decisión o dato
+## 2. Vacíos y cómo quedaron cerrados
 
-| N.º | Vacío | Dónde | Quién decide |
+| N.º | Vacío | Decisión tomada y dónde quedó | Estado |
 | --- | --- | --- | --- |
-| 1 | El Anexo 3 v6 paga PD-02 en los meses 2 a 4, pero el Plan de transferencia programa asesoría hasta el mes 23 (acuerdo marco, convenios y actualizaciones) | Tabla 18.5; matriz | Alianza: pago anticipado con entregas posteriores o perfil de pagos extendido |
-| 2 | VI-05 está en la actividad 2.3, pero su concepto cubre los tramos 2 y 3 (2.3 y 2.4) | Secciones 14 y 15 | Formulador del Anexo 3 |
-| 3 | El profesional de convenios (TH-16) es de Avanciencia, pero no está en los 892.587.696 COP de ASC; se trató como transferencia | Sección 19 | Alianza |
-| 4 | El conteo de 32 vinculaciones con recursos del SGR no se recalculó con los perfiles que ejecuta Avanciencia | Sección 11.4 | Universidad |
-| 5 | Poder (4) e interés (7) de Gestión y Medio Ambiente son una inferencia nueva | Tabla 10.4 | Alianza |
-| 6 | La firma del plan de sostenibilidad por Gestión y Medio Ambiente solo procede si opera un componente; hoy no tiene custodia asignada | Sección 16 | Alianza |
-| 7 | La relación «el gemelo debe calibrarse antes de las campañas» se interpretó como razón de la ventana de compra de los meses 7 a 11 | Sección 7.4 | Equipo técnico |
-| 8 | Certificados de existencia, NIT, aspa y año de constitución de Avanciencia y de Gestión y Medio Ambiente (numerales 10.12 a 10.14) | Secciones 1 y 26 | Cada entidad |
-| 9 | Certificación del aporte en efectivo de Gestión y Medio Ambiente; sin ella el criterio 7 vuelve a cero | Secciones 26 y 28 | Gestión y Medio Ambiente |
-| 10 | El bucle confianza → uso → recursos sigue siendo una inferencia sin fuente | Sección 5.4 | Se conserva marcado como inferido |
+| 1 | PD-02 se paga en los meses 2 a 4, pero el Plan de transferencia programaba asesoría hasta el mes 23 | Las 150 horas se ejecutan en los meses 2 a 4 (actividad 1.1) y producen el informe de libertad de operación (60 h), el borrador del acuerdo marco (40 h), las minutas tipo de convenio y licencia (30 h) y la matriz de vencimientos (20 h). La firma del acuerdo, la negociación de convenios y las actualizaciones de los meses 12, 17 y 23 las ejecutan el profesional de convenios (TH-16) y el equipo de transferencia de Avanciencia en especie (TH-22), sin costo adicional. Tabla 18.5 y nota; matriz | Cerrado; no requiere ajustar el Anexo 3 |
+| 2 | VI-05 figura en 2.3 y cubre los tramos 2 y 3 | Se aplica la regla del cronograma financiero: cada partida completa en su actividad principal; el texto lo explica con este caso. Sección 15; matriz | Cerrado |
+| 3 | TH-16 no está en los 892.587.696 COP de ASC | Avanciencia ejecuta 1.347.060.791 COP del SGR = 892.587.696 de ASC + 454.473.095 de transferencia (TH-16, CA-01, PD-02, PD-04 y PD-06); la suma cuadra con el Anexo 3 v6. Secciones 18 y 19 | Cerrado |
+| 4 | Conteo de vinculaciones | Recalculado con las cantidades de persona-mes: 32 personas (23 profesionales y técnicos, 9 en formación); 28 las vincula la universidad y 4 Avanciencia. Sección 11.4 | Cerrado; el total no cambia |
+| 5 | Poder e interés de Gestión y Medio Ambiente | Justificados en la nota de la tabla 10.4 (poder 4: su efectivo condiciona dos puntos, pero no decide compuertas ni custodia; interés 7: recibe el desempeño de sus equipos) y validación en el primer taller de la actividad 3.1, como los demás valores | Cerrado |
+| 6 | Firma del plan de sostenibilidad por Gestión y Medio Ambiente | Lo firman la universidad y los dos municipios, que operan componentes; Avanciencia y Gestión y Medio Ambiente no operan componentes después del cierre y no lo suscriben. Sección 16.3 | Cerrado |
+| 7 | Ventana de compra del laboratorio | Confirmada con el cronograma: los equipos se compran en los meses 7 a 11 (actividad 2.6) para dejar la cadena montada y probada antes de las campañas del mes 14, cuyos tres primeros eventos hacen la primera calibración (actividades 2.7 y 1.7). Sección 7.4 | Cerrado |
+| 8 | Certificados de existencia, NIT, aspa y año de constitución de Avanciencia y de Gestión y Medio Ambiente | Es un documento que solo cada entidad expide. Queda como acción con responsable y fecha límite (domingo 1 de noviembre, 6:00 p. m.) en la tabla de decisiones del soporte inicial y en el correo | Acción externa con fecha |
+| 9 | Certificación del efectivo de Gestión y Medio Ambiente | Se entregan dos modelos de certificación de contrapartida listos para firmar (Gestión y Medio Ambiente: 110.000.000 en especie y 150.000.000 en efectivo; Avanciencia: 150.000.000 en especie), con código, actividad y momento del aporte | Modelo listo; falta la firma |
+| 10 | Bucle confianza → uso → recursos sin fuente | Cada tramo quedó respaldado: confianza en la utilidad → uso (Venkatesh et al., 2003); efectividad percibida y compromiso de los usuarios → financiación continuada (Shediac-Rizkallah y Bone, 1998). Su ocurrencia local sigue siendo inferencia, que la compuerta C1 contrasta. Sección 5.4 | Cerrado |
 
 ## 3. Registro por sección
 
