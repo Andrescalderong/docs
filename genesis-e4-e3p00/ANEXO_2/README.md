@@ -1,5 +1,9 @@
 # Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE, SIGP 143329)
 
+## Carpeta de radicación (30 de octubre de 2026)
+
+`ENTREGA_RADICACION_SIGP_143329/` reúne en un solo lugar lo vigente para radicar: `00_LEEME_lista_de_control` (qué hacer, quién firma, numeral y fechas), `01_CARGAR_EN_SIGP` (Anexo 2 y Anexo A v6), `02_FIRMAR` (Anexo 1, certificados 10.18, 10.19 y 10.21, compromisos 10.6, plan de sostenibilidad, certificados de precios y de contrapartida, Anexo 3 v6 y solicitud de aval de ética, organizados por entidad), `03_REVISAR_Y_PROCESAR` (uso interno) y `04_OBTENER_DE_TERCEROS` (documentos que expiden otras entidades).
+
 ## Versión 6 (30 de octubre de 2026): alianza de cinco integrantes y revisión de cohesión
 
 La carpeta `v6_alianza_cinco/` contiene la versión vigente, ajustada al Anexo 3 versión 6 y revisada en cohesión de párrafos (sin cambiar cifras, fuentes, responsables ni grado de certeza).
