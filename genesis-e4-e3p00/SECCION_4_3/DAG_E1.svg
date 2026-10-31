@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" role="img" font-family="DejaVu Sans, Arial, sans-serif">
+<title>DAG principal del estimando E1: efecto del método de corrección sobre el error de medición</title>
+<desc>Grafo dirigido por nodo-semana. El sorteo semanal asigna X. Los controles V01 a V04 afectan Y. V05 afecta V01, V02 y V09. V08 y V09 descienden de X. V11 y V12 descienden de Y y afectan V15. La flecha de V15 hacia X es una retroalimentación que rompe la aciclicidad si X no es aleatorizado. Los nodos latentes afectan Y.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2A3439"/></marker></defs>
+<text x="30" y="28" font-size="16" fill="#2A3439" font-weight="bold">DAG principal del estimando E1 (4.3.4)</text>
+<text x="30" y="48" font-size="11" fill="#2A3439">Trazo continuo: relación dirigida. Trazo discontinuo: retroalimentación o amenaza de identificación. Escenario S2 y diseño del informe_FINAL, sección 11.</text>
+<path d="M200 328 L250 332" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>U hacia X</title></path>
+<path d="M450 332 L600 332" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>X hacia Y</title></path>
+<path d="M395 136 L395 200 L640 200 L640 300" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V04 hacia Y</title></path>
+<path d="M570 136 L570 230 L660 230 L660 300" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V03 hacia Y</title></path>
+<path d="M745 136 L745 230 L700 230 L700 300" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V01 hacia Y</title></path>
+<path d="M915 136 L915 200 L740 200 L740 300" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V02 hacia Y</title></path>
+<path d="M1030 113 L980 113" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V05 hacia V02</title></path>
+<path d="M1100 90 L1100 66 L745 66 L745 90" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V05 hacia V01</title></path>
+<path d="M1100 136 L1100 600 L575 600 L575 566" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V05 hacia V09</title></path>
+<path d="M300 364 L300 520" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>X hacia V08</title></path>
+<path d="M400 364 L400 470 L540 470 L540 520" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>X hacia V09</title></path>
+<path d="M770 332 L835 332 L835 293 L900 293" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>Y hacia V11</title></path>
+<path d="M770 332 L835 332 L835 373 L900 373" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>Y hacia V12</title></path>
+<path d="M1050 293 L1075 293 L1075 535 L1050 535" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V11 hacia V15</title></path>
+<path d="M1050 373 L1065 373 L1065 553 L1050 553" fill="none" stroke="#2A3439" stroke-width="1.6" marker-end="url(#a)"><title>V12 hacia V15</title></path>
+<path d="M900 543 L860 543 L860 430 L350 430 L350 364" fill="none" stroke="#2A3439" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a)"><title>V15 hacia X</title></path>
+<path d="M270 208 L620 208 L620 300" fill="none" stroke="#2A3439" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a)"><title>L hacia Y</title></path>
+<rect x="40" y="300" width="160" height="56" rx="10" fill="#F7F7F7" stroke="#2A3439" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="120.0" y="325.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">U. Sorteo semanal</text>
+<text x="120.0" y="340.0" text-anchor="middle" font-size="9.5" fill="#2A3439">asignación aleatoria</text>
+<rect x="250" y="300" width="200" height="64" rx="10" fill="#6699CC" stroke="#2A3439" stroke-width="1.5"/>
+<text x="350.0" y="329.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">X. Método de corrección</text>
+<text x="350.0" y="344.0" text-anchor="middle" font-size="9.5" fill="#2A3439">V07 como intensidad</text>
+<rect x="600" y="300" width="170" height="64" rx="10" fill="#6699CC" stroke="#2A3439" stroke-width="1.5"/>
+<text x="685.0" y="329.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">Y. V06</text>
+<text x="685.0" y="344.0" text-anchor="middle" font-size="9.5" fill="#2A3439">log NMAE por nodo-semana</text>
+<rect x="330" y="90" width="130" height="46" rx="10" fill="#9EB9D4" stroke="#2A3439" stroke-width="1.5"/>
+<text x="395.0" y="110.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V04 viento</text>
+<text x="395.0" y="125.0" text-anchor="middle" font-size="9.5" fill="#2A3439">control</text>
+<rect x="500" y="90" width="140" height="46" rx="10" fill="#9EB9D4" stroke="#2A3439" stroke-width="1.5"/>
+<text x="570.0" y="110.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V03 humedad</text>
+<text x="570.0" y="125.0" text-anchor="middle" font-size="9.5" fill="#2A3439">control y moderador</text>
+<rect x="680" y="90" width="130" height="46" rx="10" fill="#9EB9D4" stroke="#2A3439" stroke-width="1.5"/>
+<text x="745.0" y="110.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V01 PM2,5</text>
+<text x="745.0" y="125.0" text-anchor="middle" font-size="9.5" fill="#2A3439">control</text>
+<rect x="850" y="90" width="130" height="46" rx="10" fill="#9EB9D4" stroke="#2A3439" stroke-width="1.5"/>
+<text x="915.0" y="110.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V02 PM10</text>
+<text x="915.0" y="125.0" text-anchor="middle" font-size="9.5" fill="#2A3439">control</text>
+<rect x="1030" y="90" width="140" height="46" rx="10" fill="#9EB9D4" stroke="#2A3439" stroke-width="1.5"/>
+<text x="1100.0" y="110.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V05 escombros</text>
+<text x="1100.0" y="125.0" text-anchor="middle" font-size="9.5" fill="#2A3439">causa de V01, V02 y V09</text>
+<rect x="40" y="170" width="230" height="76" rx="10" fill="#F5F5F5" stroke="#2A3439" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="155.0" y="205.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">Latentes L1 a L3</text>
+<text x="155.0" y="220.0" text-anchor="middle" font-size="9.5" fill="#2A3439">distancia, edad del sensor, episodio de humo</text>
+<rect x="900" y="270" width="150" height="46" rx="10" fill="#B9D9EB" stroke="#2A3439" stroke-width="1.5"/>
+<text x="975.0" y="290.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V11 AQHI</text>
+<text x="975.0" y="305.0" text-anchor="middle" font-size="9.5" fill="#2A3439">descendiente de Y</text>
+<rect x="900" y="350" width="150" height="46" rx="10" fill="#B9D9EB" stroke="#2A3439" stroke-width="1.5"/>
+<text x="975.0" y="370.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V12 falsas alarmas</text>
+<text x="975.0" y="385.0" text-anchor="middle" font-size="9.5" fill="#2A3439">descendiente de Y</text>
+<rect x="250" y="520" width="160" height="46" rx="10" fill="#B9D9EB" stroke="#2A3439" stroke-width="1.5"/>
+<text x="330.0" y="540.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V08 latencia</text>
+<text x="330.0" y="555.0" text-anchor="middle" font-size="9.5" fill="#2A3439">descendiente de X</text>
+<rect x="480" y="520" width="190" height="46" rx="10" fill="#B9D9EB" stroke="#2A3439" stroke-width="1.5"/>
+<text x="575.0" y="540.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V09 disponibilidad</text>
+<text x="575.0" y="555.0" text-anchor="middle" font-size="9.5" fill="#2A3439">descendiente de X; selección</text>
+<rect x="900" y="520" width="150" height="46" rx="10" fill="#B9D9EB" stroke="#2A3439" stroke-width="1.5"/>
+<text x="975.0" y="540.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2A3439">V15 adopción</text>
+<text x="975.0" y="555.0" text-anchor="middle" font-size="9.5" fill="#2A3439">retroalimenta a X</text>
+<rect x="40" y="664" width="18" height="14" fill="#F7F7F7" stroke="#2A3439"/><text x="64" y="675" font-size="11" fill="#2A3439">Asignación</text>
+<rect x="240" y="664" width="18" height="14" fill="#6699CC" stroke="#2A3439"/><text x="264" y="675" font-size="11" fill="#2A3439">Intervención y resultado</text>
+<rect x="440" y="664" width="18" height="14" fill="#9EB9D4" stroke="#2A3439"/><text x="464" y="675" font-size="11" fill="#2A3439">Control</text>
+<rect x="640" y="664" width="18" height="14" fill="#B9D9EB" stroke="#2A3439"/><text x="664" y="675" font-size="11" fill="#2A3439">Descendiente</text>
+<rect x="840" y="664" width="18" height="14" fill="#F5F5F5" stroke="#2A3439"/><text x="864" y="675" font-size="11" fill="#2A3439">Latente</text>
+</svg>

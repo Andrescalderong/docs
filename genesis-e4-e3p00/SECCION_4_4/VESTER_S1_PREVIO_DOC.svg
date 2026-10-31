@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10in" height="7in" viewBox="0 0 1000 700" role="img"><title>Vester / S1_PREVIO_DOC</title><desc>Escenario no ratificado. Dependencia X, influencia Y. Porcentaje del total de cada eje.</desc>
+<g font-family="sans-serif" fill="#2A3439"><text x="100" y="30" font-size="18">Vester / S1_PREVIO_DOC</text><text x="100" y="53" font-size="12">NO RATIFICADO · porcentajes por eje · cortes por mediana</text>
+<path d="M100 90 V540 H880" fill="none" stroke="#2A3439"/>
+<path d="M316.66666666666674 90 V540 M100 352.5 H880" fill="none" stroke="#9EB9D4" stroke-dasharray="5 4"/>
+<circle cx="360.000" cy="399.375" r="5" fill="#6699CC" stroke="#2A3439"/><text x="367.000" y="391.375" font-size="11">V01/V09</text>
+<circle cx="360.000" cy="352.500" r="5" fill="#6699CC" stroke="#2A3439"/><text x="367.000" y="344.500" font-size="11">V02</text>
+<circle cx="100.000" cy="258.750" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="250.750" font-size="11">V03</text>
+<circle cx="100.000" cy="305.625" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="297.625" font-size="11">V04</text>
+<circle cx="100.000" cy="165.000" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="157.000" font-size="11">V05</text>
+<circle cx="750.000" cy="258.750" r="5" fill="#6699CC" stroke="#2A3439"/><text x="757.000" y="250.750" font-size="11">V06</text>
+<circle cx="186.667" cy="305.625" r="5" fill="#6699CC" stroke="#2A3439"/><text x="193.667" y="297.625" font-size="11">V07</text>
+<circle cx="186.667" cy="352.500" r="5" fill="#6699CC" stroke="#2A3439"/><text x="193.667" y="344.500" font-size="11">V08</text>
+<circle cx="230.000" cy="305.625" r="5" fill="#6699CC" stroke="#2A3439"/><text x="237.000" y="297.625" font-size="11">V10</text>
+<circle cx="403.333" cy="305.625" r="5" fill="#6699CC" stroke="#2A3439"/><text x="410.333" y="297.625" font-size="11">V11</text>
+<circle cx="316.667" cy="352.500" r="5" fill="#6699CC" stroke="#2A3439"/><text x="323.667" y="344.500" font-size="11">V12/V15</text>
+<circle cx="186.667" cy="399.375" r="5" fill="#6699CC" stroke="#2A3439"/><text x="193.667" y="391.375" font-size="11">V13</text>
+<circle cx="446.667" cy="446.250" r="5" fill="#6699CC" stroke="#2A3439"/><text x="453.667" y="438.250" font-size="11">V14</text>
+<text x="100.00" y="562" text-anchor="middle" font-size="11">0.0</text><text x="88" y="544.00" text-anchor="end" font-size="11">0.0</text>
+<text x="256.00" y="562" text-anchor="middle" font-size="11">5.4</text><text x="88" y="454.00" text-anchor="end" font-size="11">2.9</text>
+<text x="412.00" y="562" text-anchor="middle" font-size="11">10.7</text><text x="88" y="364.00" text-anchor="end" font-size="11">5.7</text>
+<text x="568.00" y="562" text-anchor="middle" font-size="11">16.1</text><text x="88" y="274.00" text-anchor="end" font-size="11">8.6</text>
+<text x="724.00" y="562" text-anchor="middle" font-size="11">21.5</text><text x="88" y="184.00" text-anchor="end" font-size="11">11.5</text>
+<text x="880.00" y="562" text-anchor="middle" font-size="11">26.9</text><text x="88" y="94.00" text-anchor="end" font-size="11">14.3</text>
+<text x="490.0" y="605" text-anchor="middle" font-size="14">Dependencia (% del total)</text>
+<text x="24" y="320" transform="rotate(-90 24 320)" text-anchor="middle" font-size="14">Influencia (% del total)</text>
+<text x="100" y="640" font-size="11">Los puntos coincidentes comparten etiqueta. Los cuadrantes no acreditan causalidad.</text></g></svg>

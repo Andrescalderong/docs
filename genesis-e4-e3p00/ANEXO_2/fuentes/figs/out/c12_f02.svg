@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="727.2pt" height="699.471625pt" viewBox="0 0 727.2 699.471625" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-23T20:26:27.940698</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 699.471625 
+L 727.2 699.471625 
+L 727.2 -0 
+L 0 -0 
+L 0 699.471625 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 455.5512 221.823625 
+L 706.4568 221.823625 
+Q 712.872 221.823625 712.872 215.408425 
+L 712.872 124.882825 
+Q 712.872 118.467625 706.4568 118.467625 
+L 455.5512 118.467625 
+Q 449.136 118.467625 449.136 124.882825 
+L 449.136 215.408425 
+Q 449.136 221.823625 455.5512 221.823625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 455.5512 346.563625 
+L 706.4568 346.563625 
+Q 712.872 346.563625 712.872 340.148425 
+L 712.872 249.622825 
+Q 712.872 243.207625 706.4568 243.207625 
+L 455.5512 243.207625 
+Q 449.136 243.207625 449.136 249.622825 
+L 449.136 340.148425 
+Q 449.136 346.563625 455.5512 346.563625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 455.5512 471.303625 
+L 706.4568 471.303625 
+Q 712.872 471.303625 712.872 464.888425 
+L 712.872 374.362825 
+Q 712.872 367.947625 706.4568 367.947625 
+L 455.5512 367.947625 
+Q 449.136 367.947625 449.136 374.362825 
+L 449.136 464.888425 
+Q 449.136 471.303625 455.5512 471.303625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 455.5512 596.043625 
+L 706.4568 596.043625 
+Q 712.872 596.043625 712.872 589.628425 
+L 712.872 499.102825 
+Q 712.872 492.687625 706.4568 492.687625 
+L 455.5512 492.687625 
+Q 449.136 492.687625 449.136 499.102825 
+L 449.136 589.628425 
+Q 449.136 596.043625 455.5512 596.043625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 20.7432 238.752625 
+L 214.6248 238.752625 
+Q 221.04 238.752625 221.04 232.337425 
+L 221.04 145.375825 
+Q 221.04 138.960625 214.6248 138.960625 
+L 20.7432 138.960625 
+Q 14.328 138.960625 14.328 145.375825 
+L 14.328 232.337425 
+Q 14.328 238.752625 20.7432 238.752625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 20.7432 407.151625 
+L 214.6248 407.151625 
+Q 221.04 407.151625 221.04 400.736425 
+L 221.04 313.774825 
+Q 221.04 307.359625 214.6248 307.359625 
+L 20.7432 307.359625 
+Q 14.328 307.359625 14.328 313.774825 
+L 14.328 400.736425 
+Q 14.328 407.151625 20.7432 407.151625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 20.7432 575.550625 
+L 214.6248 575.550625 
+Q 221.04 575.550625 221.04 569.135425 
+L 221.04 482.173825 
+Q 221.04 475.758625 214.6248 475.758625 
+L 20.7432 475.758625 
+Q 14.328 475.758625 14.328 482.173825 
+L 14.328 569.135425 
+Q 14.328 575.550625 20.7432 575.550625 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 14.328 631.683625 
+L 78.48 631.683625 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 363.6 631.683625 
+L 427.752 631.683625 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="14.328" y="94.469942" transform="rotate(-0 14.328 94.469942)">Objetivos específicos</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="449.136" y="94.209592" transform="rotate(-0 449.136 94.209592)">Objetivos de Desarrollo Sostenible</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="146.911192" transform="rotate(-0 581.004 146.911192)">ODS 3. Salud y bienestar</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="167.188441" transform="rotate(-0 581.004 167.188441)">Reducir enfermedades y muertes por</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="184.111191" transform="rotate(-0 581.004 184.111191)">contaminación del aire; el proyecto</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="200.513241" transform="rotate(-0 581.004 200.513241)">no promete efectos en salud</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="263.800012" transform="rotate(-0 581.004 263.800012)">ODS 9. Industria,</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="281.554662" transform="rotate(-0 581.004 281.554662)">innovación e infraestructura</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="300.259641" transform="rotate(-0 581.004 300.259641)">Infraestructura fiable y</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="316.922041" transform="rotate(-0 581.004 316.922041)">resiliente; capacidades</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="333.844791" transform="rotate(-0 581.004 333.844791)">científicas y tecnológicas</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="388.059992" transform="rotate(-0 581.004 388.059992)">ODS 11. Ciudades y</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="406.034312" transform="rotate(-0 581.004 406.034312)">comunidades sostenibles</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="424.999641" transform="rotate(-0 581.004 424.999641)">Menos personas afectadas</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="441.922391" transform="rotate(-0 581.004 441.922391)">por desastres; atención a</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="459.585512" transform="rotate(-0 581.004 459.585512)">la calidad del aire</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="529.773591" transform="rotate(-0 581.004 529.773591)">ODS 13. Acción por el clima</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="549.739641" transform="rotate(-0 581.004 549.739641)">Resiliencia y capacidad institucional</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="581.004" y="566.402041" transform="rotate(-0 581.004 566.402041)">ante riesgos y desastres</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="166.819192" transform="rotate(-0 117.684 166.819192)">OE1</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="187.420862" transform="rotate(-0 117.684 187.420862)">Medición verificada de</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="202.822191" transform="rotate(-0 117.684 202.822191)">PM2,5 y PM10 y validación</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="219.224241" transform="rotate(-0 117.684 219.224241)">del gemelo predictivo</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="343.549392" transform="rotate(-0 117.684 343.549392)">OE2</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="362.629641" transform="rotate(-0 117.684 362.629641)">Red disponible y</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="380.813462" transform="rotate(-0 117.684 380.813462)">laboratorio de modelación</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="503.617192" transform="rotate(-0 117.684 503.617192)">OE3</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="523.294416" transform="rotate(-0 117.684 523.294416)">Uso institucional,</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="539.620191" transform="rotate(-0 117.684 539.620191)">custodia y evaluación</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="117.684" y="556.282591" transform="rotate(-0 117.684 556.282591)">previa de demolición</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 223.8912 211.666225 
+Q 335.088 196.608325 444.844502 181.745465 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 439.342635 179.866779 
+L 444.844502 181.745465 
+L 440.040433 185.019747 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #2a3439; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 223.8912 166.047025 
+Q 335.088 298.538725 445.35043 429.917118 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 443.999073 424.262577 
+L 445.35043 429.917118 
+L 440.015983 427.605479 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #2a3439; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 223.8912 345.850825 
+Q 335.088 450.810625 445.227845 554.772754 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 443.231056 549.312642 
+L 445.227845 554.772754 
+L 439.661681 553.094118 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #2a3439; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 223.8912 548.464225 
+Q 335.088 353.602525 445.564436 160.003194 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 440.728988 163.230956 
+L 445.564436 160.003194 
+L 445.245377 165.808209 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #2a3439; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 223.8912 502.845025 
+Q 335.088 517.902925 444.844502 532.765785 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 440.040433 529.491503 
+L 444.844502 532.765785 
+L 439.342635 534.644471 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #2a3439; stroke-dasharray: 5.85,3.9; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 223.8912 188.856625 
+Q 335.088 247.573525 442.923345 304.515426 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+    <path d="M 438.497799 298.333635 
+L 442.923345 304.515426 
+L 435.322585 304.346788 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #6699cc; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 223.8912 368.660425 
+Q 335.088 326.070625 442.734956 284.840461 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+    <path d="M 435.168708 284.097574 
+L 442.734956 284.840461 
+L 437.600898 290.447728 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #6699cc; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 223.8912 525.654625 
+Q 335.088 466.937725 442.923345 409.995824 
+" clip-path="url(#pd9f44ec23a)" style="fill: none; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+    <path d="M 435.322585 410.164462 
+L 442.923345 409.995824 
+L 438.497799 416.177615 
+z
+" clip-path="url(#pd9f44ec23a)" style="fill: #6699cc; stroke: #6699cc; stroke-width: 3.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="89.172" y="636.031267" transform="rotate(-0 89.172 636.031267)">Contribución directa (3)</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="438.444" y="636.031267" transform="rotate(-0 438.444 636.031267)">Contribución indirecta (5)</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="14.328" y="669.267641" transform="rotate(-0 14.328 669.267641)">Directa: el producto del objetivo es el medio principal de la meta.</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="14.328" y="686.190391" transform="rotate(-0 14.328 686.190391)">Indirecta: el producto es un insumo de otra acción.</text>
+   </g>
+  </g>
+  <g id="text_35">
+   <text style="font-weight: 700; font-size: 16.66875px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; fill: #2a3439" transform="translate(10.8 22.235733)">Los objetivos específicos contribuyen a</text>
+   <text style="font-weight: 700; font-size: 16.66875px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; fill: #2a3439" transform="translate(10.8 42.238233)">cuatro Objetivos de Desarrollo Sostenible</text>
+  </g>
+  <g id="text_36">
+   <text style="font-size: 13.0175px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="10.8" y="64.900054" transform="rotate(-0 10.8 64.900054)">Contribución de cada objetivo específico a los ODS de la Agenda 2030</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd9f44ec23a">
+   <rect x="7.2" y="79.263625" width="712.8" height="613.008"/>
+  </clipPath>
+ </defs>
+</svg>
