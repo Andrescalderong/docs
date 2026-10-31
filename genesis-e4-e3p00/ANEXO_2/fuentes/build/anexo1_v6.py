@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Diligencia el Anexo 1 oficial (carta unificada de aval, compromiso institucional y modelo de gobernanza) con el Anexo 3 v6.
+"""Diligencia el Anexo 1 oficial (carta unificada de aval, compromiso institucional y modelo de gobernanza) con el Anexo 3 v7.
 Uso: python3 build/anexo1_v6.py plantilla.docx salida.docx"""
 import sys, re, copy, docx
 from docx.shared import RGBColor
@@ -119,7 +119,7 @@ for textos in extra:
 for i in sorted([8, 9, 26, 46, 50, 51, 52], reverse=True):
     borrar(P[i])
 
-# ------------------------------------------------------------------ tabla de contrapartida (Anexo 3 v6)
+# ------------------------------------------------------------------ tabla de contrapartida (Anexo 3 v7)
 C = [("Universidad Santo Tomás, sede Villavicencio", 1244000000, 0), ("Municipio de Manizales", 60000000, 0),
      ("Municipio de Calarcá", 60000000, 0), ("Avanciencia", 150000000, 0), ("Gestión y Medio Ambiente", 110000000, 150000000)]
 TOT = sum(e + f for _, e, f in C)
@@ -191,8 +191,9 @@ fila_ultima(30, "La Universidad Santo Tomás administra el proyecto con su siste
             "plan de trabajo, la matriz de riesgos y el registro de permisos, y entrega ocho informes trimestrales a la supervisión. Cada aliado "
             "reporta trimestralmente su contrapartida con soportes. El convenio de la alianza se firma antes del acta de inicio.")
 fila_ultima(31, "Los recursos del SGR se ejecutan por la Universidad Santo Tomás en cuenta y centro de costos exclusivos, con conciliación mensual. "
-            "Los aliados no reciben recursos del SGR. La contrapartida es de 1.774.000.000 COP: 1.624.000.000 en especie y 150.000.000 en "
-            "efectivo de Gestión y Medio Ambiente, según el Anexo 3. La revisoría fiscal y el rubro de seguimiento sustentan el control.")
+            "Los aliados no administran recursos del SGR; Avanciencia ejecuta 1.347.060.791 COP por contrato con la universidad, que paga contra "
+            "entregables. La contrapartida es de 1.774.000.000 COP: 1.624.000.000 en especie (los municipios aportan uso de software y hardware, no "
+            "talento humano) y 150.000.000 en efectivo de Gestión y Medio Ambiente, según el Anexo 3 v7. La revisoría fiscal y el rubro de seguimiento sustentan el control.")
 fila_ultima(34, "La operación posterior se financia con partidas permanentes de las entidades custodias. La Universidad Santo Tomás sostiene la red, "
             "la plataforma, los datos y el laboratorio. Cada municipio sostiene el tablero, el protocolo de alerta y la custodia local de sus nodos. "
             "El costo anual calculable es de 265.716.408 COP (tabla 16.6 del Anexo 2). Cada entidad operadora firma el plan de sostenibilidad "

@@ -2,7 +2,7 @@
 """Presupuesto aprobado del Anexo 3 v5 (libro Anexo3_Conv56_POLVO-L51-PM_v5.xlsx): partidas con código, rubro, cantidad, unidad,
 valor unitario, fuentes, actividad principal y meses de ejecución. Es la fuente única del presupuesto del Anexo 2 desde la versión v5."""
 import json, os, re
-D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data_v6")
+D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data_v7")
 PART = json.load(open(os.path.join(D, "partidas.json"), encoding="utf-8"))
 CRONO = json.load(open(os.path.join(D, "cronofin.json"), encoding="utf-8"))
 RUBRO = {"R01": "Talento Humano", "R02": "Equipos y software", "R03": "Capacitación y eventos", "R04": "Servicios tecnológicos y pruebas",

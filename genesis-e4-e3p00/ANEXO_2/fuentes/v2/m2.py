@@ -263,7 +263,7 @@ BUD = []
 CONTRA = []
 for p in _P5:
     base = dict(id=p["id"], concepto=p["concepto"], unidad=p["unidad"], cant=p["cant"], vunit=p["vunit"], m_ini=p["m_ini"], m_fin=p["m_fin"],
-                rubro_tdr=p["rubro_tdr"], act=p["act"], texto=p["texto"], resp=p["resp"], nat="ANEXO 3 v6", wp=None, just="")
+                rubro_tdr=p["rubro_tdr"], act=p["act"], texto=p["texto"], resp=p["resp"], nat="ANEXO 3 v7", wp=None, just="")
     if p["sgr"]:
         r = dict(base, total=p["sgr"], fuente="SGR", rubro=p["rubro_tdr"]); r["por_act"] = {p["act"]: p["sgr"]}; BUD.append(r)
     for k, v in p["contra"].items():
@@ -277,7 +277,7 @@ LAB_IDS = ["TH-23", "TH-24", "TH-25", "EQ-17", "EQ-18", "EQ-19", "EQ-20", "EQ-21
 LAB_LINEAS = [r for r in BUD if r["id"] in LAB_IDS]
 ajuste("AJ-11", "Presupuesto, alianza y territorio del Anexo 3 v5", "SGR de 10.022.840.000 COP, cuatro integrantes y doce municipios en tres departamentos",
        "SGR de 13.999.405.215 COP, cinco integrantes y dos municipios (Manizales y Calarcá) en dos departamentos",
-       "Cambios aprobados por la alianza (Anexo 3 v6 del 30 de octubre de 2026, código SIGP 143329)")
+       "Cambios aprobados por la alianza (Anexo 3 v7 del 30 de octubre de 2026, código SIGP 143329)")
 for a in ACTD.values():
     a["sgr"] = sum(r["por_act"].get(a["id"], 0) for r in BUD)
     a["contra"] = sum(r["por_act"].get(a["id"], 0) for r in CONTRA)

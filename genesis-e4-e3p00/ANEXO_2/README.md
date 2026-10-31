@@ -1,5 +1,9 @@
 # Anexo 2. Documento técnico — Convocatoria 56 del SGR (proyecto SGR_CONV56_AIRE, SIGP 143329)
 
+## Entrega final (31 de octubre de 2026, Anexo 3 v7)
+
+`ENTREGA_FINAL_2026-10-30/` es la carpeta vigente y única de radicación: `00_LEEME_lista_de_control` y `00_PENDIENTES_v7`; `01_CARGAR_EN_SIGP` (Anexo 2 y Anexo A v7); `02_FIRMAR` por entidad (Anexo 1 v7, certificados, contrapartidas, Anexo 3 v7 y resúmenes ejecutivos para los alcaldes); `03_REVISAR_Y_PROCESAR`; `04_OBTENER_DE_TERCEROS`. Incorpora el Anexo 3 v7 (aporte municipal en uso de software y hardware, EQ-24 y EQ-25) y la actualización de Avanciencia a la estrategia de apropiación social.
+
 ## Carpeta de radicación (30 de octubre de 2026)
 
 `ENTREGA_RADICACION_SIGP_143329/` reúne en un solo lugar lo vigente para radicar: `00_LEEME_lista_de_control` (qué hacer, quién firma, numeral y fechas), `01_CARGAR_EN_SIGP` (Anexo 2 y Anexo A v6), `02_FIRMAR` (Anexo 1, certificados 10.18, 10.19 y 10.21, compromisos 10.6, plan de sostenibilidad, certificados de precios y de contrapartida, Anexo 3 v6 y solicitud de aval de ética, organizados por entidad), `03_REVISAR_Y_PROCESAR` (uso interno) y `04_OBTENER_DE_TERCEROS` (documentos que expiden otras entidades).

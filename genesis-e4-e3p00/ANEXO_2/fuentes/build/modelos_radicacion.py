@@ -54,11 +54,11 @@ INTEG = {
  "Municipio de Manizales": ("entidad territorial aliada No. 1",
    [("OE3 (actividades 3.1 a 3.5)", "Lidera en su jurisdicción el uso institucional del tablero y del protocolo de alerta y adopta el protocolo de evaluación previa de demolición"),
     ("OE1 y OE2 (actividades 1.1, 1.3 a 1.7, 2.1, 2.3 a 2.5)", "Facilita el acceso a los sitios de remoción y a las demoliciones e informa las demoliciones previstas; custodia local de los nodos de su jurisdicción")],
-   "$ 60.000.000 en especie", "Consejo municipal de gestión del riesgo en funcionamiento (Ley 1523 de 2012); plan municipal de gestión del riesgo [Diligenciar: acto de adopción]"),
+   "$ 60.000.000 en especie, por uso de software y hardware existentes del municipio (licencias SIG $ 20.000.000; alojamiento del tablero y de los datos en el centro de datos municipal $ 15.000.000; equipos de la sala de gestión del riesgo $ 15.000.000; conectividad y energía de sedes con nodos $ 10.000.000), partida del Anexo 3 v7 EQ-24 (Manizales) o EQ-25 (Calarcá); no incluye horas de funcionarios", "Consejo municipal de gestión del riesgo en funcionamiento (Ley 1523 de 2012); plan municipal de gestión del riesgo [Diligenciar: acto de adopción]"),
  "Municipio de Calarcá": ("entidad territorial aliada No. 2",
    [("OE3 (actividades 3.1 a 3.5)", "Lidera en su jurisdicción el uso institucional del tablero y del protocolo de alerta y adopta el protocolo de evaluación previa de demolición"),
     ("OE1 y OE2 (actividades 1.1, 1.3 a 1.7, 2.1, 2.3 a 2.5)", "Facilita el acceso a los sitios de remoción y a las demoliciones e informa las demoliciones previstas; custodia local de los nodos de su jurisdicción")],
-   "$ 60.000.000 en especie", "Consejo municipal de gestión del riesgo en funcionamiento (Ley 1523 de 2012); plan municipal de gestión del riesgo [Diligenciar: acto de adopción]"),
+   "$ 60.000.000 en especie, por uso de software y hardware existentes del municipio (licencias SIG $ 20.000.000; alojamiento del tablero y de los datos en el centro de datos municipal $ 15.000.000; equipos de la sala de gestión del riesgo $ 15.000.000; conectividad y energía de sedes con nodos $ 10.000.000), partida del Anexo 3 v7 EQ-24 (Manizales) o EQ-25 (Calarcá); no incluye horas de funcionarios", "Consejo municipal de gestión del riesgo en funcionamiento (Ley 1523 de 2012); plan municipal de gestión del riesgo [Diligenciar: acto de adopción]"),
  "Avanciencia": ("entidad aliada No. 3, actor del SNCTI (oficina de transferencia de resultados de investigación)",
    [("OE1 (actividades 1.1, 1.2, 1.4 y 1.6)", "Vigilancia tecnológica, análisis de libertad de operación, documentación del modelo como resultado protegible y valoración de resultados"),
     ("OE3 (actividades 3.1 a 3.5)", "Ejecuta, por contrato con la universidad, la apropiación social (co-diseño, jornadas, cartillas y publicaciones), forma a 60 custodios, estructura los convenios y gestiona la propiedad intelectual y los registros")],
@@ -76,7 +76,7 @@ def cert_1018(ent, carpeta):
     p(d, "Numeral 10.18 de los términos de referencia de la Convocatoria 56", al=WD_ALIGN_PARAGRAPH.CENTER, s=9)
     p(d, f"El suscrito representante legal de {ent} certifica que la entidad participa como {rol} en el proyecto {PROY}, cuya entidad proponente y ejecutora es la Universidad Santo Tomás, sede Villavicencio, y que se compromete a ejecutar las actividades siguientes:")
     tabla(d, ["Objetivo y actividades", "Compromiso"], acts)
-    p(d, f"Contrapartida comprometida: {con}, según el Anexo 3 versión 6 y la certificación de contrapartida que se adjunta.")
+    p(d, f"Contrapartida comprometida: {con}, según el Anexo 3 versión 7 y la certificación de contrapartida que se adjunta.")
     p(d, f"Justificación de la capacidad técnica: {cap}.")
     p(d, "Responsable institucional designado: [Diligenciar: nombre, cargo, correo y teléfono].")
     p(d, "Se expide en [Diligenciar: ciudad], el [Diligenciar: día] de noviembre de 2026.")
