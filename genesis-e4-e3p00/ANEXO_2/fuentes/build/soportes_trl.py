@@ -82,7 +82,7 @@ def informe4():
 def protocolo():
     d = nuevo()
     p(d, "PROTOCOLO DE LAS PRUEBAS DE ACEPTACIÓN DE LOS LOTES DE NODOS Y GATEWAYS (MESES 4 A 6, ACTIVIDAD 1.2)", b=True, s=12, al=WD_ALIGN_PARAGRAPH.CENTER)
-    p(d, f"Proyecto {TIT}. Se ejecuta en el banco de calibración y la cámara de humedad del proyecto (Anexo 3, EQ-07 y EQ-23) sobre cada lote recibido. Verifica lo que el fabricante declara en su documentación técnica, su informe de prueba de fábrica y su declaración de conformidad (tabla 13.4 del Anexo 2). Cada informe lo firma el especialista en metrología y calibración de la universidad y se archiva como evidencia del TRL 5.", s=9)
+    p(d, f"Proyecto {TIT}. Se ejecuta en el banco de calibración y la cámara de humedad del proyecto (Anexo 3, EQ-07 y EQ-23) sobre cada lote recibido. Verifica en las unidades compradas el desempeño que la literatura documenta para su clase de tecnología (tabla 13.4 del Anexo 2). Cada informe lo firma el especialista en metrología y calibración de la universidad y se archiva como evidencia del TRL 5.", s=9)
     comun = ("Contenido mínimo de cada informe: (a) identificación de la unidad ensayada (fabricante, modelo, número de serie, versión de firmware); "
              "(b) laboratorio, fecha, responsable y condiciones ambientales; (c) instrumentos de referencia con su certificado de calibración vigente; "
              "(d) montaje y procedimiento; (e) datos crudos en anexo digital; (f) métricas calculadas; (g) comparación con el criterio de aceptación; "
@@ -155,4 +155,4 @@ def ficha_gma():
     guardar(d, os.path.join(OUT, "02_FIRMAR", "E_Gestion_y_Medio_Ambiente", "Ficha_identidad_y_capacidades_GMA.docx"))
 
 if __name__ == "__main__":
-    informe4(); protocolo(); carta_siot(); ficha_gma()
+    informe4(); protocolo(); ficha_gma()

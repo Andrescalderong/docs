@@ -29,11 +29,9 @@ Corte: 1 de noviembre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m.
 
 | Punto | Texto corregido | Protocolo o formato preparado | Evidencia efectivamente producida | Falta |
 | --- | --- | --- | --- | --- |
-| TRL 4: documentación técnica del nodo y del gateway | Sí (tabla 13.4: equipos comerciales ya probados) | Sí (carta de solicitud al proveedor, carpeta 04) | No | Recibirla de SIOT, firmada |
-| TRL 4: informe de prueba de fábrica del nodo enlazado con el gateway | Sí | Sí (misma carta) | No | Recibirlo de SIOT, firmado |
-| TRL 4: declaración de conformidad y referencias de instalación | Sí | Sí (misma carta) | No | Recibirla de SIOT, con PIRE y ganancia de antena |
+| TRL 4: evaluación documental del estado del arte (sensor, enlace, redes integradas y vigilancia tecnológica) | Sí (tabla 13.4, evidencias 1 a 4, con fuentes del banco de referencias) | No aplica | Sí: evidencia publicada y revisada por pares; informe de vigilancia del equipo formulador | Nada |
 | Pruebas de sensor, enlace y autonomía | Sí: pasan a pruebas de aceptación de los lotes en los meses 4 a 6 (actividad 1.2) | Sí (protocolo de aceptación, carpeta 04) | No aplica antes del inicio | Nada antes de radicar |
-| TRL 4: informe 4 (modelo de corrección) | Sí | No aplica | Sí, analítica: simulación con datos sintéticos, reproducible (código, salidas y huellas SHA-256 en la carpeta A). No acredita desempeño físico | Firma del responsable técnico |
+| TRL 4: informe 4 (modelo de corrección; evidencia 5) | Sí | No aplica | Sí, analítica: simulación con datos sintéticos, reproducible (código, salidas y huellas SHA-256 en la carpeta A). No acredita desempeño físico | Firma del responsable técnico |
 | Cifra de transferencia entre municipios | Sí: 95,55 % (1.911 de 2.000 pruebas) en Anexo 2 e Informe 4 | No aplica | Sí: salida sim_coloc.json reproducida con semilla fija | Nada |
 | Grupo de investigación | Sí: GAUV, COL0159731, categoría B (verificado en GrupLAC) | Certificado 10.18 de la universidad con el grupo | No | Aval escrito del líder del grupo y registro en el SIGP |
 | Gestión y Medio Ambiente | Sí (filas en secciones 1 y 26) | Sí (ficha de identidad y capacidades) | No | Certificado de existencia, NIT, inventario de equipos con calibración, personal y experiencia |
@@ -41,7 +39,7 @@ Corte: 1 de noviembre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m.
 | Dron (Aerocivil) | Sí: RAC 100 (Res. 01983 de 2023), operación de trabajo, registro, idoneidad del piloto, seguro, línea de vista | No | No | Límites de altura y distancias del texto oficial; categoría y autorización por sitio; reglas para zonas del sismo, si existen |
 | Localización (DIVIPOLA) | Sí: 17001 y 63130 | No aplica | Sí (verificado por el revisor) | Coordenadas MAGNA-SIRGAS de las cabeceras para la MGA |
 
-**Decisión sobre el TRL (opción A, aprobada el 1 de noviembre).** Los TdR puntúan el TRL que la solución alcanza al cierre (criterio 3.1) y no exigen ensayos propios para el nivel de entrada. La red usa equipos comerciales ya probados, cuyo funcionamiento en conjunto acredita el fabricante; el proyecto desarrolla la corrección, la integración y la operación. Si SIOT no entrega sus documentos antes del cierre, la tabla 13.4 los deja como «solicitados» y no se presentan como evidencia.
+**Decisión sobre el TRL (aprobada el 1 de noviembre).** Los TdR puntúan el TRL que la solución alcanza al cierre (criterio 3.1) y no exigen ensayos propios para el nivel de entrada. La red usa tecnología ya probada, y el nivel de entrada se determina con una evaluación documental del estado del arte que no depende de terceros. La evidencia publicada acredita la clase de tecnología; las pruebas de aceptación de los meses 4 a 6 la verifican en las unidades compradas. Solo falta firmar el informe 4.
 
 ### Habilitantes de las entidades
 
