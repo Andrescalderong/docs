@@ -50,7 +50,7 @@ INTEG = {
  "Universidad Santo Tomás, sede Villavicencio": ("entidad proponente y ejecutora",
    [("OE1 y OE2 (actividades 1.1 a 1.8 y 2.1 a 2.8)", "Lidera la medición verificada, la red de 100 nodos y 10 gateways, la plataforma y el laboratorio de modelación; ejecuta y administra los recursos del SGR"),
     ("OE3 (actividades 3.1 a 3.6)", "Contrata con Avanciencia la apropiación social y la transferencia; aporta los coinvestigadores de ambiente y ciencias sociales; custodia permanente de los datos")],
-   "$ 1.244.000.000 en especie", "Grupo de investigación [Diligenciar: nombre y categoría]; experiencia en [Diligenciar: dos proyectos de CTeI del Anexo 5]; laboratorios y equipo de investigación descritos en la sección 26 del Anexo 2"),
+   "$ 1.244.000.000 en especie", "Grupo de investigación Gestión Ambiental USTA Villavicencio (GAUV), código COL0159731, categoría B [Diligenciar: aval del líder del grupo]; experiencia en [Diligenciar: dos proyectos de CTeI del Anexo 5]; laboratorios y equipo de investigación descritos en la sección 26 del Anexo 2"),
  "Municipio de Manizales": ("entidad territorial aliada No. 1",
    [("OE3 (actividades 3.1 a 3.5)", "Lidera en su jurisdicción el uso institucional del tablero y del protocolo de alerta y adopta el protocolo de evaluación previa de demolición"),
     ("OE1 y OE2 (actividades 1.1, 1.3 a 1.7, 2.1, 2.3 a 2.5)", "Facilita el acceso a los sitios de remoción y a las demoliciones e informa las demoliciones previstas; custodia local de los nodos de su jurisdicción")],

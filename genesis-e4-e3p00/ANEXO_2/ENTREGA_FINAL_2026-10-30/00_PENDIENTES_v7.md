@@ -25,16 +25,22 @@ Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. 
 | 5 | Aval del comité de ética y acto de conformación (10.10) | Solicitud lista; sin aval | Universidad |
 | 6 | Firma del Anexo 3 por representante legal con facultad | «Pendiente de datos y firma verificable» | Universidad |
 
-### Soportes del TRL 4 de entrada (Anexo 11; tabla 13.4)
+### Estado de los puntos observados en la revisión del 1 de noviembre
 
-| N.º | Pendiente | Estado | Responsable |
-| --- | --- | --- | --- |
-| 6a | Informe 1: caracterización del sensor (cámara con humedad de 40 a 90 % frente a referencia) | Protocolo listo; ensayo por ejecutar | Proveedor del nodo o laboratorio de la universidad |
-| 6b | Informe 2: prueba de enlace nodo-gateway en 915-928 MHz (≥ 1.000 paquetes por punto) | Protocolo listo; ensayo por ejecutar | Proveedor o laboratorio de la universidad |
-| 6c | Informe 3: consumo y autonomía del nodo (≥ 14 días calculados) | Protocolo listo; ensayo por ejecutar | Proveedor o laboratorio de la universidad |
-| 6d | Informe 4: prototipo del modelo de corrección | Elaborado (cumple en 96,8 % de las campañas del escenario medio); falta la firma del responsable técnico | Universidad |
+| Punto | Texto corregido | Protocolo o formato preparado | Evidencia efectivamente producida | Falta |
+| --- | --- | --- | --- | --- |
+| TRL 4: informe 1 (sensor) | Sí (tabla 13.4 con estado explícito) | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
+| TRL 4: informe 2 (enlace) | Sí | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
+| TRL 4: informe 3 (autonomía) | Sí | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
+| TRL 4: informe 4 (modelo de corrección) | Sí | No aplica | Sí, analítica: simulación con datos sintéticos, reproducible (código, salidas y huellas SHA-256 en la carpeta A). No acredita desempeño físico | Firma del responsable técnico |
+| Cifra de transferencia entre municipios | Sí: 95,55 % (1.911 de 2.000 pruebas) en Anexo 2 e Informe 4 | No aplica | Sí: salida sim_coloc.json reproducida con semilla fija | Nada |
+| Grupo de investigación | Sí: GAUV, COL0159731, categoría B (verificado en GrupLAC) | Certificado 10.18 de la universidad con el grupo | No | Aval escrito del líder del grupo y registro en el SIGP |
+| Gestión y Medio Ambiente | Sí (filas en secciones 1 y 26) | Sí (ficha de identidad y capacidades) | No | Certificado de existencia, NIT, inventario de equipos con calibración, personal y experiencia |
+| Radio (ANE) | Sí: Anexo 1 de la Resolución 105 de 2020 compilada (469/2020, 648/2023, 91/2023, 28/2026); plan de canales 915-928 MHz sin 902-915 MHz | Sí (declaración de conformidad pedida al proveedor) | No | PIRE máxima y modulación verificadas en la compilación vigente; declaración de conformidad del fabricante |
+| Dron (Aerocivil) | Sí: RAC 100 (Res. 01983 de 2023), operación de trabajo, registro, idoneidad del piloto, seguro, línea de vista | No | No | Límites de altura y distancias del texto oficial; categoría y autorización por sitio; reglas para zonas del sismo, si existen |
+| Localización (DIVIPOLA) | Sí: 17001 y 63130 | No aplica | Sí (verificado por el revisor) | Coordenadas MAGNA-SIRGAS de las cabeceras para la MGA |
 
-Si los informes 1 a 3 no se obtienen, el TRL acreditable de entrada es 3: se ajusta el Anexo 2 (TRL 3 de entrada, TRL 4 en el mes 6) sin perder puntaje, porque el criterio 3.1 califica el TRL de cierre.
+**Regla de decisión sobre el TRL.** El Anexo 2 declara TRL 4 y lo condiciona a los cuatro informes firmados. Bajar a TRL 3 no es automático ni gratuito: el TRL 3 también exige evidencia (ensayos de laboratorio de los componentes separados, Anexo 11). Si los ensayos 1 a 3 no pueden ejecutarse antes de radicar, la alianza debe decidir expresamente el nivel que puede sustentar y con qué soporte (fichas técnicas y certificados de calibración del fabricante, evaluaciones independientes publicadas del modelo de sensor), y el texto se ajusta a esa decisión.
 
 ### Habilitantes de las entidades
 

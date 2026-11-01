@@ -63,5 +63,4 @@ Todas las entidades cargan el certificado de existencia y representación legal 
 
 ## Soportes del TRL 4 de entrada (tabla 13.4 del Anexo 2)
 
-El TRL 4 se sustenta con cuatro informes. El informe 4 (modelo de corrección) está elaborado en la carpeta A. Los informes 1 (sensor), 2 (enlace) y 3 (autonomía) los ejecuta el proveedor del nodo o el laboratorio de la universidad con el protocolo de la carpeta 04. Si no se obtienen antes de radicar, el nivel acreditable es TRL 3 y el Anexo 2 debe ajustarse a TRL 3 de entrada y TRL 4 en el mes 6, sin cambio en el TRL 8 de cierre.
-
+El TRL 4 se acredita solo con los cuatro informes firmados. El informe 4 (modelo de corrección) está producido como evidencia analítica, con su anexo reproducible en la carpeta A. Los informes 1 (sensor), 2 (enlace) y 3 (autonomía) tienen protocolo en la carpeta 04 y sus ensayos no se han ejecutado. La decisión sobre el nivel de entrada, si los ensayos no se ejecutan, está en 00_PENDIENTES.

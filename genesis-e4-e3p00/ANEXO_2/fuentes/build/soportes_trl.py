@@ -32,7 +32,7 @@ def tabla(d, enc, filas):
             c[i].text = x
             for r in c[i].paragraphs[0].runs: r.font.size = Pt(8.5)
     d.add_paragraph()
-def pc(x): return f"{x*100:.1f} %".replace(".", ",")
+def pc(x): return f"{x*100:.2f} %".replace(".", ",")
 def n(x, k=3): return f"{x:.{k}f}".replace(".", ",")
 def guardar(d, ruta):
     os.makedirs(os.path.dirname(ruta), exist_ok=True); d.save(ruta); print("ok", ruta)
@@ -68,7 +68,9 @@ def informe4():
         ("Pendiente a 24 horas (mediana)", n(E["bajo"]["pend_24h_mediana"]), n(E["medio"]["pend_24h_mediana"]), n(E["alto"]["pend_24h_mediana"])),
         ("Campañas que cumplen a 24 horas", pc(E["bajo"]["cumple_24h"]), pc(E["medio"]["cumple_24h"]), pc(E["alto"]["cumple_24h"])),
         ("Campañas que cumplen a 1 hora", pc(E["bajo"]["cumple_1h"]), pc(E["medio"]["cumple_1h"]), pc(E["alto"]["cumple_1h"])),
-        ("Transferencia entre municipios, cumplimiento a 24 horas", pc(E["bajo"]["transfer_cumple_24h"]), pc(E["medio"]["transfer_cumple_24h"]), pc(E["alto"]["transfer_cumple_24h"]))])
+        ("Transferencia entre municipios, cumplimiento a 24 horas (2.000 pruebas: 1.000 campañas en dos sentidos)", f"{pc(E['bajo']['transfer_cumple_24h'])} ({round(E['bajo']['transfer_cumple_24h']*2000):,} de 2.000)".replace(",", "."), f"{pc(E['medio']['transfer_cumple_24h'])} ({round(E['medio']['transfer_cumple_24h']*2000):,} de 2.000)".replace(",", "."), f"{pc(E['alto']['transfer_cumple_24h'])} ({round(E['alto']['transfer_cumple_24h']*2000):,} de 2.000)".replace(",", "."))])
+    h(d, "5a. Reproducibilidad")
+    p(d, "El código (sim_coloc.py), la salida completa (sim_coloc.json), la salida de consola y las huellas SHA-256 se entregan en la carpeta Anexo_informe4_codigo_y_salidas junto a este informe. Se reproduce con Python 3 y NumPy: python3 sim_coloc.py sim_coloc.json. La semilla fija (20261029) produce exactamente las cifras de este informe.")
     h(d, "6. Conclusión")
     p(d, f"El algoritmo está implementado y, en el escenario medio, cumple el criterio a 24 horas en {pc(E['medio']['cumple_24h'])} de las campañas, por encima del 80 % fijado; en el escenario alto, en {pc(E['alto']['cumple_24h'])}. A 1 hora no cumple en los escenarios medio y alto, razón por la cual el proyecto usa el promedio de 24 horas como criterio principal de las compuertas y el horario como secundario.")
     h(d, "7. Limitaciones")
@@ -104,7 +106,7 @@ def protocolo():
          "Autonomía calculada ≥ 14 días.")]:
         p(d, tit, b=True, s=11)
         tabla(d, ["Campo", "Contenido"], [("Objeto", obj), ("Procedimiento", proc), ("Métricas", met), ("Criterio de aceptación", crit), ("Resultado", "[Diligenciar por quien ensaya]"), ("Firma del responsable técnico", "[Diligenciar]")])
-    p(d, "Si a la radicación no se dispone de los informes 1 a 3, el nivel que puede acreditarse es TRL 3; en ese caso el Anexo 2 debe declarar TRL 3 de entrada y TRL 4 en el mes 6 (actividad 1.2), sin cambio en el TRL 8 comprometido al cierre.", s=9)
+    p(d, "Un protocolo no es evidencia del nivel: solo el informe del ensayo ejecutado, firmado y con datos crudos, sustenta el TRL 4 de entrada (Anexo 11 de los términos de referencia).", s=9)
     guardar(d, os.path.join(OUT, "04_OBTENER_DE_TERCEROS", "Protocolo_informes_TRL4_sensor_enlace_autonomia.docx"))
 
 # ------------------------------------------------------------------ ficha GMA
