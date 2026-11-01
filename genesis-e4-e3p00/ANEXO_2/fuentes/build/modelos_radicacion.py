@@ -89,7 +89,7 @@ def cert_1019(carpeta):
     p(d, "[Diligenciar: membrete de la Universidad Santo Tomás]", al=WD_ALIGN_PARAGRAPH.CENTER, s=9)
     p(d, "CERTIFICADO DE TITULARIDAD, ADMINISTRACIÓN, CUSTODIA Y CUIDADO DE LOS BIENES", b=True, al=WD_ALIGN_PARAGRAPH.CENTER, s=12)
     p(d, "Numeral 10.19 de los términos de referencia de la Convocatoria 56", al=WD_ALIGN_PARAGRAPH.CENTER, s=9)
-    p(d, f"Los suscritos representantes legales de las entidades de la alianza del proyecto {PROY} certifican que concertaron la titularidad, la administración, la custodia y el cuidado de los bienes adquiridos con recursos del SGR y de los resultados, así:")
+    p(d, f"El suscrito representante legal de la Universidad Santo Tomás, entidad que presenta el proyecto {PROY}, certifica la titularidad, la administración, la custodia y el cuidado de los bienes y de los resultados derivados del proyecto, así:")
     tabla(d, ["Componente", "Titular durante la ejecución", "Custodio al cierre (mes 24)", "Condición de recepción"], [
         ("Nodos, gateways y repuestos (120 nodos, 11 gateways)", "Universidad Santo Tomás", "Municipios de Manizales y de Calarcá para los de su jurisdicción; universidad como custodia alterna", "Convenio con partida, personal designado y competencia jurídica"),
         ("Conjunto de referencia, banco de calibración y protocolo de calibración", "Universidad Santo Tomás", "Universidad Santo Tomás; autoridad ambiental regional como candidata adicional", "Personal certificado y plan de mantenimiento"),
@@ -99,9 +99,21 @@ def cert_1019(carpeta):
     ])
     p(d, "Los bienes permanecen en los municipios afectados en los que se ejecuta el proyecto. La proporción de titularidad de los resultados entre los integrantes es [Diligenciar: proporción acordada]. Si un custodio no cumple la condición de recepción, el componente pasa a la custodia alterna y, en su defecto, se aplica la cláusula de apertura del acuerdo marco.")
     p(d, "Se expide en [Diligenciar: ciudad], el [Diligenciar: día] de noviembre de 2026.")
-    for e in ("Universidad Santo Tomás, sede Villavicencio", "Municipio de Manizales", "Municipio de Calarcá", "Avanciencia", "Gestión y Medio Ambiente"):
-        firma(d, e)
+    p(d, "Con la expedición de este certificado, la Universidad Santo Tomás declara que concertó previamente este asunto con los cofinanciadores del proyecto (Avanciencia y Gestión y Medio Ambiente) y con las entidades territoriales donde se ejecutará (municipios de Manizales y de Calarcá), según el numeral 10.19 de los términos de referencia.")
+    firma(d, "Universidad Santo Tomás, sede Villavicencio")
     guardar(d, os.path.join(OUT, carpeta, "Certificado_titularidad_custodia_10.19.docx"))
+
+# ------------------------------------------------------------------ 10.17 plano de localización
+def nota_1017(carpeta):
+    d = nuevo()
+    p(d, "[Diligenciar: membrete de la Universidad Santo Tomás]", al=WD_ALIGN_PARAGRAPH.CENTER, s=9)
+    p(d, "PLANO DE LOCALIZACIÓN E IMPLANTACIÓN: DECLARACIÓN DE NO APLICABILIDAD", b=True, al=WD_ALIGN_PARAGRAPH.CENTER, s=12)
+    p(d, "Numeral 10.17 de los términos de referencia de la Convocatoria 56 (requisito «si aplica»)", al=WD_ALIGN_PARAGRAPH.CENTER, s=9)
+    p(d, f"El suscrito representante legal de la Universidad Santo Tomás, entidad que presenta el proyecto {PROY}, declara que el proyecto no construye infraestructura. Adquiere equipos de medición (nodos y gateways) que se fijan en mástiles de obra menor sobre estructuras existentes o bases pequeñas (partida IN-01 del Anexo 3), y no contempla edificaciones, adecuaciones de inmuebles ni obras civiles que requieran plano de implantación.")
+    p(d, "Los sitios de instalación se seleccionan en la actividad 1.1 entre los sitios de remoción de escombros con afectación acreditada en los municipios de Manizales (Caldas) y Calarcá (Quindío), registrados como lugares de ejecución en el SIGP. Las coordenadas MAGNA-SIRGAS de cada nodo se reportan en el inventario de la red al finalizar cada tramo. La localización del proyecto en la MGA corresponde a las cabeceras municipales de Manizales y Calarcá [Diligenciar: coordenadas de referencia de cada cabecera, si la MGA las solicita].")
+    p(d, "Se expide en [Diligenciar: ciudad], el [Diligenciar: día] de noviembre de 2026.")
+    firma(d, "Universidad Santo Tomás, sede Villavicencio")
+    guardar(d, os.path.join(OUT, carpeta, "Declaracion_no_aplicabilidad_plano_10.17.docx"))
 
 # ------------------------------------------------------------------ 10.21 concordancia con el plan de acción
 def cert_1021(ent, carpeta, alcance):
@@ -153,7 +165,8 @@ if __name__ == "__main__":
                           "02_FIRMAR/D_Avanciencia", "02_FIRMAR/E_Gestion_y_Medio_Ambiente", "02_FIRMAR/F_Gobernaciones_de_Caldas_y_Quindio")
     for ent, c in (("Universidad Santo Tomás, sede Villavicencio", U), ("Municipio de Manizales", M), ("Municipio de Calarcá", C), ("Avanciencia", A), ("Gestión y Medio Ambiente", G)):
         cert_1018(ent, c)
-    cert_1019("02_FIRMAR/00_Firma_conjunta_cinco_integrantes")
+    cert_1019("02_FIRMAR/A_Universidad_Santo_Tomas")
+    nota_1017("02_FIRMAR/A_Universidad_Santo_Tomas")
     cert_1021("Municipio de Manizales", M, "lo que corresponde al municipio de Manizales")
     cert_1021("Municipio de Calarcá", C, "lo que corresponde al municipio de Calarcá")
     cert_1021("Gobernación de Caldas", GOB, "lo que corresponde a los municipios del departamento de Caldas incluidos de forma expresa en el plan")

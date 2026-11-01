@@ -39,6 +39,14 @@ for mun, eq, car in (("Municipio de Manizales", "EQ-24", "02_FIRMAR/B_Municipio_
                    (eq, "Alojamiento del tablero y de los datos del índice en los servidores y el almacenamiento del centro de datos municipal", "Especie (uso)", "15.000.000", "3.1 a 3.4", "Meses 3 a 24"),
                    (eq, "Equipos de cómputo y pantalla de la sala de gestión del riesgo para el uso institucional del tablero", "Especie (uso)", "15.000.000", "3.1 a 3.4", "Meses 3 a 24"),
                    (eq, "Conectividad, puntos de red y energía en las sedes municipales donde se instalen nodos", "Especie (uso)", "10.000.000", "3.1 a 3.4", "Meses 3 a 24")], [VAL])
+doc("Universidad Santo Tomás, sede Villavicencio", "02_FIRMAR/A_Universidad_Santo_Tomas", [
+    ("TH-17", "Investigador principal, 50 % de dedicación durante 24 meses", "Especie", "350.000.000", "1.8", "Meses 1 a 24"),
+    ("TH-18", "Coinvestigador técnico, 30 % de dedicación durante 24 meses", "Especie", "250.000.000", "1.1", "Meses 1 a 24"),
+    ("TH-19", "Coinvestigadores de ambiente y ciencias sociales, 20 % de dedicación", "Especie", "200.000.000", "3.1", "Meses 3 a 24"),
+    ("EQ-12", "Uso de laboratorios y equipos de la universidad", "Especie", "300.000.000", "1.1", "Meses 2 a 23"),
+    ("EQ-22", "Espacio, energía, red y soporte técnico del laboratorio de modelación", "Especie", "144.000.000", "2.5", "Meses 2 a 24")],
+    ["Que el valor en especie se calcula con la nómina certificada del personal vinculado, en proporción a su dedicación al proyecto, y con el costo institucional de uso de laboratorios, equipos y espacios [Diligenciar: método y soporte de cada valor].",
+     "Que el espacio del laboratorio de modelación se ubica en [Diligenciar: Manizales o Calarcá], municipio afectado y lugar de ejecución del proyecto."])
 doc("Avanciencia", "02_FIRMAR/D_Avanciencia", [("TH-22", "Horas de investigadores y del equipo de transferencia (vigilancia tecnológica, actualizaciones de libertad de operación y acompañamiento de convenios)", "Especie", "150.000.000", "1.1 (y 1.2, 1.4, 1.6, 3.3, 3.4)", "Meses 2 a 24")],
     ["Que el valor en especie se calcula con un método verificable [Diligenciar: costo institucional, tarifa o nómina certificada]."])
 doc("Gestión y Medio Ambiente", "02_FIRMAR/E_Gestion_y_Medio_Ambiente", [("EQ-13", "Equipos de monitoreo de calidad del aire y apoyo técnico para el diagnóstico, la colocalización y la verificación en Manizales", "Especie", "110.000.000", "1.1 (y 1.3, 1.6)", "Meses 2 a 23"),

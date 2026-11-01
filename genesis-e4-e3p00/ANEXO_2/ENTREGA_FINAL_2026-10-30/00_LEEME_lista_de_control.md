@@ -18,10 +18,12 @@ Versión vigente: Anexo 3 v7 (SGR 13.999.405.215 COP; contrapartida 1.774.000.00
 | Carpeta | Archivo | Firma | Numeral |
 | --- | --- | --- | --- |
 | 00_Firma_conjunta | Anexo1_carta_unificada_gobernanza_v7 | Los cinco representantes legales, en un único PDF | Anexo 1 y 10.4 |
-| 00_Firma_conjunta | Certificado_titularidad_custodia_10.19 | Los cinco representantes legales | 10.19 |
 | 00_Firma_conjunta | Plan_sostenibilidad_10.16 | Universidad, Manizales y Calarcá (operan componentes); Avanciencia y Gestión y Medio Ambiente no firman | 10.16 |
 | A_Universidad_Santo_Tomas | Anexo_3_Presupuesto_v7_para_firma.xlsx | Representante legal, con análisis de costos y dos cotizaciones por rubro | 10.8 |
 | A_Universidad_Santo_Tomas | Certificado_participacion_10.18 | Representante legal | 10.18 |
+| A_Universidad_Santo_Tomas | Certificado_contrapartida (TH-17, TH-18, TH-19, EQ-12 y EQ-22: 1.244.000.000 COP en especie) | Representante legal | 10.8 |
+| A_Universidad_Santo_Tomas | Certificado_titularidad_custodia_10.19 | Solo el representante legal de la universidad, que declara haberlo concertado con los cofinanciadores y los municipios | 10.19 |
+| A_Universidad_Santo_Tomas | Declaracion_no_aplicabilidad_plano_10.17 (el proyecto no construye infraestructura) | Representante legal | 10.17 |
 | A_Universidad_Santo_Tomas | Solicitud_aval_comite_etica_10.10 | Investigador principal; se envía al comité hoy | 10.10 |
 | B_Municipio_de_Manizales | Resumen_ejecutivo_Alcaldia (para leer antes de firmar) · Certificado_participacion_10.18 · Certificado_contrapartida (EQ-24, uso de software y hardware) · Certificado_precios_unitarios · Compromiso_uso_10.6 · Certificado_concordancia_plan_accion_10.21 | Alcalde de Manizales (el 10.21 lo firma quien suscribió el plan de acción específico) | 10.18, 10.8, 10.6, 10.21 |
 | C_Municipio_de_Calarca | Los mismos seis documentos (contrapartida EQ-25) | Alcalde de Calarcá | 10.18, 10.8, 10.6, 10.21 |
@@ -51,3 +53,8 @@ El archivo 00_PENDIENTES_v7 resume lo que sigue faltando por gravedad. Esta carp
 2. **Sábado 31 y domingo 1:** reunir las firmas y los certificados de cámara de comercio; firmar el Anexo 3 con las cotizaciones; consolidar el Anexo 1 en un único PDF.
 3. **Lunes 2:** completar las marcas [Diligenciar] del Anexo 2, exportar a PDF y hacer una carga de prueba en el SIGP.
 4. **Martes 3, antes del mediodía:** radicar.
+
+
+## Documentos de la plataforma que no son cartas
+
+Todas las entidades cargan el certificado de existencia y representación legal de menos de 90 días (numeral 10.12, espacio «Documentos Constitución Entidades»). Avanciencia adjunta su resolución de reconocimiento como actor del SNCTI (10.14). El numeral 10.11 (carta de entidad internacional) no aplica.
