@@ -24,6 +24,8 @@ Versión vigente: Anexo 3 v7 (SGR 13.999.405.215 COP; contrapartida 1.774.000.00
 | A_Universidad_Santo_Tomas | Certificado_contrapartida (TH-17, TH-18, TH-19, EQ-12 y EQ-22: 1.244.000.000 COP en especie) | Representante legal | 10.8 |
 | A_Universidad_Santo_Tomas | Certificado_titularidad_custodia_10.19 | Solo el representante legal de la universidad, que declara haberlo concertado con los cofinanciadores y los municipios | 10.19 |
 | A_Universidad_Santo_Tomas | Declaracion_no_aplicabilidad_plano_10.17 (el proyecto no construye infraestructura) | Representante legal | 10.17 |
+| A_Universidad_Santo_Tomas | Informe_TRL4_04_modelo_de_correccion (simulación de 1.000 campañas; soporte del TRL 4, tabla 13.4) | Responsable técnico de la universidad | Anexo 11 |
+| E_Gestion_y_Medio_Ambiente | Ficha_identidad_y_capacidades_GMA (razón social, NIT, constitución, equipos, personal y experiencia) | Representante legal | 10.12 y sección 26 |
 | A_Universidad_Santo_Tomas | Solicitud_aval_comite_etica_10.10 | Investigador principal; se envía al comité hoy | 10.10 |
 | B_Municipio_de_Manizales | Resumen_ejecutivo_Alcaldia (para leer antes de firmar) · Certificado_participacion_10.18 · Certificado_contrapartida (EQ-24, uso de software y hardware) · Certificado_precios_unitarios · Compromiso_uso_10.6 · Certificado_concordancia_plan_accion_10.21 | Alcalde de Manizales (el 10.21 lo firma quien suscribió el plan de acción específico) | 10.18, 10.8, 10.6, 10.21 |
 | C_Municipio_de_Calarca | Los mismos seis documentos (contrapartida EQ-25) | Alcalde de Calarcá | 10.18, 10.8, 10.6, 10.21 |
@@ -58,3 +60,8 @@ El archivo 00_PENDIENTES_v7 resume lo que sigue faltando por gravedad. Esta carp
 ## Documentos de la plataforma que no son cartas
 
 Todas las entidades cargan el certificado de existencia y representación legal de menos de 90 días (numeral 10.12, espacio «Documentos Constitución Entidades»). Avanciencia adjunta su resolución de reconocimiento como actor del SNCTI (10.14). El numeral 10.11 (carta de entidad internacional) no aplica.
+
+## Soportes del TRL 4 de entrada (tabla 13.4 del Anexo 2)
+
+El TRL 4 se sustenta con cuatro informes. El informe 4 (modelo de corrección) está elaborado en la carpeta A. Los informes 1 (sensor), 2 (enlace) y 3 (autonomía) los ejecuta el proveedor del nodo o el laboratorio de la universidad con el protocolo de la carpeta 04. Si no se obtienen antes de radicar, el nivel acreditable es TRL 3 y el Anexo 2 debe ajustarse a TRL 3 de entrada y TRL 4 en el mes 6, sin cambio en el TRL 8 de cierre.
+

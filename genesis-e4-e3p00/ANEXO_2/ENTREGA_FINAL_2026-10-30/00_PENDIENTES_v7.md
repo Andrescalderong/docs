@@ -25,12 +25,25 @@ Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. 
 | 5 | Aval del comité de ética y acto de conformación (10.10) | Solicitud lista; sin aval | Universidad |
 | 6 | Firma del Anexo 3 por representante legal con facultad | «Pendiente de datos y firma verificable» | Universidad |
 
+### Soportes del TRL 4 de entrada (Anexo 11; tabla 13.4)
+
+| N.º | Pendiente | Estado | Responsable |
+| --- | --- | --- | --- |
+| 6a | Informe 1: caracterización del sensor (cámara con humedad de 40 a 90 % frente a referencia) | Protocolo listo; ensayo por ejecutar | Proveedor del nodo o laboratorio de la universidad |
+| 6b | Informe 2: prueba de enlace nodo-gateway en 915-928 MHz (≥ 1.000 paquetes por punto) | Protocolo listo; ensayo por ejecutar | Proveedor o laboratorio de la universidad |
+| 6c | Informe 3: consumo y autonomía del nodo (≥ 14 días calculados) | Protocolo listo; ensayo por ejecutar | Proveedor o laboratorio de la universidad |
+| 6d | Informe 4: prototipo del modelo de corrección | Elaborado (cumple en 96,8 % de las campañas del escenario medio); falta la firma del responsable técnico | Universidad |
+
+Si los informes 1 a 3 no se obtienen, el TRL acreditable de entrada es 3: se ajusta el Anexo 2 (TRL 3 de entrada, TRL 4 en el mes 6) sin perder puntaje, porque el criterio 3.1 califica el TRL de cierre.
+
 ### Habilitantes de las entidades
 
 | N.º | Pendiente | Observación |
 | --- | --- | --- |
 | 7 | Numeral por el que se habilita Avanciencia | Ahora se presenta como Asociación Colombiana para el Avance de la Ciencia, entidad privada sin ánimo de lucro. Confirmar si se habilita por 10.12 (sector productivo), 10.13 (sociedad civil: exige domicilio en un departamento afectado) o 10.14 (actor reconocido del SNCTI con resolución vigente). Si es por 10.13 y su domicilio es Bogotá, no cumple |
 | 8 | Denominación de Avanciencia | El Anexo 2 la llama «oficina de transferencia de resultados de investigación (OTRI)». Confirmar si tiene ese reconocimiento; si no, se cambia por «actor del SNCTI» en todo el documento |
+| 8b | Identidad y capacidades de Gestión y Medio Ambiente | No aparece en fuentes públicas con esa razón social; la ficha de la carpeta E recoge razón social, NIT, constitución, equipos, personal y experiencia |
+| 8c | Grupo de investigación de la universidad | Propuesto: Gestión Ambiental USTA Villavicencio (GAUV), categoría C en la medición de 2019; confirmar código COL y categoría vigente en GrupLAC |
 | 9 | Certificados de existencia (menos de 90 días) de Avanciencia y de Gestión y Medio Ambiente (con un año de constitución) y resolución de reconocimiento de Avanciencia | Sin copia |
 
 ### Firmas en curso
