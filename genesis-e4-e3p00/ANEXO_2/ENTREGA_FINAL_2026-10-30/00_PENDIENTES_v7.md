@@ -1,6 +1,6 @@
 # Qué sigue faltando para radicar · SIGP 143329 · Anexo 3 v7
 
-Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. Firmas y soportes: domingo 1 de noviembre, 6:00 p. m.
+Corte: 1 de noviembre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. Firmas y soportes: domingo 1 de noviembre, 6:00 p. m.
 
 ## A. Cambios del Anexo 3 v7 y de Avanciencia ya incorporados
 
@@ -29,9 +29,10 @@ Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. 
 
 | Punto | Texto corregido | Protocolo o formato preparado | Evidencia efectivamente producida | Falta |
 | --- | --- | --- | --- | --- |
-| TRL 4: informe 1 (sensor) | Sí (tabla 13.4 con estado explícito) | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
-| TRL 4: informe 2 (enlace) | Sí | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
-| TRL 4: informe 3 (autonomía) | Sí | Sí | No | Ejecutar el ensayo y firmar el informe con datos crudos |
+| TRL 4: documentación técnica del nodo y del gateway | Sí (tabla 13.4: equipos comerciales ya probados) | Sí (carta de solicitud al proveedor, carpeta 04) | No | Recibirla de SIOT, firmada |
+| TRL 4: informe de prueba de fábrica del nodo enlazado con el gateway | Sí | Sí (misma carta) | No | Recibirlo de SIOT, firmado |
+| TRL 4: declaración de conformidad y referencias de instalación | Sí | Sí (misma carta) | No | Recibirla de SIOT, con PIRE y ganancia de antena |
+| Pruebas de sensor, enlace y autonomía | Sí: pasan a pruebas de aceptación de los lotes en los meses 4 a 6 (actividad 1.2) | Sí (protocolo de aceptación, carpeta 04) | No aplica antes del inicio | Nada antes de radicar |
 | TRL 4: informe 4 (modelo de corrección) | Sí | No aplica | Sí, analítica: simulación con datos sintéticos, reproducible (código, salidas y huellas SHA-256 en la carpeta A). No acredita desempeño físico | Firma del responsable técnico |
 | Cifra de transferencia entre municipios | Sí: 95,55 % (1.911 de 2.000 pruebas) en Anexo 2 e Informe 4 | No aplica | Sí: salida sim_coloc.json reproducida con semilla fija | Nada |
 | Grupo de investigación | Sí: GAUV, COL0159731, categoría B (verificado en GrupLAC) | Certificado 10.18 de la universidad con el grupo | No | Aval escrito del líder del grupo y registro en el SIGP |
@@ -40,7 +41,7 @@ Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. 
 | Dron (Aerocivil) | Sí: RAC 100 (Res. 01983 de 2023), operación de trabajo, registro, idoneidad del piloto, seguro, línea de vista | No | No | Límites de altura y distancias del texto oficial; categoría y autorización por sitio; reglas para zonas del sismo, si existen |
 | Localización (DIVIPOLA) | Sí: 17001 y 63130 | No aplica | Sí (verificado por el revisor) | Coordenadas MAGNA-SIRGAS de las cabeceras para la MGA |
 
-**Regla de decisión sobre el TRL.** El Anexo 2 declara TRL 4 y lo condiciona a los cuatro informes firmados. Bajar a TRL 3 no es automático ni gratuito: el TRL 3 también exige evidencia (ensayos de laboratorio de los componentes separados, Anexo 11). Si los ensayos 1 a 3 no pueden ejecutarse antes de radicar, la alianza debe decidir expresamente el nivel que puede sustentar y con qué soporte (fichas técnicas y certificados de calibración del fabricante, evaluaciones independientes publicadas del modelo de sensor), y el texto se ajusta a esa decisión.
+**Decisión sobre el TRL (opción A, aprobada el 1 de noviembre).** Los TdR puntúan el TRL que la solución alcanza al cierre (criterio 3.1) y no exigen ensayos propios para el nivel de entrada. La red usa equipos comerciales ya probados, cuyo funcionamiento en conjunto acredita el fabricante; el proyecto desarrolla la corrección, la integración y la operación. Si SIOT no entrega sus documentos antes del cierre, la tabla 13.4 los deja como «solicitados» y no se presentan como evidencia.
 
 ### Habilitantes de las entidades
 
@@ -49,7 +50,7 @@ Corte: 31 de octubre de 2026. Cierre: martes 3 de noviembre de 2026, 4:00 p. m. 
 | 7 | Numeral por el que se habilita Avanciencia | Ahora se presenta como Asociación Colombiana para el Avance de la Ciencia, entidad privada sin ánimo de lucro. Confirmar si se habilita por 10.12 (sector productivo), 10.13 (sociedad civil: exige domicilio en un departamento afectado) o 10.14 (actor reconocido del SNCTI con resolución vigente). Si es por 10.13 y su domicilio es Bogotá, no cumple |
 | 8 | Denominación de Avanciencia | El Anexo 2 la llama «oficina de transferencia de resultados de investigación (OTRI)». Confirmar si tiene ese reconocimiento; si no, se cambia por «actor del SNCTI» en todo el documento |
 | 8b | Identidad y capacidades de Gestión y Medio Ambiente | No aparece en fuentes públicas con esa razón social; la ficha de la carpeta E recoge razón social, NIT, constitución, equipos, personal y experiencia |
-| 8c | Grupo de investigación de la universidad | Propuesto: Gestión Ambiental USTA Villavicencio (GAUV), categoría C en la medición de 2019; confirmar código COL y categoría vigente en GrupLAC |
+| 8c | Grupo de investigación de la universidad | Gestión Ambiental USTA Villavicencio (GAUV), COL0159731, categoría B (verificado en GrupLAC); falta el aval escrito del líder a su participación |
 | 9 | Certificados de existencia (menos de 90 días) de Avanciencia y de Gestión y Medio Ambiente (con un año de constitución) y resolución de reconocimiento de Avanciencia | Sin copia |
 
 ### Firmas en curso

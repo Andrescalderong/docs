@@ -81,33 +81,56 @@ def informe4():
 # ------------------------------------------------------------------ protocolo informes 1 a 3
 def protocolo():
     d = nuevo()
-    p(d, "PROTOCOLO Y FORMATO DE LOS INFORMES TÉCNICOS 1 A 3 (TRL 4 DE ENTRADA)", b=True, s=12, al=WD_ALIGN_PARAGRAPH.CENTER)
-    p(d, f"Proyecto {TIT}. Para ejecutar con una unidad de demostración del nodo y del gateway ofertados, en el laboratorio del proveedor o en el de la universidad. Cada informe lo firma el responsable técnico de quien ensaya y se carga como documento independiente en el SIGP.", s=9)
+    p(d, "PROTOCOLO DE LAS PRUEBAS DE ACEPTACIÓN DE LOS LOTES DE NODOS Y GATEWAYS (MESES 4 A 6, ACTIVIDAD 1.2)", b=True, s=12, al=WD_ALIGN_PARAGRAPH.CENTER)
+    p(d, f"Proyecto {TIT}. Se ejecuta en el banco de calibración y la cámara de humedad del proyecto (Anexo 3, EQ-07 y EQ-23) sobre cada lote recibido. Verifica lo que el fabricante declara en su documentación técnica, su informe de prueba de fábrica y su declaración de conformidad (tabla 13.4 del Anexo 2). Cada informe lo firma el especialista en metrología y calibración de la universidad y se archiva como evidencia del TRL 5.", s=9)
     comun = ("Contenido mínimo de cada informe: (a) identificación de la unidad ensayada (fabricante, modelo, número de serie, versión de firmware); "
              "(b) laboratorio, fecha, responsable y condiciones ambientales; (c) instrumentos de referencia con su certificado de calibración vigente; "
              "(d) montaje y procedimiento; (e) datos crudos en anexo digital; (f) métricas calculadas; (g) comparación con el criterio de aceptación; "
              "(h) firma del responsable técnico.")
     p(d, comun)
     for tit, obj, proc, met, crit in [
-        ("Informe 1. Caracterización del sensor óptico de partículas",
+        ("Prueba 1. Caracterización del sensor óptico de partículas",
          "Demostrar que el cabezal integrado en el nodo responde a PM2,5 y PM10 y cuantificar el efecto de la humedad.",
-         "Exponer el nodo y un instrumento de referencia en cámara cerrada a un aerosol de prueba (polvo de ensayo normalizado) en al menos cuatro niveles de concentración, a humedad relativa de 40 %, 60 %, 80 % y 90 %, con 30 minutos de estabilización por nivel. Si no se dispone de cámara, aportar la ficha técnica y el certificado de calibración del fabricante y una evaluación independiente publicada del mismo modelo de sensor.",
+         "Exponer el nodo y un instrumento de referencia en cámara cerrada a un aerosol de prueba (polvo de ensayo normalizado) en al menos cuatro niveles de concentración, a humedad relativa de 40 %, 60 %, 80 % y 90 %, con 30 minutos de estabilización por nivel.",
          "Pendiente, intercepto, R² y sesgo por nivel de humedad; curva de crecimiento con la humedad.",
          "R² ≥ 0,90 a humedad ≤ 60 %. El sesgo por humedad se reporta sin umbral, porque es el dato que el modelo de corrección corrige."),
-        ("Informe 2. Prueba de enlace nodo-gateway",
+        ("Prueba 2. Enlace nodo-gateway",
          "Demostrar que el nodo y el gateway intercambian datos en la banda de uso libre de 915 a 928 MHz.",
          "Configurar el nodo para transmitir cada minuto y registrar al menos 1.000 paquetes por punto en campo abierto y entre edificios, a distancias crecientes hasta la distancia de diseño entre nodo y gateway.",
          "Tasa de entrega de paquetes, RSSI y SNR por distancia; factor de dispersión usado.",
          "Entrega ≥ 90 % de los paquetes a la distancia de diseño."),
-        ("Informe 3. Consumo y autonomía del nodo",
+        ("Prueba 3. Consumo y autonomía del nodo",
          "Demostrar que el presupuesto de energía del nodo, con el panel y la batería ofertados, es compatible con 14 días sin sol.",
          "Medir con fuente y medidor de corriente el consumo en reposo, en medición y en transmisión durante al menos 24 horas de operación normal; medir la capacidad útil de la batería en un ciclo de descarga a temperatura ambiente.",
          "Consumo diario (Wh/día), capacidad útil (Wh) y autonomía calculada con radiación nula.",
          "Autonomía calculada ≥ 14 días.")]:
         p(d, tit, b=True, s=11)
-        tabla(d, ["Campo", "Contenido"], [("Objeto", obj), ("Procedimiento", proc), ("Métricas", met), ("Criterio de aceptación", crit), ("Resultado", "[Diligenciar por quien ensaya]"), ("Firma del responsable técnico", "[Diligenciar]")])
-    p(d, "Un protocolo no es evidencia del nivel: solo el informe del ensayo ejecutado, firmado y con datos crudos, sustenta el TRL 4 de entrada (Anexo 11 de los términos de referencia).", s=9)
-    guardar(d, os.path.join(OUT, "04_OBTENER_DE_TERCEROS", "Protocolo_informes_TRL4_sensor_enlace_autonomia.docx"))
+        tabla(d, ["Campo", "Contenido"], [("Objeto", obj), ("Procedimiento", proc), ("Métricas", met), ("Criterio de aceptación", crit), ("Resultado", "[Diligenciar al ejecutar la prueba]"), ("Firma del responsable técnico", "[Diligenciar]")])
+    p(d, "Un lote que no cumple un criterio de aceptación se devuelve al proveedor, según la condición incluida en el documento de compra. Los resultados alimentan la verificación del TRL 5 en el mes 10.", s=9)
+    guardar(d, os.path.join(OUT, "04_OBTENER_DE_TERCEROS", "Protocolo_pruebas_aceptacion_lotes_meses_4_a_6.docx"))
+
+
+# ------------------------------------------------------------------ carta al proveedor
+def carta_siot():
+    d = nuevo()
+    p(d, "[Diligenciar: ciudad], 1 de noviembre de 2026")
+    p(d, "Señores\nSIOT\n[Diligenciar: nombre y cargo del contacto comercial]\n[Diligenciar: correo]")
+    p(d, "Asunto: solicitud de documentación técnica del nodo X950LS TRACK+ y del gateway SG50 solar para el proyecto SIGP 143329", b=True)
+    p(d, f"Respetados señores: la Universidad Santo Tomás, entidad proponente del proyecto {TIT}, agradece su comunicación comercial del 26 de octubre de 2026. "
+         "El documento técnico del proyecto sustenta el nivel de madurez de entrada con equipos comerciales ya probados. Por eso solicitamos los siguientes documentos sobre los equipos ofertados:")
+    tabla(d, ["N.º", "Documento", "Contenido mínimo"], [
+        ("1", "Documentación técnica del nodo X950LS TRACK+ y del gateway SG50 solar", "Fichas técnicas; fabricante y modelo del sensor óptico de partículas; rango y resolución de PM2,5 y PM10; consumo en reposo, medición y transmisión; capacidad de la batería y potencia del panel; versión de firmware"),
+        ("2", "Informe de prueba de fábrica o de laboratorio del nodo enlazado con el gateway", "Unidades identificadas por modelo y número de serie; paquetes enviados y recibidos; lecturas de PM2,5 y PM10 visibles en la plataforma; fecha, lugar y firma del responsable técnico"),
+        ("3", "Declaración de conformidad con la banda de uso libre", "Operación en 915 a 928 MHz, sin uso del segmento 902 a 915 MHz; plan de canales; potencia máxima radiada (PIRE) y ganancia de la antena; conformidad con el Anexo 1 de la Resolución ANE 105 de 2020 en su compilación vigente; homologación o registro ante la CRC, si aplica"),
+        ("4", "Referencias de instalación", "Instalaciones en operación del mismo modelo: cliente, ciudad, año, número de nodos y contacto que confirme la referencia"),
+        ("5", "Aceptación de las pruebas de aceptación por lote", "Confirmación de que aceptan las pruebas de sensor, enlace y autonomía de los meses 4 a 6 y la devolución del lote que no cumpla los criterios adjuntos"),
+    ])
+    p(d, "Criterios de aceptación por lote: R² ≥ 0,90 del sensor frente a la referencia con humedad de hasta 60 %, con el sesgo por humedad reportado; entrega de al menos 90 % de los paquetes a la distancia de diseño entre nodo y gateway; y autonomía calculada de al menos 14 días sin sol con la batería ofertada.")
+    p(d, "Agradecemos enviar los documentos firmados por su representante o responsable técnico a más tardar el lunes 2 de noviembre de 2026 a las 12:00 m., porque la convocatoria cierra el martes 3 de noviembre a las 4:00 p. m. Si algún documento no está disponible en ese plazo, les pedimos indicarlo por escrito con la fecha en que podrán entregarlo.")
+    p(d, "Esta solicitud no constituye orden de compra ni compromiso contractual.", s=9)
+    p(d, "Cordialmente,")
+    p(d, "\n\n[Diligenciar: nombre]\n[Diligenciar: cargo]\nUniversidad Santo Tomás\n[Diligenciar: correo y teléfono]")
+    guardar(d, os.path.join(OUT, "04_OBTENER_DE_TERCEROS", "Carta_solicitud_SIOT_documentacion_tecnica.docx"))
 
 # ------------------------------------------------------------------ ficha GMA
 def ficha_gma():
@@ -132,4 +155,4 @@ def ficha_gma():
     guardar(d, os.path.join(OUT, "02_FIRMAR", "E_Gestion_y_Medio_Ambiente", "Ficha_identidad_y_capacidades_GMA.docx"))
 
 if __name__ == "__main__":
-    informe4(); protocolo(); ficha_gma()
+    informe4(); protocolo(); carta_siot(); ficha_gma()

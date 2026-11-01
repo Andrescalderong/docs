@@ -61,6 +61,6 @@ El archivo 00_PENDIENTES_v7 resume lo que sigue faltando por gravedad. Esta carp
 
 Todas las entidades cargan el certificado de existencia y representación legal de menos de 90 días (numeral 10.12, espacio «Documentos Constitución Entidades»). Avanciencia adjunta su resolución de reconocimiento como actor del SNCTI (10.14). El numeral 10.11 (carta de entidad internacional) no aplica.
 
-## Soportes del TRL 4 de entrada (tabla 13.4 del Anexo 2)
+## Evidencias del TRL 4 de entrada (tabla 13.4 del Anexo 2)
 
-El TRL 4 se acredita solo con los cuatro informes firmados. El informe 4 (modelo de corrección) está producido como evidencia analítica, con su anexo reproducible en la carpeta A. Los informes 1 (sensor), 2 (enlace) y 3 (autonomía) tienen protocolo en la carpeta 04 y sus ensayos no se han ejecutado. La decisión sobre el nivel de entrada, si los ensayos no se ejecutan, está en 00_PENDIENTES.
+La red usa equipos comerciales ya probados. El TRL 4 de entrada se sustenta con tres documentos del proveedor (documentación técnica, informe de prueba de fábrica del nodo enlazado con el gateway y declaración de conformidad en 915-928 MHz con referencias de instalación) y con el informe 4 de la universidad. La carta de solicitud al proveedor está en la carpeta 04; el informe 4 y su anexo reproducible, en la carpeta A, pendiente de firma. Las pruebas de sensor, enlace y autonomía ya no son condición previa: son pruebas de aceptación de los lotes en los meses 4 a 6 (protocolo en la carpeta 04).
