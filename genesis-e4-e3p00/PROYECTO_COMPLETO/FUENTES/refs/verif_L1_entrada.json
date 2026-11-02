@@ -1,0 +1,104 @@
+[
+ {
+  "key": "Barkjohn2021",
+  "apa": "Barkjohn, K. K., Gantt, B., y Clements, A. L. (2021). Development and application of a United States-wide correction for PM2.5 data collected with the PurpleAir sensor. *Atmospheric Measurement Techniques, 14*(6), 4617–4637. https://doi.org/10.5194/amt-14-4617-2021",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Crilley2018",
+  "apa": "Crilley, L. R., Shaw, M., Pound, R., Kramer, L. J., Price, R., Young, S., Lewis, A. C., y Pope, F. D. (2018). Evaluation of a low-cost optical particle counter (Alphasense OPC-N2) for ambient air monitoring. *Atmospheric Measurement Techniques, 11*(2), 709–720. https://doi.org/10.5194/amt-11-709-2018",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Giordano2021",
+  "apa": "Giordano, M. R., Malings, C., Pandis, S. N., Presto, A. A., McNeill, V. F., Westervelt, D. M., Beekmann, M., y Subramanian, R. (2021). From low-cost sensors to high-quality data: A summary of challenges and best practices for effectively calibrating low-cost particulate matter mass sensors. *Journal of Aerosol Science, 158*, Artículo 105833. https://doi.org/10.1016/j.jaerosci.2021.105833",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Karagulian2019",
+  "apa": "Karagulian, F., Barbiere, M., Kotsev, A., Spinelle, L., Gerboles, M., Lagler, F., Redon, N., Crunaire, S., y Borowiak, A. (2019). Review of the performance of low-cost sensors for air quality monitoring. *Atmosphere, 10*(9), Artículo 506. https://doi.org/10.3390/atmos10090506",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Jayaratne2018",
+  "apa": "Jayaratne, R., Liu, X., Thai, P., Dunbabin, M., y Morawska, L. (2018). The influence of humidity on the performance of a low-cost air particle mass sensor and the effect of atmospheric fog. *Atmospheric Measurement Techniques, 11*(8), 4883–4890. https://doi.org/10.5194/amt-11-4883-2018",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Magi2020",
+  "apa": "Magi, B. I., Cupini, C., Francis, J., Green, M., y Hauser, C. (2020). Evaluation of PM2.5 measured in an urban setting using a low-cost optical particle counter and a Federal Equivalent Method Beta Attenuation Monitor. *Aerosol Science and Technology, 54*(2), 147–159. https://doi.org/10.1080/02786826.2019.1619915",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Morawska2018",
+  "apa": "Morawska, L., Thai, P. K., Liu, X., Asumadu-Sakyi, A., Ayoko, G., Bartonova, A., et al. (2018). Applications of low-cost sensing technologies for air quality monitoring and exposure assessment: How far have they gone? *Environment International, 116*, 286–299. https://doi.org/10.1016/j.envint.2018.04.018",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "KumarP2015",
+  "apa": "Kumar, P., Morawska, L., Martani, C., Biskos, G., Neophytou, M., Di Sabatino, S., Bell, M., Norford, L., y Britter, R. (2015). The rise of low-cost sensing for managing air pollution in cities. *Environment International, 75*, 199–205. https://doi.org/10.1016/j.envint.2014.11.019",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Castell2017",
+  "apa": "Castell, N., Dauge, F. R., Schneider, P., Vogt, M., Lerner, U., Fishbain, B., Broday, D., y Bartonova, A. (2017). Can commercial low-cost sensor platforms contribute to air quality monitoring and exposure estimates? *Environment International, 99*, 293–302. https://doi.org/10.1016/j.envint.2016.12.007",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Malings2020",
+  "apa": "Malings, C., Tanzer, R., Hauryliuk, A., Saha, P. K., Robinson, A. L., Presto, A. A., y Subramanian, R. (2020). Fine particle mass monitoring with low-cost sensors: Corrections and long-term performance evaluation. *Aerosol Science and Technology, 54*(2), 160–174. https://doi.org/10.1080/02786826.2019.1623863",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Pope2006",
+  "apa": "Pope, C. A., III, y Dockery, D. W. (2006). Health effects of fine particulate air pollution: Lines that connect. *Journal of the Air & Waste Management Association, 56*(6), 709–742. https://doi.org/10.1080/10473289.2006.10464485",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Landrigan2004",
+  "apa": "Landrigan, P. J., Lioy, P. J., Thurston, G., Berkowitz, G., Chen, L. C., Chillrud, S. N., et al. (2004). Health and environmental consequences of the World Trade Center disaster. *Environmental Health Perspectives, 112*(6), 731–739. https://doi.org/10.1289/ehp.6702",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Stieb2008",
+  "apa": "Stieb, D. M., Burnett, R. T., Smith-Doiron, M., Brion, O., Shin, H. H., y Economou, V. (2008). A new multipollutant, no-threshold air quality health index based on short-term associations observed in daily time-series analyses. *Journal of the Air & Waste Management Association, 58*(3), 435–450. https://doi.org/10.3155/1047-3289.58.3.435",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Grieves2017",
+  "apa": "Grieves, M., y Vickers, J. (2017). Digital twin: Mitigating unpredictable, undesirable emergent behavior in complex systems. En F.-J. Kahlen, S. Flumerfelt, y A. Alves (Eds.), *Transdisciplinary perspectives on complex systems* (pp. 85–113). Springer. https://doi.org/10.1007/978-3-319-38756-7_4",
+  "origen": "DOMINIO",
+  "tipo": "capitulo"
+ },
+ {
+  "key": "Tao2019",
+  "apa": "Tao, F., Zhang, H., Liu, A., y Nee, A. Y. C. (2019). Digital twin in industry: State-of-the-art. *IEEE Transactions on Industrial Informatics, 15*(4), 2405–2415. https://doi.org/10.1109/TII.2018.2873186",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "David2021",
+  "apa": "David, R., Duke, J., Jain, A., Janapa Reddi, V., Jeffries, N., Li, J., et al. (2021). TensorFlow Lite Micro: Embedded machine learning for TinyML systems. *Proceedings of Machine Learning and Systems, 3*, 800–811.",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ },
+ {
+  "key": "Shi2016",
+  "apa": "Shi, W., Cao, J., Zhang, Q., Li, Y., y Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal, 3*(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198",
+  "origen": "DOMINIO",
+  "tipo": "articulo"
+ }
+]

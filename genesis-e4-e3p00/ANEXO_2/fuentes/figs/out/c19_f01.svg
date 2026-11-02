@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="468pt" viewBox="0 0 720 468" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-17T00:21:41.174119</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 468 
+L 720 468 
+L 720 0 
+L 0 0 
+L 0 468 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 14.4 406.8 
+L 169.2 406.8 
+Q 176.4 406.8 176.4 399.6 
+L 176.4 277.2 
+Q 176.4 270 169.2 270 
+L 14.4 270 
+Q 7.2 270 7.2 277.2 
+L 7.2 399.6 
+Q 7.2 406.8 14.4 406.8 
+z
+" clip-path="url(#p00476f4d91)" style="fill: #b9d9eb; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 195.12 406.8 
+L 349.92 406.8 
+Q 357.12 406.8 357.12 399.6 
+L 357.12 234 
+Q 357.12 226.8 349.92 226.8 
+L 195.12 226.8 
+Q 187.92 226.8 187.92 234 
+L 187.92 399.6 
+Q 187.92 406.8 195.12 406.8 
+z
+" clip-path="url(#p00476f4d91)" style="fill: #9eb9d4; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 375.84 406.8 
+L 530.64 406.8 
+Q 537.84 406.8 537.84 399.6 
+L 537.84 158.4 
+Q 537.84 151.2 530.64 151.2 
+L 375.84 151.2 
+Q 368.64 151.2 368.64 158.4 
+L 368.64 399.6 
+Q 368.64 406.8 375.84 406.8 
+z
+" clip-path="url(#p00476f4d91)" style="fill: #6699cc; stroke: #2a3439; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 556.56 406.8 
+L 711.36 406.8 
+Q 718.56 406.8 718.56 399.6 
+L 718.56 118.8 
+Q 718.56 111.6 711.36 111.6 
+L 556.56 111.6 
+Q 549.36 111.6 549.36 118.8 
+L 549.36 399.6 
+Q 549.36 406.8 556.56 406.8 
+z
+" clip-path="url(#p00476f4d91)" style="fill: url(#h4d0c9a984a)"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 560.88 398.88 
+L 707.04 398.88 
+Q 710.64 398.88 710.64 395.28 
+L 710.64 123.12 
+Q 710.64 119.52 707.04 119.52 
+L 560.88 119.52 
+Q 557.28 119.52 557.28 123.12 
+L 557.28 395.28 
+Q 557.28 398.88 560.88 398.88 
+z
+" clip-path="url(#p00476f4d91)" style="fill: #f5f5f5"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 556.56 406.8 
+L 711.36 406.8 
+Q 718.56 406.8 718.56 399.6 
+L 718.56 118.8 
+Q 718.56 111.6 711.36 111.6 
+L 556.56 111.6 
+Q 549.36 111.6 549.36 118.8 
+L 549.36 399.6 
+Q 549.36 406.8 556.56 406.8 
+L 556.56 406.8 
+z
+" clip-path="url(#p00476f4d91)" style="fill: none; stroke-dasharray: 7.5,4.5; stroke-dashoffset: 0; stroke: #2a3439; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15.5px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="21.037578" transform="rotate(-0 7.2 21.037578)">Cuatro niveles de apropiación social llevan a la</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 15.5px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="39.947578" transform="rotate(-0 7.2 39.947578)">comunidad de la información a la co-creación</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="62.097969" transform="rotate(-0 7.2 62.097969)">Compromisos medibles por nivel: 29 actividades (20</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: start; fill: #2a3439" x="7.2" y="78.477969" transform="rotate(-0 7.2 78.477969)">talleres de co-diseño y 9 jornadas públicas), meses 1 a 24</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="91.8" y="288.507461" transform="rotate(-0 91.8 288.507461)">Nivel 1</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="91.8" y="304.627461" transform="rotate(-0 91.8 304.627461)">Información</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="91.8" y="340.052461" transform="rotate(-0 91.8 340.052461)">Se informa a la</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="91.8" y="355.912461" transform="rotate(-0 91.8 355.912461)">comunidad</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="91.8" y="387.632461" transform="rotate(-0 91.8 387.632461)">5.000 cartillas</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="272.52" y="245.307461" transform="rotate(-0 272.52 245.307461)">Nivel 2</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="272.52" y="261.167461" transform="rotate(-0 272.52 261.167461)">Consulta</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="272.52" y="297.112461" transform="rotate(-0 272.52 297.112461)">Se consulta su opinión</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="169.707461" transform="rotate(-0 453.24 169.707461)">Nivel 3</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="185.827461" transform="rotate(-0 453.24 185.827461)">Colaboración activa</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="201.427461" transform="rotate(-0 453.24 201.427461)">Obligatorio</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="237.223164" transform="rotate(-0 453.24 237.223164)">Se co-diseñan</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="252.972461" transform="rotate(-0 453.24 252.972461)">umbrales y protocolo</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="284.692461" transform="rotate(-0 453.24 284.692461)">Al menos 3 actas</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="300.663164" transform="rotate(-0 453.24 300.663164)">firmadas de co-diseño</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="332.271953" transform="rotate(-0 453.24 332.271953)">60 personas</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="348.132461" transform="rotate(-0 453.24 348.132461)">certificadas</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="138.027461" transform="rotate(-0 633.96 138.027461)">Nivel 4</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="153.887461" transform="rotate(-0 633.96 153.887461)">Empoderamiento</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="170.007461" transform="rotate(-0 633.96 170.007461)">Aspiración</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="205.432461" transform="rotate(-0 633.96 205.432461)">La comunidad</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="221.292461" transform="rotate(-0 633.96 221.292461)">decide y lidera; se</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="237.412461" transform="rotate(-0 633.96 237.412461)">verifica después del</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="633.96" y="253.012461" transform="rotate(-0 633.96 253.012461)">cierre</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 7.2 217.44 
+L 7.2 208.08 
+L 357.12 208.08 
+L 357.12 217.44 
+" clip-path="url(#p00476f4d91)" style="fill: none; stroke: #2a3439; stroke-width: 1.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 368.64 141.84 
+L 368.64 132.48 
+L 537.84 132.48 
+L 537.84 141.84 
+" clip-path="url(#p00476f4d91)" style="fill: none; stroke: #2a3439; stroke-width: 1.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 10.8 444.96 
+Q 360 444.96 707.187539 444.96 
+" clip-path="url(#p00476f4d91)" style="fill: none; stroke: #2a3439; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 701.187539 441.96 
+L 707.187539 444.96 
+L 701.187539 447.96 
+z
+" clip-path="url(#p00476f4d91)" style="fill: #2a3439; stroke: #2a3439; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="182.16" y="198.037461" transform="rotate(-0 182.16 198.037461)">9 jornadas públicas</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="453.24" y="122.294258" transform="rotate(-0 453.24 122.294258)">20 talleres de co-diseño</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Liberation Sans', 'Arial', sans-serif; text-anchor: middle; fill: #2a3439" x="360" y="428.437461" transform="rotate(-0 360 428.437461)">Mayor participación y poder de decisión de la comunidad</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p00476f4d91">
+   <rect x="0" y="0" width="720" height="468"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="h4d0c9a984a" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#f5f5f5"/>
+   <path d="M -36 36 
+L 36 -36 
+M -32 40 
+L 40 -32 
+M -28 44 
+L 44 -28 
+M -24 48 
+L 48 -24 
+M -20 52 
+L 52 -20 
+M -16 56 
+L 56 -16 
+M -12 60 
+L 60 -12 
+M -8 64 
+L 64 -8 
+M -4 68 
+L 68 -4 
+M 0 72 
+L 72 0 
+M 4 76 
+L 76 4 
+M 8 80 
+L 80 8 
+M 12 84 
+L 84 12 
+M 16 88 
+L 88 16 
+M 20 92 
+L 92 20 
+M 24 96 
+L 96 24 
+M 28 100 
+L 100 28 
+M 32 104 
+L 104 32 
+M 36 108 
+L 108 36 
+" style="fill: #6699cc; stroke: #6699cc; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

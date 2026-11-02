@@ -1,0 +1,53 @@
+{
+ "diseno": {
+  "municipios": 2,
+  "nodos_por_municipio": 15,
+  "horas_por_nodo": 2688,
+  "horas_nodo_teoricas": 80640,
+  "campanas_por_escenario": 1000
+ },
+ "escenarios": {
+  "bajo": {
+   "R2_1h_mediana": 0.9330850173412917,
+   "NRMSE_1h_mediana": 0.3146424844362062,
+   "R2_24h_mediana": 0.9567645207522085,
+   "NRMSE_24h_mediana": 0.15829312807750479,
+   "cumple_1h": 0.389,
+   "cumple_24h": 0.99,
+   "pend_24h_bajo_065": 0.0,
+   "pend_24h_mediana": 0.9585732952307541,
+   "sesgo_24h_mediana": 0.1587132293225375,
+   "transfer_R2_24h_mediana": 0.9495920137139753,
+   "transfer_NRMSE_24h_mediana": 0.16958484002763347,
+   "transfer_cumple_24h": 0.9655
+  },
+  "medio": {
+   "R2_1h_mediana": 0.8683264615548465,
+   "NRMSE_1h_mediana": 0.4335475842363583,
+   "R2_24h_mediana": 0.9477871866318792,
+   "NRMSE_24h_mediana": 0.17637608147137082,
+   "cumple_1h": 0.0,
+   "cumple_24h": 0.968,
+   "pend_24h_bajo_065": 0.0,
+   "pend_24h_mediana": 0.8915826551152752,
+   "sesgo_24h_mediana": 0.18216692474259893,
+   "transfer_R2_24h_mediana": 0.9388818171813011,
+   "transfer_NRMSE_24h_mediana": 0.18595423864908922,
+   "transfer_cumple_24h": 0.9555
+  },
+  "alto": {
+   "R2_1h_mediana": 0.7490618212723376,
+   "NRMSE_1h_mediana": 0.6054869503073239,
+   "R2_24h_mediana": 0.9301655072594671,
+   "NRMSE_24h_mediana": 0.22975145255297363,
+   "cumple_1h": 0.0,
+   "cumple_24h": 0.855,
+   "pend_24h_bajo_065": 0.004,
+   "pend_24h_mediana": 0.7712307072550919,
+   "sesgo_24h_mediana": 0.18379652558155335,
+   "transfer_R2_24h_mediana": 0.9164683487973803,
+   "transfer_NRMSE_24h_mediana": 0.24206060981366556,
+   "transfer_cumple_24h": 0.788
+  }
+ }
+}

@@ -1,0 +1,425 @@
+{
+ "case_id": "SGR_CONV56_AIRE",
+ "version_registro": "1.0",
+ "fecha": "2026-10-13",
+ "metodo_de_conteo": "MD_PROSA_V1_EXCLUYE_CODIGO_TABLAS_LISTAS_TITULOS (genesis_continuidad.measure_markdown)",
+ "secciones": [
+  {
+   "seccion": "4.3",
+   "archivo": "SECCION_4_3/SECCION_4_3_SGR_CONV56_AIRE.md",
+   "sha256": "819ac18380f5957060adabdc7b04ffbcc44b835f1d6d00114035792307417ab4",
+   "bytes": 18116,
+   "palabras_de_prosa_total": 634,
+   "filas_de_tabla_total": 95,
+   "piezas": [
+    {
+     "pieza": "4.3.1",
+     "version": "1.0",
+     "palabras_de_prosa": 144,
+     "filas_de_tabla": 11,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.3.2",
+     "version": "1.0",
+     "palabras_de_prosa": 43,
+     "filas_de_tabla": 9,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.3.3",
+     "version": "1.0",
+     "palabras_de_prosa": 46,
+     "filas_de_tabla": 22,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.3.4",
+     "version": "1.0",
+     "palabras_de_prosa": 151,
+     "filas_de_tabla": 6,
+     "tablas": 1,
+     "figuras": 1,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.3.5",
+     "version": "1.0",
+     "palabras_de_prosa": 73,
+     "filas_de_tabla": 16,
+     "tablas": 2,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.3.6",
+     "version": "1.0",
+     "palabras_de_prosa": 123,
+     "filas_de_tabla": 31,
+     "tablas": 2,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    }
+   ]
+  },
+  {
+   "seccion": "4.4",
+   "archivo": "SECCION_4_4/SECCION_4_4_SGR_CONV56_AIRE.md",
+   "sha256": "623ae50cf0472b7bf6b4a38283ad733713d1b85dd0acbad39fd477e6eac516ea",
+   "bytes": 262374,
+   "palabras_de_prosa_total": 3622,
+   "filas_de_tabla_total": 620,
+   "piezas": [
+    {
+     "pieza": "4.4.1",
+     "version": "1.0",
+     "palabras_de_prosa": 123,
+     "filas_de_tabla": 30,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.2",
+     "version": "1.0",
+     "palabras_de_prosa": 199,
+     "filas_de_tabla": 24,
+     "tablas": 2,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.3",
+     "version": "1.0",
+     "palabras_de_prosa": 133,
+     "filas_de_tabla": 17,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.4",
+     "version": "1.0",
+     "palabras_de_prosa": 771,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.5",
+     "version": "1.0",
+     "palabras_de_prosa": 222,
+     "filas_de_tabla": 125,
+     "tablas": 7,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.6",
+     "version": "1.0",
+     "palabras_de_prosa": 304,
+     "filas_de_tabla": 50,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.7",
+     "version": "1.0",
+     "palabras_de_prosa": 174,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 5,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.8",
+     "version": "1.0",
+     "palabras_de_prosa": 333,
+     "filas_de_tabla": 105,
+     "tablas": 6,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.9",
+     "version": "1.0",
+     "palabras_de_prosa": 79,
+     "filas_de_tabla": 7,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.10",
+     "version": "1.0",
+     "palabras_de_prosa": 93,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.11",
+     "version": "1.0",
+     "palabras_de_prosa": 255,
+     "filas_de_tabla": 102,
+     "tablas": 8,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.12",
+     "version": "1.0",
+     "palabras_de_prosa": 185,
+     "filas_de_tabla": 29,
+     "tablas": 3,
+     "figuras": 1,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.13",
+     "version": "1.0",
+     "palabras_de_prosa": 524,
+     "filas_de_tabla": 100,
+     "tablas": 6,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4.14",
+     "version": "1.0",
+     "palabras_de_prosa": 180,
+     "filas_de_tabla": 31,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    }
+   ]
+  },
+  {
+   "seccion": "4.4-MDR",
+   "archivo": "SECCION_4_4_MDR/SECCION_4_4_MDR_SGR_CONV56_AIRE.md",
+   "sha256": "534e3535d16e81318c0918ad547dbb8a35ccb9e7d6d5a3052e570cf502bdf5ad",
+   "bytes": 116668,
+   "palabras_de_prosa_total": 5921,
+   "filas_de_tabla_total": 431,
+   "piezas": [
+    {
+     "pieza": "4.4-MDR.1",
+     "version": "1.0",
+     "palabras_de_prosa": 353,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.2",
+     "version": "1.0",
+     "palabras_de_prosa": 685,
+     "filas_de_tabla": 35,
+     "tablas": 2,
+     "figuras": 2,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.3",
+     "version": "1.0",
+     "palabras_de_prosa": 343,
+     "filas_de_tabla": 47,
+     "tablas": 7,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.4",
+     "version": "1.0",
+     "palabras_de_prosa": 188,
+     "filas_de_tabla": 32,
+     "tablas": 5,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.5",
+     "version": "1.0",
+     "palabras_de_prosa": 293,
+     "filas_de_tabla": 31,
+     "tablas": 4,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.6",
+     "version": "1.0",
+     "palabras_de_prosa": 231,
+     "filas_de_tabla": 18,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.7",
+     "version": "1.0",
+     "palabras_de_prosa": 402,
+     "filas_de_tabla": 41,
+     "tablas": 5,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.8",
+     "version": "1.0",
+     "palabras_de_prosa": 427,
+     "filas_de_tabla": 42,
+     "tablas": 6,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.9",
+     "version": "1.0",
+     "palabras_de_prosa": 410,
+     "filas_de_tabla": 19,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.10",
+     "version": "1.0",
+     "palabras_de_prosa": 740,
+     "filas_de_tabla": 67,
+     "tablas": 9,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.11",
+     "version": "1.0",
+     "palabras_de_prosa": 350,
+     "filas_de_tabla": 29,
+     "tablas": 4,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.12",
+     "version": "1.0",
+     "palabras_de_prosa": 201,
+     "filas_de_tabla": 45,
+     "tablas": 4,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.13",
+     "version": "1.0",
+     "palabras_de_prosa": 265,
+     "filas_de_tabla": 25,
+     "tablas": 3,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.4-MDR.14",
+     "version": "1.0",
+     "palabras_de_prosa": 929,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    }
+   ]
+  },
+  {
+   "seccion": "4.5",
+   "archivo": "SECCION_4_5/SECCION_4_5_SGR_CONV56_AIRE.md",
+   "sha256": "a34185340e5924e71e812fe96eb9ba0ac86b5ec5ce10fbdc9922a23a84e580b3",
+   "bytes": 14620,
+   "palabras_de_prosa_total": 653,
+   "filas_de_tabla_total": 46,
+   "piezas": [
+    {
+     "pieza": "4.5.1",
+     "version": "1.0",
+     "palabras_de_prosa": 118,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.2",
+     "version": "1.0",
+     "palabras_de_prosa": 145,
+     "filas_de_tabla": 12,
+     "tablas": 1,
+     "figuras": 1,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.3",
+     "version": "1.0",
+     "palabras_de_prosa": 77,
+     "filas_de_tabla": 24,
+     "tablas": 2,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.4",
+     "version": "1.0",
+     "palabras_de_prosa": 38,
+     "filas_de_tabla": 10,
+     "tablas": 1,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.5",
+     "version": "1.0",
+     "palabras_de_prosa": 0,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.6",
+     "version": "1.0",
+     "palabras_de_prosa": 72,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    },
+    {
+     "pieza": "4.5.7",
+     "version": "1.0",
+     "palabras_de_prosa": 110,
+     "filas_de_tabla": 0,
+     "tablas": 0,
+     "figuras": 0,
+     "estado": "ENTREGADA_CON_VACIOS"
+    }
+   ]
+  }
+ ],
+ "pendientes": [
+  "Ratificación independiente de las 105 fichas de 4.4",
+  "Términos de referencia y anexos de la convocatoria",
+  "Evidencia de capacidad de absorción de los custodios",
+  "Costo total de sostenimiento completo",
+  "Pasos 5 y 6, capítulos 1 a 21, paquete 1000X y estrategia (requieren CONTINUAR)"
+ ],
+ "nota": "El conteo mide prosa de Markdown. No mide calidad científica ni suficiencia del anclaje."
+}

@@ -1,0 +1,111 @@
+{
+ "tipo": "PROBLEMAS",
+ "rol": "A-PROB",
+ "titulo": "A-PROB: árbol de problemas de la vigilancia de material particulado en sitios de remoción de escombros",
+ "naturaleza": "PROPUESTO",
+ "fuente": "Sección 4.4 (S2), 4.4-MDR y E3-P00 a E3-P21; relaciones con estatuto HIE",
+ "pregunta": "¿Qué estados problemáticos, causas y efectos sustentan el error de medición sin verificar como problema central?",
+ "descripcion": "Árbol de problemas con diez nodos y diez relaciones en cinco niveles. El problema central es el error de medición sin verificar frente a una referencia (V06). Las causas directas son humedad, PM10, PM2,5 y frecuencia de calibración. La causa indirecta es la remoción de escombros. Los efectos son un índice sin fórmula local, falsas alarmas sin medir, baja adopción institucional y personas sin protección efectiva. Todas las relaciones son hipótesis de influencia estructural sin efecto estimado.",
+ "niveles": [
+  "Efectos indirectos",
+  "Efectos directos",
+  "Problema central",
+  "Causas directas",
+  "Causas indirectas"
+ ],
+ "nodos": [
+  {
+   "id": "V14",
+   "nivel": 0,
+   "texto": "Personas sin protección efectiva por alertas confiables (V14)"
+  },
+  {
+   "id": "V15",
+   "nivel": 0,
+   "texto": "Baja adopción institucional del tablero y de las alertas (V15)"
+  },
+  {
+   "id": "V11",
+   "nivel": 1,
+   "texto": "Índice AQHI sin fórmula local validada y con error de entrada (V11)"
+  },
+  {
+   "id": "V12",
+   "nivel": 1,
+   "texto": "Tasa de falsas alarmas sin medir (V12)"
+  },
+  {
+   "id": "V06",
+   "nivel": 2,
+   "texto": "Error de medición de PM2,5 y PM10 sin verificar frente a una referencia (V06)",
+   "destacado": true
+  },
+  {
+   "id": "V03",
+   "nivel": 3,
+   "texto": "Humedad relativa alta en los sitios de remoción (V03)"
+  },
+  {
+   "id": "V02",
+   "nivel": 3,
+   "texto": "Concentración de PM10 con fracción gruesa (V02)"
+  },
+  {
+   "id": "V01",
+   "nivel": 3,
+   "texto": "Concentración de PM2,5 (V01)"
+  },
+  {
+   "id": "V07",
+   "nivel": 3,
+   "texto": "Frecuencia de calibración de los nodos baja o nula (V07)"
+  },
+  {
+   "id": "V05",
+   "nivel": 4,
+   "texto": "Remoción de escombros en curso (V05)"
+  }
+ ],
+ "enlaces": [
+  {
+   "de": "V05",
+   "a": "V02"
+  },
+  {
+   "de": "V05",
+   "a": "V01"
+  },
+  {
+   "de": "V03",
+   "a": "V06"
+  },
+  {
+   "de": "V02",
+   "a": "V06"
+  },
+  {
+   "de": "V01",
+   "a": "V06"
+  },
+  {
+   "de": "V07",
+   "a": "V06"
+  },
+  {
+   "de": "V06",
+   "a": "V11"
+  },
+  {
+   "de": "V06",
+   "a": "V12"
+  },
+  {
+   "de": "V11",
+   "a": "V14"
+  },
+  {
+   "de": "V12",
+   "a": "V15"
+  }
+ ]
+}

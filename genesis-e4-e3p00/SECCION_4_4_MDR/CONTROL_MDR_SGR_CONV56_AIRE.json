@@ -1,0 +1,483 @@
+{
+ "auditor_salida_mdr": {
+  "codigo": 0,
+  "resultado": {
+   "state": "CONTROLES_MECANICOS_CUMPLIDOS",
+   "errors": [],
+   "trees_checked": 2,
+   "metadata": [
+    {
+     "role": "A-DEC",
+     "sc_codes": [
+      "SC-1",
+      "SC-2",
+      "SC-3",
+      "SC-4"
+     ],
+     "has_ceiling": false,
+     "has_custody": true,
+     "checks": {
+      "xml_bien_formado": true,
+      "viewbox": true,
+      "title": true,
+      "desc_no_vacio": true,
+      "rol_declarado": true,
+      "tipo_declarado": true,
+      "colores_fuera_de_paleta": [],
+      "sin_script_enlace_imagen": true,
+      "sin_transformaciones": true,
+      "ids_unicos": true,
+      "tamano_minimo_9_5": true
+     }
+    },
+    {
+     "role": "A-TDC",
+     "sc_codes": [
+      "SC-1",
+      "SC-2",
+      "SC-3",
+      "SC-4"
+     ],
+     "has_ceiling": true,
+     "has_custody": true,
+     "checks": {
+      "xml_bien_formado": true,
+      "viewbox": true,
+      "title": true,
+      "desc_no_vacio": true,
+      "rol_declarado": true,
+      "tipo_declarado": true,
+      "colores_fuera_de_paleta": [],
+      "sin_script_enlace_imagen": true,
+      "sin_transformaciones": true,
+      "ids_unicos": true,
+      "tamano_minimo_9_5": true
+     }
+    }
+   ],
+   "empirical_validation": "NO_EJECUTADA",
+   "scope": "Sintaxis, estructura, rangos, roles y acoplamiento. No verifica evidencia, calidad causal ni todo solapamiento visual.",
+   "emission_order": {
+    "errors": [],
+    "scope": "Orden editorial local, no calidad de los árboles."
+   }
+  }
+ },
+ "scope_guard_4_4_MDR": {
+  "codigo": 0,
+  "resultado": {
+   "estado": "ALCANCE_VERIFICADO",
+   "errors": [],
+   "headings": [
+    "4.4-MDR",
+    "4.4-MDR.1",
+    "4.4-MDR.2",
+    "4.4-MDR.3",
+    "4.4-MDR.4",
+    "4.4-MDR.5",
+    "4.4-MDR.6",
+    "4.4-MDR.7",
+    "4.4-MDR.8",
+    "4.4-MDR.9",
+    "4.4-MDR.10",
+    "4.4-MDR.11",
+    "4.4-MDR.12",
+    "4.4-MDR.13",
+    "4.4-MDR.14"
+   ],
+   "sections": [
+    "4.4-MDR"
+   ],
+   "declared_case_ids": [
+    "SGR_CONV56_AIRE"
+   ],
+   "entrega_parcial": false,
+   "limite": "Identidad/orden/encabezados y manifiesto; no suficiencia de fichas, evidencia ni detección universal de desviaciones semánticas."
+  }
+ },
+ "scope_guard_4_5": {
+  "codigo": 0,
+  "resultado": {
+   "estado": "ALCANCE_VERIFICADO",
+   "errors": [],
+   "headings": [
+    "4.5",
+    "4.5.1",
+    "4.5.2",
+    "4.5.3",
+    "4.5.4",
+    "4.5.5",
+    "4.5.6",
+    "4.5.7"
+   ],
+   "sections": [
+    "4.5"
+   ],
+   "declared_case_ids": [
+    "SGR_CONV56_AIRE"
+   ],
+   "entrega_parcial": false,
+   "limite": "Identidad/orden/encabezados y manifiesto; no suficiencia de fichas, evidencia ni detección universal de desviaciones semánticas."
+  }
+ },
+ "orquestador_audit_4_4_MDR": {
+  "codigo": 0,
+  "resultado": {
+   "estado": "ALCANCE_VERIFICADO",
+   "errors": [],
+   "headings": [
+    "4.4-MDR",
+    "4.4-MDR.1",
+    "4.4-MDR.2",
+    "4.4-MDR.3",
+    "4.4-MDR.4",
+    "4.4-MDR.5",
+    "4.4-MDR.6",
+    "4.4-MDR.7",
+    "4.4-MDR.8",
+    "4.4-MDR.9",
+    "4.4-MDR.10",
+    "4.4-MDR.11",
+    "4.4-MDR.12",
+    "4.4-MDR.13",
+    "4.4-MDR.14"
+   ],
+   "sections": [
+    "4.4-MDR"
+   ],
+   "declared_case_ids": [
+    "SGR_CONV56_AIRE"
+   ],
+   "entrega_parcial": false,
+   "limite": "Identidad/orden/encabezados y manifiesto; no suficiencia de fichas, evidencia ni detección universal de desviaciones semánticas."
+  }
+ },
+ "orquestador_internal": {
+  "codigo": 0,
+  "resultado": {
+   "state": "ESTRUCTURA_INTERNA_VERIFICADA",
+   "errors": [],
+   "formal_approval": false,
+   "scope": "Presencia e identidad de registros. No prueba su verdad ni levanta reservas."
+  }
+ },
+ "orquestador_plan": {
+  "codigo": 0,
+  "resultado": {
+   "requested": [
+    "4.3",
+    "4.4",
+    "4.4-MDR",
+    "4.5"
+   ],
+   "effective": [
+    "4.3",
+    "4.4",
+    "4.4-MDR",
+    "4.5"
+   ],
+   "reuse": [],
+   "upstream_unavailable": [],
+   "stop_after": "4.5",
+   "observations": [],
+   "rule": "Los faltantes limitan conclusiones dependientes; no inventar entradas."
+  }
+ },
+ "scope_guard_cadena_4_3_a_4_5": {
+  "codigo": 0,
+  "resultado": {
+   "estado": "ALCANCE_VERIFICADO",
+   "errors": [],
+   "headings": [
+    "4.3",
+    "4.3.1",
+    "4.3.2",
+    "4.3.3",
+    "4.3.4",
+    "4.3.5",
+    "4.3.6",
+    "4.4",
+    "4.4.1",
+    "4.4.2",
+    "4.4.3",
+    "4.4.4",
+    "4.4.5",
+    "4.4.6",
+    "4.4.7",
+    "4.4.8",
+    "4.4.9",
+    "4.4.10",
+    "4.4.11",
+    "4.4.12",
+    "4.4.13",
+    "4.4.14",
+    "4.4-MDR",
+    "4.4-MDR.1",
+    "4.4-MDR.2",
+    "4.4-MDR.3",
+    "4.4-MDR.4",
+    "4.4-MDR.5",
+    "4.4-MDR.6",
+    "4.4-MDR.7",
+    "4.4-MDR.8",
+    "4.4-MDR.9",
+    "4.4-MDR.10",
+    "4.4-MDR.11",
+    "4.4-MDR.12",
+    "4.4-MDR.13",
+    "4.4-MDR.14",
+    "4.5",
+    "4.5.1",
+    "4.5.2",
+    "4.5.3",
+    "4.5.4",
+    "4.5.5",
+    "4.5.6",
+    "4.5.7"
+   ],
+   "sections": [
+    "4.3",
+    "4.4",
+    "4.4-MDR",
+    "4.5"
+   ],
+   "declared_case_ids": [
+    "SGR_CONV56_AIRE"
+   ],
+   "entrega_parcial": false,
+   "limite": "Identidad/orden/encabezados y manifiesto; no suficiencia de fichas, evidencia ni detección universal de desviaciones semánticas."
+  }
+ },
+ "huellas_programas": {
+  "verificados": 12,
+  "total": 12,
+  "detalle": {
+   "genesis_paritario_vm.py": {
+    "declarado": "d89fa1e98f5e16062ec7d253994e24f1f98a07ce7542435f3feeb757aacd3d9d",
+    "calculado": "d89fa1e98f5e16062ec7d253994e24f1f98a07ce7542435f3feeb757aacd3d9d",
+    "coincide": true
+   },
+   "genesis_scope_guard.py": {
+    "declarado": "681e908c0dccf8563fcb59763ca5fd8e802b2e0c5f91b35b87ffaad813128a4a",
+    "calculado": "681e908c0dccf8563fcb59763ca5fd8e802b2e0c5f91b35b87ffaad813128a4a",
+    "coincide": true
+   },
+   "genesis_compat_21.py": {
+    "declarado": "43093f55aa63c6744ce21f2628993771a85d3536d64a1b8b60e1f0ec9bd7fff0",
+    "calculado": "43093f55aa63c6744ce21f2628993771a85d3536d64a1b8b60e1f0ec9bd7fff0",
+    "coincide": true
+   },
+   "genesis_export_artifact.py": {
+    "declarado": "0579a65be21177433ba55efc40da2ab72f037f64615ffe8664c14c805c2e8ce3",
+    "calculado": "0579a65be21177433ba55efc40da2ab72f037f64615ffe8664c14c805c2e8ce3",
+    "coincide": true
+   },
+   "genesis_mdr_orquestador.py": {
+    "declarado": "8cce827bc9f45dfebd8ebb47a31475b2c5449561cd0296b377c157ba1f7dffac",
+    "calculado": "8cce827bc9f45dfebd8ebb47a31475b2c5449561cd0296b377c157ba1f7dffac",
+    "coincide": true
+   },
+   "auditor_salida_mdr.py": {
+    "declarado": "bb7c5f89c2606b5b7376883617a31cd9857ff9862c651b579d2533cff4aad0a6",
+    "calculado": "bb7c5f89c2606b5b7376883617a31cd9857ff9862c651b579d2533cff4aad0a6",
+    "coincide": true
+   },
+   "mdr_render_integrado.py": {
+    "declarado": "f5dd1088d8129a957d6aa0c9ca01f5fe0387ae66ecf43c55685168cfcc78cc9c",
+    "calculado": "f5dd1088d8129a957d6aa0c9ca01f5fe0387ae66ecf43c55685168cfcc78cc9c",
+    "coincide": true
+   },
+   "genesis_schema.py": {
+    "declarado": "de34c0976630454acc13496340c58b858433cf6b933fd080f504e22685f81ca9",
+    "calculado": "de34c0976630454acc13496340c58b858433cf6b933fd080f504e22685f81ca9",
+    "coincide": true
+   },
+   "genesis_continuidad.py": {
+    "declarado": "47e1978f26b09af2548d10c7ffb4c23ab6c38d6a379c49ebd4aaecfc6d3835ae",
+    "calculado": "47e1978f26b09af2548d10c7ffb4c23ab6c38d6a379c49ebd4aaecfc6d3835ae",
+    "coincide": true
+   },
+   "genesis_vistas.py": {
+    "declarado": "d869ca20e5370007af7e08c467b77e78f47097978e2839ac218e419b5030729c",
+    "calculado": "d869ca20e5370007af7e08c467b77e78f47097978e2839ac218e419b5030729c",
+    "coincide": true
+   },
+   "arboles_mdr_svg.py": {
+    "declarado": "bdb5d884397d3bcdfee9603b72e8e95f0944692b69d10dfd78b91d7794140a10",
+    "calculado": "bdb5d884397d3bcdfee9603b72e8e95f0944692b69d10dfd78b91d7794140a10",
+    "coincide": true
+   },
+   "interop_v2_1.py": {
+    "declarado": "e8468f74561b87e0facee2c3e1234f28b5af7a509a078295a0543dfa7e3a1e16",
+    "calculado": "e8468f74561b87e0facee2c3e1234f28b5af7a509a078295a0543dfa7e3a1e16",
+    "coincide": true
+   }
+  },
+  "nota": "arboles_mdr_svg.py se extrajo sin el primer salto de línea de la envoltura (GEN-MDR-QA-06); mdr_render_integrado.py y auditor_salida_mdr.py se ejecutaron sin modificación"
+ },
+ "estilo_4_4_MDR": {
+  "oraciones_mas_de_25_palabras": 7,
+  "excepciones_aplicadas": "Supuestos SI-ENTONCES-PORQUE y referencias",
+  "palabras_de_enfasis": {},
+  "detalle": [
+   {
+    "linea": 518,
+    "palabras": 67,
+    "inicio": "SI los nodos con corrección local se comparan por sorteo semanal con la lectura "
+   },
+   {
+    "linea": 520,
+    "palabras": 56,
+    "inicio": "SI los nodos conservan energía y enlace intermitente bajo maquinaria, polvo y hu"
+   },
+   {
+    "linea": 522,
+    "palabras": 62,
+    "inicio": "SI la autoridad de salud valida una fórmula local del índice y los umbrales, y l"
+   },
+   {
+    "linea": 524,
+    "palabras": 50,
+    "inicio": "SI al menos un custodio por componente demuestra capacidad de absorción antes de"
+   },
+   {
+    "linea": 955,
+    "palabras": 28,
+    "inicio": "PORQUE: la humedad y el sesgo por tamaño de partícula explican parte del error ("
+   },
+   {
+    "linea": 962,
+    "palabras": 28,
+    "inicio": "PORQUE: la transmisión por eventos reduce el consumo, los nodos averiados se rep"
+   },
+   {
+    "linea": 1450,
+    "palabras": 30,
+    "inicio": "Embudo de problematización y análisis causal del sistema de vigilancia ambiental"
+   }
+  ]
+ },
+ "estilo_4_5": {
+  "oraciones_mas_de_25_palabras": 1,
+  "excepciones_aplicadas": "Supuestos SI-ENTONCES-PORQUE y referencias",
+  "palabras_de_enfasis": {},
+  "detalle": [
+   {
+    "linea": 237,
+    "palabras": 30,
+    "inicio": "Embudo de problematización y análisis causal del sistema de vigilancia ambiental"
+   }
+  ]
+ },
+ "marcadores_4_4_MDR": {
+  "rotulo": "REVISION_DE_MARCADORES_AUXILIAR; no equivale a AP-11-V",
+  "unidades": {
+   "ANCLA": 159,
+   "VACIO": 117,
+   "SIN_MARCADOR": 256,
+   "NA_ENCABEZADO": 49
+  },
+  "limite": "La presencia de un marcador no prueba suficiencia del anclaje"
+ },
+ "marcadores_4_5": {
+  "rotulo": "REVISION_DE_MARCADORES_AUXILIAR; no equivale a AP-11-V",
+  "unidades": {
+   "ANCLA": 43,
+   "SIN_MARCADOR": 8,
+   "NA_ENCABEZADO": 2,
+   "VACIO": 3
+  },
+  "limite": "La presencia de un marcador no prueba suficiencia del anclaje"
+ },
+ "recuento_svg": {
+  "ARBOL_1_SGR_CONV56_AIRE.svg": 1,
+  "ARBOL_4_SGR_CONV56_AIRE.svg": 1,
+  "ARBOL_5_SGR_CONV56_AIRE.svg": 1
+ },
+ "revision_visual": {
+  "arboles": [
+   "ARBOL_1",
+   "ARBOL_4",
+   "ARBOL_5"
+  ],
+  "metodo": "Render con Chromium sin interfaz y lectura de la captura",
+  "estado": "EJECUTADA",
+  "observacion": "Se retiraron del A-PROB relaciones con trazos compartidos; etiqueta SC-3 del A-TDC cruza el techo con fondo blanco"
+ },
+ "validacion_empirica": "NO_EJECUTADA",
+ "verificador_ntc": "NO_EJECUTADO",
+ "AP_11_V": "NO_EJECUTADO",
+ "archivos": [
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_1_SGR_CONV56_AIRE.alt.md",
+   "sha256": "fe72e08b63a603461224d9b172079cb6ac44a50817aad714f3a9ee44a2d6ec84",
+   "bytes": 3488
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_1_SGR_CONV56_AIRE.json",
+   "sha256": "56bbfcf900417513e0affb3f63beb78501c032da4b77cabbcac2fa615360aa5c",
+   "bytes": 7779
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_1_SGR_CONV56_AIRE.svg",
+   "sha256": "9bf2357debcd55c9fefb3ff8730cebe43c14fd61e318de94236e36054fe0df9f",
+   "bytes": 26353
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_4_SGR_CONV56_AIRE.alt.md",
+   "sha256": "b56f43df8133e428c4e7e67bbd9462ad9fee6545e9425163843e49bf2af707e0",
+   "bytes": 3602
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_4_SGR_CONV56_AIRE.json",
+   "sha256": "35781fb46115dcf27addcb35cc47da4cfa5e9f6e748c275d3ebccc9eff045211",
+   "bytes": 6102
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/ARBOL_4_SGR_CONV56_AIRE.svg",
+   "sha256": "0de6c7603bbbad0f11fa28d4866bea99b399a78c18ef02b8adcb942b31691636",
+   "bytes": 20727
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/EXPEDIENTE_MDR_SGR_CONV56_AIRE.json",
+   "sha256": "e4424b08473d69186aaea9f6d1de88e0b0b254acbd5f4b182641fff83f011808",
+   "bytes": 65840
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/EXPEDIENTE_MDR_SGR_CONV56_AIRE.md",
+   "sha256": "ab1fb035d5862c602c7944d88872c5b8547fdbca57df829a014bb67ad00a0fe2",
+   "bytes": 34379
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/REGISTRO_CONTRASTE_ARBOL_SGR_CONV56_AIRE.csv",
+   "sha256": "8789733645dbaeb5462b053a197497372efa9d5c08969e056986ea5575f895c4",
+   "bytes": 17171
+  },
+  {
+   "archivo": "SECCION_4_4_MDR/SECCION_4_4_MDR_SGR_CONV56_AIRE.md",
+   "sha256": "534e3535d16e81318c0918ad547dbb8a35ccb9e7d6d5a3052e570cf502bdf5ad",
+   "bytes": 116668
+  },
+  {
+   "archivo": "SECCION_4_5/ARBOL_5_SGR_CONV56_AIRE.alt.md",
+   "sha256": "024a4dd59dbe0c867226b15f9b03bd2e089cee8c9ed8a05277b31ffab4060ef0",
+   "bytes": 1666
+  },
+  {
+   "archivo": "SECCION_4_5/ARBOL_5_SGR_CONV56_AIRE.json",
+   "sha256": "b2d8a131eb0591fae251894d1101594f757ba302409c3bb331757e4137c6641b",
+   "bytes": 2595
+  },
+  {
+   "archivo": "SECCION_4_5/ARBOL_5_SGR_CONV56_AIRE.svg",
+   "sha256": "eb4db09aaf836283cde81ebeef9f6d7e3887e5a90a618e380192e23a46e847e1",
+   "bytes": 10403
+  },
+  {
+   "archivo": "SECCION_4_5/SECCION_4_5_SGR_CONV56_AIRE.md",
+   "sha256": "a34185340e5924e71e812fe96eb9ba0ac86b5ec5ce10fbdc9922a23a84e580b3",
+   "bytes": 14620
+  }
+ ],
+ "nota": "Los controles mecánicos verifican estructura, orden, alcance y coherencia local. No verifican la verdad de las fuentes, las probabilidades ni los supuestos."
+}

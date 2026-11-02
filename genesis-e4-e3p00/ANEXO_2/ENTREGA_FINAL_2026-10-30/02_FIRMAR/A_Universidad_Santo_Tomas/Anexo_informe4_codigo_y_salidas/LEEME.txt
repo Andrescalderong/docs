@@ -1,0 +1,16 @@
+Anexo reproducible del Informe técnico 4 (prototipo del modelo de corrección), SIGP 143329.
+
+Contenido
+- sim_coloc.py: código de la simulación (Python 3 y NumPy; semilla fija 20261029).
+- sim_coloc.json: salida completa (diseño y métricas por escenario).
+- salida_consola.txt: salida de consola de la ejecución.
+- SHA256SUMS.txt: huellas de los tres archivos.
+
+Reproducción
+  python3 sim_coloc.py sim_coloc.json
+
+Cifras que cita el Anexo 2 (tablas 13.4 y sección 14.2) y el Informe 4:
+- Escenario medio: 96,80 % de las campañas cumple a 24 horas; prueba cruzada entre municipios 95,55 % (1.911 de 2.000 pruebas).
+- Escenario alto: 85,50 % cumple a 24 horas; prueba cruzada 78,80 % (1.576 de 2.000 pruebas).
+
+Alcance: datos sintéticos con parámetros supuestos. Verifica el diseño del análisis; no acredita el desempeño físico de ningún sensor.

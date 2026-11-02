@@ -1,0 +1,275 @@
+[
+ {
+  "key": "Befani2014",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Process Tracing and Contribution Analysis: A Combined Approach to Generative Causal Inference for Impact Evaluation (IDS Bulletin 45(6)) - https://bulletin.ids.ac.uk/index.php/idsbo/article/view/139 ; https://ideas.repec.org/a/wly/idsxxx/v45y2014i6p17-36.html ; https://opendocs.ids.ac.uk/opendocs/handle/123456789/7348?show=full",
+  "nota": "Coinciden título, autores (Befani y Mayne), año, revista, volumen/número y páginas 17-36. DOI visto en los resultados: 10.1111/1759-5436.12110 (opcional agregarlo)."
+ },
+ {
+  "key": "Elmore1979",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Backward mapping: Implementation research and policy decisions - https://docs.opendeved.net/lib/N6JEV472 (registro con Political Science Quarterly 94(4), 601-616, DOI 10.2307/2149628)",
+  "nota": "Coinciden título, autor, revista, volumen/número y páginas. Algunas fuentes lo ubican en el número de invierno 1979-80; el año 1979 es el de uso común y se mantiene."
+ },
+ {
+  "key": "Etzioni1967",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Mixed-scanning: A Third Approach to Decision-making - https://researchgate.net/profile/Amitai-Etzioni/publication/235356796_Mixed-scanning_A_Third_Approach_to_Decision-making/links/56cc74bb08ae1106370d91dc/Mixed-scanning-A-Third-Approach-to-Decision-making.pdf",
+  "nota": "Coinciden título, autor, Public Administration Review 27(5), 385-392, diciembre 1967. DOI visto: 10.2307/973394."
+ },
+ {
+  "key": "Klein2007",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The pre-mortem method (cita Klein, G. (2007), Performing a project premortem, HBR 85(9), 18-19) - https://www.psychologytoday.com/ie/blog/seeing-what-others-dont/202101/the-pre-mortem-method ; https://nesslabs.com/?p=9829 (septiembre 2007)",
+  "nota": "La página de HBR no apareció en los resultados; la coincidencia de título, autor, año, volumen/número y páginas proviene de fuentes secundarias que citan el artículo (Psychology Today, Ness Labs)."
+ },
+ {
+  "key": "Lindblom1959",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The Science of 'Muddling Through' (Public Administration Review 19(2), 79-88) - https://www.proquest.com/docview/522114712 ; https://content.csbs.utah.edu/~rhuef/courses/Notes5321-6321/MuddlingThrough.html",
+  "nota": "Coinciden título, autor, año, volumen, número (2) y páginas 79-88. La página de JSTOR no apareció; el número (2) proviene del registro de ProQuest."
+ },
+ {
+  "key": "Mayne2012",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Contribution analysis: Coming of age? (Evaluation 18(3), 270-280) - https://journals.sagepub.com/toc/evi/18/3",
+  "nota": "Coinciden título, autor, revista, volumen/número, páginas y año (julio 2012). DOI visto: 10.1177/1356389012451663."
+ },
+ {
+  "key": "Merton1936",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The unanticipated consequences of purposive social action - https://stafforini.com/works/merton-1936-unanticipated-consequences-purposive/ ; https://www.d.umn.edu/cla/faculty/jhamlin/4111/Readings/MertonSocialAction.htm (American Sociological Review 1(6), diciembre 1936, 894-904)",
+  "nota": "Coinciden todos los datos."
+ },
+ {
+  "key": "Mitchell1997",
+  "estado": "CORREGIR",
+  "correccion": "Mitchell, R. K., Agle, B. R., y Wood, D. J. (1997). Toward a theory of stakeholder identification and salience: Defining the principle of who and what really counts. *Academy of Management Review, 22*(4), 853–886. https://doi.org/10.5465/amr.1997.9711022105",
+  "evidencia": "Toward a theory of stakeholder identification and salience: Defining the principle of who and what really counts - https://academicnewsletter.sufe.edu.cn/info/368123 ; https://fenix.iseg.ulisboa.pt/downloadFile/563083097458401/Mitchell%20et%20al.%201997%20(AMR)%20Toward%20a%20theory%20of%20stakeholder%20identification%20and%20salience%20Defining%20the%20principle%20of%20who%20and%20what%20really%20counts.pdf ; https://marineinfo.org/id/publication/314248",
+  "nota": "La referencia omite el subtítulo del título original (Defining the principle of who and what really counts). Autores, año, revista, volumen/número y páginas 853-886 coinciden. DOI 10.5465/amr.1997.9711022105 visto en los resultados (opcional)."
+ },
+ {
+  "key": "Shediac1998",
+  "estado": "CORREGIR",
+  "correccion": "Shediac-Rizkallah, M. C., y Bone, L. R. (1998). Planning for the sustainability of community-based health programs: Conceptual frameworks and future directions for research, practice and policy. *Health Education Research, 13*(1), 87–108. https://doi.org/10.1093/her/13.1.87",
+  "evidencia": "Planning for the sustainability of community-based health programs: conceptual frameworks and future directions for research, practice and policy - https://pubmed.ncbi.nlm.nih.gov/10178339/",
+  "nota": "La referencia omite el subtítulo (conceptual frameworks and future directions for research, practice and policy). Autores, año, revista, volumen/número y páginas 87-108 coinciden. DOI 10.1093/her/13.1.87 según PubMed (opcional)."
+ },
+ {
+  "key": "Simon1955",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "A Behavioral Model of Rational Choice (Quarterly Journal of Economics 69(1), 99-118) - https://link.springer.com/article/10.1007/s10203-024-00436-2 ; https://edisciplinas.usp.br/pluginfile.php/7058332/mod_resource/content/1/1955%20Racionalidade%20limitada.pdf",
+  "nota": "Coinciden título, autor, año, revista, volumen/número y páginas. DOI visto: 10.2307/1884852."
+ },
+ {
+  "key": "Simon1973",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The structure of ill structured problems (Artificial Intelligence 4, 181-201) - https://www.datalearner.com/academic/journal-papers/0004-3702/volumes-and-issues/9/paper-detail/51 ; https://ojs.unbc.ca/index.php/design/article/viewFile/1273/1090 (PDF del artículo)",
+  "nota": "Coinciden título, autor, año, revista, volumen 4 y páginas 181-201; el listado de los resultados da '4 (3-4):181-201', que coincide con el número doble (3-4)."
+ },
+ {
+  "key": "Snowden2007",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "A leader's framework for decision making (HBR 85(11), noviembre 2007) - https://store.hbr.org/product/leader-s-framework-for-decision-making/R0711C ; https://library.vine.org.nz/bib/5348 ; https://thecynefin.co/a-leaders-framework-for-decision-making/",
+  "nota": "Coinciden título, autores, año, volumen/número. Un registro da páginas 68-76 y un catálogo español 69-76; se mantiene 68-76."
+ },
+ {
+  "key": "Tversky1974",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Judgment under Uncertainty: Heuristics and Biases (Science 185(4157):1124-31) - https://pubmed.ncbi.nlm.nih.gov/17835457/ ; https://causeweb.org/cause/node/6896",
+  "nota": "Coinciden todos los datos. DOI visto: 10.1126/science.185.4157.1124."
+ },
+ {
+  "key": "Kahneman1979",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Prospect Theory: An Analysis of Decision under Risk (Econometrica 47(2), marzo 1979) - https://www.econometricsociety.org/publications/econometrica/1979/03/01/prospect-theory-analysis-decision-under-risk ; https://kahneman.scholar.princeton.edu/document/11",
+  "nota": "Coinciden título, autores, año, revista, volumen/número. Páginas: la copia de Princeton y la mayoría de bibliografías dan 263-291; el sitio de la Econometric Society/JSTOR da 263-292. Se mantiene 263-291. El identificador JSTOR 1914185 coincide con el DOI 10.2307/1914185 (la cadena DOI no se mostró literalmente)."
+ },
+ {
+  "key": "Mirjalili2014",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Grey Wolf Optimizer (Advances in Engineering Software 69, 46-61) - https://faculty.csu.edu.cn/_resources/group1/M00/00/64/wKiylWHr_8eAcMxSAEQfIZlyeEU402.pdf ; https://search.r-project.org/CRAN/refmans/metaheuristicOpt/html/GWO.html",
+  "nota": "Coinciden título, tres autores, año, revista, volumen, páginas y DOI 10.1016/j.advengsoft.2013.12.007."
+ },
+ {
+  "key": "Aria2017",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "To cite bibliometrix in publications, please use: Aria & Cuccurullo (2017), Journal of Informetrics 11(4), 959-975 - https://cran.csail.mit.edu/web/packages/bibliometrix/citation.html ; https://bibliometrix.org/vignettes/Introduction_to_bibliometrix.html",
+  "nota": "Coinciden título, autores, año, revista, volumen/número, páginas y DOI 10.1016/j.joi.2017.08.007."
+ },
+ {
+  "key": "Page2021",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews (BMJ 2021;372:n71) - https://eprints.whiterose.ac.uk/173303 ; https://portal.findresearcher.sdu.dk/da/publications/the-prisma-2020-statement-an-updated-guideline-for-reporting-syst-4/",
+  "nota": "Coinciden título, primeros autores (Page, McKenzie, Bossuyt), año, BMJ 372, n71 y DOI 10.1136/bmj.n71. La referencia usa 'et al.', que no es formato APA 7 (exige listar autores); el listado completo no se comprobó en los resultados, por lo que no se modifica."
+ },
+ {
+  "key": "Ley1523",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Ley 1523 de 2012 (abril 24), Diario Oficial No. 48.411 - https://www.apccolombia.gov.co/sites/default/files/normativa/ley_1523_de_2012.pdf ; https://normas.cra.gov.co/gestor/docs/ley_1523_2012.htm ; https://sidn.ramajudicial.gov.co/SIDN/NORMATIVA/TEXTOS_COMPLETOS/7_LEYES/LEYES%202012%20(1505-1607)/Ley%201523%20de%202012%20(Sistema%20Nacional%20de%20Gesti%C3%B3n%20del%20Riesgo).pdf",
+  "nota": "Coinciden número, fecha, órgano y Diario Oficial 48.411. Las compilaciones señalan que el artículo 1 fue modificado por la Ley 2474 de 2025 (no afecta la cita). No se comprobó en los resultados si el título oficial termina en 'y se dictan otras disposiciones'."
+ },
+ {
+  "key": "Ley2056",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Ley 2056 de 2020 (septiembre 30), Diario Oficial No. 51.453 - https://normograma.mintic.gov.co/mintic/docs/pdf/ley_2056_2020.pdf ; https://normativa.colpensiones.gov.co/compilacion/docs/ley_2056_2020.htm",
+  "nota": "Coinciden número, fecha, título y Diario Oficial. La ley fue modificada por la Ley 2294 de 2023 (no afecta la cita)."
+ },
+ {
+  "key": "Ley1286",
+  "estado": "CORREGIR",
+  "correccion": "Congreso de la República de Colombia. (2009, 23 de enero). *Ley 1286 de 2009. Por la cual se modifica la Ley 29 de 1990, se transforma a Colciencias en Departamento Administrativo y se fortalece el Sistema Nacional de Ciencia, Tecnología e Innovación en Colombia y se dictan otras disposiciones*. Diario Oficial n.º 47.241.",
+  "evidencia": "Ley 1286 de 2009 (enero 23), Diario Oficial No. 47.241 - https://normativa.colpensiones.gov.co/compilacion/docs/ley_1286_2009.htm ; https://relatoria.colombiacompra.gov.co/normativa/ley-1286-de-2009-2 ; https://accounter.co/normatividad/leyes/por-la-cual-se-modifica-la-ley-29-de-1990-se-transforma-a-colciencias-en-departamento-administrativo-se-fortalece-el-sistema-nacional-de-ciencia-tecnologia-e-innovacion-en-colombia-y-se-dictan-otras-d",
+  "nota": "El número del Diario Oficial es 47.241, no 47.234 (confirmado en dos búsquedas, la segunda sin sugerir el número). Además, el título de la referencia omite el final 'en Colombia y se dictan otras disposiciones'; el fragmento 'y se dictan otras d...' se vio truncado en la URL de accounter.co, por lo que 'disposiciones' es la lectura estándar. Fecha, número y órgano coinciden."
+ },
+ {
+  "key": "Ley1581",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Ley 1581 de 2012 (octubre 17), Diario Oficial No. 48.587 de 18 de octubre de 2012 - https://sidn.ramajudicial.gov.co/SIDN/NORMATIVA/TEXTOS_COMPLETOS/7_LEYES/LEYES%202012%20(1505-1607)/Ley%201581%20de%202012%20(Protecci%C3%B2n%20de%20datos%20personales).pdf ; https://normas.cra.gov.co/gestor/docs/ley_1581_2012.htm",
+  "nota": "Coinciden número, fecha de expedición (17 oct), título y Diario Oficial 48.587 (publicado el 18 oct)."
+ },
+ {
+  "key": "Ley2294",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Ley 2294 de 2023 - Plan Nacional de Desarrollo 2022-2026 'Colombia Potencia Mundial de la Vida', Diario Oficial 52.400 de 19 de mayo de 2023 - https://normograma.mintic.gov.co/MINTIC/docs/pdf/ley_2294_2023.pdf ; https://normograma.icfes.gov.co/docs/pdf/ley_2294_2023.pdf",
+  "nota": "Coinciden número, fecha, título y Diario Oficial. Las compilaciones registran la nota 'Versión publicada en el Diario Oficial contiene yerros' y una compilación del INVIMA cita el Auto A-705-24 de la Corte Constitucional (vicio de procedimiento ordenado a subsanar); conviene revisar el estado de ese trámite antes de citarla como plenamente vigente."
+ },
+ {
+  "key": "Res2254",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Resolución 2254 de 2017 (Minambiente), norma de calidad del aire ambiente - https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=82634 ; https://www.icbf.gov.co/cargues/avance/compilacion/docs/resolucion_minambienteds_2254_2017.htm",
+  "nota": "Coinciden número, año, órgano, fecha de expedición (1 nov 2017) y título. Publicada en el Diario Oficial No. 50.415 del 12 de noviembre de 2017 (dato opcional para agregar); vigencia desde 01/01/2018."
+ },
+ {
+  "key": "Conpes3943",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Política para el mejoramiento de la calidad del aire, CONPES 3943 de 2018 - https://www.minambiente.gov.co/wp-content/uploads/2021/08/conpes-3943-de-2018.pdf ; https://www.anla.gov.co/wanla/eureka/documentos-estrategicos/politicas/politica-para-el-mejoramiento-de-la-calidad-del-aire-calidad-del-aire-aire-documento-conpes-3943-de-2018",
+  "nota": "Coinciden número, título, año y elaboración por el DNP. Fecha de aprobación: 31 de julio de 2018."
+ },
+ {
+  "key": "Conpes4069",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Política Nacional de Ciencia, Tecnología e Innovación 2022-2031, CONPES 4069 - https://www.dnp.gov.co/Paginas/CONPES-aprobo-politica-de-ciencia-tecnologia-e-innovacion-CTI.aspx ; https://www.cerlatam.com/normatividad/conpes-documento-conpes-4069-de-2021/",
+  "nota": "Coinciden número, título y año 2021 (DNP reporta aprobación el 27 dic 2021; un documento universitario cita 20 dic 2021, ambos en 2021)."
+ },
+ {
+  "key": "Decision486",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Decisión 486 de 2000 (14 de septiembre), Régimen Común sobre Propiedad Industrial, Gaceta Oficial del Acuerdo de Cartagena No. 600 del 19 de septiembre de 2000 - https://gestornormativo.creg.gov.co/gestor/entorno/docs/decision_comisioncandina_dec486.htm ; https://leap.unep.org/en/countries/national-legislation/decision-no-486-regimen-comun-sobre-propiedad-industrial",
+  "nota": "Coinciden número, fecha de la decisión, título y Gaceta 600 (publicada el 19 sep 2000, vigencia 1 dic 2000). El órgano emisor es la Comisión de la Comunidad Andina; la referencia usa 'Comunidad Andina', aceptable."
+ },
+ {
+  "key": "MisionSabios2019",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "MISION INTERNACIONAL DE SABIOS 2019 INFORME Colombia hacia una sociedad del conocimiento Vol 1 - https://mision6.uis.edu.co/wp-content/uploads/2023/04/MISION-INTERNACIONAL-DE-SABIOS-2019-INFORME-ColombiahaciaunasociedaddelconocimientoVol1.pdf ; https://repositorio.minciencias.gov.co/bitstreams/dcb0e8d3-81a4-4ef6-9a07-a852a76b3a42/download",
+  "nota": "El informe existe y el título coincide (Volumen 1: Reflexiones y propuestas; informe entregado el 5 de diciembre de 2019). Según la página de créditos descrita en los resultados, los derechos son de la Vicepresidencia de la República de Colombia y del Ministerio de Ciencia, Tecnología e Innovación (no de la Presidencia), y la edición impresa figura como 2020. No se pudo comprobar de forma directa el editor ni si procede 2019 o 2020; se deja sin cambios. Revisar el PDF del repositorio de Minciencias."
+ },
+ {
+  "key": "Alvarez2026",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin resultado. Se buscó por título exacto, por DOI 10.1080/10106049.2026.2684384 y por autores; no apareció ningún registro.",
+  "nota": "Artículo de 2026 posiblemente no indexado aún. Sólo aparecieron trabajos temáticos no relacionados (p. ej., Sentinel-2/5P sobre incendios en Çanakkale y Rodas). Además, la cadena APA contiene una doble coma ',,' antes de 'Article' que debe corregirse en el formato."
+ },
+ {
+  "key": "AyalaParra2026",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin registro del artículo. Evidencia indirecta únicamente: resumen EGU25-493 de K. Santiago Hernández, Daniel Espinosa, G. Alexis Ayala-Parra et al. (SIATA/AMVA), sobre transporte regional de aerosoles de incendios en el Valle de Aburrá - https://meetingorganizer.copernicus.org/EGU25/EGU25-493.html",
+  "nota": "No se halló el artículo de Atmospheric Research (329, Article 108512) ni por título ni por DOI. El resumen EGU25-493 muestra una línea de trabajo del mismo grupo y tema, pero no confirma el artículo, la revista, el volumen ni la lista de autores. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Bang2026",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin resultado. Se buscó por título exacto, por DOI 10.3390/s26134307 y por autores/tema (Sensors, 2026).",
+  "nota": "Artículo de 2026 posiblemente no indexado aún. Los resultados fueron estudios de fuegos artificiales y redes de sensores no relacionados. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Becerra2021",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Information fusion and information quality assessment for environmental forecasting - https://repository.udemedellin.edu.co/items/951f692e-e517-433a-89d6-c2ebad7a6a77/full ; https://repository.udem.edu.co/handle/11407/7493",
+  "nota": "Coinciden título, cinco autores (M.A. Becerra, Y. Uribe, D.H. Peluffo-Ordóñez, K.C. Álvarez-Uribe, C. Tobón), año 2021 y editorial Elsevier (ISSN 2212-0955, compatible con Urban Climate). Los resultados no mostraron literalmente la revista, el volumen 39, el número de artículo 100960 ni el DOI; un artículo vecino (100942) sí figura en Urban Climate 2021. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Botezat2025",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin resultado del artículo. Se buscó por título exacto, por DOI 10.1016/j.scitotenv.2025.179560 y por autores (Botezat, Linares, Salvador, Navas, Díaz, López-Bueno).",
+  "nota": "Aparecieron trabajos del mismo grupo (ISCIII, Linares/Díaz/López-Bueno) sobre combustión de biomasa y urgencias hospitalarias en España, pero ninguno con este título ni con Botezat como autora. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Chang2023",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "A Prediction Hybrid Framework for Air Quality Integrated with W-BiLSTM(PSO)-GRU and XGBoost Methods - https://ideas.repec.org/a/gam/jsusta/v15y2023i22p16064-d1282528.html ; https://www.mdpi.com/2071-1050/15/22/16064/reprints",
+  "nota": "Coinciden título, autores (Wenbing Chang, Xu Chen, Zhao He, Shenghan Zhou), Sustainability 15(22), artículo 16064, noviembre 2023. La cadena DOI 10.3390/su152216064 es coherente con la URL de MDPI pero no se mostró literalmente. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "DeMoura2025",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin resultado. Se buscó por título exacto, por DOI 10.1007/s10653-025-02524-7 y por autores; sólo aparecieron estudios temáticos relacionados (p. ej., Butt et al. 2022, Earth's Future; Gioda et al. 2023, Anais da Academia Brasileira de Ciências).",
+  "nota": "No se pudo confirmar existencia, revista ni volumen. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Espinoza2026",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Development and implementation of an automatic lahar monitoring system at Misti volcano, Arequipa, Peru - https://repositorio.igp.gob.pe/items/feaa773a-26e2-4eaf-b9c1-f759fb00e503/full",
+  "nota": "El repositorio del IGP muestra el título exacto y los autores Juan Carlos Espinoza, Armando Castro, Marco Rivera y Erik Vargas, con fecha 23 de julio de 2026. No se pudo confirmar que se publicó en Journal of South American Earth Sciences, ni el volumen 182, el artículo 106211 ni el DOI. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Essamlali2024",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Supervised Machine Learning Approaches for Predicting Key Pollutants and for the Sustainable Enhancement of Urban Air Quality: A Systematic Review - https://www.mdpi.com/2071-1050/16/3/976 ; https://ideas.repec.org/a/gam/jsusta/v16y2024i3p976-d1324864.html",
+  "nota": "Coinciden título, autores (Ismail Essamlali, Hasna Nhaila, Mohamed El Khaili), Sustainability 16(3), 976, enero 2024 y DOI 10.3390/su16030976. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "GallegoCartagena2026",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Biodeterioration of built heritage in the context of climate change and atmospheric pollution: Toward transdisciplinary conservation strategies - https://ekoizpen-zientifikoa.ehu.eus/documentos/697e9d8a4f95b66d0e7b1a80 ; https://research.science.eus/documentos/697e9d8a4f95b66d0e7b1a80?lang=en",
+  "nota": "El registro institucional (EHU) muestra título, autores (E. Gallego-Cartagena, H. Morillas, M. Maguregui), Science of the Total Environment vol. 1013, 2026 y DOI 10.1016/J.SCITOTENV.2025.181313 (el número de artículo 181313 coincide con el DOI). La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Haris2026",
+  "estado": "NO_ENCONTRADO",
+  "correccion": null,
+  "evidencia": "Sin resultado. Se buscó por título exacto, por DOI 10.1007/s10669-026-10090-1 y por autores (Haris, Keshtkar, Anjum, Syed, Kojima, Ahmad).",
+  "nota": "Artículo de 2026 posiblemente no indexado aún. Sólo aparecieron trabajos relacionados de otros autores (p. ej., Fan y Mostafavi sobre sistemas de sistemas en gestión de desastres). La cadena APA contiene doble coma ',,' antes de 'Article'."
+ },
+ {
+  "key": "Huang2025",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "A Deep Learning Model Integrating EEMD and GRU for Air Quality Index Forecasting (Atmosphere 2025, 16(9), 1095) - https://www.mdpi.com/2073-4433/16/9/1095/xml",
+  "nota": "La página de MDPI coincide en título, revista, volumen 16, número 9, artículo 1095 y publicación el 18 sep 2025 (DOI 10.3390/atmos16091095); afiliación National Chin-Yi University of Technology (Taichung). Los fragmentos no mostraron la lista de autores, por lo que Huang, Chamnisampan y Ke no se pudieron confirmar. La cadena APA contiene doble coma ',,' antes de 'Article'."
+ }
+]

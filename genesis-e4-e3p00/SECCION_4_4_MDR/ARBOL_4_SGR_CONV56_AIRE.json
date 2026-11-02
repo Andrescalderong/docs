@@ -1,0 +1,199 @@
+{
+ "tipo": "TDC",
+ "rol": "A-TDC",
+ "nivel_detalle": "EJECUTIVA",
+ "titulo": "A-TDC: teoría del cambio de la red de vigilancia con custodia distribuida",
+ "naturaleza": "PROPUESTO",
+ "fuente": "Sección 4.4 (S2), E3-P00 a E3-P21 y MDR v3.0",
+ "pregunta": "¿Qué cadena causal lleva de los productos del proyecto a la protección de operarios y comunidades, y dónde termina la rendición de cuentas?",
+ "descripcion": "Teoría del cambio de cuatro niveles y once resultados. Los productos y resultados inmediatos quedan bajo control del proyecto; los resultados intermedios y el impacto dependen de otros actores. Cuatro supuestos SC-1 a SC-4 rotulan las flechas críticas. La retroalimentación del uso institucional hacia los acuerdos de custodia representa el bucle de demanda. El panel declara dominio, arquitectura, efectos y riesgo de desajuste.",
+ "niveles": [
+  "Productos",
+  "Resultados inmediatos",
+  "Resultados intermedios",
+  "Impacto"
+ ],
+ "techo_despues_de": 1,
+ "nodos": [
+  {
+   "id": "P1",
+   "nivel": 0,
+   "texto": "Red de nodos con corrección local desplegada y repuestos disponibles"
+  },
+  {
+   "id": "P2",
+   "nivel": 0,
+   "texto": "Referencia gravimétrica, protocolo de calibración y sorteo semanal en operación"
+  },
+  {
+   "id": "P3",
+   "nivel": 0,
+   "texto": "Gemelo digital y tablero con umbrales de alerta propuestos"
+  },
+  {
+   "id": "P4",
+   "nivel": 0,
+   "texto": "Acuerdos de custodia por tramos y portafolio de financiación constituidos"
+  },
+  {
+   "id": "R1",
+   "nivel": 1,
+   "texto": "Error de medición reducido y verificable frente a la referencia"
+  },
+  {
+   "id": "R2",
+   "nivel": 1,
+   "texto": "Datos suficientes: nodos activos y latencia dentro de lo especificado"
+  },
+  {
+   "id": "R3",
+   "nivel": 1,
+   "texto": "Fórmula local del índice y umbrales validados con la autoridad de salud"
+  },
+  {
+   "id": "I1",
+   "nivel": 2,
+   "texto": "Protocolos de gestión del riesgo y de salud incorporan las alertas"
+  },
+  {
+   "id": "I2",
+   "nivel": 2,
+   "texto": "Alertas oportunas con falsas alarmas dentro del umbral acordado"
+  },
+  {
+   "id": "I3",
+   "nivel": 2,
+   "texto": "Servicio operando con custodios después del mes 24"
+  },
+  {
+   "id": "IM",
+   "nivel": 3,
+   "texto": "Operarios y comunidades de los sitios de remoción protegidos por alertas basadas en mediciones verificadas",
+   "destacado": true
+  }
+ ],
+ "enlaces": [
+  {
+   "de": "P3",
+   "a": "R3",
+   "supuesto": "SC-3"
+  },
+  {
+   "de": "P1",
+   "a": "R2",
+   "supuesto": "SC-2"
+  },
+  {
+   "de": "P1",
+   "a": "R1",
+   "supuesto": "SC-1"
+  },
+  {
+   "de": "P2",
+   "a": "R1",
+   "supuesto": "SC-1"
+  },
+  {
+   "de": "P4",
+   "a": "I3",
+   "supuesto": "SC-4"
+  },
+  {
+   "de": "R3",
+   "a": "I1",
+   "supuesto": "SC-3"
+  },
+  {
+   "de": "R1",
+   "a": "I2"
+  },
+  {
+   "de": "R2",
+   "a": "I2"
+  },
+  {
+   "de": "I1",
+   "a": "IM",
+   "supuesto": "SC-3"
+  },
+  {
+   "de": "I2",
+   "a": "IM"
+  },
+  {
+   "de": "I3",
+   "a": "IM",
+   "supuesto": "SC-4"
+  },
+  {
+   "de": "I1",
+   "a": "P4"
+  }
+ ],
+ "supuestos": [
+  {
+   "id": "SC-1",
+   "si": "los nodos con corrección local se comparan por sorteo semanal con la lectura sin corrección dinámica y con una referencia gravimétrica",
+   "entonces": "el error normalizado de los nodos corregidos resulta menor y la diferencia es detectable",
+   "porque": "la humedad y el sesgo por tamaño de partícula explican parte del error (V03→V06 = 3 en S2) y la corrección local los compensa antes de la transmisión",
+   "naturaleza": "SUPUESTO",
+   "nodo_arbol": "A1 y B1"
+  },
+  {
+   "id": "SC-2",
+   "si": "los nodos conservan energía y enlace intermitente bajo maquinaria, polvo y humedad",
+   "entonces": "el gemelo digital recibe datos suficientes para el mapa y el tablero",
+   "porque": "la transmisión por eventos reduce el consumo, los nodos averiados se reponen y la maquinaria destruye nodos con peso 2 (V05→V09) que el plan de repuestos absorbe",
+   "naturaleza": "SUPUESTO",
+   "nodo_arbol": "A2 y B2"
+  },
+  {
+   "id": "SC-3",
+   "si": "la autoridad de salud valida una fórmula local del índice y los umbrales, y los puestos de mando los incorporan en sus protocolos",
+   "entonces": "las alertas inducen acciones de protección y aumenta la población protegida",
+   "porque": "una alerta sin portador de decisión no modifica la conducta; en S2 V11→V14 y V13→V14 tienen peso 2 y son hipótesis de influencia",
+   "naturaleza": "SUPUESTO",
+   "nodo_arbol": "A3 y B3"
+  },
+  {
+   "id": "SC-4",
+   "si": "al menos un custodio por componente demuestra capacidad de absorción antes de cada tramo de transferencia",
+   "entonces": "el servicio continúa después del mes 24 sin receptor público único",
+   "porque": "cada tramo exige presupuesto aprobado, personal designado y competencia jurídica documentada; sin ellos rige la cláusula de apertura",
+   "naturaleza": "SUPUESTO",
+   "nodo_arbol": "A4 y B4"
+  }
+ ],
+ "enfoque": {
+  "dominio": "COMPLICADO en la medición y COMPLEJO en la adopción y la custodia",
+  "naturaleza_dominio": "INFERIDO",
+  "arquitectura": "TdC anidada: ejecutiva y por componente",
+  "efectos": [
+   {
+    "dimension": "Formulación",
+    "efecto": "TdC ejecutiva de once nodos y cadena propia para medición, alertas y custodia"
+   },
+   {
+    "dimension": "Presupuesto",
+    "efecto": "Por componente con reasignación interna regulada y tramos condicionados"
+   },
+   {
+    "dimension": "Indicadores",
+    "efecto": "Por componente y agregados; metas comprometidas solo bajo el techo"
+   },
+   {
+    "dimension": "Evaluación",
+    "efecto": "Contraste con sorteo en la medición; contribución en adopción y custodia"
+   },
+   {
+    "dimension": "Gobernanza",
+    "efecto": "Comités por componente y comité integrador con revisión trimestral de supuestos"
+   },
+   {
+    "dimension": "Sostenibilidad",
+    "efecto": "Custodia distribuida por componente con cláusula de apertura"
+   }
+  ],
+  "riesgo_desajuste": "Si la adopción es CLARA y no COMPLEJA, la revisión trimestral genera sobrecosto; si es CAOTICA, la coordinación por componente es lenta"
+ }
+}

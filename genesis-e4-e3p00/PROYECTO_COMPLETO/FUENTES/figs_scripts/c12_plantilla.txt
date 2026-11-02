@@ -1,0 +1,232 @@
+%% PREFIJO: 12
+# Capítulo 12. Indicadores PERS con taxonomía Output-Outcome-Impact
+
+Este capítulo define el sistema de indicadores PERS del proyecto y lo ordena con la taxonomía Output, Outcome e Impact. El sistema reúne 15 indicadores en cuatro niveles: R (proceso), P (producto), E (efecto) y S (sostenibilidad). Cada indicador enlaza un objetivo específico (OE), un producto, una actividad del cronograma (ACT) y un hito. También enlaza una línea del presupuesto del Sistema General de Regalías (SGR). El proyecto no promete efectos en salud. Promete mediciones verificadas, uso institucional y continuidad. Por eso los indicadores de impacto miden la activación del protocolo y la continuidad de la red, y no miden exposición ni morbilidad.
+
+La taxonomía separa lo que el proyecto hace de lo que cambia gracias a lo que hace. El metaprompt de esta formulación señala que confundir productos con impactos es el error más penalizado por los evaluadores. Los términos de referencia (TdR) no se aportaron, de modo que esa regla queda NO_VERIFICADO. La literatura de evaluación respalda la separación, porque su cadena de resultados distingue insumos, actividades, productos, resultados y resultados de largo plazo (Gertler et al., 2016). Instalar 100 nodos es un output. Que los comités de gestión del riesgo usen el tablero es un outcome. El capítulo aplica esa distinción a cada ficha técnica.
+
+## 12.1 Sistema integrado de indicadores PERS
+
+### 12.1.1 Modelo PERS y teoría del cambio
+
+El sistema PERS traduce la teoría del cambio del proyecto en 15 indicadores ordenados por nivel de resultado. Una teoría del cambio explicita las hipótesis que explican cómo y por qué una intervención produce sus resultados (Weiss, 1995). Taplin y Clark (2012) proponen construirla desde el cambio de largo plazo hacia atrás, con condiciones previas, supuestos e indicadores en cada paso. Funnell y Rogers (2011) añaden que un modelo lógico resume esa teoría en una cadena de insumos, actividades, productos y resultados. Dos posiciones se oponen sobre cómo atribuir los efectos. La primera exige un grupo de comparación que estime qué habría ocurrido sin el programa (Gertler et al., 2016). La segunda acepta el análisis de contribución cuando ese grupo no existe, y evalúa si la historia causal es plausible (Mayne, 2012). El proyecto aplica ambas posiciones según el nivel. La teoría del cambio de la sección 4.4-MDR.8 fija un techo de rendición de cuentas entre los productos y los resultados intermedios. Los indicadores R y P quedan bajo el techo y el proyecto los compromete. Los indicadores E y S quedan sobre el techo y el proyecto reporta su contribución. Los cinco indicadores E y S tienen riesgo de incumplimiento alto en la ficha maestra, y ninguno de los diez indicadores R y P lo tiene. La {F:f01} muestra la cadena con su techo y con los supuestos críticos SC-1 a SC-4. Las metas de los niveles E y S se condicionan a SC-3 (uso institucional) y a SC-4 (custodia), y se evalúan con análisis de contribución.
+
+:::FIGURA f01 | Diagrama de la cadena PERS articulada con la taxonomía Output-Outcome-Impact y la teoría del cambio | Nota. Elaboración propia con datos de la ficha maestra del proyecto (15 indicadores PERS, presupuesto SGR y contrapartida, tramos y compuertas). El techo de rendición de cuentas proviene de la sección 4.4-MDR.8. Figura generada con matplotlib 3.11 mediante c12_figs.py; diagrama sin semilla ni corpus. Naturaleza: PROPUESTO.
+
+La figura deja una lectura operativa. El proyecto responde por el número y la calidad de sus outputs, y condiciona los outcomes y los impactos a decisiones de comités y custodios. Esa frontera orienta el lenguaje de todo el documento: ningún indicador E o S se presenta como obligación de efecto.
+
+### 12.1.2 Marco lógico y cadena de valor
+
+El marco lógico es la proyección operativa de la teoría del cambio y asigna un nivel a cada indicador. La cadena de valor recorre insumos, actividades, productos, efectos e impactos (Gertler et al., 2016). El marco lógico de cuatro niveles resume esa cadena como actividades, componentes, propósito y fin (Funnell y Rogers, 2011). Los autores discrepan sobre la linealidad de la cadena. Una posición sostiene que un modelo lineal basta cuando la relación entre producto y efecto es conocida y estable (Funnell y Rogers, 2011). La posición contraria sostiene que, en sistemas con adopción y aprendizaje, el modelo debe incluir bucles y revisión continua (Patton, 2011). Glouberman y Zimmerman (2002) ofrecen un criterio para elegir: distinguir los problemas complicados de los complejos. El proyecto contiene una parte complicada, la medición, y una parte compleja, la adopción y la custodia (INFERIDO en la sección 4.4-MDR). Por eso adopta una teoría anidada, con una cadena ejecutiva y una cadena por componente. El marco lógico asigna el fin a PERS-S01 y PERS-S02, el propósito a PERS-E01, PERS-E02 y PERS-E03, los componentes a PERS-P01 a PERS-P04 y las actividades a PERS-R01 a PERS-R06. Los tres componentes son el modelo de corrección validado (C1), la red operativa con energía y enlace redundantes (C2) y el tablero, el protocolo y los convenios de custodia (C3). Las actividades se agrupan en cuatro paquetes de trabajo (WP): gestión, medición verificada, red y plataforma, y uso institucional. Cada nivel alimenta al siguiente, y la sección 12.6 verifica esa coherencia vertical.
+
+### 12.1.3 Taxonomía Output-Outcome-Impact aplicada
+
+La taxonomía asigna cada indicador PERS a uno de tres niveles de resultado. Un output es lo que el proyecto hace: un bien, un servicio o un hecho verificable que agota un objetivo. Un outcome es lo que cambia en los destinatarios inmediatos tras recibir los outputs, como la adopción, el uso o un cambio de capacidad. Un impact es la transformación estructural y sostenida que se deriva de los outcomes. El metaprompt define el impacto como el cambio logrado en las condiciones económicas o sociales de la población. Su fuente primaria, atribuida al Ministerio de Ciencia, Tecnología e Innovación (MinCiencias), no consta en el banco de referencias (NO_VERIFICADO). La frontera entre outcome e impacto se discute. Una posición distingue los niveles por el horizonte: los outcomes ocurren de cero a 12 meses tras el output y el impacto de uno a cinco años tras el proyecto, según el metaprompt. Otra posición distingue los niveles por el mecanismo y el contexto que explican el cambio, y no por el tiempo transcurrido (Pawson y Tilley, 1997). Los 15 indicadores se distribuyen así: seis de proceso y cuatro de producto son outputs, tres de efecto son outcomes y dos de sostenibilidad son impacts. La instalación de 100 nodos y 10 gateways (PERS-P01) es un output, igual que los 29 talleres y jornadas (PERS-P04). El outcome es que los comités usen el tablero (PERS-E01). Los dos indicadores S miden la activación del protocolo (PERS-S01) y la continuidad de la red bajo custodia (PERS-S02). Esas variables son cambios institucionales y no estiman exposición ni salud. La reducción de la exposición evitable figura como fin del marco lógico, pero queda como contribución sin meta propia (PROPUESTO). Por consiguiente, el proyecto usa la palabra impacto solo para PERS-S01 y PERS-S02, y no atribuye efectos en salud.
+
+### 12.1.4 Articulación con los criterios de evaluación de la convocatoria
+
+Los criterios de evaluación de la convocatoria determinan qué indicadores pesan más en la puntuación. La Ley 2056 de 2020 regula la organización y el funcionamiento del SGR (Congreso de la República, 2020). Los TdR fijan los criterios y sus pesos, y no se aportaron. El metaprompt propone cinco criterios con rangos de peso: pertinencia y articulación territorial (20-25 %), fortalecimiento regional en ciencia, tecnología e innovación (CTeI) (25-27 %), calidad técnica (20-25 %), impacto esperado (15-20 %) y viabilidad presupuestal (10-15 %). Esos rangos son SUPUESTO. La evaluación orientada a la rendición de cuentas exige metas fijas y verificables en cada nivel (Gertler et al., 2016). La evaluación orientada al aprendizaje privilegia la revisión de supuestos en contextos complejos (Patton, 2011). Un sistema que solo contara outputs obtendría puntaje en calidad técnica y perdería en impacto esperado (INFERIDO). El proyecto combina ambas posiciones. Los indicadores R y P sostienen la calidad técnica y el fortalecimiento regional con metas fijas. Los indicadores E y S sostienen el impacto esperado con metas de contribución y con revisión trimestral de supuestos. Los seis indicadores R y los cuatro P se cruzan con el presupuesto para el criterio de viabilidad. La {T:t01} asigna a cada indicador su taxonomía, su nivel del marco lógico, su objetivo y su criterio. La asignación de criterios sigue el metaprompt y no la convocatoria.
+
+<<T:t01>>
+
+La tabla muestra una distribución desigual entre objetivos. OE3 concentra ocho de los 15 indicadores, incluidos los cinco de nivel E y S, mientras OE1 reúne cuatro y OE2 tres. Los efectos de OE1 y OE2 no tienen indicador E propio. Los verifican los criterios de las compuertas C1 y C2: un coeficiente de determinación (R²) de al menos 0,70 y un error cuadrático medio normalizado (NRMSE) de 30 % o menos frente a la referencia, según los protocolos de la Agencia de Protección Ambiental de Estados Unidos (EPA) para sensores de partículas finas (EPA, 2021), y una disponibilidad mensual de nodos de 90 % o más. Esos criterios no forman parte de los 15 indicadores (PROPUESTO).
+
+### 12.1.5 Vinculación con las demandas territoriales
+
+La articulación territorial de los indicadores depende de datos que el expediente no aporta. El elemento EB-01 del Gate 0 exige el código de la demanda territorial del Anexo 4 y su relación con un indicador del Plan de Desarrollo Departamental (PDD) vigente. Dos posiciones orientan la medición de la calidad del aire en Colombia. La primera fortalece el sistema nacional de vigilancia con un enfoque de gestión del riesgo en salud pública. Su diagnóstico indica que el 90,8 % de las 5.076 estaciones de la red nacional propuesta serían sensores sin plan de calibración (Murad Pedraza et al., 2026, pp. 10-11 y 13; el 90,8 % es cálculo del analista). La segunda parte de la demanda local de los comités. Rodríguez-Villamizar et al. (2022, pp. 3 y 6) reportan 209 estaciones, 154 integradas a un sistema de vigilancia, y solo 28 de 1.122 municipios con estaciones utilizables para estimar la carga. La Ley 1523 de 2012 organiza el Sistema Nacional de Gestión del Riesgo de Desastres con instancias nacionales y territoriales (Congreso de la República, 2012). El proyecto adopta la segunda posición sin excluir la primera: focaliza 12 municipios, cuatro por departamento, y 15 comités de gestión del riesgo, 12 municipales y tres departamentales (SUPUESTO). El PDD, el Anexo 4 y los documentos CONPES que cita el expediente no se aportaron. Por eso los ocho elementos de la lista de articulación territorial quedan NO_VERIFICADO (DEC-F12). Hasta que el formulador aporte esos datos, ningún indicador S declara una meta departamental. La contribución se expresa en nodos y municipios focalizados.
+
+## 12.2 Indicadores de proceso R (outputs de gestión)
+
+### 12.2.1 Función y límites de los indicadores de proceso
+
+Los seis indicadores de proceso miden esfuerzo y ejecución, no resultados ni impactos. Un indicador de proceso registra si las actividades y los insumos se ejecutan según lo programado, y la taxonomía lo clasifica como output de gestión. Deming (1986) sostiene que medir el proceso permite controlar la variación y mejorar el sistema. El Project Management Institute (PMI) trata la medición del desempeño como un dominio propio de la dirección de proyectos (PMI, 2021). Gertler et al. (2016) advierten que medir insumos y productos no identifica efectos. Las dos posiciones son compatibles: el proceso se controla para ejecutar, y el efecto se evalúa aparte. Los seis indicadores R se miden cada mes y se reportan a la gerencia del proyecto. Cuatro tienen riesgo de incumplimiento medio y dos lo tienen bajo. Cinco parten de una línea base de cero (CALCULADO). PERS-R03, la disponibilidad de la plataforma, carece de línea base (VACIO) hasta que opere la primera versión. Los responsables son los ingenieros IoT y de campo, el científico de datos, los ingenieros de software y nube, la gerencia de proyecto y el especialista en metrología. Los evaluadores no aceptan estos indicadores como evidencia de impacto. Son necesarios para controlar la ejecución e insuficientes para demostrar cambio social. Por consiguiente, el proyecto no cita ningún indicador R en los capítulos de impacto ni de sostenibilidad.
+
+### 12.2.2 Fichas técnicas de los indicadores de proceso
+
+**PERS-R01, cumplimiento del despliegue por tramo.** La ficha controla la instalación de los 100 nodos y los 10 gateways en tres tramos. La {T:t02} la presenta con los 12 campos de la ficha técnica y con su trazabilidad.
+
+<<T:t02>>
+
+Las metas por tramo suman 100 nodos (30, 40 y 30) y 10 gateways (tres, cuatro y tres). La compra supera la instalación en 20 nodos y un gateway de reserva. PERS-R01 mide el proceso de instalación, y PERS-P01 certifica el estado operativo con una disponibilidad mensual de al menos 90 %. Esa separación evita contar dos veces el mismo hecho.
+
+**PERS-R02, ciclos de calibración ejecutados.** La ficha cuenta los ciclos de calibración que sostienen el supuesto crítico SC-1. La {T:t03} detalla su fórmula, sus metas y sus umbrales de calidad.
+
+<<T:t03>>
+
+El indicador cuenta ciclos y no mide desempeño. La calidad de cada ciclo se juzga con los umbrales de la EPA: R² de 0,70 o más, NRMSE de 30 % o menos, pendiente entre 0,65 y 1,35 y sesgo entre −5,0 y 5,0 µg/m³ (EPA, 2021). Giordano et al. (2021) resumen los desafíos y las buenas prácticas para calibrar sensores de bajo costo de masa de partículas, y destacan la colocalización con equipos de referencia. El proyecto cierra cada ciclo con un informe de validación firmado por la metrología.
+
+**PERS-R03, disponibilidad de la plataforma en la nube.** La ficha mide el tiempo de servicio de la plataforma que aloja el modelo, el gemelo digital y el tablero. La {T:t04} la presenta con su línea base pendiente.
+
+<<T:t04>>
+
+La meta de 99,0 % admite <<V:R03_H>> horas de indisponibilidad en un mes de 720 horas (CALCULADO). Es más exigente que la disponibilidad mensual de 90 % de los nodos, porque la plataforma sirve a toda la red. Los gateways conservan siete días de datos locales, de modo que una caída de menos de ese plazo no pierde datos. La línea base es VACIO y se fija con el primer trimestre completo posterior a la actividad A2.2 (PROPUESTO).
+
+**PERS-R04, desviación de la ejecución presupuestal.** La ficha compara la ejecución con la programación del presupuesto SGR. La {T:t05} la detalla con su tolerancia en pesos.
+
+<<T:t05>>
+
+El límite de 5 % al cierre equivale a <<V:R04_TOL>> millones de pesos colombianos (COP) sobre los <<V:SGR>> millones del SGR solicitado (CALCULADO). La reserva de contingencia, de <<V:RES>> millones de COP, supera ese límite, aunque su admisibilidad como rubro depende de los TdR (VACIO). La meta del año 1 admite una desviación de 10 %, mayor que la final, porque las compras por tramo concentran el gasto en los meses 5, 13 y 18 (INFERIDO).
+
+**PERS-R05, horas-nodo de colocalización válidas.** La ficha acumula las horas con dato pareado entre un nodo y una referencia. La {T:t06} la presenta con su verificación de capacidad.
+
+<<T:t06>>
+
+Las 60.000 horas-nodo equivalen a <<V:R05_FRAC>> % de las <<V:R05_POS>> posibles si los 30 nodos del tramo 1 permanecen pareados durante las 16 semanas de la actividad A1.3 (CALCULADO; SUPUESTO de cálculo). Con una completitud de 75 %, que la ficha de PERS-R02 fija como supuesto, las horas válidas llegan a <<V:R05_75>> y el margen sobre la meta es de <<V:R05_MARG>> horas-nodo. El margen es estrecho. Por eso las cuatro rotaciones por departamento y la verificación de completitud de las tres referencias protegen la meta.
+
+**PERS-R06, cumplimiento de informes de seguimiento.** La ficha controla la entrega oportuna de los informes técnicos y financieros. La {T:t07} la presenta con su dependencia del calendario del financiador.
+
+<<T:t07>>
+
+La meta de 100 % depende del calendario que fijan los TdR, que no se aportaron (VACIO). Entre tanto, la ficha usa la matriz interna de informes de la gerencia y las actas de compuerta. La ficha maestra asigna PERS-R04 y PERS-R06 a OE3, aunque ambos controlan los tres objetivos. Por eso la trazabilidad de cada ficha los enlaza con los componentes C1 a C3. El nivel R queda así listo para el control mensual, con cinco líneas base en cero y una por medir.
+
+## 12.3 Indicadores de producto P (outputs tipificados MMG 2021)
+
+### 12.3.1 Productos tipificados y verificables
+
+Los cuatro indicadores de producto miden outputs tipificados con el Modelo de Medición de Grupos (MMG) de 2021. La tipificación asigna a cada producto un código verificable en las plataformas CvLAC y GrupLAC de MinCiencias, en registros de propiedad intelectual o en certificaciones. El metaprompt exige al menos tres productos tipificados, uno de generación de nuevo conocimiento y uno de apropiación social (elemento EB-04 del Gate 0). Los prototipos se ubican en una escala de madurez. Mankins (1995) describe el nivel de preparación tecnológica (TRL) 7 como la demostración de un prototipo del sistema en entorno operativo. Dos posiciones orientan qué cuenta como producto. La primera lo cuenta por su tipología y su verificación formal, lo que facilita la comparación entre proyectos. La segunda lo define por su puesta en uso: una innovación existe cuando se pone a disposición de los usuarios o se emplea en un proceso (Organización para la Cooperación y el Desarrollo Económicos [OCDE], 2018). El proyecto tipifica la red como prototipo funcional (PROT-FUNC), el software como software registrado (SW-REG), los artículos como ART-A1 o ART-A2 y la apropiación como ASC-PART, ASC-COM y ASC-CIRC. La tipificación es PROPUESTO y NO_VERIFICADO, porque los TdR y el texto del MMG 2021 no se aportaron. El TRL avanza de 4 a 7 (DEC-F05). Por consiguiente, cada producto lleva una evidencia verificable específica: inventario con huella de configuración, certificado de registro, carta de aceptación o actas firmadas. La puesta en uso se mide aparte, en el nivel E.
+
+### 12.3.2 Fichas técnicas de los indicadores de producto
+
+**PERS-P01, red de 100 nodos y 10 gateways operativa.** La ficha define el producto tecnológico principal. La {T:t08} la presenta con el tipo PROT-FUNC.
+
+<<T:t08>>
+
+La meta crece por compuertas: 30 nodos y tres gateways al mes 12, 70 y siete al mes 17, y 100 y 10 al mes 19. Cada compuerta exige una disponibilidad mensual de 90 % para que un nodo cuente. Las líneas asociadas suman <<V:P01_M>> millones de COP (CALCULADO). Un nodo instalado con disponibilidad menor no entra en el conteo.
+
+**PERS-P02, software de corrección y gemelo digital registrado.** La ficha define el registro del modelo de corrección, del firmware y del gemelo digital. La {T:t09} la presenta con el tipo SW-REG.
+
+<<T:t09>>
+
+El registro exige un acuerdo de titularidad firmado entre las partes antes de radicar. La solicitud se programa para el mes 17 y el registro para el mes 24. La partida O03 y la consultoría jurídica S02 suman <<V:P02_M>> millones de COP (CALCULADO). El esfuerzo de desarrollo, <<V:DEV_P>> millones de COP en personal (P03, P08 y P12), se imputa a los indicadores de proceso y no al registro.
+
+**PERS-P03, artículos científicos en revistas Q1 o Q2.** La ficha define los dos artículos de la institución de educación superior (IES) ejecutora. La {T:t10} la presenta con los tipos ART-A1 y ART-A2.
+
+<<T:t10>>
+
+El cronograma explica la meta. El primer artículo usa los resultados del piloto que valida la compuerta C1 en el mes 12, y el segundo exige la verificación final del mes 23 (INFERIDO). Solo el primero puede aceptarse al mes 24. La línea O01 cubre dos cargos de procesamiento de 12,5 millones de COP, es decir <<V:P03_M>> millones de COP. El tiempo de autoría no tiene línea SGR: se atribuye a la contrapartida de la IES.
+
+**PERS-P04, actividades de apropiación social documentadas.** La ficha define las 29 actividades de apropiación. La {T:t11} la presenta con los tipos ASC-PART, ASC-COM y ASC-CIRC.
+
+<<T:t11>>
+
+La ficha coincide con el presupuesto. Los 20 kits de co-diseño (M05), los 20 eventos de alimentación de laboratorios ciudadanos (V05) y los nueve eventos de ferias y laboratorios (O02) corresponden a 20 talleres y nueve jornadas (CALCULADO). Las tres líneas suman <<V:P04_M>> millones de COP. La meta de 29 actividades al mes 17 iguala la final, aunque O02 y V05 se extienden hasta el mes 24. El plan de medición debe confirmar el mes de corte.
+
+### 12.3.3 Tipificación MMG 2021 de los productos
+
+La tipificación convierte cada indicador P en un producto que MinCiencias puede verificar. La {T:t12} asigna a cada producto su código, su denominación y su criterio de verificación. Los códigos provienen de la ficha maestra y de la tabla de referencia del metaprompt.
+
+<<T:t12>>
+
+La tabla cumple el criterio del elemento EB-04: cuatro productos con tipo, uno de nuevo conocimiento (PERS-P03) y uno de apropiación social (PERS-P04). ART-A1 y ART-A2 admiten artículos Q1 y Q2, porque la tabla de referencia define A1 como Q1-Q2 y A2 como Q2-Q3. Un artículo Q2 cumple con cualquiera de los dos códigos. La ficha asigna FORM (capacitación) a PERS-E03, pero esa denominación no coincide con los códigos de formación de la tabla de referencia, FORM-MSc y FORM-PhD, que tipifican maestrías y doctorados. El código de PERS-E03 queda VACIO.
+
+### 12.3.4 Validación cruzada meta-recurso-cronograma
+
+La validación cruzada contrasta cada meta P con su rubro, su actividad y su plazo. La relación entre alcance, costo y cronograma es la base del control de proyectos (PMI, 2021). El metaprompt convierte esa relación en una regla bloqueante: si la relación es incoherente, se detiene el presupuesto. Dos métodos validan la coherencia. El primero reparte el costo por producto y compara el monto con la meta. El segundo compara las cantidades físicas del presupuesto con la meta y evita las reglas de reparto (INFERIDO). El proyecto usa el segundo método, porque las líneas de personal sirven a varios productos. Los montos de la {T:t13} se calculan como suma de las líneas asociadas y no son aditivos. La tabla incluye las cantidades que sustentan cada meta.
+
+<<T:t13>>
+
+Las cuatro filas son coherentes y dos llevan observación. En PERS-P01, la línea E01 compra 120 nodos, que son 100 más 20 de reserva, y E04 compra 11 gateways, que son 10 más uno de reserva. La línea E06 incluye 10 módulos satelitales y S05 incluye 110 sitios de instalación. En PERS-P04, los 20 kits, los 20 eventos y los nueve eventos coinciden con la meta. Ninguna fila activa la alerta bloqueante. Las dos observaciones, la autoría sin línea SGR y la meta intermedia de PERS-P04, se trasladan al plan de medición. La {F:f02} ordena los cuatro productos por objetivo específico.
+
+:::FIGURA f02 | Matriz de productos tipificados MMG 2021 por objetivo específico | Nota. Elaboración propia con datos de la ficha maestra del proyecto (indicadores PERS-P01 a PERS-P04, códigos MMG propuestos y líneas de presupuesto). El costo directo asociado es la suma CALCULADA de las líneas de la validación cruzada y no es aditivo. Figura generada con matplotlib 3.11 mediante c12_figs.py; diagrama sin semilla ni corpus. Naturaleza: PROPUESTO.
+
+OE1 reúne dos productos (PERS-P02 y PERS-P03), OE2 uno (PERS-P01) y OE3 uno (PERS-P04). Ningún objetivo queda sin producto tipificado. El costo directo asociado va de 25,0 millones de COP en los artículos a 1.135,0 millones en la red, lo que refleja que el producto tecnológico concentra la inversión y el producto de conocimiento exige sobre todo tiempo del equipo investigador.
+
+## 12.4 Indicadores de efecto E (outcomes)
+
+### 12.4.1 Qué mide un outcome y cómo se mide
+
+Los tres indicadores de efecto responden si los destinatarios usan el producto y si cambió su capacidad. La adopción de una innovación sigue etapas de conocimiento, persuasión, decisión, implementación y confirmación (Rogers, 2003). La aceptación de una tecnología depende de la utilidad percibida y de la facilidad de uso (Davis, 1989), y también del desempeño esperado, el esfuerzo esperado, la influencia social y las condiciones facilitadoras (Venkatesh et al., 2003). Esos modelos explican la decisión individual de usar una tecnología. Lipsky (1980) muestra que el personal de primera línea ejerce discrecionalidad y adapta las reglas a sus condiciones de trabajo, de modo que el uso depende también de restricciones organizacionales. Arnstein (1969) distingue grados de participación según el poder que las personas ejercen en la decisión. El proyecto reconoce todas esas posiciones: mide el uso en el comité y no en la persona, y ubica a los comités como coautores de los umbrales. PERS-E01 mide los comités con al menos una decisión documentada por trimestre basada en el tablero. Con 15 comités focalizados (SUPUESTO), el 65 % equivale a 10 comités y el 75 % a 12. Cada comité pesa 6,7 puntos porcentuales, de modo que la meta de 75 % exige 12 comités, es decir 80 % (CALCULADO). Las líneas base de PERS-E01 y PERS-E02 están VACIO. Ambas se miden en el tramo 1, antes del uso del tablero, que la actividad A3.2 inicia en la semana 50. PERS-E03 parte de cero personas certificadas. Los instrumentos son actas, registros del tablero, registros de alertas y evaluaciones prácticas. Los outcomes se conectan con los niveles 2 y 3 de la Escalera de Apropiación Social del Conocimiento (ASC), que el capítulo 16 desarrolla: la consulta y la colaboración activa. El nivel 3 exige como mínimo tres actividades documentadas con acta firmada.
+
+### 12.4.2 Fichas técnicas de los indicadores de efecto
+
+**PERS-E01, uso institucional del tablero y del protocolo.** La ficha mide el uso del tablero por los comités focalizados. La {T:t14} la presenta con su línea base pendiente.
+
+<<T:t14>>
+
+El indicador es la meta de OE3 y el criterio de uso de la compuerta C1, que exige 50 % o más de los comités del tramo 1. La ficha no fija cuántos comités pertenecen al tramo 1 [DATO_USUARIO: comités del tramo 1]. El riesgo de incumplimiento es alto, porque la decisión del comité queda fuera del control del proyecto. Por eso el proyecto reporta el uso como contribución y mantiene el co-diseño de umbrales (A3.1) como acción principal.
+
+**PERS-E02, reducción relativa de falsas alarmas.** La ficha mide la reducción de falsas alarmas frente a una línea base que todavía no existe. La {T:t15} la presenta con su método de línea base.
+
+<<T:t15>>
+
+La línea base se calcula en la actividad A1.3 con las lecturas sin corrección frente a la referencia colocalizada (PROPUESTO). Esa elección compara la lectura sin corrección con la corregida en los mismos sitios, de modo que la reducción relativa expresa el efecto de la corrección. La humedad sesga las lecturas ópticas de bajo costo (Jayaratne et al., 2018), y las correcciones que incluyen la humedad reducen el error (Barkjohn et al., 2021). Verificar una falsa alarma exige una referencia, y el proyecto dispone de tres para 100 nodos.
+
+**PERS-E03, capacidad instalada en custodios.** La ficha mide las personas custodias que aprueban la evaluación práctica. La {T:t16} la presenta con el tipo FORM.
+
+<<T:t16>>
+
+La meta de 60 personas equivale a 20 por tramo. La línea S09 asigna <<V:S09>> millones de COP a tres tramos de formación, es decir <<V:E03_C>> millones de COP por persona certificada (CALCULADO). Shediac-Rizkallah y Bone (1998) identifican la capacitación del personal entre los determinantes de la continuidad de los programas comunitarios. Por eso PERS-E03 es el eslabón entre el producto y la sostenibilidad: sin personal certificado, PERS-S02 carece de operadores.
+
+### 12.4.3 Flujo causal entre productos y efectos
+
+El flujo causal conecta cada producto con un efecto mediante un mecanismo que la evidencia puede contrastar. La evaluación realista explica los resultados con la relación entre contexto, mecanismo y resultado (Pawson y Tilley, 1997). El rastreo de procesos y el análisis de contribución se combinan para evaluar historias causales sin grupo de comparación (Befani y Mayne, 2014). Una posición exige evidencia de cada eslabón antes de afirmar la cadena. Otra acepta mecanismos plausibles como hipótesis de trabajo, siempre que se declaren y se revisen. El proyecto adopta la segunda posición, porque el corpus no documenta la última parte de la cadena. El corpus respalda la primera parte. La corrección con una estación cercana y 35 minutos de desfase llevó el R² de menos de 0,2 a 0,81 en Seúl (Bang et al., 2026, pp. 6-8). Una mina a cielo abierto mostró una correlación de 0,73 entre las partículas y la humedad (Suresh et al., 2025, p. 30). Esos resultados sustentan que la corrección mejora la medición. No sustentan que los comités usen la medición mejorada. La sección 4.4-MDR.8 registra que el corpus no contiene documentos de alerta que reporten falsas alarmas (VACIO). El flujo tiene tres rutas: calidad de la medición (PERS-P01 y PERS-P02 hacia PERS-E02), uso institucional (PERS-P04 hacia PERS-E01) y capacidad (PERS-P01 y PERS-P04 hacia PERS-E03). La vía de los artículos hacia PERS-E01 es una hipótesis débil. La {F:f03} presenta las tres rutas con sus supuestos críticos.
+
+:::FIGURA f03 | Flujo causal de Output (PERS-P) a Outcome (PERS-E) con mecanismo de cambio | Nota. Elaboración propia con datos de la ficha maestra del proyecto y de la teoría del cambio de la sección 4.4-MDR.8. Los mecanismos son INFERIDOS y no estiman efectos. Evidencia de apoyo de la primera ruta: Bang et al. (2026, pp. 6-8) y Suresh et al. (2025, p. 30). Figura generada con matplotlib 3.11 mediante c12_figs.py; diagrama sin semilla ni corpus.
+
+Cada ruta se revisa en la reunión trimestral de supuestos. Si los datos contradicen un mecanismo, se revisa el supuesto antes que la meta. La ruta discontinua marca la única vía sin evidencia propia, y el proyecto la mantiene como hipótesis hasta que el piloto la contraste.
+
+## 12.5 Indicadores de sostenibilidad S (impact)
+
+### 12.5.1 Impacto estructural y su horizonte
+
+Los dos indicadores de sostenibilidad miden el impacto institucional que el proyecto puede sostener tras su cierre. La sostenibilidad de un programa comprende el mantenimiento de sus beneficios, su institucionalización y la creación de capacidad en la comunidad (Shediac-Rizkallah y Bone, 1998). El impacto, en la taxonomía, es el cambio estructural sostenido que se deriva de los outcomes. Una posición entiende la sostenibilidad como continuidad de lo entregado: la red sigue operando. Otra la entiende como capacidad de adaptación de las reglas y de las instituciones que sostienen el servicio (Ostrom, 2005). PERS-S02 mide la primera posición. Los convenios por tramo, la cláusula de apertura y PERS-S01 miden parte de la segunda. PERS-S01 exige activar y registrar una medida de protección en al menos 80 % de los eventos de superación confirmados. PERS-S02 exige que los custodios operen al menos 70 % de los nodos entregados, es decir 70 de 100 nodos. Ambas metas se miden a los 12 meses del cierre. El sistema de alerta temprana de Medellín y del Valle de Aburrá acumula una trayectoria de más de 20 años (Ruiz-Carrascal et al., 2026). Esa trayectoria sugiere que la continuidad se construye en décadas y que 12 meses de seguimiento observan solo su primera etapa (INFERIDO). Los indicadores S se miden en los meses 30 y 36, seis y 12 meses tras el cierre (DEC-F10). Doce meses coinciden con el límite inferior del horizonte de uno a cinco años que el metaprompt fija para el impacto. La medición queda fuera de los 24 meses de ejecución. La línea S07 cubre solo las evaluaciones de los meses 12 y 24, y la financiación de la evaluación posproyecto es VACIO. Por consiguiente, el proyecto trata ambos indicadores como metas de contribución: crea las condiciones mediante convenios, formación y cláusula de apertura, y reporta el resultado con análisis de contribución (Mayne, 2012).
+
+### 12.5.2 Fichas técnicas de los indicadores de sostenibilidad
+
+**PERS-S01, activación del protocolo ante superación de umbral.** La ficha mide si una medición verificada produce una acción registrada. La {T:t17} la presenta con su vínculo al PDD.
+
+<<T:t17>>
+
+La ficha deja una condición de cálculo: si ningún evento de superación ocurre en la ventana de medición, el indicador no es calculable. Confirmar un evento exige una referencia, y con tres referencias parte de los eventos se confirma con el gemelo digital (INFERIDO). El indicador no estima exposición ni salud. El índice de calidad del aire y salud (AQHI) combina contaminantes según asociaciones de corto plazo observadas en series temporales (Stieb et al., 2008), y Liao et al. (2026) revisan los conceptos y los enfoques para construirlo. Los umbrales locales del tablero requieren esa validación antes de activar el protocolo.
+
+**PERS-S02, continuidad de la red bajo custodia.** La ficha mide los nodos que los custodios siguen operando con partida y competencia. La {T:t18} la presenta con su vínculo al PDD.
+
+<<T:t18>>
+
+El 70 % equivale a 24 nodos de 33 en Caldas, 24 de 34 en Cundinamarca y 24 de 33 en Valle del Cauca (CALCULADO con redondeo hacia arriba). El costo total de sostenimiento no es calculable (NO_CALCULABLE), de modo que la meta de 70 % no tiene contraparte presupuestal conocida. La cláusula de apertura y la salida ordenada acotan el riesgo si un custodio no asume la operación.
+
+### 12.5.3 Articulación con el PDD y con la normativa
+
+Cada indicador S se vincula con un indicador del PDD y con la demanda territorial del Anexo 4. Un indicador de plan territorial mide la meta de una entidad territorial, y el proyecto contribuye a esa meta sin poseerla. La política para el mejoramiento de la calidad del aire fija el marco de gestión (Departamento Nacional de Planeación [DNP], 2018). La norma de calidad del aire ambiente fija los límites oficiales (Ministerio de Ambiente y Desarrollo Sostenible, 2017). La política nacional de ciencia, tecnología e innovación orienta la apropiación (DNP, 2021). Dos posiciones guían la alineación. La primera alinea el proyecto con la norma y mide el cumplimiento de límites. La segunda lo alinea con la gestión del riesgo y mide la acción institucional. Los protocolos de la EPA definen el uso de estos sensores como monitoreo suplementario e informativo, no regulatorio, en sitios fijos (EPA, 2021). Por eso el proyecto adopta la segunda posición y no sustituye el monitoreo regulatorio. La {T:t19} reserva los campos del PDD y de la demanda territorial como VACIO. La contribución se expresa con datos propios: 33, 34 y 33 nodos por departamento (PROPUESTO) y 12 municipios focalizados.
+
+<<T:t19>>
+
+La tabla separa lo que el proyecto aporta de lo que solo el formulador puede completar. El impacto de nivel S se conecta con el nivel 4 de la Escalera ASC, el empoderamiento, cuyo compromiso es aspiracional: una actividad con plan de sostenibilidad. PERS-S02 y PERS-E03 sostienen ese compromiso, porque exigen personal certificado y partida de los custodios.
+
+## 12.6 Tablero de control y validación integral
+
+### 12.6.1 Semáforo, frecuencias y responsables
+
+El tablero de control resume el estado de los 15 indicadores con un semáforo y asigna una frecuencia y un responsable a cada nivel. El ciclo de planificar, ejecutar, verificar y actuar convierte la medición en mejora (Deming, 1986). Las compuertas de decisión aplican criterios definidos para continuar, corregir o detener un proyecto (Cooper, 2008). El semáforo simplifica la decisión, pero oculta la incertidumbre del dato. Funtowicz y Ravetz (1993) sostienen que, con incertidumbre alta y decisiones urgentes, la calidad de la información debe comunicarse junto con el valor. El tablero responde con una columna de línea base y otra de naturaleza. Mientras la línea base sea VACIO, el estado del indicador es SIN LÍNEA BASE y no recibe color de avance (PROPUESTO). El semáforo ex ante usa el riesgo de incumplimiento de la ficha. Cinco indicadores son rojos (PERS-E01 a PERS-E03, PERS-S01 y PERS-S02), siete son amarillos y tres son verdes (PERS-R03, PERS-R06 y PERS-P02). Cinco líneas base están VACIO (PERS-R03, PERS-E01, PERS-E02, PERS-S01 y PERS-S02). En ejecución, el color mide avance. Un indicador es verde si cumple la meta del corte, amarillo si no la cumple y existe una acción correctiva en el corte, y rojo si no la cumple en dos cortes consecutivos o si falla un criterio de compuerta (PROPUESTO). La frecuencia es mensual para el nivel R, trimestral para el nivel P y para PERS-E01 y PERS-E02, semestral para PERS-E03 y anual tras el cierre para el nivel S. La {T:t20} reúne los 15 indicadores con su frecuencia y su responsable.
+
+<<T:t20>>
+
+La tabla confirma que el riesgo se concentra en los niveles E y S. Los cinco indicadores de riesgo alto dependen de decisiones de comités y de custodios, y no de la ejecución del equipo. Por eso la gerencia reserva la revisión trimestral de supuestos para esos cinco (INFERIDO). La {F:f04} presenta el mismo estado con trama y etiqueta, además del color.
+
+:::FIGURA f04 | Dashboard de indicadores PERS con semáforo ex ante | Nota. Elaboración propia con datos de la ficha maestra del proyecto (riesgo de incumplimiento, línea base y meta final de los 15 indicadores). El semáforo es ex ante al 13 de octubre de 2026 y no es un avance medido. El rojo usa trama cruzada, el amarillo trama diagonal y el verde trama de puntos. Figura generada con matplotlib 3.11 mediante c12_figs.py; sin semilla ni corpus. Naturaleza: PROPUESTO.
+
+La figura muestra que el riesgo crece con el nivel PERS. Ningún indicador de proceso ni de producto es rojo, y los cinco de efecto y sostenibilidad lo son. La lectura exige cautela: el color expresa un juicio de formulación sobre el riesgo y no una medición.
+
+### 12.6.2 Tabla MGA preliminar para el SIGP
+
+La tabla MGA preliminar reorganiza los indicadores según los campos que el metaprompt prevé para el SIGP. La Metodología General Ajustada (MGA) estructura la formulación de proyectos de inversión, y el metaprompt prevé una tabla preliminar compatible con el formulario web del SIGP [DATO_USUARIO: denominación completa del SIGP] para facilitar la transferencia. Existen dos formas de transferir. La primera copia los indicadores al formulario sin cambiar su redacción. La segunda adapta cada indicador a las categorías y a las unidades del catálogo del sistema. La primera conserva la trazabilidad con las fichas y la segunda reduce el riesgo de rechazo formal (INFERIDO). El proyecto aplica la primera hasta conocer el catálogo y declara la segunda como paso pendiente. La {T:t21} organiza 21 filas: seis campos de identificación y localización, y 15 filas de indicadores, con cuatro productos, tres resultados, dos impactos y seis indicadores de gestión.
+
+<<T:t21>>
+
+Los códigos del catálogo y la demanda territorial son VACIO. Antes de transferir, el formulador debe verificar cada campo contra el formulario vigente. El campo de indicadores de gestión no figura en la lista del metaprompt, y el proyecto lo agrega para que los seis indicadores R no queden fuera de la transferencia (PROPUESTO).
+
+### 12.6.3 Coherencia vertical y horizontal
+
+La validación integral comprueba que cada nivel alimenta al siguiente y que cada indicador tiene los atributos que exige la ficha. La coherencia vertical exige que cada output tenga un outcome asociado y cada outcome un impacto. La coherencia horizontal exige línea base, meta, fuente de verificación y supuestos en cada indicador. Una posición exige que todo output tenga un outcome sin excepción. Otra reconoce outputs de control transversal, como la ejecución presupuestal, que sostienen la ejecución pero no producen un efecto propio (INFERIDO). La revisión da estos resultados. Siete de los diez outputs tienen una ruta explícita hacia un outcome: PERS-R01, PERS-R02, PERS-R03, PERS-R05, PERS-P01, PERS-P02 y PERS-P04. PERS-P03 llega al outcome por una vía débil. PERS-R04 y PERS-R06 son outputs de control transversal sin ruta propia. Los tres outcomes conectan con un impact: PERS-E01 y PERS-E02 con PERS-S01, y PERS-E03 con PERS-S02. Ningún output se clasifica como impact. Los 15 indicadores tienen meta, fuente de verificación y supuesto. Diez tienen línea base de cero (CALCULADO) y cinco la tienen VACIO. La verificación cardinal confirma 100 nodos en tres tramos, 10 gateways, tres referencias gravimétricas, al menos 60.000 horas-nodo en PERS-R05, un R² de 0,70 o más y un NRMSE de 30 % o menos como criterios de compuerta, y 24 meses con 104 semanas. La revisión deja cuatro observaciones. Los efectos de OE1 y OE2 no tienen indicador E propio. La meta intermedia de PERS-P04 iguala la final. La medición posproyecto carece de financiación. Cinco líneas base están VACIO. Estas observaciones no detienen la formulación, pero el formulador debe cerrarlas antes de radicar el proyecto.
+
+### 12.6.4 Cronograma de medición
+
+El cronograma de medición ordena los cortes de los 15 indicadores en 36 meses y los vincula con los hitos H0 a H8. El calendario de medición debe coincidir con las decisiones que informa. El proyecto toma tres decisiones principales: las compuertas C1 en el mes 12, C2 en el mes 17 y C3 en el mes 24. Cada una exige datos de al menos un corte trimestral anterior. Una posición mide siempre a la misma frecuencia para facilitar la comparación. Otra ajusta la frecuencia al ritmo de cambio de cada variable. El sistema adopta la segunda: mensual para la ejecución, trimestral para productos y efectos, semestral para la capacidad y anual para el impacto. El calendario programa 24 cortes mensuales, ocho trimestrales, cuatro semestrales y dos posproyecto. Los hitos H0 a H8 caen en los meses 2, 4, 10, 12, 16, 17, 19, 23 y 24. El ensayo independiente (S08) cubre los meses 20 a 24, y las evaluaciones externas ocurren en los meses 12 y 24 (S07). La {T:t22} detalla los cortes por trimestre y los reportes asociados.
+
+<<T:t22>>
+
+Los meses 25 a 36 quedan fuera de la ejecución. El proyecto necesita [DATO_USUARIO: fuente de financiación de la evaluación externa posproyecto] para medir PERS-S01 y PERS-S02. La {F:f05} integra los cortes con los hitos y las compuertas.
+
+:::FIGURA f05 | Cronograma de medición integrado con los hitos H0 a H8 | Nota. Elaboración propia con datos de la ficha maestra del proyecto (tramos, hitos H0 a H8, compuertas C1 a C3, frecuencias de los indicadores y líneas S07 y S08). Los meses 25 a 36 son seguimiento posproyecto PROPUESTO. Figura generada con matplotlib 3.11 mediante c12_figs.py; sin semilla ni corpus.
+
+La figura muestra que las tres compuertas coinciden con cortes trimestrales y con hitos de verificación. También muestra que los indicadores de impacto se miden después del cierre, en un periodo sin financiación definida. Esa condición exige decidir la fuente de la evaluación posproyecto antes del mes 24.

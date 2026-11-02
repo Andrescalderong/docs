@@ -1,0 +1,258 @@
+{
+ "entradas": [
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/front.md",
+   "raw"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/div_parte1.md",
+   "raw"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso0.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso1.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso2.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso3.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso4.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso5.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso6.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/paso7.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/div_parte2.md",
+   "raw"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap01.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap02a.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap02b.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap03.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap04.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap05.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap06.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap07.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap08.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap09.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap10.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap11.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap12.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap13.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap14.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap15.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap16.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap17.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap18.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap19.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap20.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/anexos_km.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cap21.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/div_parte3.md",
+   "raw"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x01.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x02.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x03.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/estrategia.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x05.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x06.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x07.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x08.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x09.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/x10.md",
+   "cap"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/div_cierre.md",
+   "raw"
+  ],
+  [
+   "/tmp/claude-0/-home-user-docs/8ca5c040-2adb-56b3-8e64-05d4e7e569ed/scratchpad/proy/caps/cierre.md",
+   "cap"
+  ]
+ ],
+ "opts": {
+  "title": "Implementación de una red IoT híbrida Edge-Cloud y gemelo digital para la gestión anticipada del riesgo por material particulado posterremoto",
+  "subtitle": "Proyecto completo conforme a GENESIS-CTeI 36.10 RC2",
+  "portada": [
+   [
+    "p",
+    "Convocatoria de Emergencia, Decreto 1414 de 2026 (SGR_CONV56)",
+    {
+     "size": 12,
+     "before": 24
+    }
+   ],
+   [
+    "p",
+    "Caso SGR_CONV56_AIRE",
+    {
+     "size": 12
+    }
+   ],
+   [
+    "p",
+    "[DATO_USUARIO: nombre de la entidad ejecutora]",
+    {
+     "size": 12,
+     "before": 18
+    }
+   ],
+   [
+    "p",
+    "Metaprompt GENESIS-CTeI 36.10 RC2 (VM-PAR3-MDR3-CONT1); norma de trazabilidad NTC 1.1",
+    {
+     "size": 11,
+     "before": 30
+    }
+   ],
+   [
+    "p",
+    "Huella SHA-256 declarada del maestro (DECLARADO): 685a73f45ba1d3011a3b1ba3a1722482c46d8b9a68ffe5cbc4dbe131e4603ba8",
+    {
+     "size": 8.5
+    }
+   ],
+   [
+    "p",
+    "Fecha de corte de los datos: 13 de octubre de 2026",
+    {
+     "size": 11,
+     "before": 12
+    }
+   ],
+   [
+    "p",
+    "Estado: documento de formulación. No apto para radicar mientras existan datos pendientes del usuario.",
+    {
+     "size": 11,
+     "italic": true,
+     "before": 12
+    }
+   ],
+   [
+    "break",
+    "",
+    {}
+   ]
+  ]
+ }
+}

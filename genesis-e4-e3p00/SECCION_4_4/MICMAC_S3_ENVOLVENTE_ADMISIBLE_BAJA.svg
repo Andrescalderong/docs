@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10in" height="7in" viewBox="0 0 1000 700" role="img"><title>MICMAC / S3_ENVOLVENTE_ADMISIBLE_BAJA / k=10</title><desc>Escenario no ratificado. Dependencia X, influencia Y. Porcentaje del total de cada eje.</desc>
+<g font-family="sans-serif" fill="#2A3439"><text x="100" y="30" font-size="18">MICMAC / S3_ENVOLVENTE_ADMISIBLE_BAJA / k=10</text><text x="100" y="53" font-size="12">NO RATIFICADO · porcentajes por eje · cortes por mediana</text>
+<path d="M100 90 V540 H880" fill="none" stroke="#2A3439"/>
+<path d="M100.0 90 V540 M100 515.8064516129032 H880" fill="none" stroke="#9EB9D4" stroke-dasharray="5 4"/>
+<circle cx="100.000" cy="455.323" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="447.323" font-size="11">V01</text>
+<circle cx="100.000" cy="467.419" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="459.419" font-size="11">V02/V03/V07</text>
+<circle cx="100.000" cy="352.500" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="344.500" font-size="11">V04</text>
+<circle cx="100.000" cy="165.000" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="157.000" font-size="11">V05</text>
+<circle cx="100.000" cy="485.565" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="477.565" font-size="11">V06</text>
+<circle cx="100.000" cy="515.806" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="507.806" font-size="11">V08/V10</text>
+<circle cx="750.000" cy="540.000" r="5" fill="#6699CC" stroke="#2A3439"/><text x="757.000" y="532.000" font-size="11">V09</text>
+<circle cx="100.000" cy="527.903" r="5" fill="#6699CC" stroke="#2A3439"/><text x="107.000" y="519.903" font-size="11">V11/V12/V13</text>
+<circle cx="750.000" cy="527.903" r="5" fill="#6699CC" stroke="#2A3439"/><text x="757.000" y="519.903" font-size="11">V14</text>
+<circle cx="727.193" cy="533.952" r="5" fill="#6699CC" stroke="#2A3439"/><text x="734.193" y="525.952" font-size="11">V15</text>
+<text x="100.00" y="562" text-anchor="middle" font-size="11">0.0</text><text x="88" y="544.00" text-anchor="end" font-size="11">0.0</text>
+<text x="256.00" y="562" text-anchor="middle" font-size="11">8.1</text><text x="88" y="454.00" text-anchor="end" font-size="11">8.8</text>
+<text x="412.00" y="562" text-anchor="middle" font-size="11">16.2</text><text x="88" y="364.00" text-anchor="end" font-size="11">17.6</text>
+<text x="568.00" y="562" text-anchor="middle" font-size="11">24.3</text><text x="88" y="274.00" text-anchor="end" font-size="11">26.4</text>
+<text x="724.00" y="562" text-anchor="middle" font-size="11">32.4</text><text x="88" y="184.00" text-anchor="end" font-size="11">35.2</text>
+<text x="880.00" y="562" text-anchor="middle" font-size="11">40.5</text><text x="88" y="94.00" text-anchor="end" font-size="11">44.0</text>
+<text x="490.0" y="605" text-anchor="middle" font-size="14">Dependencia (% del total)</text>
+<text x="24" y="320" transform="rotate(-90 24 320)" text-anchor="middle" font-size="14">Influencia (% del total)</text>
+<text x="100" y="640" font-size="11">Los puntos coincidentes comparten etiqueta. Los cuadrantes no acreditan causalidad.</text></g></svg>

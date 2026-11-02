@@ -1,0 +1,121 @@
+[
+ {
+  "key": "Barkjohn2021",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Development and application of a United States-wide correction for PM2.5 data collected with the PurpleAir sensor (AMT 14(6)) - https://amt.copernicus.org/articles/14/4617/2021/ ; copia PMC https://pmc.ncbi.nlm.nih.gov/articles/PMC8422884",
+  "nota": "Coinciden titulo, autores (Barkjohn, Gantt, Clements), revista, vol. 14, num. 6, paginas 4617-4637, ano 2021 y DOI 10.5194/amt-14-4617-2021. Sin diferencias."
+ },
+ {
+  "key": "Crilley2018",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Evaluation of a low-cost optical particle counter (Alphasense OPC-N2) for ambient air monitoring (AMT 11(2)) - https://amt.copernicus.org/articles/11/709/2018/ ; copia White Rose https://eprints.whiterose.ac.uk/130354/",
+  "nota": "Coinciden titulo, los 8 autores en el mismo orden (Crilley, Shaw, Pound, Kramer, Price, Young, Lewis, Pope), AMT vol. 11, num. 2, pp. 709-720, 2018 y DOI 10.5194/amt-11-709-2018. Existe version previa en AMTD (amt-2017-308), no citada."
+ },
+ {
+  "key": "Giordano2021",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "From low-cost sensors to high-quality data: A summary of challenges and best practices for effectively calibrating low-cost particulate matter mass sensors - https://www.iceht.forth.gr/en/publications/from-low-cost-sensors-to-high-quality-data-a-summary-of-challenges-and-best-practices-for-effectively-calibrating-low-cost-particulate-matter-mass-sensors/ ; https://hal.archives-ouvertes.fr/hal-03442005 ; https://ntrs.nasa.gov/citations/20210000612",
+  "nota": "Coinciden titulo, 8 autores en el mismo orden, Journal of Aerosol Science vol. 158, articulo 105833, 2021 y DOI 10.1016/j.jaerosci.2021.105833."
+ },
+ {
+  "key": "Karagulian2019",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Review of the performance of low-cost sensors for air quality monitoring (Atmosphere 10(9), 506) - https://doaj.org/article/9f4f71b30d6c4bfd92e10dfdb4ec29f9 ; https://hero.epa.gov/reference/6572738 ; https://www.mdpi.com/2073-4433/10/9/506/reprints",
+  "nota": "Coinciden titulo, primer autor (Karagulian et al., 9 autores, igual que la referencia), Atmosphere 10(9), articulo 506, 2019 y DOI 10.3390/atmos10090506. Los resultados no listaban uno a uno los coautores, solo el primero y el total."
+ },
+ {
+  "key": "Jayaratne2018",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The influence of humidity on the performance of a low-cost air particle mass sensor and the effect of atmospheric fog (AMT 11(8)) - https://amt.copernicus.org/articles/11/4883/2018/",
+  "nota": "Coinciden titulo, autores (Jayaratne, Liu, Thai, Dunbabin, Morawska), AMT vol. 11, num. 8, pp. 4883-4890, 2018. El DOI 10.5194/amt-11-4883-2018 no aparece literalmente en el texto de los resultados, pero es consistente con la URL amt-11-4883-2018 del articulo."
+ },
+ {
+  "key": "Magi2020",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Resultados de busqueda por titulo y por autores/DOI: copia alojada en https://pages.charlotte.edu/mesas/wp-content/uploads/sites/68/2019/05/magi2019.EvaluationOfPurpleAirInNC.pdf ; registros https://stacks.cdc.gov/view/cdc/217160 y https://pmc.ncbi.nlm.nih.gov/articles/PMC7377251",
+  "nota": "Los resultados indican autores Magi, Cupini, Francis, Green y Hauser, Aerosol Science and Technology, DOI 10.1080/02786826.2019.1619915 y publicacion en linea el 30 mayo 2019. No se pudo comprobar en ningun resultado el titulo exacto completo, ni el volumen 54(2) ni las paginas 147-159. El ano 2020 puede ser el del numero impreso (en linea es 2019); no verificado. No se modifica."
+ },
+ {
+  "key": "Morawska2018",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Applications of low-cost sensing technologies for air quality monitoring and exposure assessment: How far have they gone? (Environ. Int. 116) - https://pmc.ncbi.nlm.nih.gov/articles/PMC6145068 ; https://openresearch.surrey.ac.uk/permalink/44SUR_INST/15d8lgh/alma99512451102346",
+  "nota": "Coinciden titulo, primer autor (Morawska), Environment International vol. 116, pp. 286-299, 2018 y DOI 10.1016/j.envint.2018.04.018. La lista de autores esta abreviada con et al. en la referencia; solo se vieron primer y ultimo autor en los resultados, no el orden de los autores 2 a 6."
+ },
+ {
+  "key": "KumarP2015",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The rise of low-cost sensing for managing air pollution in cities (Environ. Int. 75) - https://gnosis.library.ucy.ac.cy/handle/7/45635 ; https://eprints.ncl.ac.uk/211369",
+  "nota": "Coinciden titulo, los 9 autores en el mismo orden (Kumar, Morawska, Martani, Biskos, Neophytou, Di Sabatino, Bell, Norford, Britter), Environment International vol. 75, pp. 199-205, 2015 y DOI 10.1016/j.envint.2014.11.019."
+ },
+ {
+  "key": "Castell2017",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Can commercial low-cost sensor platforms contribute to air quality monitoring and exposure estimates? (Environ. Int. 99) - https://nilu.brage.unit.no/nilu-xmlui/handle/11250/2456228 ; https://doaj.org/article/2928f93d3caf487bbab272cac622fe6e",
+  "nota": "Coinciden titulo, primer autor (Castell et al.), Environment International vol. 99, pp. 293-302, 2017 (feb.) y DOI 10.1016/j.envint.2016.12.007. Los resultados no mostraban la lista completa de coautores (Dauge, Schneider, Vogt, Lerner, Fishbain, Broday, Bartonova); un segundo intento de busqueda por esos nombres no devolvio la obra."
+ },
+ {
+  "key": "Malings2020",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Fine particle mass monitoring with low-cost sensors: Corrections and long-term performance evaluation - https://essopenarchive.org/users/560184/articles/608339-fine-particle-mass-monitoring-with-low-cost-sensors-corrections-and-long-term-performance-evaluation ; registro EPA https://cfpub.epa.gov/ncer_abstracts/index.cfm/fuseaction/display.risFormatListPubs/abstract_id/10743",
+  "nota": "Coinciden titulo, los 7 autores en el mismo orden (Malings, Tanzer, Hauryliuk, Saha, Robinson, Presto, Subramanian), Aerosol Science and Technology vol. 54, num. 2, pp. 160-174, 2020 (en linea jun. 2019) y DOI 10.1080/02786826.2019.1623863."
+ },
+ {
+  "key": "Pope2006",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Health effects of fine particulate air pollution: lines that connect (PMID 16805397) - https://pubmed.ncbi.nlm.nih.gov/16805397/",
+  "nota": "Coinciden titulo, autores (Pope III, Dockery), J. Air & Waste Manage. Assoc. vol. 56, num. 6, pp. 709-742, 2006 y DOI 10.1080/10473289.2006.10464485. Un registro de EPA HERO muestra un item homonimo (vol. 56(10), 1368-1380) con otros autores; es un comentario complementario, no esta obra."
+ },
+ {
+  "key": "Landrigan2004",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Health and environmental consequences of the World Trade Center disaster (Environ Health Perspect 112(6)) - https://pmc.ncbi.nlm.nih.gov/articles/PMC1241968 ; https://stacks.cdc.gov/view/cdc/196362",
+  "nota": "Coinciden titulo, autores (Landrigan, Lioy, Thurston, Berkowitz, Chen, Chillrud, ...; el grupo incluye ademas Gavett, Georgopoulos, Geyh, Levin, Perera, Rappaport, Small y el NIEHS WTC Working Group), EHP vol. 112, num. 6, pp. 731-739, mayo 2004 y DOI 10.1289/ehp.6702."
+ },
+ {
+  "key": "Stieb2008",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "A new multipollutant, no-threshold air quality health index based on short-term associations observed in daily time-series analyses - https://hero.epa.gov/reference/620207 ; https://open-science.canada.ca/server/api/core/bitstreams/be218c57-92d9-43b8-8f91-4ceb4c855feb/content",
+  "nota": "Coinciden titulo, los 6 autores en el mismo orden (Stieb, Burnett, Smith-Doiron, Brion, Shin, Economou), J. Air & Waste Manage. Assoc. vol. 58, num. 3, pp. 435-450, 2008 y DOI 10.3155/1047-3289.58.3.435."
+ },
+ {
+  "key": "Grieves2017",
+  "estado": "CORREGIR",
+  "correccion": "Grieves, M., y Vickers, J. (2017). Digital twin: Mitigating unpredictable, undesirable emergent behavior in complex systems. En F.-J. Kahlen, S. Flumerfelt, y A. Alves (Eds.), *Transdisciplinary perspectives on complex systems: New findings and approaches* (pp. 85–113). Springer. https://doi.org/10.1007/978-3-319-38756-7_4",
+  "evidencia": "Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems (cap. 4) - https://link.springer.com/doi/10.1007/978-3-319-38756-7_4 ; catalogo BL del libro https://eld.bl.uk/catalog/019129903 ; PDF del capitulo https://event.asme.org/Events/media/library/resources/digital-twin/Digital-Twin-Transdisciplanary-Systems.pdf",
+  "nota": "Titulo del capitulo, autores, editores (Kahlen, Flumerfelt, Alves), editorial Springer, ano 2017, DOI y paginas 85-113 coinciden (una diapositiva de Purdue da 85-114; el registro DOI y la mayoria de fuentes dan 85-113, se mantiene 85-113). Unica diferencia: el titulo del libro omite el subtitulo, que los catalogos dan como 'Transdisciplinary perspectives on complex systems: New findings and approaches'. Se anade el subtitulo."
+ },
+ {
+  "key": "Tao2019",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Digital Twin in Industry: State-of-the-Art (IEEE Trans. Ind. Inform. 15(4)) - https://www.x-mol.com/paper/836478 ; https://edisciplinas.usp.br/mod/resource/view.php?id=5796185",
+  "nota": "Coinciden titulo, autores (Fei Tao, He Zhang, Ang Liu, A. Y. C. Nee), IEEE Transactions on Industrial Informatics vol. 15, num. 4, pp. 2405-2415, abril 2019 y DOI 10.1109/TII.2018.2873186. Algunas fuentes lo citan como 2018 (fecha online-first); el ano 2019 del numero es correcto."
+ },
+ {
+  "key": "David2021",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "TensorFlow Lite Micro: Embedded Machine Learning for TinyML Systems (MLSys 2021, vol. 3) - https://proceedings.mlsys.org/paper_files/paper/2021/hash/6c44dc73014d66ba49b28d483a8f8b0d-Abstract.html ; preprint https://arxiv.org/abs/2010.08678v3",
+  "nota": "Coinciden titulo (el de MLSys es 'for TinyML Systems'; el preprint arXiv dice 'on'), orden de los primeros autores (David, Duke, Jain, Janapa Reddi, Jeffries, Li, ...), serie Proceedings of Machine Learning and Systems, vol. 3 y ano 2021. No se pudo comprobar en ningun resultado el rango de paginas 800-811. No se modifica."
+ },
+ {
+  "key": "Shi2016",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Edge Computing: Vision and Challenges (IEEE Internet of Things Journal 3(5)) - https://ieeexplore.ieee.org/abstract/document/7488250",
+  "nota": "Coinciden titulo, autores (Shi, Cao, Zhang, Li, Xu) en el mismo orden, IEEE Internet of Things Journal vol. 3, num. 5, pp. 637-646, oct. 2016 y DOI 10.1109/JIOT.2016.2579198."
+ }
+]

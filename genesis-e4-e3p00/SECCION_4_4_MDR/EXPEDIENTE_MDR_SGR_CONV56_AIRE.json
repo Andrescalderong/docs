@@ -1,0 +1,2166 @@
+{
+ "schema": "GENESIS_MDR_INTERNAL_V1",
+ "schema_version": "1.0",
+ "case_id": "SGR_CONV56_AIRE",
+ "run_id": "RUN_2026-10-13_MDR",
+ "host_version": "36.10",
+ "mdr_version": "3.0",
+ "section": "4.4-MDR",
+ "source_refs": [
+  {
+   "object_id": "F-INF",
+   "version": "1",
+   "sha256": "29f443a909e831b751fb39f0f43d5aec838a55177b32a5a89eb34cbbd7b4fc0b"
+  },
+  {
+   "object_id": "F-E3",
+   "version": "1",
+   "sha256": "ad06c90bd70a4d9217567f8eb4aff4771f3c92b5d961b7e60e8d90a126bd6801"
+  },
+  {
+   "object_id": "PLANTILLA_VM",
+   "version": "1",
+   "sha256": "9155d355c7cc29b02eeb2c64b826768deb605a3bac6e59a84c87b2927ede1497"
+  },
+  {
+   "object_id": "SECCION_4_3",
+   "version": "1",
+   "sha256": "819ac18380f5957060adabdc7b04ffbcc44b835f1d6d00114035792307417ab4"
+  },
+  {
+   "object_id": "SECCION_4_4",
+   "version": "1",
+   "sha256": "623ae50cf0472b7bf6b4a38283ad733713d1b85dd0acbad39fd477e6eac516ea"
+  },
+  {
+   "object_id": "RESULTADOS_4_4",
+   "version": "1",
+   "sha256": "452990c1f3ef37bec031172afb9a88bc991e21ef15f23b39734e0d1caad9ec19"
+  },
+  {
+   "object_id": "FICHAS_PARITARIAS",
+   "version": "1",
+   "sha256": "68aff6b7443a52caf0847ac1fe45df66d0c30e5e5ef65e01c22b11d41d9fcd83"
+  }
+ ],
+ "phases": {
+  "FD-01": {
+   "content": {
+    "object_id": "FD-01",
+    "fase": "F1",
+    "nombre": "Ficha de construcción y diagnóstico",
+    "pieza": "4.4-MDR.3",
+    "pregunta_rectora": "¿Qué fenómeno existe, cómo se representa y en qué dominio causal se ubica?",
+    "delimitacion": {
+     "territorio": "SUPUESTO",
+     "horizonte_meses": 36,
+     "unidad_decisora": "Equipo formulador (POR_IDENTIFICAR)"
+    },
+    "representacion_dominante": "Limitación técnica de medición y comunicaciones (F-E3, E3-P07)",
+    "marcos_rivales": [
+     "Control en la fuente y salud ocupacional",
+     "Gestión del riesgo de desastres como servicio",
+     "Metrología y acreditación"
+    ],
+    "restricciones_normativas": {
+     "tope_14000_millones": "DECLARADO; NO_VERIFICADO",
+     "derecho_salud_ambiente": "CANDIDATO_A_VERIFICAR",
+     "competencia_gestion_riesgo": "CANDIDATO_A_VERIFICAR"
+    },
+    "C1": "NO_CUMPLE",
+    "C2": "CUMPLE_CON_RESERVA",
+    "C3": "CUMPLE",
+    "C4": "NO_CUMPLE",
+    "clasificacion_estructura": "PARCIALMENTE_ESTRUCTURADO",
+    "rasgos_perversos": "NO_ACTIVADO",
+    "escala": "PROBLEMA_PUBLICO (INFERIDO)",
+    "dominio": {
+     "medicion_con_correccion_local": "COMPLICADO",
+     "adopcion_y_custodia": "COMPLEJO",
+     "naturaleza": "INFERIDO"
+    },
+    "vacios": [
+     "Línea base de error",
+     "TdR",
+     "Fórmula local del índice (V-AQHI-01)",
+     "Población expuesta"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Vacíos no impiden clasificar; condicionan el uso",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "FD-01",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "AE-02": {
+   "content": {
+    "object_id": "AE-02",
+    "fase": "F2",
+    "nombre": "Ficha de entorno",
+    "pieza": "4.4-MDR.4",
+    "condicionantes": [
+     "Humedad y polvo higroscópico",
+     "Maquinaria de remoción",
+     "Infraestructura colapsada",
+     "Estaciones de referencia (cobertura VACIO)",
+     "Tope de 14.000 millones",
+     "Capacidad local"
+    ],
+    "reglas_formales": [
+     "TdR (VACIO)",
+     "Normas de gestión del riesgo (CANDIDATO_A_VERIFICAR)",
+     "Anualidad presupuestal (CANDIDATO_A_VERIFICAR)",
+     "Propiedad industrial (F-INF §8.3)"
+    ],
+    "reglas_informales": [
+     "Compra de sensores sin plan de calibración (F-INF §6.5)",
+     "Equipos en bodegas municipales (F-E3; NO_VERIFICADO)"
+    ],
+    "estrategias_favorecidas": [
+     "Novedad tecnológica visible",
+     "Entrega de activos antes que servicios",
+     "Asignación de operación en la matriz de responsabilidades"
+    ],
+    "estrategias_penalizadas": [
+     "Piloto previo y compra por tramos",
+     "Control de polvo en la fuente"
+    ],
+    "restricciones_de_continuidad": [
+     "Anualidad presupuestal",
+     "Calendario electoral (oct. 2027; posesión ene. 2028)",
+     "Rotación de personal",
+     "Plazos de liquidación",
+     "Vencimientos de propiedad industrial"
+    ],
+    "vacios": [
+     "Cobertura de referencias",
+     "Reglas del instrumento sobre gasto recurrente",
+     "Calendario real de inicio"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "TdR ausentes",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "AE-02",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "MA-03": {
+   "content": {
+    "object_id": "MA-03",
+    "fase": "F3",
+    "nombre": "Mapa de actores",
+    "pieza": "4.4-MDR.5",
+    "actores": 12,
+    "relevancia": "NO_EVALUADO salvo el convocante (poder ALTO, DECLARADO)",
+    "capacidad_de_custodia_preliminar": "VACIO",
+    "juego": {
+     "jugadores": "Dos entidades territoriales",
+     "pagos_ordinales": "(3,3),(1,4),(4,1),(2,2)",
+     "equilibrio": "(N, N)",
+     "naturaleza": "INFERIDO",
+     "fuente": "F-INF §6.5"
+    },
+    "red_de_actores": "NO_APLICA: sin datos relacionales",
+    "vacios": [
+     "Compromisos escritos",
+     "Poder, legitimidad y urgencia con evidencia",
+     "Participación de afectados"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Relevancia sin evidencia",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "MA-03",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "EN-04": {
+   "content": {
+    "object_id": "EN-04",
+    "fase": "F4",
+    "nombre": "Ficha de encuadre",
+    "pieza": "4.4-MDR.6",
+    "E1": "MEDIO en medición; BAJO en adopción y custodia",
+    "E2": "INCREMENTAL en medición; ESTRUCTURAL en custodia",
+    "E3": "MEDIO",
+    "E4": "PARCIALMENTE_REVERSIBLE",
+    "cuadrante_MBL": {
+     "medicion": "Frontera Q1-Q3",
+     "custodia": "Q4"
+    },
+    "cuadrante_MTT": "Frontera T3-T4",
+    "contraste_dominio": "Coherente en ambas partes",
+    "modelos_compatibles": [
+     "Exploración mixta",
+     "Racionalidad limitada (con reserva)",
+     "Estructuración participativa (solo custodia)"
+    ],
+    "modelo_seleccionado": "Exploración mixta",
+    "modelo_rival": "Racionalidad limitada y satisfacción",
+    "tensiones": [
+     "Modelo adecuado técnicamente y penalizado por la selectividad estratégica y el calendario electoral"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Ejes INFERIDOS; tensión abierta",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "EN-04",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "ME-05": {
+   "content": {
+    "object_id": "ME-05",
+    "fase": "F5",
+    "nombre": "Ficha de alternativas y método",
+    "pieza": "4.4-MDR.7",
+    "criterios_registrados": {
+     "version": "1.0",
+     "criterios": [
+      "CR-1",
+      "CR-2",
+      "CR-3",
+      "CR-4",
+      "CR-5",
+      "CR-6"
+     ]
+    },
+    "alternativas": [
+     "R0",
+     "R1",
+     "R2",
+     "R3",
+     "R4",
+     "R5"
+    ],
+    "metodo_id": "MDR-MT04 (matriz de compensaciones)",
+    "insumos": {
+     "desempeños": "INFERIDO; NO_VERIFICADO",
+     "probabilidades": "VACIO",
+     "utilidades": "VACIO",
+     "pesos": "VACIO"
+    },
+    "procedimiento": "Matriz sin agregación y revisión de dominancia",
+    "resultado": "Sin dominancia confirmada; sin ganador",
+    "sensibilidad": "Condiciones de elección cualitativas",
+    "umbral_de_cambio": "NO_CALCULABLE",
+    "heuristicas": "Ninguna aplicada",
+    "auditoria_de_sesgos": {
+     "detectados_decisor": [
+      "B1",
+      "B2",
+      "B4",
+      "B5",
+      "B6",
+      "B8"
+     ],
+     "no_detectado": [
+      "B3"
+     ],
+     "no_evaluado": [
+      "B7"
+     ]
+    },
+    "limites": [
+     "Suma ponderada de E3 conservada como dato; no es ganador",
+     "CR-5 NO_EVALUADO"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Sin dominancia ni probabilidades",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "ME-05",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "TC-06": {
+   "content": {
+    "object_id": "TC-06",
+    "fase": "F6",
+    "nombre": "Teoría del cambio",
+    "pieza": "4.4-MDR.8",
+    "impacto": "Operarios y comunidades protegidos por alertas basadas en mediciones verificadas",
+    "horizonte_meses": 36,
+    "niveles": [
+     "Productos",
+     "Resultados inmediatos",
+     "Resultados intermedios",
+     "Impacto"
+    ],
+    "nodos": 11,
+    "relaciones": 12,
+    "supuestos": {
+     "SC-1": "SUPUESTO",
+     "SC-2": "SUPUESTO",
+     "SC-3": "SUPUESTO",
+     "SC-4": "SUPUESTO"
+    },
+    "techo": "Después de los resultados inmediatos",
+    "dominio": "COMPLICADO y COMPLEJO",
+    "arquitectura": "Anidada",
+    "arquitectura_rival": "Sistémica (rechazada para la medición; reexaminar con el piloto)",
+    "celda_de_desajuste": [
+     "MDR-MX-CO-A: ADECUADA",
+     "MDR-MX-CX-A: ADMISIBLE_CON_AJUSTE"
+    ],
+    "efectos_por_dimension": 6,
+    "marcos_de_cambio": {
+     "incentivos": "Economía política y arquitectura de decisiones",
+     "habilidad y refuerzo": "ADKAR",
+     "estándar de calibración": "PDCA"
+    },
+    "traduccion_a_formatos": "CANDIDATO_A_VERIFICAR",
+    "vacios": [
+     "Evidencia primaria de SC-2 y SC-3",
+     "Cobertura de referencias"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Supuestos SUPUESTO sin verificación",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "TC-06",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "AR-07": {
+   "content": {
+    "object_id": "AR-07",
+    "fase": "F7",
+    "nombre": "Ficha de argumento",
+    "pieza": "4.4-MDR.9",
+    "Q": "CONDICIONALMENTE",
+    "PA": {
+     "PA-1": "CUMPLE para I(1), I(2), I(5); NO_CUMPLE para I(3), I(4)",
+     "PA-2": "CUMPLE",
+     "PA-3": "NO_EJECUTADO",
+     "PA-4": "CUMPLE",
+     "PA-5": "CUMPLE",
+     "PA-6": "CUMPLE"
+    },
+    "supuestos_validados": {
+     "SC-1": "CONDICIONALMENTE",
+     "SC-2": "PLAUSIBLEMENTE",
+     "SC-3": "PLAUSIBLEMENTE",
+     "SC-4": "CONDICIONALMENTE"
+    },
+    "evaluador": "Ninguno independiente",
+    "autorrevision": true,
+    "argumento_sostenibilidad": {
+     "continuidad_tras_mes_24": "NO_SOSTENIDO",
+     "alcaldias_asumen_opex": "NO_SOSTENIDO",
+     "preservacion_con_clausula_de_apertura": "CONDICIONALMENTE"
+    },
+    "reentradas": [],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "PA-3 no ejecutada; objeciones abiertas"
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "AR-07",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "SP-08": {
+   "content": {
+    "object_id": "SP-08",
+    "fase": "F8",
+    "nombre": "Arquitectura de sostenibilidad posproyecto",
+    "pieza": "4.4-MDR.10",
+    "evidencia_de_antecedentes": "DECLARADO por el usuario; evidencia parcial en redes de monitoreo (F-INF)",
+    "componentes": 9,
+    "CTS_anual": "NO_CALCULABLE",
+    "cota_inferior_declarada_millones_COP": [
+     190.0,
+     208.25,
+     226.9125
+    ],
+    "NMSV": "PROPUESTO; costo NO_CALCULABLE",
+    "CTS_min": "NO_CALCULABLE",
+    "ICAR": "NO_CALCULABLE para siete candidatos",
+    "asignacion_de_custodia": "POR_DEFINIR con ICAR",
+    "portafolio_declarado_F_E3": {
+     "participaciones_anio1": {
+      "OpEx nube e IoT": 0.23684210526315788,
+      "Mantenimiento FRU": 0.13157894736842105,
+      "Personal técnico y soporte de algoritmos": 0.631578947368421
+     },
+     "max_participacion": [
+      0.631578947368421,
+      0.6050420168067226,
+      0.5830441249380268
+     ],
+     "HHI": [
+      0.47229916897506924,
+      0.44580185015182544,
+      0.4270731504079479
+     ]
+    },
+    "fondo_patrimonial": "NO_CALCULABLE",
+    "prueba_de_orfandad": {
+     "umbral_costo_minimo_anio1_millones": {
+      "OpEx nube e IoT": 145.0,
+      "Mantenimiento FRU": 165.0,
+      "Personal técnico y soporte de algoritmos": 70.0
+     },
+     "estado": "CONDICIONAL"
+    },
+    "tramos": 4,
+    "clausula_de_apertura": "PROPUESTA; licencia VACIO",
+    "gobernanza": "PROPUESTA",
+    "instrumentos_verificados": "NINGUNO: CANDIDATO_A_VERIFICAR",
+    "vacios": [
+     "CTS completo",
+     "ICAR",
+     "r_real",
+     "Costos por componente",
+     "Evidencia de continuidad de proyectos con regalías"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "ICAR y costo mínimo ausentes; reabrir F8 y F5 cuando existan",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "SP-08",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  },
+  "AA-09": {
+   "content": {
+    "object_id": "AA-09",
+    "fase": "F9",
+    "nombre": "Plan de ejecución, evaluación y aprendizaje",
+    "pieza": "4.4-MDR.11",
+    "hipotesis_de_intervencion": "Si se ejecuta R4 durante 24 meses, en 36 meses se espera una diferencia detectable del logaritmo del error normalizado y al menos un tramo de custodia recibido",
+    "estrategia": "Piloto como producto de conocimiento; tramos como evidencia de alianza",
+    "indicadores": [
+     "Logaritmo del error normalizado por nodo-semana"
+    ],
+    "linea_base": "VACIO",
+    "umbrales": {
+     "detencion_R4": "PROPUESTO",
+     "disponibilidad_menor_80_por_ciento_tres_meses": "PROPUESTO; sin fuente",
+     "falsas_alarmas": "PROPUESTO"
+    },
+    "ruta_evaluativa": {
+     "efecto_del_metodo": "RE-1",
+     "adopcion": "RE-2",
+     "contribucion": "RE-4",
+     "QCA": "NO_APLICA",
+     "cosecha": "NO_APLICA"
+    },
+    "supuestos_priorizados": [
+     "SC-2",
+     "SC-3",
+     "SC-1"
+    ],
+    "frecuencia_de_revision": "Trimestral en adopción y custodia; anual en medición",
+    "responsable": "RESPONSABLE_POR_DESIGNAR",
+    "consecuencias_no_deseadas": 5,
+    "punto_de_reversion": "Hito 2 (mes 12)",
+    "prueba_piloto": "Sorteo semanal; 52 semanas; 100 nodos y 20 % de repuestos",
+    "vacios": [
+     "Línea base",
+     "Actualización remota de nodos",
+     "Responsable"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Línea base y responsable ausentes",
+    "reentradas": []
+   },
+   "gate": "AVANZA_CON_RESERVA",
+   "object_id": "AA-09",
+   "version": "1.0",
+   "estado": "BORRADOR_CON_VACIOS"
+  }
+ },
+ "invariants": {
+  "P1": {
+   "object_refs": [
+    "ME-05",
+    "AR-07"
+   ],
+   "estado": "ENTREGADO_CON_VACIOS",
+   "pieza": "4.4-MDR.1 y 4.4-MDR.7"
+  },
+  "P2": {
+   "object_refs": [
+    "ARBOL_1",
+    "ARBOL_4"
+   ],
+   "estado": "ENTREGADO; A-PROB (tipo 5) en 4.5",
+   "pieza": "4.4-MDR.2"
+  },
+  "P3": {
+   "object_refs": [
+    "SP-08"
+   ],
+   "estado": "ENTREGADO_CON_VACIOS; cálculos NO_CALCULABLE",
+   "pieza": "4.4-MDR.10"
+  },
+  "P4": {
+   "object_refs": [
+    "TC-06"
+   ],
+   "estado": "ENTREGADO",
+   "pieza": "4.4-MDR.8"
+  }
+ },
+ "trees": [
+  {
+   "role": "A-DEC",
+   "tipo": 1,
+   "file": "ARBOL_1_SGR_CONV56_AIRE.svg",
+   "json": "ARBOL_1_SGR_CONV56_AIRE.json",
+   "modalidad": "CUALITATIVO",
+   "sha256_svg": "9bf2357debcd55c9fefb3ff8730cebe43c14fd61e318de94236e36054fe0df9f"
+  },
+  {
+   "role": "A-TDC",
+   "tipo": 4,
+   "file": "ARBOL_4_SGR_CONV56_AIRE.svg",
+   "json": "ARBOL_4_SGR_CONV56_AIRE.json",
+   "sha256_svg": "0de6c7603bbbad0f11fa28d4866bea99b399a78c18ef02b8adcb942b31691636"
+  },
+  {
+   "role": "A-PROB",
+   "tipo": 5,
+   "file": "ARBOL_5_SGR_CONV56_AIRE.svg",
+   "estado": "EMITIDO_EN_4.5",
+   "sha256_svg": "eb4db09aaf836283cde81ebeef9f6d7e3887e5a90a618e380192e23a46e847e1"
+  }
+ ],
+ "open_items": [
+  {
+   "id": "V-TDR",
+   "descripcion": "Términos de referencia no aportados",
+   "efecto": "CR-5 NO_EVALUADO",
+   "tenedor": "Entidad ejecutora supuesta"
+  },
+  {
+   "id": "V-FICHAS",
+   "descripcion": "Fichas de 4.4 sin ratificación",
+   "efecto": "SC-1 a SC-4 sobre hipótesis HIE",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-ICAR",
+   "descripcion": "Sin evidencia de capacidad de custodia",
+   "efecto": "ICAR y orfandad NO_CALCULABLE",
+   "tenedor": "Alcaldías, gobernaciones y aliados"
+  },
+  {
+   "id": "V-CTS",
+   "descripcion": "Costo total de sostenimiento incompleto",
+   "efecto": "Motor financiero NO_CALCULABLE",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-LB",
+   "descripcion": "Sin línea base de error y metas contradictorias",
+   "efecto": "Éxito del piloto no declarable",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-AQHI",
+   "descripcion": "Fórmula local del índice y umbrales sin validar",
+   "efecto": "Alertas no accionables",
+   "tenedor": "Autoridad de salud (POR_IDENTIFICAR)"
+  },
+  {
+   "id": "V-ENLACE",
+   "descripcion": "Enlace y energía en entorno colapsado",
+   "efecto": "SC-2",
+   "tenedor": "Empresa aliada"
+  },
+  {
+   "id": "V-CAL",
+   "descripcion": "Cuatro versiones del lugar de calibración",
+   "efecto": "Arquitectura, costo y sorteo",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-PPTO",
+   "descripcion": "Desglose presupuestal documenta 4.448,7 de 14.000 millones",
+   "efecto": "Compatibilidad con el tope",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-COM",
+   "descripcion": "Sin participación de operarios y comunidades",
+   "efecto": "Umbrales sin portador de valor",
+   "tenedor": "Equipo formulador"
+  },
+  {
+   "id": "V-PCT",
+   "descripcion": "Libertad de operación sobre propiedad industrial",
+   "efecto": "Operación",
+   "tenedor": "Equipo formulador"
+  }
+ ],
+ "problem_tree_inputs": {
+  "registro": "REGISTRO_CONTRASTE_ARBOL_SGR_CONV56_AIRE.csv",
+  "sha256": "8789733645dbaeb5462b053a197497372efa9d5c08969e056986ea5575f895c4",
+  "aristas_registradas": 48,
+  "aristas_dibujadas_en_A_PROB": 10,
+  "nodos_A_PROB": [
+   "V14",
+   "V15",
+   "V11",
+   "V12",
+   "V06",
+   "V03",
+   "V02",
+   "V01",
+   "V07",
+   "V05"
+  ],
+  "reglas": [
+   "No invertir A-TDC de forma mecánica",
+   "No añadir causas que el modelo no contenga",
+   "Conservar desacuerdos con E3",
+   "Todas las relaciones HIE"
+  ]
+ },
+ "effects_on_chapters": [
+  {
+   "capitulos": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "efecto": "Reformular problema, objetivos y método con piloto de contraste"
+  },
+  {
+   "capitulos": [
+    8,
+    10,
+    12,
+    13,
+    18
+   ],
+   "efecto": "Presupuesto por tramos; SC-1 a SC-4 como riesgos; metas bajo el techo; marco lógico desde la teoría del cambio"
+  },
+  {
+   "capitulos": [
+    14,
+    15,
+    16,
+    21
+   ],
+   "efecto": "Custodia por tramos, cláusula de apertura y portafolio verificado"
+  }
+ ],
+ "authorization": {
+  "e3_authorization_mutated": false,
+  "mid_formal_written": false,
+  "selection_decision_written": false
+ },
+ "upstream_objects_mutated": false,
+ "semantic_review": {
+  "status": "AUTORREVISION_SECUENCIAL",
+  "revisor": "Misma instancia analítica",
+  "revision_independiente": "NO_EJECUTADA"
+ },
+ "next_section": "4.5",
+ "expediente": {
+  "1_identificacion_de_corrida": {
+   "mdr": "3.0",
+   "ntc": "1.1",
+   "modo": "/estandar",
+   "perfil": "PROYECTO_CTeI",
+   "anfitrion": "GENESIS 36.10 RC2 VM-PAR3-MDR3-CONT1",
+   "fecha": "2026-10-13",
+   "capacidades_utilizadas": [
+    "Python local",
+    "Chromium para inspección de SVG"
+   ],
+   "capacidades_no_disponibles": [
+    "Verificación de normas y referencias externas",
+    "artifact_tool",
+    "verificador_ntc.py"
+   ],
+   "autorrevision": "AUTORREVISION_SECUENCIAL",
+   "huellas": "Ver CONTROL_MDR: 12 de 12 programas coinciden con la huella declarada"
+  },
+  "2_contrato_e_invariantes": {
+   "P1": {
+    "object_refs": [
+     "ME-05",
+     "AR-07"
+    ],
+    "estado": "ENTREGADO_CON_VACIOS",
+    "pieza": "4.4-MDR.1 y 4.4-MDR.7"
+   },
+   "P2": {
+    "object_refs": [
+     "ARBOL_1",
+     "ARBOL_4"
+    ],
+    "estado": "ENTREGADO; A-PROB (tipo 5) en 4.5",
+    "pieza": "4.4-MDR.2"
+   },
+   "P3": {
+    "object_refs": [
+     "SP-08"
+    ],
+    "estado": "ENTREGADO_CON_VACIOS; cálculos NO_CALCULABLE",
+    "pieza": "4.4-MDR.10"
+   },
+   "P4": {
+    "object_refs": [
+     "TC-06"
+    ],
+    "estado": "ENTREGADO",
+    "pieza": "4.4-MDR.8"
+   }
+  },
+  "3_registro_de_fuentes_y_afirmaciones": [
+   {
+    "id": "A-01",
+    "afirmacion": "La convocatoria fija un tope de 14.000 millones de COP",
+    "naturaleza": "DECLARADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-E3 (cita TdR pp. 7-8 y 25; TdR no aportados)"
+   },
+   {
+    "id": "A-02",
+    "afirmacion": "El territorio es Caldas, Cundinamarca y Valle del Cauca; la alianza es IES, empresa y alcaldías",
+    "naturaleza": "SUPUESTO",
+    "verificacion": "NO_APLICA: instrucción del usuario",
+    "fuente": "Encargo"
+   },
+   {
+    "id": "A-03",
+    "afirmacion": "El error normalizado supera 45 % sin corrección",
+    "naturaleza": "DECLARADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-E3, Paso 1 (F_REV_SISTEMATICA sin localizador)"
+   },
+   {
+    "id": "A-04",
+    "afirmacion": "Las metas del error de V06 son menos de 30 %, 15 % o menos y menos de 15 %",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "CONTRADICTORIO",
+    "fuente": "F-E3, K02, Paso 5 y Tabla 5.1"
+   },
+   {
+    "id": "A-05",
+    "afirmacion": "La correlación entre humedad y partículas es 0,73 (F-INF) o 0,48 (F-E3)",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "CONTRADICTORIO",
+    "fuente": "F-INF §8.3; F-E3 3.15, 4.6 y ND-11"
+   },
+   {
+    "id": "A-06",
+    "afirmacion": "La corrección con estación cercana elevó R² de menos de 0,2 a 0,81",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §3.1 y §8.3 (cita secundaria)"
+   },
+   {
+    "id": "A-07",
+    "afirmacion": "El 90,8 % de las estaciones propuestas carecería de plan de calibración",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §8.3 (cita secundaria)"
+   },
+   {
+    "id": "A-08",
+    "afirmacion": "El 16,8 % de las estaciones brasileñas está inactivo o sin estado",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §6.5 (cita secundaria)"
+   },
+   {
+    "id": "A-09",
+    "afirmacion": "V06 es crítica en los cinco escenarios de 4.4",
+    "naturaleza": "CALCULADO",
+    "verificacion": "PARCIALMENTE_VERIFICADO: motor oficial y plantilla recalculada coinciden en A1 a A6; las fichas no están ratificadas",
+    "fuente": "RESULTADOS_4_4"
+   },
+   {
+    "id": "A-10",
+    "afirmacion": "V15 participa en 140 de 144 ciclos simples de S2",
+    "naturaleza": "CALCULADO",
+    "verificacion": "PARCIALMENTE_VERIFICADO: una sola implementación",
+    "fuente": "4.4.13"
+   },
+   {
+    "id": "A-11",
+    "afirmacion": "Participación máxima 63,2 % e índice HHI 0,472 en el año 1 del portafolio declarado",
+    "naturaleza": "CALCULADO",
+    "verificacion": "VERIFICADO: aritmética exacta recalculable; cifras de entrada NO_VERIFICADO",
+    "fuente": "F-E3, Tabla 14.2; mdr_calc.py"
+   },
+   {
+    "id": "A-12",
+    "afirmacion": "Costo parcial declarado de 190; 208,25 y 226,91 millones de COP por año",
+    "naturaleza": "DECLARADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-E3, Tabla 14.2"
+   },
+   {
+    "id": "A-13",
+    "afirmacion": "El equilibrio del juego de custodia es (N, N)",
+    "naturaleza": "INFERIDO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §6.5 (Juego 1)"
+   },
+   {
+    "id": "A-14",
+    "afirmacion": "Una fase 0 de 12 meses debe preceder la compra masiva",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §8.3 (D-03)"
+   },
+   {
+    "id": "A-15",
+    "afirmacion": "Diseño alternado de 52 semanas; 5.200 nodo-semanas; diferencia mínima detectable 0,034",
+    "naturaleza": "CALCULADO",
+    "verificacion": "PARCIALMENTE_VERIFICADO: cálculo recalculado sobre premisas NO_VERIFICADAS",
+    "fuente": "4.3.6; F-INF §11.7 y §11.8"
+   },
+   {
+    "id": "A-16",
+    "afirmacion": "Las alcaldías responden legalmente por actuar sobre la alerta",
+    "naturaleza": "DECLARADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-E3, E3-P17"
+   },
+   {
+    "id": "A-17",
+    "afirmacion": "La institución ejecutora carece de recursos permanentes; aporta personal en especie",
+    "naturaleza": "DECLARADO",
+    "verificacion": "CONTRADICTORIO",
+    "fuente": "F-E3, E3-P17 §13 y Tabla 14.2"
+   },
+   {
+    "id": "A-18",
+    "afirmacion": "El desglose del Capítulo 8 documenta 4.448,7 de 14.000 millones",
+    "naturaleza": "CALCULADO",
+    "verificacion": "PARCIALMENTE_VERIFICADO: suma de rubros del expediente",
+    "fuente": "F-E3, Cap. 8"
+   },
+   {
+    "id": "A-19",
+    "afirmacion": "El problema declara colapso celular y eléctrico y la alternativa transmite por enlace 4G con 100 tarjetas SIM",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "CONTRADICTORIO",
+    "fuente": "F-E3, 4.6 y Tabla 8.3"
+   },
+   {
+    "id": "A-20",
+    "afirmacion": "Las elecciones territoriales siguientes son en octubre de 2027, con posesión en enero de 2028",
+    "naturaleza": "INFERIDO",
+    "verificacion": "NO_VERIFICADO: CANDIDATO_A_VERIFICAR",
+    "fuente": "Conocimiento externo"
+   },
+   {
+    "id": "A-21",
+    "afirmacion": "Derechos a la salud y a un ambiente sano; competencia territorial en gestión del riesgo",
+    "naturaleza": "INFERIDO",
+    "verificacion": "NO_VERIFICADO: CANDIDATO_A_VERIFICAR",
+    "fuente": "Conocimiento externo"
+   },
+   {
+    "id": "A-22",
+    "afirmacion": "Diez solicitudes PCT designan a Colombia y tres plazos siguen abiertos",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "NO_VERIFICADO",
+    "fuente": "F-INF §8.3 (D-01)"
+   },
+   {
+    "id": "A-23",
+    "afirmacion": "Existen cuatro versiones del lugar de calibración",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "CONTRADICTORIO",
+    "fuente": "F-E3, E3-P09, E3-P15, Paso 1 y Paso 6"
+   },
+   {
+    "id": "A-24",
+    "afirmacion": "La suma ponderada de E3-P14 arroja 0,795; 0,535; 0,460 y 0,325",
+    "naturaleza": "DOCUMENTADO",
+    "verificacion": "VERIFICADO: aritmética recalculada; pesos SUPUESTO y utilidades sin evidencia",
+    "fuente": "F-E3, E3-P14"
+   },
+   {
+    "id": "A-25",
+    "afirmacion": "Instrumentos de financiación y reglas fiscales aplicables",
+    "naturaleza": "INFERIDO",
+    "verificacion": "NO_VERIFICADO: CANDIDATO_A_VERIFICAR",
+    "fuente": "Conocimiento externo"
+   }
+  ],
+  "4_productos": {
+   "FD-01": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "FD-01",
+    "fase": "F1",
+    "nombre": "Ficha de construcción y diagnóstico",
+    "pieza": "4.4-MDR.3",
+    "pregunta_rectora": "¿Qué fenómeno existe, cómo se representa y en qué dominio causal se ubica?",
+    "delimitacion": {
+     "territorio": "SUPUESTO",
+     "horizonte_meses": 36,
+     "unidad_decisora": "Equipo formulador (POR_IDENTIFICAR)"
+    },
+    "representacion_dominante": "Limitación técnica de medición y comunicaciones (F-E3, E3-P07)",
+    "marcos_rivales": [
+     "Control en la fuente y salud ocupacional",
+     "Gestión del riesgo de desastres como servicio",
+     "Metrología y acreditación"
+    ],
+    "restricciones_normativas": {
+     "tope_14000_millones": "DECLARADO; NO_VERIFICADO",
+     "derecho_salud_ambiente": "CANDIDATO_A_VERIFICAR",
+     "competencia_gestion_riesgo": "CANDIDATO_A_VERIFICAR"
+    },
+    "C1": "NO_CUMPLE",
+    "C2": "CUMPLE_CON_RESERVA",
+    "C3": "CUMPLE",
+    "C4": "NO_CUMPLE",
+    "clasificacion_estructura": "PARCIALMENTE_ESTRUCTURADO",
+    "rasgos_perversos": "NO_ACTIVADO",
+    "escala": "PROBLEMA_PUBLICO (INFERIDO)",
+    "dominio": {
+     "medicion_con_correccion_local": "COMPLICADO",
+     "adopcion_y_custodia": "COMPLEJO",
+     "naturaleza": "INFERIDO"
+    },
+    "vacios": [
+     "Línea base de error",
+     "TdR",
+     "Fórmula local del índice (V-AQHI-01)",
+     "Población expuesta"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Vacíos no impiden clasificar; condicionan el uso",
+    "reentradas": []
+   },
+   "AE-02": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "AE-02",
+    "fase": "F2",
+    "nombre": "Ficha de entorno",
+    "pieza": "4.4-MDR.4",
+    "condicionantes": [
+     "Humedad y polvo higroscópico",
+     "Maquinaria de remoción",
+     "Infraestructura colapsada",
+     "Estaciones de referencia (cobertura VACIO)",
+     "Tope de 14.000 millones",
+     "Capacidad local"
+    ],
+    "reglas_formales": [
+     "TdR (VACIO)",
+     "Normas de gestión del riesgo (CANDIDATO_A_VERIFICAR)",
+     "Anualidad presupuestal (CANDIDATO_A_VERIFICAR)",
+     "Propiedad industrial (F-INF §8.3)"
+    ],
+    "reglas_informales": [
+     "Compra de sensores sin plan de calibración (F-INF §6.5)",
+     "Equipos en bodegas municipales (F-E3; NO_VERIFICADO)"
+    ],
+    "estrategias_favorecidas": [
+     "Novedad tecnológica visible",
+     "Entrega de activos antes que servicios",
+     "Asignación de operación en la matriz de responsabilidades"
+    ],
+    "estrategias_penalizadas": [
+     "Piloto previo y compra por tramos",
+     "Control de polvo en la fuente"
+    ],
+    "restricciones_de_continuidad": [
+     "Anualidad presupuestal",
+     "Calendario electoral (oct. 2027; posesión ene. 2028)",
+     "Rotación de personal",
+     "Plazos de liquidación",
+     "Vencimientos de propiedad industrial"
+    ],
+    "vacios": [
+     "Cobertura de referencias",
+     "Reglas del instrumento sobre gasto recurrente",
+     "Calendario real de inicio"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "TdR ausentes",
+    "reentradas": []
+   },
+   "MA-03": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "MA-03",
+    "fase": "F3",
+    "nombre": "Mapa de actores",
+    "pieza": "4.4-MDR.5",
+    "actores": 12,
+    "relevancia": "NO_EVALUADO salvo el convocante (poder ALTO, DECLARADO)",
+    "capacidad_de_custodia_preliminar": "VACIO",
+    "juego": {
+     "jugadores": "Dos entidades territoriales",
+     "pagos_ordinales": "(3,3),(1,4),(4,1),(2,2)",
+     "equilibrio": "(N, N)",
+     "naturaleza": "INFERIDO",
+     "fuente": "F-INF §6.5"
+    },
+    "red_de_actores": "NO_APLICA: sin datos relacionales",
+    "vacios": [
+     "Compromisos escritos",
+     "Poder, legitimidad y urgencia con evidencia",
+     "Participación de afectados"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Relevancia sin evidencia",
+    "reentradas": []
+   },
+   "EN-04": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "EN-04",
+    "fase": "F4",
+    "nombre": "Ficha de encuadre",
+    "pieza": "4.4-MDR.6",
+    "E1": "MEDIO en medición; BAJO en adopción y custodia",
+    "E2": "INCREMENTAL en medición; ESTRUCTURAL en custodia",
+    "E3": "MEDIO",
+    "E4": "PARCIALMENTE_REVERSIBLE",
+    "cuadrante_MBL": {
+     "medicion": "Frontera Q1-Q3",
+     "custodia": "Q4"
+    },
+    "cuadrante_MTT": "Frontera T3-T4",
+    "contraste_dominio": "Coherente en ambas partes",
+    "modelos_compatibles": [
+     "Exploración mixta",
+     "Racionalidad limitada (con reserva)",
+     "Estructuración participativa (solo custodia)"
+    ],
+    "modelo_seleccionado": "Exploración mixta",
+    "modelo_rival": "Racionalidad limitada y satisfacción",
+    "tensiones": [
+     "Modelo adecuado técnicamente y penalizado por la selectividad estratégica y el calendario electoral"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Ejes INFERIDOS; tensión abierta",
+    "reentradas": []
+   },
+   "ME-05": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "ME-05",
+    "fase": "F5",
+    "nombre": "Ficha de alternativas y método",
+    "pieza": "4.4-MDR.7",
+    "criterios_registrados": {
+     "version": "1.0",
+     "criterios": [
+      "CR-1",
+      "CR-2",
+      "CR-3",
+      "CR-4",
+      "CR-5",
+      "CR-6"
+     ]
+    },
+    "alternativas": [
+     "R0",
+     "R1",
+     "R2",
+     "R3",
+     "R4",
+     "R5"
+    ],
+    "metodo_id": "MDR-MT04 (matriz de compensaciones)",
+    "insumos": {
+     "desempeños": "INFERIDO; NO_VERIFICADO",
+     "probabilidades": "VACIO",
+     "utilidades": "VACIO",
+     "pesos": "VACIO"
+    },
+    "procedimiento": "Matriz sin agregación y revisión de dominancia",
+    "resultado": "Sin dominancia confirmada; sin ganador",
+    "sensibilidad": "Condiciones de elección cualitativas",
+    "umbral_de_cambio": "NO_CALCULABLE",
+    "heuristicas": "Ninguna aplicada",
+    "auditoria_de_sesgos": {
+     "detectados_decisor": [
+      "B1",
+      "B2",
+      "B4",
+      "B5",
+      "B6",
+      "B8"
+     ],
+     "no_detectado": [
+      "B3"
+     ],
+     "no_evaluado": [
+      "B7"
+     ]
+    },
+    "limites": [
+     "Suma ponderada de E3 conservada como dato; no es ganador",
+     "CR-5 NO_EVALUADO"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Sin dominancia ni probabilidades",
+    "reentradas": []
+   },
+   "TC-06": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "TC-06",
+    "fase": "F6",
+    "nombre": "Teoría del cambio",
+    "pieza": "4.4-MDR.8",
+    "impacto": "Operarios y comunidades protegidos por alertas basadas en mediciones verificadas",
+    "horizonte_meses": 36,
+    "niveles": [
+     "Productos",
+     "Resultados inmediatos",
+     "Resultados intermedios",
+     "Impacto"
+    ],
+    "nodos": 11,
+    "relaciones": 12,
+    "supuestos": {
+     "SC-1": "SUPUESTO",
+     "SC-2": "SUPUESTO",
+     "SC-3": "SUPUESTO",
+     "SC-4": "SUPUESTO"
+    },
+    "techo": "Después de los resultados inmediatos",
+    "dominio": "COMPLICADO y COMPLEJO",
+    "arquitectura": "Anidada",
+    "arquitectura_rival": "Sistémica (rechazada para la medición; reexaminar con el piloto)",
+    "celda_de_desajuste": [
+     "MDR-MX-CO-A: ADECUADA",
+     "MDR-MX-CX-A: ADMISIBLE_CON_AJUSTE"
+    ],
+    "efectos_por_dimension": 6,
+    "marcos_de_cambio": {
+     "incentivos": "Economía política y arquitectura de decisiones",
+     "habilidad y refuerzo": "ADKAR",
+     "estándar de calibración": "PDCA"
+    },
+    "traduccion_a_formatos": "CANDIDATO_A_VERIFICAR",
+    "vacios": [
+     "Evidencia primaria de SC-2 y SC-3",
+     "Cobertura de referencias"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Supuestos SUPUESTO sin verificación",
+    "reentradas": []
+   },
+   "AR-07": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "AR-07",
+    "fase": "F7",
+    "nombre": "Ficha de argumento",
+    "pieza": "4.4-MDR.9",
+    "Q": "CONDICIONALMENTE",
+    "PA": {
+     "PA-1": "CUMPLE para I(1), I(2), I(5); NO_CUMPLE para I(3), I(4)",
+     "PA-2": "CUMPLE",
+     "PA-3": "NO_EJECUTADO",
+     "PA-4": "CUMPLE",
+     "PA-5": "CUMPLE",
+     "PA-6": "CUMPLE"
+    },
+    "supuestos_validados": {
+     "SC-1": "CONDICIONALMENTE",
+     "SC-2": "PLAUSIBLEMENTE",
+     "SC-3": "PLAUSIBLEMENTE",
+     "SC-4": "CONDICIONALMENTE"
+    },
+    "evaluador": "Ninguno independiente",
+    "autorrevision": true,
+    "argumento_sostenibilidad": {
+     "continuidad_tras_mes_24": "NO_SOSTENIDO",
+     "alcaldias_asumen_opex": "NO_SOSTENIDO",
+     "preservacion_con_clausula_de_apertura": "CONDICIONALMENTE"
+    },
+    "reentradas": [],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "PA-3 no ejecutada; objeciones abiertas"
+   },
+   "SP-08": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "SP-08",
+    "fase": "F8",
+    "nombre": "Arquitectura de sostenibilidad posproyecto",
+    "pieza": "4.4-MDR.10",
+    "evidencia_de_antecedentes": "DECLARADO por el usuario; evidencia parcial en redes de monitoreo (F-INF)",
+    "componentes": 9,
+    "CTS_anual": "NO_CALCULABLE",
+    "cota_inferior_declarada_millones_COP": [
+     190.0,
+     208.25,
+     226.9125
+    ],
+    "NMSV": "PROPUESTO; costo NO_CALCULABLE",
+    "CTS_min": "NO_CALCULABLE",
+    "ICAR": "NO_CALCULABLE para siete candidatos",
+    "asignacion_de_custodia": "POR_DEFINIR con ICAR",
+    "portafolio_declarado_F_E3": {
+     "participaciones_anio1": {
+      "OpEx nube e IoT": 0.23684210526315788,
+      "Mantenimiento FRU": 0.13157894736842105,
+      "Personal técnico y soporte de algoritmos": 0.631578947368421
+     },
+     "max_participacion": [
+      0.631578947368421,
+      0.6050420168067226,
+      0.5830441249380268
+     ],
+     "HHI": [
+      0.47229916897506924,
+      0.44580185015182544,
+      0.4270731504079479
+     ]
+    },
+    "fondo_patrimonial": "NO_CALCULABLE",
+    "prueba_de_orfandad": {
+     "umbral_costo_minimo_anio1_millones": {
+      "OpEx nube e IoT": 145.0,
+      "Mantenimiento FRU": 165.0,
+      "Personal técnico y soporte de algoritmos": 70.0
+     },
+     "estado": "CONDICIONAL"
+    },
+    "tramos": 4,
+    "clausula_de_apertura": "PROPUESTA; licencia VACIO",
+    "gobernanza": "PROPUESTA",
+    "instrumentos_verificados": "NINGUNO: CANDIDATO_A_VERIFICAR",
+    "vacios": [
+     "CTS completo",
+     "ICAR",
+     "r_real",
+     "Costos por componente",
+     "Evidencia de continuidad de proyectos con regalías"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "ICAR y costo mínimo ausentes; reabrir F8 y F5 cuando existan",
+    "reentradas": []
+   },
+   "AA-09": {
+    "case_id": "SGR_CONV56_AIRE",
+    "version": "1.0",
+    "estado": "BORRADOR_CON_VACIOS",
+    "fuentes": [
+     "F-INF",
+     "F-E3",
+     "PLANTILLA_VM",
+     "SECCION_4_3",
+     "SECCION_4_4",
+     "RESULTADOS_4_4",
+     "FICHAS_PARITARIAS"
+    ],
+    "object_id": "AA-09",
+    "fase": "F9",
+    "nombre": "Plan de ejecución, evaluación y aprendizaje",
+    "pieza": "4.4-MDR.11",
+    "hipotesis_de_intervencion": "Si se ejecuta R4 durante 24 meses, en 36 meses se espera una diferencia detectable del logaritmo del error normalizado y al menos un tramo de custodia recibido",
+    "estrategia": "Piloto como producto de conocimiento; tramos como evidencia de alianza",
+    "indicadores": [
+     "Logaritmo del error normalizado por nodo-semana"
+    ],
+    "linea_base": "VACIO",
+    "umbrales": {
+     "detencion_R4": "PROPUESTO",
+     "disponibilidad_menor_80_por_ciento_tres_meses": "PROPUESTO; sin fuente",
+     "falsas_alarmas": "PROPUESTO"
+    },
+    "ruta_evaluativa": {
+     "efecto_del_metodo": "RE-1",
+     "adopcion": "RE-2",
+     "contribucion": "RE-4",
+     "QCA": "NO_APLICA",
+     "cosecha": "NO_APLICA"
+    },
+    "supuestos_priorizados": [
+     "SC-2",
+     "SC-3",
+     "SC-1"
+    ],
+    "frecuencia_de_revision": "Trimestral en adopción y custodia; anual en medición",
+    "responsable": "RESPONSABLE_POR_DESIGNAR",
+    "consecuencias_no_deseadas": 5,
+    "punto_de_reversion": "Hito 2 (mes 12)",
+    "prueba_piloto": "Sorteo semanal; 52 semanas; 100 nodos y 20 % de repuestos",
+    "vacios": [
+     "Línea base",
+     "Actualización remota de nodos",
+     "Responsable"
+    ],
+    "puerta": "AVANZA_CON_RESERVA",
+    "motivo_puerta": "Línea base y responsable ausentes",
+    "reentradas": []
+   }
+  },
+  "5_calculos": {
+   "VE_arbol_decision": {
+    "estado": "NO_CALCULABLE",
+    "motivo": "Sin probabilidades ni utilidades con fuente",
+    "estructura": "VE = p1·[p2·(p3·(p4·v5 + (1 − p4)·v4) + (1 − p3)·v3) + (1 − p2)·v2] + (1 − p1)·v1"
+   },
+   "umbrales_SC": {
+    "estado": "NO_CALCULABLE",
+    "criticidad_para_la_decision": "NO_CALCULABLE"
+   },
+   "ICAR": {
+    "estado": "NO_CALCULABLE",
+    "motivo": "Mínimo de seis dimensiones sin evidencia",
+    "regla": "Eslabón débil sin compensación"
+   },
+   "CTS": {
+    "formula": "CTS anual = operación + personal + licencias + mantenimiento + reposición + gobernanza",
+    "estado": "NO_CALCULABLE",
+    "cota_inferior_declarada_millones_COP": {
+     "anio1": 190.0,
+     "anio2": 208.25,
+     "anio3": 226.9125
+    },
+    "naturaleza": "DECLARADO (F-E3, Tabla 14.2)",
+    "verificacion": "NO_VERIFICADO"
+   },
+   "portafolio_HHI": {
+    "formula": "HHI = suma de los cuadrados de las participaciones",
+    "rotulo": "CALCULADO sobre cifras NO_VERIFICADAS",
+    "anios": [
+     {
+      "anio": 1,
+      "cts_parcial": 190.0,
+      "participaciones": {
+       "OpEx nube e IoT": 0.23684210526315788,
+       "Mantenimiento FRU": 0.13157894736842105,
+       "Personal técnico y soporte de algoritmos": 0.631578947368421
+      },
+      "max_participacion": 0.631578947368421,
+      "hhi": 0.47229916897506924,
+      "suma_de_las_demas": {
+       "OpEx nube e IoT": 145.0,
+       "Mantenimiento FRU": 165.0,
+       "Personal técnico y soporte de algoritmos": 70.0
+      },
+      "umbral_cts_min_para_critica": {
+       "OpEx nube e IoT": 145.0,
+       "Mantenimiento FRU": 165.0,
+       "Personal técnico y soporte de algoritmos": 70.0
+      }
+     },
+     {
+      "anio": 2,
+      "cts_parcial": 208.25,
+      "participaciones": {
+       "OpEx nube e IoT": 0.226890756302521,
+       "Mantenimiento FRU": 0.16806722689075632,
+       "Personal técnico y soporte de algoritmos": 0.6050420168067226
+      },
+      "max_participacion": 0.6050420168067226,
+      "hhi": 0.44580185015182544,
+      "suma_de_las_demas": {
+       "OpEx nube e IoT": 161.0,
+       "Mantenimiento FRU": 173.25,
+       "Personal técnico y soporte de algoritmos": 82.25
+      },
+      "umbral_cts_min_para_critica": {
+       "OpEx nube e IoT": 161.0,
+       "Mantenimiento FRU": 173.25,
+       "Personal técnico y soporte de algoritmos": 82.25
+      }
+     },
+     {
+      "anio": 3,
+      "cts_parcial": 226.9125,
+      "participaciones": {
+       "OpEx nube e IoT": 0.21864154685176004,
+       "Mantenimiento FRU": 0.1983143282102132,
+       "Personal técnico y soporte de algoritmos": 0.5830441249380268
+      },
+      "max_participacion": 0.5830441249380268,
+      "hhi": 0.4270731504079479,
+      "suma_de_las_demas": {
+       "OpEx nube e IoT": 177.3,
+       "Mantenimiento FRU": 181.9125,
+       "Personal técnico y soporte de algoritmos": 94.6125
+      },
+      "umbral_cts_min_para_critica": {
+       "OpEx nube e IoT": 177.3,
+       "Mantenimiento FRU": 181.9125,
+       "Personal técnico y soporte de algoritmos": 94.6125
+      }
+     }
+    ]
+   },
+   "prueba_de_orfandad": {
+    "regla": "Fuente CRITICA si la suma de las demás es menor que el costo mínimo",
+    "costo_minimo": "NO_CALCULABLE",
+    "umbrales_anio1_millones_COP": {
+     "OpEx nube e IoT": 145.0,
+     "Mantenimiento FRU": 165.0,
+     "Personal técnico y soporte de algoritmos": 70.0
+    }
+   },
+   "fondo_patrimonial": {
+    "formula": "K = CTS cubierto / r_real",
+    "estado": "NO_CALCULABLE",
+    "motivo": "Sin CTS completo ni r_real con fuente"
+   },
+   "sensibilidad": "Condiciones de elección cualitativas (4.4-MDR.7)"
+  },
+  "6_comprobaciones": {
+   "arboles": {
+    "cierres_svg_por_archivo": {
+     "ARBOL_1": 1,
+     "ARBOL_4": 1,
+     "ARBOL_5": 1
+    },
+    "auditor": "Ver CONTROL_MDR",
+    "revision_visual": "EJECUTADA con navegador; etiqueta SC-3 de R3 a I1 cruza el techo con fondo blanco"
+   },
+   "matriz_K01_K32": [
+    {
+     "id": "K01",
+     "nombre": "Delimitación",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3",
+     "metodo": "Lectura contra D1",
+     "evidencia": "Tabla de delimitación; problema como estado observable separado de la solución preferida",
+     "limitacion": "La línea base del estado descrito es VACIO"
+    },
+    {
+     "id": "K02",
+     "nombre": "Construcción discursiva",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3",
+     "metodo": "Lectura contra D2",
+     "evidencia": "Cuatro preguntas respondidas; tres marcos rivales con portador",
+     "limitacion": "Los marcos rivales no tienen evidencia verificada"
+    },
+    {
+     "id": "K03",
+     "nombre": "Núcleo normativo",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3",
+     "metodo": "Lectura contra D3",
+     "evidencia": "Cada restricción cita fuente o portador; las no citables se rotulan preferencia o CANDIDATO_A_VERIFICAR",
+     "limitacion": "Los TdR no se aportaron: ninguna norma se verificó"
+    },
+    {
+     "id": "K04",
+     "nombre": "Estructura y escala",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3",
+     "metodo": "C1–C4 evaluadas con evidencia",
+     "evidencia": "Tabla de C1–C4; escala PROBLEMA_PUBLICO",
+     "limitacion": "La escala se infiere sin alcance poblacional (VACIO)"
+    },
+    {
+     "id": "K05",
+     "nombre": "Entorno",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.4",
+     "metodo": "Lectura contra N1–N4",
+     "evidencia": "Reglas formales con fuente, informales con evidencia y selectividad estratégica",
+     "limitacion": "Las reglas formales aplicables son VACIO o CANDIDATO_A_VERIFICAR"
+    },
+    {
+     "id": "K06",
+     "nombre": "Actores",
+     "estado": "NO_CUMPLE",
+     "objeto": "4.4-MDR.5",
+     "metodo": "Lectura contra A1–A3",
+     "evidencia": "Tipología y lógicas de acción registradas",
+     "limitacion": "La relevancia (poder, legitimidad, urgencia) quedó NO_EVALUADO para cuatro de cinco actores evaluados"
+    },
+    {
+     "id": "K07",
+     "nombre": "Interdependencia",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.5",
+     "metodo": "Forma de juego con supuestos declarados",
+     "evidencia": "Juego de bien público con pagos ordinales de F-INF §6.5",
+     "limitacion": "Pagos ordinales adoptados por analogía; no verificados"
+    },
+    {
+     "id": "K08",
+     "nombre": "Ejes de encuadre",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.6",
+     "metodo": "E1–E4 puntuados antes de seleccionar el modelo",
+     "evidencia": "Tabla de ejes con evidencia",
+     "limitacion": "Los valores son INFERIDO"
+    },
+    {
+     "id": "K09",
+     "nombre": "Selección del modelo",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.6",
+     "metodo": "Condiciones de cada modelo contrastadas",
+     "evidencia": "Modelo seleccionado, rival y tensión registrados",
+     "limitacion": "Las condiciones dependen de ejes INFERIDOS"
+    },
+    {
+     "id": "K10",
+     "nombre": "Alternativas",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.7",
+     "metodo": "Recuento y origen",
+     "evidencia": "Seis alternativas; R4 y R5 diseñadas bajo PD-0",
+     "limitacion": "R5 sin evidencia aportada"
+    },
+    {
+     "id": "K11",
+     "nombre": "Criterios previos",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.7",
+     "metodo": "Registro con versión 1.0 antes de la matriz",
+     "evidencia": "Seis criterios con aspiraciones",
+     "limitacion": "Varias aspiraciones son VACIO"
+    },
+    {
+     "id": "K12",
+     "nombre": "Ejecución del método",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.7",
+     "metodo": "Matriz de compensaciones ejecutada; demás métodos con estado",
+     "evidencia": "Matriz sin agregación; métodos no ejecutados con motivo",
+     "limitacion": "El resultado no designa ganador"
+    },
+    {
+     "id": "K13",
+     "nombre": "Reproducibilidad aritmética",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Recálculo con fracciones exactas",
+     "evidencia": "Participaciones, HHI y umbrales de orfandad recalculables",
+     "limitacion": "Las cifras de entrada son NO_VERIFICADO"
+    },
+    {
+     "id": "K14",
+     "nombre": "Sensibilidad",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.7",
+     "metodo": "Declaración de NO_CALCULABLE conforme a la regla de integración",
+     "evidencia": "Condiciones de elección cualitativas; umbral NO_CALCULABLE",
+     "limitacion": "Sin umbral numérico"
+    },
+    {
+     "id": "K15",
+     "nombre": "Auditoría de sesgos",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.7",
+     "metodo": "B1–B8 por decisor y por analista y modelo",
+     "evidencia": "Tabla de sesgos con estado",
+     "limitacion": "B7 NO_EVALUADO"
+    },
+    {
+     "id": "K16",
+     "nombre": "Paquete de árboles",
+     "estado": "CUMPLE",
+     "objeto": "ARBOL_1 y ARBOL_4",
+     "metodo": "Auditor mecánico y render con navegador",
+     "evidencia": "Dos SVG completos con comprobaciones superadas",
+     "limitacion": "El auditor no verifica evidencia ni todo el solapamiento visual"
+    },
+    {
+     "id": "K17",
+     "nombre": "Argumento completo",
+     "estado": "NO_CUMPLE",
+     "objeto": "4.4-MDR.9",
+     "metodo": "Siete elementos y pruebas PA-1 a PA-6",
+     "evidencia": "Siete elementos con estado; cinco pruebas con resultado",
+     "limitacion": "La prueba de respaldo es NO_EJECUTADO"
+    },
+    {
+     "id": "K18",
+     "nombre": "Control grupal",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.9",
+     "metodo": "Declaración",
+     "evidencia": "AUTORREVISION declarada; objeciones abiertas conservadas",
+     "limitacion": "No hubo evaluador independiente"
+    },
+    {
+     "id": "K19",
+     "nombre": "Sostenibilidad: costos",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Fórmula y vacíos declarados",
+     "evidencia": "CTS, NMSV y costo mínimo declarados NO_CALCULABLE con cota inferior parcial",
+     "limitacion": "Tres de seis rubros"
+    },
+    {
+     "id": "K20",
+     "nombre": "Sostenibilidad: receptores",
+     "estado": "NO_CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Regla del eslabón débil sin compensación",
+     "evidencia": "Siete candidatos con evidencia disponible",
+     "limitacion": "Sin evidencia por dimensión: ICAR NO_CALCULABLE"
+    },
+    {
+     "id": "K21",
+     "nombre": "Sostenibilidad: financiación",
+     "estado": "NO_CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Cálculo sobre cifras de F-E3",
+     "evidencia": "Participación máxima y HHI de tres años",
+     "limitacion": "Fondo patrimonial NO_CALCULABLE; portafolio no es diseño propio"
+    },
+    {
+     "id": "K22",
+     "nombre": "Prueba de orfandad",
+     "estado": "NO_CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Umbral por fuente",
+     "evidencia": "Umbrales de costo mínimo por fuente",
+     "limitacion": "El costo mínimo falta: la prueba es condicional"
+    },
+    {
+     "id": "K23",
+     "nombre": "Tramos y salida",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.10",
+     "metodo": "Lectura contra SP8–SP10",
+     "evidencia": "Cuatro tramos, cláusula de apertura y gobernanza",
+     "limitacion": "Hitos PROPUESTOS"
+    },
+    {
+     "id": "K24",
+     "nombre": "Plan adaptativo",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.11",
+     "metodo": "Lectura contra las reglas de ejecución",
+     "evidencia": "Hipótesis, consecuencias, umbrales con naturaleza y punto de reversión",
+     "limitacion": "Umbrales PROPUESTOS"
+    },
+    {
+     "id": "K25",
+     "nombre": "Redacción y separación",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR y expediente",
+     "metodo": "Revisión mecánica parcial de longitud de oración, palabras de énfasis y citas, y lectura",
+     "evidencia": "Oraciones de más de 25 palabras solo en supuestos SI-ENTONCES-PORQUE y referencias; ninguna palabra de énfasis; entregable sin códigos de puerta; expediente separado",
+     "limitacion": "Verificador oficial verificador_ntc.py NO_EJECUTADO; concordancia, tildes y gerundios revisados por lectura"
+    },
+    {
+     "id": "K26",
+     "nombre": "Correcciones a la fuente",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3, .6, .8 y .9",
+     "metodo": "Lectura contra CF-01 a CF-34",
+     "evidencia": "Cinco dominios; Smalley sin uso clasificatorio; término «techo» como convención; Dunn como adaptación de Toulmin",
+     "limitacion": "Referencias NO_VERIFICADO_EN_ESTA_CORRIDA"
+    },
+    {
+     "id": "K27",
+     "nombre": "Dominio causal",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.3",
+     "metodo": "D8 con evidencia y naturaleza",
+     "evidencia": "Dos partes clasificadas; observación que cambiaría la clasificación",
+     "limitacion": "INFERIDO"
+    },
+    {
+     "id": "K28",
+     "nombre": "Arquitectura y efectos",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.8",
+     "metodo": "Matriz de desajuste y de efectos",
+     "evidencia": "Celdas, arquitectura rival rechazada y efectos por dimensión",
+     "limitacion": "Celdas PROPUESTAS"
+    },
+    {
+     "id": "K29",
+     "nombre": "Supuestos y techo",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.8",
+     "metodo": "Supuestos SI-ENTONCES-PORQUE completos",
+     "evidencia": "Cuatro supuestos con mecanismo; techo trazado",
+     "limitacion": "Naturaleza SUPUESTO"
+    },
+    {
+     "id": "K30",
+     "nombre": "Acoplamiento árbol-TdC",
+     "estado": "NO_CUMPLE",
+     "objeto": "ARBOL_1 y ARBOL_4",
+     "metodo": "Auditor mecánico",
+     "evidencia": "SC-1 a SC-4 compartidos; niveles en resultados",
+     "limitacion": "Criticidad de los supuestos NO_CALCULABLE"
+    },
+    {
+     "id": "K31",
+     "nombre": "Emisión de árboles",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.2",
+     "metodo": "Auditor de orden de emisión y recuento de raíces SVG",
+     "evidencia": "Árboles tras la síntesis; dos raíces SVG; desc no vacío; rol declarado",
+     "limitacion": "Verifica orden editorial, no calidad"
+    },
+    {
+     "id": "K32",
+     "nombre": "Evaluación y bucle doble",
+     "estado": "CUMPLE",
+     "objeto": "4.4-MDR.11",
+     "metodo": "Recorrido de la ruta evaluativa con la pregunta real",
+     "evidencia": "Tres rutas elegidas y dos descartadas con motivo; revisión de supuestos programada",
+     "limitacion": "Frecuencias PROPUESTAS"
+    }
+   ],
+   "resumen_K": {
+    "CUMPLE": 26,
+    "NO_CUMPLE": 6
+   },
+   "senales_S01_S40": [
+    {
+     "id": "S01",
+     "nombre": "Solución disfrazada de problema",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "La causa raíz del expediente E3 es una arquitectura; 4.4-MDR.3 reformula el problema como estado observable"
+    },
+    {
+     "id": "S02",
+     "nombre": "Representación única",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Tres marcos rivales registrados"
+    },
+    {
+     "id": "S03",
+     "nombre": "Norma sin fuente",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Restricciones rotuladas como preferencia o CANDIDATO_A_VERIFICAR"
+    },
+    {
+     "id": "S04",
+     "nombre": "Valor tratado como hecho",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Juicios de valor divergentes conservados con portador"
+    },
+    {
+     "id": "S05",
+     "nombre": "Estructura sin criterio",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "C1–C4 con evidencia"
+    },
+    {
+     "id": "S06",
+     "nombre": "Entorno ignorado",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "N1–N4 ejecutados antes del encuadre"
+    },
+    {
+     "id": "S07",
+     "nombre": "Teoría de juegos sin pagos",
+     "en_F_E3": "NO_ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Pagos ordinales declarados y reacciones como anticipación cualitativa"
+    },
+    {
+     "id": "S08",
+     "nombre": "Modelo elegido antes de los ejes",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Ejes puntuados antes de seleccionar el modelo"
+    },
+    {
+     "id": "S09",
+     "nombre": "Sinóptico sin requisitos",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "La racionalidad sinóptica se descartó por incumplir condiciones"
+    },
+    {
+     "id": "S10",
+     "nombre": "Método nombrado, no ejecutado",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Métodos no ejecutados con motivo y estado"
+    },
+    {
+     "id": "S11",
+     "nombre": "Probabilidades inventadas",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Ninguna probabilidad asignada; árbol cualitativo"
+    },
+    {
+     "id": "S12",
+     "nombre": "Criterio posterior",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Criterios versión 1.0 registrados antes"
+    },
+    {
+     "id": "S13",
+     "nombre": "Sesgos solo del otro",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Auditoría extendida al analista y al modelo"
+    },
+    {
+     "id": "S14",
+     "nombre": "Árbol ausente",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Árboles emitidos tras la síntesis"
+    },
+    {
+     "id": "S15",
+     "nombre": "Árbol con cifras inventadas",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Modalidad cualitativa"
+    },
+    {
+     "id": "S16",
+     "nombre": "Árbol no editable",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Texto editable, grupos con id"
+    },
+    {
+     "id": "S17",
+     "nombre": "Calificador desproporcionado",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Calificadores CONDICIONALMENTE y PLAUSIBLEMENTE"
+    },
+    {
+     "id": "S18",
+     "nombre": "Refutación vacía",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Cuatro condiciones observables de refutación"
+    },
+    {
+     "id": "S19",
+     "nombre": "Panel simulado",
+     "en_F_E3": "NO_ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "AUTORREVISION declarada"
+    },
+    {
+     "id": "S20",
+     "nombre": "Sostenibilidad omitida",
+     "en_F_E3": "NO_ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "4.4-MDR.10 ejecutada"
+    },
+    {
+     "id": "S21",
+     "nombre": "Receptor público supuesto",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Premisa de diseño sin receptor único; ICAR sin valor por defecto"
+    },
+    {
+     "id": "S22",
+     "nombre": "Compensación en ICAR",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Regla del eslabón débil"
+    },
+    {
+     "id": "S23",
+     "nombre": "Fuente financiera crítica",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "ACTIVADA_CONDICIONAL",
+     "tratamiento": "El portafolio declarado en F-E3 resulta crítico si el costo mínimo supera 70 millones; reabre custodia y motor financiero cuando exista el costo mínimo"
+    },
+    {
+     "id": "S24",
+     "nombre": "Instrumento no verificado",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "ACTIVADA",
+     "tratamiento": "Instrumentos rotulados CANDIDATO_A_VERIFICAR"
+    },
+    {
+     "id": "S25",
+     "nombre": "Antecedentes inventados",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Antecedentes con fuente o DECLARADO"
+    },
+    {
+     "id": "S26",
+     "nombre": "Salida ordenada ausente",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Cláusula de apertura y manual de reactivación"
+    },
+    {
+     "id": "S27",
+     "nombre": "Umbral inventado",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Umbrales marcados PROPUESTO"
+    },
+    {
+     "id": "S28",
+     "nombre": "Atribución corregida restituida",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Correcciones a la fuente aplicadas"
+    },
+    {
+     "id": "S29",
+     "nombre": "Andamiaje en el entregable",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Códigos de puerta, métricas y señales en el expediente"
+    },
+    {
+     "id": "S30",
+     "nombre": "Promesa de seguimiento",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Protocolo ejecutable por el responsable"
+    },
+    {
+     "id": "S31",
+     "nombre": "Árbol descrito y no dibujado",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "SVG completos"
+    },
+    {
+     "id": "S32",
+     "nombre": "Árbol al final",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Auditor de orden de emisión"
+    },
+    {
+     "id": "S33",
+     "nombre": "Descripción vacía",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "desc no vacío"
+    },
+    {
+     "id": "S34",
+     "nombre": "Arquitectura desajustada",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Matriz de desajuste aplicada"
+    },
+    {
+     "id": "S35",
+     "nombre": "Supuesto sin mecanismo",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Cuatro supuestos con PORQUE"
+    },
+    {
+     "id": "S36",
+     "nombre": "Azar sin código",
+     "en_F_E3": "NO_APLICA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Cada nodo de azar lleva SC-n"
+    },
+    {
+     "id": "S37",
+     "nombre": "Techo ausente",
+     "en_F_E3": "ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Metas sobre el techo reformuladas como contribución"
+    },
+    {
+     "id": "S38",
+     "nombre": "Marco de cambio sin cuello",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Eslabón identificado antes de elegir el marco"
+    },
+    {
+     "id": "S39",
+     "nombre": "Método evaluativo por prestigio",
+     "en_F_E3": "NO_EVALUADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Recorrido con la pregunta evaluativa"
+    },
+    {
+     "id": "S40",
+     "nombre": "Cita sin fuente convertida",
+     "en_F_E3": "NO_ACTIVADA",
+     "en_esta_corrida": "NO_ACTIVADA",
+     "tratamiento": "Citas secundarias rotuladas como tales"
+    }
+   ],
+   "AP_11_V": {
+    "RESULTADO": "NO_EJECUTADO",
+    "motivo": "No se realizó el conteo por unidad exigido. Se aplicó una revisión de marcadores auxiliar que no equivale a AP-11-V",
+    "revision_de_marcadores": "Ver CONTROL_MDR"
+   },
+   "RS_99": {
+    "estado": "EJECUTADA_PARCIAL",
+    "mecanico": [
+     "Oraciones de más de 25 palabras",
+     "Palabras de énfasis",
+     "Citas y referencias"
+    ],
+    "lectura": [
+     "Concordancia",
+     "Tildes diacríticas",
+     "Gerundios"
+    ],
+    "excepciones_aplicadas": [
+     "Supuestos SI-ENTONCES-PORQUE",
+     "Referencias",
+     "Fórmulas",
+     "Títulos nominales"
+    ],
+    "verificador_ntc.py": "NO_EJECUTADO"
+   },
+   "pruebas_de_rechazo": "NO_EJECUTADO: no se ejecutaron las pruebas de rechazo del metaprompt contra esta salida",
+   "validacion_empirica": "NO_EJECUTADA: comprensión, eficacia decisional y continuidad requieren casos reales"
+  },
+  "7_cierre": {
+   "F-01": "Autoauditoría: contrato e invariantes P1 a P4 con estado; K01–K32 con 26 CUMPLE y 6 NO_CUMPLE; árboles con comprobaciones mecánicas superadas y dos raíces SVG en archivos; señales revisadas; AP-11-V NO_EJECUTADO; RS-99 ejecutada de forma parcial; verificador_ntc.py NO_EJECUTADO; MDR 3.0, NTC 1.1; huellas comprobadas.",
+   "F-02": "Vacíos y contradicciones con efecto: ver 4.4-MDR.13 y open_items. Rutas: aportar TdR, adjudicar fichas, reunir evidencia de custodios, cotizar CTS completo, medir línea base, validar fórmula local, diseñar enlace alterno, fijar una definición de lugar de calibración, reconciliar presupuesto, consultar a operarios y comunidades, consultar propiedad industrial.",
+   "F-03": "Valor estratégico: habilita decidir entre despliegue por tramos con evidencia y compromiso en bloque con receptor supuesto, y ordena la revisión humana de cuatro supuestos. La utilidad es potencial; no se afirman ahorros ni impactos medidos.",
+   "F-04": {
+    "productos": [
+     "FD-01",
+     "AE-02",
+     "MA-03",
+     "EN-04",
+     "ME-05",
+     "TC-06",
+     "AR-07",
+     "SP-08",
+     "AA-09",
+     "A-DEC",
+     "A-TDC",
+     "A-PROB"
+    ],
+    "restricciones": [
+     "Todas las relaciones son HIE",
+     "Probabilidades y utilidades ausentes",
+     "Estado de entrega BORRADOR_CON_VACIOS"
+    ],
+    "pendientes": [
+     "V-TDR",
+     "V-FICHAS",
+     "V-ICAR",
+     "V-CTS",
+     "V-LB",
+     "V-AQHI",
+     "V-ENLACE",
+     "V-CAL",
+     "V-PPTO",
+     "V-COM",
+     "V-PCT"
+    ],
+    "siguiente_accion": "Sesión de revisión humana de SC-1 a SC-4 y de los 14 enlaces de mayor efecto; aportar TdR",
+    "condicion_de_aceptacion": "Revisión independiente de las fichas, de los supuestos y de la objeción principal, con acta",
+    "checkpoint": {
+     "estado": "BORRADOR_CON_VACIOS",
+     "seccion": "4.4-MDR y 4.5",
+     "siguiente": "Formalización del problema solo con autorización",
+     "autorizacion_E3_mutada": false
+    }
+   }
+  }
+ }
+}

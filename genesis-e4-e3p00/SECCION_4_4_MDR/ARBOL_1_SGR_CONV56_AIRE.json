@@ -1,0 +1,214 @@
+{
+ "tipo": "DECISION",
+ "rol": "A-DEC",
+ "titulo": "A-DEC: estrategia de resolución y custodia posproyecto de la red de vigilancia de material particulado",
+ "naturaleza": "PROPUESTO",
+ "fuente": "Sección 4.4 (escenario S2), E3-P00 a E3-P21 y MDR v3.0; probabilidades y utilidades no declaradas",
+ "pregunta": "¿Qué estrategia adopta el proyecto: no intervenir, transferir a un receptor público único o desplegar por tramos con custodia distribuida?",
+ "descripcion": "Árbol de decisión cualitativo con tres alternativas: R0 sin intervención, R3 transferencia al receptor público único y R4 despliegue por tramos bajo la premisa de diseño sin receptor público único. Cuatro supuestos críticos en cadena: SC-1 medición, SC-2 energía y enlace, SC-3 uso institucional y SC-4 custodia. Los resultados indican el nivel de la cadena alcanzado. Sin probabilidades ni utilidades declaradas, el valor esperado es NO_CALCULABLE y no se marca ninguna rama elegida.",
+ "raiz": {
+  "id": "D1",
+  "tipo": "DECISION",
+  "etiqueta": "Estrategia de resolución y custodia",
+  "hijos": [
+   {
+    "rama": "R4 Despliegue por tramos con piloto de contraste y custodia distribuida",
+    "nodo": {
+     "id": "A1",
+     "tipo": "AZAR",
+     "supuesto": "SC-1",
+     "etiqueta": "Medición: la corrección local reduce el error frente a la lectura sin corrección dinámica",
+     "hijos": [
+      {
+       "rama": "SC-1 se cumple",
+       "nodo": {
+        "id": "A2",
+        "tipo": "AZAR",
+        "supuesto": "SC-2",
+        "etiqueta": "Energía y enlace: nodos activos suficientes bajo maquinaria y humedad",
+        "hijos": [
+         {
+          "rama": "SC-2 se cumple",
+          "nodo": {
+           "id": "A3",
+           "tipo": "AZAR",
+           "supuesto": "SC-3",
+           "etiqueta": "Uso: autoridades adoptan umbrales de alerta validados en sus protocolos",
+           "hijos": [
+            {
+             "rama": "SC-3 se cumple",
+             "nodo": {
+              "id": "A4",
+              "tipo": "AZAR",
+              "supuesto": "SC-4",
+              "etiqueta": "Custodia: al menos un custodio por componente demuestra capacidad de absorción antes de cada tramo",
+              "hijos": [
+               {
+                "rama": "SC-4 se cumple",
+                "nodo": {
+                 "id": "AT5",
+                 "tipo": "TERMINAL",
+                 "etiqueta": "Servicio de vigilancia sostenido con custodia distribuida; protección contribuida con otros actores",
+                 "nivel_tdc": "IMPACTO",
+                 "resultado": "Valor no declarado (NO_CALCULABLE)"
+                }
+               },
+               {
+                "rama": "SC-4 falla",
+                "nodo": {
+                 "id": "AT4",
+                 "tipo": "TERMINAL",
+                 "etiqueta": "Uso institucional sin custodio demostrado; cláusula de apertura y servicio mínimo",
+                 "nivel_tdc": "RESULTADO_INTERMEDIO",
+                 "resultado": "Valor no declarado (NO_CALCULABLE)"
+                }
+               }
+              ]
+             }
+            },
+            {
+             "rama": "SC-3 falla",
+             "nodo": {
+              "id": "AT3",
+              "tipo": "TERMINAL",
+              "etiqueta": "Mediciones verificadas sin uso institucional; tramo siguiente condicionado a la adopción de umbrales",
+              "nivel_tdc": "RESULTADO_INMEDIATO",
+              "resultado": "Valor no declarado (NO_CALCULABLE)"
+             }
+            }
+           ]
+          }
+         },
+         {
+          "rama": "SC-2 falla",
+          "nodo": {
+           "id": "AT2",
+           "tipo": "TERMINAL",
+           "etiqueta": "Error reducido y verificado, con cobertura insuficiente; rediseño del enlace o la energía antes del segundo tramo",
+           "nivel_tdc": "RESULTADO_INMEDIATO",
+           "resultado": "Valor no declarado (NO_CALCULABLE)"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "rama": "SC-1 falla",
+       "nodo": {
+        "id": "AT1",
+        "tipo": "TERMINAL",
+        "etiqueta": "Expansión detenida tras el piloto; inversión limitada al primer tramo; conocimiento negativo documentado",
+        "nivel_tdc": "PRODUCTO",
+        "resultado": "Valor no declarado (NO_CALCULABLE)"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "rama": "R3 Red del E3 con transferencia a las alcaldías al mes 25 (receptor único)",
+    "nodo": {
+     "id": "B1",
+     "tipo": "AZAR",
+     "supuesto": "SC-1",
+     "etiqueta": "Medición: la corrección local reduce el error frente a la lectura sin corrección dinámica",
+     "hijos": [
+      {
+       "rama": "SC-1 se cumple",
+       "nodo": {
+        "id": "B2",
+        "tipo": "AZAR",
+        "supuesto": "SC-2",
+        "etiqueta": "Energía y enlace: nodos activos suficientes bajo maquinaria y humedad",
+        "hijos": [
+         {
+          "rama": "SC-2 se cumple",
+          "nodo": {
+           "id": "B3",
+           "tipo": "AZAR",
+           "supuesto": "SC-3",
+           "etiqueta": "Uso: autoridades adoptan umbrales de alerta validados en sus protocolos",
+           "hijos": [
+            {
+             "rama": "SC-3 se cumple",
+             "nodo": {
+              "id": "B4",
+              "tipo": "AZAR",
+              "supuesto": "SC-4",
+              "etiqueta": "Custodia: al menos un custodio por componente demuestra capacidad de absorción antes de cada tramo",
+              "hijos": [
+               {
+                "rama": "SC-4 se cumple",
+                "nodo": {
+                 "id": "BT5",
+                 "tipo": "TERMINAL",
+                 "etiqueta": "Servicio continuado con receptor público único; protección contribuida con otros actores",
+                 "nivel_tdc": "IMPACTO",
+                 "resultado": "Valor no declarado (NO_CALCULABLE)"
+                }
+               },
+               {
+                "rama": "SC-4 falla",
+                "nodo": {
+                 "id": "BT4",
+                 "tipo": "TERMINAL",
+                 "etiqueta": "Orfandad después del mes 24: la red queda sin receptor que la opere",
+                 "nivel_tdc": "RESULTADO_INTERMEDIO",
+                 "resultado": "Valor no declarado (NO_CALCULABLE)"
+                }
+               }
+              ]
+             }
+            },
+            {
+             "rama": "SC-3 falla",
+             "nodo": {
+              "id": "BT3",
+              "tipo": "TERMINAL",
+              "etiqueta": "Mediciones sin uso institucional con la inversión completa realizada",
+              "nivel_tdc": "RESULTADO_INMEDIATO",
+              "resultado": "Valor no declarado (NO_CALCULABLE)"
+             }
+            }
+           ]
+          }
+         },
+         {
+          "rama": "SC-2 falla",
+          "nodo": {
+           "id": "BT2",
+           "tipo": "TERMINAL",
+           "etiqueta": "Red parcialmente inoperante con la inversión completa realizada",
+           "nivel_tdc": "RESULTADO_INMEDIATO",
+           "resultado": "Valor no declarado (NO_CALCULABLE)"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "rama": "SC-1 falla",
+       "nodo": {
+        "id": "BT1",
+        "tipo": "TERMINAL",
+        "etiqueta": "Inversión completa comprometida sin evidencia de reducción del error; red desplegada",
+        "nivel_tdc": "PRODUCTO",
+        "resultado": "Valor no declarado (NO_CALCULABLE)"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "rama": "R0 Sin intervención del proyecto",
+    "nodo": {
+     "id": "C0",
+     "tipo": "TERMINAL",
+     "etiqueta": "Se mantiene la línea base: sensores aislados sin corrección dinámica ni custodia",
+     "nivel_tdc": "PRODUCTO",
+     "resultado": "Valor no declarado (NO_CALCULABLE)"
+    }
+   }
+  ]
+ }
+}

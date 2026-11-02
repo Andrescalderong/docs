@@ -1,0 +1,247 @@
+[
+ {
+  "key": "Adelantado2017",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Understanding the limits of LoRaWAN (IEEE Commun. Mag. 55(9), 34-40, DOI 10.1109/MCOM.2017.1600613) - https://arxiv.org/pdf/1607.08011 ; https://openaccess.uoc.edu/handle/10609/93072?locale=en",
+  "nota": "Autores, orden, año, revista, volumen/número, páginas y DOI coinciden. Los enlaces devueltos son el preprint de arXiv (2016) y el repositorio de la UOC; los datos de la versión IEEE los aportó la síntesis del buscador."
+ },
+ {
+  "key": "Hevner2004",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Design science in information systems research (MIS Quarterly 28(1), 75-105, marzo 2004) - https://experts.arizona.edu/en/publications/design-science-in-information-systems-research/",
+  "nota": "Coinciden título, autores, año, volumen/número y páginas. Una segunda búsqueda por DOI indica que 10.2307/25148625 corresponde a este artículo (28(1), 75-105)."
+ },
+ {
+  "key": "Cooper2008",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Perspective: The Stage-Gate Idea-to-Launch Process - Update, What's New, and NexGen Systems (J Prod Innov Manag 25(3), 213-232, mayo 2008, DOI 10.1111/j.1540-5885.2008.00296.x) - https://experts.mcmaster.ca/scholarly-works/319828 (entre los enlaces devueltos)",
+  "nota": "Volumen, número, páginas y DOI proceden de la síntesis del buscador, que cita el registro de Wiley; la página de Wiley no apareció como enlace directo, por lo que la atribución a una URL concreta es indirecta. Título y autor coinciden."
+ },
+ {
+  "key": "Davis1989",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology (MIS Quarterly 13(3), 319-340) - https://verdi.cs.ucl.ac.uk/constructDB/publications/davis-perceived-1989.html ; https://docs.edtechhub.org/lib/W4SUF2B4",
+  "nota": "Coinciden autor, año, revista, volumen/número, páginas y DOI 10.2307/249008 según los resultados."
+ },
+ {
+  "key": "Venkatesh2003",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "User Acceptance of Information Technology: Toward a Unified View (MIS Quarterly 27(3), 425-478, DOI 10.2307/30036540) - https://papers.ssrn.com/abstract=3375136 ; https://verdi.cs.ucl.ac.uk/constructDB/publications/venkatesh-user-2003.html",
+  "nota": "Coinciden título, orden de autores (Venkatesh, Morris, Davis, Davis), año, volumen/número, páginas y DOI."
+ },
+ {
+  "key": "Arnstein1969",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "A Ladder of Citizen Participation (Journal of the American Institute of Planners 35(4), 216-224, DOI 10.1080/01944366908977225) - https://planning.org/knowledgebase/resource/9190425",
+  "nota": "Coinciden todos los datos. Algunas fuentes citan la revista con el nombre posterior (Journal of the American Planning Association); el nombre de la época es el que usa la referencia."
+ },
+ {
+  "key": "Callon1999",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The role of lay people in the production and dissemination of scientific knowledge (Science, Technology & Society 4(1), 81-94) - lista de referencias HAL con DOI 10.1177/097172189900400106: https://hal-paris1.archives-ouvertes.fr/hal-00939887v1/html_references ; otras bibliografías: https://sciencetechnologystudies.journal.fi/article/download/55271/18105/53522",
+  "nota": "La evidencia es indirecta: no apareció la página de SAGE, solo listas bibliográficas de terceros que coinciden en autor, año, revista, volumen/número, páginas y DOI. Un registro (ISIS) acorta el título omitiendo 'Scientific'; otras fuentes escriben 'Science, Technology and Society'. Sin diferencias de fondo."
+ },
+ {
+  "key": "Funtowicz1993",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Science for the post-normal age (Futures 25(7), 739-755, sept. 1993) - https://apice.unibo.it/xwiki/bin/view/Publication/PostnormalscienceFutures25 ; https://atlas.postnormaltim.es/sites/default/files/field/attachment/Science%20for%20the%20Post-Normal%20Age.pdf",
+  "nota": "Páginas 739-755 respaldadas por el registro de la Universidad de Bolonia y por el PDF; una fuente (https://journals.ltn.lodz.pl/Przeglad-Socjologiczny/article/view/1201) da 735-755. El DOI no apareció textualmente; solo se vio que el ISSN 0016-3287 es coherente con su prefijo."
+ },
+ {
+  "key": "Teece1986",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Profiting from technological innovation: Implications for integration, collaboration, licensing and public policy (Research Policy 15(6), 285-305, DOI 10.1016/0048-7333(86)90027-2) - https://colab.ws/articles/10.1016%2F0048-7333%2886%2990027-2 ; https://www.edegan.com/wiki/Teece_(1986)_-_Profiting_From_Technological_Innovation",
+  "nota": "Coinciden título, autor, año, revista, volumen/número, páginas y DOI."
+ },
+ {
+  "key": "Lotka1926",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The frequency distribution of scientific productivity (J. Washington Academy of Sciences 16(12), 317-323; JSTOR 24529203) - https://search.r-project.org/CRAN/refmans/bibliometrix/html/lotka.html ; https://puma.ub.uni-stuttgart.de/bibtex/214383cf82c81596a8368a0b76c668578/droessler",
+  "nota": "Coinciden autor, año, revista, volumen/número y páginas. La referencia no incluye DOI y no se exige. No se accedió al texto original de 1926."
+ },
+ {
+  "key": "Bradford1934",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Sources of information on specific subjects (Engineering 137(3550), 85-86, 1934) - segunda búsqueda; entre los enlaces devueltos: https://www.bibsonomy.org/bibtex/4d5f5e3361c6cface6148fb1f5fc6d5c ; https://historyofinformation.com/detail.php?id=614",
+  "nota": "La primera búsqueda no devolvió nada útil; la segunda (con la fecha 26 de enero de 1934 y la ley de dispersión) devolvió una cita 'Engineering 137(3550):85-86' con el mismo título. Evidencia secundaria (citas de terceros), sin acceso al registro primario ni a un enlace concreto confirmado. Opcionalmente podría añadirse el número 3550."
+ },
+ {
+  "key": "VanEck2010",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Software survey: VOSviewer, a computer program for bibliometric mapping (Scientometrics 84(2), 523-538, DOI 10.1007/s11192-009-0146-3) - https://repub.eur.nl/pub/20358 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC2883932",
+  "nota": "Coinciden todos los datos. PubMed Central da fecha de publicación en línea 31-dic-2009; 2010 corresponde al año del número, que es lo habitual en la cita."
+ },
+ {
+  "key": "Kessler1963",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Bibliographic coupling between scientific papers (American Documentation 14(1), 10-25, enero 1963, DOI 10.1002/asi.5090140103) - https://ideas.repec.org/a/bla/amedoc/v14y1963i1p10-25.html",
+  "nota": "Coinciden título, autor, año, revista, volumen/número, páginas y DOI."
+ },
+ {
+  "key": "Small1973",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Co-citation in the scientific literature: A new measure of the relationship between two documents (JASIS 24(4), 265-269, DOI 10.1002/asi.4630240406) - https://ideas.repec.org/a/bla/jamest/v24y1973i4p265-269.html ; https://puma.uni-kassel.de/bibtex/dfbb7636c96853cc258878548c12d12f?lang=en",
+  "nota": "Coinciden todos los datos."
+ },
+ {
+  "key": "Callon1991",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Co-word analysis as a tool for describing the network of interactions between basic and technological research: The case of polymer chemistry (Scientometrics 22(1), 155-205, sept. 1991, DOI 10.1007/BF02019280) - https://ftp.math.utah.edu/pub/tex/bib/idx/scientometrics1990/22/1/155-205.html ; https://unpaywall.org/10.1007%2FBF02019280",
+  "nota": "Coinciden título, autores (Callon, Courtial, Laville), año, volumen/número, páginas y DOI."
+ },
+ {
+  "key": "Cobo2011",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "An approach for detecting, quantifying, and visualizing the evolution of a research field: A practical application to the Fuzzy Sets Theory field (J. Informetrics 5(1), 146-166, DOI 10.1016/j.joi.2010.10.002) - https://ideas.repec.org/a/eee/infome/v5y2011i1p146-166.html ; https://sci2s.ugr.es/sites/default/files/ficherosPublicaciones/1321_mjcobo-joi-2010.pdf",
+  "nota": "Coinciden autores, orden, año, revista, volumen/número, páginas y DOI. El original escribe 'Fuzzy Sets Theory' con mayúsculas; la referencia usa minúsculas, lo que es válido en APA (mayúscula solo inicial)."
+ },
+ {
+  "key": "Rezaei2015",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Best-worst multi-criteria decision-making method (Omega 53, 49-57, DOI 10.1016/j.omega.2014.11.009) - https://ideas.repec.org/a/eee/jomega/v53y2015icp49-57.html",
+  "nota": "Coinciden todos los datos."
+ },
+ {
+  "key": "WHO2021",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "WHO global air quality guidelines: Particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide (2021) - https://www.ncbi.nlm.nih.gov/books/NBK574594/",
+  "nota": "La obra, el título y el año coinciden. La referencia usa el nombre de la organización en español y el título en inglés (edición inglesa), con editorial 'OMS'; la edición consultada es de la OMS (Ginebra). No se comprobó si existe edición oficial en español."
+ },
+ {
+  "key": "EPA2021",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Performance Testing Protocols, Metrics, and Target Values for Fine Particulate Matter Air Sensors (EPA/600/R-20/280, febrero 2021, EPA Office of Research and Development) - https://epa.gov/air-sensor-toolbox/air-sensor-performance-targets-and-testing-protocols ; https://click.clarity.io/hubfs/Marketing%20Assets%20-%20PDFs/USEPA%20Performance%20Testing%20Protocols%20Metrics%20and%20Target%20Values%20for%20Fine%20Particulate%20Matter%20Air%20Sensors.pdf",
+  "nota": "Coinciden número de informe, año, organismo y el alcance del subtítulo (uso en exteriores, sitios fijos, monitoreo suplementario/informativo no regulatorio). El texto exacto del subtítulo no se vio completo en los resultados."
+ },
+ {
+  "key": "Warden2019",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers (O'Reilly) - https://www.oreilly.com/library/view/-/9781492052036/ ; https://discover.aclib.us/oreilly/on1135326041",
+  "nota": "La obra, los autores y la editorial coinciden. El año no es unívoco: O'Reilly y un registro bibliotecario dan 2019 (diciembre de 2019), pero algunos catálogos y librerías dan 2020 (edición impresa). Los ISBN también difieren entre fuentes. No se cambia el año; conviene revisar la portada/página de derechos del ejemplar usado."
+ },
+ {
+  "key": "Ries2011",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses (Crown Business, 2011) - https://en.wikipedia.org/wiki/The_Lean_Startup ; https://discovery.roundrocktexas.gov/Record/124205",
+  "nota": "Coinciden autor, título completo, año y editorial. Algunos libreros de segunda mano indican 'Crown Currency', que parece un error del listado."
+ },
+ {
+  "key": "Mankins1995",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Technology Readiness Levels - A White Paper (6 abril 1995; Advanced Concepts Office, Office of Space Access and Technology, NASA, Washington, DC) - https://sebokwiki.org/wiki/Technology_Readiness_Levels%E2%80%94A_White_Paper",
+  "nota": "Coinciden autor, año, título y organismo. La referencia omite 'Advanced Concepts Office' dentro de la oficina emisora; no es un error de fondo."
+ },
+ {
+  "key": "PMI2021",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "El estándar para la dirección de proyectos y Guía de los fundamentos para la dirección de proyectos (Guía del PMBOK), 7.ª ed., PMI, Newtown Square, 2021 - https://gespro.uci.cu/attachments/download/443/PMBOKGuideSeventhEd_SPA%20Abierto.pdf ; https://revistas.unitru.edu.pe/index.php/SCIENDO/article/view/4975",
+  "nota": "Existen la 7.ª edición, el año 2021 y la editorial PMI (Newtown Square). Diferencia observada: el PDF oficial en español presenta el título combinado con el orden 'El estándar para la dirección de proyectos y Guía de los fundamentos para la dirección de proyectos (Guía del PMBOK)', mientras que la referencia pone primero la Guía. Además, en la referencia las cursivas están partidas (la 'y' queda fuera de ellas). No se cambió; el orden puede variar según la fuente (portada, ficha de la Biblioteca del Congreso)."
+ },
+ {
+  "key": "ISO31000",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "ISO 31000:2018 Gestión del riesgo. Directrices (UNE-ISO 31000:2018) - https://www.en.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0059900 ; https://committee.iso.org/es/sites/isoorg/contents/data/standard/06/56/65694.html",
+  "nota": "Coinciden título en español, año y número de norma. La versión en español se comercializa como UNE-ISO 31000:2018 (UNE); la referencia atribuye la edición a ISO, lo cual es aceptable para la norma original. Los registros usan punto o guion entre título y subtítulo; la referencia usa dos puntos."
+ },
+ {
+  "key": "Patton2011",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Developmental Evaluation: Applying Complexity Concepts to Enhance Innovation and Use (Guilford Press) - https://www.guilford.com/books/Developmental-Evaluation/Michael-Quinn-Patton/9781606238721/summary ; https://www.betterevaluation.org/tools-resources/developmental-evaluation-applying-complexity-concepts-enhance-innovation-use",
+  "nota": "La obra, el autor, el título y la editorial coinciden. El año es ambiguo en las fuentes: la portada y un registro bibliotecario dan 2011 (copyright), pero la ficha de Guilford y un catálogo de editorial dan 2010 (edición en rústica de junio de 2010). Se deja 2011 (año de copyright); conviene confirmar con el ejemplar usado."
+ },
+ {
+  "key": "Rogers2003",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Diffusion of Innovations, 5th Edition (Free Press, 16 agosto 2003) - https://www.simonandschuster.ca/books/Diffusion-of-Innovations-5th-Edition/Everett-M-Rogers/9780743258234 ; https://bookshop.org/p/books/diffusion-of-innovations-5th-edition-everett-m-rogers/951236",
+  "nota": "Coinciden autor, título, edición, año y editorial. Los ISBN difieren entre listados, pero la referencia no incluye ISBN."
+ },
+ {
+  "key": "Freire2005",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Pedagogía del oprimido (Siglo XXI, 2005, traducción de Jorge Mellado) - https://bibliotecadgyt.uns.edu.ar/bib/11650 ; https://dn721903.ca.archive.org/0/items/freire-pedagogia-del-oprimido/freire-pedagogia-del-oprimido_text.pdf",
+  "nota": "Existe una edición de Siglo XXI de 2005 catalogada como '2a ed.' (México y Argentina), con traducción de Jorge Mellado. Sin embargo, el colofón de una copia digital de la edición mexicana 2005 dice 'quincuagésimo quinta edición, nuevo formato' y 'primera edición, 1970', por lo que la numeración de edición es contradictoria entre fuentes. No se verificó la fecha de 'obra original' (1970) frente a la publicación en portugués, ni se incluye al traductor. No se cambió nada."
+ },
+ {
+  "key": "OCDE2018",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Oslo Manual 2018: Guidelines for Collecting, Reporting and Using Data on Innovation, 4th Edition (OECD Publishing, Paris / Eurostat, Luxemburgo; DOI 10.1787/9789264304604-en) - https://www.oecd-ilibrary.org/citeas/10.1787/9789264304604-en ; https://www.oecd-ilibrary.org/science-and-technology/oslo-manual-2018/executive-summary_9789264304604-3-en",
+  "nota": "Coinciden título, edición, año, autoría OECD/Eurostat, editorial y DOI. La búsqueda no mostró edición oficial en español (solo francés, alemán, lituano y portugués), así que la cita corresponde a la edición inglesa."
+ },
+ {
+  "key": "OCDE2015",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental Development (OECD Publishing, Paris; DOI 10.1787/9789264239012-en) - https://stat.gov.pl/en/topics/science-and-technology/science-and-technology/frascati-manual-2015,5,1.html ; https://sol.unibo.it/SebinaOpac/query/ISBN%3A9789264239012",
+  "nota": "Coinciden título, año, editorial y DOI del libro (un resultado mostró además un DOI de capítulo, 10.1787/9789264239012-4-en, que no afecta a la cita)."
+ },
+ {
+  "key": "Chesbrough2003",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Open Innovation: The New Imperative for Creating and Profiting from Technology (Harvard Business School Press, 2003) - https://tind.wipo.int/record/23681 ; https://acawiki.org/Open_innovation:_The_new_imperative_for_creating_and_profiting_from_technology",
+  "nota": "Coinciden autor, título, año y editorial. Algunos listados actuales usan 'Harvard Business Review Press', que es el nombre actual del sello; el de 2003 es Harvard Business School Press."
+ },
+ {
+  "key": "Boardman2018",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Cost-Benefit Analysis: Concepts and Practice, 5th ed. (Cambridge University Press, 2018) - https://search.worldcat.org/oclc/1014011028 ; https://www.abebooks.com/Cost-Benefit-Analysis-Concepts-Practice-Boardman-Anthony/32319240515/bd",
+  "nota": "Coinciden los cuatro autores y su orden, título, edición, año y editorial."
+ },
+ {
+  "key": "Gertler2016",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Impact Evaluation in Practice, Second Edition (World Bank / IDB, 2016) - https://openknowledge.worldbank.org/handle/10986/25030 ; https://ideas.repec.org/b/wbk/wbpubs/25030.html ; https://publications.iadb.org/en/impact-evaluation-practice-second-edition",
+  "nota": "Coinciden los cinco autores, orden, título, edición y año (2016). El DOI de la referencia (10.1596/978-1-4648-0779-4) no pudo comprobarse: dos búsquedas no devolvieron ningún registro con ese DOI. Solo se confirmó que 978-1-4648-0779-4 es el ISBN de la edición en rústica; el registro del BID da otro DOI propio (10.18235/0006529) y otro listado muestra el ISBN 9781464807800 para la versión electrónica. Se conserva el DOI sin cambios y se recomienda comprobarlo en doi.org o en el repositorio del Banco Mundial. La referencia cita la edición inglesa con el nombre de editorial en español ('Banco Mundial')."
+ },
+ {
+  "key": "Hwang1981",
+  "estado": "PARCIAL",
+  "correccion": null,
+  "evidencia": "Multiple Attribute Decision Making: Methods and Applications, A State-of-the-Art Survey (Springer, 1981, Lecture Notes in Economics and Mathematical Systems 186, DOI 10.1007/978-3-642-48318-9) - https://link.springer.com/book/9783540105589 ; https://www.doi.org/10.1007/978-3-642-48318-9",
+  "nota": "Coinciden autores, orden, año y editorial. Diferencia: el registro de Springer incluye el subtítulo 'A State-of-the-Art Survey' y la serie (vol. 186), que la referencia omite; el DOI de Springer es 10.1007/978-3-642-48318-9. La forma abreviada es de uso habitual, por lo que no se modifica; queda a criterio de quien cita añadir subtítulo, serie y DOI."
+ },
+ {
+  "key": "UNISDR2015",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Marco de Sendái para la Reducción del Riesgo de Desastres 2015-2030 (adoptado en marzo de 2015) - https://www.preventionweb.net/es/sendai-framework/sendai-framework-for-disaster-risk-reduction ; https://digitallibrary.un.org/record/793460/files/A_CONF.224_L.2-ES.pdf",
+  "nota": "Coinciden título y año. La oficina se llamaba UNISDR en 2015 y cambió su nombre a UNDRR; la referencia usa el nombre actual (UNDRR) como editor, mientras que la clave dice UNISDR. No es un error, pero conviene unificar el criterio con el resto de la bibliografía."
+ },
+ {
+  "key": "ONU2015",
+  "estado": "VERIFICADO_WEB",
+  "correccion": null,
+  "evidencia": "Transformar nuestro mundo: la Agenda 2030 para el Desarrollo Sostenible (A/RES/70/1; aprobada el 25-sep-2015, publicada el 21-oct-2015) - https://www.lacult.unesco.org/docc/Transformar_mdo_ESP.pdf ; https://rightsandrecords.ica.org/bib/JPWRHECU",
+  "nota": "Coinciden título, signatura A/RES/70/1 y año. En rigor el autor corporativo sería la Asamblea General de las Naciones Unidas; la referencia usa 'Organización de las Naciones Unidas', que es aceptable."
+ }
+]
